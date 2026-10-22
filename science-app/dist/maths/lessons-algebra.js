@@ -8,13 +8,13 @@
 //   A17 solve linear equations algebraically · A21 (part) form and solve equations.
 // Not in this batch: algebraic fractions (A4 Higher), A6 proof, A7 functions, A17 graphical solutions.
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261022-maths-r4p1';
+import { skillById } from './skills.js?v=20261022-maths-r5';
 
 const S = id => skillById[id];
 
 export const algebraTopic = {
   id: 'maths.algebra', title: 'Algebra', short: 'Algebra', number: '02', status: 'partial',
-  coverage: 'Six lessons on algebraic notation, substitution and vocabulary; simplifying and the laws of indices; expanding and factorising single and double brackets, including quadratics (Higher: three brackets and ax² + bx + c); solving linear equations; and using and rearranging formulae (A1–A5, A17, parts of A6 and A21). Algebraic answers are marked by equivalence and form. Graphs, sequences, inequalities, simultaneous and quadratic equations, functions and algebraic fractions come later.',
+  coverage: 'Ten lessons on algebraic notation, substitution and vocabulary; simplifying and the laws of indices; expanding and factorising single and double brackets, including quadratics (Higher: three brackets and ax² + bx + c); solving linear equations; using and rearranging formulae; sequences and the nth term; linear (Higher: quadratic) inequalities; quadratic equations (Higher: completing the square and the formula); and simultaneous equations (Higher: linear/quadratic). Statements A1–A5, A17–A19 and A21–A25, with parts of A6, A11 and A22. Graphs, functions, algebraic fractions and iteration come later.',
 };
 
 export const algebraLessons = [
@@ -171,7 +171,115 @@ export const algebraLessons = [
     checkPlan: [['maths.algebra.formula-use', 1], ['maths.algebra.formula-use', 2], ['maths.algebra.formula-use', 2], ['maths.algebra.formula-use', 3], ['maths.algebra.rearrange', 1], ['maths.algebra.rearrange', 1], ['maths.algebra.rearrange', 2], ['maths.algebra.rearrange', 2], ['maths.algebra.rearrange', 3], ['maths.algebra.rearrange', 3]],
     limits: 'Formulae whose rearrangement needs a square root (such as A = πr² for r) are practised by substitution only, because typed square roots of expressions are not yet marked. Any equivalent form is accepted, such as (v − u)/a or v/a − u/a.',
   },
+  {
+    id: 'maths.algebra.sequences',
+    topicId: 'maths.algebra',
+    title: 'Sequences and the nth term',
+    refs: ['A23', 'A24', 'A25'],
+    minutes: 45,
+    model: 'seq-pattern',
+    prerequisites: ['maths.algebra.linear-equations'],
+    big: 'A term-to-term rule says how to get from one term to the next; a position-to-term rule (the nth term) gives any term directly. For a linear sequence with difference d, the nth term is dn + (zero term). Know triangular, square and cube numbers, Fibonacci-type sequences (add the previous two) and geometric sequences (multiply by the common ratio). Higher: a quadratic sequence has a constant second difference; the n² coefficient is half of it.',
+    learn: [
+      { title: 'Term-to-term and position-to-term.', text: 'A term-to-term rule such as "add 4" needs the previous term. A position-to-term rule, the nth term, gives any term from its position: if the nth term is 4n − 1, the 10th term is 4 × 10 − 1 = 39. To test whether a number is a term, solve nth term = number: the answer must be a whole number.',
+        example: { prompt: 'Is 100 a term of 4n − 1?', steps: ['4n − 1 = 100', '4n = 101, so n = 25.25', 'n is not a whole number, so 100 is not a term.'] },
+        visual: { kind: 'diffs', terms: [3, 7, 11, 15, 19], caption: 'nth term 4n − 1' } },
+      { title: 'Finding a linear nth term.', text: 'Find the common difference: that is the coefficient of n. Then find the zero term, the term before the first, by subtracting the difference from the first term. For 5, 8, 11, 14: difference 3, zero term 2, nth term 3n + 2. Check with n = 1: 3 + 2 = 5 ✓.',
+        example: { prompt: 'Find the nth term of 20, 17, 14, 11, …', steps: ['Difference −3, so −3n', 'Zero term: 20 + 3 = 23', 'nth term: −3n + 23 (or 23 − 3n)'] },
+        visual: { kind: 'sticks', n: [1, 2, 3], caption: '4, 7, 10 sticks: nth term 3n + 1' } },
+      { title: 'Special sequences.', text: 'Triangular numbers 1, 3, 6, 10, 15 (differences 2, 3, 4, …). Square numbers 1, 4, 9, 16 and cube numbers 1, 8, 27, 64. In a Fibonacci-type sequence each term is the sum of the two before it. In a geometric sequence each term is multiplied by the common ratio r: 3, 6, 12, 24 (r = 2) or 64, 48, 36, 27 (r = {3/4}).',
+        example: { prompt: 'Find the next term of 2, 5, 7, 12, 19, …', steps: ['Each term is the sum of the previous two.', '12 + 19 = 31'] },
+        visual: { kind: 'dots-tri', n: [1, 2, 3, 4], caption: 'Triangular numbers: 1, 3, 6, 10' } },
+      { title: 'Higher: quadratic sequences.', text: 'If the first differences change but the second differences are constant, the sequence is quadratic. The n² coefficient is half the second difference. Subtract that n² part from each term; what is left is linear, so find its nth term and add the two parts.',
+        example: { prompt: 'Find the nth term of 4, 9, 16, 25, 36, …', steps: ['Second difference 2, so n^2', 'Terms − n^2: 3, 5, 7, 9, 11 → 2n + 1', 'nth term: n^2 + 2n + 1'] },
+        visual: { kind: 'diffs', terms: [4, 9, 16, 25, 36], second: true, caption: 'Constant second difference 2: the n² coefficient is 1' } },
+    ],
+    skills: [S('maths.algebra.seq-terms'), S('maths.algebra.seq-nth-linear'), S('maths.algebra.seq-special'), S('maths.algebra.seq-nth-quadratic')],
+    checkPlan: [['maths.algebra.seq-terms', 1], ['maths.algebra.seq-terms', 2], ['maths.algebra.seq-terms', 3], ['maths.algebra.seq-nth-linear', 1], ['maths.algebra.seq-nth-linear', 2], ['maths.algebra.seq-nth-linear', 3], ['maths.algebra.seq-special', 1], ['maths.algebra.seq-special', 2], ['maths.algebra.seq-special', 3], ['maths.algebra.seq-nth-quadratic', 2]],
+    limits: 'The matchstick pattern is one context for a linear sequence. Geometric sequences with a surd ratio (Higher, A24) and other non-standard sequences are not practised yet. The quadratic nth-term skill is Higher only and hidden at Foundation.',
+  },
+  {
+    id: 'maths.algebra.inequalities',
+    topicId: 'maths.algebra',
+    title: 'Solving inequalities',
+    refs: ['A22'],
+    minutes: 40,
+    model: 'ineq-line',
+    prerequisites: ['maths.algebra.linear-equations'],
+    big: 'Solve a linear inequality like an equation, but multiplying or dividing both sides by a negative number reverses the sign. On a number line, a filled circle ● includes the boundary (≤, ≥) and an open circle ○ does not (<, >). For integer solutions, check each end carefully. Higher: for a quadratic inequality, find the roots and use the ∪-shaped graph: < 0 between the roots, > 0 outside them.',
+    learn: [
+      { title: 'Inequalities on a number line.', text: 'x > 2 is every number greater than 2: an open circle at 2 and an arrow to the right. x ≤ −1 has a filled circle at −1 and an arrow to the left. −2 < x ≤ 3 is a region between two ends.',
+        example: { prompt: 'n is an integer and −2 < n ≤ 3. List the values of n.', steps: ['−2 is not included; 3 is.', 'n = −1, 0, 1, 2, 3'] },
+        visual: { kind: 'numline', set: [{ lo: -2, loIn: false, hi: 3, hiIn: true }], caption: '−2 < x ≤ 3' } },
+      { title: 'Solving linear inequalities.', text: 'Add, subtract, multiply or divide both sides, as in an equation. The one change: multiplying or dividing by a negative number reverses the inequality. 5 − 2x ≥ 11 gives −2x ≥ 6, then x ≤ −3. Check with a value: x = −4 gives 5 + 8 = 13 ≥ 11 ✓.',
+        example: { prompt: 'Solve 3x − 4 < 11', steps: ['Add 4: 3x < 15', 'Divide by 3: x < 5'] },
+        visual: { kind: 'numline', set: [{ lo: null, loIn: false, hi: -3, hiIn: true }], caption: '5 − 2x ≥ 11 gives x ≤ −3' } },
+      { title: 'Double inequalities.', text: 'Do the same operation to all three parts. −1 ≤ 2x + 3 < 9: subtract 3 from every part (−4 ≤ 2x < 6), then divide every part by 2 (−2 ≤ x < 3).',
+        example: { prompt: 'Solve −5 < 3x + 1 ≤ 10', steps: ['Subtract 1: −6 < 3x ≤ 9', 'Divide by 3: −2 < x ≤ 3'] },
+        visual: { kind: 'numline', set: [{ lo: -2, loIn: true, hi: 3, hiIn: false }], caption: '−2 ≤ x < 3' } },
+      { title: 'Higher: quadratic inequalities.', text: 'Rearrange so one side is 0, factorise and find the critical values (the roots). Sketch the ∪-shaped graph: it is below the x-axis between the roots and above it outside them. x² − x − 6 < 0 means −2 < x < 3; x² − x − 6 > 0 means x < −2 or x > 3, two separate regions.',
+        example: { prompt: 'Solve x^2 > 16', steps: ['x^2 − 16 > 0, so (x + 4)(x − 4) > 0', 'Critical values −4 and 4', 'Outside the roots: x < −4 or x > 4'] },
+        visual: { kind: 'graph', fns: [{ expr: 'x^2 - x - 6', label: 'y = x² − x − 6' }], points: [[-2, 0, '−2'], [3, 0, '3']], shade: [[-2, 3]], caption: 'Shaded: −2 < x < 3, where the curve is below the x-axis' } },
+    ],
+    skills: [S('maths.algebra.ineq-solve'), S('maths.algebra.ineq-integers'), S('maths.algebra.ineq-quadratic')],
+    checkPlan: [['maths.algebra.ineq-solve', 1], ['maths.algebra.ineq-solve', 2], ['maths.algebra.ineq-solve', 2], ['maths.algebra.ineq-solve', 3], ['maths.algebra.ineq-solve', 3], ['maths.algebra.ineq-integers', 1], ['maths.algebra.ineq-integers', 2], ['maths.algebra.ineq-integers', 2], ['maths.algebra.ineq-quadratic', 1], ['maths.algebra.ineq-quadratic', 2]],
+    limits: 'Answers are typed inequalities; drawing a solution on a number line is practised in the investigation but not marked in practice. Higher-only parts of A22 not yet built: inequalities in two variables, regions on a graph and set notation. Quadratic inequalities are Higher only and hidden at Foundation.',
+  },
+  {
+    id: 'maths.algebra.quadratic-equations',
+    topicId: 'maths.algebra',
+    title: 'Solving quadratic equations',
+    refs: ['A18', 'A11'],
+    minutes: 50,
+    model: 'quad-roots',
+    prerequisites: ['maths.algebra.quadratics'],
+    big: 'To solve a quadratic equation, make one side 0, factorise, then set each factor to 0: if a product is 0, one of the factors is 0. Never divide by x; you lose the solution x = 0. The solutions are where the graph crosses the x-axis. Higher: rearrange first if needed; complete the square, (x + p)² + q, to find the turning point (−p, q); use the quadratic formula when it will not factorise.',
+    learn: [
+      { title: 'Solving by factorising.', text: 'x² + x − 6 = 0 factorises to (x + 3)(x − 2) = 0. One bracket must be 0, so x + 3 = 0 or x − 2 = 0: x = −3 or x = 2. The signs flip: the bracket (x + 3) gives x = −3.',
+        example: { prompt: 'Solve x^2 − 5x = 0', steps: ['Factorise: x(x − 5) = 0', 'x = 0 or x − 5 = 0', 'x = 0 or x = 5'] },
+        visual: { kind: 'graph', fns: [{ expr: 'x^2 + x - 6', label: 'y = x² + x − 6' }], points: [[-3, 0, '−3'], [2, 0, '2']], caption: 'The roots −3 and 2 are where y = 0' } },
+      { title: 'Difference of two squares.', text: 'x² − 49 = 0 factorises to (x + 7)(x − 7) = 0, giving x = −7 or x = 7. Equivalently x² = 49 has two square roots: ±7.',
+        example: { prompt: 'Solve x^2 − 100 = 0', steps: ['(x + 10)(x − 10) = 0', 'x = −10 or x = 10'] },
+        visual: { kind: 'graph', fns: [{ expr: 'x^2 - 4', label: 'y = x² − 4' }], points: [[-2, 0, '−2'], [2, 0, '2']], caption: 'x² − 4 = 0: x = ±2' } },
+      { title: 'Higher: rearranging and ax² + bx + c.', text: 'Make one side 0 first: x(x + 3) = 10 becomes x² + 3x − 10 = 0, so (x + 5)(x − 2) = 0. For 2x² + 7x + 3 = 0, factorise to (2x + 1)(x + 3) = 0: 2x + 1 = 0 gives x = −{1/2}.',
+        example: { prompt: 'Solve x^2 = 2x + 15', steps: ['x^2 − 2x − 15 = 0', '(x − 5)(x + 3) = 0', 'x = 5 or x = −3'] },
+        visual: { kind: 'graph', fns: [{ expr: 'x^2 + 3x - 10', label: 'y = x² + 3x − 10' }], points: [[-5, 0, '−5'], [2, 0, '2']], yr: [-14, 8], caption: 'x(x + 3) = 10 rearranged: roots −5 and 2' } },
+      { title: 'Higher: completing the square and the formula.', text: 'x² + 6x + 2 = (x + 3)² − 9 + 2 = (x + 3)² − 7: halve the x coefficient and subtract its square. The turning point of y = (x + 3)² − 7 is (−3, −7). When a quadratic will not factorise, use x = {−b ± √(b^2 − 4ac)/2a} and round as asked.',
+        example: { prompt: 'Solve x^2 + 4x − 3 = 0 to 2 decimal places.', steps: ['a = 1, b = 4, c = −3: b^2 − 4ac = 16 + 12 = 28', 'x = {−4 ± √28/2}', 'x = 0.65 or x = −4.65'] },
+        visual: { kind: 'graph', fns: [{ expr: 'x^2 + 6x + 2', label: 'y = (x + 3)² − 7' }], points: [[-3, -7, '(−3, −7)']], xr: [-7, 2], yr: [-8, 8], caption: 'The turning point is (−3, −7)' } },
+    ],
+    skills: [S('maths.algebra.quad-solve'), S('maths.algebra.quad-complete-square'), S('maths.algebra.quad-formula')],
+    checkPlan: [['maths.algebra.quad-solve', 1], ['maths.algebra.quad-solve', 1], ['maths.algebra.quad-solve', 2], ['maths.algebra.quad-solve', 2], ['maths.algebra.quad-solve', 3], ['maths.algebra.quad-complete-square', 1], ['maths.algebra.quad-complete-square', 2], ['maths.algebra.quad-formula', 1], ['maths.algebra.quad-formula', 2], ['maths.algebra.quad-solve', 3]],
+    limits: 'Graphs show where solutions come from; reading approximate solutions from a plotted graph (A18) is not marked. Completing the square is practised for x² + bx + c with b even; exact surd solutions from completing the square are not yet asked. Rearrangement, ax² + bx + c, completing the square and the formula are Higher only.',
+  },
+  {
+    id: 'maths.algebra.simultaneous',
+    topicId: 'maths.algebra',
+    title: 'Simultaneous equations',
+    refs: ['A19', 'A21'],
+    minutes: 50,
+    model: 'sim-graph',
+    prerequisites: ['maths.algebra.linear-equations'],
+    big: 'Two equations with two unknowns are solved together. Make the coefficients of one letter the same size (multiplying an equation if needed); add the equations if the signs differ, subtract if they are the same; solve for the remaining letter, then substitute back. Check in the other equation. The solution is where the two graphs cross. Higher: with one linear and one quadratic equation, substitute the linear one into the quadratic.',
+    learn: [
+      { title: 'Elimination.', text: '3x + 2y = 16 and x − 2y = 0: the y terms are +2y and −2y, so adding the equations eliminates y: 4x = 16, x = 4. Substitute into either equation: 4 − 2y = 0, y = 2. Check: 3 × 4 + 2 × 2 = 16 ✓.',
+        example: { prompt: 'Solve 2x + 3y = 13 and 2x + y = 7', steps: ['Same sign on 2x: subtract the equations: 2y = 6, so y = 3', '2x + 3 = 7, so x = 2', 'Check: 2 × 2 + 3 × 3 = 13 ✓'] },
+        visual: { kind: 'graph', fns: [{ expr: '(16 - 3x)/2', label: '3x + 2y = 16' }, { expr: 'x/2', label: 'x − 2y = 0' }], points: [[4, 2, '(4, 2)']], xr: [-2, 7], yr: [-3, 9], caption: 'The solution is where the lines cross' } },
+      { title: 'Multiplying first.', text: 'If no letter has matching coefficients, multiply one or both equations. For 3x + 2y = 12 and 5x − 3y = 1, multiply the first by 3 and the second by 2: 9x + 6y = 36 and 10x − 6y = 2. Add: 19x = 38, so x = 2, then y = 3.',
+        example: { prompt: 'Solve 4x + 3y = 18 and x + 2y = 7', steps: ['Multiply the second by 4: 4x + 8y = 28', 'Subtract the first: 5y = 10, so y = 2', 'x + 4 = 7, so x = 3'] },
+        visual: { kind: 'graph', fns: [{ expr: '(12 - 3x)/2', label: '3x + 2y = 12' }, { expr: '(5x - 1)/3', label: '5x − 3y = 1' }], points: [[2, 3, '(2, 3)']], xr: [-2, 6], yr: [-3, 8], caption: 'x = 2, y = 3' } },
+      { title: 'Forming simultaneous equations.', text: 'Choose a letter for each unknown and write one equation for each fact. "2 adult and 3 child tickets cost £27; 1 adult and 2 child tickets cost £16" gives 2a + 3c = 27 and a + 2c = 16. Answer the question in context: an adult ticket costs £6, a child ticket £5.',
+        example: { prompt: 'Two numbers add to 23 and differ by 7. Find them.', steps: ['x + y = 23 and x − y = 7', 'Add: 2x = 30, x = 15', 'y = 8'] },
+        visual: { kind: 'graph', fns: [{ expr: '23 - x', label: 'x + y = 23' }, { expr: 'x - 7', label: 'x − y = 7' }], points: [[15, 8, '(15, 8)']], xr: [0, 20], yr: [-5, 25], caption: 'The numbers are 15 and 8' } },
+      { title: 'Higher: a line and a curve.', text: 'For y = x² − 3 and y = x + 3, set the expressions equal: x² − 3 = x + 3, so x² − x − 6 = 0 and x = 3 or x = −2. Find each y from the line: (3, 6) and (−2, 1). A line can meet a curve twice, so there are two pairs.',
+        example: { prompt: 'Solve y = x^2 and y = x + 2', steps: ['x^2 = x + 2, so x^2 − x − 2 = 0', '(x − 2)(x + 1) = 0: x = 2 or x = −1', 'Pairs: (2, 4) and (−1, 1)'] },
+        visual: { kind: 'graph', fns: [{ expr: 'x^2 - 3', label: 'y = x² − 3' }, { expr: 'x + 3', label: 'y = x + 3' }], points: [[3, 6, '(3, 6)'], [-2, 1, '(−2, 1)']], xr: [-4, 4], yr: [-4, 10], caption: 'Two intersections, two solution pairs' } },
+    ],
+    skills: [S('maths.algebra.sim-solve'), S('maths.algebra.sim-form'), S('maths.algebra.sim-nonlinear')],
+    checkPlan: [['maths.algebra.sim-solve', 1], ['maths.algebra.sim-solve', 2], ['maths.algebra.sim-solve', 2], ['maths.algebra.sim-solve', 3], ['maths.algebra.sim-solve', 3], ['maths.algebra.sim-form', 1], ['maths.algebra.sim-form', 1], ['maths.algebra.sim-form', 2], ['maths.algebra.sim-nonlinear', 1], ['maths.algebra.sim-nonlinear', 2]],
+    limits: 'Graphs illustrate solutions; finding approximate solutions by drawing graphs (A19) is not marked. Solutions are whole numbers in practice items. Linear/quadratic pairs are Higher only and hidden at Foundation.',
+  },
 ];
 
-export const algebraOrder = ['maths.algebra.notation', 'maths.algebra.simplify', 'maths.algebra.single-brackets', 'maths.algebra.quadratics', 'maths.algebra.linear-equations', 'maths.algebra.formulae'];
+export const algebraOrder = ['maths.algebra.notation', 'maths.algebra.simplify', 'maths.algebra.single-brackets', 'maths.algebra.quadratics', 'maths.algebra.linear-equations', 'maths.algebra.formulae', 'maths.algebra.sequences', 'maths.algebra.inequalities', 'maths.algebra.quadratic-equations', 'maths.algebra.simultaneous'];
 export const orderedAlgebra = algebraOrder.map(id => algebraLessons.find(l => l.id === id));

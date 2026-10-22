@@ -19,9 +19,10 @@
 //                 for mastery, as it would lose the final mark in an exam.
 //   'wrong'     - wrong value
 //   'invalid'   - could not be read; nothing is recorded and the student fixes the format
-import { markAlgebra, algebraPreview } from './algebra.js?v=20261022-maths-r4p1';
-import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261022-maths-r4p1';
-import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r4p1';
+import { markAlgebra, algebraPreview } from './algebra.js?v=20261022-maths-r5';
+import { markSolutions, solutionsMarkup, solutionsGiven, markInequality, inequalityMarkup, markList, listMarkup } from './sets.js?v=20261022-maths-r5';
+import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261022-maths-r5';
+import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r5';
 
 export function isPrime(n) {
   if (!Number.isInteger(n) || n < 2) return false;
@@ -93,7 +94,7 @@ export function answerValue(spec, raw) {
   raw = stripVar(spec, raw);
   if (spec.kind === 'standard') { const s = parseStandard(raw); if (s) return mul(s.a, pow10(s.n)); }
   if (spec.kind === 'power') { const p = parsePower(raw); if (p) return powValue(p.base, p.exp); }
-  if (['interval', 'choice', 'primes', 'exact', 'ratio', 'algebra'].includes(spec.kind)) return null;
+  if (['interval', 'choice', 'primes', 'exact', 'ratio', 'algebra', 'solutions', 'inequality', 'list'].includes(spec.kind)) return null;
   const p = parseNumber(raw);
   return p ? p.value : null;
 }
@@ -105,6 +106,10 @@ const stripVar = (spec, raw) => (spec.var ? String(raw ?? '').replace(new RegExp
 export function mark(spec, raw) {
   raw = stripVar(spec, raw);
   if (spec.kind === 'algebra') return normalise(raw) === '' ? { status: 'invalid', code: 'empty' } : markAlgebra(spec, raw);
+  if (['solutions', 'inequality', 'list'].includes(spec.kind)) {
+    if (normalise(raw) === '' || /^[;,\s]*$/.test(raw)) return { status: 'invalid', code: 'empty' };
+    return spec.kind === 'solutions' ? markSolutions(spec, raw) : spec.kind === 'inequality' ? markInequality(spec, raw) : markList(spec, raw);
+  }
   if (spec.kind === 'choice') {
     if (raw === null || raw === undefined || raw === '') return { status: 'invalid', code: 'empty' };
     return Number(raw) === spec.answer ? { status: 'correct' } : { status: 'wrong', code: 'choice' };
@@ -205,6 +210,10 @@ export const PARTIAL_MESSAGES = {
   'not-simplified': 'That is equivalent, but not fully simplified. Collect like terms, and write x × x as x^2.',
   notation: 'That is equivalent, but write it without × or ÷ signs: 3ab, not 3 × a × b, and a/b for a ÷ b.',
   'notation-decimal': 'That is equivalent, but write coefficients as fractions rather than decimals: x/2, not 0.5x.',
+  'dp-round': 'Those values round to the right answers, but give each one rounded to the number of decimal places asked for.',
+  'one-solution': 'That solution is right, but there is another. A quadratic equation usually has two solutions: find both.',
+  'ineq-ends': 'The boundary values are right, but check each sign: ≤ and ≥ include the boundary value; < and > do not.',
+  'want-completed-square': 'That is equivalent, but the question asks for the completed-square form (x + p)^2 + q.',
   'interval-ends': 'The two end values are right, but check the signs. The lower bound is included (≤); the upper bound is not (<), because it would round up.',
 };
 
@@ -220,6 +229,9 @@ export function decimalPlacesFor(spec) {
 export function answerMarkup(spec) {
   if (spec.var) return `${spec.var} = ${answerMarkup({ ...spec, var: undefined })}`;
   if (spec.kind === 'algebra') return spec.subject ? `${spec.subject} = ${spec.display}` : spec.display;
+  if (spec.kind === 'solutions') return solutionsMarkup(spec);
+  if (spec.kind === 'inequality') return inequalityMarkup(spec);
+  if (spec.kind === 'list') return listMarkup(spec);
   if (spec.kind === 'integer') return num(spec.value);
   if (spec.kind === 'fraction') {
     const f = F(spec.value.n, spec.value.d);
@@ -240,6 +252,8 @@ export function givenMarkup(spec, raw) {
   if (raw === undefined || raw === null || raw === '') return 'Not answered';
   if (spec.kind === 'choice') return spec.options[Number(raw)] ?? 'Not answered';
   if (spec.kind === 'algebra') return algebraPreview(raw);
+  if (spec.kind === 'solutions') return solutionsGiven(spec, raw);
+  if (spec.kind === 'inequality' || spec.kind === 'list') return normalise(raw).replace(/<=/g, '≤').replace(/>=/g, '≥').replace(/-/g, '−');
   raw = stripVar(spec, raw);
   if (spec.kind === 'primes') {
     const f = parsePrimeProduct(raw);

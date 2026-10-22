@@ -49,13 +49,13 @@ ok((await page.locator('#sideProgress').innerText()) === '0 / 15', 'Number topic
 await goLesson('maths.number.powers', 0);
 await page.click('#mapButton');
 const mapText = await page.locator('dialog').innerText();
-ok(/Algebra\s*6 lessons available/.test(mapText), 'course map shows Algebra with 6 lessons');
+ok(/Algebra\s*10 lessons available/.test(mapText), 'course map shows Algebra with 10 lessons');
 ok(/Geometry and measures\s*Planned/.test(mapText), 'unbuilt topics stay planned');
 await page.click('[data-mtopic="maths.algebra"]');
 const listText = await page.locator('dialog').innerText();
 ok(listText.includes('TOPIC 02') && listText.includes('Solving linear equations') && !listText.includes('Negative numbers'), 'lesson list is scoped to Algebra');
 await page.click('#closeModal');
-ok((await page.locator('#sideProgress').innerText()) === '0 / 6', 'sidebar progress follows the Algebra topic');
+ok((await page.locator('#sideProgress').innerText()) === '0 / 10', 'sidebar progress follows the Algebra topic');
 ok((await page.locator('#mH1').innerText()).includes('Algebraic notation'), 'first Algebra lesson opens');
 
 const A = ['maths.algebra.notation', 'maths.algebra.simplify', 'maths.algebra.single-brackets', 'maths.algebra.quadratics', 'maths.algebra.linear-equations', 'maths.algebra.formulae'];
@@ -193,7 +193,7 @@ const res = await page.locator('dialog').innerText();
 ok(res.includes('9 / 10') && res.includes('Lesson complete'), 'check scored 9/10 and the lesson completes' + (res.includes('Lesson complete') ? '' : ': ' + res.slice(0, 300)));
 await shot('a06-check-results');
 await page.click('#closeModal');
-ok((await page.locator('#sideProgress').innerText()) === '1 / 6', 'Algebra progress 1 / 6');
+ok((await page.locator('#sideProgress').innerText()) === '1 / 10', 'Algebra progress 1 / 10');
 
 // ── equations accept "x = …" and fractions ──
 await goLesson('maths.algebra.linear-equations', 2);
@@ -222,7 +222,7 @@ await page.selectOption('#tier', 'Foundation'); await page.waitForTimeout(200);
 await page.click('#assessmentButton'); await page.click('#maBegin');
 s = await mstate();
 const q = s.runs.assessment.queue;
-ok(q.length === 14 && q.every(i => i.skill.startsWith('maths.algebra.')) && new Set(q.map(i => i.skill)).size === 14, 'Algebra assessment: every Algebra skill once, no Number skills');
+ok(q.length === 20 && q.every(i => i.skill.startsWith('maths.algebra.')) && new Set(q.map(i => i.skill)).size === 20, 'Algebra assessment: 20 different Algebra skills, no Number skills');
 ok((await page.locator('#mSpec').innerText()).includes('Algebra'), 'assessment labelled Algebra');
 await page.click('#reviewButton');
 const rv = await page.locator('dialog').innerText();

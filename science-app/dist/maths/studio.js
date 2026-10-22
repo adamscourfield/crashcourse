@@ -1,20 +1,22 @@
 // Maths studio: lesson flow, generated practice with mastery ladders, independent checks,
 // spaced interleaved review and topic assessment. Owns its own saved state (MATHS_KEY) so it
 // can never alter science progress.
-import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r4p1';
-import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r4p1';
-import { algebraMatches, algebraPreview } from './algebra.js?v=20261022-maths-r4p1';
-import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261022-maths-r4p1';
-import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r4p1';
-import { generate, skillById } from './skills.js?v=20261022-maths-r4p1';
-import { orderedLessons as numberLessons, mathsTopics as numberTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r4p1';
-import { algebraTopic, orderedAlgebra } from './lessons-algebra.js?v=20261022-maths-r4p1';
-import { visual4, MODELS4 } from './models-algebra.js?v=20261022-maths-r4p1';
-import { visual, mountModel } from './models-number.js?v=20261022-maths-r4p1';
-import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r4p1';
-import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r4p1';
-import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r4p1';
-import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r4p1';
+import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r5';
+import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r5';
+import { algebraMatches, algebraPreview } from './algebra.js?v=20261022-maths-r5';
+import { parseSolutions, solutionsMatch, inequalityMatches } from './sets.js?v=20261022-maths-r5';
+import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261022-maths-r5';
+import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r5';
+import { generate, skillById } from './skills.js?v=20261022-maths-r5';
+import { orderedLessons as numberLessons, mathsTopics as numberTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r5';
+import { algebraTopic, orderedAlgebra } from './lessons-algebra.js?v=20261022-maths-r5';
+import { visual4, MODELS4 } from './models-algebra.js?v=20261022-maths-r5';
+import { visual5, MODELS5 } from './models-algebra2.js?v=20261022-maths-r5';
+import { visual, mountModel } from './models-number.js?v=20261022-maths-r5';
+import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r5';
+import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r5';
+import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r5';
+import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r5';
 
 const STAGES = ['Discover', 'Investigate', 'Practise', 'Check'];
 const orderedLessons = [...numberLessons, ...orderedAlgebra];
@@ -96,7 +98,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const c = l.learn[p.card];
     p.reveal ??= {};
     const shown = p.reveal[p.card] ?? 0;
-    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual) || visual2(c.visual) || visual3(c.visual) || visual4(c.visual)}</div>`;
+    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual) || visual2(c.visual) || visual3(c.visual) || visual4(c.visual) || visual5(c.visual)}</div>`;
     $('#mTitle').textContent = c.title;
     const pre = p.card === 0 && l.prerequisites?.length ? `<div class="prerequisites"><span>Prior learning:</span>${l.prerequisites.map(id => `<button class="text-button" data-mpre="${id}">${esc(orderedLessons.find(x => x.id === id)?.title || id)}</button>`).join('')}</div>` : '';
     $('#mBody').innerHTML = `${pre}<p>${mathHTML(c.text)}</p><div class="mexample"><div class="mexample-q"><span class="eyebrow">EXAMPLE</span><p>${mathHTML(c.example.prompt)}</p></div><ol class="msteps">${c.example.steps.map((st, i) => `<li ${i < shown ? '' : 'hidden'}>${mathHTML(st)}</li>`).join('')}</ol>${shown < c.example.steps.length ? `<button class="secondary" id="mReveal">${shown ? 'Next step' : 'Try it, then show the first step'}</button>` : ''}</div><div class="reading-dots">${l.learn.map((_, i) => `<button data-mcard="${i}" aria-label="Explanation ${i + 1}" class="${i === p.card ? 'current' : ''}">${i + 1}</button>`).join('')}</div>`;
@@ -111,7 +113,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const generation = modelGeneration, panel = $('#mPanel'), body = $('#mBody');
     $('#mTitle').textContent = '';
     $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
-    (MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
+    (MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
       panel, body, w: p.widget, tier: s.tier,
       isActive: () => generation === modelGeneration && panel.isConnected && body.isConnected && $('#mPanel') === panel && !!$('#mTitle'),
       save, feedback, setTitle: t => ($('#mTitle').textContent = t),
@@ -151,6 +153,13 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     }
     if (a.kind === 'exact') return `<label class="field-label" for="mText">Your exact answer</label><input class="lab-input mtext" id="mText" autocomplete="off" spellcheck="false" value="${esc(v)}" ${locked ? 'disabled' : ''}><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey="√">√</button><button type="button" class="secondary" data-mkey="π">π</button><button type="button" class="secondary" data-mkey="/">/</button>'}</div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : '<p class="micro-note">For example 3π, 2√5, 4 − 2√3 or 2√3/3.</p>'}${submit}`;
     if (a.kind === 'algebra') return `<label class="field-label" for="mText">${a.subject ? `Your answer: ${esc(a.subject)} =` : 'Your answer'}</label><input class="lab-input mtext malg" id="mText" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(v)}" ${locked ? 'disabled' : ''}><p class="malg-preview" id="mPreview" aria-live="polite">${v ? 'Reads as: ' + mathHTML(algebraPreview(v)) : ''}</p><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey="^2" aria-label="squared">x²</button><button type="button" class="secondary" data-mkey="(">(</button><button type="button" class="secondary" data-mkey=")">)</button><button type="button" class="secondary" data-mkey="/">/</button>'}</div><p class="micro-note">${esc(item.note || 'Type letters and numbers, for example 3x^2 − 2(x + 1). Use ^ for powers and / for fractions.')}</p>${submit}`;
+    if (a.kind === 'solutions') {
+      const rows = String(v).split(';'), cell = (r, i) => (rows[r] || '').split(',')[i] ?? '';
+      const joiner = a.vars.length === 1 ? 'or' : 'and';
+      return `<fieldset class="mans msols" ${locked ? 'disabled' : ''}><legend class="field-label">Your answer${a.dp != null ? ` (${a.dp} decimal places)` : ''}</legend>${a.sols.map((_, r) => `${r ? `<span class="msols-join">${joiner}</span>` : ''}<div class="msols-row">${a.vars.map((vn, i) => `<label><span>${esc(a.labels?.[i] ?? vn + ' =')}</span><input class="lab-input" data-sol="${r},${i}" inputmode="text" autocomplete="off" aria-label="${esc((a.labels?.[i] ?? vn + ' =') + ' (solution ' + (r + 1) + ')')}" value="${esc(cell(r, i).trim())}"></label>`).join('')}</div>`).join('')}</fieldset>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : ''}${submit}`;
+    }
+    if (a.kind === 'inequality') return `<label class="field-label" for="mText">Your answer</label><input class="lab-input mtext malg" id="mText" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(v)}" ${locked ? 'disabled' : ''}><div class="mkeys">${locked ? '' : ['<', '≤', '>', '≥', 'x', ' or '].map(k => `<button type="button" class="secondary" data-mkey="${k}">${k.trim()}</button>`).join('')}</div><p class="micro-note">${esc(item.note || 'For example x > 3 or −2 < x ≤ 5.')}</p>${submit}`;
+    if (a.kind === 'list') return `<label class="field-label" for="mText">Your answer</label><input class="lab-input mtext" id="mText" inputmode="text" autocomplete="off" value="${esc(v)}" ${locked ? 'disabled' : ''}><p class="micro-note">${esc(item.note || 'Separate the values with commas.')}</p>${submit}`;
     if (a.kind === 'ratio') return `<label class="field-label" for="mText">Your ratio</label><input class="lab-input mtext" id="mText" inputmode="text" autocomplete="off" placeholder="e.g. 3:4" value="${esc(v)}" ${locked ? 'disabled' : ''}><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey=":">:</button>'}</div>${submit}`;
     if (a.kind === 'primes') return `<label class="field-label" for="mText">Your answer</label><input class="lab-input mtext" id="mText" autocomplete="off" spellcheck="false" value="${esc(v)}" ${locked ? 'disabled' : ''}><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey=" × ">×</button><button type="button" class="secondary" data-mkey="^">x<sup>n</sup></button>'}</div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : ''}${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
     return `<label class="field-label" for="mText">Your answer${a.kind === 'decimal' && a.dp != null ? ` (${a.dp} decimal place${a.dp === 1 ? '' : 's'})` : ''}</label><div class="mint"><button type="button" class="msign" data-msign-text aria-label="Make negative" ${locked ? 'disabled' : ''}>±</button><input class="lab-input mtext" id="mText" inputmode="${a.kind === 'decimal' ? 'decimal' : 'numeric'}" autocomplete="off" value="${esc(v)}" ${locked ? 'disabled' : ''}></div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : ''}${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
@@ -167,6 +176,10 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     if (a.kind === 'standard') { if (!val('[data-sa]') && !val('[data-sn]')) return ''; return `${val('[data-sa]')} x 10^${$('[data-mexpsign]').classList.contains('on') ? '-' : ''}${val('[data-sn]')}`; }
     if (a.kind === 'power') { if (!val('[data-pb]') && !val('[data-pe]')) return ''; return `${val('[data-pb]')}^${$('[data-mexpsign]').classList.contains('on') ? '-' : ''}${val('[data-pe]')}`; }
     if (a.kind === 'interval') { if (!val('[data-ilo]') && !val('[data-ihi]')) return ''; return `${val('[data-ilo]')} ${$('[data-iop="lo"]').textContent} x ${$('[data-iop="hi"]').textContent} ${val('[data-ihi]')}`; }
+    if (a.kind === 'solutions') {
+      const rows = a.sols.map((_, r) => a.vars.map((_, i) => val(`[data-sol="${r},${i}"]`)).join(','));
+      return rows.every(r => !r.replace(/,/g, '')) ? '' : rows.join(';');
+    }
     return $('#mText')?.value ?? '';
   }
   function bindControls(item, onAnswer, onDraft) {
@@ -179,7 +192,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     $$('[data-iop]').forEach(b => (b.onclick = () => { b.textContent = b.textContent === '<' ? '≤' : '<'; b.setAttribute('aria-label', (b.dataset.iop === 'lo' ? 'Lower' : 'Upper') + ' sign: ' + b.textContent); onDraft?.(readValue(item)); }));
     const pv = () => { const p = $('#mPreview'), t = $('#mText'); if (p && t) p.innerHTML = t.value.trim() ? 'Reads as: ' + mathHTML(algebraPreview(t.value)) : ''; };
     if (item.answer.kind === 'algebra') $$('[data-mkey]').forEach(b => b.addEventListener('click', pv));
-    $$('.mfrac-in input, .mans input, #mText').forEach(i => {
+    $$('.mfrac-in input, .mans input, #mText, [data-sol]').forEach(i => {
       i.addEventListener('input', () => { onDraft?.(readValue(item)); pv(); });
       i.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); onAnswer(readValue(item)); } });
     });
@@ -193,6 +206,20 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
         return `Those factors multiply to ${prod}, not ${Object.entries(item.answer.value).reduce((t, [b, k]) => t * Number(b) ** k, 1)}. Multiply your answer out to check it.`;
       }
       return '';
+    }
+    if (item.answer.kind === 'solutions') {
+      const t = item.soTraps?.find(t => solutionsMatch(t.sols, raw, item.answer));
+      if (t) return t.why;
+      if (result.code === 'swapped') return 'Your values are the wrong way round: check which letter each one belongs to.';
+      if (result.hit && item.answer.sols.length > 1) return `${result.hit} of your solutions ${result.hit === 1 ? 'is' : 'are'} right. Substitute each one back into the equation${item.answer.vars.length > 1 ? 's' : ''} to check.`;
+      return '';
+    }
+    if (item.answer.kind === 'inequality') return item.inTraps?.find(t => inequalityMatches(t.set, raw, item.answer))?.why || '';
+    if (item.answer.kind === 'list') {
+      const bits = [];
+      if (result.missing?.length) bits.push(`missing: ${result.missing.map(n => String(n).replace('-', '−')).join(', ')}`);
+      if (result.extra?.length) bits.push(`not allowed: ${result.extra.map(n => String(n).replace('-', '−')).join(', ')}`);
+      return bits.length ? `Check the ends: < leaves the boundary out, ≤ includes it (${bits.join('; ')}).` : '';
     }
     if (item.answer.kind === 'algebra') return item.alTraps?.find(t => algebraMatches(t.expr, raw, item.answer))?.why || '';
     if (item.answer.kind === 'exact') return item.exTraps?.find(t => exactMatches(t, raw))?.why || '';
@@ -211,7 +238,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const trap = item.traps?.find(t => eq(v, F(t.v.n, t.v.d)));
     return trap ? trap.why : '';
   }
-  const FORMAT_HELP = { 'format-standard': 'Fill in both boxes: a number from 1 up to 10, and the power of 10.', 'format-power': 'Fill in both boxes: the base and the power.', 'format-interval': 'Give both end values of the interval.', 'format-exact': 'Write an exact answer such as 3π, 2√5, 4 − 2√3 or 2√3/3. Use the √ and π buttons.', 'format-ratio': 'Write a ratio with colons, such as 3:4.', primes: 'Write primes joined by × (type x or *), for example 2^3 x 5.', format: 'Write a whole number, a decimal, a fraction like 3/4, or a mixed number like 1 3/4.' };
+  const FORMAT_HELP = { 'format-standard': 'Fill in both boxes: a number from 1 up to 10, and the power of 10.', 'format-power': 'Fill in both boxes: the base and the power.', 'format-interval': 'Give both end values of the interval.', 'format-exact': 'Write an exact answer such as 3π, 2√5, 4 − 2√3 or 2√3/3. Use the √ and π buttons.', 'format-ratio': 'Write a ratio with colons, such as 3:4.', 'format-solutions': 'Fill in every box with a number, such as 3, −2, 1.5 or 7/2.', 'format-inequality': 'Write an inequality using x, such as x > 3, x ≤ −1 or −2 < x ≤ 4. Use the buttons for ≤ and ≥; join two regions with "or".', 'format-list': 'List whole numbers separated by commas, such as −1, 0, 1, 2.', primes: 'Write primes joined by × (type x or *), for example 2^3 x 5.', format: 'Write a whole number, a decimal, a fraction like 3/4, or a mixed number like 1 3/4.' };
   const invalidText = (item, res) => (res.code === 'empty' ? 'Enter an answer first.' : res.hint || FORMAT_HELP[res.code] || FORMAT_HELP[item.answer.kind === 'primes' ? 'primes' : 'format']);
   const solution = item => `<div class="msolution"><span class="eyebrow">WORKED SOLUTION</span><ol class="msteps">${item.steps.map(st => `<li>${mathHTML(st)}</li>`).join('')}</ol><p class="mfinal">Answer: <strong>${mathHTML(answerMarkup(item.answer))}</strong></p></div>`;
 
