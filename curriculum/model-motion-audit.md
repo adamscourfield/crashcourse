@@ -103,3 +103,5 @@ Ecology06:263 Science lessons plus15 Maths;90 films/85 bindings. Four worked loo
 Physics Energy01:268 Science plus15 Maths.95 films/90 bindings. Five inline process cards autoplay/Loop with reduced-motion pause; controlled experiments direct.420 tests, five full flows,35 mobile views and saved kinetic draft checked. See physics-energy-browser-evidence.json. Not specialist/physical evidence closure.
 
 Physics Energy02:273 Science and21 Maths;100 films/95 bindings. Five looped worked process cards and direct controlled models.441 tests, five full journeys,39 mobile views, saved draft, tier/course and Maths delayed-callback repair verified. See physics-transfer-browser-evidence.json.
+
+Electricity01:278 Science and25 Maths;104 films/99 bindings. Symbols direct; four process cards autoplay/Loop with reduced-motion pause.456 combined tests; five full journeys,38 mobile views, saved reverse-diode draft and independent numeric keys verified. See electricity-browser-evidence.json. Not specialist/physical evidence closure.

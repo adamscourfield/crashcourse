@@ -1,6 +1,6 @@
-import {reserveCaption} from './family-layout.js?v=20261022-electricity01r2';
-import {bounds,fitDistance,zoomLimits,particleColours} from './model-geometry.js?v=20261022-electricity01r2';
-import {moleculeDiagram} from './model-diagrams.js?v=20261022-electricity01r2';
+import {reserveCaption} from './family-layout.js?v=20261022-electricity01r3';
+import {bounds,fitDistance,zoomLimits,particleColours} from './model-geometry.js?v=20261022-electricity01r3';
+import {moleculeDiagram} from './model-diagrams.js?v=20261022-electricity01r3';
 import * as THREE from './assets/three.module.js';
 const $=s=>document.querySelector(s);
 const sceneEl=$('#scene');let renderer,scene,camera,group,decorativeRing;let angle=.25,tilt=.12,zoom=7.5,drag=false,lastX=0,lastY=0,paused=matchMedia('(prefers-reduced-motion: reduce)').matches,diagram=false;

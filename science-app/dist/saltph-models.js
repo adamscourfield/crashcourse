@@ -1,4 +1,4 @@
-import {normaliseEquation} from './redox-models.js?v=20261022-electricity01r2';
+import {normaliseEquation} from './redox-models.js?v=20261022-electricity01r3';
 export const saltPrepTasks=[{salt:'Copper(II) sulfate',acid:'Dilute sulfuric acid',solid:'Copper(II) oxide'},{salt:'Magnesium chloride',acid:'Dilute hydrochloric acid',solid:'Magnesium oxide'},{salt:'Zinc nitrate',acid:'Dilute nitric acid',solid:'Zinc carbonate'}];
 export const prepSteps=[['react','Warm acid gently; remove flame, add insoluble solid in excess'],['filter','Filter off excess unreacted solid'],['concentrate','Gently evaporate some water from filtrate'],['cool','Cool the concentrated solution to crystallise'],['dry','Separate, rinse and dry crystals']];
 export function validPrepSequence(sequence){return sequence.length===5&&sequence.every((v,i)=>v===prepSteps[i][0]);}

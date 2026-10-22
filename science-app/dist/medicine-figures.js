@@ -1,4 +1,4 @@
-import{contactNetwork,selectedCohort,doseData,candidateData}from './medicine-models.js?v=20261022-electricity01r2';
+import{contactNetwork,selectedCohort,doseData,candidateData}from './medicine-models.js?v=20261022-electricity01r3';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const txt=(x,y,t,size=22)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f5eee5" font-size="${size}">${esc(t)}</text>`;
 const frame=(body,aria)=>`<svg class="infection-diagram medicine-diagram" viewBox="0 0 560 420" role="img" aria-label="${esc(aria)}">${body}</svg>`;

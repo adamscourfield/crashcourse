@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-electricity01r2';
-import{tasksForEco5,validEco5,advanceEco5,numericEco5,policies,planTotals,planValid,pyramidValid,allocationValid,supplyCases,supplyResult,supplyValid}from './eco5-models.js?v=20261022-electricity01r2';import{showEco5}from './eco5-visuals.js?v=20261022-electricity01r2';export{showEco5};
+import{syncProcessMovie}from './process-player.js?v=20261022-electricity01r3';
+import{tasksForEco5,validEco5,advanceEco5,numericEco5,policies,planTotals,planValid,pyramidValid,allocationValid,supplyCases,supplyResult,supplyValid}from './eco5-models.js?v=20261022-electricity01r3';import{showEco5}from './eco5-visuals.js?v=20261022-electricity01r3';export{showEco5};
 export function mountEco5(l,p,root,{save,done,feedback}){let ts=tasksForEco5(l.widget.slice(5)),w=p.widget;w.eco5Task??=ts[0].id;w.eco5Drafts??={};w.eco5Passed??=[];let i=ts.findIndex(t=>t.id===w.eco5Task);if(i<0)i=0;let t=ts[i],v=w.eco5Drafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountEco5(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.eco5Passed.includes(t.id));
 syncProcessMovie(l,1,{process:false});
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

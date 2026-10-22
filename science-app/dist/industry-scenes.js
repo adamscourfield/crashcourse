@@ -1,5 +1,5 @@
-import {renderDiagram} from './visual.js?v=20261022-electricity01r2';
-import {halfLedger} from './half-equations.js?v=20261022-electricity01r2';
+import {renderDiagram} from './visual.js?v=20261022-electricity01r3';
+import {halfLedger} from './half-equations.js?v=20261022-electricity01r3';
 const txt=(x,y,s,size=14)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f8f6f2" font-family="sans-serif" font-size="${size}">${s}</text>`;
 export function showIndustry(kind='cell',result='',equation=''){
  if(kind==='half'){const ledger=halfLedger(equation);let body='<p class="diagram-caption">Atom counts and total charge must match on both sides.</p>';if(ledger){const elements=[...new Set(ledger.flatMap(r=>Object.keys(r.atoms)))];body=`<table class="aqueous-observations"><caption>Your balance ledger</caption><thead><tr><th>Count</th><th>Left</th><th>Right</th></tr></thead><tbody>${elements.map(e=>`<tr><th>${e} atoms</th><td>${ledger[0].atoms[e]||0}</td><td>${ledger[1].atoms[e]||0}</td></tr>`).join('')}<tr><th>Total charge</th><td>${ledger[0].charge}</td><td>${ledger[1].charge}</td></tr></tbody></table><p class="diagram-caption">Matching totals are necessary. The species and electrode reaction must also be correct.</p>`;}else if(equation)body='<p class="diagram-caption">Use chemical symbols, whole-number coefficients, an arrow and e−. This ledger supports the species used in this lesson.</p>';
