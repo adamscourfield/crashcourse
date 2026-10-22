@@ -1,5 +1,5 @@
-import {renderDiagram} from './visual.js?v=20261022-electricity03r2';
-import {aqueousCases,aqueousProducts} from './aqueous-models.js?v=20261022-electricity03r2';
+import {renderDiagram} from './visual.js?v=20261022-matter01r3';
+import {aqueousCases,aqueousProducts} from './aqueous-models.js?v=20261022-matter01r3';
 const sub=s=>s.replace(/2/g,'₂');
 const text=(x,y,s,size=13,c='#f8f6f2')=>`<text x="${x}" y="${y}" text-anchor="middle" fill="${c}" font-size="${size}" font-family="sans-serif">${s}</text>`;
 export function showAqueous(kind='water',t=aqueousCases[0],reveal=false){

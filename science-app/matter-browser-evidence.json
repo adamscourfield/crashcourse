@@ -1,0 +1,296 @@
+{
+  "date": "2026-10-22",
+  "lessons": [
+    {
+      "lesson": "science.physics.electricity.static-charge",
+      "score": "6/6",
+      "complete": true
+    },
+    {
+      "lesson": "science.physics.electricity.static-forces",
+      "score": "6/6",
+      "complete": true
+    },
+    {
+      "lesson": "science.physics.electricity.electric-fields",
+      "score": "6/6",
+      "complete": true
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.density",
+      "score": "6/6",
+      "complete": true
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.states",
+      "score": "6/6",
+      "complete": true
+    }
+  ],
+  "mobile": [
+    {
+      "lesson": "science.physics.electricity.static-charge",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-charge",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-charge",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-charge",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-charge",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-charge",
+      "task": "calculate",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-charge",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-forces",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-forces",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-forces",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-forces",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-forces",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-forces",
+      "task": "evidence",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.static-forces",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.electric-fields",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.electric-fields",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.electric-fields",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.electric-fields",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.electric-fields",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.electric-fields",
+      "task": "sequence",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.electric-fields",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.density",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.density",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.density",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.density",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.density",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.density",
+      "task": "calculate",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.density",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.states",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.states",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.states",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.states",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.states",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.states",
+      "task": "sequence",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.states",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    }
+  ],
+  "wrongPaths": [
+    "premature progression",
+    "comparison",
+    "numeric value and reason",
+    "sequence order",
+    "numeric/qualitative predictions",
+    "practice retries",
+    "universal interpretation cannot complete"
+  ],
+  "resume": "negative source/far/wrong outward-strong survives reload, hidden Trilogy/Foundation and back",
+  "courseScopes": "Electricity18 separate/15 Trilogy; Particle2 both; RP5 Physics/RP17 Trilogy source notes",
+  "visualFix": "Diagram/movie SVG gradient namespaces separated; shaded particles inspected; charge counts include in-flight electron",
+  "maths": "Course map Number15/Algebra15 preserved; source/cache untouched,30lessons78skills; Science restores",
+  "limitations": "Technical QA is not specialist review, unrestricted drawings/writing, real practical or full device/accessibility certification."
+}

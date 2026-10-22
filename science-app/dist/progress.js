@@ -1,5 +1,5 @@
-import {validHalfEquation} from './half-equations.js?v=20261022-electricity03r2';
-import {migrateTopicState,lessonEligible} from './registry.js?v=20261022-electricity03r2';
+import {validHalfEquation} from './half-equations.js?v=20261022-matter01r3';
+import {migrateTopicState,lessonEligible} from './registry.js?v=20261022-matter01r3';
 export const STORAGE_KEY='crash-course-v2';
 export const subjects=[{id:'science',name:'Science',course:'AQA GCSE Science',status:'available',description:'Biology, Chemistry and Physics'},{id:'maths',name:'Maths',course:'Edexcel GCSE Mathematics',status:'available',description:'Number and Algebra: twenty-one lessons'},{id:'english-language',name:'English Language',course:'GCSE English Language',status:'planned',description:'Lessons coming later'},{id:'english-literature',name:'English Literature',course:'GCSE English Literature',status:'planned',description:'Lessons coming later'},{id:'history',name:'History',course:'GCSE History',status:'planned',description:'Lessons coming later'},{id:'geography',name:'Geography',course:'GCSE Geography',status:'planned',description:'Lessons coming later'}];
 export function freshState(){return {version:2,subject:'science',route:'combined',tier:'Foundation',lessonId:'particles',lessons:{},concepts:{},assessment:null};}
