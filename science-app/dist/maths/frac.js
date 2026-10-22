@@ -62,7 +62,7 @@ export function parseNumber(raw) {
   }
   if ((m = s.match(/^(-)?\s*(\d*)\.(\d+)$/))) {
     const d = 10 ** m[3].length, n = Number((m[2] || '0') + m[3]);
-    return { value: F(n * (m[1] ? -1 : 1), d), shape: { kind: 'decimal' } };
+    return { value: F(n * (m[1] ? -1 : 1), d), shape: { kind: 'decimal', places: m[3].length, digits: ((m[2] || '') + m[3]).replace(/^0+/, '') } };
   }
   return null;
 }
@@ -73,3 +73,19 @@ export function inSimplestForm(shape) {
   if (shape.kind === 'mixed') return shape.properPart && gcd(shape.n, shape.d) === 1 && shape.n > 0;
   return gcd(shape.n, shape.d) === 1 && shape.d !== 1;
 }
+
+/** Terminating decimal text for a fraction whose denominator divides a power of 10 (null otherwise). */
+export function decText(f, places = null) {
+  let d = f.d, k = 0;
+  while (d % 10 === 0) { d /= 10; k++; }
+  while (d % 2 === 0) { d /= 2; k++; }
+  while (d % 5 === 0) { d /= 5; k++; }
+  if (d !== 1) return null;
+  const P = places ?? k;
+  const scaled = Math.round((Math.abs(f.n) * 10 ** P) / f.d);
+  let str = String(scaled).padStart(P + 1, '0');
+  if (P) str = str.slice(0, -P) + '.' + str.slice(-P);
+  return (f.n < 0 ? '−' : '') + str;
+}
+/** Exact rational from a decimal string such as "3.25" or "-0.04". */
+export function D(text) { const p = parseNumber(String(text)); if (!p) throw new Error('bad decimal ' + text); return p.value; }

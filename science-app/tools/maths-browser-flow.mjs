@@ -28,26 +28,45 @@ const feedback = () => page.locator('#mFeedback').innerText();
 const cont = () => page.click('#mContinue');
 const shot = name => page.screenshot({ path: `${OUT}/${name}.png`, fullPage: false });
 
+const g = (x, y) => (y ? g(y, x % y) : Math.abs(x));
+function decText(n, d, places = null) {
+  let dd = d, k = 0; while (dd % 10 === 0) { dd /= 10; k++; } while (dd % 2 === 0) { dd /= 2; k++; } while (dd % 5 === 0) { dd /= 5; k++; }
+  if (dd !== 1) return null;
+  const P = places ?? k, sc = Math.round((Math.abs(n) * 10 ** P) / d);
+  let t = String(sc).padStart(P + 1, '0'); if (P) t = t.slice(0, -P) + '.' + t.slice(-P);
+  return (n < 0 ? '-' : '') + t;
+}
 function rawFor(a) {
   if (a.kind === 'choice') return String(a.answer);
   if (a.kind === 'integer') return String(a.value);
+  if (a.kind === 'decimal') { const v = Math.abs(a.value.n / a.value.d); const p = a.dp ?? (a.sf != null && v ? Math.max(0, a.sf - 1 - Math.floor(Math.log10(v) + 1e-12)) : null); return decText(a.value.n, a.value.d, p); }
+  if (a.kind === 'standard') return `${decText(a.a.n, a.a.d)}|${a.n}`;
+  if (a.kind === 'power') return `${a.base}|${a.exp}`;
+  if (a.kind === 'interval') return `${decText(a.lo.n, a.lo.d)}|${a.loIn ? '≤' : '<'}|${a.hiIn ? '≤' : '<'}|${decText(a.hi.n, a.hi.d)}`;
   if (a.kind === 'primes') return Object.entries(a.value).map(([p, k]) => (k > 1 ? `${p}^${k}` : p)).join(' x ');
-  const g = (x, y) => (y ? g(y, x % y) : Math.abs(x));
   let { n, d } = a.value; const h = g(n, d); n /= h; d /= h;
   if (d === 1) return String(n);
   const neg = n < 0, A = Math.abs(n);
   if (a.form === 'mixed' && A > d) return `${neg ? '-' : ''}${Math.floor(A / d)} ${A % d}/${d}`;
   return `${neg ? '-' : ''}${A}/${d}`;
 }
+async function setSign(sel, neg) { const on = await page.locator(sel).evaluate(e => e.classList.contains('on')); if (on !== neg) await page.click(sel); }
 async function enter(item, raw) {
   const a = item.answer;
   if (a.kind === 'choice') return page.click(`[data-mchoice="${raw}"]`);
+  if (a.kind === 'standard') { const [m, n] = raw.split('|'); await page.fill('[data-sa]', m); await setSign('[data-mexpsign]', n.startsWith('-')); await page.fill('[data-sn]', n.replace('-', '')); return page.click('#mSubmit'); }
+  if (a.kind === 'power') { const [b, e] = raw.split('|'); await page.fill('[data-pb]', b); await setSign('[data-mexpsign]', e.startsWith('-')); await page.fill('[data-pe]', e.replace('-', '')); return page.click('#mSubmit'); }
+  if (a.kind === 'interval') {
+    const [lo, o1, o2, hi] = raw.split('|');
+    await page.fill('[data-ilo]', lo); await page.fill('[data-ihi]', hi);
+    for (const [k, o] of [['lo', o1], ['hi', o2]]) if ((await page.locator(`[data-iop="${k}"]`).innerText()) !== o) await page.click(`[data-iop="${k}"]`);
+    return page.click('#mSubmit');
+  }
   if (a.kind === 'fraction') {
-    const neg = raw.startsWith('-'); const r = raw.replace(/^-/, '');
+    const neg = raw.startsWith('-'), r = raw.replace(/^-/, '');
     let w = '', n = '', d = '';
     if (r.includes('/')) { const m = r.match(/^(?:(\d+) )?(\d+)\/(\d+)$/); [w, n, d] = [m[1] || '', m[2], m[3]]; } else w = r;
-    const on = await page.locator('[data-msign]').evaluate(e => e.classList.contains('on'));
-    if (on !== neg) await page.click('[data-msign]');
+    await setSign('[data-msign]', neg);
     await page.fill('[data-mw]', w); await page.fill('[data-mn]', n); await page.fill('[data-md]', d);
     return page.click('#mSubmit');
   }
@@ -76,7 +95,7 @@ await page.waitForSelector('#mH1');
 ok((await page.locator('#mH1').innerText()) === 'Negative numbers', 'maths opens on lesson 1 Negative numbers');
 ok(await page.locator('#route').isHidden(), 'science pathway select hidden in maths');
 ok((await page.locator('#courseName').innerText()).includes('Edexcel'), 'sidebar names Edexcel course');
-ok((await page.locator('#sideProgress').innerText()) === '0 / 5', 'sidebar shows 0 / 5 maths lessons');
+ok((await page.locator('#sideProgress').innerText()) === '0 / 10', 'sidebar shows 0 / 10 maths lessons');
 await shot('m01-discover');
 
 // ── discover: reveal steps and read all cards ──
@@ -183,7 +202,7 @@ ok((await page.locator('dialog h2').innerText()).startsWith('10 / 10'), 'retake 
 ok((await page.locator('dialog').innerText()).includes('Lesson complete'), 'lesson completes');
 s = await mstate();
 ok(s.lessons['maths.number.negatives'].complete && s.lessons['maths.number.negatives'].best === 100, 'completion and best score saved');
-ok((await page.locator('#sideProgress').innerText()) === '1 / 5', 'sidebar progress 1 / 5');
+ok((await page.locator('#sideProgress').innerText()) === '1 / 10', 'sidebar progress 1 / 10');
 await page.click('#mrNext');
 ok((await page.locator('#mH1').innerText()) === 'Order of operations and inverses', 'next lesson opens');
 
@@ -286,7 +305,7 @@ await shot('m10-fraction-practice');
 await page.click('#assessmentButton');
 await page.click('#maBegin');
 s = await mstate();
-ok(s.runs.assessment.queue.length === 13, 'assessment samples all 13 skills');
+ok(s.runs.assessment.queue.length === 26, 'assessment samples all 26 skills');
 await enter(s.runs.assessment.queue[0], rawFor(s.runs.assessment.queue[0].answer));
 await page.reload(); await page.waitForSelector('#mH1');
 ok((await page.locator('#mH1').innerText()) === 'Topic assessment', 'unfinished assessment resumes after reload');

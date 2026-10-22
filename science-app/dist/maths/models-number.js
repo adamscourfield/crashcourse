@@ -585,4 +585,4 @@ function mountFactorTree(ctx) {
 
 export const MODELS = { negatives: mountNegatives, order: mountOrder, 'fraction-bars': mountFractionBars, 'fraction-area': mountFractionArea, 'factor-tree': mountFactorTree };
 export function mountModel(kind, ctx) { (MODELS[kind] || (() => { ctx.body.textContent = 'Model unavailable.'; }))(ctx); }
-export { numberLine, barSVG, areaSVG, treeSVG, vennSVG, nextOp, reduce, tokens };
+export { numberLine, barSVG, areaSVG, treeSVG, vennSVG, nextOp, reduce, tokens, C, btn, progressDots };

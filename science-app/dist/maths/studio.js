@@ -2,11 +2,12 @@
 // spaced interleaved review and topic assessment. Owns its own saved state (MATHS_KEY) so it
 // can never alter science progress.
 import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r1';
-import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES } from './answers.js?v=20261022-maths-r1';
-import { parseNumber, F, eq, normalise } from './frac.js?v=20261022-maths-r1';
-import { generate, skillById } from './skills-number.js?v=20261022-maths-r1';
+import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r1';
+import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r1';
+import { generate, skillById } from './skills.js?v=20261022-maths-r1';
 import { orderedLessons, mathsTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r1';
 import { visual, mountModel } from './models-number.js?v=20261022-maths-r1';
+import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r1';
 import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r1';
 import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r1';
 
@@ -83,7 +84,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const c = l.learn[p.card];
     p.reveal ??= {};
     const shown = p.reveal[p.card] ?? 0;
-    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual)}</div>`;
+    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual) || visual2(c.visual)}</div>`;
     $('#mTitle').textContent = c.title;
     const pre = p.card === 0 && l.prerequisites?.length ? `<div class="prerequisites"><span>Prior learning:</span>${l.prerequisites.map(id => `<button class="text-button" data-mpre="${id}">${esc(orderedLessons.find(x => x.id === id)?.title || id)}</button>`).join('')}</div>` : '';
     $('#mBody').innerHTML = `${pre}<p>${mathHTML(c.text)}</p><div class="mexample"><div class="mexample-q"><span class="eyebrow">EXAMPLE</span><p>${mathHTML(c.example.prompt)}</p></div><ol class="msteps">${c.example.steps.map((st, i) => `<li ${i < shown ? '' : 'hidden'}>${mathHTML(st)}</li>`).join('')}</ol>${shown < c.example.steps.length ? `<button class="secondary" id="mReveal">${shown ? 'Next step' : 'Try it, then show the first step'}</button>` : ''}</div><div class="reading-dots">${l.learn.map((_, i) => `<button data-mcard="${i}" aria-label="Explanation ${i + 1}" class="${i === p.card ? 'current' : ''}">${i + 1}</button>`).join('')}</div>`;
@@ -97,7 +98,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
   function renderInvestigate(l, p) {
     $('#mTitle').textContent = '';
     $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
-    mountModel(l.model, {
+    (MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
       panel: $('#mPanel'), body: $('#mBody'), w: p.widget,
       save, feedback, setTitle: t => ($('#mTitle').textContent = t),
       done: () => { if (!p.widgetDone) { p.widgetDone = true; save(); render(); } $('#mHint').textContent = 'Complete ✓'; },
@@ -117,8 +118,25 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       const d = sh.kind === 'mixed' || sh.kind === 'proper' || sh.kind === 'improper' ? sh.d : '';
       return `<fieldset class="mfrac-in" ${locked ? 'disabled' : ''}><legend class="field-label">Your answer${a.form === 'mixed' ? ' (whole number box for a mixed number)' : ''}</legend><button type="button" class="msign ${neg ? 'on' : ''}" data-msign aria-pressed="${neg}" aria-label="Negative">−</button><input class="lab-input mwhole" data-mw inputmode="numeric" autocomplete="off" aria-label="Whole number (optional)" placeholder="" value="${esc(whole)}"><span class="mfrac-stack"><input class="lab-input" data-mn inputmode="numeric" autocomplete="off" aria-label="Numerator" value="${esc(n)}"><i aria-hidden="true"></i><input class="lab-input" data-md inputmode="numeric" autocomplete="off" aria-label="Denominator" value="${esc(d)}"></span></fieldset>${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
     }
+    const dec = f => (f ? decText(f) ?? `${f.n}/${f.d}` : '');
+    const submit = locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>';
+    if (a.kind === 'standard') {
+      const p = parseStandard(v) || {};
+      const neg = (p.n ?? 0) < 0;
+      return `<fieldset class="mans mstd" ${locked ? 'disabled' : ''}><legend class="field-label">Your answer in standard form</legend><input class="lab-input" data-sa inputmode="decimal" autocomplete="off" aria-label="Number from 1 up to 10" value="${esc(p.a ? dec(p.a) : '')}"><span class="mtimes">× 10</span><span class="mexp"><button type="button" class="msign ${neg ? 'on' : ''}" data-mexpsign aria-pressed="${neg}" aria-label="Negative power">−</button><input class="lab-input" data-sn inputmode="numeric" autocomplete="off" aria-label="Power of 10" value="${esc(p.n !== undefined ? Math.abs(p.n) : '')}"></span></fieldset>${submit}`;
+    }
+    if (a.kind === 'power') {
+      const p = parsePower(v) || {};
+      const neg = (p.exp ?? 0) < 0;
+      return `<fieldset class="mans mpow" ${locked ? 'disabled' : ''}><legend class="field-label">Your answer as a single power</legend><input class="lab-input" data-pb inputmode="numeric" autocomplete="off" aria-label="Base" value="${esc(p.base ?? '')}"><span class="mexp"><button type="button" class="msign ${neg ? 'on' : ''}" data-mexpsign aria-pressed="${neg}" aria-label="Negative power">−</button><input class="lab-input" data-pe inputmode="numeric" autocomplete="off" aria-label="Power" value="${esc(p.exp !== undefined ? Math.abs(p.exp) : '')}"></span></fieldset>${submit}`;
+    }
+    if (a.kind === 'interval') {
+      const p = parseInterval(v) || {};
+      const op = inc => (inc ? '≤' : '<');
+      return `<fieldset class="mans mint-iv" ${locked ? 'disabled' : ''}><legend class="field-label">Your error interval</legend><input class="lab-input" data-ilo inputmode="decimal" autocomplete="off" aria-label="Lower bound" value="${esc(p.lo ? dec(p.lo) : '')}"><button type="button" class="msign mop" data-iop="lo" aria-label="Lower sign: ${op(p.loIn)}">${op(p.loIn)}</button><span class="mvar">x</span><button type="button" class="msign mop" data-iop="hi" aria-label="Upper sign: ${op(p.hiIn)}">${op(p.hiIn)}</button><input class="lab-input" data-ihi inputmode="decimal" autocomplete="off" aria-label="Upper bound" value="${esc(p.hi ? dec(p.hi) : '')}"></fieldset><p class="micro-note">Tap a sign to switch between &lt; and ≤.</p>${submit}`;
+    }
     if (a.kind === 'primes') return `<label class="field-label" for="mText">Your answer</label><input class="lab-input mtext" id="mText" autocomplete="off" spellcheck="false" value="${esc(v)}" ${locked ? 'disabled' : ''}><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey=" × ">×</button><button type="button" class="secondary" data-mkey="^">x<sup>n</sup></button>'}</div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : ''}${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
-    return `<label class="field-label" for="mText">Your answer</label><div class="mint"><button type="button" class="msign" data-msign-text aria-label="Make negative" ${locked ? 'disabled' : ''}>±</button><input class="lab-input mtext" id="mText" inputmode="numeric" autocomplete="off" value="${esc(v)}" ${locked ? 'disabled' : ''}></div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : ''}${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
+    return `<label class="field-label" for="mText">Your answer${a.kind === 'decimal' && a.dp != null ? ` (${a.dp} decimal place${a.dp === 1 ? '' : 's'})` : ''}</label><div class="mint"><button type="button" class="msign" data-msign-text aria-label="Make negative" ${locked ? 'disabled' : ''}>±</button><input class="lab-input mtext" id="mText" inputmode="${a.kind === 'decimal' ? 'decimal' : 'numeric'}" autocomplete="off" value="${esc(v)}" ${locked ? 'disabled' : ''}></div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : ''}${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
   }
   function readValue(item) {
     const a = item.answer;
@@ -128,6 +146,10 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       if (!n && !d) return (neg && w ? '-' : '') + w;
       return `${neg ? '-' : ''}${w ? w + ' ' : ''}${n}/${d}`;
     }
+    const val = sel => ($(sel)?.value ?? '').trim();
+    if (a.kind === 'standard') { if (!val('[data-sa]') && !val('[data-sn]')) return ''; return `${val('[data-sa]')} x 10^${$('[data-mexpsign]').classList.contains('on') ? '-' : ''}${val('[data-sn]')}`; }
+    if (a.kind === 'power') { if (!val('[data-pb]') && !val('[data-pe]')) return ''; return `${val('[data-pb]')}^${$('[data-mexpsign]').classList.contains('on') ? '-' : ''}${val('[data-pe]')}`; }
+    if (a.kind === 'interval') { if (!val('[data-ilo]') && !val('[data-ihi]')) return ''; return `${val('[data-ilo]')} ${$('[data-iop="lo"]').textContent} x ${$('[data-iop="hi"]').textContent} ${val('[data-ihi]')}`; }
     return $('#mText')?.value ?? '';
   }
   function bindControls(item, onAnswer, onDraft) {
@@ -136,7 +158,9 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     $('[data-msign]')?.addEventListener('click', e => { e.currentTarget.classList.toggle('on'); e.currentTarget.setAttribute('aria-pressed', e.currentTarget.classList.contains('on')); onDraft?.(readValue(item)); });
     $('[data-msign-text]')?.addEventListener('click', () => { const i = $('#mText'); i.value = i.value.trim().startsWith('-') || i.value.trim().startsWith('−') ? i.value.trim().slice(1) : '-' + i.value.trim(); onDraft?.(i.value); i.focus(); });
     $$('[data-mkey]').forEach(b => (b.onclick = () => { const i = $('#mText'); const at = i.selectionStart ?? i.value.length; i.value = i.value.slice(0, at) + b.dataset.mkey + i.value.slice(i.selectionEnd ?? at); i.focus(); i.selectionStart = i.selectionEnd = at + b.dataset.mkey.length; onDraft?.(i.value); }));
-    $$('.mfrac-in input, #mText').forEach(i => {
+    $('[data-mexpsign]')?.addEventListener('click', e => { e.currentTarget.classList.toggle('on'); e.currentTarget.setAttribute('aria-pressed', e.currentTarget.classList.contains('on')); onDraft?.(readValue(item)); });
+    $$('[data-iop]').forEach(b => (b.onclick = () => { b.textContent = b.textContent === '<' ? '≤' : '<'; b.setAttribute('aria-label', (b.dataset.iop === 'lo' ? 'Lower' : 'Upper') + ' sign: ' + b.textContent); onDraft?.(readValue(item)); }));
+    $$('.mfrac-in input, .mans input, #mText').forEach(i => {
       i.addEventListener('input', () => onDraft?.(readValue(item)));
       i.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); onAnswer(readValue(item)); } });
     });
@@ -151,11 +175,18 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       }
       return '';
     }
-    const p = parseNumber(raw);
-    if (!p) return '';
-    const trap = item.traps?.find(t => eq(p.value, F(t.v.n, t.v.d)));
+    if (item.answer.kind === 'interval') {
+      const iv = parseInterval(raw);
+      const t = iv && item.ivTraps?.find(t => eq(iv.lo, F(t.lo.n, t.lo.d)) && eq(iv.hi, F(t.hi.n, t.hi.d)));
+      return t ? t.why : '';
+    }
+    const v = answerValue(item.answer, raw);
+    if (!v) return '';
+    const trap = item.traps?.find(t => eq(v, F(t.v.n, t.v.d)));
     return trap ? trap.why : '';
   }
+  const FORMAT_HELP = { 'format-standard': 'Fill in both boxes: a number from 1 up to 10, and the power of 10.', 'format-power': 'Fill in both boxes: the base and the power.', 'format-interval': 'Give both end values of the interval.', primes: 'Write primes joined by × (type x or *), for example 2^3 x 5.', format: 'Write a whole number, a decimal, a fraction like 3/4, or a mixed number like 1 3/4.' };
+  const invalidText = (item, res) => (res.code === 'empty' ? 'Enter an answer first.' : FORMAT_HELP[res.code] || FORMAT_HELP[item.answer.kind === 'primes' ? 'primes' : 'format']);
   const solution = item => `<div class="msolution"><span class="eyebrow">WORKED SOLUTION</span><ol class="msteps">${item.steps.map(st => `<li>${mathHTML(st)}</li>`).join('')}</ol><p class="mfinal">Answer: <strong>${mathHTML(answerMarkup(item.answer))}</strong></p></div>`;
 
   /* ───────── practise ───────── */
@@ -206,7 +237,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     bindControls(item, value => {
       if (pr.answer) return;
       const res = mark(item.answer, value);
-      if (res.status === 'invalid') { feedback(res.code === 'empty' ? 'Enter an answer first.' : item.answer.kind === 'primes' ? 'Write primes joined by × (type x or *), for example 2^3 x 5.' : 'Write a whole number, a fraction like 3/4, or a mixed number like 1 3/4.', true); return; }
+      if (res.status === 'invalid') { feedback(invalidText(item, res), true); return; }
       const correct = res.status === 'correct';
       let event = null;
       if ((pr.mode || target.mode) === 'skill') event = recordPractice(skillState(s, item.skill), skillById[item.skill], s.tier, { correct, assisted: pr.assisted }).event;
@@ -247,7 +278,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     bindControls(item, value => {
       if (c.answers[item.id] !== undefined) return;
       const res = mark(item.answer, value);
-      if (res.status === 'invalid') { feedback(res.code === 'empty' ? 'Enter an answer first.' : 'That answer is not in a form that can be read. Check the format and try again.', true); return; }
+      if (res.status === 'invalid') { feedback(invalidText(item, res), true); return; }
       c.answers[item.id] = value;
       save(); render(); feedback('Answer recorded.');
       $('#mContinue')?.focus();
@@ -402,7 +433,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     bindControls(item, value => {
       if (run.answers[item.id] !== undefined) return;
       const res = mark(item.answer, value);
-      if (res.status === 'invalid') { feedback(res.code === 'empty' ? 'Enter an answer first.' : 'That answer is not in a form that can be read. Check the format and try again.', true); return; }
+      if (res.status === 'invalid') { feedback(invalidText(item, res), true); return; }
       run.answers[item.id] = value;
       const k = skillState(s, item.skill), ok = res.status === 'correct';
       if (assessing) { if (!ok) flagForRecall(k); }

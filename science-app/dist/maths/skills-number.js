@@ -5,13 +5,13 @@
 // traps: wrong values that reveal a specific misconception, each with targeted feedback.
 import { rng, int, pick, shuffled, intExcept } from './rng.js?v=20261022-maths-r1';
 import { F, add, sub, mul, div, eq, gcd, lcm, num, fracMarkup, fromMixed, mixedParts } from './frac.js?v=20261022-maths-r1';
-import { isPrime, primeFactors, primesMarkup } from './answers.js?v=20261022-maths-r1';
+import { isPrime, primeFactors, primesMarkup, specValue } from './answers.js?v=20261022-maths-r1';
 
 const t = n => (n < 0 ? `(${num(n)})` : String(n)); // operand after an operator
 const fm = (f, mixed = false) => fracMarkup(f, { mixed });
 const Fx = (n, d) => F(n, d);
-function make(skill, level, seed, o) {
-  const target = o.answer.kind === 'integer' ? F(o.answer.value) : o.answer.kind === 'fraction' ? F(o.answer.value.n, o.answer.value.d) : null;
+export function make(skill, level, seed, o) {
+  const target = ['integer', 'fraction', 'decimal', 'standard', 'power'].includes(o.answer.kind) ? specValue(o.answer) : null;
   const seen = new Set();
   const traps = (o.traps || []).filter(tr => {
     if (tr.v === null || tr.v === undefined || !target) return false;

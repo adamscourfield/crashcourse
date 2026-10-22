@@ -5,6 +5,10 @@
 //   {kind:'fraction', value:{n,d}, form:'simplest'|'mixed'|'improper'}
 //   {kind:'primes', value:{2:3, 3:1}}           product of prime powers, any order/notation
 //   {kind:'choice', options:[markup...], answer:index}
+//   {kind:'decimal', value:{n,d}, dp?, sf?}      terminating decimal; dp/sf demand that many written places/figures
+//   {kind:'standard', a:{n,d}, n}               A × 10^n with 1 ≤ |A| < 10
+//   {kind:'power', base, exp}                   a single power such as 5^7 or 2^-3
+//   {kind:'interval', lo:{n,d}, hi:{n,d}, loIn, hiIn}   error interval such as 4.25 ≤ x < 4.35
 //
 // mark() returns {status, code}. status is one of:
 //   'correct'   - full marks
@@ -13,7 +17,7 @@
 //                 for mastery, as it would lose the final mark in an exam.
 //   'wrong'     - wrong value
 //   'invalid'   - could not be read; nothing is recorded and the student fixes the format
-import { F, eq, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts } from './frac.js?v=20261022-maths-r1';
+import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r1';
 
 export function isPrime(n) {
   if (!Number.isInteger(n) || n < 2) return false;
@@ -50,6 +54,46 @@ export function parsePrimeProduct(raw) {
   return out;
 }
 
+const SUPS = { '⁻': '-', '−': '-' };
+const supToCaret = t => t.replace(/([⁰¹²³⁴⁵⁶⁷⁸⁹⁻]+)/g, m => '^' + [...m].map(c => SUP[c] ?? SUPS[c] ?? c).join(''));
+const pow10 = n => (n >= 0 ? F(10 ** n) : F(1, 10 ** -n));
+
+/** Parse "3.2 × 10^5", "3.2x10^-4", "3.2 * 10^(−4)", "3.2e5" → {a, n}; null if not of that shape. */
+export function parseStandard(raw) {
+  let t = supToCaret(normalise(raw)).toLowerCase().replace(/\s+/g, '');
+  let m = t.match(/^(-?\d+(?:\.\d+)?|-?\.\d+)(?:[×x*·]10\^\(?(-?\d+)\)?|e(-?\d+))$/);
+  if (!m) return null;
+  const a = parseNumber(m[1]);
+  if (!a) return null;
+  return { a: a.value, n: Number(m[2] ?? m[3]) };
+}
+/** Parse "5^7", "2^-3", "5⁷", "(-3)^4" → {base, exp}. */
+export function parsePower(raw) {
+  const t = supToCaret(normalise(raw)).replace(/\s+/g, '');
+  const m = t.match(/^\(?(-?\d+)\)?\^\(?(-?\d+)\)?$/);
+  return m ? { base: Number(m[1]), exp: Number(m[2]) } : null;
+}
+const powValue = (b, e) => (Math.abs(e) > 40 ? null : e >= 0 ? F(b ** e) : F(1, b ** -e));
+/** Parse "4.25 <= x < 4.35" (any letter, ≤ or <=) → {lo, hi, loIn, hiIn}. */
+export function parseInterval(raw) {
+  const t = normalise(raw).replace(/<=|=</g, '≤').replace(/\s+/g, '');
+  const m = t.match(/^(-?[\d.]+)(≤|<)[a-z]+(≤|<)(-?[\d.]+)$/i);
+  if (!m) return null;
+  const lo = parseNumber(m[1]), hi = parseNumber(m[4]);
+  if (!lo || !hi) return null;
+  return { lo: lo.value, hi: hi.value, loIn: m[2] === '≤', hiIn: m[3] === '≤' };
+}
+
+/** The numeric value a raw answer represents (for trap matching), or null. */
+export function answerValue(spec, raw) {
+  if (spec.kind === 'standard') { const s = parseStandard(raw); if (s) return mul(s.a, pow10(s.n)); }
+  if (spec.kind === 'power') { const p = parsePower(raw); if (p) return powValue(p.base, p.exp); }
+  if (spec.kind === 'interval' || spec.kind === 'choice' || spec.kind === 'primes') return null;
+  const p = parseNumber(raw);
+  return p ? p.value : null;
+}
+export const specValue = spec => (spec.kind === 'integer' ? F(spec.value) : spec.kind === 'standard' ? mul(F(spec.a.n, spec.a.d), pow10(spec.n)) : spec.kind === 'power' ? powValue(spec.base, spec.exp) : F(spec.value.n, spec.value.d));
+
 export function mark(spec, raw) {
   if (spec.kind === 'choice') {
     if (raw === null || raw === undefined || raw === '') return { status: 'invalid', code: 'empty' };
@@ -68,7 +112,38 @@ export function mark(spec, raw) {
     return { status: 'wrong', code: allPrime ? 'wrong-product' : 'wrong-product-composite', given: f };
   }
 
+  if (spec.kind === 'interval') {
+    const iv = parseInterval(raw);
+    if (!iv) return { status: 'invalid', code: 'format-interval' };
+    const ends = eq(iv.lo, F(spec.lo.n, spec.lo.d)) && eq(iv.hi, F(spec.hi.n, spec.hi.d));
+    if (!ends) return { status: 'wrong', code: 'interval-value', given: iv };
+    return iv.loIn === spec.loIn && iv.hiIn === spec.hiIn ? { status: 'correct' } : { status: 'partial', code: 'interval-ends' };
+  }
+  if (spec.kind === 'standard') {
+    const st = parseStandard(raw), plain = st ? null : parseNumber(raw);
+    if (!st && !plain) return { status: 'invalid', code: 'format-standard' };
+    const v = st ? mul(st.a, pow10(st.n)) : plain.value;
+    if (!eq(v, specValue(spec))) return { status: 'wrong', code: 'value', given: v };
+    const A = st ? Math.abs(st.a.n / st.a.d) : null;
+    return st && A >= 1 && A < 10 ? { status: 'correct' } : { status: 'partial', code: 'want-standard' };
+  }
+  if (spec.kind === 'power') {
+    const pw = parsePower(raw), plain = pw ? null : parseNumber(raw);
+    if (!pw && !plain) return { status: 'invalid', code: 'format-power' };
+    if (pw && pw.base === spec.base && pw.exp === spec.exp) return { status: 'correct' };
+    const v = pw ? powValue(pw.base, pw.exp) : plain.value;
+    return v && eq(v, specValue(spec)) ? { status: 'partial', code: 'want-power' } : { status: 'wrong', code: 'value', given: v };
+  }
   const parsed = parseNumber(raw);
+  if (spec.kind === 'decimal') {
+    if (!parsed) return { status: 'invalid', code: 'format' };
+    if (!eq(parsed.value, specValue(spec))) return { status: 'wrong', code: 'value', given: parsed.value };
+    const sh = parsed.shape;
+    if (sh.kind !== 'decimal' && sh.kind !== 'integer') return { status: 'partial', code: 'want-decimal' };
+    if (spec.dp != null && (sh.kind === 'decimal' ? sh.places : 0) !== spec.dp) return { status: 'partial', code: 'dp-format' };
+    if (spec.sf != null && sh.kind === 'decimal' && sh.digits.length < spec.sf) return { status: 'partial', code: 'sf-format' };
+    return { status: 'correct' };
+  }
   if (!parsed && spec.kind === 'integer' && spec.allowProduct) {
     const f = parsePrimeProduct(raw);
     if (!f) return { status: 'invalid', code: 'format' };
@@ -102,7 +177,21 @@ export const PARTIAL_MESSAGES = {
   'want-mixed': 'That has the right value, but the question asks for a mixed number.',
   'want-improper': 'That has the right value, but the question asks for an improper fraction.',
   'not-all-prime': 'Those numbers multiply to the right total, but not every factor is prime. Keep splitting until only primes are left.',
+  'want-decimal': 'That has the right value, but the question asks for a decimal.',
+  'dp-format': 'That has the right value, but it needs exactly the number of decimal places asked for. Keep any final zero, such as 3.10 for 2 decimal places.',
+  'sf-format': 'That has the right value, but show all the significant figures asked for, including a final zero if there is one.',
+  'want-standard': 'That has the right value, but it is not in standard form. The first number must be at least 1 and less than 10.',
+  'want-power': 'That has the right value, but the question asks for a single power of the given base.',
+  'interval-ends': 'The two end values are right, but check the signs. The lower bound is included (≤); the upper bound is not (<), because it would round up.',
 };
+
+/** Written decimal places a decimal answer needs (dp, or enough to show sf significant figures). */
+export function decimalPlacesFor(spec) {
+  if (spec.dp != null) return spec.dp;
+  if (spec.sf == null) return null;
+  const v = Math.abs(spec.value.n / spec.value.d);
+  return v === 0 ? null : Math.max(0, spec.sf - 1 - Math.floor(Math.log10(v) + 1e-12));
+}
 
 /** Correct answer as render.js markup. */
 export function answerMarkup(spec) {
@@ -112,6 +201,10 @@ export function answerMarkup(spec) {
     return fracMarkup(f, { mixed: spec.form === 'mixed' });
   }
   if (spec.kind === 'primes') return primesMarkup(spec.value);
+  if (spec.kind === 'decimal') return decText(F(spec.value.n, spec.value.d), decimalPlacesFor(spec)) ?? fracMarkup(F(spec.value.n, spec.value.d));
+  if (spec.kind === 'standard') return `${decText(F(spec.a.n, spec.a.d))} × 10^{${num(spec.n)}}`;
+  if (spec.kind === 'power') return `${spec.base < 0 ? `(${num(spec.base)})` : spec.base}^{${num(spec.exp)}}`;
+  if (spec.kind === 'interval') return `${decText(F(spec.lo.n, spec.lo.d))} ${spec.loIn ? '≤' : '<'} x ${spec.hiIn ? '≤' : '<'} ${decText(F(spec.hi.n, spec.hi.d))}`;
   return spec.options[spec.answer];
 }
 
@@ -123,6 +216,7 @@ export function givenMarkup(spec, raw) {
     const f = parsePrimeProduct(raw);
     return f ? Object.entries(f).map(([b, k]) => (k > 1 ? `${b}^${k}` : b)).join(' × ') : normalise(raw);
   }
+  if (['standard', 'power', 'interval'].includes(spec.kind)) return normalise(raw).replace(/<=/g, '≤').replace(/\^\(?(-?\d+)\)?/g, (_, k) => `^{${k.replace('-', '−')}}`).replace(/-/g, '−').replace(/\s*[x*]\s*10/gi, ' × 10');
   const p = parseNumber(raw);
   if (!p) return normalise(raw);
   const s = p.shape, neg = p.value.n < 0 ? '−' : '';

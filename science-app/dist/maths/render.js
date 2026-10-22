@@ -18,6 +18,7 @@ function frac(inner) {
 const POW = { 2: 'squared', 3: 'cubed' };
 export function mathHTML(markup) {
   let s = esc(markup);
+  s = s.replace(/\^\{([^{}]+)\}/g, (_, k) => `<sup aria-hidden="true">${k}</sup><span class="sr"> to the power ${k.replace('/', ' over ')}</span>`);
   s = s.replace(/\{([^{}]+\/[^{}]+)\}/g, (_, inner) => frac(inner));
   s = s.replace(/\^(\d+)/g, (_, k) => `<sup aria-hidden="true">${k}</sup><span class="sr"> ${POW[k] || 'to the power ' + k}</span>`);
   return s;

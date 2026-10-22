@@ -4,14 +4,17 @@
 //   N3 priority of operations, inverse operations · N4 primes, factors, multiples, HCF/LCM,
 //   prime factorisation and the unique factorisation theorem · N8 exact calculation with fractions
 //   N12 fractions as operators.
+//   Batch 2: N6 powers/roots (Higher: estimating) · N7 indices (Higher: fractional) · N9 standard form
+//   N10 terminating/recurring decimals (Higher: recurring) · N14 estimation · N15 error intervals
+//   N16 limits of accuracy (Higher: bounds). Higher-only boundaries checked against the specification.
 // All teaching text and questions are original.
-import { skillById } from './skills-number.js?v=20261022-maths-r1';
+import { skillById } from './skills.js?v=20261022-maths-r1';
 
 const S = id => skillById[id];
 
 export const mathsTopics = [
   { id: 'maths.number', title: 'Number', short: 'Number', number: '01', status: 'partial',
-    coverage: 'Five pilot lessons cover ordering and negative numbers (N1, N2), order of operations and inverse operations (N3), fraction arithmetic and fractions as operators (N2, N8, N12) and primes, factors, multiples, HCF and LCM (N4). Remaining Number statements (N5–N16) are planned.' },
+    coverage: 'Ten lessons cover negatives, order of operations, primes, fraction and decimal arithmetic with written methods, fractions/decimals/percentages, rounding, estimation and error intervals, powers, roots and indices, and standard form (N1–N4, N6, N7, N8–N10, N12, N14–N16, partly). Listing and the product rule (N5), units (N13) and surds and π (N8) are planned.' },
 ];
 
 export const mathsCourseMap = [
@@ -157,8 +160,143 @@ export const mathsLessons = [
     checkPlan: [['maths.number.primes.identify', 1], ['maths.number.primes.identify', 2], ['maths.number.primes.factorise', 1], ['maths.number.primes.factorise', 2], ['maths.number.primes.factorise', 3], ['maths.number.primes.hcf-lcm', 1], ['maths.number.primes.hcf-lcm', 1], ['maths.number.primes.hcf-lcm', 2], ['maths.number.primes.hcf-lcm', 2], ['maths.number.primes.hcf-lcm', 3]],
     limits: 'Factor trees and Venn diagrams are recording methods. Any valid first split is accepted; the order of primes in an answer does not matter.',
   },
+  {
+    id: 'maths.number.decimals',
+    topicId: 'maths.number',
+    title: 'Decimals and written methods',
+    refs: ['N2'],
+    minutes: 45,
+    model: 'decimal-scale',
+    prerequisites: ['maths.number.negatives'],
+    big: 'Line up decimal points to add and subtract. To multiply, multiply as whole numbers, then place the point using the total number of decimal places and an estimate. To divide by a decimal, multiply both numbers by the same power of 10 until the divisor is a whole number.',
+    learn: [
+      { title: 'Line up the decimal points.', text: 'Each column holds one place value, so the decimal points must line up. Fill empty places with zeros so every number has the same number of decimal places. A whole number has its decimal point at the end: 20 is 20.00.',
+        example: { prompt: 'Work out 20 − 6.38', steps: ['Write 20 as 20.00.', '20.00 − 6.38: borrow across the zeros.', '= 13.62. Check: 13.62 + 6.38 = 20 ✓'] },
+        visual: { kind: 'columns', rows: ['20.00', '6.38'], op: '−', result: '13.62' } },
+      { title: 'Long multiplication.', text: 'Multiply by each digit of the second number in turn. When you multiply by the tens digit, you are really multiplying by a multiple of 10, so put a 0 in the units column first. Then add the rows.',
+        example: { prompt: 'Work out 347 × 26', steps: ['347 × 6 = 2082', '347 × 20 = 6940 (write 0, then 347 × 2)', '2082 + 6940 = 9022'] },
+        visual: { kind: 'columns', rows: ['347', '× 26', '2082', '6940'], op: '+', result: '9022' } },
+      { title: 'Multiplying decimals.', text: 'Ignore the decimal points and multiply the whole numbers. Then count the decimal places in both numbers together: the answer has that many. Always check with an estimate.',
+        example: { prompt: 'Work out 4.25 × 3.6', steps: ['425 × 36 = 15 300', '4.25 has 2 decimal places and 3.6 has 1: 3 in total.', '15.300 = 15.3. Estimate: 4 × 4 = 16 ✓'] },
+        visual: { kind: 'columns', rows: ['425 × 36 = 15300', '2 + 1 = 3 decimal places'], op: '', result: '15.300' } },
+      { title: 'Dividing by a decimal.', text: 'Multiplying both numbers in a division by the same amount does not change the answer, just as {6/3} = {60/30}. So multiply both by 10, 100 or 1000 until the divisor is a whole number, then use short or long division.',
+        example: { prompt: 'Work out 4.56 ÷ 0.6', steps: ['Multiply both by 10: 45.6 ÷ 6', 'Short division: 45.6 ÷ 6 = 7.6', 'Check: 7.6 × 0.6 = 4.56 ✓'] },
+        visual: { kind: 'scale', top: '4.56', bottom: '0.6', factor: 10 } },
+    ],
+    skills: [S('maths.number.decimals.add-subtract'), S('maths.number.decimals.multiply'), S('maths.number.decimals.divide')],
+    checkPlan: [['maths.number.decimals.add-subtract', 1], ['maths.number.decimals.add-subtract', 2], ['maths.number.decimals.add-subtract', 3], ['maths.number.decimals.multiply', 1], ['maths.number.decimals.multiply', 2], ['maths.number.decimals.multiply', 3], ['maths.number.decimals.divide', 1], ['maths.number.decimals.divide', 2], ['maths.number.decimals.divide', 2], ['maths.number.decimals.divide', 3]],
+    limits: 'Written methods are taught through worked examples; practice marks only the final answer, not the layout of a column method.',
+  },
+  {
+    id: 'maths.number.fdp',
+    topicId: 'maths.number',
+    title: 'Fractions, decimals and percentages',
+    refs: ['N1', 'N10', 'N12'],
+    minutes: 45,
+    model: 'fdp-line',
+    prerequisites: ['maths.number.fractions-multiply-divide', 'maths.number.decimals'],
+    big: 'Fractions, decimals and percentages are three ways of writing the same amount. To compare them, convert to one form, usually decimals. Percent means "out of 100". Higher: recurring decimals convert to fractions by multiplying by a power of 10 and subtracting.',
+    learn: [
+      { title: 'Three names for one amount.', text: '{3/8}, 0.375 and 37.5% are the same point on a number line. To turn a fraction into a decimal, divide the numerator by the denominator, or make the denominator 10, 100 or 1000. Multiply a decimal by 100 to get a percentage.',
+        example: { prompt: 'Write {3/8} as a decimal and a percentage.', steps: ['{3/8} = {375/1000} (× 125 top and bottom)', '= 0.375', '0.375 × 100 = 37.5%'] },
+        visual: { kind: 'fdpline', points: [['{3/8}', 0.375], ['0.4', 0.4], ['35%', 0.35]] } },
+      { title: 'Ordering mixed forms.', text: 'You cannot compare {3/8}, 0.38 and 37% by looking at the digits. Convert every value to a decimal (use the same number of decimal places), then compare place by place.',
+        example: { prompt: 'Order 0.38, {3/8}, 37% from smallest to largest.', steps: ['{3/8} = 0.375 and 37% = 0.37', 'Compare: 0.370, 0.375, 0.380', '37%, {3/8}, 0.38'] },
+        visual: { kind: 'fdpline', points: [['37%', 0.37], ['{3/8}', 0.375], ['0.38', 0.38]], min: 0.35, max: 0.4 } },
+      { title: 'Percentages as operators.', text: '10% is one tenth and 1% is one hundredth, so you can build any percentage from these. 35% of 80 is 10% (8) three times plus 5% (4) = 28. Over 100% gives more than you started with: 120% of 35 = 35 + 7 = 42.',
+        example: { prompt: 'Find 17.5% of 240.', steps: ['10% = 24, 5% = 12, 2.5% = 6', '17.5% = 24 + 12 + 6 = 42'] },
+        visual: { kind: 'grid100', shaded: 35, label: '35% = {35/100} = 0.35' } },
+      { title: 'Recurring decimals (Higher).', text: 'A dot over a digit means it repeats for ever: 0.4̇5̇ = 0.454545… Let x be the decimal, multiply by 10 for each recurring digit (100 here), and subtract to remove the repeating tail.',
+        example: { prompt: 'Write 0.4̇5̇ as a fraction.', steps: ['x = 0.4545…', '100x = 45.4545…', '99x = 45, so x = {45/99} = {5/11}'] },
+        visual: { kind: 'recurring', digits: '45', fraction: '{5/11}' } },
+    ],
+    skills: [S('maths.number.fdp.convert'), S('maths.number.fdp.order'), S('maths.number.fdp.percentages')],
+    checkPlan: [['maths.number.fdp.convert', 1], ['maths.number.fdp.convert', 2], ['maths.number.fdp.convert', 3], ['maths.number.fdp.order', 1], ['maths.number.fdp.order', 2], ['maths.number.fdp.percentages', 1], ['maths.number.fdp.percentages', 1], ['maths.number.fdp.percentages', 2], ['maths.number.fdp.percentages', 2], ['maths.number.fdp.percentages', 3]],
+    limits: 'Percentage change and reverse percentages are Ratio and proportion content (R9) and are not included here. Recurring decimals appear at Higher only.',
+  },
+  {
+    id: 'maths.number.rounding',
+    topicId: 'maths.number',
+    title: 'Rounding, estimation and error intervals',
+    refs: ['N14', 'N15', 'N16'],
+    minutes: 45,
+    model: 'rounding-line',
+    prerequisites: ['maths.number.decimals'],
+    big: 'Round by looking at the next digit: 5 or more rounds up. Significant figures start at the first non-zero digit. Estimate by rounding each number to 1 significant figure. A rounded value has an error interval from half a unit below (included) to half a unit above (not included). Higher: bounds combine these limits in calculations.',
+    learn: [
+      { title: 'Decimal places and significant figures.', text: 'To round, find the last digit you are keeping and look at the next one: 5 or more rounds up. Keep zeros that show the place, so 3.0952 to 2 decimal places is 3.10, not 3.1. Significant figures count from the first non-zero digit: 0.040 63 to 3 significant figures is 0.0406.',
+        example: { prompt: 'Round 34 567 to 2 significant figures.', steps: ['The first two significant figures are 3 and 4: round to the nearest 1000.', 'The next digit is 5, so round up: 35 000', 'Zeros keep the size: not 35.'] },
+        visual: { kind: 'zoom', lo: 34000, hi: 36000, step: 500, value: 34567, mark: 35000 } },
+      { title: 'Estimate to check.', text: 'Round every number to 1 significant figure, then calculate. An estimate tells you roughly what the answer should be, so it catches misplaced decimal points. Dividing by a number less than 1 makes the answer bigger.',
+        example: { prompt: 'Estimate {6.12 × 39.7/0.51}', steps: ['6.12 ≈ 6, 39.7 ≈ 40, 0.51 ≈ 0.5', '{6 × 40/0.5} = {240/0.5}', '= 480'] },
+        visual: { kind: 'columns', rows: ['6.12 → 6', '39.7 → 40', '0.51 → 0.5'], op: '', result: '480' } },
+      { title: 'Error intervals.', text: 'If x = 4.3 to 1 decimal place, x could be anything that rounds to 4.3. The smallest is 4.25 (it rounds up to 4.3), so it is included: ≤. Anything up to but not including 4.35 works, because 4.35 rounds up to 4.4: <. If a value was truncated, it was cut off, so the interval starts at the value itself.',
+        example: { prompt: 'x = 4.3 to 1 decimal place. Write the error interval.', steps: ['Half of 0.1 is 0.05.', 'Lower: 4.3 − 0.05 = 4.25 (included)', 'Upper: 4.3 + 0.05 = 4.35 (not included): 4.25 ≤ x < 4.35'] },
+        visual: { kind: 'zoom', lo: 4.2, hi: 4.4, step: 0.05, value: 4.3, interval: [4.25, 4.35] } },
+      { title: 'Bounds in calculations (Higher).', text: 'For the biggest possible sum or product, use both upper bounds. For the biggest possible difference, take the smallest possible amount away: upper bound minus lower bound. For the biggest possible quotient, divide the biggest top by the smallest bottom.',
+        example: { prompt: 'a = 6.4, b = 2.7, both to 1 decimal place. Find the upper bound of a − b.', steps: ['a < 6.45 and b ≥ 2.65', 'Upper bound of a − b = 6.45 − 2.65', '= 3.8'] },
+        visual: { kind: 'zoom', lo: 2.6, hi: 6.5, step: 0.5, value: 6.4, interval: [6.35, 6.45] } },
+    ],
+    skills: [S('maths.number.rounding.round'), S('maths.number.rounding.estimate'), S('maths.number.rounding.error-interval')],
+    checkPlan: [['maths.number.rounding.round', 1], ['maths.number.rounding.round', 2], ['maths.number.rounding.round', 3], ['maths.number.rounding.estimate', 1], ['maths.number.rounding.estimate', 2], ['maths.number.rounding.estimate', 3], ['maths.number.rounding.error-interval', 1], ['maths.number.rounding.error-interval', 2], ['maths.number.rounding.error-interval', 2], ['maths.number.rounding.error-interval', 3]],
+    limits: 'Estimates are marked against rounding each number to 1 significant figure, as the questions instruct; exam mark schemes may accept other sensible estimates. Bounds calculations appear at Higher only.',
+  },
+  {
+    id: 'maths.number.powers',
+    topicId: 'maths.number',
+    title: 'Powers, roots and indices',
+    refs: ['N6', 'N7'],
+    minutes: 45,
+    model: 'index-chips',
+    prerequisites: ['maths.number.order-of-operations'],
+    big: 'A power is repeated multiplication. When multiplying powers of the same base, add the indices; when dividing, subtract; for a power of a power, multiply. Any non-zero number to the power 0 is 1, and a negative index means a reciprocal. Higher: in a fractional index, the denominator is a root and the numerator is a power.',
+    learn: [
+      { title: 'Powers and roots.', text: '5^3 means 5 × 5 × 5 = 125, not 5 × 3. Roots undo powers: √49 = 7 because 7^2 = 49, and ∛125 = 5 because 5^3 = 125. Learn the squares to 15^2 and the cubes of 1 to 5 and 10.',
+        example: { prompt: 'Work out √81 + 2^3', steps: ['√81 = 9', '2^3 = 2 × 2 × 2 = 8', '9 + 8 = 17'] },
+        visual: { kind: 'chips', groups: [[5, 3]], caption: '5^3 = 5 × 5 × 5 = 125' } },
+      { title: 'Multiplying and dividing powers.', text: '3^4 × 3^2 is four 3s times two 3s: six 3s, so 3^6. When dividing, the 3s cancel in pairs, so 3^6 ÷ 3^2 = 3^4. These laws only work when the bases are the same.',
+        example: { prompt: 'Write {7^5 × 7^2/7^3} as a single power of 7.', steps: ['Top: 7^5 × 7^2 = 7^7', 'Divide: 7^7 ÷ 7^3 = 7^4'] },
+        visual: { kind: 'chips', groups: [[3, 4], [3, 2]], caption: '3^4 × 3^2 = 3^6' } },
+      { title: 'Powers of powers, zero and negative indices.', text: '(2^3)^4 is four lots of 2^3, so 2^12: multiply the indices. Halving down the table 2^3 = 8, 2^2 = 4, 2^1 = 2 continues to 2^0 = 1, 2^{−1} = {1/2}, 2^{−2} = {1/4}. A negative index means the reciprocal; it never makes the number negative.',
+        example: { prompt: 'Work out 4^{−2}', steps: ['4^{−2} = {1/4^2}', '= {1/16}'] },
+        visual: { kind: 'halving', base: 2, from: 3, to: -2 } },
+      { title: 'Fractional indices (Higher).', text: 'In a^{m/n}, the denominator n is a root and the numerator m is a power. Take the root first to keep numbers small. 8^{2/3} = (∛8)^2 = 2^2 = 4. A negative fractional index means the reciprocal as well.',
+        example: { prompt: 'Work out 27^{−2/3}', steps: ['∛27 = 3', '3^2 = 9', 'Negative index: reciprocal, {1/9}'] },
+        visual: { kind: 'chips', groups: [[3, 3]], caption: '27 = 3^3, so 27^{1/3} = 3' } },
+    ],
+    skills: [S('maths.number.powers.evaluate'), S('maths.number.powers.index-laws')],
+    checkPlan: [['maths.number.powers.evaluate', 1], ['maths.number.powers.evaluate', 1], ['maths.number.powers.evaluate', 2], ['maths.number.powers.evaluate', 3], ['maths.number.powers.index-laws', 1], ['maths.number.powers.index-laws', 1], ['maths.number.powers.index-laws', 2], ['maths.number.powers.index-laws', 2], ['maths.number.powers.index-laws', 3], ['maths.number.powers.index-laws', 4]],
+    limits: 'Index laws are practised with numerical bases here; algebraic indices (x^3 × x^4) follow in the Algebra strand. Estimating roots and fractional indices appear at Higher only.',
+  },
+  {
+    id: 'maths.number.standard-form',
+    topicId: 'maths.number',
+    title: 'Standard form',
+    refs: ['N9'],
+    minutes: 40,
+    model: 'sf-slider',
+    prerequisites: ['maths.number.powers', 'maths.number.rounding'],
+    big: 'Standard form writes a number as A × 10^n, where A is at least 1 and less than 10 and n is an integer. Large numbers have positive powers; numbers less than 1 have negative powers. To multiply or divide, work with the A parts and the powers separately, then adjust so A is between 1 and 10.',
+    learn: [
+      { title: 'Large numbers.', text: 'Move the decimal point until exactly one non-zero digit is in front of it. The number of places it moves is the power of 10. 8 500 000 = 8.5 × 10^6 because the point moves 6 places.',
+        example: { prompt: 'Write 8 500 000 in standard form.', steps: ['8.5 is between 1 and 10.', 'The point moves 6 places left.', '8 500 000 = 8.5 × 10^6'] },
+        visual: { kind: 'place', digits: '8500000', point: 1, n: 6 } },
+      { title: 'Small numbers.', text: 'For numbers less than 1, the point moves right, and the power is negative. 0.000 45 = 4.5 × 10^{−4}. Count the places the point moves, not the zeros.',
+        example: { prompt: 'Write 0.000 45 in standard form.', steps: ['4.5 is between 1 and 10.', 'The point moves 4 places right.', '0.000 45 = 4.5 × 10^{−4}'] },
+        visual: { kind: 'place', digits: '0.00045', point: 5, n: -4 } },
+      { title: 'Multiply and divide.', text: 'Deal with the A parts and the powers of 10 separately: multiply the A parts and add the powers (or divide and subtract). If the A part is no longer between 1 and 10, adjust it and change the power to match.',
+        example: { prompt: 'Work out (5 × 10^3) × (4 × 10^5)', steps: ['5 × 4 = 20 and 10^3 × 10^5 = 10^8', '20 × 10^8 is not standard form: 20 = 2 × 10^1', '= 2 × 10^9'] },
+        visual: { kind: 'columns', rows: ['5 × 4 = 20', '10^3 × 10^5 = 10^8', '20 × 10^8'], op: '', result: '2 × 10^9' } },
+      { title: 'Add and subtract.', text: 'You can only add the A parts when the powers match. Rewrite one number so both have the same power of 10, or convert both to ordinary numbers, then add and write the answer in standard form.',
+        example: { prompt: 'Work out 3.2 × 10^4 + 4 × 10^3', steps: ['4 × 10^3 = 0.4 × 10^4', '3.2 + 0.4 = 3.6', '= 3.6 × 10^4'] },
+        visual: { kind: 'columns', rows: ['32 000', '+ 4 000'], op: '', result: '36 000 = 3.6 × 10^4' } },
+    ],
+    skills: [S('maths.number.standard-form.convert'), S('maths.number.standard-form.calculate')],
+    checkPlan: [['maths.number.standard-form.convert', 1], ['maths.number.standard-form.convert', 2], ['maths.number.standard-form.convert', 2], ['maths.number.standard-form.convert', 3], ['maths.number.standard-form.convert', 3], ['maths.number.standard-form.calculate', 1], ['maths.number.standard-form.calculate', 1], ['maths.number.standard-form.calculate', 2], ['maths.number.standard-form.calculate', 2], ['maths.number.standard-form.calculate', 3]],
+    limits: 'Calculations here are non-calculator; calculator use of standard form (EXP keys) is not covered.',
+  },
 ];
 
 // Teaching order: primes come before fraction arithmetic, which relies on HCF/LCM.
-export const lessonOrder = ['maths.number.negatives', 'maths.number.order-of-operations', 'maths.number.primes', 'maths.number.fractions-add-subtract', 'maths.number.fractions-multiply-divide'];
+export const lessonOrder = ['maths.number.negatives', 'maths.number.order-of-operations', 'maths.number.primes', 'maths.number.fractions-add-subtract', 'maths.number.fractions-multiply-divide', 'maths.number.decimals', 'maths.number.fdp', 'maths.number.rounding', 'maths.number.powers', 'maths.number.standard-form'];
 export const orderedLessons = lessonOrder.map(id => mathsLessons.find(l => l.id === id));
