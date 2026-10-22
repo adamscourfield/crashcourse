@@ -1,4 +1,4 @@
-import{clampInherit,meiosisState}from './inherit-models.js?v=20261022-electricity02r4';
+import{clampInherit,meiosisState}from './inherit-models.js?v=20261022-electricity02r5';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const tx=(x,y,s,n=17)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f7f3ec" font-family="sans-serif" font-size="${n}">${esc(s)}</text>`;
 const line=(d,c='#b7cecf',w=3)=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round"/>`;

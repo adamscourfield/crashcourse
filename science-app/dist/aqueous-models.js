@@ -1,4 +1,4 @@
-import {formula} from './electro-models.js?v=20261022-electricity02r4';
+import {formula} from './electro-models.js?v=20261022-electricity02r5';
 export const aqueousCases=[
 {id:'nacl',name:'Sodium chloride solution',ions:['Na⁺','Cl⁻'],metal:'Na',aboveHydrogen:true,halide:'Cl',comparison:'Sodium is more reactive than hydrogen.'},
 {id:'cuso4',name:'Copper(II) sulfate solution',ions:['Cu²⁺','SO₄²⁻'],metal:'Cu',aboveHydrogen:false,halide:null,comparison:'Copper is less reactive than hydrogen.'},

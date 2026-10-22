@@ -1,5 +1,5 @@
-import{films,processFrame,clampFilm}from './process-films.js?v=20261022-electricity02r4';
-import{processDefaults}from './process-policy.js?v=20261022-electricity02r4';
+import{films,processFrame,clampFilm}from './process-films.js?v=20261022-electricity02r5';
+import{processDefaults}from './process-policy.js?v=20261022-electricity02r5';
 const $=s=>document.querySelector(s),panel=$('.scene-panel'),motion=matchMedia('(prefers-reduced-motion: reduce)');
 let active=null,context='',stage=0,position=0,playing=false,previous=0,raf=0,speed=1,lastPhase=-1,showing=false,resumeWhenVisible=false;
 const badge=document.createElement('span');badge.id='processLabel';badge.className='live-pill';badge.textContent='Process';badge.hidden=true;$('.scene-top').append(badge);
