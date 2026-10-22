@@ -19,8 +19,9 @@
 //                 for mastery, as it would lose the final mark in an exam.
 //   'wrong'     - wrong value
 //   'invalid'   - could not be read; nothing is recorded and the student fixes the format
-import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261022-maths-r3';
-import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r3';
+import { markAlgebra, algebraPreview } from './algebra.js?v=20261022-maths-r4';
+import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261022-maths-r4';
+import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r4';
 
 export function isPrime(n) {
   if (!Number.isInteger(n) || n < 2) return false;
@@ -89,15 +90,21 @@ export function parseInterval(raw) {
 
 /** The numeric value a raw answer represents (for trap matching), or null. */
 export function answerValue(spec, raw) {
+  raw = stripVar(spec, raw);
   if (spec.kind === 'standard') { const s = parseStandard(raw); if (s) return mul(s.a, pow10(s.n)); }
   if (spec.kind === 'power') { const p = parsePower(raw); if (p) return powValue(p.base, p.exp); }
-  if (['interval', 'choice', 'primes', 'exact', 'ratio'].includes(spec.kind)) return null;
+  if (['interval', 'choice', 'primes', 'exact', 'ratio', 'algebra'].includes(spec.kind)) return null;
   const p = parseNumber(raw);
   return p ? p.value : null;
 }
 export const specValue = spec => (spec.kind === 'integer' ? F(spec.value) : spec.kind === 'standard' ? mul(F(spec.a.n, spec.a.d), pow10(spec.n)) : spec.kind === 'power' ? powValue(spec.base, spec.exp) : F(spec.value.n, spec.value.d));
 
+/** Remove "x =" from a numeric answer to an equation. */
+const stripVar = (spec, raw) => (spec.var ? String(raw ?? '').replace(new RegExp('^\\s*' + spec.var + '\\s*=\\s*', 'i'), '') : raw);
+
 export function mark(spec, raw) {
+  raw = stripVar(spec, raw);
+  if (spec.kind === 'algebra') return normalise(raw) === '' ? { status: 'invalid', code: 'empty' } : markAlgebra(spec, raw);
   if (spec.kind === 'choice') {
     if (raw === null || raw === undefined || raw === '') return { status: 'invalid', code: 'empty' };
     return Number(raw) === spec.answer ? { status: 'correct' } : { status: 'wrong', code: 'choice' };
@@ -158,6 +165,7 @@ export function mark(spec, raw) {
   const target = spec.kind === 'integer' ? F(spec.value) : F(spec.value.n, spec.value.d);
   const given = parsed.value;
   if (!eq(given, target)) return { status: 'wrong', code: 'value', given };
+  if (spec.form === 'value') return { status: 'correct' };
 
   const shape = parsed.shape;
   if (spec.kind === 'integer') {
@@ -191,6 +199,12 @@ export const PARTIAL_MESSAGES = {
   'not-rationalised': 'That has the right value, but the denominator still contains a surd. Multiply the top and bottom by that surd to rationalise it.',
   'surd-not-simplified': 'That has the right value, but it is not fully simplified. Take out any square factor (√12 = 2√3) and collect like terms.',
   'ratio-not-simplest': 'That ratio is equivalent, but not in its simplest form. Divide every part by their highest common factor, using whole numbers.',
+  'want-expanded': 'That is equivalent, but the question asks you to expand: multiply out the brackets and collect like terms.',
+  'want-factorised': 'That is equivalent, but the question asks you to factorise: write it as a product with brackets.',
+  'not-fully-factorised': 'That is equivalent, but not fully factorised. A bracket still has a common factor, or a quadratic bracket can still be factorised.',
+  'not-simplified': 'That is equivalent, but not fully simplified. Collect like terms, and write x × x as x^2.',
+  notation: 'That is equivalent, but write it without × or ÷ signs: 3ab, not 3 × a × b, and a/b for a ÷ b.',
+  'notation-decimal': 'That is equivalent, but write coefficients as fractions rather than decimals: x/2, not 0.5x.',
   'interval-ends': 'The two end values are right, but check the signs. The lower bound is included (≤); the upper bound is not (<), because it would round up.',
 };
 
@@ -204,6 +218,8 @@ export function decimalPlacesFor(spec) {
 
 /** Correct answer as render.js markup. */
 export function answerMarkup(spec) {
+  if (spec.var) return `${spec.var} = ${answerMarkup({ ...spec, var: undefined })}`;
+  if (spec.kind === 'algebra') return spec.subject ? `${spec.subject} = ${spec.display}` : spec.display;
   if (spec.kind === 'integer') return num(spec.value);
   if (spec.kind === 'fraction') {
     const f = F(spec.value.n, spec.value.d);
@@ -223,6 +239,8 @@ export function answerMarkup(spec) {
 export function givenMarkup(spec, raw) {
   if (raw === undefined || raw === null || raw === '') return 'Not answered';
   if (spec.kind === 'choice') return spec.options[Number(raw)] ?? 'Not answered';
+  if (spec.kind === 'algebra') return algebraPreview(raw);
+  raw = stripVar(spec, raw);
   if (spec.kind === 'primes') {
     const f = parsePrimeProduct(raw);
     return f ? Object.entries(f).map(([b, k]) => (k > 1 ? `${b}^${k}` : b)).join(' × ') : normalise(raw);

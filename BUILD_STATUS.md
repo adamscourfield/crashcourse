@@ -1,3 +1,40 @@
+## Maths: Edexcel 1MA1 Algebra batch 01 — six lessons and algebra marking, on GitHub `main`, not published
+
+**Engine first.** `dist/maths/algebra.js` marks typed algebra by exact equivalence, then by the form the question asks for:
+- simplified, expanded, fully factorised, A1 notation, or any equivalent form;
+- unreadable or ambiguous input (such as "x2" or "1/2x") gets a hint and records nothing;
+- a live preview shows how the typed answer reads.
+
+**Six Algebra lessons:**
+- notation, substitution and vocabulary (A1–A3, A6 equation vs identity);
+- simplifying and index laws (A4);
+- single brackets (A4);
+- double brackets and factorising quadratics (A4; Higher: three brackets, ax² + bx + c);
+- linear equations, including forming them (A17, A21 in part);
+- using and rearranging formulae (A5, A2).
+
+There are 14 new skills, making 52 maths skills in all, and six investigations: expression machine, like-term sorter, area model, grid and factor pairs, balance, and reverse machine.
+
+The studio is now topic-aware. The course map switches between Number and Algebra, and each topic has its own lesson list, progress, review, assessment and breadcrumb.
+
+**QA:**
+- 431 automated tests pass on `main` 9f4373c plus this change, including 11 Algebra tests. Prompts and answers are checked with an evaluator independent of the marking parser.
+- Browser walk-throughs pass: Algebra 94 checks (`tools/maths-browser-flow-4.mjs`), and Number 87, 68 and 62 rerun, so 311 checks in total.
+- One earlier run of the pilot harness crashed before reporting; this was not reproduced in seven reruns.
+- Mapping: `curriculum/maths-algebra-requirements.csv` (all of A1–A25).
+- Brief: `curriculum/briefs/maths-algebra-batch-01.md`.
+- Evidence: `science-app/maths-browser-evidence-4.json`.
+
+**Cache:** maths modules are at `20261022-maths-r4`. **Publishing needs a global `?v=` bump**, because `index.html` still loads `app.js?v=20261022-physics01`.
+
+**Not done:**
+- Site publication;
+- teacher or specialist review;
+- algebraic fractions, function notation, graphs, A18–A25;
+- show-that arguments and proofs are not marked.
+
+**Next:** Adam reviews; publish; then quadratic and simultaneous equations, inequalities and sequences.
+
 ## Physics Energy batch01 — implemented, published and GitHub updated
 
 First five shared both-tier Physics lessons: Energy stores/systems/transfers; kinetic energy; gravitational potential energy; elastic potential energy; specific heat capacity/virtual practical. AQA8463 4.1.1.1–.3 and8464 6.1.1.1–.3 checked22October2026. Five required energy situations are explicitly taught. The virtual SHC preparation identifies Physics RP1 / Trilogy RP14 and AT1/5; it does not certify practical competence.25 grouped teaching/support mapping rows record the batch; this is not a full Energy statement audit. Power, full conservation/dissipation, conduction/insulation, efficiency and resources remain planned.

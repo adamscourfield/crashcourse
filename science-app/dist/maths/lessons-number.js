@@ -10,7 +10,7 @@
 //   Batch 3: N5 listing (Higher: product rule) · N8 exact π (Higher: surds) · N11 fractions in ratio
 //   N13 units and compound measures · N3 reciprocals · N1 inequality symbols.
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261022-maths-r3';
+import { skillById } from './skills.js?v=20261022-maths-r4';
 
 const S = id => skillById[id];
 
@@ -20,7 +20,7 @@ export const mathsTopics = [
 ];
 
 export const mathsCourseMap = [
-  ['Number', 'maths.number'], ['Algebra', null], ['Ratio, proportion and rates of change', null], ['Geometry and measures', null], ['Probability', null], ['Statistics', null],
+  ['Number', 'maths.number'], ['Algebra', 'maths.algebra'], ['Ratio, proportion and rates of change', null], ['Geometry and measures', null], ['Probability', null], ['Statistics', null],
 ];
 
 export const mathsSource = 'https://qualifications.pearson.com/content/dam/pdf/GCSE/mathematics/2015/specification-and-sample-assesment/gcse-maths-2015-specification.pdf';

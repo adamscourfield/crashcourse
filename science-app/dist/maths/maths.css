@@ -148,3 +148,27 @@ sup .mtok-op{min-width:34px;min-height:34px;font-size:18px;vertical-align:super}
 .mcube{width:150px;height:150px;margin:auto;border:2px solid var(--cream);background:var(--fill,#f0b4a6);position:relative;transform:skewY(-8deg);box-shadow:24px -24px 0 -2px #f0b4a680}
 .mcube span{position:absolute;color:var(--navy);font-size:12px;font-weight:600}.mcube span:nth-child(1){bottom:-22px;left:50px;color:#e4ebf0}.mcube span:nth-child(2){left:-48px;top:62px;color:#e4ebf0}.mcube span:nth-child(3){right:-60px;top:-6px;color:#e4ebf0}
 @media(max-width:800px){.mgrid-pick{grid-template-columns:repeat(2,minmax(0,1fr))}.mhand-row{grid-template-columns:36px repeat(5,minmax(0,1fr))}}
+/* ───────── Algebra batch 1 ───────── */
+#mathsContent .mtext.malg{max-width:420px;font-family:var(--serif);font-size:20px}
+.malg-preview{min-height:1.4em;margin:6px 0 0;color:var(--subtle);font-size:15px}
+.malg-preview sup{font-size:.7em}
+.mbtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.mbtns .mbtn{margin:0}
+.mtable{margin:10px auto;border-collapse:collapse;color:var(--cream);font-size:16px;font-variant-numeric:tabular-nums}
+.mtable th,.mtable td{padding:6px 12px;border-bottom:1px solid #b7c8d640;text-align:center}
+.mtable th{color:#b7c8d6;font-weight:500;font-size:13px}
+.mterm-groups{display:grid;gap:10px;margin:auto;width:min(100%,420px)}
+.mterm-group{display:grid;grid-template-columns:70px 1fr auto;align-items:center;gap:10px;color:var(--cream);font-size:18px}
+.mterm-group>span{color:#b7c8d6;font-size:13px}
+.mterm-group div{display:flex;flex-wrap:wrap;gap:6px}
+.mterm-group i,.mbin i{font-style:normal;padding:6px 10px;border-radius:10px;background:#f0b4a633;border:1px solid var(--coral)}
+.mterm-group b{color:var(--coral);font-family:var(--serif);font-size:22px}
+.mbins{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px auto 0;width:min(100%,460px)}
+.mbin{min-height:86px;padding:10px;border:1.5px dashed #b7c8d680;border-radius:14px;color:var(--cream)}
+.mbin>span{display:block;color:#b7c8d6;font-size:12px;margin-bottom:6px}
+.mbin div{display:flex;flex-wrap:wrap;gap:6px;font-size:17px}
+.mtiles{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.choice.mtile{min-width:64px;font-family:var(--serif);font-size:20px}
+.mpair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.mgrid4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 12px}
+#mathsContent .mtext.msmall{max-width:100%;font-family:var(--serif);font-size:18px}
+@media (max-width:640px){.mterm-group{grid-template-columns:56px 1fr auto;font-size:16px}.mbins{grid-template-columns:1fr 1fr}}

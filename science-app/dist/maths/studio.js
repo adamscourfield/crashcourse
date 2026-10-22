@@ -1,28 +1,36 @@
 // Maths studio: lesson flow, generated practice with mastery ladders, independent checks,
 // spaced interleaved review and topic assessment. Owns its own saved state (MATHS_KEY) so it
 // can never alter science progress.
-import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r3';
-import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r3';
-import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261022-maths-r3';
-import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r3';
-import { generate, skillById } from './skills.js?v=20261022-maths-r3';
-import { orderedLessons, mathsTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r3';
-import { visual, mountModel } from './models-number.js?v=20261022-maths-r3';
-import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r3';
-import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r3';
-import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r3';
-import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r3';
+import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r4';
+import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r4';
+import { algebraMatches, algebraPreview } from './algebra.js?v=20261022-maths-r4';
+import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261022-maths-r4';
+import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r4';
+import { generate, skillById } from './skills.js?v=20261022-maths-r4';
+import { orderedLessons as numberLessons, mathsTopics as numberTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r4';
+import { algebraTopic, orderedAlgebra } from './lessons-algebra.js?v=20261022-maths-r4';
+import { visual4, MODELS4 } from './models-algebra.js?v=20261022-maths-r4';
+import { visual, mountModel } from './models-number.js?v=20261022-maths-r4';
+import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r4';
+import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r4';
+import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r4';
+import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r4';
 
 const STAGES = ['Discover', 'Investigate', 'Practise', 'Check'];
+const orderedLessons = [...numberLessons, ...orderedAlgebra];
+const mathsTopics = [...numberTopics, algebraTopic];
 const EVENT_TEXT = { up: 'Level up', down: 'Stepping back a level to rebuild', practised: 'Skill secure' };
 
 export function createMathsStudio({ root, modal, closeModal, onProgress }) {
   let raw = null, storage = true;
   try { raw = localStorage.getItem(MATHS_KEY); } catch { storage = false; }
   const s = restoreMaths(raw);
-  const lessons = () => orderedLessons.filter(l => s.tier === 'Higher' || !l.higherOnly);
+  // Lessons, review, assessment and progress are scoped to the current topic.
+  const tierLessons = () => orderedLessons.filter(l => s.tier === 'Higher' || !l.higherOnly);
+  s.topicId = orderedLessons.find(l => l.id === s.lessonId)?.topicId || s.topicId || 'maths.number';
+  const lessons = () => tierLessons().filter(l => l.topicId === s.topicId);
+  const topic = () => mathsTopics.find(t => t.id === s.topicId) || mathsTopics[0];
   if (!lessons().some(l => l.id === s.lessonId)) s.lessonId = lessons()[0].id;
-  s.topicId ??= 'maths.number';
   let view = s.view && s.runs[s.view] && !s.runs[s.view].finished ? s.view : 'lesson';
   const $ = sel => root.querySelector(sel), $$ = sel => [...root.querySelectorAll(sel)];
   const lesson = () => lessons().find(l => l.id === s.lessonId);
@@ -33,7 +41,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     s.view = view;
     try { localStorage.setItem(MATHS_KEY, JSON.stringify(s)); } catch { storage = false; }
     const done = lessons().filter(l => lessonState(s, l.id).complete).length;
-    onProgress?.({ done, total: lessons().length, due: reviewDue().length, storage });
+    onProgress?.({ done, total: lessons().length, due: reviewDue().length, storage, topic: topic().title });
   }
   const feedback = (text, error = false) => { const f = $('#mFeedback'); if (!f) return; f.innerHTML = text ? mathHTML(text) : ''; f.classList.toggle('error', !!error); };
 
@@ -86,7 +94,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const c = l.learn[p.card];
     p.reveal ??= {};
     const shown = p.reveal[p.card] ?? 0;
-    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual) || visual2(c.visual) || visual3(c.visual)}</div>`;
+    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual) || visual2(c.visual) || visual3(c.visual) || visual4(c.visual)}</div>`;
     $('#mTitle').textContent = c.title;
     const pre = p.card === 0 && l.prerequisites?.length ? `<div class="prerequisites"><span>Prior learning:</span>${l.prerequisites.map(id => `<button class="text-button" data-mpre="${id}">${esc(orderedLessons.find(x => x.id === id)?.title || id)}</button>`).join('')}</div>` : '';
     $('#mBody').innerHTML = `${pre}<p>${mathHTML(c.text)}</p><div class="mexample"><div class="mexample-q"><span class="eyebrow">EXAMPLE</span><p>${mathHTML(c.example.prompt)}</p></div><ol class="msteps">${c.example.steps.map((st, i) => `<li ${i < shown ? '' : 'hidden'}>${mathHTML(st)}</li>`).join('')}</ol>${shown < c.example.steps.length ? `<button class="secondary" id="mReveal">${shown ? 'Next step' : 'Try it, then show the first step'}</button>` : ''}</div><div class="reading-dots">${l.learn.map((_, i) => `<button data-mcard="${i}" aria-label="Explanation ${i + 1}" class="${i === p.card ? 'current' : ''}">${i + 1}</button>`).join('')}</div>`;
@@ -100,7 +108,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
   function renderInvestigate(l, p) {
     $('#mTitle').textContent = '';
     $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
-    (MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
+    (MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
       panel: $('#mPanel'), body: $('#mBody'), w: p.widget, tier: s.tier,
       save, feedback, setTitle: t => ($('#mTitle').textContent = t),
       done: () => { if (!p.widgetDone) { p.widgetDone = true; save(); render(); } $('#mHint').textContent = 'Complete ✓'; },
@@ -138,6 +146,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       return `<fieldset class="mans mint-iv" ${locked ? 'disabled' : ''}><legend class="field-label">Your error interval</legend><input class="lab-input" data-ilo inputmode="decimal" autocomplete="off" aria-label="Lower bound" value="${esc(p.lo ? dec(p.lo) : '')}"><button type="button" class="msign mop" data-iop="lo" aria-label="Lower sign: ${op(p.loIn)}">${op(p.loIn)}</button><span class="mvar">x</span><button type="button" class="msign mop" data-iop="hi" aria-label="Upper sign: ${op(p.hiIn)}">${op(p.hiIn)}</button><input class="lab-input" data-ihi inputmode="decimal" autocomplete="off" aria-label="Upper bound" value="${esc(p.hi ? dec(p.hi) : '')}"></fieldset><p class="micro-note">Tap a sign to switch between &lt; and ≤.</p>${submit}`;
     }
     if (a.kind === 'exact') return `<label class="field-label" for="mText">Your exact answer</label><input class="lab-input mtext" id="mText" autocomplete="off" spellcheck="false" value="${esc(v)}" ${locked ? 'disabled' : ''}><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey="√">√</button><button type="button" class="secondary" data-mkey="π">π</button><button type="button" class="secondary" data-mkey="/">/</button>'}</div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : '<p class="micro-note">For example 3π, 2√5, 4 − 2√3 or 2√3/3.</p>'}${submit}`;
+    if (a.kind === 'algebra') return `<label class="field-label" for="mText">${a.subject ? `Your answer: ${esc(a.subject)} =` : 'Your answer'}</label><input class="lab-input mtext malg" id="mText" autocomplete="off" autocapitalize="off" spellcheck="false" value="${esc(v)}" ${locked ? 'disabled' : ''}><p class="malg-preview" id="mPreview" aria-live="polite">${v ? 'Reads as: ' + mathHTML(algebraPreview(v)) : ''}</p><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey="^2" aria-label="squared">x²</button><button type="button" class="secondary" data-mkey="(">(</button><button type="button" class="secondary" data-mkey=")">)</button><button type="button" class="secondary" data-mkey="/">/</button>'}</div><p class="micro-note">${esc(item.note || 'Type letters and numbers, for example 3x^2 − 2(x + 1). Use ^ for powers and / for fractions.')}</p>${submit}`;
     if (a.kind === 'ratio') return `<label class="field-label" for="mText">Your ratio</label><input class="lab-input mtext" id="mText" inputmode="text" autocomplete="off" placeholder="e.g. 3:4" value="${esc(v)}" ${locked ? 'disabled' : ''}><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey=":">:</button>'}</div>${submit}`;
     if (a.kind === 'primes') return `<label class="field-label" for="mText">Your answer</label><input class="lab-input mtext" id="mText" autocomplete="off" spellcheck="false" value="${esc(v)}" ${locked ? 'disabled' : ''}><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey=" × ">×</button><button type="button" class="secondary" data-mkey="^">x<sup>n</sup></button>'}</div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : ''}${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
     return `<label class="field-label" for="mText">Your answer${a.kind === 'decimal' && a.dp != null ? ` (${a.dp} decimal place${a.dp === 1 ? '' : 's'})` : ''}</label><div class="mint"><button type="button" class="msign" data-msign-text aria-label="Make negative" ${locked ? 'disabled' : ''}>±</button><input class="lab-input mtext" id="mText" inputmode="${a.kind === 'decimal' ? 'decimal' : 'numeric'}" autocomplete="off" value="${esc(v)}" ${locked ? 'disabled' : ''}></div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : ''}${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
@@ -164,8 +173,10 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     $$('[data-mkey]').forEach(b => (b.onclick = () => { const i = $('#mText'); const at = i.selectionStart ?? i.value.length; i.value = i.value.slice(0, at) + b.dataset.mkey + i.value.slice(i.selectionEnd ?? at); i.focus(); i.selectionStart = i.selectionEnd = at + b.dataset.mkey.length; onDraft?.(i.value); }));
     $('[data-mexpsign]')?.addEventListener('click', e => { e.currentTarget.classList.toggle('on'); e.currentTarget.setAttribute('aria-pressed', e.currentTarget.classList.contains('on')); onDraft?.(readValue(item)); });
     $$('[data-iop]').forEach(b => (b.onclick = () => { b.textContent = b.textContent === '<' ? '≤' : '<'; b.setAttribute('aria-label', (b.dataset.iop === 'lo' ? 'Lower' : 'Upper') + ' sign: ' + b.textContent); onDraft?.(readValue(item)); }));
+    const pv = () => { const p = $('#mPreview'), t = $('#mText'); if (p && t) p.innerHTML = t.value.trim() ? 'Reads as: ' + mathHTML(algebraPreview(t.value)) : ''; };
+    if (item.answer.kind === 'algebra') $$('[data-mkey]').forEach(b => b.addEventListener('click', pv));
     $$('.mfrac-in input, .mans input, #mText').forEach(i => {
-      i.addEventListener('input', () => onDraft?.(readValue(item)));
+      i.addEventListener('input', () => { onDraft?.(readValue(item)); pv(); });
       i.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); onAnswer(readValue(item)); } });
     });
   }
@@ -179,6 +190,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       }
       return '';
     }
+    if (item.answer.kind === 'algebra') return item.alTraps?.find(t => algebraMatches(t.expr, raw, item.answer))?.why || '';
     if (item.answer.kind === 'exact') return item.exTraps?.find(t => exactMatches(t, raw))?.why || '';
     if (item.answer.kind === 'ratio') {
       if (result.reversed) return 'The parts are in the wrong order. Write them in the same order as the question names them.';
@@ -196,7 +208,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     return trap ? trap.why : '';
   }
   const FORMAT_HELP = { 'format-standard': 'Fill in both boxes: a number from 1 up to 10, and the power of 10.', 'format-power': 'Fill in both boxes: the base and the power.', 'format-interval': 'Give both end values of the interval.', 'format-exact': 'Write an exact answer such as 3π, 2√5, 4 − 2√3 or 2√3/3. Use the √ and π buttons.', 'format-ratio': 'Write a ratio with colons, such as 3:4.', primes: 'Write primes joined by × (type x or *), for example 2^3 x 5.', format: 'Write a whole number, a decimal, a fraction like 3/4, or a mixed number like 1 3/4.' };
-  const invalidText = (item, res) => (res.code === 'empty' ? 'Enter an answer first.' : FORMAT_HELP[res.code] || FORMAT_HELP[item.answer.kind === 'primes' ? 'primes' : 'format']);
+  const invalidText = (item, res) => (res.code === 'empty' ? 'Enter an answer first.' : res.hint || FORMAT_HELP[res.code] || FORMAT_HELP[item.answer.kind === 'primes' ? 'primes' : 'format']);
   const solution = item => `<div class="msolution"><span class="eyebrow">WORKED SOLUTION</span><ol class="msteps">${item.steps.map(st => `<li>${mathHTML(st)}</li>`).join('')}</ol><p class="mfinal">Answer: <strong>${mathHTML(answerMarkup(item.answer))}</strong></p></div>`;
 
   /* ───────── practise ───────── */
@@ -361,8 +373,9 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
 
   /* ───────── navigation ───────── */
   function setLesson(id) {
-    if (!lessons().some(l => l.id === id)) return;
-    s.lessonId = id; view = 'lesson';
+    const l = tierLessons().find(x => x.id === id);
+    if (!l) return;
+    s.topicId = l.topicId; s.lessonId = id; view = 'lesson';
     closeModal(); render();
   }
   function nextLesson() {
@@ -370,7 +383,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     if (i < list.length - 1) setLesson(list[i + 1].id); else openLessons();
   }
   function openLessons() {
-    const t = mathsTopics[0];
+    const t = topic();
     modal(`<span class="eyebrow">MATHS · TOPIC ${t.number}</span><h2>${esc(t.title)}</h2><p>Edexcel GCSE Mathematics (1MA1) · ${s.tier}. ${esc(t.coverage)}</p><div class="lesson-list">${lessons().map((l, i) => { const p = lessonState(s, l.id); const started = p.seen.length || p.widgetDone || p.history.length || lessonSkills(l).some(sk => skillState(s, sk.id).log.length); return `<button class="lesson-row" data-mlesson="${l.id}"><span class="lesson-row-number">${p.complete ? '✓' : String(i + 1).padStart(2, '0')}</span><span><b>${esc(l.title)}</b><small>${l.minutes} min · ${l.refs.join(', ')} · ${p.complete ? 'Complete' : started ? 'In progress' : 'Ready'}</small></span><span>→</span></button>`; }).join('')}</div><div class="modal-actions"><button class="primary" id="mmAssess">Available-lesson assessment →</button><button class="secondary" id="mmReview">Review & recall</button><button class="secondary" id="mmMap">Course map</button></div>`);
     document.querySelectorAll('[data-mlesson]').forEach(b => (b.onclick = () => setLesson(b.dataset.mlesson)));
     document.getElementById('mmAssess').onclick = startAssessment;
@@ -378,9 +391,20 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     document.getElementById('mmMap').onclick = openMap;
   }
   function openMap() {
-    modal(`<span class="eyebrow">MATHS COURSE MAP</span><h2>Edexcel GCSE Mathematics</h2><p>Specification 1MA1, Foundation and Higher tiers. Paper 1 is non-calculator; papers 2 and 3 allow a calculator.</p><div class="subject-grid">${mathsCourseMap.map(([name, id]) => `<button class="subject-card" ${id ? `data-mtopic="${id}"` : 'disabled'}><b>${esc(name)}</b><span>${id ? lessons().filter(l => l.topicId === id).length + ' lessons available' : 'Planned'}</span><small>${id ? 'Partly available' : 'Not built yet'}</small></button>`).join('')}</div><button class="secondary" id="mmSubjects">Other subjects →</button>`);
-    document.querySelectorAll('[data-mtopic]').forEach(b => (b.onclick = openLessons));
+    modal(`<span class="eyebrow">MATHS COURSE MAP</span><h2>Edexcel GCSE Mathematics</h2><p>Specification 1MA1, Foundation and Higher tiers. Paper 1 is non-calculator; papers 2 and 3 allow a calculator.</p><div class="subject-grid">${mathsCourseMap.map(([name, id]) => `<button class="subject-card ${id === s.topicId ? 'selected' : ''}" ${id ? `data-mtopic="${id}"` : 'disabled'}><b>${esc(name)}</b><span>${id ? tierLessons().filter(l => l.topicId === id).length + ' lessons available' : 'Planned'}</span><small>${id ? (id === s.topicId ? 'Current topic' : 'Partly available') : 'Not built yet'}</small></button>`).join('')}</div><button class="secondary" id="mmSubjects">Other subjects →</button>`);
+    document.querySelectorAll('[data-mtopic]').forEach(b => (b.onclick = () => setTopic(b.dataset.mtopic)));
     document.getElementById('mmSubjects').onclick = () => root.dispatchEvent(new CustomEvent('maths:subjects', { bubbles: true }));
+  }
+  /** Switch topic, returning to the lesson last opened in it. */
+  function setTopic(id) {
+    if (id !== s.topicId) {
+      (s.lastLessonByTopic ||= {})[s.topicId] = s.lessonId;
+      s.topicId = id;
+      const back = s.lastLessonByTopic[id];
+      s.lessonId = lessons().some(l => l.id === back) ? back : lessons()[0].id;
+      view = 'lesson'; render();
+    }
+    openLessons();
   }
   function openSources() {
     const l = lesson();
@@ -394,7 +418,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
   }
   function startReview() {
     const active = s.runs.review;
-    if (active && !active.finished) { view = 'review'; closeModal(); return render(); }
+    if (active && !active.finished && (active.topicId || 'maths.number') === s.topicId) { view = 'review'; closeModal(); return render(); }
     const due = reviewDue();
     const practised = allSkills().filter(sk => isPractised(s.skills[sk.id], sk, s.tier)).map(sk => sk.id);
     const pool = due.length ? due : practised;
@@ -406,7 +430,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const chosen = shuffled(rng(newSeed()), pool).slice(0, 10);
     modal(`<span class="eyebrow">SPACED, INTERLEAVED RECALL</span><h2>${chosen.length} skill${chosen.length === 1 ? '' : 's'} to revisit.</h2><p>${due.length ? 'These skills are due, or were missed in a check.' : 'Nothing is due yet. This is an optional early review of skills you have secured.'} Questions are new and mixed together, so you practise choosing the method as well as using it.</p><p>${chosen.map(id => esc(skillById[id].name)).join(' · ')}</p><button class="primary" id="mrBegin">Start recall →</button>`);
     document.getElementById('mrBegin').onclick = () => {
-      s.runs.review = { kind: 'review', early: !due.length, queue: chosen.map(id => generate(id, topLevel(skillById[id], s.tier), newSeed())), answers: {}, drafts: {}, index: 0, finished: false, startedAt: Date.now() };
+      s.runs.review = { kind: 'review', topicId: s.topicId, early: !due.length, queue: chosen.map(id => generate(id, topLevel(skillById[id], s.tier), newSeed())), answers: {}, drafts: {}, index: 0, finished: false, startedAt: Date.now() };
       view = 'review'; closeModal(); render();
     };
   }
@@ -420,17 +444,17 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
   }
   function startAssessment() {
     const active = s.runs.assessment;
-    if (active && !active.finished && active.tier === s.tier) { view = 'assessment'; closeModal(); return render(); }
+    if (active && !active.finished && active.tier === s.tier && (active.topicId || 'maths.number') === s.topicId) { view = 'assessment'; closeModal(); return render(); }
     const sks = assessmentSkills();
-    modal(`<span class="eyebrow">INDEPENDENT TOPIC ASSESSMENT</span><h2>Number: available lessons</h2><p>${sks.length} new questions covering every available lesson, at the top level for your tier and in mixed order. Each attempt draws a different selection of skills. First answers count; worked solutions appear at the end. Pass mark: ${RULES.checkPass}%.</p><button class="primary" id="maBegin">Start assessment →</button>`);
+    modal(`<span class="eyebrow">INDEPENDENT TOPIC ASSESSMENT</span><h2>${esc(topic().title)}: available lessons</h2><p>${sks.length} new questions covering every available lesson, at the top level for your tier and in mixed order. Each attempt draws a different selection of skills. First answers count; worked solutions appear at the end. Pass mark: ${RULES.checkPass}%.</p><button class="primary" id="maBegin">Start assessment →</button>`);
     document.getElementById('maBegin').onclick = () => {
-      s.runs.assessment = { kind: 'assessment', tier: s.tier, queue: shuffled(rng(newSeed()), sks.map(sk => generate(sk.id, topLevel(sk, s.tier), newSeed()))), answers: {}, drafts: {}, index: 0, finished: false, startedAt: Date.now() };
+      s.runs.assessment = { kind: 'assessment', tier: s.tier, topicId: s.topicId, queue: shuffled(rng(newSeed()), sks.map(sk => generate(sk.id, topLevel(sk, s.tier), newSeed()))), answers: {}, drafts: {}, index: 0, finished: false, startedAt: Date.now() };
       view = 'assessment'; closeModal(); render();
     };
   }
   function renderRun() {
     const run = s.runs[view];
-    if (!run || run.finished) { view = 'lesson'; return render(); }
+    if (!run || run.finished || (run.topicId || 'maths.number') !== s.topicId) { view = 'lesson'; return render(); }
     const assessing = view === 'assessment';
     const item = run.queue[run.index], a = run.answers[item.id];
     $('.steps').hidden = true; $('#mNextLesson').hidden = true;
@@ -440,7 +464,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     $('#mMeta').innerHTML = '';
     $('#mStatus').textContent = '';
     $('#mBig').textContent = assessing ? 'First answers count. Worked solutions appear after the final question.' : 'Recall strengthens learning. A missed answer brings the skill back sooner.';
-    $('#mSpec').textContent = 'Edexcel 1MA1 · Number';
+    $('#mSpec').textContent = 'Edexcel 1MA1 · ' + topic().title;
     $('#mKicker').textContent = assessing ? 'ASSESSMENT' : 'REVIEW · ' + skillById[item.skill].name.toUpperCase();
     $('#mTitle').innerHTML = mathHTML(item.prompt);
     $('#mPanel').innerHTML = '';
@@ -493,5 +517,5 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     document.getElementById('mConfirmReset').onclick = () => { delete s.lessons[l.id]; lessonSkills(l).forEach(sk => delete s.skills[sk.id]); view = 'lesson'; closeModal(); render(); };
   }
 
-  return { render, openLessons, openMap, openSources, startReview, startAssessment, setTier, resetLesson, tier: () => s.tier, state: () => s, title: () => (view === 'lesson' ? lesson().title : view === 'review' ? 'Review' : 'Topic assessment'), reviewDue };
+  return { setTopic, topic: () => s.topicId, render, openLessons, openMap, openSources, startReview, startAssessment, setTier, resetLesson, tier: () => s.tier, state: () => s, title: () => (view === 'lesson' ? lesson().title : view === 'review' ? 'Review' : 'Topic assessment'), reviewDue };
 }

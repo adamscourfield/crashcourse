@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { allSkills as numberSkills, generate, skillById } from '../dist/maths/skills.js';
+import { allSkills, generate, skillById } from '../dist/maths/skills.js';
 import { mark, parsePrimeProduct, primeFactors, isPrime, answerMarkup, decimalPlacesFor } from '../dist/maths/answers.js';
 import { exactNumber } from '../dist/maths/exact.js';
 import { parseNumber, F, eq, decText } from '../dist/maths/frac.js';
@@ -11,6 +11,7 @@ import { tokens, nextOp, reduce } from '../dist/maths/models-number.js';
 import { subjects } from '../dist/progress.js';
 
 const N = 250; // items per skill level in the sweeps below
+const numberSkills = allSkills.filter(sk => sk.id.startsWith('maths.number.')); // Algebra has its own test file
 
 const asc = t => t.replace('−', '-');
 function rawFor(answer) {

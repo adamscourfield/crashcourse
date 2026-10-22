@@ -10,7 +10,7 @@ export function F(n, d = 1) {
   if (!Number.isInteger(n) || !Number.isInteger(d) || d === 0) throw new Error(`Bad fraction ${n}/${d}`);
   if (d < 0) { n = -n; d = -d; }
   const g = gcd(n, d) || 1;
-  return { n: n / g, d: d / g };
+  return { n: n / g || 0, d: d / g }; // || 0 turns −0 into 0 so items survive JSON
 }
 export const add = (a, b) => F(a.n * b.d + b.n * a.d, a.d * b.d);
 export const sub = (a, b) => F(a.n * b.d - b.n * a.d, a.d * b.d);
