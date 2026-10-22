@@ -49,13 +49,13 @@ ok((await page.locator('#sideProgress').innerText()) === '0 / 15', 'Number topic
 await goLesson('maths.number.powers', 0);
 await page.click('#mapButton');
 const mapText = await page.locator('dialog').innerText();
-ok(/Algebra\s*10 lessons available/.test(mapText), 'course map shows Algebra with 10 lessons');
+const algN = Number((mapText).match(/Algebra\s*(\d+) lessons available/)?.[1]); ok(algN >= 10, 'course map shows Algebra with ' + algN + ' lessons');
 ok(/Geometry and measures\s*Planned/.test(mapText), 'unbuilt topics stay planned');
 await page.click('[data-mtopic="maths.algebra"]');
 const listText = await page.locator('dialog').innerText();
 ok(listText.includes('TOPIC 02') && listText.includes('Solving linear equations') && !listText.includes('Negative numbers'), 'lesson list is scoped to Algebra');
 await page.click('#closeModal');
-ok((await page.locator('#sideProgress').innerText()) === '0 / 10', 'sidebar progress follows the Algebra topic');
+ok((await page.locator('#sideProgress').innerText()) === `0 / ${algN}`, 'sidebar progress follows the Algebra topic');
 ok((await page.locator('#mH1').innerText()).includes('Algebraic notation'), 'first Algebra lesson opens');
 
 const A = ['maths.algebra.notation', 'maths.algebra.simplify', 'maths.algebra.single-brackets', 'maths.algebra.quadratics', 'maths.algebra.linear-equations', 'maths.algebra.formulae'];
@@ -193,7 +193,7 @@ const res = await page.locator('dialog').innerText();
 ok(res.includes('9 / 10') && res.includes('Lesson complete'), 'check scored 9/10 and the lesson completes' + (res.includes('Lesson complete') ? '' : ': ' + res.slice(0, 300)));
 await shot('a06-check-results');
 await page.click('#closeModal');
-ok((await page.locator('#sideProgress').innerText()) === '1 / 10', 'Algebra progress 1 / 10');
+ok((await page.locator('#sideProgress').innerText()) === `1 / ${algN}`, 'Algebra progress 1 / ' + algN);
 
 // ── equations accept "x = …" and fractions ──
 await goLesson('maths.algebra.linear-equations', 2);

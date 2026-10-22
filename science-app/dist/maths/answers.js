@@ -19,10 +19,11 @@
 //                 for mastery, as it would lose the final mark in an exam.
 //   'wrong'     - wrong value
 //   'invalid'   - could not be read; nothing is recorded and the student fixes the format
-import { markAlgebra, algebraPreview } from './algebra.js?v=20261022-maths-r5';
-import { markSolutions, solutionsMarkup, solutionsGiven, markInequality, inequalityMarkup, markList, listMarkup } from './sets.js?v=20261022-maths-r5';
-import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261022-maths-r5';
-import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r5';
+import { markAlgebra, algebraPreview } from './algebra.js?v=20261022-maths-r6';
+import { markPoints, markLine, pointsMarkup, lineMarkup, parsePoints } from './graph.js?v=20261022-maths-r6';
+import { markSolutions, solutionsMarkup, solutionsGiven, markInequality, inequalityMarkup, markList, listMarkup } from './sets.js?v=20261022-maths-r6';
+import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261022-maths-r6';
+import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r6';
 
 export function isPrime(n) {
   if (!Number.isInteger(n) || n < 2) return false;
@@ -94,7 +95,7 @@ export function answerValue(spec, raw) {
   raw = stripVar(spec, raw);
   if (spec.kind === 'standard') { const s = parseStandard(raw); if (s) return mul(s.a, pow10(s.n)); }
   if (spec.kind === 'power') { const p = parsePower(raw); if (p) return powValue(p.base, p.exp); }
-  if (['interval', 'choice', 'primes', 'exact', 'ratio', 'algebra', 'solutions', 'inequality', 'list'].includes(spec.kind)) return null;
+  if (['interval', 'choice', 'primes', 'exact', 'ratio', 'algebra', 'solutions', 'inequality', 'list', 'points', 'line'].includes(spec.kind)) return null;
   const p = parseNumber(raw);
   return p ? p.value : null;
 }
@@ -106,6 +107,8 @@ const stripVar = (spec, raw) => (spec.var ? String(raw ?? '').replace(new RegExp
 export function mark(spec, raw) {
   raw = stripVar(spec, raw);
   if (spec.kind === 'algebra') return normalise(raw) === '' ? { status: 'invalid', code: 'empty' } : markAlgebra(spec, raw);
+  if (spec.kind === 'points') return markPoints(spec, raw);
+  if (spec.kind === 'line') return markLine(spec, raw);
   if (['solutions', 'inequality', 'list'].includes(spec.kind)) {
     if (normalise(raw) === '' || /^[;,\s]*$/.test(raw)) return { status: 'invalid', code: 'empty' };
     return spec.kind === 'solutions' ? markSolutions(spec, raw) : spec.kind === 'inequality' ? markInequality(spec, raw) : markList(spec, raw);
@@ -154,6 +157,7 @@ export function mark(spec, raw) {
   const parsed = parseNumber(raw);
   if (spec.kind === 'decimal') {
     if (!parsed) return { status: 'invalid', code: 'format' };
+    if (spec.tol != null) { const t = specValue(spec); return Math.abs(parsed.value.n / parsed.value.d - t.n / t.d) <= spec.tol + 1e-9 ? { status: 'correct' } : { status: 'wrong', code: 'value', given: parsed.value }; }
     if (!eq(parsed.value, specValue(spec))) return { status: 'wrong', code: 'value', given: parsed.value };
     const sh = parsed.shape;
     if (sh.kind !== 'decimal' && sh.kind !== 'integer') return { status: 'partial', code: 'want-decimal' };
@@ -211,6 +215,7 @@ export const PARTIAL_MESSAGES = {
   notation: 'That is equivalent, but write it without × or ÷ signs: 3ab, not 3 × a × b, and a/b for a ÷ b.',
   'notation-decimal': 'That is equivalent, but write coefficients as fractions rather than decimals: x/2, not 0.5x.',
   'dp-round': 'Those values round to the right answers, but give each one rounded to the number of decimal places asked for.',
+  'line-two-points': 'Plot at least two points on the line.',
   'one-solution': 'That solution is right, but there is another. A quadratic equation usually has two solutions: find both.',
   'ineq-ends': 'The boundary values are right, but check each sign: ≤ and ≥ include the boundary value; < and > do not.',
   'want-completed-square': 'That is equivalent, but the question asks for the completed-square form (x + p)^2 + q.',
@@ -230,6 +235,12 @@ export function answerMarkup(spec) {
   if (spec.var) return `${spec.var} = ${answerMarkup({ ...spec, var: undefined })}`;
   if (spec.kind === 'algebra') return spec.subject ? `${spec.subject} = ${spec.display}` : spec.display;
   if (spec.kind === 'solutions') return solutionsMarkup(spec);
+  if (spec.kind === 'points') return pointsMarkup(spec.points);
+  if (spec.kind === 'line') return lineMarkup(spec);
+  if (spec.kind === 'decimal' && spec.tol) {
+    const v = spec.value.n / spec.value.d, k = spec.tol >= 0.1 ? 10 : 100, rd = x => num(Math.round(x * k) / k);
+    return `${rd(v)} (accept ${rd(v - spec.tol)} to ${rd(v + spec.tol)})`;
+  }
   if (spec.kind === 'inequality') return inequalityMarkup(spec);
   if (spec.kind === 'list') return listMarkup(spec);
   if (spec.kind === 'integer') return num(spec.value);
@@ -253,6 +264,7 @@ export function givenMarkup(spec, raw) {
   if (spec.kind === 'choice') return spec.options[Number(raw)] ?? 'Not answered';
   if (spec.kind === 'algebra') return algebraPreview(raw);
   if (spec.kind === 'solutions') return solutionsGiven(spec, raw);
+  if (spec.kind === 'points' || spec.kind === 'line') { const p = parsePoints(raw); return p ? (p.length ? pointsMarkup(p) : 'No points plotted') : normalise(raw); }
   if (spec.kind === 'inequality' || spec.kind === 'list') return normalise(raw).replace(/<=/g, '≤').replace(/>=/g, '≥').replace(/-/g, '−');
   raw = stripVar(spec, raw);
   if (spec.kind === 'primes') {

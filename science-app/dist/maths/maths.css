@@ -187,3 +187,19 @@ sup .mtok-op{min-width:34px;min-height:34px;font-size:18px;vertical-align:super}
 .mdiff-row b{grid-column:calc(2 + var(--o));grid-row:1;text-align:center;font-weight:600;white-space:nowrap}
 .mdiff-row:nth-child(2) b{color:var(--coral)}.mdiff-row:nth-child(3) b{color:#a8d5b5}
 @media (max-width:640px){.mdiff-row{grid-template-columns:86px repeat(10,20px);font-size:15px}}
+/* ───────── Graphs ───────── */
+.mfig{margin:6px 0 14px;padding:10px;border-radius:16px;background:linear-gradient(160deg,#20384f,#162a3e)}
+.mfig .mgraph,.mgraph-in .mgraph{max-width:100%;margin:0 auto}
+.mgraph-in{margin:6px 0 8px}
+.mgraph-in>svg{display:block;padding:8px;border-radius:16px;background:linear-gradient(160deg,#20384f,#162a3e)}
+.mgraph-live{cursor:crosshair;touch-action:manipulation}
+.mgraph-form{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:6px}
+.mgraph-form label{display:flex;align-items:center;gap:6px;font-family:var(--serif);font-size:18px;color:var(--navy)}
+#mathsContent .mgraph-form input.lab-input{width:80px;margin:0}
+.mgraph-list{display:flex;flex-wrap:wrap;gap:6px 14px;list-style:none;padding:0;margin:8px 0;font-variant-numeric:tabular-nums;color:var(--navy)}
+.mgraph-list li{display:flex;align-items:center;gap:4px}
+.mgallery{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%}
+.mgallery figure{margin:0}.mgallery figcaption{color:#b7c8d6;font-size:12px;margin-bottom:2px}
+.mtable-in{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px 14px}
+.mtable-in label{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--navy)}
+#mathsContent .mtable-in input.lab-input{width:64px;margin:0}

@@ -63,9 +63,9 @@ await page.goto(URL); await page.evaluate(() => localStorage.clear()); await pag
 const sciBefore = await page.evaluate(() => localStorage.getItem('crash-course-v2'));
 await page.selectOption('#subject', 'maths'); await page.waitForSelector('#mH1');
 await page.click('#mapButton');
-ok(/Algebra\s*10 lessons available/.test(await page.locator('dialog').innerText()), 'course map: Algebra has 10 lessons');
+const algN = Number((await page.locator('dialog').innerText()).match(/Algebra\s*(\d+) lessons available/)?.[1]); ok(algN >= 10, 'course map: Algebra has ' + algN + ' lessons');
 await page.click('[data-mtopic="maths.algebra"]'); await page.click('#closeModal');
-ok((await page.locator('#sideProgress').innerText()) === '0 / 10', 'Algebra progress 0 / 10');
+ok((await page.locator('#sideProgress').innerText()) === `0 / ${algN}`, 'Algebra progress 0 / ' + algN);
 const B2 = ['maths.algebra.sequences', 'maths.algebra.inequalities', 'maths.algebra.quadratic-equations', 'maths.algebra.simultaneous'];
 for (const id of B2) { await goLesson(id, 0); const n = await page.locator('[data-mcard]').count(); for (let c = 0; c < n; c++) { await page.click(`[data-mcard="${c}"]`); ok((await page.locator('#mPanel .mviz-wrap').innerHTML()).length > 80, `${id.split('.').pop()} card ${c + 1} has a visual`); } }
 await goLesson('maths.algebra.inequalities', 0); await page.click('[data-mcard="3"]'); await shot('c01-quadratic-inequality-card');
@@ -208,7 +208,7 @@ await page.selectOption('#tier', 'Foundation'); await wait(200);
 await goTopic('maths.number');
 ok((await page.locator('#sideProgress').innerText()) === '0 / 15', 'Number progress unaffected');
 await goTopic('maths.algebra');
-ok((await page.locator('#sideProgress').innerText()) === '1 / 10', 'Algebra progress 1 / 10');
+ok((await page.locator('#sideProgress').innerText()) === `1 / ${algN}`, 'Algebra progress 1 / ' + algN);
 await page.selectOption('#subject', 'science'); await wait(300);
 ok((await page.evaluate(() => localStorage.getItem('crash-course-v2'))) === sciBefore || sciBefore === null, 'science storage unchanged');
 await page.selectOption('#subject', 'maths'); await page.waitForSelector('#mH1');

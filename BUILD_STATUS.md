@@ -1,3 +1,35 @@
+## Maths: Edexcel 1MA1 Algebra batch 03 — graphs with a plotting input; on GitHub `main`, not published
+
+A new graph engine, `dist/maths/graph.js`:
+- questions can show a graph;
+- an interactive grid lets students plot points by tapping, or with a keyboard form, with snapping;
+- plotted points and lines are marked, with line diagnosis (wrong intercept, direction or gradient);
+- values read from graphs are accepted within a tolerance;
+- set notation is accepted in inequality answers.
+
+Five Algebra lessons (11–15):
+- **Coordinates and straight-line graphs** (A8, A9).
+- **Gradient, intercept and equations of lines** (A9, A10; Higher: perpendicular).
+- **Quadratic, cubic and reciprocal graphs** (A11–A13; Higher: exponential, trigonometric, transformations).
+- **Solving with graphs** (graphical A17–A19; Higher: A22 regions).
+- **Real-life graphs** (A14; Higher: A15 gradients and areas, A16 circles).
+
+There are 13 new skills (78 in all) and five investigations.
+
+**QA:**
+- 470 automated tests pass on `main` 406f618 plus this change. Graph items are checked independently against the printed question and the item's own graph data.
+- Browser walk-throughs pass: graphs 64 checks (`tools/maths-browser-flow-6.mjs`, including real taps on the grid), and 87, 68, 62, 94 and 69 rerun, so 444 in total.
+- Brief: `curriculum/briefs/maths-algebra-batch-03.md`.
+
+**Cache:** maths modules are at `20261022-maths-r6`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication of lessons 11–15;
+- specialist review;
+- drawn lines and curves are marked as plotted points only;
+- exponential graphs in context, areas under curves, financial graphs.
+
+**Next:** functions, algebraic fractions, proof and iteration, then Ratio.
 ## Physics Electricity batch02 — implemented, published and GitHub updated
 
 Five shared both-tier lessons: series circuits, parallel circuits, resistor-combinations practical preparation, thermistors/thermostats and LDRs/automatic lights. AQA8463/8464 4/6.2.2, .2.1.3 and .2.1.4 checked22October2026. Series sameI/sharedpd/summedR/equivalentR calculations; parallel samepd across closed branches/summedI/lowerR/adding or opening branches. No parallel equivalent-resistance formula or numerical equivalent-resistance assessment required. Combinations plus previous wire lesson now cover both planned RP3 Physics/RP15 Trilogy teaching-preparation parts, AT1/6/7; physical competence remains separate. NTC thermistorR falls withT; LDRR falls with illumination, with AT6 measurement/graph opportunities and thermostat/dark-light applications.28 grouped teaching/support rows; no complete Electricity statement/evidence audit or specialist certification claimed.

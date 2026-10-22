@@ -7,7 +7,7 @@
 //   {kind:'inequality', letter:'x', set:[{lo, loIn, hi, hiIn}]}  (lo/hi null = unbounded)
 //       Solution set of an inequality: x > 3, −2 < x ≤ 3, x < −2 or x > 3.
 //   {kind:'list', values:[−1, 0, 1]}  a set of integers, any order.
-import { F, eq, normalise, parseNumber, decText, fracMarkup, num } from './frac.js?v=20261022-maths-r5';
+import { F, eq, normalise, parseNumber, decText, fracMarkup, num } from './frac.js?v=20261022-maths-r6';
 
 const val = f => F(f.n, f.d);
 const fmt = (f, dp) => (dp != null ? decText(val(f), dp) ?? fracMarkup(val(f)) : val(f).d === 1 ? num(val(f).n) : fracMarkup(val(f)));
@@ -31,7 +31,8 @@ export function parseSolutions(raw, vars) {
   }
   return out;
 }
-const rowEq = (row, sol) => row.every((p, i) => eq(p.value, val(sol[i])));
+let TOL = null; // set while marking a spec with a read-off tolerance
+const rowEq = (row, sol) => row.every((p, i) => (TOL != null ? Math.abs(p.value.n / p.value.d - sol[i].n / sol[i].d) <= TOL + 1e-9 : eq(p.value, val(sol[i]))));
 /** Match rows to solutions one-to-one, in any order. Returns the number matched. */
 function matchCount(rows, sols) {
   const used = new Set();
@@ -43,6 +44,10 @@ function matchCount(rows, sols) {
   return n;
 }
 export function markSolutions(spec, raw) {
+  TOL = spec.tol ?? null;
+  try { return markSolutionsInner(spec, raw); } finally { TOL = null; }
+}
+function markSolutionsInner(spec, raw) {
   const rows = parseSolutions(raw, spec.vars);
   if (!rows) return { status: 'invalid', code: 'format-solutions' };
   const want = spec.sols;
@@ -60,11 +65,12 @@ export function markSolutions(spec, raw) {
   if (spec.vars.length === 2 && rows.length === want.length && matchCount(rows.map(r => [...r].reverse()), want) === want.length) return { status: 'wrong', code: 'swapped' };
   return { status: 'wrong', code: 'value', hit, count: rows.length };
 }
-export const solutionsMatch = (trapSols, raw, spec) => { const rows = parseSolutions(raw, spec.vars); return !!rows && rows.length === trapSols.length && matchCount(rows, trapSols) === trapSols.length; };
+export const solutionsMatch = (trapSols, raw, spec) => { TOL = spec.tol ?? null; try { return solutionsMatchInner(trapSols, raw, spec); } finally { TOL = null; } };
+const solutionsMatchInner = (trapSols, raw, spec) => { const rows = parseSolutions(raw, spec.vars); return !!rows && rows.length === trapSols.length && matchCount(rows, trapSols) === trapSols.length; };
 export function solutionsMarkup(spec) {
   const lab = (i, v) => { const l = spec.labels?.[i] ?? v + ' ='; return l.endsWith('£') ? l : l + ' '; };
   const one = s => spec.vars.map((v, i) => `${lab(i, v)}${fmt(s[i], spec.dp)}`).join(', ');
-  return spec.sols.map(one).join(spec.vars.length === 1 ? ' or ' : ' and ');
+  return spec.sols.map(one).join(spec.vars.length === 1 ? ' or ' : ' and ') + (spec.tol ? ` (accept answers within ${spec.tol})` : '');
 }
 export function solutionsGiven(spec, raw) {
   const rows = parseSolutions(raw, spec.vars);
@@ -105,7 +111,9 @@ function partToInterval(part, v) {
   return null;
 }
 export function parseInequality(raw, v = 'x') {
-  const s = normalise(raw).replace(/<=|=</g, '≤').replace(/>=|=>/g, '≥').replace(/∪/g, ' or ');
+  let s = normalise(raw).replace(/<=|=</g, '≤').replace(/>=|=>/g, '≥').replace(/∪/g, ' or ');
+  const setNote = s.match(/^\{\s*[a-z]\s*[:|]\s*(.+)\}$/i); // set notation {x : x > 3}
+  if (setNote) s = setNote[1];
   if (!/[<>≤≥]/.test(s)) return null;
   const parts = s.split(/\bor\b|,|;/i).map(p => p.trim()).filter(Boolean);
   const set = [];
