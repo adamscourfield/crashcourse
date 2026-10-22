@@ -1,7 +1,7 @@
 {
   "batch": "Ecology05",
   "date": "2026-10-22",
-  "tests": 380,
+  "tests": 399,
   "journeys": [
     {
       "lesson": "science.biology.ecology.conservation",
@@ -247,5 +247,25 @@
     "Constrained pyramid construction and evaluation not unrestricted freehand/extended writing",
     "No physical practical or full assistive-technology certification"
   ],
-  "publication": "pending"
+  "publication": "pending",
+  "integration": {
+    "remoteCommit": "2a1a2c0",
+    "mathsLessonsPreserved": 10,
+    "combinedTests": 399,
+    "scienceCompleted22Retained": true,
+    "subjectSwitchAndIndependentTiers": true,
+    "mathsMenuVerified": true,
+    "allFiveScienceWidgetsRender": true,
+    "mobile": {
+      "science": {
+        "scroll": 390,
+        "width": 390
+      },
+      "maths": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    "consoleErrors": []
+  }
 }
