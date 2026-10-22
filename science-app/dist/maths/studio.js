@@ -15,6 +15,7 @@ import { visual4, MODELS4 } from './models-algebra.js?v=20261022-maths-r7';
 import { visual5, MODELS5 } from './models-algebra2.js?v=20261022-maths-r7';
 import { visual6, MODELS6 } from './models-graphs.js?v=20261022-maths-r7';
 import { visual7, MODELS7 } from './models-algebra3.js?v=20261022-maths-r7';
+import { MODELS8 } from './models-algebra4.js?v=20261022-maths-r7';
 import { visual, mountModel } from './models-number.js?v=20261022-maths-r7';
 import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r7';
 import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r7';
@@ -117,7 +118,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const generation = modelGeneration, panel = $('#mPanel'), body = $('#mBody');
     $('#mTitle').textContent = '';
     $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
-    (MODELS7[l.model] || MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
+    (MODELS8[l.model] || MODELS7[l.model] || MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
       panel, body, w: p.widget, tier: s.tier,
       isActive: () => generation === modelGeneration && panel.isConnected && body.isConnected && $('#mPanel') === panel && !!$('#mTitle'),
       save, feedback, setTitle: t => ($('#mTitle').textContent = t),

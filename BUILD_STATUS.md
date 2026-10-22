@@ -1,3 +1,24 @@
+## Maths: Edexcel 1MA1 Algebra batch 05 — remaining Algebra gaps closed; on GitHub `main`, not published
+
+Two lessons close the gaps recorded after batch 04:
+- **Surds in algebra and further sequences** (A24, A4). Fibonacci-type unknowns are Foundation; Higher adds geometric sequences with a surd ratio, conjugates and rationalising a ± √b denominators.
+- **Exponential graphs, areas under curves and strict regions** (A12, A14, A15, A22; Higher only). It covers abˣ in context, trapezium estimates and over/underestimates, gradients of money graphs, and dashed boundaries.
+
+There are 5 new skills (99 in all). Graphs now draw dashed lines and vertical boundaries. Every A1–A25 statement now has teaching and practice; limits are listed per statement in the requirements file.
+
+**QA:**
+- 509 automated tests pass on `main` 5ca323f plus this change (`tests/maths-algebra4.test.js` is new).
+- Browser walk-throughs: the new flow 8 has 53 checks. The earlier seven were rerun (87, 68, 62, 94, 69, 64 and 78); flow 7's lesson counts now come from the page. 575 checks in total.
+- Brief: `curriculum/briefs/maths-algebra-batch-05.md`.
+
+**Cache:** maths modules are at `20261022-maths-r7`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication of lessons 21–22;
+- specialist review.
+
+**Next:** the Ratio strand (R1–R16).
+
 ## Physics Particle batch02 — implemented, published and GitHub updated
 
 Five lessons: internal energy/temperature, latent heat, heating/cooling curves and gas motion/temperature/pressure shared both tiers; separate-Physics gas compression/pV both tiers with mandatory Higher work/pump-warming extension. AQA8463/8464 4/6.3.2.1–.3,4/6.3.3.1,4.3.3.2 and HT4.3.3.3 checked22October2026. Existing Energy heating lesson retains its ID/practical and now cross-maps4/6.3.2.2; Particle lesson prerequisite links back to it, no duplicate SHC lesson. Latent-fusion AT5 is an opportunity, not a new required-practical claim. Full Particle statement/evidence reconciliation remains open; teaching coverage is not specialist/constructed/physical closure.

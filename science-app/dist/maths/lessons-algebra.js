@@ -18,7 +18,7 @@ const ITER_WEB = [[1, 0]]; for (let i = 0; i < 5; i++) ITER_WEB.push([ITER_EG[i]
 
 export const algebraTopic = {
   id: 'maths.algebra', title: 'Algebra', short: 'Algebra', number: '02', status: 'partial',
-  coverage: 'Twenty lessons on algebraic notation, substitution and vocabulary; simplifying and the laws of indices; expanding and factorising single and double brackets, including quadratics (Higher: three brackets and ax² + bx + c); solving linear equations; using and rearranging formulae; sequences and the nth term; linear (Higher: quadratic) inequalities; quadratic equations (Higher: completing the square and the formula); and simultaneous equations (Higher: linear/quadratic). Graphs: coordinates, straight lines, gradients and equations of lines (Higher: perpendicular), quadratic, cubic and reciprocal graphs (Higher: exponential, trigonometric, transformations), graphical solutions and (Higher) regions, real-life graphs (Higher: gradients, areas and circles). Plotted answers use an interactive grid. Then forming and solving equations in context; functions (Higher: notation, inverse and composite); identities, show-that arguments and counterexamples (Higher: proof); and, Higher only, algebraic fractions with fractional indices and iteration.',
+  coverage: 'Twenty-two lessons on algebraic notation, substitution and vocabulary; simplifying and the laws of indices; expanding and factorising single and double brackets, including quadratics (Higher: three brackets and ax² + bx + c); solving linear equations; using and rearranging formulae; sequences and the nth term; linear (Higher: quadratic) inequalities; quadratic equations (Higher: completing the square and the formula); and simultaneous equations (Higher: linear/quadratic). Graphs: coordinates, straight lines, gradients and equations of lines (Higher: perpendicular), quadratic, cubic and reciprocal graphs (Higher: exponential, trigonometric, transformations), graphical solutions and (Higher) regions, real-life graphs (Higher: gradients, areas and circles). Plotted answers use an interactive grid. Then forming and solving equations in context; functions (Higher: notation, inverse and composite); identities, show-that arguments and counterexamples (Higher: proof); and, Higher only, algebraic fractions with fractional indices and iteration. Finally, Fibonacci-type sequences (Higher: surd ratios and conjugates) and, Higher only, exponential graphs, areas under curves, money gradients and strict-inequality regions.',
 };
 
 export const algebraLessons = [
@@ -543,8 +543,59 @@ export const algebraLessons = [
     skills: [S('maths.algebra.form-geometry'), S('maths.algebra.form-context'), S('maths.algebra.form-interpret')],
     checkPlan: [['maths.algebra.form-geometry', 1], ['maths.algebra.form-geometry', 2], ['maths.algebra.form-geometry', 3], ['maths.algebra.form-geometry', 3], ['maths.algebra.form-context', 1], ['maths.algebra.form-context', 2], ['maths.algebra.form-context', 3], ['maths.algebra.form-interpret', 1], ['maths.algebra.form-interpret', 1], ['maths.algebra.form-interpret', 2]],
     limits: 'Contexts come from a set of templates. Forming the equation is taught and shown in each worked solution; the final answer is marked. Rejecting solutions of quadratic equations in context is Higher only.',
+  },  {
+    id: 'maths.algebra.surds-sequences',
+    topicId: 'maths.algebra',
+    title: 'Surds in algebra and further sequences',
+    refs: ['A24', 'A4'],
+    minutes: 40,
+    model: 'sequence-surds',
+    prerequisites: ['maths.algebra.sequences', 'maths.number.exact'],
+    big: 'In a Fibonacci-type sequence each term is the sum of the two before: starting a, b gives a, b, a + b, a + 2b, 2a + 3b, so two known terms give a pair of simultaneous equations. Higher: a geometric sequence can have a surd ratio; with ratio √2, every second term is a whole number because √2 × √2 = 2. Expressions with surds follow the rules of algebra: (a + √b)(a − √b) = a² − b, and multiplying by this conjugate rationalises a denominator such as {1/3 + √5}.',
+    learn: [
+      { title: 'Fibonacci-type sequences.', text: 'Each term after the second is the sum of the two before. If the first term is 3 and the third is 10, the second is 10 − 3 = 7, and the sequence continues 3, 7, 10, 17, 27. When two later terms are known, call the first two terms a and b: the terms are a, b, a + b, a + 2b, 2a + 3b.',
+        example: { prompt: 'The 3rd term is 9 and the 5th term is 23. Find the first two terms.', steps: ['a + b = 9 and 2a + 3b = 23', 'Subtract 2(a + b) = 18: b = 5', 'a = 4'] },
+        visual: { kind: 'work', lines: ['a, b, a + b, a + 2b, 2a + 3b', 'a + b = 9', '2a + 3b = 23', 'a = 4, b = 5'] } },
+      { title: 'Higher: geometric sequences with a surd ratio.', text: '3, 3√2, 6, 6√2, 12, … multiplies by √2 each time. Two steps multiply by √2 × √2 = 2, so the whole-number terms double. The 7th term is 3 × 2³ = 24. When the 3rd and 5th terms are known, their ratio is r² because there are two steps.',
+        example: { prompt: 'Find the next term of 2, 2√3, 6, 6√3, …', steps: ['Ratio √3', '6√3 × √3 = 6 × 3 = 18'] },
+        visual: { kind: 'work', lines: ['× √2   × √2   × √2', '3,  3√2,  6,  6√2,  12', 'two steps: × 2'] } },
+      { title: 'Higher: surd expressions and conjugates.', text: '(a + √b)(a − √b) = a² − b: the surd terms cancel. So to rationalise {4/3 + √5}, multiply top and bottom by 3 − √5: the bottom becomes 9 − 5 = 4 and the answer is 3 − √5. Squaring a sum keeps a middle term: (√2 + √3)² = 2 + 2√6 + 3 = 5 + 2√6.',
+        example: { prompt: 'Rationalise {2/1 + √3}', steps: ['Multiply by {1 − √3/1 − √3}', 'Bottom: 1 − 3 = −2', 'Top: 2 − 2√3', '= −1 + √3'] },
+        visual: { kind: 'work', lines: ['{4/3 + √5} × {3 − √5/3 − √5}', '= {4(3 − √5)/9 − 5}', '= 3 − √5'] } },
+    ],
+    skills: [S('maths.algebra.seq-further'), S('maths.algebra.surd-algebra')],
+    checkPlan: [['maths.algebra.seq-further', 1], ['maths.algebra.seq-further', 2], ['maths.algebra.seq-further', 3], ['maths.algebra.seq-further', 4], ['maths.algebra.seq-further', 4], ['maths.algebra.surd-algebra', 1], ['maths.algebra.surd-algebra', 1], ['maths.algebra.surd-algebra', 2], ['maths.algebra.surd-algebra', 2], ['maths.algebra.surd-algebra', 3]],
+    limits: 'Foundation practises Fibonacci-type sequences (missing terms and the first two terms). Geometric sequences with a surd ratio and surd expressions with conjugates are Higher only; simplifying single surds and rationalising {a/√b} are taught in the Number lesson on exact calculation.',
+  },
+  {
+    id: 'maths.algebra.further-graphs',
+    topicId: 'maths.algebra',
+    title: 'Exponential graphs, areas under curves and strict regions',
+    refs: ['A12', 'A14', 'A15', 'A22'],
+    minutes: 50,
+    higherOnly: true,
+    model: 'growth-area',
+    prerequisites: ['maths.algebra.real-life-graphs', 'maths.algebra.graphical-solutions'],
+    big: 'y = abˣ starts at a when x = 0 and multiplies by b for each step of 1: b > 1 is growth and 0 < b < 1 is decay. Compound growth and depreciation follow this pattern, so the value passes a target after a whole number of steps you can find by trying values. The area under a curve can be estimated by splitting it into trapezia; for a curve that bends upwards the estimate is too big, and for one that bends downwards it is too small. The gradient of a money graph is a rate, such as pence per minute. On a region, a strict inequality (< or >) has a dashed boundary because points on the line are not included.',
+    learn: [
+      { title: 'Exponential growth and decay.', text: 'N = 200 × 3ᵗ: at t = 0, N = 200; each hour it triples. To find a and b from a graph through (0, 5) and (2, 45): a = 5 because b⁰ = 1, then 5b² = 45 so b² = 9 and b = 3. A car losing 15% a year is worth V = 12000 × 0.85ᵗ; try t = 4, 5, … to see when it first drops below a value.',
+        example: { prompt: 'V = 8000 × 0.9^t. Is V below £5000 after 4 years?', steps: ['0.9^4 = 0.6561', '8000 × 0.6561 = £5248.80', 'Not yet; after 5 years it is £4723.92'] },
+        visual: { kind: 'g', g: { xr: [-1, 4], yr: [0, 60], ystep: 5, height: 260, fns: [{ expr: '5*3^x', label: 'y = 5 × 3ˣ' }, { expr: '40*0.5^x', label: 'y = 40 × 0.5ˣ' }], points: [[0, 5, '(0, 5)'], [2, 45, '(2, 45)']] }, caption: 'Growth (b = 3) and decay (b = 0.5)' } },
+      { title: 'Areas under curves.', text: 'Split the area under a velocity–time curve into strips of equal width h. Each strip is roughly a trapezium with area {1/2}(a + b)h. Adding them gives {h/2}(first + 2 × middle values + last). The area is the distance travelled. If the curve bends upwards, the trapezia stick out above it: an overestimate.',
+        example: { prompt: 'Velocities 2, 2.5, 4, 6.5, 10 m/s at t = 0, 1, 2, 3, 4. Estimate the distance.', steps: ['{1/2}(2 + 2(2.5 + 4 + 6.5) + 10)', '= {1/2}(38) = 19 m'] },
+        visual: { kind: 'g', g: { xr: [0, 4], yr: [0, 11], height: 240, xlabel: 'Time (s)', ylabel: 'Velocity (m/s)', fns: [{ expr: '0.5x^2 + 2' }], polys: [0, 1, 2, 3].map(i => ({ pts: [[i, 0], [i, 0.5 * i * i + 2], [i + 1, 0.5 * (i + 1) ** 2 + 2], [i + 1, 0]] })) }, caption: 'Four trapezia under a curve' } },
+      { title: 'Gradients in money graphs.', text: 'A phone bill graph starting at £10 and reaching £34 at 300 minutes has gradient (34 − 10) ÷ 300 = £0.08 per minute: 8p a minute. The intercept, £10, is the fixed charge. Dividing £34 by 300 would wrongly include the fixed charge.',
+        example: { prompt: 'Savings rise from £200 to £680 in 8 months. Amount saved each month?', steps: ['680 − 200 = 480', '480 ÷ 8 = £60 per month'] },
+        visual: { kind: 'g', g: { xr: [0, 300], yr: [0, 40], xstep: 50, ystep: 5, height: 240, xlabel: 'Minutes', ylabel: 'Cost (£)', polys: [{ pts: [[0, 10], [300, 34]] }], points: [[0, 10, '£10'], [300, 34, '(300, £34)']] }, caption: 'Gradient = cost per minute' } },
+      { title: 'Strict inequalities on graphs.', text: 'For y < 4 − x, the line y = 4 − x is dashed: points on it do not satisfy the inequality. For y ≥ 0 the line is solid. To list integer points in a region, check each candidate against every inequality, leaving out points on dashed lines.',
+        example: { prompt: 'Is (2, 2) in the region y < 4 − x?', steps: ['4 − 2 = 2', '2 < 2 is false: it is on the dashed line, so not included'] },
+        visual: { kind: 'g', g: { xr: [-1, 5], yr: [-1, 5], fns: [{ expr: '4 - x', label: 'y = 4 − x', dash: true }, { expr: '0' }], vlines: [{ x: 1, dash: true, label: 'x = 1' }], region: [[1, 0], [1, 3], [4, 0]] }, caption: 'y < 4 − x, y ≥ 0, x > 1' } },
+    ],
+    skills: [S('maths.algebra.graph-exponential'), S('maths.algebra.area-curve'), S('maths.algebra.regions-strict')],
+    checkPlan: [['maths.algebra.graph-exponential', 1], ['maths.algebra.graph-exponential', 2], ['maths.algebra.graph-exponential', 3], ['maths.algebra.area-curve', 1], ['maths.algebra.area-curve', 1], ['maths.algebra.area-curve', 2], ['maths.algebra.area-curve', 3], ['maths.algebra.regions-strict', 1], ['maths.algebra.regions-strict', 2], ['maths.algebra.regions-strict', 3]],
+    limits: 'Higher only. Exponential questions about time use a calculator. Trapezium estimates use four equal strips and exact table values. The over/underestimate judgement uses curves that bend one way only. Drawing boundaries and shading are taught in the investigation; practice marks integer points and choices.',
   },
 ];
 
-export const algebraOrder = ['maths.algebra.notation', 'maths.algebra.simplify', 'maths.algebra.single-brackets', 'maths.algebra.quadratics', 'maths.algebra.linear-equations', 'maths.algebra.formulae', 'maths.algebra.sequences', 'maths.algebra.inequalities', 'maths.algebra.quadratic-equations', 'maths.algebra.simultaneous', 'maths.algebra.coordinates-lines', 'maths.algebra.line-equations', 'maths.algebra.nonlinear-graphs', 'maths.algebra.graphical-solutions', 'maths.algebra.real-life-graphs', 'maths.algebra.forming-equations', 'maths.algebra.functions', 'maths.algebra.proof', 'maths.algebra.algebraic-fractions', 'maths.algebra.iteration'];
+export const algebraOrder = ['maths.algebra.notation', 'maths.algebra.simplify', 'maths.algebra.single-brackets', 'maths.algebra.quadratics', 'maths.algebra.linear-equations', 'maths.algebra.formulae', 'maths.algebra.sequences', 'maths.algebra.inequalities', 'maths.algebra.quadratic-equations', 'maths.algebra.simultaneous', 'maths.algebra.coordinates-lines', 'maths.algebra.line-equations', 'maths.algebra.nonlinear-graphs', 'maths.algebra.graphical-solutions', 'maths.algebra.real-life-graphs', 'maths.algebra.forming-equations', 'maths.algebra.functions', 'maths.algebra.proof', 'maths.algebra.algebraic-fractions', 'maths.algebra.iteration', 'maths.algebra.surds-sequences', 'maths.algebra.further-graphs'];
 export const orderedAlgebra = algebraOrder.map(id => algebraLessons.find(l => l.id === id));

@@ -197,8 +197,8 @@ test('algebra marking: equivalence, form, notation and unreadable input', () => 
 
 test('Higher-only algebra sits only in final Higher levels; Foundation checks never reach it', () => {
   const higher = algebraSkills.flatMap(sk => sk.levels.map((l, i) => (l.higher ? `${sk.id}@${i + 1}` : null)).filter(Boolean));
-  assert.deepEqual(higher.sort(), ['maths.algebra.expand-double@3', 'maths.algebra.factorise-quadratic@3', 'maths.algebra.form-interpret@2', 'maths.algebra.graph-line-equation@3', 'maths.algebra.graph-recognise@2', 'maths.algebra.identities@3', 'maths.algebra.quad-solve@3']);
-  assert.deepEqual(algebraSkills.filter(sk => sk.higherOnly).map(sk => sk.id).sort(), ['maths.algebra.afrac-add', 'maths.algebra.afrac-simplify', 'maths.algebra.afrac-solve', 'maths.algebra.alg-indices', 'maths.algebra.func-inverse', 'maths.algebra.func-notation', 'maths.algebra.graph-circle', 'maths.algebra.graph-gradient-area', 'maths.algebra.graph-regions', 'maths.algebra.graph-transform', 'maths.algebra.ineq-quadratic', 'maths.algebra.iter-compute', 'maths.algebra.iter-rearrange', 'maths.algebra.iter-sign', 'maths.algebra.proof', 'maths.algebra.quad-complete-square', 'maths.algebra.quad-formula', 'maths.algebra.seq-nth-quadratic', 'maths.algebra.sim-nonlinear']);
+  assert.deepEqual(higher.sort(), ['maths.algebra.expand-double@3', 'maths.algebra.factorise-quadratic@3', 'maths.algebra.form-interpret@2', 'maths.algebra.graph-line-equation@3', 'maths.algebra.graph-recognise@2', 'maths.algebra.identities@3', 'maths.algebra.quad-solve@3', 'maths.algebra.seq-further@3', 'maths.algebra.seq-further@4']);
+  assert.deepEqual(algebraSkills.filter(sk => sk.higherOnly).map(sk => sk.id).sort(), ['maths.algebra.afrac-add', 'maths.algebra.afrac-simplify', 'maths.algebra.afrac-solve', 'maths.algebra.alg-indices', 'maths.algebra.area-curve', 'maths.algebra.func-inverse', 'maths.algebra.func-notation', 'maths.algebra.graph-circle', 'maths.algebra.graph-exponential', 'maths.algebra.graph-gradient-area', 'maths.algebra.graph-regions', 'maths.algebra.graph-transform', 'maths.algebra.ineq-quadratic', 'maths.algebra.iter-compute', 'maths.algebra.iter-rearrange', 'maths.algebra.iter-sign', 'maths.algebra.proof', 'maths.algebra.quad-complete-square', 'maths.algebra.quad-formula', 'maths.algebra.regions-strict', 'maths.algebra.seq-nth-quadratic', 'maths.algebra.sim-nonlinear', 'maths.algebra.surd-algebra']);
   for (const sk of algebraSkills) assert.ok(sk.levels.slice(0, levelsFor(sk, 'Foundation').length).every(l => !l.higher), sk.id);
   for (const l of orderedAlgebra) for (const [id, lv] of l.checkPlan) assert.ok(!levelsFor(skillById[id], 'Foundation')[Math.min(lv, topLevel(skillById[id], 'Foundation')) - 1].higher);
 });
@@ -226,7 +226,8 @@ test('inactive Algebra model callbacks cannot write to a previous subject or sta
   const { MODELS4 } = await import('../dist/maths/models-algebra.js');
   const { MODELS5 } = await import('../dist/maths/models-algebra2.js');
   const { MODELS7 } = await import('../dist/maths/models-algebra3.js');
-  for (const mount of [...Object.values(MODELS4), ...Object.values(MODELS5), ...Object.values(MODELS7)]) {
+  const { MODELS8 } = await import('../dist/maths/models-algebra4.js');
+  for (const mount of [...Object.values(MODELS4), ...Object.values(MODELS5), ...Object.values(MODELS7), ...Object.values(MODELS8)]) {
     const stale = new Proxy({}, { get() { throw new Error('stale DOM read'); }, set() { throw new Error('stale DOM write'); } });
     assert.doesNotThrow(() => mount({ w: {}, tier: 'Higher', panel: stale, body: stale, isActive: () => false, setTitle() { throw new Error('stale title'); } }));
   }
