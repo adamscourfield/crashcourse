@@ -5,9 +5,9 @@
 // Same contract as the Number skill modules: generators are pure functions of (level, seed).
 // Algebraic answers use kind 'algebra' (see algebra.js): {expr, display, form, vars, subject?}.
 // alTraps are wrong expressions that reveal a specific misconception.
-import { rng, int, pick, shuffled } from './rng.js?v=20261022-maths-r4p1';
-import { F, add, sub, mul, div, eq, gcd, num, fracMarkup, decText } from './frac.js?v=20261022-maths-r4p1';
-import { make as baseMake } from './skills-number.js?v=20261022-maths-r4p1';
+import { rng, int, pick, shuffled } from './rng.js?v=20261022-maths-r5';
+import { F, add, sub, mul, div, eq, gcd, num, fracMarkup, decText } from './frac.js?v=20261022-maths-r5';
+import { make as baseMake } from './skills-number.js?v=20261022-maths-r5';
 
 // A negative number written into prompt or step text must use a true minus sign (−), as everywhere else.
 const fixMinus = t => (typeof t === 'string' ? t.replace(/(^|[\s(=:,×÷])-(\d)/g, '$1−$2') : t);
@@ -20,7 +20,7 @@ function make(skill, level, seed, o) {
   if (it.alTraps) it.alTraps = it.alTraps.map(t => ({ ...t, why: fixMinus(t.why) }));
   return it;
 }
-import { algValue, equivalent } from './algebra.js?v=20261022-maths-r4p1';
+import { algValue, equivalent } from './algebra.js?v=20261022-maths-r5';
 
 /* ───────── formatting helpers ───────── */
 const Fr = c => (typeof c === 'number' ? F(c) : c);
@@ -693,4 +693,5 @@ const rearrange = {
   },
 };
 
+export { make as makeAlg, makeA, fixMinus, A as algAns, tr as algTrap, valAns, choice as choiceItem };
 export const algebraSkills = [notation, substitute, vocabulary, collectSkill, indexLaws, expandSingle, factoriseSingle, expandDouble, factoriseQuadratic, solve, solveBoth, formSolve, formulaUse, rearrange];

@@ -1,3 +1,38 @@
+## Maths: Edexcel 1MA1 Algebra batch 02 — sequences, inequalities, quadratic and simultaneous equations; on GitHub `main`, not published
+
+Four Algebra lessons (7–10):
+- **Sequences and the nth term** (A23–A25; Higher: quadratic nth term).
+- **Solving inequalities** (A22; Higher: quadratic inequalities).
+- **Solving quadratic equations** (A18 and the A11 turning point; Higher: rearrangement, ax² + bx + c, completing the square, the formula to 2 d.p.).
+- **Simultaneous equations** (A19, A21; Higher: a line with a parabola or a circle).
+
+There are 13 new skills (65 in all) and four investigations: matchstick nth term, number line and sign reversal, roots on a graph and the zero rule, and elimination with the intersection point.
+
+New answer kinds in `dist/maths/sets.js`:
+- **solution boxes:** order-free; one root of two, swapped x/y and the 2 d.p. format are each diagnosed;
+- **typed inequalities:** equivalent forms accepted; a wrong < or ≤ gets partial credit; an equation is refused;
+- **integer lists:** missing and extra values are named;
+- **completed-square form.**
+
+**Merged with `main`:** main had added a guard against stale Algebra redraws. I kept it, applied it to the new investigations, and extended its test.
+
+**QA:**
+- 447 automated tests pass after rebasing onto `main` 24dc0cd. The new checks use independent evaluation, brute force and bisection.
+- Browser walk-throughs pass: batch 02 69 checks (`tools/maths-browser-flow-5.mjs`), and 87, 68, 62 and 94 rerun, so 380 in total.
+- Brief: `curriculum/briefs/maths-algebra-batch-02.md`.
+- Mapping: `curriculum/maths-algebra-requirements.csv`.
+
+**Cache:** maths modules are at `20261022-maths-r5`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication of lessons 7–10;
+- specialist review;
+- graphical solutions are not marked;
+- Higher A22 two-variable regions and set notation;
+- surd geometric sequences.
+
+**Next:** a graph input, then graphs (A8–A16).
+
 ## Physics Energy batch02 — implemented, published and GitHub updated
 
 Five lessons: power; conservation/dissipation; thermal conduction/insulation; efficiency; resources/reliability/impacts. Shared8463/8464 both tiers under existing Energy topic. Exact refs4/6.1.1.4, .1.2.1, .1.2.2 and .1.3 checked22October2026. Efficiency-improvement card,1 practice/2 checks and fourth investigation are Higher only, enforced again by completion requirements. Insulation RP2 AT1/5 preparation is separate Physics only; Trilogy shares conduction teaching and rod AT1/5 opportunity, not RP2. Resources covers all named families, uses, reliability, environmental issues, trends and social/political/economic/ethical constraints; no generator-mechanism requirement.29 grouped teaching/support mapping rows; full Energy statement/evidence audit remains outstanding.

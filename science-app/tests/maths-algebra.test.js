@@ -12,9 +12,11 @@ import { orderedAlgebra, algebraLessons, algebraOrder } from '../dist/maths/less
 import { orderedLessons as numberLessons } from '../dist/maths/lessons-number.js';
 import { levelsFor, topLevel, freshMaths, lessonState, lessonDone } from '../dist/maths/mastery.js';
 import { visual4 } from '../dist/maths/models-algebra.js';
+import { visual5 } from '../dist/maths/models-algebra2.js';
 
 const N = 250;
 const algebraSkills = allSkills.filter(sk => sk.id.startsWith('maths.algebra.'));
+const batch1 = new Set(['notation', 'substitute', 'vocabulary', 'collect', 'index-laws', 'expand-single', 'factorise-single', 'expand-double', 'factorise-quadratic', 'solve', 'solve-both-sides', 'form-solve', 'formula-use', 'rearrange'].map(s => 'maths.algebra.' + s));
 const close = (a, b) => Math.abs(a - b) <= 1e-7 * Math.max(1, Math.abs(a), Math.abs(b));
 
 /** Markup → JS source with letters as variables: implied multiplication made explicit. */
@@ -43,7 +45,7 @@ const rawFor = a => (a.kind === 'choice' ? String(a.answer) : a.kind === 'algebr
 const valueOf = a => (a.kind === 'integer' ? a.value : a.value.n / a.value.d);
 
 test('every algebra skill level generates deterministic, JSON-safe items whose own answer marks correct', () => {
-  for (const sk of algebraSkills) for (let lv = 1; lv <= sk.levels.length; lv++) for (let i = 0; i < N; i++) {
+  for (const sk of algebraSkills.filter(sk => batch1.has(sk.id))) for (let lv = 1; lv <= sk.levels.length; lv++) for (let i = 0; i < N; i++) {
     const a = generate(sk.id, lv, 's' + i), b = generate(sk.id, lv, 's' + i);
     assert.deepEqual(a, b, `${sk.id} L${lv} not deterministic`);
     assert.deepEqual(JSON.parse(JSON.stringify(a)), a, 'item must survive JSON');
@@ -193,7 +195,8 @@ test('algebra marking: equivalence, form, notation and unreadable input', () => 
 
 test('Higher-only algebra sits only in final Higher levels; Foundation checks never reach it', () => {
   const higher = algebraSkills.flatMap(sk => sk.levels.map((l, i) => (l.higher ? `${sk.id}@${i + 1}` : null)).filter(Boolean));
-  assert.deepEqual(higher.sort(), ['maths.algebra.expand-double@3', 'maths.algebra.factorise-quadratic@3']);
+  assert.deepEqual(higher.sort(), ['maths.algebra.expand-double@3', 'maths.algebra.factorise-quadratic@3', 'maths.algebra.quad-solve@3']);
+  assert.deepEqual(algebraSkills.filter(sk => sk.higherOnly).map(sk => sk.id).sort(), ['maths.algebra.ineq-quadratic', 'maths.algebra.quad-complete-square', 'maths.algebra.quad-formula', 'maths.algebra.seq-nth-quadratic', 'maths.algebra.sim-nonlinear']);
   for (const sk of algebraSkills) assert.ok(sk.levels.slice(0, levelsFor(sk, 'Foundation').length).every(l => !l.higher), sk.id);
   for (const l of orderedAlgebra) for (const [id, lv] of l.checkPlan) assert.ok(!levelsFor(skillById[id], 'Foundation')[Math.min(lv, topLevel(skillById[id], 'Foundation')) - 1].higher);
 });
@@ -208,7 +211,7 @@ test('algebra lesson records: ids, refs, prerequisites, visuals and check plans'
     for (const p of l.prerequisites || []) assert.ok(known.has(p), `${l.id} prerequisite ${p} must come earlier`);
     known.add(l.id);
     assert.ok(l.learn.length >= 3);
-    for (const c of l.learn) assert.ok(c.example.steps.length && visual4(c.visual).length > 20, `${l.id}: ${c.title} visual`);
+    for (const c of l.learn) assert.ok(c.example.steps.length && (visual4(c.visual) || visual5(c.visual)).length > 20, `${l.id}: ${c.title} visual`);
     assert.equal(l.checkPlan.length, 10);
     for (const [id, lv] of l.checkPlan) { assert.ok(l.skills.some(sk => sk.id === id), `${l.id} check uses foreign skill ${id}`); assert.ok(lv >= 1 && lv <= skillById[id].levels.length); }
     assert.equal(new Set(l.checkPlan.map(([id]) => id)).size, l.skills.length, `${l.id} check must sample every skill`);
@@ -219,7 +222,8 @@ test('algebra lesson records: ids, refs, prerequisites, visuals and check plans'
 
 test('inactive Algebra model callbacks cannot write to a previous subject or stage', async () => {
   const { MODELS4 } = await import('../dist/maths/models-algebra.js');
-  for (const mount of Object.values(MODELS4)) {
+  const { MODELS5 } = await import('../dist/maths/models-algebra2.js');
+  for (const mount of [...Object.values(MODELS4), ...Object.values(MODELS5)]) {
     const stale = new Proxy({}, { get() { throw new Error('stale DOM read'); }, set() { throw new Error('stale DOM write'); } });
     assert.doesNotThrow(() => mount({ w: {}, tier: 'Higher', panel: stale, body: stale, isActive: () => false, setTitle() { throw new Error('stale title'); } }));
   }

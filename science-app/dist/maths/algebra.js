@@ -12,7 +12,7 @@
 // (x + 1)(x − 2)), + − × * · ÷ /, ^ or ² ³ for powers, brackets. "x2" is refused with a hint,
 // and "1/2x" is refused as ambiguous, because the student meant something definite and the
 // marker must not guess.
-import { F, add, sub, mul, div, eq, gcd, normalise } from './frac.js?v=20261022-maths-r4p1';
+import { F, add, sub, mul, div, eq, gcd, normalise } from './frac.js?v=20261022-maths-r5';
 
 /* ───────── polynomials and rational functions ───────── */
 const mkey = m => Object.keys(m).filter(v => m[v]).sort().map(v => v + m[v]).join('·');
@@ -267,6 +267,24 @@ export function factorInfo(ast) {
   return brackets ? 'ok' : 'not-factorised';
 }
 
+/** (x + p)^2 + q with a monic linear bracket and a number term (either may be absent). */
+function completedSquare(ast) {
+  const terms = ast.k === 'add' ? ast.ts : [{ sign: 1, e: ast }];
+  let squares = 0;
+  for (const { sign, e } of terms) {
+    if (e.k === 'pow' && e.e === 2 && e.b.k === 'paren') {
+      if (sign < 0) return false;
+      const v = evaluate(e.b.e), ts = [...v.n.values()];
+      const lin = ts.filter(t => Object.keys(t.m).length), d = [...v.d.values()];
+      if (d.length !== 1 || Object.keys(d[0].m).length || lin.length !== 1 || Object.values(lin[0].m)[0] !== 1 || !eq(lin[0].c, mul(d[0].c, F(1)))) return false;
+      squares++;
+      continue;
+    }
+    if (!isNumeric(e)) return false;
+  }
+  return squares === 1;
+}
+
 /* ───────── marking ───────── */
 const HINTS = {
   'letter-digit': 'Write the number before the letter (3a, not a3), and use ^ for powers: x^2.',
@@ -312,6 +330,7 @@ export function markAlgebra(spec, raw) {
   if (!rEquivalent(value, target)) return { status: 'wrong', code: 'value' };
   const form = spec.form || 'any';
   if (form === 'any') return { status: 'correct' };
+  if (form === 'completed-square') return completedSquare(parsed.ast) ? { status: 'correct' } : { status: 'partial', code: 'want-completed-square' };
   if (form === 'factorised') {
     const f = factorInfo(parsed.ast);
     if (f === 'ok') return { status: 'correct' };

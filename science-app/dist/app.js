@@ -11,7 +11,7 @@ import {rateFigure,catalystFigure} from './kinetic-figures.js?v=20261022-physics
 import {profileFigure} from './energy-graphs.js?v=20261022-physics02r1';
 import {topics,topicById,topicLessons,contextKey,contextRun,courseFor,specRefs} from './registry.js?v=20261022-physics02r1';
 import {lessons,conceptNames,sourceURLs} from './content.js?v=20261022-physics02r1';
-import {createMathsStudio} from './maths/studio.js?v=20261022-maths-r4p1';import {STORAGE_KEY,subjects,restore,session,eligible,grade,recordConcept,updateCompletion,dueConcepts,isCorrect} from './progress.js?v=20261022-physics02r1';
+import {createMathsStudio} from './maths/studio.js?v=20261022-maths-r5';import {STORAGE_KEY,subjects,restore,session,eligible,grade,recordConcept,updateCompletion,dueConcepts,isCorrect} from './progress.js?v=20261022-physics02r1';
 import {showScene,mountWidget} from './widgets.js?v=20261022-physics02r1';
 import {renderDiagram} from './visual.js?v=20261022-physics02r1';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];

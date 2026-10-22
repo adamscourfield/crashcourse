@@ -172,3 +172,18 @@ sup .mtok-op{min-width:34px;min-height:34px;font-size:18px;vertical-align:super}
 .mgrid4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 12px}
 #mathsContent .mtext.msmall{max-width:100%;font-family:var(--serif);font-size:18px}
 @media (max-width:640px){.mterm-group{grid-template-columns:56px 1fr auto;font-size:16px}.mbins{grid-template-columns:1fr 1fr}}
+/* ───────── Algebra batch 2 ───────── */
+.msols{display:grid;gap:8px}
+.msols-row{display:flex;flex-wrap:wrap;gap:10px 16px}
+.msols-row label{display:flex;align-items:center;gap:8px;font-family:var(--serif);font-size:18px;color:var(--navy)}
+#mathsContent .msols input.lab-input{width:110px;margin:0;font-size:18px}
+.msols-join{font-size:13px;color:var(--subtle)}
+.mgraph{display:block;width:100%;max-width:520px;margin:6px auto 0}
+.mseq{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:22px;margin:10px auto}
+.mseq figure{margin:0;text-align:center;color:#b7c8d6;font-size:12px}
+.mdiff{display:grid;gap:6px;margin:10px auto;font-family:var(--serif);color:var(--cream)}
+.mdiff-row{display:grid;grid-template-columns:120px repeat(10,24px);align-items:center;font-size:18px}
+.mdiff-row span{font-family:var(--sans,inherit);font-size:12px;color:#b7c8d6}
+.mdiff-row b{grid-column:calc(2 + var(--o));grid-row:1;text-align:center;font-weight:600;white-space:nowrap}
+.mdiff-row:nth-child(2) b{color:var(--coral)}.mdiff-row:nth-child(3) b{color:#a8d5b5}
+@media (max-width:640px){.mdiff-row{grid-template-columns:86px repeat(10,20px);font-size:15px}}
