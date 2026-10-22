@@ -1,4 +1,4 @@
-import{ledgers,decayRate,milkData,mean,milkPH,suitability,scenarios}from './eco3-models.js?v=20261022-electricity02r5';
+import{ledgers,decayRate,milkData,mean,milkPH,suitability,scenarios}from './eco3-models.js?v=20261022-electricity03';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const text=(x,y,s,n=17,c='#f8f4ed')=>`<text x="${x}" y="${y}" text-anchor="middle" fill="${c}" font-family="sans-serif" font-size="${n}">${esc(s)}</text>`;
 const path=(d,c='#b7cac5',w=3)=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"/>`;

@@ -1,5 +1,5 @@
-import {halfTasks,validHalfEquation} from './half-equations.js?v=20261022-electricity02r5';
-import {showIndustry} from './industry-scenes.js?v=20261022-electricity02r5';
+import {halfTasks,validHalfEquation} from './half-equations.js?v=20261022-electricity03';
+import {showIndustry} from './industry-scenes.js?v=20261022-electricity03';
 export const aluminiumTasks=[
 {id:'route',title:'Choose the extraction route',prompt:'The starting material is aluminium oxide. Aluminium is above carbon in reactivity.',fields:[['method','Route',[['carbon','Carbon reduction'],['electro','Electrolysis'],['filter','Filtration']],'electro'],['reason','Reason',[['above','Aluminium is above carbon'],['native','Aluminium is already native metal'],['none','The compound has no ions']],'above']],result:'route',why:'Carbon cannot reduce aluminium oxide. Electrolysis decomposes the molten electrolyte.'},
 {id:'mixture',title:'Reduce heating demand',prompt:'Keep the cell molten while reducing the temperature required compared with pure aluminium oxide.',fields:[['mixture','Electrolyte',[['water','A cold aqueous solution'],['pure','Only solid aluminium oxide'],['cryolite','Aluminium oxide in molten cryolite']],'cryolite'],['energy','Energy consequence',[['none','No current is needed'],['lower','Less energy needed for heating'],['reverse','The anode becomes negative']],'lower']],result:'mixture',why:'The molten mixture works at a lower temperature. Current and substantial energy are still needed.'},

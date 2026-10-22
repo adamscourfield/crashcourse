@@ -1,4 +1,4 @@
-import{respFigure,respSVG,rt}from './resp-figures.js?v=20261022-electricity02r5';
+import{respFigure,respSVG,rt}from './resp-figures.js?v=20261022-electricity03';
 const phase=(p,n)=>Math.min(n-1,Math.floor(Math.max(0,Math.min(1,p))*n));
 const make=(title,steps,note,render)=>({title,steps,note,render,duration:12});
 export const respFilms={

@@ -1,5 +1,5 @@
-import {renderCustomModel}from './visual.js?v=20261022-electricity02r5';
-import {cellType,selectedPart,cellParts}from './cell-anatomy.js?v=20261022-electricity02r5';
-import {detailedCellFigure}from './cell-diagrams.js?v=20261022-electricity02r5';
-import {buildCellMeshes} from './cell-meshes.js?v=20261022-electricity02r5';
+import {renderCustomModel}from './visual.js?v=20261022-electricity03';
+import {cellType,selectedPart,cellParts}from './cell-anatomy.js?v=20261022-electricity03';
+import {detailedCellFigure}from './cell-diagrams.js?v=20261022-electricity03';
+import {buildCellMeshes} from './cell-meshes.js?v=20261022-electricity03';
 export function showCellCutaway({type='animal',highlight='',title='Explore the cell'}={}){type=cellType(type);highlight=selectedPart(type,highlight);renderCustomModel({name:({animal:'Animal cell',plant:'Plant cell',bacterium:'Bacterial cell'}[type]),formula:highlight?cellParts[highlight].name:({animal:'Animal cell',plant:'Plant cell',bacterium:'Bacterial cell'}[type]),kicker:'CUTAWAY MODEL · SYMBOLIC SIZES',atoms:[],bonds:[],radius:3.0,note:'Separately enlarged · not to scale',viewKey:'cell:'+type,startPaused:true,aria:'Interactive '+type+' cell cutaway'+(highlight?'. Selected structure: '+cellParts[highlight].name:'')+'. Drag or use arrow keys to rotate; plus and minus zoom. Use the structure selector for names and functions.',diagram:detailedCellFigure({type,highlight}),build:(group,T)=>buildCellMeshes(group,T,{type,highlight})});}

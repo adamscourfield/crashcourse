@@ -1,0 +1,1 @@
+import{renderDiagram}from './visual.js?v=20261022-electricity03';import{domesticFigure}from './el3-figures.js?v=20261022-electricity03';export function showEl3(spec='sources',w={}){let[kind,card]=spec.split(':');renderDiagram(w.title||'Electricity at home',w.label||'Original educational model',domesticFigure({kind,state:card||'0',...w}),'PHYSICS · ELECTRICITY');}
