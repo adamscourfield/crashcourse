@@ -28,7 +28,7 @@ export const el1Lessons=[
       },
       {
         "title": "Recognise sensors and meters",
-        "text": "Ammeter and voltmeter symbols are circles labelled A and V. The thermistor symbol has a diagonal temperature marker; an LDR has inward light arrows. Their detailed behaviour and applications come in later sensor lessons. Here identify their standard representations without confusing light emitted by an LED with light arriving at an LDR.",
+        "text": "Ammeter and voltmeter symbols are circles labelled A and V. The thermistor symbol has a diagonal temperature marker; an LDR has inward light arrows. Their detailed behaviour and applications are available in the Thermistors and LDRs lessons. Here identify their standard representations without confusing light emitted by an LED with light arriving at an LDR.",
         "scene": "el1:symbols:2",
         "process": false
       },
@@ -678,7 +678,7 @@ export const el1Lessons=[
       },
       {
         "title": "Practical preparation has boundaries",
-        "text": "This lesson prepares the wire-length part of Physics RP 3 / Trilogy RP 15, AT 1/6/7. The required practical also includes series and parallel resistor combinations, which remain for a later batch. A virtual table and graph do not establish physical setup, unrestricted graph drawing, measuring uncertainty or supervised practical competence.",
+        "text": "This lesson prepares the wire-length part of Physics RP 3 / Trilogy RP 15, AT 1/6/7. The required practical also includes series and parallel resistor combinations, now available in the Resistor combinations lesson. A virtual table and graph do not establish physical setup, unrestricted graph drawing, measuring uncertainty or supervised practical competence.",
         "scene": "el1:wire:3",
         "process": false
       }
@@ -801,7 +801,7 @@ export const el1Lessons=[
         "options": [
           "Fully, including all hands-on skills",
           "Only if its animation is watched twice",
-          "In part; series/parallel combinations and physical work remain"
+          "In part; use the combinations lesson and physical work too"
         ],
         "answer": 2,
         "why": "RP 3/RP 15 also requires combinations of resistors.",
@@ -869,7 +869,7 @@ export const el1Lessons=[
       },
       {
         "title": "Interpret evidence independently",
-        "text": "Physics RP 4 / Trilogy RP 16 requires the filament lamp, diode and constant-temperature resistor, AT 6/7. Our activity compares all nine component/voltage snapshots and rejects universal claims. It supports graph interpretation and practical preparation, not independent freehand graphs, circuit drawing, apparatus skill or specialist review. Thermistor/LDR behaviour and applications follow in later lessons.",
+        "text": "Physics RP 4 / Trilogy RP 16 requires the filament lamp, diode and constant-temperature resistor, AT 6/7. Our activity compares all nine component/voltage snapshots and rejects universal claims. It supports graph interpretation and practical preparation, not independent freehand graphs, circuit drawing, apparatus skill or specialist review. Thermistor/LDR behaviour and applications are available in their sensor lessons.",
         "scene": "el1:iv:5",
         "process": false
       }

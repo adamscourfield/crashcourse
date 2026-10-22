@@ -1,5 +1,5 @@
-import {cubeData} from './nano-models.js?v=20261022-electricity01r3';
-import {enable3D,renderModel,renderDiagram} from './visual.js?v=20261022-electricity01r3';
+import {cubeData} from './nano-models.js?v=20261022-electricity02r3';
+import {enable3D,renderModel,renderDiagram} from './visual.js?v=20261022-electricity02r3';
 const text=(x,y,s,size=12)=>`<text x="${x}" y="${y}" fill="#d4dfe7" font-family="sans-serif" text-anchor="middle" font-size="${size}">${s}</text>`;
 const svg=(art,label)=>`<svg class="lab-svg" viewBox="0 0 440 285" role="img" aria-label="${label}">${art}</svg>`;
 export function showNanoScale(exponent=1){const nm=10**exponent;let art='<path d="M45 140H395" stroke="#b7c8d6" stroke-width="2"/>';for(let e=-1;e<=4;e++){const x=45+(e+1)*70;art+=`<path d="M${x} 130V150" stroke="#b7c8d6"/>`+text(x,173,10**e+'',11);}const x=45+(exponent+1)*70;art+=`<circle cx="${x}" cy="140" r="8" fill="#ed8b78"/>`+text(220,70,`${nm} nm = ${nm*1e-9} m`,18)+text(220,205,'Diameter / nm · logarithmic ruler',12)+text(220,250,'Equal gaps mean ×10 · not a photograph',11);renderDiagram('Orders of size',`${nm} nm`,svg(art,'Logarithmic ruler from 0.1 to 10000 nm with marker at '+nm+' nm'),'SIZE COMPARISON · LOGARITHMIC');}

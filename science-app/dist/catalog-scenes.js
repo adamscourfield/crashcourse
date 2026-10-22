@@ -1,5 +1,5 @@
-import {organicDisplayFigure} from './organic-display-figures.js?v=20261022-electricity01r3';
-import {renderDiagram} from './visual.js?v=20261022-electricity01r3';
-import {escapeLab} from './catalog-labs.js?v=20261022-electricity01r3';
-import {catalogArt} from './catalog-figures.js?v=20261022-electricity01r3';
+import {organicDisplayFigure} from './organic-display-figures.js?v=20261022-electricity02r3';
+import {renderDiagram} from './visual.js?v=20261022-electricity02r3';
+import {escapeLab} from './catalog-labs.js?v=20261022-electricity02r3';
+import {catalogArt} from './catalog-figures.js?v=20261022-electricity02r3';
 export function showCatalog(l,t=null,a={},checked=false,display=null){t??=l.lab[0];const predictions=t.fields.map(f=>{const raw=a[f.key];if(raw===undefined||raw==='')return '';const label=f.type==='select'?f.options?.find(o=>String(o.value)===String(raw))?.label:raw;return '<span>'+escapeLab(f.label)+': '+escapeLab(label)+'</span>';}).filter(Boolean).join('');renderDiagram(display?'Structure explorer':t.title,l.title,(display?organicDisplayFigure(display):catalogArt(t.visual))+'<div class="catalog-prediction">'+(display?'':(checked?'<b>Prediction checked</b>':predictions?'<b>Your prediction</b>':'')+predictions)+'</div><p class="diagram-caption">'+escapeLab(display?'Explore structures independently. Return to task evidence to solve the investigation.':t.modelNote||'Supplied data and symbolic representation. Not an experimental record or exact molecular model.')+'</p>',display?'DISPLAYED STRUCTURES':checked?'EVIDENCE CHECKED':'PREDICT · COMPARE · EXPLAIN');}

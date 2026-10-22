@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-electricity01r3';
-import{tasksFor,validEndo,advanceEndo,numericEndo}from './endo-models.js?v=20261022-electricity01r3';import{showEndo}from './endo-visuals.js?v=20261022-electricity01r3';export{showEndo};
+import{syncProcessMovie}from './process-player.js?v=20261022-electricity02r3';
+import{tasksFor,validEndo,advanceEndo,numericEndo}from './endo-models.js?v=20261022-electricity02r3';import{showEndo}from './endo-visuals.js?v=20261022-electricity02r3';export{showEndo};
 export function mountEndo(l,p,root,{save,done,feedback}){let ts=tasksFor(l.widget.slice(5),l.learnerTier),w=p.widget;w.endoTask??=ts[0].id;w.endoDrafts??={};w.endoPassed??=[];let i=ts.findIndex(t=>t.id===w.endoTask);if(i<0)i=0;let t=ts[i],v=w.endoDrafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountEndo(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.endoPassed.includes(t.id));
 syncProcessMovie(l,1,['glands','data','risk','diabetes'].includes(t.kind)?{process:false}:null);
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

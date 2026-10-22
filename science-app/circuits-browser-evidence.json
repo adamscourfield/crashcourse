@@ -1,0 +1,379 @@
+{
+  "date": "2026-10-22",
+  "journeys": [
+    {
+      "lesson": "science.physics.electricity.series",
+      "checks": 6,
+      "passed": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "6:10",
+        "6:20",
+        "12:10",
+        "12:20"
+      ]
+    },
+    {
+      "lesson": "science.physics.electricity.parallel",
+      "checks": 6,
+      "passed": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "6:10",
+        "6:20",
+        "6:open",
+        "12:10",
+        "12:20",
+        "12:open"
+      ]
+    },
+    {
+      "lesson": "science.physics.electricity.combinations",
+      "checks": 6,
+      "passed": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "series:10",
+        "series:20",
+        "parallel:10",
+        "parallel:20"
+      ]
+    },
+    {
+      "lesson": "science.physics.electricity.thermistor",
+      "checks": 6,
+      "passed": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "20:2",
+        "20:4",
+        "60:2",
+        "60:4"
+      ]
+    },
+    {
+      "lesson": "science.physics.electricity.ldr",
+      "checks": 6,
+      "passed": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "0:2",
+        "0:4",
+        "100:2",
+        "100:4"
+      ]
+    }
+  ],
+  "mobile": [
+    {
+      "lesson": "science.physics.electricity.series",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.series",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.series",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.series",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.series",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.series",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.series",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.parallel",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.parallel",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.parallel",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.parallel",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.parallel",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.parallel",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.parallel",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.combinations",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.combinations",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.combinations",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.combinations",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.combinations",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.combinations",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.combinations",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.thermistor",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.thermistor",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.thermistor",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.thermistor",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.thermistor",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.thermistor",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.thermistor",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ldr",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ldr",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ldr",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ldr",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ldr",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ldr",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ldr",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    }
+  ],
+  "scope": "10 Electricity both routes/tiers; assessment10 eligible questions; Energy10 and Ecology25 completions retained; Maths15 Number/10 Algebra retained.",
+  "resume": "LDR bright100/4V/wrong prediction3 restored across reload and Trilogy/Foundation/back.",
+  "sources": "RP15 Trilogy vs RP3 Physics verified; combinations plus wire teaching preparation distinguished from physical competence. Earlier wire lesson now points to available combinations lesson.",
+  "repair": "Tests/browser caught sensor kind suffix overriding model kind; fixed before publication and all supported-state tests and both sensor flows passed. Final graph labels checked at390px.",
+  "limits": "Technical QA, not specialist content review, unrestricted drawing/graphs/writing, physical apparatus or full device/accessibility certification."
+}

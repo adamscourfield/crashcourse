@@ -1,5 +1,5 @@
-import {titre,meanSelected,titreTasks,strengthTasks,hydrogenFactor} from './titration-models.js?v=20261022-electricity01r3';
-import {showTitration} from './titration-scenes.js?v=20261022-electricity01r3';
+import {titre,meanSelected,titreTasks,strengthTasks,hydrogenFactor} from './titration-models.js?v=20261022-electricity02r3';
+import {showTitration} from './titration-scenes.js?v=20261022-electricity02r3';
 const input=(id,label)=>`<label class="field-label" for="${id}">${label}</label><input class="lab-input" id="${id}" type="number" step="any">`;
 const select=(id,label,options,value='')=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([v,text])=>`<option value="${v}" ${value===v?'selected':''}>${text}</option>`).join('')}</select>`;
 export function mountTitrationWidget(l,p,root,{save,done,feedback}){const w=p.widget;w.task??=0;w.answers??={};w.passed??=[];const i=w.task,a=w.answers[i]??={},strength=l.widget==='titrate-strength',t=(strength?strengthTasks:titreTasks)[i],$=s=>root.querySelector(s);a.indices??=[];const result=strength?null:{titre:titre(t.initial,t.final),mean:meanSelected(t.readings,t.indices)};

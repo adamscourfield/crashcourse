@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-electricity01r3';
-import{tasksForBound,validBound,advanceBound,numericBound,cultureCounts,berryOutput,webCases}from './bound-models.js?v=20261022-electricity01r3';import{showBound}from './bound-visuals.js?v=20261022-electricity01r3';export{showBound};
+import{syncProcessMovie}from './process-player.js?v=20261022-electricity02r3';
+import{tasksForBound,validBound,advanceBound,numericBound,cultureCounts,berryOutput,webCases}from './bound-models.js?v=20261022-electricity02r3';import{showBound}from './bound-visuals.js?v=20261022-electricity02r3';export{showBound};
 export function mountBound(l,p,root,{save,done,feedback}){let ts=tasksForBound(l.widget.slice(6)),w=p.widget;w.boundTask??=ts[0].id;w.boundDrafts??={};w.boundPassed??=[];let i=ts.findIndex(t=>t.id===w.boundTask);if(i<0)i=0;let t=ts[i],v=w.boundDrafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountBound(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.boundPassed.includes(t.id));
 syncProcessMovie(l,1,!['resistance','community-process'].includes(t.kind)?{process:false}:null);
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;
