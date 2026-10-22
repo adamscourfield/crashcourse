@@ -1,0 +1,475 @@
+{
+  "date": "2026-10-22",
+  "journeys": [
+    {
+      "lesson": "science.physics.energy.stores",
+      "result": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "launch:closed",
+        "collision:closed",
+        "accelerate:closed",
+        "brake:closed",
+        "kettle:closed"
+      ]
+    },
+    {
+      "lesson": "science.physics.energy.kinetic",
+      "result": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "2:3",
+        "2:6",
+        "4:3",
+        "4:6"
+      ]
+    },
+    {
+      "lesson": "science.physics.energy.gravitational",
+      "result": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "2:3",
+        "2:6",
+        "4:3",
+        "4:6"
+      ]
+    },
+    {
+      "lesson": "science.physics.energy.elastic",
+      "result": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "100:0.1",
+        "100:0.2",
+        "200:0.1",
+        "200:0.2"
+      ]
+    },
+    {
+      "lesson": "science.physics.energy.heating",
+      "result": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "0.5:0",
+        "0.5:0.1",
+        "1:0",
+        "1:0.1"
+      ]
+    }
+  ],
+  "mobile": [
+    {
+      "lesson": "science.physics.energy.stores",
+      "card": 0,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.stores",
+      "card": 1,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.stores",
+      "card": 2,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.stores",
+      "card": 3,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.stores",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.stores",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.stores",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.kinetic",
+      "card": 0,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.kinetic",
+      "card": 1,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.kinetic",
+      "card": 2,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.kinetic",
+      "card": 3,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.kinetic",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.kinetic",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.kinetic",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.gravitational",
+      "card": 0,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.gravitational",
+      "card": 1,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.gravitational",
+      "card": 2,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.gravitational",
+      "card": 3,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.gravitational",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.gravitational",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.gravitational",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.elastic",
+      "card": 0,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.elastic",
+      "card": 1,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.elastic",
+      "card": 2,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.elastic",
+      "card": 3,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.elastic",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.elastic",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.elastic",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.heating",
+      "card": 0,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.heating",
+      "card": 1,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.heating",
+      "card": 2,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.heating",
+      "card": 3,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.heating",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.heating",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.heating",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    }
+  ],
+  "visibility": [
+    {
+      "lesson": "science.physics.energy.stores",
+      "card": 0,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.stores",
+      "card": 1,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.stores",
+      "card": 2,
+      "visible": true,
+      "expected": true
+    },
+    {
+      "lesson": "science.physics.energy.stores",
+      "card": 3,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.kinetic",
+      "card": 0,
+      "visible": true,
+      "expected": true
+    },
+    {
+      "lesson": "science.physics.energy.kinetic",
+      "card": 1,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.kinetic",
+      "card": 2,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.kinetic",
+      "card": 3,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.gravitational",
+      "card": 0,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.gravitational",
+      "card": 1,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.gravitational",
+      "card": 2,
+      "visible": true,
+      "expected": true
+    },
+    {
+      "lesson": "science.physics.energy.gravitational",
+      "card": 3,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.elastic",
+      "card": 0,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.elastic",
+      "card": 1,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.elastic",
+      "card": 2,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.elastic",
+      "card": 3,
+      "visible": true,
+      "expected": true
+    },
+    {
+      "lesson": "science.physics.energy.heating",
+      "card": 0,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.heating",
+      "card": 1,
+      "visible": true,
+      "expected": true
+    },
+    {
+      "lesson": "science.physics.energy.heating",
+      "card": 2,
+      "visible": false,
+      "expected": false
+    },
+    {
+      "lesson": "science.physics.energy.heating",
+      "card": 3,
+      "visible": false,
+      "expected": false
+    }
+  ],
+  "resume": "Kinetic mass4 speed6 wrong prediction71 restored after reload and Trilogy/Foundation and back; earlier Ecology25 completions retained",
+  "maths": "15 Number lessons retained",
+  "assessment": "5 eligible topic questions",
+  "sources": "4.1.1.3 RP1 Separate and 6.1.1.3 RP14 Trilogy",
+  "limitations": "Browser technical QA; not specialist review or school practical competence"
+}

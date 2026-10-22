@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-eco6';
-import{tasksForInherit,validInherit,advanceInherit,numericInherit}from './inherit-models.js?v=20261022-eco6';import{showInherit}from './inherit-visuals.js?v=20261022-eco6';export{showInherit};
+import{syncProcessMovie}from './process-player.js?v=20261022-physics01';
+import{tasksForInherit,validInherit,advanceInherit,numericInherit}from './inherit-models.js?v=20261022-physics01';import{showInherit}from './inherit-visuals.js?v=20261022-physics01';export{showInherit};
 export function mountInherit(l,p,root,{save,done,feedback}){let ts=tasksForInherit(l.widget.slice(8)),w=p.widget;w.inheritTask??=ts[0].id;w.inheritDrafts??={};w.inheritPassed??=[];let i=ts.findIndex(t=>t.id===w.inheritTask);if(i<0)i=0;let t=ts[i],v=w.inheritDrafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountInherit(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.inheritPassed.includes(t.id));
 syncProcessMovie(l,1,['compare','ledger','evidence','examples','hierarchy','applications'].includes(t.kind)?{process:false}:null);
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

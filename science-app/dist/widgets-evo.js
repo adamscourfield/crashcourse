@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-eco6';
-import{tasksForEvo,validEvo,advanceEvo,numericEvo,nextGeneration}from './evo-models.js?v=20261022-eco6';import{showEvo}from './evo-visuals.js?v=20261022-eco6';export{showEvo};
+import{syncProcessMovie}from './process-player.js?v=20261022-physics01';
+import{tasksForEvo,validEvo,advanceEvo,numericEvo,nextGeneration}from './evo-models.js?v=20261022-physics01';import{showEvo}from './evo-visuals.js?v=20261022-physics01';export{showEvo};
 export function mountEvo(l,p,root,{save,done,feedback}){let ts=tasksForEvo(l.widget.slice(4)),w=p.widget;w.evoTask??=ts[0].id;w.evoDrafts??={};w.evoPassed??=[];let i=ts.findIndex(t=>t.id===w.evoTask);if(i<0)i=0;let t=ts[i],v=w.evoDrafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountEvo(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.evoPassed.includes(t.id));
 syncProcessMovie(l,1,['trait-data','variation','selection-data','breeding-goals','breeding-evidence','engineering-uses','engineering-evidence','transfer-evidence'].includes(t.kind)?{process:false}:null);
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

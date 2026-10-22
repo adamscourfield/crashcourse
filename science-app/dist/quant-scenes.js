@@ -1,7 +1,7 @@
-import {massBoundaryDiagram} from './model-diagrams.js?v=20261022-eco6';
-import {stackedReadings} from './model-geometry.js?v=20261022-eco6';
-import {renderDiagram,renderModel,enable3D} from './visual.js?v=20261022-eco6';
-import {statistics,repeatSets} from './quant-models.js?v=20261022-eco6';
+import {massBoundaryDiagram} from './model-diagrams.js?v=20261022-physics01';
+import {stackedReadings} from './model-geometry.js?v=20261022-physics01';
+import {renderDiagram,renderModel,enable3D} from './visual.js?v=20261022-physics01';
+import {statistics,repeatSets} from './quant-models.js?v=20261022-physics01';
 const text=(x,y,t,size=13)=>`<text x="${x}" y="${y}" fill="#d4dfe7" text-anchor="middle" font-family="sans-serif" font-size="${size}">${t}</text>`;
 export function showLedger(t=null,reveal=false){renderDiagram('Follow the weighed boundary',t?.name||'Atoms rearrange; mass is conserved',massBoundaryDiagram(t,reveal),'BOOKKEEPING MODEL · NOT APPARATUS');}
 export function showFormula(counts={H:2,O:1},formula='H₂O'){const atoms=[];for(const[el,n]of Object.entries(counts))for(let i=0;i<n;i++){const j=atoms.length;atoms.push([el,(j%5-2)*.75,(Math.floor(j/5)-.7)*.75,0]);}const diagram='<div class="diagram-card"><span class="eyebrow">YOUR ATOM COUNTS</span>'+Object.entries(counts).map(([e,n])=>'<p>'+e+': '+n+'</p>').join('')+'<p>Separate inventory symbols, not a structural formula.</p></div>';enable3D();renderModel({name:'Your atom inventory',formula,kicker:'SCHEMATIC FORMULA COUNT MODEL · NOT MOLECULAR GEOMETRY',aria:'Atom inventory for '+formula+': '+Object.entries(counts).map(([e,n])=>n+' '+e).join(', ')+'. No bonds or geometry are represented.',atoms,bonds:[],zoom:12,atomSize:.23,diagram});}

@@ -25,7 +25,7 @@ cd science-app
 npm test
 ```
 
-The current automated suite contains 411 tests, including generated-item checks for maths. Browser walk-throughs for maths are in `science-app/tools/`. Browser verification records are stored alongside the app; technical checks are separate from specialist curriculum review.
+The current automated suite contains 420 tests, including generated-item checks for maths. Browser walk-throughs for maths are in `science-app/tools/`. Browser verification records are stored alongside the app; technical checks are separate from specialist curriculum review.
 
 ## Project layout
 

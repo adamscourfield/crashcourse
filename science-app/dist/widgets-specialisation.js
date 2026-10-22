@@ -1,7 +1,7 @@
-import {renderDiagram} from './visual.js?v=20261022-eco6';
-import {specialCellFigure,fateFigure} from './special-cell-figures.js?v=20261022-eco6';
-import {specialCases,fateCases,comparedBoth,fateReady} from './special-cell-models.js?v=20261022-eco6';
-import {escapeLab} from './catalog-labs.js?v=20261022-eco6';
+import {renderDiagram} from './visual.js?v=20261022-physics01';
+import {specialCellFigure,fateFigure} from './special-cell-figures.js?v=20261022-physics01';
+import {specialCases,fateCases,comparedBoth,fateReady} from './special-cell-models.js?v=20261022-physics01';
+import {escapeLab} from './catalog-labs.js?v=20261022-physics01';
 export function showSpecial(type='sperm',w={}){const t=specialCases.find(t=>t.id===type)||specialCases[0];renderDiagram(t.name,t.job,specialCellFigure({type:t.id,adapted:w.adapted??true,step:w.step??0})+'<p class="diagram-caption">'+escapeLab(t.note)+'</p>','STRUCTURE → FUNCTION · SYMBOLIC MODEL');}
 export function showFate(context='animal',w={}){const t=fateCases.find(t=>t.id===context)||fateCases[0];renderDiagram(t.title,['Starting cell','Developing structures','Specialised outcome'][w.stage??0],fateFigure({context:t.id,target:w.target||t.targets[0][0],stage:w.stage??0})+'<p class="diagram-caption">Model branches represent possible outcomes, not conscious choices or real developmental times. Restarting resets the illustration; it does not reverse differentiation.</p>','CELL DEVELOPMENT · SCHEMATIC');}
 const options=(list,answer)=>'<option value="">Choose…</option>'+list.map(([value,label])=>'<option value="'+escapeLab(value)+'"'+(value===answer?' selected':'')+'>'+escapeLab(label)+'</option>').join('');

@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-eco6';
-import{tasksForRenal,validRenal,advanceRenal,numericRenal,validRenalPlot,renalLedger,renalSubstances}from './renal-models.js?v=20261022-eco6';import{showRenal}from './renal-visuals.js?v=20261022-eco6';export{showRenal};
+import{syncProcessMovie}from './process-player.js?v=20261022-physics01';
+import{tasksForRenal,validRenal,advanceRenal,numericRenal,validRenalPlot,renalLedger,renalSubstances}from './renal-models.js?v=20261022-physics01';import{showRenal}from './renal-visuals.js?v=20261022-physics01';export{showRenal};
 export function mountRenal(l,p,root,{save,done,feedback}){let ts=tasksForRenal(l.widget.slice(6)),w=p.widget;w.renalTask??=ts[0].id;w.renalDrafts??={};w.renalPassed??=[];let i=ts.findIndex(t=>t.id===w.renalTask);if(i<0)i=0;let t=ts[i],v=w.renalDrafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountRenal(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.renalPassed.includes(t.id));
 syncProcessMovie(l,1,['ledger','treatments','losses'].includes(t.kind)?{process:false}:null);
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;
