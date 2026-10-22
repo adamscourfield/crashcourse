@@ -1,4 +1,4 @@
-import{feedingFigure,cycleFigure,adaptationFigure,fieldFigure,transectFigure}from './eco2-figures.js?v=20261022-eco2';import{sampleSchedule}from './eco2-models.js?v=20261022-eco2';
+import{feedingFigure,cycleFigure,adaptationFigure,fieldFigure,transectFigure}from './eco2-figures.js?v=20261022-maths-r1';import{sampleSchedule}from './eco2-models.js?v=20261022-maths-r1';
 const film=(title,steps,render,note)=>({title,steps,render,note,duration:16});
 export const eco2Films={
 'eco2-feeding':film('Follow a feeding transfer',['Photosynthetic producer makes organic molecules.','Primary consumer eats the producer.','Secondary consumer eats the primary consumer.','Tertiary consumer occupies the next level in this chain.'],p=>feedingFigure(p),'Symbolic plant/caterpillar/bird/hawk chain. Signal represents direction of food/material/energy transfer, not one organism transforming into another, an exact energy amount or travel rate. Other food-web links omitted.'),

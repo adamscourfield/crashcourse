@@ -1,0 +1,446 @@
+// Maths studio: lesson flow, generated practice with mastery ladders, independent checks,
+// spaced interleaved review and topic assessment. Owns its own saved state (MATHS_KEY) so it
+// can never alter science progress.
+import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r1';
+import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES } from './answers.js?v=20261022-maths-r1';
+import { parseNumber, F, eq, normalise } from './frac.js?v=20261022-maths-r1';
+import { generate, skillById } from './skills-number.js?v=20261022-maths-r1';
+import { orderedLessons, mathsTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r1';
+import { visual, mountModel } from './models-number.js?v=20261022-maths-r1';
+import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r1';
+import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r1';
+
+const STAGES = ['Discover', 'Investigate', 'Practise', 'Check'];
+const EVENT_TEXT = { up: 'Level up', down: 'Stepping back a level to rebuild', practised: 'Skill secure' };
+
+export function createMathsStudio({ root, modal, closeModal, onProgress }) {
+  let raw = null, storage = true;
+  try { raw = localStorage.getItem(MATHS_KEY); } catch { storage = false; }
+  const s = restoreMaths(raw);
+  const lessons = () => orderedLessons.filter(l => s.tier === 'Higher' || !l.higherOnly);
+  if (!lessons().some(l => l.id === s.lessonId)) s.lessonId = lessons()[0].id;
+  s.topicId ??= 'maths.number';
+  let view = s.view && s.runs[s.view] && !s.runs[s.view].finished ? s.view : 'lesson';
+  const $ = sel => root.querySelector(sel), $$ = sel => [...root.querySelectorAll(sel)];
+  const lesson = () => lessons().find(l => l.id === s.lessonId);
+  const lessonSkills = l => l.skills.filter(sk => s.tier === 'Higher' || !sk.higherOnly);
+  const allSkills = () => [...new Set(lessons().flatMap(lessonSkills))];
+
+  function save() {
+    s.view = view;
+    try { localStorage.setItem(MATHS_KEY, JSON.stringify(s)); } catch { storage = false; }
+    const done = lessons().filter(l => lessonState(s, l.id).complete).length;
+    onProgress?.({ done, total: lessons().length, due: reviewDue().length, storage });
+  }
+  const feedback = (text, error = false) => { const f = $('#mFeedback'); if (!f) return; f.innerHTML = text ? mathHTML(text) : ''; f.classList.toggle('error', !!error); };
+
+  /* ───────── shell ───────── */
+  function shell() {
+    root.innerHTML = `<section class="intro"><div><div class="eyebrow"><span class="intro-number" id="mNumber"></span> <span class="mbadge" id="mCalc">Non-calculator</span></div><h1 id="mH1"></h1></div><div class="lesson-meta" id="mMeta"></div></section>
+<div class="lesson-toolbar"><button class="text-button" id="mLessons">Lessons</button><span id="mStatus"></span><button class="text-button" id="mNextLesson">Next lesson →</button></div>
+<nav class="steps" aria-label="Lesson stages">${STAGES.map((n, i) => `<button data-mstage="${i}"><b>0${i + 1}</b> ${n} <span hidden></span></button>`).join('')}</nav>
+<section class="workspace mworkspace"><div class="scene-panel mpanel" id="mPanel"></div><article class="activity"><div class="eyebrow" id="mKicker"></div><h2 id="mTitle"></h2><div id="mBody"></div><div id="mFeedback" class="mfeedback" role="status" aria-live="polite"></div><div class="activity-footer"><span id="mHint"></span><button class="primary" id="mContinue">Continue →</button></div></article></section>
+<section class="below"><details class="lesson-summary"><summary>Key idea</summary><p id="mBig"></p></details><span class="spec" id="mSpec"></span></section>
+<footer><button class="text-button" id="mSources">Specification & model notes</button></footer>`;
+    $('#mLessons').onclick = openLessons;
+    $('#mNextLesson').onclick = nextLesson;
+    $('#mSources').onclick = openSources;
+    $$('[data-mstage]').forEach(b => (b.onclick = () => { view = 'lesson'; lessonState(s, s.lessonId).stage = Number(b.dataset.mstage); render(); }));
+    $('#mContinue').onclick = onContinue;
+  }
+
+  function render() {
+    if (!$('#mPanel')) shell();
+    if (view !== 'lesson') return renderRun();
+    const l = lesson(), p = lessonState(s, l.id), d = lessonDone(p, l, s.tier, s);
+    const list = lessons(), idx = list.findIndex(x => x.id === l.id);
+    p.stage = Math.min(3, Math.max(0, p.stage || 0));
+    $('#mNumber').textContent = `LESSON ${String(idx + 1).padStart(2, '0')} / ${String(list.length).padStart(2, '0')}`;
+    $('#mH1').textContent = l.title;
+    $('#mMeta').innerHTML = `<div>◷ ${l.minutes} min · ${l.higherOnly ? 'Higher only' : 'Foundation and Higher'}</div>`;
+    $('#mStatus').textContent = p.complete ? `Complete · best check ${p.best}%` : '';
+    $('#mBig').textContent = l.big;
+    $('#mSpec').textContent = 'Edexcel 1MA1 · ' + l.refs.join(', ');
+    $('.steps').hidden = false;
+    $('#mNextLesson').hidden = false;
+    $$('[data-mstage]').forEach((b, i) => {
+      const done = [d.discover, d.investigate, d.practise, d.check][i];
+      b.classList.toggle('selected', p.stage === i); b.classList.toggle('done', done);
+      b.setAttribute('aria-current', p.stage === i ? 'step' : 'false');
+      b.querySelector('b').textContent = done ? '✓' : `0${i + 1}`;
+    });
+    $('#mKicker').textContent = STAGES[p.stage].toUpperCase();
+    $('#mContinue').hidden = false; $('#mContinue').textContent = 'Continue →';
+    $('.mworkspace').classList.toggle('question-mode', p.stage >= 2);
+    feedback('');
+    [renderDiscover, renderInvestigate, renderPractice, renderCheck][p.stage](l, p);
+    save();
+  }
+
+  /* ───────── discover ───────── */
+  function renderDiscover(l, p) {
+    p.card = Math.min(l.learn.length - 1, Math.max(0, p.card || 0));
+    const c = l.learn[p.card];
+    p.reveal ??= {};
+    const shown = p.reveal[p.card] ?? 0;
+    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual)}</div>`;
+    $('#mTitle').textContent = c.title;
+    const pre = p.card === 0 && l.prerequisites?.length ? `<div class="prerequisites"><span>Prior learning:</span>${l.prerequisites.map(id => `<button class="text-button" data-mpre="${id}">${esc(orderedLessons.find(x => x.id === id)?.title || id)}</button>`).join('')}</div>` : '';
+    $('#mBody').innerHTML = `${pre}<p>${mathHTML(c.text)}</p><div class="mexample"><div class="mexample-q"><span class="eyebrow">EXAMPLE</span><p>${mathHTML(c.example.prompt)}</p></div><ol class="msteps">${c.example.steps.map((st, i) => `<li ${i < shown ? '' : 'hidden'}>${mathHTML(st)}</li>`).join('')}</ol>${shown < c.example.steps.length ? `<button class="secondary" id="mReveal">${shown ? 'Next step' : 'Try it, then show the first step'}</button>` : ''}</div><div class="reading-dots">${l.learn.map((_, i) => `<button data-mcard="${i}" aria-label="Explanation ${i + 1}" class="${i === p.card ? 'current' : ''}">${i + 1}</button>`).join('')}</div>`;
+    $('#mReveal')?.addEventListener('click', () => { p.reveal[p.card] = shown + 1; render(); $('#mReveal')?.focus(); });
+    $$('[data-mcard]').forEach(b => (b.onclick = () => { p.card = Number(b.dataset.mcard); render(); }));
+    $$('[data-mpre]').forEach(b => (b.onclick = () => setLesson(b.dataset.mpre)));
+    $('#mHint').textContent = `Explanation ${p.card + 1} of ${l.learn.length}`;
+  }
+
+  /* ───────── investigate ───────── */
+  function renderInvestigate(l, p) {
+    $('#mTitle').textContent = '';
+    $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
+    mountModel(l.model, {
+      panel: $('#mPanel'), body: $('#mBody'), w: p.widget,
+      save, feedback, setTitle: t => ($('#mTitle').textContent = t),
+      done: () => { if (!p.widgetDone) { p.widgetDone = true; save(); render(); } $('#mHint').textContent = 'Complete ✓'; },
+    });
+  }
+
+  /* ───────── answer controls ───────── */
+  function controls(item, value, locked) {
+    const a = item.answer, v = value ?? '';
+    if (a.kind === 'choice') return `<div class="choices">${a.options.map((o, i) => `<button class="choice ${String(v) === String(i) ? 'selected' : ''}" data-mchoice="${i}" ${locked ? 'disabled' : ''}>${mathHTML(o)}</button>`).join('')}</div>`;
+    if (a.kind === 'fraction') {
+      const parsed = parseNumber(v);
+      const sh = parsed?.shape || {};
+      const neg = /^\s*[-−]/.test(String(v));
+      const whole = sh.kind === 'mixed' ? sh.w : sh.kind === 'integer' ? Math.abs(parsed.value.n) : '';
+      const n = sh.kind === 'mixed' || sh.kind === 'proper' || sh.kind === 'improper' ? sh.n : '';
+      const d = sh.kind === 'mixed' || sh.kind === 'proper' || sh.kind === 'improper' ? sh.d : '';
+      return `<fieldset class="mfrac-in" ${locked ? 'disabled' : ''}><legend class="field-label">Your answer${a.form === 'mixed' ? ' (whole number box for a mixed number)' : ''}</legend><button type="button" class="msign ${neg ? 'on' : ''}" data-msign aria-pressed="${neg}" aria-label="Negative">−</button><input class="lab-input mwhole" data-mw inputmode="numeric" autocomplete="off" aria-label="Whole number (optional)" placeholder="" value="${esc(whole)}"><span class="mfrac-stack"><input class="lab-input" data-mn inputmode="numeric" autocomplete="off" aria-label="Numerator" value="${esc(n)}"><i aria-hidden="true"></i><input class="lab-input" data-md inputmode="numeric" autocomplete="off" aria-label="Denominator" value="${esc(d)}"></span></fieldset>${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
+    }
+    if (a.kind === 'primes') return `<label class="field-label" for="mText">Your answer</label><input class="lab-input mtext" id="mText" autocomplete="off" spellcheck="false" value="${esc(v)}" ${locked ? 'disabled' : ''}><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey=" × ">×</button><button type="button" class="secondary" data-mkey="^">x<sup>n</sup></button>'}</div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : ''}${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
+    return `<label class="field-label" for="mText">Your answer</label><div class="mint"><button type="button" class="msign" data-msign-text aria-label="Make negative" ${locked ? 'disabled' : ''}>±</button><input class="lab-input mtext" id="mText" inputmode="numeric" autocomplete="off" value="${esc(v)}" ${locked ? 'disabled' : ''}></div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : ''}${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
+  }
+  function readValue(item) {
+    const a = item.answer;
+    if (a.kind === 'fraction') {
+      const neg = $('[data-msign]')?.classList.contains('on');
+      const w = $('[data-mw]').value.trim(), n = $('[data-mn]').value.trim(), d = $('[data-md]').value.trim();
+      if (!n && !d) return (neg && w ? '-' : '') + w;
+      return `${neg ? '-' : ''}${w ? w + ' ' : ''}${n}/${d}`;
+    }
+    return $('#mText')?.value ?? '';
+  }
+  function bindControls(item, onAnswer, onDraft) {
+    $$('[data-mchoice]').forEach(b => (b.onclick = () => onAnswer(b.dataset.mchoice)));
+    $('#mSubmit')?.addEventListener('click', () => onAnswer(readValue(item)));
+    $('[data-msign]')?.addEventListener('click', e => { e.currentTarget.classList.toggle('on'); e.currentTarget.setAttribute('aria-pressed', e.currentTarget.classList.contains('on')); onDraft?.(readValue(item)); });
+    $('[data-msign-text]')?.addEventListener('click', () => { const i = $('#mText'); i.value = i.value.trim().startsWith('-') || i.value.trim().startsWith('−') ? i.value.trim().slice(1) : '-' + i.value.trim(); onDraft?.(i.value); i.focus(); });
+    $$('[data-mkey]').forEach(b => (b.onclick = () => { const i = $('#mText'); const at = i.selectionStart ?? i.value.length; i.value = i.value.slice(0, at) + b.dataset.mkey + i.value.slice(i.selectionEnd ?? at); i.focus(); i.selectionStart = i.selectionEnd = at + b.dataset.mkey.length; onDraft?.(i.value); }));
+    $$('.mfrac-in input, #mText').forEach(i => {
+      i.addEventListener('input', () => onDraft?.(readValue(item)));
+      i.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); onAnswer(readValue(item)); } });
+    });
+  }
+  function diagnose(item, raw, result) {
+    if (result.status === 'partial') return PARTIAL_MESSAGES[result.code] || 'Right value, but not in the form asked for.';
+    if (item.answer.kind === 'choice') return item.optionWhy?.[Number(raw)] || '';
+    if (item.answer.kind === 'primes') {
+      if (result.code === 'wrong-product' || result.code === 'wrong-product-composite') {
+        const prod = Object.entries(result.given || {}).reduce((t, [b, k]) => t * Number(b) ** k, 1);
+        return `Those factors multiply to ${prod}, not ${Object.entries(item.answer.value).reduce((t, [b, k]) => t * Number(b) ** k, 1)}. Multiply your answer out to check it.`;
+      }
+      return '';
+    }
+    const p = parseNumber(raw);
+    if (!p) return '';
+    const trap = item.traps?.find(t => eq(p.value, F(t.v.n, t.v.d)));
+    return trap ? trap.why : '';
+  }
+  const solution = item => `<div class="msolution"><span class="eyebrow">WORKED SOLUTION</span><ol class="msteps">${item.steps.map(st => `<li>${mathHTML(st)}</li>`).join('')}</ol><p class="mfinal">Answer: <strong>${mathHTML(answerMarkup(item.answer))}</strong></p></div>`;
+
+  /* ───────── practise ───────── */
+  function practiceTarget(l, p) {
+    const sks = lessonSkills(l);
+    const open = sks.find(sk => !isPractised(skillState(s, sk.id), sk, s.tier));
+    if (open) return { mode: 'skill', skill: open, level: skillState(s, open.id).level };
+    if (sks.length > 1 && !p.mixed.done) {
+      const last = p.mixed.log.at(-1)?.skill;
+      const r = rng(l.id + p.mixed.log.length + (p.mixed.salt ||= newSeed()));
+      const pool = sks.filter(sk => sk.id !== last);
+      const sk = pool[Math.floor(r() * pool.length)];
+      return { mode: 'mixed', skill: sk, level: topLevel(sk, s.tier) };
+    }
+    return { mode: 'done' };
+  }
+  function ladder(l, p, target) {
+    const sks = lessonSkills(l);
+    return `<div class="mladder" aria-label="Practice progress">${sks.map(sk => {
+      const k = skillState(s, sk.id), top = topLevel(sk, s.tier), secure = isPractised(k, sk, s.tier);
+      const cur = target.mode === 'skill' && target.skill.id === sk.id;
+      return `<div class="mrung ${cur ? 'current' : ''} ${secure ? 'secure' : ''}"><b>${esc(sk.name)}</b><span>${secure ? 'Secure ✓' : `Level ${Math.min(k.level, top)} of ${top} · ${esc(levelsFor(sk, s.tier)[Math.min(k.level, top) - 1].label)}`}</span><i style="--p:${secure ? 1 : (Math.min(k.level, top) - 1 + levelProgress(k, sk, s.tier)) / top}"></i></div>`;
+    }).join('')}${sks.length > 1 ? `<div class="mrung ${target.mode === 'mixed' ? 'current' : ''} ${p.mixed.done ? 'secure' : ''}"><b>Mixed round</b><span>${p.mixed.done ? 'Secure ✓' : `${p.mixed.log.slice(-RULES.mixedWindow).filter(e => e.c).length} of the last ${RULES.mixedWindow} correct (need ${RULES.mixedNeeded})`}</span><i style="--p:${p.mixed.done ? 1 : Math.min(1, p.mixed.log.slice(-RULES.mixedWindow).filter(e => e.c && !e.a).length / RULES.mixedNeeded)}"></i></div>` : ''}</div>`;
+  }
+
+  function renderPractice(l, p) {
+    const target = practiceTarget(l, p);
+    const pr = p.practice;
+    const keep = !!(pr.item && pr.answer); // an answered item stays on screen until Next, even if it just secured the skill
+    $('#mPanel').innerHTML = '';
+    if (!keep && target.mode === 'done') {
+      $('#mTitle').textContent = 'Practice complete.';
+      const total = lessonSkills(l).reduce((t, sk) => t + skillState(s, sk.id).log.length, 0) + p.mixed.log.length;
+      $('#mBody').innerHTML = `${ladder(l, p, target)}<p>Every skill is secure at its top level and you passed the mixed round, across ${total} questions. Next, the independent check: ten new questions, no worked examples, first answers count.</p>`;
+      $('#mContinue').textContent = 'Start the independent check →';
+      $('#mHint').textContent = '';
+      return;
+    }
+    if (!keep && (!pr.item || pr.item.skill !== target.skill.id || (pr.mode || 'skill') !== target.mode || (target.mode === 'skill' && pr.item.level !== Math.min(target.level, topLevel(target.skill, s.tier)) && !pr.answer))) {
+      pr.item = generate(target.skill.id, Math.min(target.level, topLevel(target.skill, s.tier)), newSeed());
+      pr.mode = target.mode; pr.answer = null; pr.assisted = false; pr.example = null; pr.draft = '';
+    }
+    const item = pr.item, answered = !!pr.answer;
+    $('#mTitle').innerHTML = mathHTML(item.prompt);
+    const ex = pr.example ? `<div class="mexample assisted"><span class="eyebrow">WORKED EXAMPLE · A SIMILAR QUESTION</span><p>${mathHTML(pr.example.prompt)}</p><ol class="msteps">${pr.example.steps.map(st => `<li>${mathHTML(st)}</li>`).join('')}</ol><p class="mfinal">Answer: <strong>${mathHTML(answerMarkup(pr.example.answer))}</strong></p></div>` : '';
+    $('#mBody').innerHTML = `${ladder(l, p, target)}<div class="mq-meta"><span class="mbadge">${(pr.mode || target.mode) === 'mixed' ? 'Mixed' : 'Level ' + item.level}</span><span class="mbadge">Non-calculator</span>${pr.assisted ? '<span class="mbadge soft">After an example</span>' : ''}</div>${ex}${controls(item, answered ? pr.answer.raw : pr.draft, answered)}${answered && pr.answer.status !== 'correct' ? solution(item) : ''}${!answered && !pr.example ? '<button class="text-button mhelp" id="mExample">Show me a worked example first</button>' : ''}`;
+    if (answered) feedback(pr.answer.msg, pr.answer.status !== 'correct');
+    bindControls(item, value => {
+      if (pr.answer) return;
+      const res = mark(item.answer, value);
+      if (res.status === 'invalid') { feedback(res.code === 'empty' ? 'Enter an answer first.' : item.answer.kind === 'primes' ? 'Write primes joined by × (type x or *), for example 2^3 x 5.' : 'Write a whole number, a fraction like 3/4, or a mixed number like 1 3/4.', true); return; }
+      const correct = res.status === 'correct';
+      let event = null;
+      if ((pr.mode || target.mode) === 'skill') event = recordPractice(skillState(s, item.skill), skillById[item.skill], s.tier, { correct, assisted: pr.assisted }).event;
+      else {
+        p.mixed.log.push({ skill: item.skill, c: correct, a: pr.assisted, t: Date.now() });
+        if (mixedMet(p.mixed.log)) { p.mixed.done = true; event = 'practised'; }
+      }
+      const why = correct ? '' : diagnose(item, value, res);
+      const msg = (correct ? 'Correct.' : res.status === 'partial' ? 'Nearly.' : 'Not this time.') + (why ? ' ' + why : '') + (!correct && !why ? ' Compare your working with the worked solution.' : '') + (event ? ` ${EVENT_TEXT[event]}${event === 'up' ? `: level ${skillState(s, item.skill).level}.` : '.'}` : '');
+      pr.answer = { raw: value, status: res.status, msg };
+      save(); render();
+      $('#mContinue')?.focus();
+    }, draft => { pr.draft = draft; save(); });
+    $('#mExample')?.addEventListener('click', () => { pr.example = generate(item.skill, item.level, newSeed()); pr.assisted = true; save(); render(); });
+    $('#mContinue').textContent = answered ? 'Next question →' : 'Skip for now →';
+    $('#mHint').textContent = (pr.mode || target.mode) === 'mixed' ? 'Mixed round: skills interleaved' : skillById[item.skill].name;
+  }
+
+  /* ───────── check ───────── */
+  function startCheck(l, p) {
+    const run = (p.history.length || 0) + 1;
+    const plan = l.checkPlan.filter(([id]) => lessonSkills(l).some(sk => sk.id === id));
+    const items = shuffled(rng(l.id + run + Date.now()), plan.map(([id, lv]) => generate(id, Math.min(lv, topLevel(skillById[id], s.tier)), newSeed())));
+    p.check = { run, items, answers: {}, drafts: {}, index: 0, startedAt: Date.now() };
+  }
+  function renderCheck(l, p) {
+    if (!p.check || p.check.finished) {
+      $('#mTitle').textContent = 'Independent check';
+      const d = lessonDone(p, l, s.tier, s);
+      $('#mBody').innerHTML = `<p>Ten new questions across this lesson's skills. There are no worked examples or hints, and your first answer to each question counts. You need ${RULES.checkPass}% to complete the lesson.</p>${!d.practise ? '<p class="callout">You have not finished practising yet. You can still try the check, but the lesson completes only when practice is secure too.</p>' : ''}${p.history.length ? `<p>Previous runs: ${p.history.map(h => h.score + '%').join(', ')}. A new run uses different questions.</p>` : ''}`;
+      $('#mContinue').textContent = p.history.length ? 'Start a new check →' : 'Start the check →';
+      $('#mHint').textContent = '';
+      return;
+    }
+    const c = p.check, item = c.items[c.index], a = c.answers[item.id];
+    $('#mTitle').innerHTML = mathHTML(item.prompt);
+    $('#mBody').innerHTML = `<p class="check-rule">First answers count.</p><div class="mq-meta"><span class="mbadge">Non-calculator</span></div>${controls(item, a ?? c.drafts[item.id], a !== undefined)}`;
+    bindControls(item, value => {
+      if (c.answers[item.id] !== undefined) return;
+      const res = mark(item.answer, value);
+      if (res.status === 'invalid') { feedback(res.code === 'empty' ? 'Enter an answer first.' : 'That answer is not in a form that can be read. Check the format and try again.', true); return; }
+      c.answers[item.id] = value;
+      save(); render(); feedback('Answer recorded.');
+      $('#mContinue')?.focus();
+    }, draft => { c.drafts[item.id] = draft; save(); });
+    if (a !== undefined) feedback('Answer recorded.');
+    $('#mContinue').textContent = c.index === c.items.length - 1 ? 'See my results →' : 'Next question →';
+    $('#mHint').textContent = `Independent check ${c.index + 1} / ${c.items.length}`;
+  }
+  function finishCheck(l, p) {
+    const c = p.check, g = gradeRun(c.items, c.answers, mark);
+    c.finished = true;
+    const now = Date.now();
+    for (const it of c.items) {
+      const ok = mark(it.answer, c.answers[it.id]).status === 'correct';
+      if (!ok) flagForRecall(skillState(s, it.skill), now);
+    }
+    p.history.push({ run: c.run, score: g.percent, at: now, answers: { ...c.answers }, ids: c.items.map(i => i.id) });
+    p.best = Math.max(p.best || 0, g.percent);
+    const d = lessonDone(p, l, s.tier, s);
+    const complete = d.discover && d.investigate && d.practise && d.check;
+    if (complete && !p.complete) { p.complete = true; p.completedAt = now; lessonSkills(l).forEach(sk => scheduleFirstReview(skillState(s, sk.id), now)); }
+    save();
+    const pending = [];
+    if (!d.discover) pending.push('the Discover explanations');
+    if (!d.investigate) pending.push('the investigation');
+    if (!d.practise) pending.push('practice');
+    if (g.percent < RULES.checkPass) pending.push(`a check score of at least ${RULES.checkPass}%`);
+    const weak = [...new Set(c.items.filter(it => mark(it.answer, c.answers[it.id]).status !== 'correct').map(it => skillById[it.skill].name))];
+    modal(`<span class="eyebrow">INDEPENDENT CHECK · RUN ${c.run}</span><h2>${g.correct} / ${g.total} · ${g.percent}%</h2><p>${pending.length ? 'To complete this lesson, finish ' + pending.join(', ') + '.' : 'Lesson complete. These skills now join your spaced review, starting tomorrow.'}${weak.length ? ` Skills to revisit: ${esc(weak.join('; '))}. They have been added to your review list.` : ''}</p>${resultRows(c.items, c.answers)}<div class="modal-actions"><button class="primary" id="mrNext">${pending.length ? 'Continue learning' : 'Next lesson →'}</button><button class="secondary" id="mrRetake">New check with different questions</button>${weak.length ? '<button class="secondary" id="mrReview">Review weak skills now</button>' : ''}</div>`);
+    document.getElementById('mrRetake').onclick = () => { closeModal(); startCheck(l, p); save(); render(); };
+    document.getElementById('mrNext').onclick = () => { closeModal(); if (pending.length) { p.stage = !d.discover ? 0 : !d.investigate ? 1 : !d.practise ? 2 : 3; render(); } else nextLesson(); };
+    document.getElementById('mrReview')?.addEventListener('click', () => { closeModal(); startReview(); });
+  }
+  function resultRows(items, answers) {
+    return items.map(it => {
+      const ok = mark(it.answer, answers[it.id]).status === 'correct';
+      return `<details class="result-row"><summary><span class="${ok ? 'right' : 'wrong'}">${ok ? '✓' : '↻'}</span> ${mathHTML(it.prompt)}</summary><p>Your answer: ${mathHTML(givenMarkup(it.answer, answers[it.id]))}<br>Correct answer: <strong>${mathHTML(answerMarkup(it.answer))}</strong></p><ol class="msteps">${it.steps.map(st => `<li>${mathHTML(st)}</li>`).join('')}</ol></details>`;
+    }).join('');
+  }
+
+  function onContinue() {
+    if (view !== 'lesson') return nextRun();
+    const l = lesson(), p = lessonState(s, l.id);
+    if (p.stage === 0) {
+      if (!p.seen.includes(p.card)) p.seen.push(p.card);
+      if (p.card < l.learn.length - 1) p.card++;
+      else { const unread = l.learn.findIndex((_, i) => !p.seen.includes(i)); if (unread >= 0) p.card = unread; else p.stage = 1; }
+      return render();
+    }
+    if (p.stage === 1) {
+      if (!p.widgetDone) return feedback('Complete the investigation to continue.', true);
+      p.stage = 2; return render();
+    }
+    if (p.stage === 2) {
+      const answered = !!p.practice.answer;
+      if (!answered && practiceTarget(l, p).mode === 'done') { p.stage = 3; return render(); }
+      // Skipping an unanswered question records nothing; a fresh question is generated.
+      p.practice.item = null; p.practice.answer = null; p.practice.example = null; p.practice.assisted = false; p.practice.draft = '';
+      return render();
+    }
+    if (!p.check || p.check.finished) { startCheck(l, p); return render(); }
+    const c = p.check, item = c.items[c.index];
+    if (c.answers[item.id] === undefined) return feedback('Record an answer before moving on.', true);
+    if (c.index < c.items.length - 1) { c.index++; return render(); }
+    finishCheck(l, p);
+    render();
+  }
+
+  /* ───────── navigation ───────── */
+  function setLesson(id) {
+    if (!lessons().some(l => l.id === id)) return;
+    s.lessonId = id; view = 'lesson';
+    closeModal(); render();
+  }
+  function nextLesson() {
+    const list = lessons(), i = list.findIndex(l => l.id === s.lessonId);
+    if (i < list.length - 1) setLesson(list[i + 1].id); else openLessons();
+  }
+  function openLessons() {
+    const t = mathsTopics[0];
+    modal(`<span class="eyebrow">MATHS · TOPIC ${t.number}</span><h2>${esc(t.title)}</h2><p>Edexcel GCSE Mathematics (1MA1) · ${s.tier}. ${esc(t.coverage)}</p><div class="lesson-list">${lessons().map((l, i) => { const p = lessonState(s, l.id); const started = p.seen.length || p.widgetDone || p.history.length || lessonSkills(l).some(sk => skillState(s, sk.id).log.length); return `<button class="lesson-row" data-mlesson="${l.id}"><span class="lesson-row-number">${p.complete ? '✓' : String(i + 1).padStart(2, '0')}</span><span><b>${esc(l.title)}</b><small>${l.minutes} min · ${l.refs.join(', ')} · ${p.complete ? 'Complete' : started ? 'In progress' : 'Ready'}</small></span><span>→</span></button>`; }).join('')}</div><div class="modal-actions"><button class="primary" id="mmAssess">Available-lesson assessment →</button><button class="secondary" id="mmReview">Review & recall</button><button class="secondary" id="mmMap">Course map</button></div>`);
+    document.querySelectorAll('[data-mlesson]').forEach(b => (b.onclick = () => setLesson(b.dataset.mlesson)));
+    document.getElementById('mmAssess').onclick = startAssessment;
+    document.getElementById('mmReview').onclick = startReview;
+    document.getElementById('mmMap').onclick = openMap;
+  }
+  function openMap() {
+    modal(`<span class="eyebrow">MATHS COURSE MAP</span><h2>Edexcel GCSE Mathematics</h2><p>Specification 1MA1, Foundation and Higher tiers. Paper 1 is non-calculator; papers 2 and 3 allow a calculator.</p><div class="subject-grid">${mathsCourseMap.map(([name, id]) => `<button class="subject-card" ${id ? `data-mtopic="${id}"` : 'disabled'}><b>${esc(name)}</b><span>${id ? lessons().filter(l => l.topicId === id).length + ' lessons available' : 'Planned'}</span><small>${id ? 'Partly available' : 'Not built yet'}</small></button>`).join('')}</div><button class="secondary" id="mmSubjects">Other subjects →</button>`);
+    document.querySelectorAll('[data-mtopic]').forEach(b => (b.onclick = openLessons));
+    document.getElementById('mmSubjects').onclick = () => root.dispatchEvent(new CustomEvent('maths:subjects', { bubbles: true }));
+  }
+  function openSources() {
+    const l = lesson();
+    modal(`<span class="eyebrow">SPECIFICATION & MODEL NOTES</span><h2>${esc(l.title)}</h2><p>Edexcel GCSE (9–1) Mathematics 1MA1 references: ${l.refs.join(', ')}. ${l.higherOnly ? 'Higher tier only.' : 'Foundation and Higher tiers.'} Specification Issue 2 (June 2015), checked 22 October 2026.</p><p><a href="${mathsSource}" target="_blank" rel="noopener">Open the Edexcel specification ↗</a></p><p><strong>How practice works:</strong> questions are generated fresh each time from templates with worked solutions. A skill rises a level after ${RULES.promoteStreak} correct answers in a row, steps back after ${RULES.demoteRun} wrong in a row, and is secure when ${RULES.topNeeded} of the last ${RULES.topWindow} at the top level are correct without help. A mixed round then interleaves the skills. The independent check is new questions each run, with ${RULES.checkPass}% to pass.</p><p><strong>Model notes:</strong> ${esc(l.limits)}</p><p>All teaching content and questions are original. Practice is computer-marked for exact answers; it does not mark written working, method marks or extended reasoning. Progress is stored in this browser only.</p>`);
+  }
+
+  /* ───────── review and assessment runs ───────── */
+  function reviewDue() {
+    const ids = allSkills().map(sk => sk.id);
+    return dueSkills(s, ids).filter(id => lessons().some(l => lessonSkills(l).some(sk => sk.id === id) && (lessonState(s, l.id).complete || s.skills[id]?.needsReview)));
+  }
+  function startReview() {
+    const active = s.runs.review;
+    if (active && !active.finished) { view = 'review'; closeModal(); return render(); }
+    const due = reviewDue();
+    const practised = allSkills().filter(sk => isPractised(s.skills[sk.id], sk, s.tier)).map(sk => sk.id);
+    const pool = due.length ? due : practised;
+    if (!pool.length) {
+      modal('<h2>Your recall list starts here.</h2><p>Complete a lesson, or secure a skill in practice. Skills you get wrong in a check come back here straight away; completed skills return for spaced review after 1, 3, 9 and 21 days.</p><button class="primary" id="mrLessons">Choose a lesson →</button>');
+      document.getElementById('mrLessons').onclick = openLessons;
+      return;
+    }
+    const chosen = shuffled(rng(newSeed()), pool).slice(0, 10);
+    modal(`<span class="eyebrow">SPACED, INTERLEAVED RECALL</span><h2>${chosen.length} skill${chosen.length === 1 ? '' : 's'} to revisit.</h2><p>${due.length ? 'These skills are due, or were missed in a check.' : 'Nothing is due yet. This is an optional early review of skills you have secured.'} Questions are new and mixed together, so you practise choosing the method as well as using it.</p><p>${chosen.map(id => esc(skillById[id].name)).join(' · ')}</p><button class="primary" id="mrBegin">Start recall →</button>`);
+    document.getElementById('mrBegin').onclick = () => {
+      s.runs.review = { kind: 'review', early: !due.length, queue: chosen.map(id => generate(id, topLevel(skillById[id], s.tier), newSeed())), answers: {}, drafts: {}, index: 0, finished: false, startedAt: Date.now() };
+      view = 'review'; closeModal(); render();
+    };
+  }
+  function startAssessment() {
+    const active = s.runs.assessment;
+    if (active && !active.finished && active.tier === s.tier) { view = 'assessment'; closeModal(); return render(); }
+    const sks = allSkills();
+    modal(`<span class="eyebrow">INDEPENDENT TOPIC ASSESSMENT</span><h2>Number: available lessons</h2><p>${sks.length} new questions, one from each skill in the available lessons, at the top level for your tier and in mixed order. This checks the five pilot lessons, not the whole Number topic. First answers count; worked solutions appear at the end. Pass mark: ${RULES.checkPass}%.</p><button class="primary" id="maBegin">Start assessment →</button>`);
+    document.getElementById('maBegin').onclick = () => {
+      s.runs.assessment = { kind: 'assessment', tier: s.tier, queue: shuffled(rng(newSeed()), sks.map(sk => generate(sk.id, topLevel(sk, s.tier), newSeed()))), answers: {}, drafts: {}, index: 0, finished: false, startedAt: Date.now() };
+      view = 'assessment'; closeModal(); render();
+    };
+  }
+  function renderRun() {
+    const run = s.runs[view];
+    if (!run || run.finished) { view = 'lesson'; return render(); }
+    const assessing = view === 'assessment';
+    const item = run.queue[run.index], a = run.answers[item.id];
+    $('.steps').hidden = true; $('#mNextLesson').hidden = true;
+    $('.mworkspace').classList.add('question-mode');
+    $('#mNumber').textContent = assessing ? 'TOPIC CHECK' : 'SPACED REVIEW';
+    $('#mH1').textContent = assessing ? 'Topic assessment' : 'Review';
+    $('#mMeta').innerHTML = '';
+    $('#mStatus').textContent = '';
+    $('#mBig').textContent = assessing ? 'First answers count. Worked solutions appear after the final question.' : 'Recall strengthens learning. A missed answer brings the skill back sooner.';
+    $('#mSpec').textContent = 'Edexcel 1MA1 · Number';
+    $('#mKicker').textContent = assessing ? 'ASSESSMENT' : 'REVIEW · ' + skillById[item.skill].name.toUpperCase();
+    $('#mTitle').innerHTML = mathHTML(item.prompt);
+    $('#mPanel').innerHTML = '';
+    $('#mBody').innerHTML = `${assessing ? '<p class="check-rule">First answers count.</p>' : ''}<div class="mq-meta"><span class="mbadge">Non-calculator</span></div>${controls(item, a ?? run.drafts[item.id], a !== undefined)}${!assessing && a !== undefined && mark(item.answer, a).status !== 'correct' ? solution(item) : ''}`;
+    feedback('');
+    if (a !== undefined) {
+      const res = mark(item.answer, a);
+      feedback(assessing ? 'Answer recorded.' : res.status === 'correct' ? 'Correct. Next review of this skill is scheduled further ahead.' : `Revisit this. ${diagnose(item, a, res) || ''}`, !assessing && res.status !== 'correct');
+    }
+    bindControls(item, value => {
+      if (run.answers[item.id] !== undefined) return;
+      const res = mark(item.answer, value);
+      if (res.status === 'invalid') { feedback(res.code === 'empty' ? 'Enter an answer first.' : 'That answer is not in a form that can be read. Check the format and try again.', true); return; }
+      run.answers[item.id] = value;
+      const k = skillState(s, item.skill), ok = res.status === 'correct';
+      if (assessing) { if (!ok) flagForRecall(k); }
+      else if (!run.early || !ok) recordRecall(k, ok);
+      save(); render(); $('#mContinue')?.focus();
+    }, draft => { run.drafts[item.id] = draft; save(); });
+    $('#mContinue').hidden = false;
+    $('#mContinue').textContent = run.index === run.queue.length - 1 ? 'See results →' : 'Next question →';
+    $('#mHint').textContent = `${run.index + 1} / ${run.queue.length}`;
+    save();
+  }
+  function nextRun() {
+    const run = s.runs[view], item = run.queue[run.index];
+    if (run.answers[item.id] === undefined) return feedback('Record an answer before moving on.', true);
+    if (run.index < run.queue.length - 1) { run.index++; return render(); }
+    run.finished = true; run.finishedAt = Date.now();
+    const g = gradeRun(run.queue, run.answers, mark);
+    run.score = g.percent;
+    const assessing = view === 'assessment';
+    s.runs[view + 'History'] = [...(s.runs[view + 'History'] || []), { score: g.percent, at: run.finishedAt, tier: run.tier || s.tier }].slice(-20);
+    view = 'lesson';
+    save();
+    modal(`<span class="eyebrow">${assessing ? 'TOPIC ASSESSMENT' : 'RECALL RESULTS'}</span><h2>${g.correct} / ${g.total} · ${g.percent}%</h2><p>${assessing ? (g.percent >= RULES.checkPass ? `You reached the ${RULES.checkPass}% threshold for the available lessons. Missed skills have been added to your review list.` : 'Missed skills have been added to your review list. Work on those before trying another assessment.') : 'Correct recall pushes the next review further away. Missed skills stay on your review list.'}</p>${resultRows(run.queue, run.answers)}<div class="modal-actions"><button class="primary" id="mrBack">Back to lessons →</button><button class="secondary" id="mrAgain">Review weak skills</button></div>`);
+    document.getElementById('mrBack').onclick = () => { closeModal(); render(); };
+    document.getElementById('mrAgain').onclick = () => { closeModal(); startReview(); };
+    render();
+  }
+
+  function setTier(tier) {
+    s.tier = tier === 'Higher' ? 'Higher' : 'Foundation';
+    if (!lessons().some(l => l.id === s.lessonId)) s.lessonId = lessons()[0].id;
+    view = 'lesson'; render();
+  }
+  function resetLesson() {
+    const l = lesson();
+    modal(`<h2>Reset this lesson?</h2><p>Clear the activities, practice levels and check scores for “${esc(l.title)}” on this device. Other lessons and your science progress stay saved.</p><button class="primary" id="mConfirmReset">Reset this lesson</button>`);
+    document.getElementById('mConfirmReset').onclick = () => { delete s.lessons[l.id]; lessonSkills(l).forEach(sk => delete s.skills[sk.id]); view = 'lesson'; closeModal(); render(); };
+  }
+
+  return { render, openLessons, openMap, openSources, startReview, startAssessment, setTier, resetLesson, tier: () => s.tier, state: () => s, title: () => (view === 'lesson' ? lesson().title : view === 'review' ? 'Review' : 'Topic assessment'), reviewDue };
+}

@@ -1,4 +1,4 @@
-import{editedDNA,triplets}from './gen-models.js?v=20261022-eco2';
+import{editedDNA,triplets}from './gen-models.js?v=20261022-maths-r1';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const tx=(x,y,s,n=17)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f7f3ed" font-family="sans-serif" font-size="${n}">${esc(s)}</text>`;
 const line=(d,c='#bad0ce',w=3)=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}"/>`;

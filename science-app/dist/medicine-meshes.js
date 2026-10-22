@@ -1,5 +1,5 @@
-import{buildInfection}from './infection-meshes.js?v=20261022-eco2';
-import{contactNetwork,selectedCohort}from './medicine-models.js?v=20261022-eco2';
+import{buildInfection}from './infection-meshes.js?v=20261022-maths-r1';
+import{contactNetwork,selectedCohort}from './medicine-models.js?v=20261022-maths-r1';
 const mat=(T,c,e={})=>new T.MeshStandardMaterial({color:c,roughness:.3,metalness:.04,...e});
 function ball(g,T,x,y,z,r,c,scale=[1,1,1],name=''){let m=new T.Mesh(new T.SphereGeometry(r,28,20),mat(T,c));m.position.set(x,y,z);m.scale.set(...scale);m.name=name;g.add(m);return m;}
 function rod(g,T,a,b,r,c,name=''){let p=new T.Vector3(...a),q=new T.Vector3(...b),v=q.clone().sub(p),m=new T.Mesh(new T.CylinderGeometry(r,r,v.length(),18),mat(T,c));m.position.copy(p.add(q).multiplyScalar(.5));m.quaternion.setFromUnitVectors(new T.Vector3(0,1,0),v.normalize());m.name=name;g.add(m);return m;}

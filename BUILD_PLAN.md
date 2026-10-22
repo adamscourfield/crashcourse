@@ -63,6 +63,10 @@ Use genuine rotatable cutaways for animal/plant/bacterial spatial relationships,
 
 Latest priority is Biology. Cell biology has16 shared plus3 separate-only lessons; statement/evidence audit found no material missing teaching. Official8461 PDF resolves the isolated HTML percentile wording for authoring. Six Organisation batches add23 shared both-tier lessons, including plant tissues/transport and data/practical preparation. Next reconcile topic statements and evidence before mapping FIVE Infection and response lessons. Independent writing/freehand/physical practical and specialist evidence remain distinct. Preserve Chemistry’s ten-topic release and all progress.
 
+## Maths principles
+
+Maths uses the engine in `science-app/dist/maths/`, not the science content format. Every skill is a seeded generator with levels, a worked solution per item and misconception traps; practice continues until mastery rules are met (see `RULES` in `mastery.js`), and checks are freshly generated each run. New maths lessons add skills to a generator module and a lesson record with a 10-item check plan; they do not hand-write fixed practice lists. Verify generators with independent re-evaluation of printed prompts, not only by calling the generator's own answer. Use number lines, bar/area models, trees and diagrams rather than 3D unless spatial structure demands it (for example 3D solids). Expression-equivalence marking must exist before Algebra lessons. Brief: `curriculum/briefs/maths-number-pilot.md`.
+
 ## Current authorised scope
 
 The user authorised all Chemistry lessons without intermediate permission checks. The ten-topic teaching sequence now contains113 published lessons. QA and existing-audience publication completed as one release; retain the mapped evidence gaps and specialist/practical statuses. See `curriculum/CHEMISTRY_COMPLETION.md`. Biology is now being implemented in Organisation batches of five; Physics and other subjects remain planned.

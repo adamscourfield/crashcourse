@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-eco2';
-import{tasksForGen,validGen,advanceGen,numericGen,gridValid}from './gen-models.js?v=20261022-eco2';import{showGen}from './gen-visuals.js?v=20261022-eco2';export{showGen};
+import{syncProcessMovie}from './process-player.js?v=20261022-maths-r1';
+import{tasksForGen,validGen,advanceGen,numericGen,gridValid}from './gen-models.js?v=20261022-maths-r1';import{showGen}from './gen-visuals.js?v=20261022-maths-r1';export{showGen};
 export function mountGen(l,p,root,{save,done,feedback}){let ts=tasksForGen(l.widget.slice(4)),w=p.widget;w.genTask??=ts[0].id;w.genDrafts??={};w.genPassed??=[];let i=ts.findIndex(t=>t.id===w.genTask);if(i<0)i=0;let t=ts[i],v=w.genDrafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountGen(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.genPassed.includes(t.id));
 syncProcessMovie(l,1,['nucleotide','backbone','triplet','pairing','function','edit','expression','alleles','cross','limits'].includes(t.kind)?{process:false}:null);
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

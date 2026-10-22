@@ -1,4 +1,4 @@
-import {cellType,selectedPart,cellParts}from './cell-anatomy.js?v=20261022-eco2';
+import {cellType,selectedPart,cellParts}from './cell-anatomy.js?v=20261022-maths-r1';
 export function buildCellMeshes(group,T,{type='animal',highlight=''}={}){
  type=cellType(type);highlight=selectedPart(type,highlight);const clip=new T.Plane(new T.Vector3(0,0,-1),0),parts={};
  const material=(key,color,clipped=false)=>new T.MeshStandardMaterial({color:highlight===key?0xf18a76:color,roughness:.4,metalness:.04,side:T.DoubleSide,clippingPlanes:clipped?[clip]:[],emissive:highlight===key?0x5f251d:0x000000,emissiveIntensity:.16});

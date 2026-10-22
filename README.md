@@ -1,6 +1,6 @@
 # Crash Course
 
-An interactive GCSE learning platform supporting AQA Combined Science: Trilogy and separate sciences, with Foundation/Higher filtering. The platform is designed to support additional subjects as their curricula are built.
+An interactive GCSE learning platform supporting AQA Combined Science: Trilogy and separate sciences, with Foundation/Higher filtering, and a pilot of Pearson Edexcel GCSE Mathematics (1MA1): five Number lessons with generated, mastery-based practice. The platform is designed to support additional subjects as their curricula are built.
 
 ## Project source
 
@@ -25,11 +25,12 @@ cd science-app
 npm test
 ```
 
-The current automated suite contains 352 tests. Browser verification records are stored alongside the app; technical checks are separate from specialist curriculum review.
+The current automated suite contains 365 tests, including generated-item checks for maths. A browser walk-through for the maths pilot is in `science-app/tools/maths-browser-flow.mjs`. Browser verification records are stored alongside the app; technical checks are separate from specialist curriculum review.
 
 ## Project layout
 
 - `science-app/dist/`: deployable app, lesson content, interactive models and local assets.
+- `science-app/dist/maths/`: maths engine (item generators, exact marking, mastery rules), lessons, models and studio UI.
 - `science-app/tests/`: automated checks.
 - `curriculum/`: subject/topic/lesson registers, specification coverage, briefs and review records.
 - `BUILD_PLAN.md` and `BUILD_STATUS.md`: workflow, current delivery status and next batch.

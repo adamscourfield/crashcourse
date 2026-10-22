@@ -1,4 +1,4 @@
-import{glands,glucoseState,temperatureState,glucoseRecords,freshGlucose,glucoseTimes}from './endo-models.js?v=20261022-eco2';
+import{glands,glucoseState,temperatureState,glucoseRecords,freshGlucose,glucoseTimes}from './endo-models.js?v=20261022-maths-r1';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const et=(x,y,s,z=16,c='#f8f6f2')=>`<text x="${x}" y="${y}" text-anchor="middle" fill="${c}" font-size="${z}">${esc(s)}</text>`;
 const path=(d,c='#b9d1d3',w=2)=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"/>`;
