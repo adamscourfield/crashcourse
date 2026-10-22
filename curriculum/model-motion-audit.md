@@ -89,3 +89,5 @@ Inheritance05:235 lessons;67 films/66 bindings. Five new films: tissue culture, 
 
 
 Transition06:240 lessons;69 films/68 bindings. Two new loops: resistance selection/reproduction and community dependencies; controlled treatment and water/pollinator experiments stay direct. A duplicate imported process-player module was fixed; singleton regression test and1 player across15 investigation/20 teaching views verified. See transition06 brief and boundary-browser-evidence.json.
+
+Ecology02:245 lessons;74 films/72 bindings. Five loops:feeding, delayed predator/prey, existing day/night response, generated quadrat placement and transect station measurement. Student graph construction/field data stay direct.15 phone activities/20 cards with one player, seven process cards checked Loop; graph/quadrat/transect saved edits verified. See Ecology02 brief and ecology-browser-evidence.json.

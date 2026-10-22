@@ -1,5 +1,5 @@
-import {moleculeTasks,checkMolecule} from './covalent-builder.js?v=20261022-bound-r2';
-import {renderDiagram,renderBond,enable3D} from './visual.js?v=20261022-bound-r2';
+import {moleculeTasks,checkMolecule} from './covalent-builder.js?v=20261022-eco2';
+import {renderDiagram,renderBond,enable3D} from './visual.js?v=20261022-eco2';
 const $=s=>document.querySelector(s);
 const text=(x,y,s,size=14,colour='#f8f6f2')=>`<text x="${x}" y="${y}" text-anchor="middle" fill="${colour}" font-size="${size}" font-family="sans-serif">${s}</text>`;
 function moleculeSVG(t,b){

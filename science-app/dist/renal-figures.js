@@ -1,4 +1,4 @@
-import{waterState,adhState,dialysisState,renalLedger,freshRenalLedger,renalSubstances}from './renal-models.js?v=20261022-bound-r2';
+import{waterState,adhState,dialysisState,renalLedger,freshRenalLedger,renalSubstances}from './renal-models.js?v=20261022-eco2';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const rt=(x,y,s,z=16)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f8f6f2" font-size="${z}">${esc(s)}</text>`;
 const line=(d,c='#b6ced1',w=3)=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"/>`;

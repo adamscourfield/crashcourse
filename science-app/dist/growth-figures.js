@@ -1,4 +1,4 @@
-import{bounded,growthShape}from './growth-models.js?v=20261022-bound-r2';
+import{bounded,growthShape}from './growth-models.js?v=20261022-eco2';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const text=(x,y,s,size=17,c='#f8f5ef')=>`<text x="${x}" y="${y}" text-anchor="middle" fill="${c}" font-family="sans-serif" font-size="${size}">${esc(s)}</text>`;
 const path=(d,c='#b8d0ce',w=3,extra='')=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round" ${extra}/>`;

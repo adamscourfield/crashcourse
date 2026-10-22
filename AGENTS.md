@@ -22,3 +22,7 @@ Update `BUILD_STATUS.md`, `curriculum/subject-register.csv`, `curriculum/topic-r
 For code changes, run relevant checks in `science-app/` and exercise new interactions, wrong-answer paths and resume behaviour in the browser when available. Avoid repeating unrelated checks without a reason.
 
 Use the existing Site identity in `science-app/.openai/hosting.json`; preserve its audience. Follow the Sites skill for source preparation and publication. Planning-only documentation changes do not require an app deployment. Never store credentials or real student data in these records.
+
+## Canonical GitHub updates
+
+The user requires a GitHub update after every lesson batch. Commit and push tested app changes, curriculum records and QA evidence to `origin/main` at `https://github.com/adamscourfield/crashcourse`. Verify the remote SHA and clean local status before reporting completion. Preserve the root repository; keep Sites helper publication in a separate app-only checkout. Record GitHub and hosting publication separately. Never commit credentials or generated deployment archives.

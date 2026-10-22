@@ -1,5 +1,5 @@
-import {aqueousCases,checkAqueous,practicalTasks,checkPractical} from './aqueous-models.js?v=20261022-bound-r2';
-import {showAqueous} from './aqueous-scenes.js?v=20261022-bound-r2';
+import {aqueousCases,checkAqueous,practicalTasks,checkPractical} from './aqueous-models.js?v=20261022-eco2';
+import {showAqueous} from './aqueous-scenes.js?v=20261022-eco2';
 const field=(id,label,options)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([v,t])=>`<option value="${v}">${t}</option>`).join('')}</select>`;
 export function mountAqueousWidget(l,p,root,{save,done,feedback}){
  const w=p.widget;w.task??=0;w.answers??={};w.passed??=[];const practical=l.widget==='aqueous-practical',cases=practical?practicalTasks:aqueousCases,i=w.task%cases.length,t=cases[i],a=w.answers[t.id]??={};w.answers[t.id]=a;const $=s=>root.querySelector(s);

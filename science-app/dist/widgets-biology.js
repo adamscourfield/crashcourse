@@ -1,9 +1,9 @@
-import {showCellCutaway} from './cell-3d.js?v=20261022-bound-r2';
-import {partsFor,cellParts,selectedPart} from './cell-anatomy.js?v=20261022-bound-r2';
-import {renderDiagram} from './visual.js?v=20261022-bound-r2';
-import {cellFigure,microscopeFigure,organelleNames} from './biology-figures.js?v=20261022-bound-r2';
-import {biologyTasks,microscopeInFocus} from './biology-models.js?v=20261022-bound-r2';
-import {catalogTaskCorrect,escapeLab} from './catalog-labs.js?v=20261022-bound-r2';
+import {showCellCutaway} from './cell-3d.js?v=20261022-eco2';
+import {partsFor,cellParts,selectedPart} from './cell-anatomy.js?v=20261022-eco2';
+import {renderDiagram} from './visual.js?v=20261022-eco2';
+import {cellFigure,microscopeFigure,organelleNames} from './biology-figures.js?v=20261022-eco2';
+import {biologyTasks,microscopeInFocus} from './biology-models.js?v=20261022-eco2';
+import {catalogTaskCorrect,escapeLab} from './catalog-labs.js?v=20261022-eco2';
 export function showBiology(kind,t=null,w={},checked=false){const [base,type,highlight]=kind.split(':');kind=base;t??=biologyTasks[kind]?.[0];if(type)t={...t,type,highlight};if(!t)return;const micro=kind==='microscopy';if(!micro){showCellCutaway({type:t.type,highlight:selectedPart(t.type,w.inspect||t.highlight),title:t.title});return;}const art=microscopeFigure(w);renderDiagram(t.title,micro?'Light microscopy · simulation':w.inspect?organelleNames[w.inspect]:organelleNames[t.highlight]||'Compare supplied evidence',art+(t.data?'<p class="bio-evidence">'+escapeLab(t.data)+'</p>':'')+'<p class="diagram-caption">'+(micro?'Schematic tissue. View enlargement is not calibrated magnification.':'Symbolic cutaway with exaggerated structures. Specimens are enlarged separately; drawings do not share a scale.')+'</p>',checked?'REASONING CHECKED':'OBSERVE · PREDICT · EXPLAIN');}
 export function mountBiology(l,p,root,{save,done,feedback}){
  const kind=l.widget.slice(4),tasks=biologyTasks[kind],w=p.widget;w.task??=0;w.answers??={};w.passed??=[];w.focus??=0;w.zoom??=1;

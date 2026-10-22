@@ -1,4 +1,4 @@
-import {productVolume} from './kinetic-models.js?v=20261022-bound-r2';
+import {productVolume} from './kinetic-models.js?v=20261022-eco2';
 const text=(x,y,s,size=15)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="currentColor" font-family="sans-serif" font-size="${size}">${s}</text>`;
 export function rateFigure({kind='rate-compare',plot=null,tilt=4,training=false}={}){const tangent=kind==='rate-tangent',isplot=kind==='rate-plot',maxT=tangent&&!training?80:60,maxV=tangent?100:80,x=t=>65+t/maxT*330,y=v=>245-v/maxV*195;const total=tangent&&!training?80:60,duration=tangent&&!training?80:60;
 let art=`<path d="M65 40V245H405" stroke="currentColor" fill="none"/>${text(225,20,'Gas volume / cm³',17)}${text(235,295,'Time / s',17)}`;
