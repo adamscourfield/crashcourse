@@ -1,5 +1,5 @@
-import {renderDiagram} from './visual.js?v=20261022-physics02r1';
-import {origins,targetNames,canDifferentiate,lineageTasks,lineageComplete,useTasks,useComplete} from './stem-models.js?v=20261022-physics02r1';
+import {renderDiagram} from './visual.js?v=20261022-electricity01r2';
+import {origins,targetNames,canDifferentiate,lineageTasks,lineageComplete,useTasks,useComplete} from './stem-models.js?v=20261022-electricity01r2';
 const cell=(x,y,label,kind='stem')=>{
  const plant=['plant','root','xylem','leaf'].includes(kind),extra=kind==='nerve'?'<path d="M26 0H78M78 0L94-14M78 0L94 14M-26 0L-45-18M-26 0L-45 18" fill="none" stroke="#ed8b78" stroke-width="5"/>':kind==='muscle'?'<path d="M-20-12V12M-10-15V15M0-15V15M10-15V15M20-12V12" stroke="#182e44" stroke-width="2"/>':kind==='root'?'<path d="M27-7H62Q75 0 62 7H27" stroke="#f8f6f2" stroke-width="2" fill="#ed8b78"/>':kind==='xylem'?'<path d="M-16-24V24M16-24V24M-29-12H-16M16 0H29M-29 12H-16" stroke="#182e44" stroke-width="4"/>':kind==='leaf'?'<ellipse cx="-16" cy="-12" rx="6" ry="4" fill="#182e44"/><ellipse cx="17" cy="12" rx="6" ry="4" fill="#182e44"/>':'';
  return `<g transform="translate(${x} ${y})"><${plant?'rect x="-29" y="-24" width="58" height="48" rx="9"':'ellipse cx="0" cy="0" rx="29" ry="24"'} fill="${kind==='stem'?'#d4dfe7':'#ed8b78'}" stroke="#f8f6f2" stroke-width="2"/>${extra}${kind==='xylem'?'':kind==='blood'?'<ellipse rx="13" ry="8" fill="#f8f6f2" opacity=".6"/>':'<circle r="9" fill="#182e44"/>'}<text y="43" fill="#f8f6f2" text-anchor="middle" font-size="12">${label}</text></g>`;

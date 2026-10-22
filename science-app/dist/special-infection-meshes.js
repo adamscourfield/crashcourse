@@ -1,4 +1,4 @@
-import{assayBands}from './special-infection-models.js?v=20261022-physics02r1';
+import{assayBands}from './special-infection-models.js?v=20261022-electricity01r2';
 const mat=(T,c,e={})=>new T.MeshStandardMaterial({color:c,roughness:.32,metalness:.03,...e});
 function ball(g,T,x,y,z,r,c,scale=[1,1,1],name=''){let m=new T.Mesh(new T.SphereGeometry(r,28,20),mat(T,c));m.position.set(x,y,z);m.scale.set(...scale);m.name=name;g.add(m);return m;}
 function box(g,T,x,y,z,sx,sy,sz,c,name=''){let m=new T.Mesh(new T.BoxGeometry(sx,sy,sz),mat(T,c));m.position.set(x,y,z);m.name=name;g.add(m);return m;}

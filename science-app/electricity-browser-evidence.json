@@ -1,0 +1,433 @@
+{
+  "date": "2026-10-22",
+  "journeys": [
+    {
+      "lesson": "science.physics.electricity.symbols",
+      "checks": 9,
+      "passed": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "lamp:open",
+        "lamp:closed",
+        "resistor:open",
+        "resistor:closed"
+      ]
+    },
+    {
+      "lesson": "science.physics.electricity.current",
+      "checks": 6,
+      "passed": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "0.5:4",
+        "0.5:8",
+        "1:4",
+        "1:8"
+      ]
+    },
+    {
+      "lesson": "science.physics.electricity.ohm",
+      "checks": 6,
+      "passed": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "2:10",
+        "2:20",
+        "4:10",
+        "4:20"
+      ]
+    },
+    {
+      "lesson": "science.physics.electricity.wire",
+      "checks": 6,
+      "passed": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "0.25:1",
+        "0.25:2",
+        "0.5:1",
+        "0.5:2"
+      ]
+    },
+    {
+      "lesson": "science.physics.electricity.iv",
+      "checks": 8,
+      "passed": true,
+      "wrongPathsRejected": true,
+      "settings": [
+        "resistor:-2",
+        "resistor:2",
+        "resistor:4",
+        "lamp:-2",
+        "lamp:2",
+        "lamp:4",
+        "diode:-2",
+        "diode:2",
+        "diode:4"
+      ]
+    }
+  ],
+  "mobile": [
+    {
+      "lesson": "science.physics.electricity.symbols",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.symbols",
+      "card": 1,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.symbols",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.symbols",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.symbols",
+      "card": 4,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.symbols",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.symbols",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.symbols",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.current",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.current",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.current",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.current",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.current",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.current",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.current",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ohm",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ohm",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ohm",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ohm",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ohm",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ohm",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.ohm",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.wire",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.wire",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.wire",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.wire",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.wire",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.wire",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.wire",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.iv",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.iv",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.iv",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.iv",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.iv",
+      "card": 4,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.iv",
+      "card": 5,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.iv",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.iv",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.electricity.iv",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    }
+  ],
+  "resume": "IV diode/−2V/wrong prediction1 restored after reload and Trilogy/Foundation/back; prior10 Energy and25 Ecology completions retained",
+  "scope": "Both routes/tiers5 Electricity lessons; new-start topic assessment5 questions; Energy topic remains10. Maths Number15/Algebra6 available.",
+  "sources": "Separate Physics RP3/RP4 and Trilogy RP15/RP16 notes verified; wire practical explicitly partial.",
+  "limits": "Technical QA, not specialist review, independent drawing/graph/written evidence, physical school practical or full device/assistive-technology certification.",
+  "finalIndependentNumbers": [
+    {
+      "lesson": "science.physics.electricity.current",
+      "passed": true,
+      "finalFreshQuestion": "Fresh current 0.4 A flows for 20 s. Charge is…"
+    },
+    {
+      "lesson": "science.physics.electricity.ohm",
+      "passed": true,
+      "finalFreshQuestion": "Fresh component: 12 V and 0.5 A. Resistance is…"
+    },
+    {
+      "lesson": "science.physics.electricity.wire",
+      "passed": true,
+      "finalFreshQuestion": "Fresh wire reading: 2.4 V and 0.6 A. Resistance is…"
+    },
+    {
+      "lesson": "science.physics.electricity.iv",
+      "passed": true,
+      "finalFreshQuestion": "Fresh resistor: 3 V gives 0.2 A. Resistance is…"
+    }
+  ]
+}

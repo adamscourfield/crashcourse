@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-physics02r1';
-import{tasksForEco4,validEco4,advanceEco4,numericEco4}from './eco4-models.js?v=20261022-physics02r1';import{showEco4}from './eco4-visuals.js?v=20261022-physics02r1';export{showEco4};
+import{syncProcessMovie}from './process-player.js?v=20261022-electricity01r2';
+import{tasksForEco4,validEco4,advanceEco4,numericEco4}from './eco4-models.js?v=20261022-electricity01r2';import{showEco4}from './eco4-visuals.js?v=20261022-electricity01r2';export{showEco4};
 export function mountEco4(l,p,root,{save,done,feedback}){let ts=tasksForEco4(l.widget.slice(5)),w=p.widget;w.eco4Task??=ts[0].id;w.eco4Drafts??={};w.eco4Passed??=[];let i=ts.findIndex(t=>t.id===w.eco4Task);if(i<0)i=0;let t=ts[i],v=w.eco4Drafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountEco4(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.eco4Passed.includes(t.id));
 syncProcessMovie(l,1,{process:false});
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;
