@@ -1,7 +1,7 @@
 {
   "batch": "Ecology06",
   "date": "2026-10-22",
-  "tests": 407,
+  "tests": 411,
   "journeys": [
     {
       "lesson": "science.biology.ecology.farming",
@@ -169,5 +169,23 @@
     "No full assistive-technology/device certification"
   ],
   "publication": "pending",
-  "notesVerified": true
+  "notesVerified": true,
+  "integration": {
+    "remoteCommit": "14803ca",
+    "mathsLessonsPreserved": 15,
+    "mathsCompoundMeasureWrongAndCorrectCheckExercised": true,
+    "scienceWidgetsRenderAfterSwitch": true,
+    "scienceProgressPreserved": "25 / 25",
+    "mobile": {
+      "maths": {
+        "scroll": 390,
+        "width": 390
+      },
+      "science": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    "consoleErrors": []
+  }
 }

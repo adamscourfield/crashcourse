@@ -1,16 +1,16 @@
 {
   "date": "2026-10-22",
-  "scope": "Maths Number batch 02: lessons 6–10, new answer kinds, tier split",
+  "scope": "Maths Number batch 02: lessons 6–10, new answer kinds, tier split (rerun after batch 03)",
   "environment": "Headless Chromium (npm @sparticuz/chromium 131) via Playwright; 1280x900 and 390x844; reduced motion; Google Fonts requests aborted (sandbox network blocks them)",
   "harness": "science-app/tools/maths-browser-flow-2.mjs",
-  "automatedSuite": "389 tests pass (npm test) on main 4337063 plus this change",
+  "automatedSuite": "403 tests pass (npm test) on main 1231c2e plus batch 03",
   "summary": {
     "checks": 68,
     "passed": 68,
     "failed": 0
   },
   "checks": [
-    "ten maths lessons available",
+    "fifteen maths lessons available",
     "maths.number.decimals card 1 has a visual",
     "maths.number.decimals card 2 has a visual",
     "maths.number.decimals card 3 has a visual",
@@ -57,7 +57,7 @@
     "standard form investigation complete",
     "standard form: a wrong answer shows the worked solution",
     "standard-form input used in practice",
-    "49.3 × 10^n gets the \"not in standard form\" message",
+    "48 × 10^n gets the \"not in standard form\" message",
     "powers: a wrong answer shows the worked solution",
     "power input used in practice",
     "rounding: a wrong answer shows the worked solution",

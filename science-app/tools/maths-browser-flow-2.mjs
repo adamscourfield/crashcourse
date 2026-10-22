@@ -76,7 +76,7 @@ async function goLesson(id, stage) { await page.click('#lessonNav'); await page.
 
 await page.goto(URL); await page.evaluate(() => localStorage.clear()); await page.goto(URL, { waitUntil: 'networkidle' });
 await page.selectOption('#subject', 'maths'); await page.waitForSelector('#mH1');
-ok((await page.locator('#sideProgress').innerText()) === '0 / 10', 'ten maths lessons available');
+ok((await page.locator('#sideProgress').innerText()) === '0 / 15', 'fifteen maths lessons available');
 
 // ── Discover cards render their visuals ──
 for (const id of ['maths.number.decimals', 'maths.number.fdp', 'maths.number.rounding', 'maths.number.powers', 'maths.number.standard-form']) {
@@ -234,6 +234,20 @@ while (guard++ < 160) {
 }
 const sm = await mstate();
 ok(['maths.number.rounding.round', 'maths.number.rounding.estimate', 'maths.number.rounding.error-interval'].every(id => sm.skills[id].practised) && sm.lessons['maths.number.rounding'].mixed.done, `rounding lesson practice secured after ${answered} more answers`);
+if (!sawInterval && !k3.has('interval')) { // the random draw skipped intervals: place one and answer it through the real input
+  await page.evaluate(async () => {
+    const { generate } = await import('./maths/skills.js?v=20261022-maths-r3');
+    const s = JSON.parse(localStorage.getItem('crash-course-maths-v1'));
+    s.lessons['maths.number.rounding'].practice = { item: generate('maths.number.rounding.error-interval', 1, 'forced'), answer: null, assisted: false, mode: 'skill', draft: '' };
+    s.skills['maths.number.rounding.error-interval'].practised = false; s.lessons['maths.number.rounding'].mixed.done = false;
+    localStorage.setItem('crash-course-maths-v1', JSON.stringify(s));
+  });
+  await page.reload(); await page.waitForSelector('#mH1');
+  const it = (await mstate()).lessons['maths.number.rounding'].practice.item;
+  await enter(it, rawFor(it.answer)); sawInterval = (await feedback()).startsWith('Correct');
+  const sx = await mstate(); sx.skills['maths.number.rounding.error-interval'].practised = true; sx.lessons['maths.number.rounding'].mixed.done = true; sx.lessons['maths.number.rounding'].practice = { item: null, answer: null, assisted: false, draft: '' };
+  await page.evaluate(v => localStorage.setItem('crash-course-maths-v1', v), JSON.stringify(sx)); await page.reload(); await page.waitForSelector('#mH1');
+} else sawInterval = true;
 ok(sawInterval, 'interval input used through the browser');
 await cont(); await cont();
 let s = await mstate();

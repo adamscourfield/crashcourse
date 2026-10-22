@@ -7,14 +7,16 @@
 //   Batch 2: N6 powers/roots (Higher: estimating) · N7 indices (Higher: fractional) · N9 standard form
 //   N10 terminating/recurring decimals (Higher: recurring) · N14 estimation · N15 error intervals
 //   N16 limits of accuracy (Higher: bounds). Higher-only boundaries checked against the specification.
+//   Batch 3: N5 listing (Higher: product rule) · N8 exact π (Higher: surds) · N11 fractions in ratio
+//   N13 units and compound measures · N3 reciprocals · N1 inequality symbols.
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261022-maths-r2';
+import { skillById } from './skills.js?v=20261022-maths-r3';
 
 const S = id => skillById[id];
 
 export const mathsTopics = [
   { id: 'maths.number', title: 'Number', short: 'Number', number: '01', status: 'partial',
-    coverage: 'Ten lessons cover negatives, order of operations, primes, fraction and decimal arithmetic with written methods, fractions/decimals/percentages, rounding, estimation and error intervals, powers, roots and indices, and standard form (N1–N4, N6, N7, N8–N10, N12, N14–N16, partly). Listing and the product rule (N5), units (N13) and surds and π (N8) are planned.' },
+    coverage: 'Fifteen lessons cover every Number statement N1–N16 for Foundation and Higher: integers, fractions and decimals; order of operations, inverses and reciprocals; primes, HCF and LCM; listing and the product rule; powers, roots, indices and surds; exact answers with π; fractions, decimals and percentages; fractions in ratios; standard form; units and compound measures; rounding, estimation, error intervals and bounds. Written methods and reasoning are taught but only final answers are marked.' },
 ];
 
 export const mathsCourseMap = [
@@ -295,8 +297,140 @@ export const mathsLessons = [
     checkPlan: [['maths.number.standard-form.convert', 1], ['maths.number.standard-form.convert', 2], ['maths.number.standard-form.convert', 2], ['maths.number.standard-form.convert', 3], ['maths.number.standard-form.convert', 3], ['maths.number.standard-form.calculate', 1], ['maths.number.standard-form.calculate', 1], ['maths.number.standard-form.calculate', 2], ['maths.number.standard-form.calculate', 2], ['maths.number.standard-form.calculate', 3]],
     limits: 'Calculations here are non-calculator; calculator use of standard form (EXP keys) is not covered.',
   },
+  {
+    id: 'maths.number.listing',
+    topicId: 'maths.number',
+    title: 'Systematic listing and the product rule',
+    refs: ['N5'],
+    minutes: 35,
+    model: 'listing-grid',
+    prerequisites: ['maths.number.order-of-operations'],
+    big: 'List outcomes in a fixed order so nothing is missed or repeated. When choosing one item from each of several groups, multiply the numbers of choices. Decide whether order matters: A then B is the same pair as B then A when choosing a team, but not when awarding gold and silver. Higher: the product rule counts outcomes without listing them.',
+    learn: [
+      { title: 'List in a fixed order.', text: 'A systematic list keeps one choice fixed while the others change, then moves on. With 3 shirts and 4 pairs of trousers, list every outfit with the first shirt, then every outfit with the second, and so on. Each shirt gives 4 outfits, so there are 3 × 4 = 12.',
+        example: { prompt: 'How many meals can be made from 3 starters and 4 mains?', steps: ['Starter 1 with each main: 4 meals.', 'Starter 2 and starter 3: 4 each.', '3 × 4 = 12 meals'] },
+        visual: { kind: 'grid', rows: ['S1', 'S2', 'S3'], cols: ['M1', 'M2', 'M3', 'M4'], fill: 'all' } },
+      { title: 'When order does not matter.', text: 'In a handshake, Ali–Bea is the same as Bea–Ali. List each pair once by only pairing a person with people later in the list. With 5 people that is 4 + 3 + 2 + 1 = 10, which is half of 5 × 4.',
+        example: { prompt: '5 people each shake hands once with everyone else. How many handshakes?', steps: ['A with B, C, D, E: 4', 'B with C, D, E: 3; C with D, E: 2; D with E: 1', '4 + 3 + 2 + 1 = 10'] },
+        visual: { kind: 'grid', rows: ['A', 'B', 'C', 'D', 'E'], cols: ['A', 'B', 'C', 'D', 'E'], fill: 'upper' } },
+      { title: 'Arrangements.', text: 'To arrange 3 different digits, there are 3 choices for the first place, 2 for the second and 1 for the last: 3 × 2 × 1 = 6. Listing them in numerical order is a good check.',
+        example: { prompt: 'List the 3-digit numbers that use 2, 5 and 8 once each.', steps: ['Start with 2: 258, 285', 'Start with 5: 528, 582; start with 8: 825, 852', '6 numbers'] },
+        visual: { kind: 'tree3', items: ['2', '5', '8'] } },
+      { title: 'The product rule (Higher).', text: 'If one choice can be made in m ways and a second in n ways, together they can be made in m × n ways. Restrictions change the number of choices for a position: a number cannot start with 0, and if digits cannot repeat, each later position has one fewer choice.',
+        example: { prompt: 'How many 4-digit PINs have no repeated digit?', steps: ['First digit: 10 choices; then 9, 8 and 7.', '10 × 9 × 8 × 7', '= 5040'] },
+        visual: { kind: 'slots', slots: [10, 9, 8, 7] } },
+    ],
+    skills: [S('maths.number.listing.count'), S('maths.number.listing.systematic')],
+    checkPlan: [['maths.number.listing.count', 1], ['maths.number.listing.count', 1], ['maths.number.listing.count', 2], ['maths.number.listing.count', 2], ['maths.number.listing.count', 3], ['maths.number.listing.count', 3], ['maths.number.listing.systematic', 1], ['maths.number.listing.systematic', 1], ['maths.number.listing.systematic', 2], ['maths.number.listing.systematic', 2]],
+    limits: 'Writing out a full list is not marked; students count outcomes or identify what a list is missing. The product rule appears at Higher only.',
+  },
+  {
+    id: 'maths.number.units',
+    topicId: 'maths.number',
+    title: 'Units and measures',
+    refs: ['N13'],
+    minutes: 40,
+    model: 'unit-ladder',
+    prerequisites: ['maths.number.decimals'],
+    big: 'Converting to a smaller unit makes the number bigger (multiply); converting to a larger unit makes it smaller (divide). 1 km = 1000 m, 1 m = 100 cm, 1 cm = 10 mm, 1 kg = 1000 g, 1 litre = 1000 ml. Area and volume factors are squared and cubed: 1 m² = 10 000 cm². Time is not decimal: an hour has 60 minutes.',
+    learn: [
+      { title: 'Metric conversions.', text: 'Each metric prefix is a power of 10. Moving to a smaller unit, there are more of them, so multiply. Moving to a larger unit, divide. A quick sense check catches most errors: 3.4 km should be thousands of metres, not 0.0034.',
+        example: { prompt: 'Convert 3.4 km into centimetres.', steps: ['km to m: × 1000 → 3400 m', 'm to cm: × 100 → 340 000 cm'] },
+        visual: { kind: 'ladder', units: ['km', 'm', 'cm', 'mm'], factors: [1000, 100, 10] } },
+      { title: 'Area and volume units.', text: 'A square metre is 100 cm by 100 cm, so it holds 100 × 100 = 10 000 square centimetres, not 100. A cubic metre holds 100 × 100 × 100 = 1 000 000 cm³. Capacity links to volume: 1 cm³ = 1 ml and 1000 cm³ = 1 litre.',
+        example: { prompt: 'Convert 2.5 m² into cm².', steps: ['1 m² = 10 000 cm²', '2.5 × 10 000 = 25 000 cm²'] },
+        visual: { kind: 'squaregrid', label: '1 m² = 100 × 100 = 10 000 cm²' } },
+      { title: 'Time is base 60.', text: '2.75 hours is not 2 hours 75 minutes: 0.75 of an hour is 0.75 × 60 = 45 minutes. To find a duration, count up to the next hour, then whole hours, then the remaining minutes. Subtracting clock times like ordinary numbers gives wrong answers.',
+        example: { prompt: 'How long is it from 09:45 to 13:20?', steps: ['09:45 to 10:00: 15 minutes', '10:00 to 13:00: 3 hours = 180 minutes', '13:00 to 13:20: 20 minutes. Total 215 minutes'] },
+        visual: { kind: 'columns', rows: ['09:45 → 10:00   15 min', '10:00 → 13:00   180 min', '13:00 → 13:20   20 min'], op: '', result: '215 minutes' } },
+    ],
+    skills: [S('maths.number.units.convert'), S('maths.number.units.time')],
+    checkPlan: [['maths.number.units.convert', 1], ['maths.number.units.convert', 1], ['maths.number.units.convert', 2], ['maths.number.units.convert', 2], ['maths.number.units.convert', 3], ['maths.number.units.time', 1], ['maths.number.units.time', 1], ['maths.number.units.time', 2], ['maths.number.units.time', 2], ['maths.number.units.time', 3]],
+    limits: 'Metric units only; conversions between metric and imperial units are not included.',
+  },
+  {
+    id: 'maths.number.compound-measures',
+    topicId: 'maths.number',
+    title: 'Speed, density and pressure',
+    refs: ['N13'],
+    minutes: 40,
+    model: 'journey',
+    prerequisites: ['maths.number.units'],
+    big: 'A compound measure combines two quantities. Speed = distance ÷ time, density = mass ÷ volume, pressure = force ÷ area. Rearrange to find the other quantities, keep units consistent (minutes to hours before using km/h), and find an average speed from total distance ÷ total time.',
+    learn: [
+      { title: 'Speed, distance and time.', text: 'Speed is distance travelled per unit of time. If a car travels 120 km in 2 hours, its average speed is 120 ÷ 2 = 60 km/h. Rearranging: distance = speed × time and time = distance ÷ speed.',
+        example: { prompt: 'A cyclist travels at 18 km/h for 3 hours. How far?', steps: ['distance = speed × time', '18 × 3 = 54 km'] },
+        visual: { kind: 'triangle', top: 'distance', left: 'speed', right: 'time' } },
+      { title: 'Match the units.', text: 'A speed in km/h needs the time in hours. 40 minutes is {40/60} = {2/3} of an hour, not 0.4 hours. At 60 km/h for 40 minutes, the distance is 60 × {2/3} = 40 km.',
+        example: { prompt: 'How far is 45 minutes at 48 km/h?', steps: ['45 minutes = {45/60} = {3/4} hour', '48 × {3/4} = 36 km'] },
+        visual: { kind: 'columns', rows: ['45 min = {3/4} h', '48 × {3/4}'], op: '', result: '36 km' } },
+      { title: 'Average speed.', text: 'Average speed is total distance ÷ total time. You cannot average two speeds, because the journey spends longer at the slower speed. 60 km at 30 km/h (2 h) then 60 km at 60 km/h (1 h): 120 km in 3 h is 40 km/h, not 45.',
+        example: { prompt: '60 km at 30 km/h, then 60 km at 60 km/h. Average speed?', steps: ['Times: 2 h and 1 h', 'Total: 120 km in 3 h', '120 ÷ 3 = 40 km/h'] },
+        visual: { kind: 'columns', rows: ['60 km ÷ 30 = 2 h', '60 km ÷ 60 = 1 h', '120 km ÷ 3 h'], op: '', result: '40 km/h' } },
+      { title: 'Density and pressure.', text: 'Density = mass ÷ volume, often in g/cm³. Pressure = force ÷ area, in N/m² (newtons per square metre). The same rearranging works: mass = density × volume, force = pressure × area.',
+        example: { prompt: 'Copper has density 8.9 g/cm³. Find the mass of 20 cm³.', steps: ['mass = density × volume', '8.9 × 20 = 178 g'] },
+        visual: { kind: 'triangle', top: 'mass', left: 'density', right: 'volume' } },
+    ],
+    skills: [S('maths.number.compound.speed'), S('maths.number.compound.density-pressure')],
+    checkPlan: [['maths.number.compound.speed', 1], ['maths.number.compound.speed', 1], ['maths.number.compound.speed', 2], ['maths.number.compound.speed', 2], ['maths.number.compound.speed', 3], ['maths.number.compound.density-pressure', 1], ['maths.number.compound.density-pressure', 2], ['maths.number.compound.density-pressure', 2], ['maths.number.compound.density-pressure', 3], ['maths.number.compound.density-pressure', 3]],
+    limits: 'Rates of change in graphs and other compound measures (flow rates, unit pricing) are Ratio and proportion content (R11, R14). Values are original practice data, not reference densities for engineering use.',
+  },
+  {
+    id: 'maths.number.exact',
+    topicId: 'maths.number',
+    title: 'Exact answers: π and surds',
+    refs: ['N8'],
+    minutes: 45,
+    model: 'circle-surd',
+    prerequisites: ['maths.number.powers', 'maths.number.fractions-multiply-divide'],
+    big: 'An exact answer keeps π or a root instead of rounding: 9π, not 28.3. Treat π like a unit: 3π + 5π = 8π. Higher: simplify a surd by taking out the largest square factor (√72 = 6√2), multiply surds with √a × √b = √(ab), and rationalise a denominator by multiplying top and bottom by the surd.',
+    learn: [
+      { title: 'Answers in terms of π.', text: 'The area of a circle is πr² and its circumference is πd = 2πr. With radius 3 cm, the area is π × 9 = 9π cm². Writing 9π is exact; 28.3 cm² is an approximation. Multiples of π combine like any other like terms.',
+        example: { prompt: 'A circle has diameter 10 cm. Find its area in terms of π.', steps: ['Radius = 5 cm', 'Area = π × 5² = 25π cm²'] },
+        visual: { kind: 'circle', r: 3 } },
+      { title: 'Parts of circles.', text: 'A semicircle has half the area of the full circle. Its perimeter is half the circumference plus the straight diameter. Keep each part exact and collect: radius 4 gives 4π + 8.',
+        example: { prompt: 'Find the perimeter of a semicircle of radius 4 cm.', steps: ['Curved edge: ½ × 2π × 4 = 4π', 'Straight edge: 8 cm', 'Perimeter = 4π + 8 cm'] },
+        visual: { kind: 'circle', r: 4, half: true } },
+      { title: 'Simplifying surds (Higher).', text: 'A surd is a root that is not a whole number, such as √2. Because √(ab) = √a × √b, look for the largest square factor: √72 = √36 × √2 = 6√2. Like surds collect: √50 + √8 = 5√2 + 2√2 = 7√2. Also √a × √a = a.',
+        example: { prompt: 'Expand and simplify (3 + √2)²', steps: ['(3 + √2)(3 + √2) = 9 + 3√2 + 3√2 + 2', '= 11 + 6√2'] },
+        visual: { kind: 'columns', rows: ['√72 = √36 × √2', '√36 = 6'], op: '', result: '6√2' } },
+      { title: 'Rationalising denominators (Higher).', text: 'To remove a surd from the denominator, multiply the top and bottom by that surd. Since √3 × √3 = 3, {6/√3} = {6√3/3} = 2√3. The value does not change because you have multiplied by {√3/√3} = 1.',
+        example: { prompt: 'Rationalise {10/√5}', steps: ['× {√5/√5}: {10√5/5}', '= 2√5'] },
+        visual: { kind: 'columns', rows: ['{6/√3} × {√3/√3}', '= {6√3/3}'], op: '', result: '2√3' } },
+    ],
+    skills: [S('maths.number.exact.pi'), S('maths.number.exact.surds-simplify'), S('maths.number.exact.surds-rationalise')],
+    checkPlan: [['maths.number.exact.pi', 1], ['maths.number.exact.pi', 2], ['maths.number.exact.pi', 2], ['maths.number.exact.pi', 3], ['maths.number.exact.surds-simplify', 1], ['maths.number.exact.surds-simplify', 2], ['maths.number.exact.surds-simplify', 3], ['maths.number.exact.surds-rationalise', 1], ['maths.number.exact.surds-rationalise', 2], ['maths.number.exact.surds-rationalise', 3]],
+    limits: 'Circle formulas are introduced here only to practise exact answers; circle geometry is taught in the Geometry strand (G17). Surd skills appear at Higher only; denominators of the form a + √b (conjugates) are not included.',
+  },
+  {
+    id: 'maths.number.ratio-reciprocals',
+    topicId: 'maths.number',
+    title: 'Fractions in ratios, reciprocals and inequality symbols',
+    refs: ['N11', 'N3', 'N1'],
+    minutes: 35,
+    model: 'ratio-bar',
+    prerequisites: ['maths.number.fdp'],
+    big: 'A ratio a : b splits a whole into a + b equal parts, so the first quantity is {a/a + b} of the total. A fraction of a group becomes a ratio by comparing the part with the rest. The reciprocal of a number is 1 divided by it; a number times its reciprocal is 1, and 0 has no reciprocal. The symbols ≤ and ≥ include equality; ≠ means not equal.',
+    learn: [
+      { title: 'From ratio to fraction.', text: 'If red : blue = 3 : 5, there are 3 + 5 = 8 equal parts. Red is 3 of the 8 parts, so {3/8} of the total is red. The fraction {3/5} compares red with blue, not with the whole.',
+        example: { prompt: 'Boys : girls = 4 : 7. What fraction are girls?', steps: ['Total parts: 4 + 7 = 11', 'Girls: 7 of the 11 parts', '{7/11}'] },
+        visual: { kind: 'ratiobar', a: 3, b: 5 } },
+      { title: 'From fraction to ratio.', text: 'If {2/7} of a class walk, the other {5/7} do not. Walkers : others = 2 : 5. Write a ratio in its simplest form using whole numbers.',
+        example: { prompt: '{3/10} of the sweets are red; the rest are green. Red : green?', steps: ['Green: 10 − 3 = 7 parts', 'Red : green = 3 : 7'] },
+        visual: { kind: 'ratiobar', a: 2, b: 5 } },
+      { title: 'Reciprocals.', text: 'The reciprocal of 4 is {1/4}; the reciprocal of {2/3} is {3/2}. Convert mixed numbers and decimals to fractions first: 0.25 = {1/4}, so its reciprocal is 4. Multiplying a number by its reciprocal always gives 1, which is why dividing by a fraction is multiplying by its reciprocal.',
+        example: { prompt: 'Find the reciprocal of {2 1/2}', steps: ['{2 1/2} = {5/2}', 'Reciprocal: {2/5}'] },
+        visual: { kind: 'columns', rows: ['{5/2} × {2/5}'], op: '', result: '1' } },
+      { title: 'Inequality symbols.', text: '< means less than and > means greater than; the wide end faces the larger number. ≤ and ≥ also allow equality, so 3 ≤ 3 is true but 3 < 3 is false. ≠ means not equal to. For negative numbers, the one closer to zero is larger: −2 > −5.',
+        example: { prompt: 'Is −4 ≥ −2 true?', steps: ['−4 is further left on the number line than −2.', 'So −4 < −2: the statement is false.'] },
+        visual: { kind: 'line', min: -6, max: 2, points: [-4, -2] } },
+    ],
+    skills: [S('maths.number.ratio-fractions'), S('maths.number.reciprocals'), S('maths.number.symbols')],
+    checkPlan: [['maths.number.ratio-fractions', 1], ['maths.number.ratio-fractions', 2], ['maths.number.ratio-fractions', 2], ['maths.number.ratio-fractions', 3], ['maths.number.reciprocals', 1], ['maths.number.reciprocals', 2], ['maths.number.reciprocals', 3], ['maths.number.symbols', 1], ['maths.number.symbols', 2], ['maths.number.symbols', 2]],
+    limits: 'Sharing in a ratio and other proportion problems are Ratio and proportion content (R4–R8) and come in that strand.',
+  },
 ];
 
 // Teaching order: primes come before fraction arithmetic, which relies on HCF/LCM.
-export const lessonOrder = ['maths.number.negatives', 'maths.number.order-of-operations', 'maths.number.primes', 'maths.number.fractions-add-subtract', 'maths.number.fractions-multiply-divide', 'maths.number.decimals', 'maths.number.fdp', 'maths.number.rounding', 'maths.number.powers', 'maths.number.standard-form'];
+export const lessonOrder = ['maths.number.negatives', 'maths.number.order-of-operations', 'maths.number.primes', 'maths.number.fractions-add-subtract', 'maths.number.fractions-multiply-divide', 'maths.number.decimals', 'maths.number.fdp', 'maths.number.rounding', 'maths.number.powers', 'maths.number.standard-form', 'maths.number.listing', 'maths.number.units', 'maths.number.compound-measures', 'maths.number.exact', 'maths.number.ratio-reciprocals'];
 export const orderedLessons = lessonOrder.map(id => mathsLessons.find(l => l.id === id));

@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { allSkills as numberSkills, generate, skillById } from '../dist/maths/skills.js';
 import { mark, parsePrimeProduct, primeFactors, isPrime, answerMarkup, decimalPlacesFor } from '../dist/maths/answers.js';
+import { exactNumber } from '../dist/maths/exact.js';
 import { parseNumber, F, eq, decText } from '../dist/maths/frac.js';
 import { mathHTML } from '../dist/maths/render.js';
 import { mathsLessons, orderedLessons, lessonOrder } from '../dist/maths/lessons-number.js';
@@ -17,6 +18,14 @@ function rawFor(answer) {
   if (answer.kind === 'decimal') return asc(decText(F(answer.value.n, answer.value.d), decimalPlacesFor(answer)));
   if (answer.kind === 'standard') return `${asc(decText(F(answer.a.n, answer.a.d)))} x 10^${answer.n}`;
   if (answer.kind === 'power') return `${answer.base}^${answer.exp}`;
+  if (answer.kind === 'ratio') return answer.parts.join(':');
+  if (answer.kind === 'exact') {
+    const sym = answer.r === 'pi' ? 'π' : '√' + answer.r, A = F(answer.a.n, answer.a.d), B = F(answer.b.n, answer.b.d);
+    const irr = B.n === 0 ? '' : `${Math.abs(B.n)}${sym}${B.d > 1 ? '/' + B.d : ''}`;
+    const rat = A.n === 0 ? '' : A.d === 1 ? String(A.n) : `${A.n}/${A.d}`;
+    if (!irr) return rat || '0';
+    return rat ? `${rat} ${B.n < 0 ? '-' : '+'} ${irr}` : `${B.n < 0 ? '-' : ''}${irr}`;
+  }
   if (answer.kind === 'interval') return `${asc(decText(F(answer.lo.n, answer.lo.d)))} ${answer.loIn ? '<=' : '<'} x ${answer.hiIn ? '<=' : '<'} ${asc(decText(F(answer.hi.n, answer.hi.d)))}`;
   if (answer.kind === 'integer') return String(answer.value);
   if (answer.kind === 'primes') return Object.entries(answer.value).map(([p, k]) => (k > 1 ? `${p}^${k}` : p)).join(' x ');
@@ -26,7 +35,7 @@ function rawFor(answer) {
   if (answer.form === 'mixed' && a > f.d) return `${neg ? '-' : ''}${Math.floor(a / f.d)} ${a % f.d}/${f.d}`;
   return `${neg ? '-' : ''}${a}/${f.d}`;
 }
-const valueOf = answer => (answer.kind === 'integer' ? answer.value : answer.kind === 'standard' ? (answer.a.n / answer.a.d) * 10 ** answer.n : answer.kind === 'power' ? answer.base ** answer.exp : answer.value.n / answer.value.d);
+const valueOf = answer => (answer.kind === 'exact' ? exactNumber(answer) : answer.kind === 'integer' ? answer.value : answer.kind === 'standard' ? (answer.a.n / answer.a.d) * 10 ** answer.n : answer.kind === 'power' ? answer.base ** answer.exp : answer.value.n / answer.value.d);
 const close = (a, b) => Math.abs(a - b) <= 1e-9 * Math.max(1, Math.abs(a), Math.abs(b));
 
 // Independent evaluation of a printed "Work out …" prompt using ordinary JS arithmetic.
@@ -54,6 +63,7 @@ test('every skill level generates deterministic, JSON-safe items whose own answe
     assert.equal(mark(a.answer, rawFor(a.answer)).status, 'correct', `${sk.id} L${lv} ${a.prompt} → ${rawFor(a.answer)}`);
     for (const t of a.traps || []) {
       const tval = F(t.v.n, t.v.d);
+      if (a.answer.kind === 'exact' || a.answer.kind === 'ratio') continue;
       const traw = a.answer.kind === 'standard' || a.answer.kind === 'power' || a.answer.kind === 'decimal' ? (decText(tval) ?? `${t.v.n}/${t.v.d}`).replace('−', '-') : t.v.d === 1 ? String(t.v.n) : `${t.v.n}/${t.v.d}`;
       const res = mark(a.answer, traw);
       assert.notEqual(res.status, 'correct', `${sk.id} trap marks correct: ${a.prompt}`);
@@ -71,7 +81,7 @@ test('"Work out" answers agree with an independent evaluation of the printed cal
   let checked = 0;
   for (const sk of numberSkills) for (let lv = 1; lv <= sk.levels.length; lv++) for (let i = 0; i < N; i++) {
     const it = generate(sk.id, lv, 'w' + i);
-    if (!it.prompt.startsWith('Work out ')) continue;
+    if (!it.prompt.startsWith('Work out ') || /reciprocal/.test(it.prompt)) continue;
     const v = evalPrompt(it.prompt);
     assert.ok(close(v, valueOf(it.answer)), `${it.prompt} printed value ${v}, stored ${valueOf(it.answer)}`);
     checked++;
@@ -291,6 +301,13 @@ test('standard form conversions preserve the printed value; percentages and esti
 test('recurring decimals (Higher) convert to the fraction the dotted digits describe', () => {
   for (let i = 0; i < N; i++) {
     const it = generate('maths.number.fdp.convert', 3, 'c' + i);
+    if (it.answer.kind === 'choice') {
+      const [, fn, fd] = it.prompt.match(/\{(\d+)\/(\d+)\}/);
+      const opt = it.answer.options[it.answer.answer].slice(2), marks = [...opt.matchAll(/\ḋ/g)].map(x => x.index), plain2 = opt.replace(/̇/g, '');
+      const f2 = opt.slice(0, marks[0]).replace(/̇/g, '').length, l2 = opt.slice(0, marks.at(-1)).replace(/̇/g, '').length;
+      assert.ok(Math.abs(Number('0.' + plain2.slice(0, f2) + plain2.slice(f2, l2 + 1).repeat(12)) - Number(fn) / Number(fd)) < 1e-9, it.prompt);
+      continue;
+    }
     const d = it.prompt.match(/Write 0\.([\ḋ]+) as/)[1];
     const plain = d.replace(/̇/g, ''), dots = [...d.matchAll(/\ḋ/g)].map(x => x.index);
     const first = d.slice(0, dots[0]).replace(/̇/g, '').length, last = d.slice(0, dots.at(-1)).replace(/̇/g, '').length;
@@ -302,7 +319,10 @@ test('recurring decimals (Higher) convert to the fraction the dotted digits desc
 
 test('Higher-only content sits only in Higher levels and never reaches a Foundation learner', () => {
   const higherLevels = numberSkills.flatMap(sk => sk.levels.map((l, i) => (l.higher ? `${sk.id}@${i + 1}` : null)).filter(Boolean));
-  assert.deepEqual(higherLevels.sort(), ['maths.number.fdp.convert@3', 'maths.number.powers.evaluate@3', 'maths.number.powers.index-laws@4', 'maths.number.rounding.error-interval@3'].sort());
+  assert.deepEqual(higherLevels.sort(), ['maths.number.fdp.convert@3', 'maths.number.listing.count@3', 'maths.number.powers.evaluate@3', 'maths.number.powers.index-laws@4', 'maths.number.rounding.error-interval@3'].sort());
+  assert.deepEqual(numberSkills.filter(sk => sk.higherOnly).map(sk => sk.id).sort(), ['maths.number.exact.surds-rationalise', 'maths.number.exact.surds-simplify']);
+  const exactLesson = orderedLessons.find(l => l.id === 'maths.number.exact');
+  assert.ok(exactLesson.skills.some(sk => !sk.higherOnly), 'the exact-answers lesson still has Foundation content (π)');
   for (const sk of numberSkills) {
     const fl = levelsFor(sk, 'Foundation');
     assert.ok(fl.every(l => !l.higher));
@@ -332,4 +352,126 @@ test('batch-2 answer kinds: decimals keep required places, standard form and pow
   assert.equal(mark(iv, '4.25 < x <= 4.35').code, 'interval-ends');
   assert.equal(mark(iv, '4.2 <= x < 4.4').status, 'wrong');
   assert.equal(mark(iv, '4.25 to 4.35').status, 'invalid');
+});
+
+// ───────── batch 3: exact answers, units, compound measures, listing, ratio, reciprocals, symbols ─────────
+function evalExact(prompt) {
+  let e = prompt.replace(/^(Simplify|Expand and simplify|Rationalise the denominator of|Write) /, '').replace(/\. Give your answer.*$/, '').replace(/ in the form a \+ b√\d+\.$/, '').replace(/\.$/, '');
+  e = e.replace(/\{([^{}]+)\/([^{}]+)\}/g, '(($1)/($2))');
+  e = e.replace(/(\d)√(\d+)/g, '$1*Math.sqrt($2)').replace(/√(\d+)/g, 'Math.sqrt($1)').replace(/(\d)π/g, '$1*Math.PI').replace(/π/g, 'Math.PI');
+  e = e.replace(/²/g, '**2').replace(/\)\(/g, ')*(').replace(/−/g, '-').replace(/×/g, '*').replace(/÷/g, '/');
+  assert.match(e, /^[\d+\-*/(). MathsqrtPI]+$/, 'unexpected characters in ' + prompt + ' → ' + e);
+  return Function(`return (${e});`)();
+}
+test('exact answers (π and surds) equal the printed expression evaluated numerically', () => {
+  let checked = 0;
+  for (const id of ['maths.number.exact.pi', 'maths.number.exact.surds-simplify', 'maths.number.exact.surds-rationalise']) for (let lv = 1; lv <= 3; lv++) for (let i = 0; i < N; i++) {
+    const it = generate(id, lv, 'x' + i);
+    if (/circle|semicircle/.test(it.prompt)) {
+      const r = Number(it.prompt.match(/radius (\d+)/)?.[1] ?? Number(it.prompt.match(/diameter (\d+)/)[1]) / 2);
+      const want = /semicircle.*area/.test(it.prompt) ? (Math.PI * r * r) / 2 : /quarter/.test(it.prompt) ? (Math.PI * r * r) / 4 : /semicircle.*perimeter/.test(it.prompt) ? Math.PI * r + 2 * r : /area/.test(it.prompt) ? Math.PI * r * r : 2 * Math.PI * r;
+      assert.ok(close(want, valueOf(it.answer)), it.prompt);
+    } else assert.ok(close(evalExact(it.prompt), valueOf(it.answer)), it.prompt + ' → ' + evalExact(it.prompt));
+    assert.equal(mark(it.answer, rawFor(it.answer)).status, 'correct', it.prompt + ' ← ' + rawFor(it.answer));
+    checked++;
+  }
+  assert.ok(checked >= 2000);
+});
+
+test('unit conversions, durations, speeds and densities match the printed numbers', () => {
+  const factor = { 'km>m': 1000, 'm>cm': 100, 'cm>mm': 10, 'm>mm': 1000, 'kg>g': 1000, 'l>ml': 1000, 'km>cm': 100000, 'm²>cm²': 10000, 'm³>cm³': 1e6 };
+  const f = (a, b) => factor[`${a}>${b}`] ?? 1 / factor[`${b}>${a}`];
+  for (let lv = 1; lv <= 3; lv++) for (let i = 0; i < N; i++) {
+    const it = generate('maths.number.units.convert', lv, 'u' + i);
+    let m;
+    if ((m = it.prompt.match(/^Convert ([\d.]+) (\S+) into (\S+)\.$/))) assert.ok(close(Number(m[1]) * f(m[2], m[3]), valueOf(it.answer)), it.prompt);
+    else if ((m = it.prompt.match(/holds ([\d ]+) cm³\. How many (millilitres|litres)/))) assert.ok(close(Number(m[1].replace(/ /g, '')) / (m[2] === 'litres' ? 1000 : 1), valueOf(it.answer)), it.prompt);
+    else if ((m = it.prompt.match(/is ([\d.]+) km and then (\d+) m/))) assert.ok(close(Number(m[1]) * 1000 + Number(m[2]), valueOf(it.answer)), it.prompt);
+    else if ((m = it.prompt.match(/How many (\d+) ml glasses .* from (\d+) litres/))) assert.equal(valueOf(it.answer), Math.floor((Number(m[2]) * 1000) / Number(m[1])), it.prompt);
+    else assert.fail(it.prompt);
+  }
+  for (let lv = 1; lv <= 3; lv++) for (let i = 0; i < N; i++) {
+    const it = generate('maths.number.units.time', lv, 't' + i);
+    let m;
+    if ((m = it.prompt.match(/minutes are there in ([\d.]+) hours/))) assert.ok(close(Number(m[1]) * 60, valueOf(it.answer)), it.prompt);
+    else if ((m = it.prompt.match(/Write (\d+) hours (\d+) minutes as a number of hours/))) assert.ok(close(Number(m[1]) + Number(m[2]) / 60, valueOf(it.answer)), it.prompt);
+    else if ((m = it.prompt.match(/starts at (\d\d):(\d\d) and ends at (\d\d):(\d\d)/))) assert.equal(valueOf(it.answer), (Number(m[3]) * 60 + Number(m[4])) - (Number(m[1]) * 60 + Number(m[2])), it.prompt);
+    else if ((m = it.prompt.match(/£(\d+) per hour.* (\d+) hours (\d+) minutes/))) assert.ok(close(Number(m[1]) * (Number(m[2]) + Number(m[3]) / 60), valueOf(it.answer)), it.prompt);
+    else assert.fail(it.prompt);
+  }
+  for (let lv = 1; lv <= 3; lv++) for (let i = 0; i < N; i++) {
+    const it = generate('maths.number.compound.speed', lv, 's' + i), n = [...it.prompt.matchAll(/\d+(?:\.\d+)?/g)].map(x => Number(x[0]));
+    let want;
+    if (/travels (\d+) km in (\d+) hours/.test(it.prompt)) want = n[0] / n[1];
+    else if (/at (\d+) km\/h for (\d+) hours/.test(it.prompt)) want = n[0] * n[1];
+    else if (/travels (\d+) km at (\d+) km\/h\. How many hours/.test(it.prompt)) want = n[0] / n[1];
+    else if (/for (\d+) minutes/.test(it.prompt)) want = (n[0] * n[1]) / 60;
+    else if (/How many minutes does it take to travel/.test(it.prompt)) want = (n[0] / n[1]) * 60;
+    else if (/average speed for the whole journey/.test(it.prompt)) want = (n[0] + n[2]) / (n[0] / n[1] + n[2] / n[3]);
+    else if (/Convert ([\d.]+) m\/s into km\/h/.test(it.prompt)) want = n[0] * 3.6;
+    else if (/Convert ([\d.]+) km\/h into m\/s/.test(it.prompt)) want = n[0] / 3.6;
+    else assert.fail(it.prompt);
+    assert.ok(close(want, valueOf(it.answer)), it.prompt);
+  }
+  for (let lv = 1; lv <= 3; lv++) for (let i = 0; i < N; i++) {
+    const it = generate('maths.number.compound.density-pressure', lv, 'd' + i), n = [...it.prompt.matchAll(/\d+(?:\.\d+)?/g)].map(x => Number(x[0]));
+    const want = /mass ([\d.]+) g and volume (\d+)/.test(it.prompt) ? n[0] / n[1] : /Find the mass of/.test(it.prompt) ? n[0] * n[1] : /Find its volume/.test(it.prompt) ? n[1] / n[0] : /force of ([\d.]+) N acts on an area of ([\d.]+)/.test(it.prompt) ? n[0] / n[1] : n[0] * n[1];
+    assert.ok(close(want, valueOf(it.answer)), it.prompt);
+  }
+});
+
+test('listing, ratio fractions, reciprocals and inequality symbols are right by the printed numbers', () => {
+  for (let i = 0; i < N; i++) {
+    const a = generate('maths.number.listing.count', 1, 'l' + i), groups = [...a.prompt.matchAll(/\(([^)]+)\)/g)].map(m => m[1].split(', ').length);
+    assert.equal(a.answer.value, groups[0] * groups[1], a.prompt);
+    const b = generate('maths.number.listing.count', 2, 'm' + i), m = b.prompt.match(/^(\d+) people/);
+    assert.equal(b.answer.value, m ? (Number(m[1]) * (Number(m[1]) - 1)) / 2 : 6, b.prompt);
+    const c = generate('maths.number.listing.count', 3, 'n' + i);
+    let k;
+    if ((k = c.prompt.match(/(one letter|two letters) .* followed by (\d) digits/))) assert.equal(c.answer.value, 26 ** (k[1] === 'one letter' ? 1 : 2) * 10 ** Number(k[2]), c.prompt);
+    else if ((k = c.prompt.match(/A (\d)-digit PIN .* no digit repeated/))) assert.equal(c.answer.value, [10, 9, 8, 7].slice(0, Number(k[1])).reduce((x, y) => x * y, 1), c.prompt);
+    else if ((k = c.prompt.match(/How many (\d)-digit whole numbers are there/))) assert.equal(c.answer.value, 9 * 10 ** (Number(k[1]) - 1), c.prompt);
+    else if (/3-digit whole numbers are odd/.test(c.prompt)) assert.equal(c.answer.value, 450);
+    else if ((k = c.prompt.match(/^(\d+) runners/))) assert.equal(c.answer.value, Number(k[1]) * (Number(k[1]) - 1), c.prompt);
+    else assert.fail(c.prompt);
+    const sys = generate('maths.number.listing.systematic', 1 + (i % 2), 's' + i), listed = sys.prompt.match(/(?:list is|each:) ([A-Z0-9, ]+)\./)[1].split(', ');
+    assert.ok(!listed.includes(sys.answer.options[sys.answer.answer]) && listed.length === 5, sys.prompt);
+  }
+  for (let i = 0; i < N; i++) {
+    const r1 = generate('maths.number.ratio-fractions', 1, 'r' + i), m = r1.prompt.match(/is (\d+) : (\d+)\. What fraction of the total are (\w+)/), [, a, b] = m.map(Number);
+    const first = r1.prompt.match(/ratio of (\w+) to/)[1] === m[3];
+    assert.ok(close((first ? a : b) / (a + b), valueOf(r1.answer)), r1.prompt);
+    const rc = generate('maths.number.reciprocals', 1 + (i % 2), 'c' + i), x = rc.prompt.match(/reciprocal of (\{[^}]+\}|\d+(?:\.\d+)?)/)[1].replace(/\{(\d+) (\d+)\/(\d+)\}/, '($1+$2/$3)').replace(/\{(\d+)\/(\d+)\}/, '($1/$2)');
+    assert.ok(close(Function(`return ${x}`)() * valueOf(rc.answer), 1), rc.prompt);
+  }
+  const truth = st => { const [l, op, rr] = st.replace(/−/g, '-').split(' '); const L = Number(l), R = Number(rr); return { '<': L < R, '>': L > R, '≤': L <= R, '≥': L >= R, '≠': L !== R }[op]; };
+  for (let i = 0; i < N; i++) {
+    const it = generate('maths.number.symbols', 2, 'y' + i);
+    assert.equal(it.answer.options.filter(truth).length, 1, it.answer.options.join(' | '));
+    assert.ok(truth(it.answer.options[it.answer.answer]));
+    const one = generate('maths.number.symbols', 1, 'z' + i), m = one.prompt.match(/box\?\s+(\S+) ☐ (\S+)$/);
+    const val = t => Function(`return ${t.replace('−', '-').replace(/\{(\d+)\/(\d+)\}/, '($1/$2)')}`)();
+    const L = val(m[1]), R = val(m[2]), right = Math.abs(L - R) < 1e-12 ? '=' : L < R ? '<' : '>';
+    assert.equal(one.answer.options[one.answer.answer], right, one.prompt);
+  }
+});
+
+test('exact and ratio marking: value vs form', () => {
+  const s3 = { kind: 'exact', a: { n: 0, d: 1 }, b: { n: 2, d: 1 }, r: 3 };
+  for (const ok of ['2√3', '2sqrt(3)', '2 × √3']) assert.equal(mark(s3, ok).status, 'correct', ok);
+  assert.equal(mark(s3, '√12').code, 'surd-not-simplified');
+  assert.equal(mark(s3, '√3 + √3').code, 'surd-not-simplified');
+  assert.equal(mark(s3, '3√2').status, 'wrong');
+  const rat = { kind: 'exact', a: { n: 0, d: 1 }, b: { n: 2, d: 3 }, r: 3 };
+  for (const ok of ['2√3/3', '(2/3)√3', '(2√3)/3']) assert.equal(mark(rat, ok).status, 'correct', ok);
+  assert.equal(mark(rat, '2/√3').code, 'not-rationalised');
+  const pi = { kind: 'exact', a: { n: 8, d: 1 }, b: { n: 4, d: 1 }, r: 'pi' };
+  for (const ok of ['4π + 8', '8 + 4pi', '8+4π']) assert.equal(mark(pi, ok).status, 'correct', ok);
+  assert.equal(mark({ kind: 'exact', a: { n: 0, d: 1 }, b: { n: 9, d: 1 }, r: 'pi' }, '28.3').code, 'want-exact');
+  assert.equal(mark({ kind: 'exact', a: { n: 0, d: 1 }, b: { n: 9, d: 1 }, r: 'pi' }, '28').status, 'wrong');
+  const q = { kind: 'ratio', parts: [3, 5] };
+  assert.equal(mark(q, '3 : 5').status, 'correct');
+  assert.equal(mark(q, '6:10').code, 'ratio-not-simplest');
+  assert.equal(mark(q, '5:3').status, 'wrong');
+  assert.equal(mark(q, '3/5').status, 'invalid');
 });

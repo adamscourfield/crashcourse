@@ -2,11 +2,44 @@
 
 Final three section-scoped roadmap lessons: farming efficiency/ethical trade-offs, sustainable fisheries, and mycoprotein/insulin/GM crops. All separate Biology both tiers; AQA8461 4.7.5.2/.3/.4 checked22October2026.15 grouped teaching/support requirements in biology-ecology-batch06-requirements.csv. Covers movement/temperature energy transfer and high-protein feed with welfare/resource evaluation; declining stocks, breeding populations, local disappearance, net size and quotas; large-scale culture, Fusarium fungus on glucose syrup aerobically, biomass harvest/purification, protein-rich vegetarian food, GM bacterium/purified human insulin and trait-specific GM crop/nutritional benefits including golden rice. Farming WS1.3/1.4 and fisheries WS1.4 are explicit source links; biotechnology evaluation/numerical activities are authoring opportunities.
 
-Science263 lessons/960 practice/1681 checks; Biology150 Separate Higher/109 Trilogy Higher, with10 Maths Number lessons in their separate generated-practice engine. Ecology25 Separate Higher/24 Separate Foundation/15 Trilogy both tiers. All25 roadmap units implemented; no claim of full statement/evidence closure or specialist certification.12 practice/18 independent checks added. Four process films across three bindings give90 films/85 bindings overall. Five process cards inline autoplay/Loop, reduced-motion policy paused; controlled data/evaluation stays direct. Models require all four conditions plus bounded interpretation: equal-intake farm energy allocation, adult-catch/juvenile-bycatch/recruit account, and conceptual glucose/oxygen aerobic product output. Figures, rates, counts and yields are original fictional teaching assumptions, not prescriptions or forecasts. Zero no-oxygen output is not a universal fungal-death claim; fish bycatch outside the adult target is explicit toy accounting, not a legal quota rule.
+Science263 lessons/960 practice/1681 checks; Biology150 Separate Higher/109 Trilogy Higher, with15 Maths Number lessons in their separate generated-practice engine. Ecology25 Separate Higher/24 Separate Foundation/15 Trilogy both tiers. All25 roadmap units implemented; no claim of full statement/evidence closure or specialist certification.12 practice/18 independent checks added. Four process films across three bindings give90 films/85 bindings overall. Five process cards inline autoplay/Loop, reduced-motion policy paused; controlled data/evaluation stays direct. Models require all four conditions plus bounded interpretation: equal-intake farm energy allocation, adult-catch/juvenile-bycatch/recruit account, and conceptual glucose/oxygen aerobic product output. Figures, rates, counts and yields are original fictional teaching assumptions, not prescriptions or forecasts. Zero no-oxygen output is not a universal fungal-death claim; fish bycatch outside the adult target is explicit toy accounting, not a legal quota rule.
 
-407 combined tests pass, including existing Maths tests. Three full browser journeys6/6 passed; wrong comparisons/numerics/reasons/predictions and premature actions rejected. Universal claims could not complete the model; all four settings and limited conclusion required. Fisheries adult60/large-mesh/prediction39 restored after reload and Trilogy exclusion/back to Separate, then corrected. Previous22 Ecology completions retained; filters show15/15 Trilogy,24/24 Separate Foundation and25/25 Separate Higher. All12 cards/9 investigation sets fit390px without document overflow or duplicate process player; five process cards show Loop checked. Topic assessment start offers25 eligible Separate Higher questions. Maths studio opens and Science restores. Correct source/model notes checked, no console errors. Technical QA is not specialist review, independent extended argument writing or full assistive-technology/device certification.
+407 tests passed before integrating concurrent Maths batch03;411 combined tests now pass, with15 Maths lessons preserved. Three full browser journeys6/6 passed; wrong comparisons/numerics/reasons/predictions and premature actions rejected. Universal claims could not complete the model; all four settings and limited conclusion required. Fisheries adult60/large-mesh/prediction39 restored after reload and Trilogy exclusion/back to Separate, then corrected. Previous22 Ecology completions retained; filters show15/15 Trilogy,24/24 Separate Foundation and25/25 Separate Higher. All12 cards/9 investigation sets fit390px without document overflow or duplicate process player; five process cards show Loop checked. Topic assessment start offers25 eligible Separate Higher questions. Maths studio opens and Science restores. Correct source/model notes checked, no console errors. Technical QA is not specialist review, independent extended argument writing or full assistive-technology/device certification.
 
-Files: content-biology-production.js; eco6-models/figures/visuals/films.js; widgets-eco6.js; content/widget/registry/process/source-note integration. Cache20261022-eco6; Maths-specific module/style version preserved. Stable IDs/progress retained. Brief biology-ecology-batch-06-brief.md; production-browser-evidence.json. Next: reconcile every Ecology assessable statement/skill and independent evidence against all six batch mappings, then earlier Biology evidence audits. Physics remains planned. The25-unit roadmap is an authoring sequence, not proof that every assessable statement has sufficient independent evidence. Publication and GitHub verification pending.
+Files: content-biology-production.js; eco6-models/figures/visuals/films.js; widgets-eco6.js; content/widget/registry/process/source-note integration. Cache20261022-eco6; Maths-specific module/style version updated to the concurrent r3 source. Stable IDs/progress retained. Brief biology-ecology-batch-06-brief.md; production-browser-evidence.json. Next: reconcile every Ecology assessable statement/skill and independent evidence against all six batch mappings, then earlier Biology evidence audits. Physics remains planned. The25-unit roadmap is an authoring sequence, not proof that every assessable statement has sufficient independent evidence. Publication and GitHub verification pending.
+
+## Maths: Edexcel 1MA1 Number batch 03 — all N1–N16 now taught (15 lessons), on GitHub `main`, lessons 11–15 not yet published
+
+Five lessons were added to the ten published with Ecology05:
+- listing and the product rule (N5; product rule Higher-only);
+- units and measures (N13);
+- speed, density and pressure (N13);
+- exact answers with π and surds (N8; the surd skills are Higher-only and hidden at Foundation);
+- fractions in ratios, reciprocals and inequality symbols (N11, N3, N1).
+
+Fraction → recurring decimal (N10 Higher) is now assessed.
+
+Engine additions:
+- an `exact` answer kind (a + b√r, bπ). It marks unsimplified surds, unrationalised denominators and decimal approximations as right value, wrong form;
+- a `ratio` answer kind (simplest form; reversed order diagnosed);
+- whole-skill `higherOnly` flags;
+- checks topped up to 10 items when Higher-only skills are hidden;
+- a 20-question topic assessment drawn across all lessons.
+
+The engine now has 38 skills.
+
+QA:
+- 403 automated tests pass after rebasing onto `main` 1231c2e (380 science + 23 maths).
+- Browser walk-throughs: batch 03 passes 62 checks (`tools/maths-browser-flow-3.mjs`). The pilot (87) and batch 02 (68) flows were rerun and pass, so 217 checks pass in total.
+- Evidence: `science-app/maths-browser-evidence-3.json`.
+
+Remaining gaps are listed per statement in `curriculum/maths-number-requirements.csv`: no conjugate surd denominators; written lists and methods are not marked; metric units only.
+
+Brief: `curriculum/briefs/maths-number-batch-03.md`.
+
+**Cache:** `app.js` now imports `maths/studio.js?v=20261022-maths-r3`, but `index.html` still loads `app.js?v=20261022-eco5`. **Publishing lessons 11–15 requires a global version bump.**
+
+Not done: Site publication of lessons 11–15; teacher or specialist review. Next steps: Adam reviews the lessons; publish them; build expression-equivalence marking before Algebra.
 
 ## Ecology batch05 — implemented, published and GitHub source updated
 
