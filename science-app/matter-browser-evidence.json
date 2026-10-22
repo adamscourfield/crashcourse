@@ -292,5 +292,12 @@
   "courseScopes": "Electricity18 separate/15 Trilogy; Particle2 both; RP5 Physics/RP17 Trilogy source notes",
   "visualFix": "Diagram/movie SVG gradient namespaces separated; shaded particles inspected; charge counts include in-flight electron",
   "maths": "Course map Number15/Algebra15 preserved; source/cache untouched,30lessons78skills; Science restores",
-  "limitations": "Technical QA is not specialist review, unrestricted drawings/writing, real practical or full device/accessibility certification."
+  "limitations": "Technical QA is not specialist review, unrestricted drawings/writing, real practical or full device/accessibility certification.",
+  "publication": {
+    "status": "succeeded",
+    "source": "a511f45319a623ae4116eb08e5d4a1e46b4936ff",
+    "deployment": "appgdep_6ada5b7c7cc4819187cc4be878788350",
+    "url": "https://gcse-science-atom-lab.newbuddy32.chatgpt.site/",
+    "live": "Separate static inventory and Trilogy hiding; shared Particle looping process; Maths15Number/15Algebra; no console errors"
+  }
 }
