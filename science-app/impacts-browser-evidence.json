@@ -213,29 +213,44 @@
     {
       "route": "combined",
       "tier": "Foundation",
-      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n14\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n14 / 14\nReset lesson"
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n14\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined \u00b7 Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n14 / 14\nReset lesson"
     },
     {
       "route": "combined",
       "tier": "Higher",
-      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n14\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n14 / 14\nReset lesson"
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n14\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined \u00b7 Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n14 / 14\nReset lesson"
     },
     {
       "route": "separate",
       "tier": "Foundation",
-      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n16\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n16 / 16\nReset lesson"
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n16\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined \u00b7 Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n16 / 16\nReset lesson"
     },
     {
       "route": "separate",
       "tier": "Higher",
-      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n17\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n17 / 17\nReset lesson"
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n17\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined \u00b7 Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n17 / 17\nReset lesson"
     }
   ],
-  "assessment": "INDEPENDENT TOPIC ASSESSMENT\nEcology\n\n17 questions, one from each available lesson. This checks available lessons, not the full topic. First answers count. Results include explanations. Pass mark: 80%.\n\nStart assessment →",
+  "assessment": "INDEPENDENT TOPIC ASSESSMENT\nEcology\n\n17 questions, one from each available lesson. This checks available lessons, not the full topic. First answers count. Results include explanations. Pass mark: 80%.\n\nStart assessment \u2192",
   "consoleErrors": [],
   "limits": [
     "Technical QA not specialist review",
     "Constrained evaluation/numeric/sequence tasks not independent extended writing or unrestricted graphing"
   ],
-  "publication": "pending"
+  "publication": {
+    "status": "succeeded",
+    "source_commit": "e160fc853319bc2071919c2abf135e2f83e2a1b5",
+    "deployment": "appgdep_6ad9c3822cd081919e37ea5b7483bb3e",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_a5595071ed608191bbd736be311d4704",
+    "url": "https://gcse-science-atom-lab.newbuddy32.chatgpt.site/",
+    "published_at": "2026-10-22T08:04:33Z",
+    "audience": "owner_private_preserved",
+    "liveInventory": 17,
+    "liveProcess": "deforestation inline process, single player, Loop checked",
+    "liveConsoleErrors": [],
+    "proof": "crash-course-ecology04.png",
+    "githubSourceCommit": "9906a60505457b688a3c3b169f7f6f31b2e5f64f",
+    "githubRepository": "https://github.com/adamscourfield/crashcourse",
+    "githubBranch": "main"
+  }
 }
