@@ -1,5 +1,5 @@
-import {practicalSteps,temperatureRows,practicalThermalCorrect,bondCases,bondAccount,bondCorrect} from './thermal-models.js?v=20261022-eco4';
-import {showThermal} from './thermal-scenes.js?v=20261022-eco4';
+import {practicalSteps,temperatureRows,practicalThermalCorrect,bondCases,bondAccount,bondCorrect} from './thermal-models.js?v=20261022-eco5';
+import {showThermal} from './thermal-scenes.js?v=20261022-eco5';
 const field=(id,label)=>`<label class="field-label" for="${id}">${label}</label><input class="lab-input" id="${id}" type="number" step="any">`;
 const select=(id,label,opts)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${opts.map(([v,label])=>`<option value="${v}">${label}</option>`).join('')}</select>`;
 export function mountThermalWidget(l,p,root,{save,done,feedback}){const w=p.widget;w.task??=0;w.answers??={};w.passed??=[];const bonds=l.widget==='thermal-bonds',tasks=bonds?bondCases:practicalSteps,i=w.task%tasks.length,t=tasks[i],a=w.answers[t.id]??={};w.answers[t.id]=a;const $=s=>root.querySelector(s),valid=()=>bonds?bondCorrect(t,a):practicalThermalCorrect(t,a);

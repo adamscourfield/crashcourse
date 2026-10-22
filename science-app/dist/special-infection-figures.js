@@ -1,4 +1,4 @@
-import{assayBands,assayResult,productionLabels}from './special-infection-models.js?v=20261022-eco4';
+import{assayBands,assayResult,productionLabels}from './special-infection-models.js?v=20261022-eco5';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function text(x,y,t,size=23){let lines=[],line='';for(let word of String(t).split(' ')){if((line+' '+word).trim().length>32&&line){lines.push(line);line=word;}else line=(line+' '+word).trim();}if(line)lines.push(line);return`<text x="${x}" y="${y}" fill="#f4eee4" text-anchor="middle" font-size="${size}">${lines.map((l,i)=>`<tspan x="${x}" dy="${i?27:0}">${esc(l)}</tspan>`).join('')}</text>`;}
 const yShape=(x,y,s=1)=>`<path d="M${x} ${y+40*s}V${y+10*s}l${-23*s} ${-25*s}m${23*s} ${25*s}l${23*s} ${-25*s}" stroke="#e9aa96" stroke-width="${8*s}" fill="none"/>`;

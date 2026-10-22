@@ -1,4 +1,4 @@
-import {renderDiagram} from './visual.js?v=20261022-eco4';
+import {renderDiagram} from './visual.js?v=20261022-eco5';
 export function showEfficiency(kind,t=null,value=null){const yieldMode=kind==='yield';
  const title=yieldMode?'Possible → collected':'Reactants → desired product';
  let body=yieldMode?`<div class="inventory-row"><span>Theoretical maximum · ${t?.theoretical??10} g</span><small>Actual collected · ${t?.actual??8} g</small></div>`:`<div class="inventory-row"><span>Desired product · ${t?.desired??'CaO'}</span><small>${t?t.names.map((n,i)=>n+': '+t.mrs[i]).join(' · '):'Use the balanced equation and relative masses'}</small></div>`;

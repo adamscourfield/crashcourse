@@ -1,5 +1,5 @@
-import {percentageYield,atomEconomy,yieldTasks,economyTasks} from './efficiency-models.js?v=20261022-eco4';
-import {showEfficiency} from './efficiency-scenes.js?v=20261022-eco4';
+import {percentageYield,atomEconomy,yieldTasks,economyTasks} from './efficiency-models.js?v=20261022-eco5';
+import {showEfficiency} from './efficiency-scenes.js?v=20261022-eco5';
 const input=(id,label,v='')=>`<label class="field-label" for="${id}">${label}</label><input class="lab-input" id="${id}" type="number" step="any" value="${v}">`;
 export function mountEfficiencyWidget(l,p,root,{save,done,feedback}){
  const w=p.widget;w.task??=0;w.answers??={};w.passed??=[];const i=w.task,a=w.answers[i]??={},yieldMode=l.widget==='efficiency-yield',t=(yieldMode?yieldTasks:economyTasks)[i],$=s=>root.querySelector(s),kind=yieldMode?'yield':'economy',value=yieldMode?percentageYield(t.actual,t.theoretical):atomEconomy(t.numerator,t.denominator);

@@ -1,0 +1,251 @@
+{
+  "batch": "Ecology05",
+  "date": "2026-10-22",
+  "tests": 380,
+  "journeys": [
+    {
+      "lesson": "science.biology.ecology.conservation",
+      "score": "6/6",
+      "wrongReasoningAndNumericRejected": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.trophic",
+      "score": "6/6",
+      "wrongReasoningAndNumericRejected": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.pyramids",
+      "score": "6/6",
+      "wrongReasoningAndNumericRejected": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.biomass",
+      "score": "6/6",
+      "wrongReasoningAndNumericRejected": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.food-security",
+      "score": "6/6",
+      "wrongReasoningAndNumericRejected": true,
+      "practiceCorrection": true
+    }
+  ],
+  "mobile": {
+    "cards": [
+      {
+        "lesson": "science.biology.ecology.conservation",
+        "card": 1,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.conservation",
+        "card": 2,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.conservation",
+        "card": 3,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.conservation",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.trophic",
+        "card": 1,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.trophic",
+        "card": 2,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.trophic",
+        "card": 3,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.trophic",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.pyramids",
+        "card": 1,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.pyramids",
+        "card": 2,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.pyramids",
+        "card": 3,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.pyramids",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.biomass",
+        "card": 1,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.biomass",
+        "card": 2,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.biomass",
+        "card": 3,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.biomass",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.food-security",
+        "card": 1,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.food-security",
+        "card": 2,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.food-security",
+        "card": 3,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.food-security",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      }
+    ],
+    "activitySets": 15,
+    "width": 390,
+    "overflow": false,
+    "singlePlayer": true,
+    "loopingProcessCards": 4
+  },
+  "customWrongPaths": [
+    "Overbudget plan and universal policy conclusion rejected",
+    "Pyramid wrong base, out-of-scale and150 instead of160 rejected",
+    "Organic account90 instead of100 and destruction claim rejected",
+    "All six food shortfalls compared, wrong predictions rejected; limited conclusion required",
+    "Extracellular diffusion cannot skip secretion/digestion"
+  ],
+  "resume": {
+    "pyramidMass150": true,
+    "reload": true,
+    "TrilogyHiddenDraftPreserved": true,
+    "corrected": true,
+    "foodScenario": "conflict",
+    "foodPrediction70": true
+  },
+  "filterCounts": [
+    {
+      "route": "combined",
+      "tier": "Foundation",
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n15\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n15 / 15\nReset lesson"
+    },
+    {
+      "route": "combined",
+      "tier": "Higher",
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n15\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n15 / 15\nReset lesson"
+    },
+    {
+      "route": "separate",
+      "tier": "Foundation",
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n21\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n21 / 21\nReset lesson"
+    },
+    {
+      "route": "separate",
+      "tier": "Higher",
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n22\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n22 / 22\nReset lesson"
+    }
+  ],
+  "assessment": "INDEPENDENT TOPIC ASSESSMENT\nEcology\n\n22 questions, one from each available lesson. This checks available lessons, not the full topic. First answers count. Results include explanations. Pass mark: 80%.\n\nStart assessment →",
+  "consoleErrors": [],
+  "limits": [
+    "Technical QA not specialist review",
+    "Constrained pyramid construction and evaluation not unrestricted freehand/extended writing",
+    "No physical practical or full assistive-technology certification"
+  ],
+  "publication": "pending"
+}

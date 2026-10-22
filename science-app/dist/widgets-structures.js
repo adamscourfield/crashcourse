@@ -1,6 +1,6 @@
-import {stateAt,stateCases,polymerCounts,validRepeat} from './structure-models.js?v=20261022-eco4';
-import {showPhase,showMolecular,showStructure,repeatSVG,networkSVG} from './structure-scenes.js?v=20261022-eco4';
-import {renderDiagram} from './visual.js?v=20261022-eco4';
+import {stateAt,stateCases,polymerCounts,validRepeat} from './structure-models.js?v=20261022-eco5';
+import {showPhase,showMolecular,showStructure,repeatSVG,networkSVG} from './structure-scenes.js?v=20261022-eco5';
+import {renderDiagram} from './visual.js?v=20261022-eco5';
 const $=s=>document.querySelector(s);
 const btn=(id,s)=>`<button class="secondary" id="${id}">${s}</button>`;
 const sel=(id,label,options,value='')=>`<label class="field-label" for="${id}">${label}</label><select id="${id}" class="lab-select">${options.map(([v,s])=>`<option value="${v}" ${v===value?'selected':''}>${s}</option>`).join('')}</select>`;

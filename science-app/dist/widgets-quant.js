@@ -1,5 +1,5 @@
-import {massTasks,magnesiumBalance,atomicMasses,formulaTasks,formulaMass,repeatSets,statistics} from './quant-models.js?v=20261022-eco4';
-import {showLedger,showFormula,showPlot} from './quant-scenes.js?v=20261022-eco4';
+import {massTasks,magnesiumBalance,atomicMasses,formulaTasks,formulaMass,repeatSets,statistics} from './quant-models.js?v=20261022-eco5';
+import {showLedger,showFormula,showPlot} from './quant-scenes.js?v=20261022-eco5';
 const $=s=>document.querySelector(s),btn=(id,t)=>`<button class="secondary" id="${id}">${t}</button>`;
 const input=(id,label,value='',step='any')=>`<label class="field-label" for="${id}">${label}</label><input class="lab-input" id="${id}" type="number" step="${step}" value="${value}">`;
 const select=(id,label,opts,value='')=>`<label class="field-label" for="${id}">${label}</label><select id="${id}" class="lab-select"><option value="">Choose</option>${opts.map(([v,t])=>`<option value="${v}" ${v===value?'selected':''}>${t}</option>`).join('')}</select>`;
