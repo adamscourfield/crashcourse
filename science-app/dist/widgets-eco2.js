@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-eco5';
-import{tasksForEco2,validEco2,advanceEco2,numericEco2,cycleData,fieldCount,sampleSchedule,transectData,mean,graphValid,sampleValid,transectValid}from './eco2-models.js?v=20261022-eco5';import{showEco2}from './eco2-visuals.js?v=20261022-eco5';export{showEco2};
+import{syncProcessMovie}from './process-player.js?v=20261022-eco6';
+import{tasksForEco2,validEco2,advanceEco2,numericEco2,cycleData,fieldCount,sampleSchedule,transectData,mean,graphValid,sampleValid,transectValid}from './eco2-models.js?v=20261022-eco6';import{showEco2}from './eco2-visuals.js?v=20261022-eco6';export{showEco2};
 export function mountEco2(l,p,root,{save,done,feedback}){let ts=tasksForEco2(l.widget.slice(5)),w=p.widget;w.eco2Task??=ts[0].id;w.eco2Drafts??={};w.eco2Passed??=[];let i=ts.findIndex(t=>t.id===w.eco2Task);if(i<0)i=0;let t=ts[i],v=w.eco2Drafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountEco2(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.eco2Passed.includes(t.id));
 syncProcessMovie(l,1,!['feeding','predator-process','adaptation-response','sampling-process','transect-process'].includes(t.kind)?{process:false}:null);
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

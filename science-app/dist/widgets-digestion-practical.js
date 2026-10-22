@@ -1,5 +1,5 @@
-import{renderDiagram,renderCustomModel}from './visual.js?v=20261022-eco5';
-import{foodAssays,assayResult,amylaseEndpoints,starchSample,endpointInterval,graphRateValid}from './digestion-practical-models.js?v=20261022-eco5';
+import{renderDiagram,renderCustomModel}from './visual.js?v=20261022-eco6';
+import{foodAssays,assayResult,amylaseEndpoints,starchSample,endpointInterval,graphRateValid}from './digestion-practical-models.js?v=20261022-eco6';
 const txt=(x,y,t,size=14)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f8f6f2" font-size="${size}">${t}</text>`;
 const svg=(label,body)=>`<svg class="shell-diagram practical-diagram" viewBox="0 0 480 350" role="img" aria-label="${label}">${body}</svg>`;
 const opts=(pairs,v)=>'<option value="">Choose…</option>'+pairs.map(([key,label])=>`<option value="${key}" ${String(key)===String(v)?'selected':''}>${label}</option>`).join('');

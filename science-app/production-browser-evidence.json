@@ -1,0 +1,173 @@
+{
+  "batch": "Ecology06",
+  "date": "2026-10-22",
+  "tests": 407,
+  "journeys": [
+    {
+      "lesson": "science.biology.ecology.farming",
+      "score": "6/6",
+      "wrongComparisonsNumericReasonAndPredictionsRejected": true,
+      "universalConclusionBlockedCompletion": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.fisheries",
+      "score": "6/6",
+      "wrongComparisonsNumericReasonAndPredictionsRejected": true,
+      "universalConclusionBlockedCompletion": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.biotechnology",
+      "score": "6/6",
+      "wrongComparisonsNumericReasonAndPredictionsRejected": true,
+      "universalConclusionBlockedCompletion": true,
+      "practiceCorrection": true
+    }
+  ],
+  "mobile": {
+    "cards": [
+      {
+        "lesson": "science.biology.ecology.farming",
+        "card": 1,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.farming",
+        "card": 2,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.farming",
+        "card": 3,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.farming",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.fisheries",
+        "card": 1,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.fisheries",
+        "card": 2,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.fisheries",
+        "card": 3,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.fisheries",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.biotechnology",
+        "card": 1,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.biotechnology",
+        "card": 2,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.biotechnology",
+        "card": 3,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.biotechnology",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      }
+    ],
+    "activitySets": 9,
+    "width": 390,
+    "overflow": false,
+    "singlePlayer": true,
+    "loopingProcessCards": 5
+  },
+  "resume": {
+    "fisheriesA": "60",
+    "fisheriesB": "large",
+    "prediction": "39",
+    "reloadAndTrilogyFallbackPreserved": true,
+    "corrected": true
+  },
+  "filters": [
+    {
+      "route": "combined",
+      "tier": "Foundation",
+      "progress": "15 / 15"
+    },
+    {
+      "route": "combined",
+      "tier": "Higher",
+      "progress": "15 / 15"
+    },
+    {
+      "route": "separate",
+      "tier": "Foundation",
+      "progress": "24 / 24"
+    },
+    {
+      "route": "separate",
+      "tier": "Higher",
+      "progress": "25 / 25"
+    }
+  ],
+  "assessment": "INDEPENDENT TOPIC ASSESSMENT\nEcology\n\n25 questions, one from each available lesson. This checks available lessons, not the full topic. First answers count. Results include explanations. Pass mark: 80%.\n\nStart assessment →",
+  "mathsPreserved": true,
+  "consoleErrors": [],
+  "limitations": [
+    "Roadmap completion not statement/evidence or specialist closure",
+    "Selected evaluation not independent extended argument writing",
+    "Original model counts and yields not calibrated forecasts",
+    "No full assistive-technology/device certification"
+  ],
+  "publication": "pending",
+  "notesVerified": true
+}

@@ -1,5 +1,5 @@
-import {sizeTasks,nmToM,cubeData,nanoCases} from './nano-models.js?v=20261022-eco5';
-import {showNanoScale,showNanoCubes,showNanoEvidence} from './nano-scenes.js?v=20261022-eco5';
+import {sizeTasks,nmToM,cubeData,nanoCases} from './nano-models.js?v=20261022-eco6';
+import {showNanoScale,showNanoCubes,showNanoEvidence} from './nano-scenes.js?v=20261022-eco6';
 const $=s=>document.querySelector(s),btn=(id,t)=>`<button class="secondary" id="${id}">${t}</button>`;
 const input=(id,title,value='')=>`<label class="field-label" for="${id}">${title}</label><input class="lab-input" id="${id}" type="number" step="any" value="${value}">`;
 const select=(id,title,opts,value='')=>`<label class="field-label" for="${id}">${title}</label><select class="lab-select" id="${id}"><option value="">Choose</option>${opts.map(([v,t])=>`<option value="${v}" ${v===value?'selected':''}>${t}</option>`).join('')}</select>`;
