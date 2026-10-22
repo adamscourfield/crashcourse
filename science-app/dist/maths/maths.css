@@ -211,3 +211,4 @@ sup .mtok-op{min-width:34px;min-height:34px;font-size:18px;vertical-align:super}
 .mproof .mmuted{color:#b7c8d6;list-style:none;margin-left:-26px}
 .mtiles-wide{flex-direction:column;align-items:stretch}
 .choice.mtile.mtile-line{font-family:inherit;font-size:15px;text-align:left;padding:10px 14px}
+.mbigexpr .mhl{color:var(--coral,#ed8b78)}

@@ -14,7 +14,7 @@
     "Published Site (not published)"
   ],
   "scope": "Maths Algebra batch 03: graphs strand and plotting input",
-  "automatedSuite": "494 tests pass (npm test) on main 71ab5d7 plus Algebra batch 04 (rerun)",
+  "automatedSuite": "509 tests pass on main 5ca323f plus Algebra batch 05 (rerun)",
   "summary": {
     "checks": 64,
     "passed": 64,

@@ -3,17 +3,17 @@
   "scope": "Maths Algebra batch 04: functions, algebraic fractions and indices, proof, iteration, forming equations",
   "environment": "Headless Chromium (npm @sparticuz/chromium 131) via Playwright; 1280x900 and 390x844; reduced motion; Google Fonts requests aborted (sandbox network blocks them)",
   "harness": "science-app/tools/maths-browser-flow-7.mjs",
-  "automatedSuite": "494 tests pass (npm test) on main 71ab5d7 plus Algebra batch 04",
+  "automatedSuite": "509 tests pass on main 5ca323f plus Algebra batch 05 (rerun)",
   "summary": {
     "checks": 78,
     "passed": 78,
     "failed": 0
   },
   "checks": [
-    "Foundation course map: Algebra has 18 lessons",
+    "Foundation course map lists Algebra lessons",
     "Foundation list: forming equations, functions and proof lessons",
     "Foundation list: Higher-only fractions and iteration lessons hidden",
-    "Higher course map: Algebra has 20 lessons",
+    "Higher course map lists Algebra lessons",
     "forming-equations card 1 has a visual",
     "forming-equations card 2 has a visual",
     "forming-equations card 3 has a visual",

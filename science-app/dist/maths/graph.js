@@ -70,16 +70,18 @@ export function graphSVG(g, extra = {}) {
       if (!ok) { pen = false; continue; }
       d += `${pen ? 'L' : 'M'}${X(x).toFixed(1)},${Y(y).toFixed(1)}`; pen = true;
     }
-    s += `<path d="${d}" fill="none" stroke="${colours[i % 3]}" stroke-width="3"/>`;
+    s += `<path d="${d}" fill="none" stroke="${colours[i % 3]}" stroke-width="3"${fdef.dash ? ' stroke-dasharray="10 7"' : ''}/>`;
   });
+  for (const v of g.vlines || []) s += `<line x1="${X(v.x)}" y1="${GT}" x2="${X(v.x)}" y2="${GB}" stroke="${COL.c}" stroke-width="3"${v.dash ? ' stroke-dasharray="10 7"' : ''}/>`;
   for (const R of g.circles || []) s += `<ellipse cx="${X(0)}" cy="${Y(0)}" rx="${X(R) - X(0)}" ry="${Y(0) - Y(R)}" fill="none" stroke="${COL.a}" stroke-width="3"/>`;
   (g.polys || []).forEach((p, i) => { s += `<polyline points="${p.pts.map(([x, y]) => `${X(x)},${Y(y)}`).join(' ')}" fill="none" stroke="${colours[i % 3]}" stroke-width="3"/>`; });
   if (extra.line) { const [[x1, y1], [x2, y2]] = extra.line; if (x1 !== x2) { const m = (y2 - y1) / (x2 - x1); s += `<line x1="${X(xr[0])}" y1="${Y(y1 + m * (xr[0] - x1))}" x2="${X(xr[1])}" y2="${Y(y1 + m * (xr[1] - x1))}" stroke="${COL.cream}" stroke-width="2.5"/>`; } else s += `<line x1="${X(x1)}" y1="${GT}" x2="${X(x1)}" y2="${GB}" stroke="${COL.cream}" stroke-width="2.5"/>`; }
   s += '</g>';
+  for (const v of g.vlines || []) if (v.label) s += `<text x="${X(v.x) + 6}" y="${GB - 8}" fill="${COL.c}" font-size="13" font-weight="600">${esc(v.label)}</text>`;
   [...(g.fns || []), ...(g.polys || [])].forEach((f, i) => { if (f.label) s += `<text x="${GR - 4}" y="${GT + 16 + i * 17}" text-anchor="end" fill="${colours[i % 3]}" font-size="13" font-weight="600">${esc(f.label)}</text>`; });
   for (const [x, y, l] of g.points || []) s += `<circle cx="${X(x)}" cy="${Y(y)}" r="5.5" fill="${COL.cream}" stroke="${COL.navy}" stroke-width="2"/>${l ? `<text x="${X(x) + 8}" y="${Y(y) - 8}" fill="${COL.cream}" font-size="13">${esc(l)}</text>` : ''}`;
   for (const [x, y] of extra.plotted || []) s += `<path d="M${X(x) - 6},${Y(y) - 6}L${X(x) + 6},${Y(y) + 6}M${X(x) - 6},${Y(y) + 6}L${X(x) + 6},${Y(y) - 6}" stroke="${COL.c}" stroke-width="3" stroke-linecap="round"/>`;
-  const desc = g.alt || [((g.fns || []).map(f => f.label || 'y = ' + f.expr).join(', ')), (g.circles || []).map(R => `circle centre (0, 0) radius ${R}`).join(', '), (g.polys || []).map(p => (p.label ? p.label + ': ' : '') + 'line segments through ' + p.pts.map(q => `(${q[0]}, ${q[1]})`).join(', ')).join('; '), (g.points || []).length ? 'marked points ' + g.points.map(p => `(${p[0]}, ${p[1]})`).join(', ') : ''].filter(Boolean).join('; ');
+  const desc = g.alt || [((g.fns || []).map(f => (f.label || 'y = ' + f.expr) + (f.dash ? ' (dashed: not included)' : '')).join(', ')), (g.vlines || []).map(v => `x = ${v.x}${v.dash ? ' (dashed: not included)' : ''}`).join(', '), (g.circles || []).map(R => `circle centre (0, 0) radius ${R}`).join(', '), (g.polys || []).map(p => (p.label ? p.label + ': ' : '') + 'line segments through ' + p.pts.map(q => `(${q[0]}, ${q[1]})`).join(', ')).join('; '), (g.points || []).length ? 'marked points ' + g.points.map(p => `(${p[0]}, ${p[1]})`).join(', ') : ''].filter(Boolean).join('; ');
   const plotted = (extra.plotted || []).length ? `; your points: ${extra.plotted.map(p => `(${num(p[0])}, ${num(p[1])})`).join(', ')}` : '';
   return `<svg viewBox="0 0 ${GW} ${H}" class="mviz mgraph ${extra.cls || ''}" role="img" aria-label="${esc(`Graph with x from ${xr[0]} to ${xr[1]} and y from ${yr[0]} to ${yr[1]}${desc ? '; ' + desc : ''}${plotted}`)}" data-xr="${xr.join(',')}" data-yr="${yr.join(',')}">${s}</svg>`;
 }
