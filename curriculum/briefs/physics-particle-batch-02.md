@@ -16,3 +16,6 @@ Skills/evidence: internal/gas WS1.2; SHC/latent MS1a,3b/c/d; heating/cooling WS3
 
 
 QA:504 combined automated tests after Maths merge; five complete journeys;37phone views; route/tier/resume/SHC link/source/Maths checks passed. See BUILD_STATUS.md for publication and limits.
+
+
+Published22October2026 at19:28:00UTC through the existing owner-private Site; audience unchanged. Sites source679d6cd9b01af6377759cac7eda14f613a58726d; deployment appgdep_6ada63a85afc8191908e5397135e5e2c; version appgprj_6ad1be5897a88191909a03ad57857103~appgver_b47f2d6c1a808191ae2961f4bbbcadd4. Archive science-app-thermal01.tar.gz; proof crash-course-thermal01.png. Live Particle6Trilogy/7Separate inventory, compression route filtering, heating-curve inline Pause/Loop, Maths15Number/20HigherAlgebra (18Foundation) and new functions/iteration menus verified; no console errors. Incoming Maths c22678f included with all35lessons/94skills. Canonical runtime/QA commit0476963 pushed to origin/main; final publication records/proof follow in this handover commit.

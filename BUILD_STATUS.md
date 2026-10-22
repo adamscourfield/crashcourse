@@ -1,4 +1,4 @@
-## Physics Particle batch02 — implemented and browser checked; publication pending
+## Physics Particle batch02 — implemented, published and GitHub updated
 
 Five lessons: internal energy/temperature, latent heat, heating/cooling curves and gas motion/temperature/pressure shared both tiers; separate-Physics gas compression/pV both tiers with mandatory Higher work/pump-warming extension. AQA8463/8464 4/6.3.2.1–.3,4/6.3.3.1,4.3.3.2 and HT4.3.3.3 checked22October2026. Existing Energy heating lesson retains its ID/practical and now cross-maps4/6.3.2.2; Particle lesson prerequisite links back to it, no duplicate SHC lesson. Latent-fusion AT5 is an opportunity, not a new required-practical claim. Full Particle statement/evidence reconciliation remains open; teaching coverage is not specialist/constructed/physical closure.
 
@@ -8,8 +8,8 @@ Science298 lessons:113 Chemistry150 Biology35 Physics. Maths35/94 skills retaine
 
 Original toy material c1000J/(kg°C), fusion10000J/kg at20°C, vaporisation20000J/kg at80°C; not water. Curve1kg/1000W, no losses/fixed pressure,120model seconds. Each unequal-duration region gets equal playback time; cursor reports model seconds. Cooling reverses the ideal energy account. Latent energy changes arrangement, not temperature; mcΔθ confined to single-phase changes. Gas trajectories/speeds/wall arrows qualitative, no calibrated pressure/temperature law or collision statistics. Fixed-temperature compression retains mass/size/speed scale and uses absolute pressure/pV; a reservoir removes work energy. Higher rapid approximately insulated compression can warm gas and does not use pV constant. Friction/leaks/real pump dynamics omitted. Physical practical/uncertainty, unrestricted graph/writing, full assistive-device and specialist evidence remain separate.
 
-Files: content-physics-thermal.js; mat2-models/figures/visuals/films.js; widgets-mat2.js; existing Energy heating references extended; content/widget/process/registry/source notes integrated. Global20261022-thermal01r3; incoming Maths-r7 preserved. Brief physics-particle-batch-02.md; map physics-particle-batch02-requirements.csv; browser evidence science-app/thermal-particles-browser-evidence.json. Publication/GitHub pending. Next: Atomic Structure/Radiation batch, share Chemistry overlap by stable references after scoping. Full Particle/Electricity/Energy/Biology evidence audits and specialist review remain open.
-## Maths: Edexcel 1MA1 Algebra batch 04 — functions, algebraic fractions, proof, iteration, forming equations; on GitHub `main`, not published
+Files: content-physics-thermal.js; mat2-models/figures/visuals/films.js; widgets-mat2.js; existing Energy heating references extended; content/widget/process/registry/source notes integrated. Global20261022-thermal01r3; incoming Maths-r7 preserved. Brief physics-particle-batch-02.md; map physics-particle-batch02-requirements.csv; browser evidence science-app/thermal-particles-browser-evidence.json. Published22October2026 at19:28:00UTC through the existing owner-private Site; audience unchanged. Sites source679d6cd9b01af6377759cac7eda14f613a58726d; deployment appgdep_6ada63a85afc8191908e5397135e5e2c; version appgprj_6ad1be5897a88191909a03ad57857103~appgver_b47f2d6c1a808191ae2961f4bbbcadd4. Archive science-app-thermal01.tar.gz; proof crash-course-thermal01.png. Live Particle6Trilogy/7Separate inventory, compression route filtering, heating-curve inline Pause/Loop, Maths15Number/20HigherAlgebra (18Foundation) and new functions/iteration menus verified; no console errors. Incoming Maths c22678f included with all35lessons/94skills. Canonical runtime/QA commit0476963 pushed to origin/main; final publication records/proof follow in this handover commit. Next: Atomic Structure/Radiation batch, share Chemistry overlap by stable references after scoping. Full Particle/Electricity/Energy/Biology evidence audits and specialist review remain open.
+## Maths Algebra batch04 — prior authoring handover; now published with Physics Particle02
 
 Five Algebra lessons (16–20):
 - **Forming and solving equations in context** (A21, A17, A18).
@@ -33,10 +33,10 @@ There are 16 new skills (94 in all) and five investigations. Algebra now has 20 
 - One defect was found and fixed in browser QA: a visual-name clash with the Number function machine.
 - Brief: `curriculum/briefs/maths-algebra-batch-04.md`.
 
-**Cache:** maths modules are at `20261022-maths-r7`. **Publishing needs a global version bump.**
+**Cache:** maths modules are at `20261022-maths-r7`. **Published with Physics Particle02 global cache20261022-thermal01r3.**
 
 **Not done:**
-- Site publication of lessons 16–20;
+- Site publication of lessons16–20: completed above;
 - specialist review;
 - free-text proofs are not marked;
 - algebraic surd expressions, exponential graphs in context, areas under curves, dashed region boundaries, and surd-ratio geometric sequences.
