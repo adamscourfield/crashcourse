@@ -1,4 +1,4 @@
-import {adaptationPosition} from './special-cell-models.js?v=20261022-eco3';
+import {adaptationPosition} from './special-cell-models.js?v=20261022-eco4';
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let serial=0;
 export function specialCellFigure({type='sperm',adapted=true,step=0,labelled=false}={}){

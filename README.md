@@ -25,7 +25,7 @@ cd science-app
 npm test
 ```
 
-The current automated suite contains 362 tests. Browser verification records are stored alongside the app; technical checks are separate from specialist curriculum review.
+The current automated suite contains 370 tests. Browser verification records are stored alongside the app; technical checks are separate from specialist curriculum review.
 
 ## Project layout
 

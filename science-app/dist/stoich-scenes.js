@@ -1,4 +1,4 @@
-import {renderDiagram} from './visual.js?v=20261022-eco3';
+import {renderDiagram} from './visual.js?v=20261022-eco4';
 const fmt=n=>Number(n.toPrecision(6));
 export function showStoich(kind,t=null,result=null){
  if(kind==='limiting'){

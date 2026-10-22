@@ -1,4 +1,4 @@
-import{crossFigure}from './gen-figures.js?v=20261022-eco3';
+import{crossFigure}from './gen-figures.js?v=20261022-eco4';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const tx=(x,y,s,n=17)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f7f3ed" font-family="sans-serif" font-size="${n}">${esc(s)}</text>`;
 const line=(d,c='#b9cfce',w=3)=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}"/>`;

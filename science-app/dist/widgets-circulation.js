@@ -1,7 +1,7 @@
-import{renderDiagram,renderCustomModel}from './visual.js?v=20261022-eco3';
-import{circuit,vesselCases,vesselValid,valveFlow,bloodParts,gasSnapshot,exchangeCase,exchangeComparisons}from './circulation-models.js?v=20261022-eco3';
-import{heartFigure,circuitFigure,vesselFigure,bloodFigure,lungFigure,valveFigure,circSvg}from './circulation-figures.js?v=20261022-eco3';
-import{buildCirculation}from './circulation-meshes.js?v=20261022-eco3';
+import{renderDiagram,renderCustomModel}from './visual.js?v=20261022-eco4';
+import{circuit,vesselCases,vesselValid,valveFlow,bloodParts,gasSnapshot,exchangeCase,exchangeComparisons}from './circulation-models.js?v=20261022-eco4';
+import{heartFigure,circuitFigure,vesselFigure,bloodFigure,lungFigure,valveFigure,circSvg}from './circulation-figures.js?v=20261022-eco4';
+import{buildCirculation}from './circulation-meshes.js?v=20261022-eco4';
 const opts=(pairs,v)=>'<option value="">Choose…</option>'+pairs.map(([k,t])=>`<option value="${k}" ${String(k)===String(v)?'selected':''}>${t}</option>`).join('');
 const note='<p class="diagram-caption">Functional schematics, not anatomical measurements or real flow rates. Blood is never blue. Colours and sizes are symbolic; components are separately enlarged. Counterfactuals isolate one role.</p>';
 export function showCirculation(kind='heart',w={}){

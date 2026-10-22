@@ -4,9 +4,7 @@ A buildless GCSE learning app. Published through Sites; source identity is in `.
 
 ## Available content
 
-Current source, 22 October 2026: 250 lessons (113 Chemistry and 137 Biology), 908 practice items and 1603 independent-check items before course/tier filtering. Separate sciences has 213 Foundation /250 Higher lessons; Trilogy has166 Foundation /184 Higher. Biology has103 Trilogy Higher lessons. Earlier Biology topic evidence audits remain open; Physics and other subjects are planned.
-
-Ecology has12 Separate Higher /11 Separate Foundation /9 Trilogy lessons. Latest five cover carbon and water cycling, separate decomposition/biogas, separate milk-decay practical preparation and separate Higher environmental change.13 Ecology roadmap units remain. See root `BUILD_STATUS.md`, curriculum registers and `recycling-browser-evidence.json` for current checks and publication evidence. There are79 process films with76 lesson bindings; process cards default to looping autoplay, reduced-motion paused, while evidence and experimental views remain direct.
+Current source22October2026:255 lessons (113 Chemistry,142 Biology),928 practice and1633 independent-check items before filters. Separate sciences218 Foundation/255 Higher; Trilogy171 Foundation/189 Higher. Ecology17 Separate Higher/16 Separate Foundation/14 Trilogy both tiers;8 units remain. Latest five: biodiversity, pollution, land/peat, deforestation and warming.83 process films/80 bindings; process cards autoplay/Loop with reduced-motion pause, evidence remains direct.370 tests and five browser journeys passed; see root BUILD_STATUS.md and impacts-browser-evidence.json. Earlier evidence audits/specialist review remain open. Physics and other subjects remain planned.
 
 113 Chemistry lessons across all ten AQA topics:13 Atomic,16 Bonding,13 Quantitative,16 Chemical changes,7 Energy,8 Rates/equilibrium,13 Organic,7 Analysis,6 Atmosphere and14 Resources. There are343 practice and605 independent-check items before course/tier filtering. Each lesson includes explanations, investigation, feedback-led practice, independent checks and concept recall.
 

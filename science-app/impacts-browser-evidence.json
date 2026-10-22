@@ -1,0 +1,241 @@
+{
+  "batch": "Ecology04",
+  "date": "2026-10-22",
+  "tests": 370,
+  "journeys": [
+    {
+      "lesson": "science.biology.ecology.biodiversity",
+      "score": "6/6",
+      "wrongComparisonNumericReasonAndPrematureSequenceRejected": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.waste",
+      "score": "6/6",
+      "wrongComparisonNumericReasonAndPrematureSequenceRejected": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.land-peat",
+      "score": "6/6",
+      "wrongComparisonNumericReasonAndPrematureSequenceRejected": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.deforestation",
+      "score": "6/6",
+      "wrongComparisonNumericReasonAndPrematureSequenceRejected": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.warming",
+      "score": "6/6",
+      "wrongComparisonNumericReasonAndPrematureSequenceRejected": true,
+      "practiceCorrection": true
+    }
+  ],
+  "mobile": {
+    "cards": [
+      {
+        "lesson": "science.biology.ecology.biodiversity",
+        "card": 1,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.biodiversity",
+        "card": 2,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.biodiversity",
+        "card": 3,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.biodiversity",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.waste",
+        "card": 1,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.waste",
+        "card": 2,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.waste",
+        "card": 3,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.waste",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.land-peat",
+        "card": 1,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.land-peat",
+        "card": 2,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.land-peat",
+        "card": 3,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.land-peat",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.deforestation",
+        "card": 1,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.deforestation",
+        "card": 2,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.deforestation",
+        "card": 3,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.deforestation",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.warming",
+        "card": 1,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.warming",
+        "card": 2,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.warming",
+        "card": 3,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.warming",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      }
+    ],
+    "activitySets": 15,
+    "width": 390,
+    "overflow": false,
+    "singlePlayer": true,
+    "loopingProcessCards": 8
+  },
+  "resume": {
+    "warmingNumber": ".4",
+    "reason": "1",
+    "reloadPreserved": true,
+    "corrected": true
+  },
+  "filterCounts": [
+    {
+      "route": "combined",
+      "tier": "Foundation",
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n14\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n14 / 14\nReset lesson"
+    },
+    {
+      "route": "combined",
+      "tier": "Higher",
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n14\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n14 / 14\nReset lesson"
+    },
+    {
+      "route": "separate",
+      "tier": "Foundation",
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n16\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n16 / 16\nReset lesson"
+    },
+    {
+      "route": "separate",
+      "tier": "Higher",
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n17\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n17 / 17\nReset lesson"
+    }
+  ],
+  "assessment": "INDEPENDENT TOPIC ASSESSMENT\nEcology\n\n17 questions, one from each available lesson. This checks available lessons, not the full topic. First answers count. Results include explanations. Pass mark: 80%.\n\nStart assessment →",
+  "consoleErrors": [],
+  "limits": [
+    "Technical QA not specialist review",
+    "Constrained evaluation/numeric/sequence tasks not independent extended writing or unrestricted graphing"
+  ],
+  "publication": "pending"
+}

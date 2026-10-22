@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-eco3';
-import{tasksForHist,validHist,advanceHist,numericHist}from './hist-models.js?v=20261022-eco3';import{showHist}from './hist-visuals.js?v=20261022-eco3';export{showHist};
+import{syncProcessMovie}from './process-player.js?v=20261022-eco4';
+import{tasksForHist,validHist,advanceHist,numericHist}from './hist-models.js?v=20261022-eco4';import{showHist}from './hist-visuals.js?v=20261022-eco4';export{showHist};
 export function mountHist(l,p,root,{save,done,feedback}){let ts=tasksForHist(l.widget.slice(5)),w=p.widget;w.histTask??=ts[0].id;w.histDrafts??={};w.histPassed??=[];let i=ts.findIndex(t=>t.id===w.histTask);if(i<0)i=0;let t=ts[i],v=w.histDrafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountHist(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.histPassed.includes(t.id));
 syncProcessMovie(l,1,!['adult-clone','plant-clone','embryo','speciation','fossil-process'].includes(t.kind)?{process:false}:null);
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;
