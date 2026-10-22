@@ -1,0 +1,1 @@
+import{renderDiagram}from './visual.js?v=20261022-radiation01';import{magneticFigure}from './mag1-figures.js?v=20261022-radiation01';export function showMag1(spec='fields',w={}){let[kind,card]=spec.split(':');renderDiagram(w.title||'Explore magnetism',w.label||'Original schematic · stated assumptions',magneticFigure({kind,state:card||'0',...w}),'PHYSICS · MAGNETISM');}

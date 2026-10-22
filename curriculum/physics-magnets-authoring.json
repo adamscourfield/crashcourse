@@ -1,0 +1,1316 @@
+[
+  {
+    "k": "poles",
+    "title": "Permanent and induced magnets",
+    "refs": [
+      "7.1.1"
+    ],
+    "cards": [
+      [
+        "Magnetic interactions",
+        "Magnetic forces are non-contact. Like poles repel and unlike poles attract. Forces are strongest near the poles of a bar magnet. A freely suspended permanent magnet aligns with the surrounding magnetic field; it does not have a single isolated pole."
+      ],
+      [
+        "Permanent or induced?",
+        "A permanent magnet produces its own magnetic field. An induced magnet becomes magnetised when in another field and loses most or all induced magnetism quickly when removed. A magnet attracts suitable magnetic materials such as iron, steel, cobalt and nickel; not all metals are magnetic."
+      ],
+      [
+        "Attraction is not the same evidence as repulsion",
+        "A permanent magnet can attract an unmagnetised magnetic material by induction. Induced magnetism causes attraction. Repulsion between a test object and a known magnet is therefore stronger evidence that the object is a permanent magnet with a like pole facing it."
+      ],
+      [
+        "Predict the interaction",
+        "Choose a facing north/south pole or a piece of initially unmagnetised iron, then the known magnet’s facing pole. Predict attraction or repulsion. Labels give pole identities; arrows show interaction direction rather than a calibrated force–distance law."
+      ]
+    ],
+    "practice": [
+      [
+        "Like poles…",
+        [
+          "Repel",
+          "Attract",
+          "Have no field"
+        ],
+        0,
+        "Unlike poles attract."
+      ],
+      [
+        "An induced magnet gains magnetism…",
+        [
+          "Only by becoming radioactive",
+          "In an external magnetic field",
+          "Only from gravity"
+        ],
+        1,
+        "Its magnetism mostly disappears when removed."
+      ],
+      [
+        "A magnet and unmagnetised iron…",
+        [
+          "Always repel",
+          "Cannot interact",
+          "Attract through induction"
+        ],
+        2,
+        "Attraction alone does not prove a permanent magnet."
+      ]
+    ],
+    "check": [
+      [
+        "Which is a magnetic material in this course?",
+        [
+          "Cobalt",
+          "Copper necessarily",
+          "Every metal"
+        ],
+        0,
+        "Iron/steel,cobalt,nickel are examples."
+      ],
+      [
+        "Strongest forces of a bar magnet are near its…",
+        [
+          "Centre only",
+          "Poles",
+          "Printed label only"
+        ],
+        1,
+        "Field strength is greatest near the poles."
+      ],
+      [
+        "Repulsion from a known north pole supports that the facing end is…",
+        [
+          "Unmagnetised plastic",
+          "Unmagnetised iron only",
+          "A north magnetic pole"
+        ],
+        2,
+        "Like poles repel."
+      ]
+    ],
+    "calc": [
+      "Two equal opposite magnetic forces on different objects each have magnitude6 N. What is the magnitude on either object?",
+      6,
+      "6"
+    ],
+    "lab": {
+      "a": [
+        [
+          "N",
+          "Facing north pole"
+        ],
+        [
+          "S",
+          "Facing south pole"
+        ]
+      ],
+      "b": [
+        [
+          "N",
+          "Known north pole"
+        ],
+        [
+          "iron",
+          "Unmagnetised iron"
+        ]
+      ],
+      "labels": [
+        "First object",
+        "Second facing object"
+      ],
+      "unit": "interaction",
+      "choices": [
+        [
+          "attract",
+          "Attraction"
+        ],
+        [
+          "repel",
+          "Repulsion"
+        ]
+      ]
+    },
+    "separate": false,
+    "higher": false,
+    "film": false,
+    "extra": null
+  },
+  {
+    "k": "fields",
+    "title": "Magnetic fields and compass mapping",
+    "refs": [
+      "7.1.2"
+    ],
+    "cards": [
+      [
+        "A field gives force direction",
+        "A magnetic field is the region where a magnetic pole or magnetic material experiences a force. Direction is the force direction on a north test pole. Outside a bar magnet, field lines run from north to south. Closer line spacing represents greater strength, not more physical strings."
+      ],
+      [
+        "Map with a compass",
+        "Place a plotting compass near the magnet, mark both needle ends and move it along the indicated direction. Join a series of positions with a smooth line and arrows. Repeat from several starting points. Iron filings reveal a pattern but do not supply field direction; a compass does."
+      ],
+      [
+        "Earth is magnetic",
+        "A compass needle is a small bar magnet that aligns with Earth’s magnetic field. Its behaviour gives evidence that Earth’s core is magnetic. The north-seeking end points roughly toward geographic north, which is magnetically a south-pole region in this simple pole model; magnetic and geographic axes are not identical."
+      ],
+      [
+        "Read field arrows",
+        "Choose a point near a pole and a normal/reversed magnet. Predict the external field direction at that point. The drawing preserves pole labels and a compass direction. It omits Earth’s background field, nearby magnetic objects and a calibrated strength law."
+      ]
+    ],
+    "practice": [
+      [
+        "Outside a bar magnet field direction is…",
+        [
+          "North to south",
+          "South to north",
+          "Always vertical"
+        ],
+        0,
+        "Direction refers to a north test pole."
+      ],
+      [
+        "Closer field lines indicate…",
+        [
+          "Less strength",
+          "Greater strength",
+          "Higher temperature necessarily"
+        ],
+        1,
+        "Line spacing is a representational convention."
+      ],
+      [
+        "A plotting compass supplies…",
+        [
+          "Only a scalar mass",
+          "Only distance",
+          "Local field direction"
+        ],
+        2,
+        "The north end aligns with the field."
+      ]
+    ],
+    "check": [
+      [
+        "Iron filings alone do not directly give…",
+        [
+          "Arrow direction on field lines",
+          "A visible pattern",
+          "Evidence of a field"
+        ],
+        0,
+        "Use a compass for direction."
+      ],
+      [
+        "The compass north-seeking end behaves like…",
+        [
+          "A nonmagnetic arrow",
+          "A small north pole aligning with the field",
+          "A stationary electric charge"
+        ],
+        1,
+        "It feels a torque from the magnetic field."
+      ],
+      [
+        "Field-line diagrams are…",
+        [
+          "Actual threads in space",
+          "A complete calibrated map from one compass reading",
+          "Models of direction/relative strength"
+        ],
+        2,
+        "Sampling several positions constructs the pattern."
+      ]
+    ],
+    "calc": [
+      "At a drawing scale of2 cm per model length unit, a4 cm separation represents how many units?",
+      2,
+      "4 ÷ 2"
+    ],
+    "lab": {
+      "a": [
+        [
+          "left",
+          "Point beyond left end"
+        ],
+        [
+          "right",
+          "Point beyond right end"
+        ]
+      ],
+      "b": [
+        [
+          "normal",
+          "LeftN / rightS"
+        ],
+        [
+          "reverse",
+          "LeftS / rightN"
+        ]
+      ],
+      "labels": [
+        "External axial point",
+        "Magnet orientation"
+      ],
+      "unit": "field direction",
+      "choices": [
+        [
+          "left",
+          "Left"
+        ],
+        [
+          "right",
+          "Right"
+        ]
+      ]
+    },
+    "separate": false,
+    "higher": false,
+    "film": false,
+    "extra": null
+  },
+  {
+    "k": "electromagnets",
+    "title": "Current fields, solenoids and electromagnets",
+    "refs": [
+      "7.2.1"
+    ],
+    "cards": [
+      [
+        "Current creates a field",
+        "A current in a straight conducting wire produces circular magnetic field lines around it. Stronger current gives a stronger field; the field is weaker farther from the wire. Reverse the current and the field direction reverses. A compass deflection can demonstrate the magnetic effect."
+      ],
+      [
+        "Concentrate the field with a solenoid",
+        "A solenoid is a coil of wire. The individual turn fields combine to give a strong nearly uniform field inside, represented by parallel evenly spaced lines. Outside, the pattern resembles a bar magnet. Adding an iron core strengthens the field; a solenoid with an iron core is an electromagnet."
+      ],
+      [
+        "Explain a device",
+        "An electromagnet can attract a magnetic armature when current flows, allowing a switch, bell or lifting device to operate. Trace current, magnetic field and mechanical effect in a supplied device diagram. Switching off reduces the induced field, though real cores can retain some magnetism. Device interpretation is explicit separate Physics scope."
+      ],
+      [
+        "Predict a field comparison",
+        "Choose current off/on and iron core absent/present. Predict no current-generated field, a coil field or a stronger core-assisted field. The diagram shows circular wire fields and a solenoid separately; it is not a quantitative permeability or saturation model."
+      ]
+    ],
+    "practice": [
+      [
+        "A straight current-carrying wire has…",
+        [
+          "Circular magnetic field lines",
+          "Only a gravitational field",
+          "No field"
+        ],
+        0,
+        "Direction reverses with current."
+      ],
+      [
+        "Inside a long ideal solenoid the field is…",
+        [
+          "Random with no direction",
+          "Strong and approximately uniform",
+          "Always zero"
+        ],
+        1,
+        "The turn fields reinforce."
+      ],
+      [
+        "An iron core generally…",
+        [
+          "Makes the coil nonmagnetic",
+          "Removes current",
+          "Strengthens the solenoid field"
+        ],
+        2,
+        "The core becomes magnetised."
+      ]
+    ],
+    "check": [
+      [
+        "Moving farther from a straight current-carrying wire generally makes its field…",
+        [
+          "Weaker",
+          "Stronger",
+          "Identical at all distances"
+        ],
+        0,
+        "Distance matters."
+      ],
+      [
+        "Reversing current reverses…",
+        [
+          "Wire mass",
+          "Magnetic field direction",
+          "The gravitational field"
+        ],
+        1,
+        "The current’s magnetic direction changes."
+      ],
+      [
+        "To explain a relay diagram, connect…",
+        [
+          "Only the drawing colours",
+          "Only source voltage",
+          "Current → field → armature movement → contact change"
+        ],
+        2,
+        "Trace the causal mechanism in the device."
+      ]
+    ],
+    "calc": [
+      "A coil has25 turns in each of4 equal layers. Find total turns.",
+      100,
+      "25 × 4"
+    ],
+    "lab": {
+      "a": [
+        [
+          "off",
+          "Current off"
+        ],
+        [
+          "on",
+          "Current on"
+        ]
+      ],
+      "b": [
+        [
+          "air",
+          "Air core"
+        ],
+        [
+          "iron",
+          "Iron core"
+        ]
+      ],
+      "labels": [
+        "Current",
+        "Core"
+      ],
+      "unit": "field comparison",
+      "choices": [
+        [
+          "none",
+          "No current-generated field"
+        ],
+        [
+          "coil",
+          "Coil field"
+        ],
+        [
+          "strong",
+          "Stronger core-assisted field"
+        ]
+      ]
+    },
+    "separate": false,
+    "higher": false,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "motoreffect",
+    "title": "The motor effect and Fleming’s rule",
+    "refs": [
+      "7.2.2"
+    ],
+    "cards": [
+      [
+        "A force on a current-carrying conductor",
+        "When a wire carries current in a magnetic field, the wire and the field-producing magnet exert forces on each other. For a wire perpendicular to the field, force F=BIl. B is magnetic flux density in tesla, I current in A and l length of wire in the field in m."
+      ],
+      [
+        "Orient three perpendicular directions",
+        "Fleming’s left-hand rule relates first finger (field, north to south), second finger (conventional current) and thumb (force/motion). Hold them mutually perpendicular. Dot means out of the page; cross means into it. Electron flow is opposite conventional current in a metal."
+      ],
+      [
+        "Size and direction",
+        "At right angles, larger B, current or in-field length increases force. Reverse only field or current and force reverses; reverse both and force is unchanged. Parallel current/field does not give the maximum perpendicular force described by BIl."
+      ],
+      [
+        "Calculate a perpendicular case",
+        "The wire length in the field is0.5 m. Choose B and current; predict force. Field, current and force arrows are labelled in perpendicular directions. The model omits fringe fields, wire heating and movement-induced effects."
+      ]
+    ],
+    "practice": [
+      [
+        "For maximum perpendicular-wire force use…",
+        [
+          "BIl",
+          "B/(Il)",
+          "I/(Bl)"
+        ],
+        0,
+        "B is in tesla, l in metres."
+      ],
+      [
+        "Fleming’s first finger represents…",
+        [
+          "Current",
+          "Field",
+          "Force"
+        ],
+        1,
+        "Second finger current, thumb force."
+      ],
+      [
+        "Reversing only current reverses…",
+        [
+          "Mass",
+          "Wire length",
+          "Force direction"
+        ],
+        2,
+        "Field and current together determine the orientation."
+      ]
+    ],
+    "check": [
+      [
+        "B0.4 T,I3 A,l0.5 m give force…",
+        [
+          "0.6 N",
+          "6 N",
+          "2.4 N"
+        ],
+        0,
+        "Multiply0.4×3×0.5."
+      ],
+      [
+        "A dot symbol for current means…",
+        [
+          "Into the page",
+          "Out of the page",
+          "No current"
+        ],
+        1,
+        "The dot is an arrow tip coming toward you."
+      ],
+      [
+        "If both field and current reverse, force…",
+        [
+          "Always doubles",
+          "Becomes zero necessarily",
+          "Keeps its original direction"
+        ],
+        2,
+        "Two reversals cancel in the orientation rule."
+      ]
+    ],
+    "calc": [
+      "Find force for B0.2 T,I4 A,l0.3 m at right angles.",
+      0.24,
+      "0.2 × 4 × 0.3"
+    ],
+    "lab": {
+      "a": [
+        [
+          "0.2",
+          "0.2 T"
+        ],
+        [
+          "0.4",
+          "0.4 T"
+        ]
+      ],
+      "b": [
+        [
+          "2",
+          "2 A"
+        ],
+        [
+          "4",
+          "4 A"
+        ]
+      ],
+      "labels": [
+        "Flux density",
+        "Current (length0.5 m)"
+      ],
+      "unit": "N force"
+    },
+    "separate": false,
+    "higher": true,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "motors",
+    "title": "How an electric motor rotates",
+    "refs": [
+      "7.2.3"
+    ],
+    "cards": [
+      [
+        "Opposite coil sides feel opposite forces",
+        "A current-carrying coil in a magnetic field has opposite current directions on opposite sides. The two forces act in opposite directions on different sides of the pivot, producing a turning effect. Electrical energy is transferred to mechanical motion and other stores."
+      ],
+      [
+        "Keep the turning direction",
+        "A simple DC motor uses a split-ring commutator and brushes to reverse current through the rotating coil every half-turn. This keeps the turning effect in the same rotational direction. The split ring is not two continuous slip rings used in an alternator."
+      ],
+      [
+        "Control the motor",
+        "A stronger field or current can increase the forces; more coil turns can increase turning effect. Reverse supply polarity or field alone to reverse rotation. Do not infer real speed directly from force without load, inertia, resistance and induced-voltage information."
+      ],
+      [
+        "Predict a reversal",
+        "Choose normal/reversed field and normal/reversed current relative to a supplied clockwise reference. Predict rotation direction. The animation includes coil rotation and labelled commutator switching, with symbolic timing; it does not solve motor acceleration or a complete circuit."
+      ]
+    ],
+    "practice": [
+      [
+        "A coil turns because opposite-side forces form…",
+        [
+          "A turning effect",
+          "No resultant moment",
+          "A nuclear reaction"
+        ],
+        0,
+        "They act at different positions about the axis."
+      ],
+      [
+        "A split ring reverses coil current…",
+        [
+          "Never",
+          "Every half-turn",
+          "Only once when built"
+        ],
+        1,
+        "This maintains the torque’s rotational sense."
+      ],
+      [
+        "Slip rings differ because they…",
+        [
+          "Are always split in half",
+          "Stop all current",
+          "Maintain connections without reversing them each half-turn"
+        ],
+        2,
+        "Distinguish motor commutation from alternator contacts."
+      ]
+    ],
+    "check": [
+      [
+        "Reversing only the DC supply tends to…",
+        [
+          "Reverse motor rotation",
+          "Guarantee double speed",
+          "Remove the magnetic field completely"
+        ],
+        0,
+        "Current reversal reverses the side forces."
+      ],
+      [
+        "The two side forces on the coil act…",
+        [
+          "At the same point so no turn",
+          "On opposite sides to produce a couple",
+          "Only downward together"
+        ],
+        1,
+        "A couple gives a turning effect."
+      ],
+      [
+        "A force model alone cannot accurately predict…",
+        [
+          "Force direction",
+          "The need for current",
+          "Steady motor speed under real load"
+        ],
+        2,
+        "Other circuit/mechanical effects matter."
+      ]
+    ],
+    "calc": [
+      "A coil has8 turns, each contributing a supplied0.02 N m moment. Find total ideal moment.",
+      0.16,
+      "8 × 0.02"
+    ],
+    "lab": {
+      "a": [
+        [
+          "normal",
+          "Field reference"
+        ],
+        [
+          "reverse",
+          "Field reversed"
+        ]
+      ],
+      "b": [
+        [
+          "normal",
+          "Current reference"
+        ],
+        [
+          "reverse",
+          "Current reversed"
+        ]
+      ],
+      "labels": [
+        "Field",
+        "Current"
+      ],
+      "unit": "rotation",
+      "choices": [
+        [
+          "cw",
+          "Clockwise reference"
+        ],
+        [
+          "ccw",
+          "Anticlockwise"
+        ]
+      ]
+    },
+    "separate": false,
+    "higher": true,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "speakers",
+    "title": "Moving-coil loudspeakers and headphones",
+    "refs": [
+      "7.2.4"
+    ],
+    "cards": [
+      [
+        "Convert current to vibration",
+        "A moving-coil loudspeaker has a coil in a magnetic field, attached to a cone. An alternating current experiences an alternating motor-effect force, making coil and cone move back and forth. The cone produces air-pressure variations: sound."
+      ],
+      [
+        "Follow the signal",
+        "Current direction reverses, force reverses, cone motion reverses. The vibration frequency follows the electrical signal frequency; greater signal amplitude can give larger vibration amplitude within the device’s working range. Headphones use the same principle with a smaller diaphragm."
+      ],
+      [
+        "Avoid a generator mix-up",
+        "A speaker uses electrical variations to produce sound via the motor effect. A moving-coil microphone does the reverse using induction. A speaker is not simply a source of constant one-direction force or a machine that moves all air outward permanently."
+      ],
+      [
+        "Predict signal conversion",
+        "Choose electrical frequency and original/double frequency signal. Predict cone vibration frequency. Playback is greatly slowed and cone displacement enlarged; real frequency response, resonance and distortion are omitted."
+      ]
+    ],
+    "practice": [
+      [
+        "A speaker uses the…",
+        [
+          "Motor effect",
+          "Generator effect only",
+          "Radioactive decay process"
+        ],
+        0,
+        "Current in a field gives force."
+      ],
+      [
+        "Alternating current makes the cone…",
+        [
+          "Move outward forever",
+          "Vibrate back and forth",
+          "Become a permanent magnet necessarily"
+        ],
+        1,
+        "Force direction follows current direction."
+      ],
+      [
+        "Cone vibrations create…",
+        [
+          "Only a static electric field",
+          "Only light",
+          "Air-pressure variations"
+        ],
+        2,
+        "These form sound waves."
+      ]
+    ],
+    "check": [
+      [
+        "A500 Hz ideal signal gives cone vibration about…",
+        [
+          "500 Hz",
+          "250 Hz necessarily",
+          "1000 Hz necessarily"
+        ],
+        0,
+        "The signal sets vibration frequency."
+      ],
+      [
+        "A microphone reverses the conversion using…",
+        [
+          "Nuclear fission",
+          "Electromagnetic induction",
+          "Only heating"
+        ],
+        1,
+        "Motion in a field can induce potential difference."
+      ],
+      [
+        "A real speaker model should eventually consider…",
+        [
+          "Only its icon",
+          "Only its name",
+          "Resonance, response and distortion"
+        ],
+        2,
+        "The ideal model has a limited working range."
+      ]
+    ],
+    "calc": [
+      "A200 Hz signal has what period in seconds?",
+      0.005,
+      "1 ÷ 200"
+    ],
+    "lab": {
+      "a": [
+        [
+          "200",
+          "200 Hz"
+        ],
+        [
+          "500",
+          "500 Hz"
+        ]
+      ],
+      "b": [
+        [
+          "1",
+          "Original frequency"
+        ],
+        [
+          "2",
+          "Double frequency"
+        ]
+      ],
+      "labels": [
+        "Signal frequency",
+        "Multiplier"
+      ],
+      "unit": "Hz cone frequency"
+    },
+    "separate": true,
+    "higher": true,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "induction",
+    "title": "Induced potential difference and current",
+    "refs": [
+      "7.3.1"
+    ],
+    "cards": [
+      [
+        "Changing field or relative motion",
+        "A conductor moving relative to a magnetic field, or experiencing a changing surrounding field, can have an induced potential difference across its ends. If it is in a complete circuit, an induced current flows. A stationary conductor in an unchanged field has no such continuous induced p.d."
+      ],
+      [
+        "Direction opposes the change",
+        "The induced current creates a magnetic field that opposes the original change. Moving a magnet into a coil gives a deflection; pulling it out reverses the deflection. Reversing the magnet pole also reverses induced direction. The opposition is to the change, not simply to the existing field in every case."
+      ],
+      [
+        "Change the size",
+        "Faster motion/change, a stronger magnetic field and more turns in the coil can increase induced p.d. Current also depends on circuit resistance and whether the path is complete. External work provides transferred electrical energy; induction is not free energy."
+      ],
+      [
+        "Predict direction relative to a reference",
+        "For a supplied north-pole-entering positive reference, choose motion in/out and north/south approaching pole. Predict the sign of the pulse. The model reports direction only; it does not calibrate voltage from speed or predict a real coil’s waveform."
+      ]
+    ],
+    "practice": [
+      [
+        "A current requires the induced conductor to be in…",
+        [
+          "A complete circuit",
+          "Any open circuit with no path",
+          "Only a vacuum"
+        ],
+        0,
+        "A p.d. can exist without a closed current path."
+      ],
+      [
+        "Induced current creates a field opposing…",
+        [
+          "Every field always",
+          "The original change",
+          "Only gravity"
+        ],
+        1,
+        "Identify what is increasing/decreasing or moving."
+      ],
+      [
+        "Faster change generally gives…",
+        [
+          "No induced p.d.",
+          "A guaranteed lower p.d.",
+          "A larger induced p.d."
+        ],
+        2,
+        "Rate of field change matters."
+      ]
+    ],
+    "check": [
+      [
+        "A magnet rests motionless in a coil with unchanged field. Continued induced p.d. is…",
+        [
+          "Not produced by that unchanging situation",
+          "Guaranteed maximum",
+          "Independent of change"
+        ],
+        0,
+        "Induction requires appropriate relative motion/change."
+      ],
+      [
+        "Pulling the same pole out instead of pushing it in reverses…",
+        [
+          "Wire mass",
+          "Induced pulse direction",
+          "Its number of turns"
+        ],
+        1,
+        "The change reverses."
+      ],
+      [
+        "Energy supplied to a hand-driven generator comes from…",
+        [
+          "Nothing",
+          "The magnetic field without limit",
+          "Mechanical work by the driver"
+        ],
+        2,
+        "The opposing effect requires an energy input."
+      ]
+    ],
+    "calc": [
+      "A supplied charge0.06 C flows in0.02 s during a pulse. Find mean current.",
+      3,
+      "0.06 ÷ 0.02"
+    ],
+    "lab": {
+      "a": [
+        [
+          "in",
+          "Pole moves in"
+        ],
+        [
+          "out",
+          "Pole moves out"
+        ]
+      ],
+      "b": [
+        [
+          "N",
+          "North pole"
+        ],
+        [
+          "S",
+          "South pole"
+        ]
+      ],
+      "labels": [
+        "Motion relative to coil",
+        "Pole (north entering =positive)"
+      ],
+      "unit": "pulse sign",
+      "choices": [
+        [
+          "positive",
+          "Positive reference pulse"
+        ],
+        [
+          "negative",
+          "Negative reference pulse"
+        ]
+      ]
+    },
+    "separate": true,
+    "higher": true,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "generators",
+    "title": "Alternators, dynamos and output graphs",
+    "refs": [
+      "7.3.2"
+    ],
+    "cards": [
+      [
+        "Rotate a coil in a field",
+        "A generator transfers mechanical energy into electrical energy using electromagnetic induction. As a coil rotates, the field through it changes and an alternating p.d. is induced in the coil. Greater rotational frequency makes the output alternate more frequently."
+      ],
+      [
+        "Alternator versus dynamo",
+        "An alternator uses slip rings to connect the coil to the external circuit and produces AC. A simple dynamo uses a split-ring commutator to reverse the external connection every half-turn, giving unidirectional pulsating DC. DC does not have to have perfectly constant magnitude."
+      ],
+      [
+        "Read the waveform",
+        "An ideal alternator output crosses zero and alternates positive/negative; the simple dynamo output stays on one side of zero but pulses. Coils/field/speed determine actual output. A p.d.–time graph shows potential difference, not electron displacement or energy directly."
+      ],
+      [
+        "Predict polarity",
+        "Choose alternator/dynamo and the positive/negative half of the coil’s uncommutated cycle. Predict external output polarity. The graph cursor follows the selected reference waveform; actual angular flux/voltage phase details and load effects are simplified."
+      ]
+    ],
+    "practice": [
+      [
+        "An alternator uses…",
+        [
+          "Slip rings and gives AC",
+          "A split ring and gives fixed DC only",
+          "No changing magnetic effect"
+        ],
+        0,
+        "Continuous rings preserve each coil connection."
+      ],
+      [
+        "A simple dynamo external output is…",
+        [
+          "Always alternating sign",
+          "Unidirectional but pulsating",
+          "Zero at every time"
+        ],
+        1,
+        "The split ring rectifies the coil output."
+      ],
+      [
+        "Increasing rotation rate increases…",
+        [
+          "Only coil mass",
+          "Only field colour",
+          "Output frequency"
+        ],
+        2,
+        "More rotations occur each second."
+      ]
+    ],
+    "check": [
+      [
+        "A graph crosses above and below zero repeatedly. It shows…",
+        [
+          "AC",
+          "Always constant DC",
+          "No potential difference"
+        ],
+        0,
+        "The polarity reverses."
+      ],
+      [
+        "Pulsating output entirely above zero can be…",
+        [
+          "Impossible DC",
+          "DC from a simple dynamo",
+          "Only sound pressure"
+        ],
+        1,
+        "DC means unidirectional, not necessarily constant."
+      ],
+      [
+        "A generator opposes its driver because…",
+        [
+          "Energy is created from nothing",
+          "There is no load possible",
+          "Mechanical work supplies electrical energy and other transfers"
+        ],
+        2,
+        "Energy is conserved."
+      ]
+    ],
+    "calc": [
+      "An alternator completes30 cycles in0.5 s. Find frequency.",
+      60,
+      "30 ÷ 0.5"
+    ],
+    "lab": {
+      "a": [
+        [
+          "alternator",
+          "Alternator: slip rings"
+        ],
+        [
+          "dynamo",
+          "Dynamo: split ring"
+        ]
+      ],
+      "b": [
+        [
+          "positive",
+          "Positive coil half-cycle"
+        ],
+        [
+          "negative",
+          "Negative coil half-cycle"
+        ]
+      ],
+      "labels": [
+        "Device",
+        "Uncommutated coil polarity"
+      ],
+      "unit": "external polarity",
+      "choices": [
+        [
+          "positive",
+          "Positive"
+        ],
+        [
+          "negative",
+          "Negative"
+        ]
+      ]
+    },
+    "separate": true,
+    "higher": true,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "microphones",
+    "title": "Moving-coil microphones",
+    "refs": [
+      "7.3.3"
+    ],
+    "cards": [
+      [
+        "Sound moves a diaphragm",
+        "Air-pressure variations move a diaphragm attached to a coil positioned in a magnetic field. Coil motion changes the field relationship and induces a varying potential difference. In a connected circuit this can produce varying current."
+      ],
+      [
+        "Reverse the speaker pathway",
+        "Sound → diaphragm vibration → coil motion in field → induced electrical signal. A speaker instead uses signal current → motor-effect force → cone vibration → sound. Naming the correct effect explains the conversion rather than just listing components."
+      ],
+      [
+        "Signal and limits",
+        "The electrical signal frequency follows the sound vibration in an ideal working range. Signal size also depends on motion, field, coil and load. The microphone does not turn pressure directly into an electron stream without induction; a stationary coil in an unchanged field cannot sustain the signal."
+      ],
+      [
+        "Predict the signal frequency",
+        "Choose sound frequency and unchanged/doubled frequency input. Predict the induced signal frequency. The diaphragm/coil moves in a slowed loop, not at the audio frequency; amplitude and frequency response are not calibrated."
+      ]
+    ],
+    "practice": [
+      [
+        "A moving-coil microphone uses…",
+        [
+          "Generator effect",
+          "Motor effect as its input conversion",
+          "Gamma emission"
+        ],
+        0,
+        "Coil motion induces p.d."
+      ],
+      [
+        "The component moving the coil is…",
+        [
+          "Only the power switch",
+          "The vibrating diaphragm",
+          "A radioactive source"
+        ],
+        1,
+        "Sound pressure drives it."
+      ],
+      [
+        "The signal frequency ideally follows…",
+        [
+          "Only coil mass",
+          "Only magnet temperature",
+          "The sound frequency"
+        ],
+        2,
+        "It encodes the pressure oscillation."
+      ]
+    ],
+    "check": [
+      [
+        "A stationary coil in an unchanging magnetic field gives…",
+        [
+          "No continuing induced audio signal",
+          "Maximum signal always",
+          "A200 Hz signal necessarily"
+        ],
+        0,
+        "Changing field relationship is required."
+      ],
+      [
+        "Speaker and microphone differ primarily in…",
+        [
+          "Whether magnets exist",
+          "Direction of conversion and effect used",
+          "Whether sound has frequency"
+        ],
+        1,
+        "Motor effect versus induction."
+      ],
+      [
+        "A sound-to-electric pathway should be ordered…",
+        [
+          "Coil signal → sound → field disappears",
+          "Magnet → nucleus → diaphragm",
+          "Pressure → diaphragm/coil movement → induced signal"
+        ],
+        2,
+        "Follow the causal conversion."
+      ]
+    ],
+    "calc": [
+      "A microphone signal repeats every0.002 s. Find frequency.",
+      500,
+      "1 ÷ 0.002"
+    ],
+    "lab": {
+      "a": [
+        [
+          "100",
+          "100 Hz sound"
+        ],
+        [
+          "400",
+          "400 Hz sound"
+        ]
+      ],
+      "b": [
+        [
+          "1",
+          "Unchanged frequency"
+        ],
+        [
+          "2",
+          "Double frequency"
+        ]
+      ],
+      "labels": [
+        "Sound frequency",
+        "Multiplier"
+      ],
+      "unit": "Hz induced signal"
+    },
+    "separate": true,
+    "higher": true,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "transformers",
+    "title": "Transformers, turns ratios and power",
+    "refs": [
+      "7.3.4"
+    ],
+    "cards": [
+      [
+        "A changing common core field",
+        "A basic transformer has primary and secondary coils on an easily magnetised iron core. AC in the primary produces a changing core field that induces an alternating p.d. in the secondary. Steady DC does not provide the continuing changing field required. The coils need not be electrically connected."
+      ],
+      [
+        "Use the turns ratio",
+        "Vp/Vs=np/ns, so Vs=Vp×ns/np. A200-turn primary at12 V with400 secondary turns gives24 V: step-up. Fewer secondary turns gives step-down. Keep primary/secondary labels consistent; reversing the ratio reverses the intended change."
+      ],
+      [
+        "Transfer power efficiently",
+        "For an ideal100%-efficient transformer, VsIs=VpIp. Raising voltage for the same transmitted power reduces current, reducing I²R heating in cables. Real transformers have losses. Link back to the National Grid lesson; this lesson adds construction, induction and turns ratio rather than replacing the earlier power scaffold."
+      ],
+      [
+        "Predict secondary voltage",
+        "Primary has100 turns and12 V AC. Choose secondary turns and unchanged/double primary voltage. Predict Vs. The diagram shows a shared changing core field; it omits leakage, resistance, heating and core losses. Laminations/eddy-current detail is outside the required specification scope."
+      ]
+    ],
+    "practice": [
+      [
+        "A transformer needs a continuing…",
+        [
+          "Changing magnetic field",
+          "Unchanging DC field",
+          "Nuclear reaction"
+        ],
+        0,
+        "AC drives the induction mechanism."
+      ],
+      [
+        "Doubling secondary turns at fixed primary/voltage…",
+        [
+          "Halves Vs",
+          "Doubles Vs",
+          "Leaves Vs unchanged"
+        ],
+        1,
+        "Vs scales with ns/np."
+      ],
+      [
+        "Ideal transformer power satisfies…",
+        [
+          "Vs+Is=Vp+Ip",
+          "Vs/Is=Vp/Ip always",
+          "VsIs=VpIp"
+        ],
+        2,
+        "Input and output powers are equal in the ideal case."
+      ]
+    ],
+    "check": [
+      [
+        "Vp10 V,np100,ns50 gives Vs…",
+        [
+          "5 V",
+          "20 V",
+          "50 V"
+        ],
+        0,
+        "10×50/100."
+      ],
+      [
+        "Output power120 W at24 V gives output current…",
+        [
+          "2880 A",
+          "5 A",
+          "0.2 A"
+        ],
+        1,
+        "I=P/V."
+      ],
+      [
+        "High-voltage transmission reduces cable heating mainly because…",
+        [
+          "Voltage destroys resistance",
+          "Power becomes zero",
+          "The current for a given power is smaller"
+        ],
+        2,
+        "Cable losses depend on I²R."
+      ]
+    ],
+    "calc": [
+      "An ideal transformer takes60 W at12 V. Find primary current.",
+      5,
+      "60 ÷ 12"
+    ],
+    "lab": {
+      "a": [
+        [
+          "50",
+          "50 secondary turns"
+        ],
+        [
+          "200",
+          "200 secondary turns"
+        ]
+      ],
+      "b": [
+        [
+          "1",
+          "12 V primary"
+        ],
+        [
+          "2",
+          "24 V primary"
+        ]
+      ],
+      "labels": [
+        "Secondary turns (primary100)",
+        "Primary AC voltage"
+      ],
+      "unit": "V secondary"
+    },
+    "separate": true,
+    "higher": true,
+    "film": true,
+    "extra": null
+  }
+]

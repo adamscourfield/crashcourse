@@ -1,4 +1,4 @@
-import{factorData,multiCurves,greenhousePlans,pondRates,netReturn}from './photo-models.js?v=20261022-thermal01r3';
+import{factorData,multiCurves,greenhousePlans,pondRates,netReturn}from './photo-models.js?v=20261022-radiation01';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const txt=(x,y,t,size=21)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f4eee5" font-size="${size}">${esc(t)}</text>`;
 const frame=(body,aria)=>`<svg class="infection-diagram photo-diagram" viewBox="0 0 560 420" role="img" aria-label="${esc(aria)}">${body}</svg>`;

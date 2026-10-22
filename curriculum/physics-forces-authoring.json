@@ -1,0 +1,3162 @@
+[
+  {
+    "k": "vectors",
+    "title": "Scalars, vectors and interactions",
+    "refs": [
+      "5.1.1",
+      "5.1.2"
+    ],
+    "cards": [
+      [
+        "Magnitude and direction",
+        "Scalars have magnitude only: distance, speed, mass, time and energy. Vectors also have direction: displacement, velocity, acceleration and force. An arrow shows direction; its length represents magnitude using a stated scale. Turning a velocity arrow changes velocity even when its length stays the same."
+      ],
+      [
+        "Two objects, two forces",
+        "A force is a push or pull arising from an interaction. Contact interactions include friction, air resistance, tension and normal contact. Gravity, electrostatic and magnetic interactions act without physical contact. Each object exerts a force on the other; name the objects and what acts on what."
+      ],
+      [
+        "Read a scaled arrow",
+        "With 1 cm representing 5 N, a 3 cm arrow represents 15 N in the arrow’s direction. Reversing the arrow reverses the represented force; it does not make its magnitude negative. A signed number can encode direction along a chosen straight-line axis."
+      ],
+      [
+        "Build a vector representation",
+        "Choose a 10/20 N force and left/right direction. Predict the signed component when right is positive. The arrow scales with force; the block’s position is not a motion prediction. The model isolates one force and does not assert that a single force is the entire force system."
+      ]
+    ],
+    "practice": [
+      [
+        "Which is a vector?",
+        [
+          "Force",
+          "Mass",
+          "Energy"
+        ],
+        0,
+        "Force needs a magnitude and direction."
+      ],
+      [
+        "Air resistance is…",
+        [
+          "A gravitational field only",
+          "A contact interaction with air",
+          "A force requiring empty space"
+        ],
+        1,
+        "Air molecules interact with the moving object."
+      ],
+      [
+        "A vector arrow length represents…",
+        [
+          "Time",
+          "Object mass only",
+          "Magnitude on a stated scale"
+        ],
+        2,
+        "The arrowhead gives direction."
+      ]
+    ],
+    "check": [
+      [
+        "A 4 cm arrow at 2 N/cm represents…",
+        [
+          "8 N in the arrow direction",
+          "2 N with no direction",
+          "6 N"
+        ],
+        0,
+        "Multiply diagram length by the force scale."
+      ],
+      [
+        "A magnet attracts an iron object without touching. This is…",
+        [
+          "Contact friction",
+          "A non-contact magnetic interaction",
+          "No interaction"
+        ],
+        1,
+        "Magnetic forces can act through space."
+      ],
+      [
+        "Two objects interact. Which description is complete?",
+        [
+          "Only the heavier exerts a force",
+          "Only the moving one exerts a force",
+          "Each exerts a force on the other"
+        ],
+        2,
+        "Name both objects and both forces."
+      ]
+    ],
+    "calc": [
+      "At 4 N per cm, what magnitude does a 5 cm arrow represent?",
+      20,
+      "5 × 4"
+    ],
+    "lab": {
+      "a": [
+        [
+          "10",
+          "10 N"
+        ],
+        [
+          "20",
+          "20 N"
+        ]
+      ],
+      "b": [
+        [
+          "-1",
+          "Left"
+        ],
+        [
+          "1",
+          "Right"
+        ]
+      ],
+      "labels": [
+        "Force magnitude",
+        "Direction (right positive)"
+      ],
+      "unit": "N signed force"
+    },
+    "separate": false,
+    "higher": false,
+    "film": false,
+    "extra": null
+  },
+  {
+    "k": "weight",
+    "title": "Mass, weight and gravity",
+    "refs": [
+      "5.1.3"
+    ],
+    "cards": [
+      [
+        "Mass is not a force",
+        "Mass measures the amount of matter in kilograms; weight is the gravitational force in newtons. A gravitational field gives objects weight even when there is no contact. Moving an object to a different field changes its weight while its mass can remain unchanged."
+      ],
+      [
+        "Use W = mg",
+        "Weight W = mass m × field strength g. Use the supplied g in N/kg. For 3 kg with g=9.8 N/kg, W=29.4 N. Weight is directly proportional to mass at fixed g. A calibrated newtonmeter measures weight, not kilograms of mass."
+      ],
+      [
+        "Centre of mass",
+        "For force diagrams, the weight can be represented as acting through the centre of mass toward the attracting body. The marker is a simplified whole-object representation, not a statement that all the object’s matter lies at one point."
+      ],
+      [
+        "Compare fields",
+        "Choose mass and gravitational field strength. Predict the newtonmeter reading, then reveal. The downward arrow changes in proportion to mg. The demonstration is stationary; support balances weight, and no fall-time calculation is implied."
+      ]
+    ],
+    "practice": [
+      [
+        "Weight is measured in…",
+        [
+          "Newtons",
+          "Kilograms",
+          "Joules"
+        ],
+        0,
+        "Weight is a force."
+      ],
+      [
+        "At fixed g, doubling mass…",
+        [
+          "Halves weight",
+          "Doubles weight",
+          "Leaves weight unchanged"
+        ],
+        1,
+        "W=mg gives direct proportionality."
+      ],
+      [
+        "Weight is represented as acting through…",
+        [
+          "The brightest corner",
+          "The top surface only",
+          "The centre of mass"
+        ],
+        2,
+        "This is the effective point for the whole-object force."
+      ]
+    ],
+    "check": [
+      [
+        "A 5 kg object in g=2 N/kg has weight…",
+        [
+          "10 N",
+          "2.5 N",
+          "5 kg"
+        ],
+        0,
+        "5 × 2 =10 N."
+      ],
+      [
+        "Moving an object to a weaker field changes…",
+        [
+          "Its mass necessarily",
+          "Its weight",
+          "Its proton count"
+        ],
+        1,
+        "Mass is unchanged; W depends on g."
+      ],
+      [
+        "A newtonmeter is calibrated to measure…",
+        [
+          "Density",
+          "Speed",
+          "Force"
+        ],
+        2,
+        "Its extension can be calibrated in newtons."
+      ]
+    ],
+    "calc": [
+      "Find weight for 4 kg with supplied g=9 N/kg.",
+      36,
+      "4 × 9"
+    ],
+    "lab": {
+      "a": [
+        [
+          "2",
+          "2 kg"
+        ],
+        [
+          "6",
+          "6 kg"
+        ]
+      ],
+      "b": [
+        [
+          "2",
+          "g = 2 N/kg"
+        ],
+        [
+          "10",
+          "g = 10 N/kg"
+        ]
+      ],
+      "labels": [
+        "Mass",
+        "Supplied field strength"
+      ],
+      "unit": "N weight"
+    },
+    "separate": false,
+    "higher": false,
+    "film": false,
+    "extra": null
+  },
+  {
+    "k": "resultant",
+    "title": "Resultant forces in a straight line",
+    "refs": [
+      "5.1.4"
+    ],
+    "cards": [
+      [
+        "Replace the whole force set",
+        "A resultant force has the same effect as the combined forces on the selected object. Choose the object first. Along a straight line, add forces in the same direction and subtract opposing magnitudes. State the direction of a nonzero answer."
+      ],
+      [
+        "Zero resultant does not mean no forces",
+        "A rightward 12 N force and leftward 8 N force give 4 N right. Equal opposing forces give zero resultant. A zero resultant means no acceleration: the object may be at rest or already moving at constant velocity."
+      ],
+      [
+        "Avoid mixing objects",
+        "A force diagram contains forces on one chosen object. The force that object exerts on another belongs to a different diagram. Two equal opposite interaction forces on different objects do not cancel within one object’s force account."
+      ],
+      [
+        "Balance the arrows",
+        "Choose rightward drive and leftward resistance. Predict signed resultant (right positive). Arrows share a scale; no speed is inferred without mass and time. Try both a balanced and unbalanced condition."
+      ]
+    ],
+    "practice": [
+      [
+        "A resultant replaces…",
+        [
+          "All forces on the chosen object",
+          "Every object’s mass",
+          "Only gravity"
+        ],
+        0,
+        "It has the same combined effect."
+      ],
+      [
+        "Zero resultant allows…",
+        [
+          "Only rest",
+          "Rest or constant velocity",
+          "Mandatory speeding up"
+        ],
+        1,
+        "No resultant means no acceleration."
+      ],
+      [
+        "Forces in one free-body account must act on…",
+        [
+          "Different interacting objects",
+          "Any chosen collection at random",
+          "The same selected object"
+        ],
+        2,
+        "Do not mix an action–reaction pair between diagrams."
+      ]
+    ],
+    "check": [
+      [
+        "15 N right and 9 N left give…",
+        [
+          "6 N right",
+          "24 N right",
+          "6 N left"
+        ],
+        0,
+        "Choose right positive:15−9=6."
+      ],
+      [
+        "A steadily moving car can have…",
+        [
+          "No resistive force",
+          "Balanced driving and resistive forces",
+          "A mandatory forward resultant"
+        ],
+        1,
+        "Constant velocity requires zero resultant."
+      ],
+      [
+        "Two 7 N opposing forces on one object have resultant…",
+        [
+          "14 N",
+          "7 N",
+          "0 N"
+        ],
+        2,
+        "The vector sum is zero."
+      ]
+    ],
+    "calc": [
+      "Find signed resultant of 18 N right and 11 N left (right positive).",
+      7,
+      "18 − 11"
+    ],
+    "lab": {
+      "a": [
+        [
+          "10",
+          "Drive 10 N"
+        ],
+        [
+          "20",
+          "Drive 20 N"
+        ]
+      ],
+      "b": [
+        [
+          "10",
+          "Resistance 10 N"
+        ],
+        [
+          "15",
+          "Resistance 15 N"
+        ]
+      ],
+      "labels": [
+        "Rightward drive",
+        "Leftward resistance"
+      ],
+      "unit": "N resultant"
+    },
+    "separate": false,
+    "higher": false,
+    "film": false,
+    "extra": null
+  },
+  {
+    "k": "components",
+    "title": "Force components and scale diagrams",
+    "refs": [
+      "5.1.4"
+    ],
+    "cards": [
+      [
+        "One force, two components",
+        "A force may be resolved into two perpendicular components with the same combined effect as the original. Draw the original arrow and a right-angle component rectangle. The original is the diagonal; the component arrows are not extra physical forces."
+      ],
+      [
+        "Construct a resultant",
+        "For two forces at an angle, draw them tip-to-tail at a stated scale. The arrow from the first tail to the final tip is the resultant. Measure its length and direction. A closed tip-to-tail polygon indicates equilibrium. AQA requires scale drawings here, not trigonometric recall."
+      ],
+      [
+        "Check direction and scale",
+        "A 3 N horizontal and 4 N vertical pair gives a 5 N diagonal in a familiar scaled example. Its direction is upwards and rightwards. The larger component pulls the resultant direction closer to that axis. A single force can be represented by this equivalent pair."
+      ],
+      [
+        "Explore perpendicular pairs",
+        "Choose horizontal3/6 N and vertical4/8 N. Predict the resultant magnitude using the labelled diagram: the combinations3–4 and6–8 are similar triangles; mixed cases are supplied as measured values. This constrained diagram supports interpretation, but does not replace drawing a scale diagram yourself."
+      ]
+    ],
+    "practice": [
+      [
+        "Perpendicular components together are…",
+        [
+          "Equivalent to the original force",
+          "Additional forces to add to it again",
+          "Always opposite"
+        ],
+        0,
+        "Do not double count the original and its components."
+      ],
+      [
+        "A resultant is drawn from…",
+        [
+          "The last tip back to the first tail",
+          "The first tail to the last tip",
+          "An arbitrary point"
+        ],
+        1,
+        "This gives the combined vector displacement."
+      ],
+      [
+        "For equilibrium a tip-to-tail force polygon…",
+        [
+          "Must be a circle",
+          "Has no arrows",
+          "Closes"
+        ],
+        2,
+        "The resultant is zero."
+      ]
+    ],
+    "check": [
+      [
+        "A 6 N/8 N perpendicular pair has resultant…",
+        [
+          "10 N",
+          "14 N",
+          "2 N"
+        ],
+        0,
+        "It is twice the3–4–5 scaled triangle."
+      ],
+      [
+        "Which skill is still needed beyond this model?",
+        [
+          "Memorising its colour",
+          "Constructing and measuring a scale drawing",
+          "Adding the original force again"
+        ],
+        1,
+        "A constrained diagram is not independent construction."
+      ],
+      [
+        "Increasing only the upward component turns the resultant…",
+        [
+          "More horizontal",
+          "Into zero automatically",
+          "Closer to vertical"
+        ],
+        2,
+        "The larger vertical share changes the direction."
+      ]
+    ],
+    "calc": [
+      "A scale is 2 N/cm; a measured resultant is 5 cm. Find its magnitude.",
+      10,
+      "5 × 2"
+    ],
+    "lab": {
+      "a": [
+        [
+          "3",
+          "Horizontal 3 N"
+        ],
+        [
+          "6",
+          "Horizontal 6 N"
+        ]
+      ],
+      "b": [
+        [
+          "4",
+          "Vertical 4 N"
+        ],
+        [
+          "8",
+          "Vertical 8 N"
+        ]
+      ],
+      "labels": [
+        "Horizontal component",
+        "Vertical component"
+      ],
+      "unit": "N magnitude (round to 0.001 N)"
+    },
+    "separate": false,
+    "higher": true,
+    "film": false,
+    "extra": null
+  },
+  {
+    "k": "work",
+    "title": "Work done by a force",
+    "refs": [
+      "5.2"
+    ],
+    "cards": [
+      [
+        "Force through a displacement",
+        "A force does work when it causes displacement along its line of action. Work done W=Fs, with force in N and distance along that force in m. The result is energy transferred in joules. One joule equals one newton-metre of work."
+      ],
+      [
+        "Keep the direction condition",
+        "A 20 N force acting through3 m along its direction transfers60 J. A sideways force with no displacement along it does not transfer work through that sideways component. A large static force with zero displacement does no mechanical work on the stationary object."
+      ],
+      [
+        "Friction transfers energy",
+        "Work done against friction reduces mechanical energy stores and raises internal energy/temperature of the object and surroundings. Energy is conserved even when the useful mechanical transfer is smaller than the input. Use the existing Energy lessons for the linked store account."
+      ],
+      [
+        "Move a block",
+        "Choose constant force and along-force displacement. Predict work. The replay moves a block through a scaled illustrative distance and accumulates transferred energy; it is not a trajectory solved from the forces or a claim of constant acceleration."
+      ]
+    ],
+    "practice": [
+      [
+        "Mechanical work is…",
+        [
+          "Energy transferred by a force through displacement",
+          "The same as force alone",
+          "Always measured in watts"
+        ],
+        0,
+        "Work is measured in joules."
+      ],
+      [
+        "For W=Fs, s is…",
+        [
+          "Any route length regardless of direction",
+          "Displacement along the force",
+          "Only the object height"
+        ],
+        1,
+        "Use the force’s line of action."
+      ],
+      [
+        "Work against friction can increase…",
+        [
+          "The total mass necessarily",
+          "The proton count",
+          "Internal energy and temperature"
+        ],
+        2,
+        "The energy has been transferred, not destroyed."
+      ]
+    ],
+    "check": [
+      [
+        "8 N acts through5 m along the force. Work is…",
+        [
+          "40 J",
+          "1.6 J",
+          "13 J"
+        ],
+        0,
+        "8 ×5=40."
+      ],
+      [
+        "A stationary block is held with no displacement. Work on it by the holding force is…",
+        [
+          "Infinite",
+          "Zero",
+          "The force in newtons"
+        ],
+        1,
+        "s=0 gives W=0."
+      ],
+      [
+        "1 J of work equals…",
+        [
+          "1 N/s",
+          "1 kg/m",
+          "1 N m"
+        ],
+        2,
+        "Force times displacement gives energy."
+      ]
+    ],
+    "calc": [
+      "A 15 N force acts through4 m along its direction. Find work in J.",
+      60,
+      "15 × 4"
+    ],
+    "lab": {
+      "a": [
+        [
+          "10",
+          "10 N"
+        ],
+        [
+          "30",
+          "30 N"
+        ]
+      ],
+      "b": [
+        [
+          "2",
+          "2 m"
+        ],
+        [
+          "4",
+          "4 m"
+        ]
+      ],
+      "labels": [
+        "Force",
+        "Along-force distance"
+      ],
+      "unit": "J work"
+    },
+    "separate": false,
+    "higher": false,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "elasticity",
+    "title": "Elasticity and force–extension graphs",
+    "refs": [
+      "5.3"
+    ],
+    "cards": [
+      [
+        "Two forces change shape",
+        "A stationary object needs opposing applied forces to stretch, bend or compress it. Elastic deformation reverses when forces are removed. Inelastic deformation leaves a permanent change. The limit of proportionality marks where a force–extension graph stops being a straight line through the origin; it is not a universal synonym for the elastic limit."
+      ],
+      [
+        "Use F = ke in the linear region",
+        "Extension e = stretched length − original length, in metres. Spring constant k is force per unit extension, N/m. A spring with k=100 N/m under5 N extends0.05 m. Compression can be treated similarly. A steeper F-versus-e gradient means a larger k."
+      ],
+      [
+        "Energy stored while stretching",
+        "If the spring stays within the proportional elastic region, elastic energy E=½ke² equals work done stretching it. The force increases with extension, so multiplying the final force by extension overestimates the work. The energy is the triangular area under the F–e graph."
+      ],
+      [
+        "Stretch two ideal springs",
+        "Choose k and applied force, predict extension, then reveal. The model stays in the stated linear elastic region and returns to its original length on unloading. Coil thickness/diameter are symbolic; the spring is not a material-failure prediction."
+      ]
+    ],
+    "practice": [
+      [
+        "Extension is…",
+        [
+          "Final length minus original length",
+          "The entire stretched length",
+          "Always equal to mass"
+        ],
+        0,
+        "Use the change in length in metres."
+      ],
+      [
+        "Inelastic deformation…",
+        [
+          "Always reverses fully",
+          "Leaves a permanent change",
+          "Means no forces acted"
+        ],
+        1,
+        "The original shape is not fully restored."
+      ],
+      [
+        "For a linear elastic spring, stored energy is…",
+        [
+          "ke²",
+          "ke",
+          "½ke²"
+        ],
+        2,
+        "Force rises from zero; average force is half the final force."
+      ]
+    ],
+    "check": [
+      [
+        "A spring length changes from10 to14 cm. Extension is…",
+        [
+          "0.04 m",
+          "0.14 m",
+          "4 m"
+        ],
+        0,
+        "4 cm equals0.04 m."
+      ],
+      [
+        "The F–e graph becomes curved. This means…",
+        [
+          "F/e stays constant necessarily",
+          "The limit of proportionality has been exceeded",
+          "The spring has no extension"
+        ],
+        1,
+        "A straight-line proportional relation no longer applies."
+      ],
+      [
+        "Doubling extension at fixed k changes elastic energy by…",
+        [
+          "A factor of2",
+          "A factor of½",
+          "A factor of4"
+        ],
+        2,
+        "Extension is squared."
+      ]
+    ],
+    "calc": [
+      "A linear spring has k=200 N/m and extension0.03 m. Find force in N.",
+      6,
+      "200 × 0.03"
+    ],
+    "lab": {
+      "a": [
+        [
+          "100",
+          "k = 100 N/m"
+        ],
+        [
+          "200",
+          "k = 200 N/m"
+        ]
+      ],
+      "b": [
+        [
+          "2",
+          "2 N"
+        ],
+        [
+          "4",
+          "4 N"
+        ]
+      ],
+      "labels": [
+        "Spring constant",
+        "Applied force"
+      ],
+      "unit": "m extension"
+    },
+    "separate": false,
+    "higher": false,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "springs",
+    "title": "Investigating force and extension",
+    "refs": [
+      "5.3"
+    ],
+    "cards": [
+      [
+        "Plan the spring investigation",
+        "Required practical6 in separate Physics and18 in Trilogy investigates force versus extension of a spring. Clamp securely; align a ruler beside the spring with a pointer/reference point. Measure the unloaded length, add known forces in small increments, allow oscillation to settle and read at eye level to reduce parallax."
+      ],
+      [
+        "Control and record",
+        "Use the same spring, ruler position and reference point. Record applied force and total length, then calculate extension in metres. Repeat readings where useful. Keep clear of falling masses and avoid overloading; a catch tray helps. Physical school performance is still required."
+      ],
+      [
+        "Interpret the graph",
+        "Plot force vertically against extension horizontally with labelled units and a suitable scale. A straight best-fit line through the origin supports F∝e; gradient ΔF/Δe gives k. Do not force all points onto a line beyond proportional behaviour. Unloading can test whether deformation is reversible."
+      ],
+      [
+        "Analyse original trial data",
+        "Choose one of two ideal toy springs and extension. Predict force. These generated points have no measurement uncertainty; compare them with real repeated readings and evaluate ruler resolution, zero error, parallax and oscillation. This model does not establish practical or freehand graph competence."
+      ]
+    ],
+    "practice": [
+      [
+        "First measure…",
+        [
+          "Unloaded length",
+          "Only the last loaded length",
+          "Only the mass of the clamp"
+        ],
+        0,
+        "Extension needs an original reference length."
+      ],
+      [
+        "Read the ruler at eye level to reduce…",
+        [
+          "Nuclear decay",
+          "Parallax",
+          "Spring constant"
+        ],
+        1,
+        "Viewing angle can shift the apparent reading."
+      ],
+      [
+        "On an F-versus-e graph, gradient gives…",
+        [
+          "Mass",
+          "Energy per second",
+          "Spring constant"
+        ],
+        2,
+        "Gradient has units N/m."
+      ]
+    ],
+    "check": [
+      [
+        "Lengths120 and145 mm give extension…",
+        [
+          "0.025 m",
+          "0.145 m",
+          "25 m"
+        ],
+        0,
+        "25mm equals0.025m."
+      ],
+      [
+        "Points curve at high force. Best response?",
+        [
+          "Draw a straight line through all regardless",
+          "Identify the non-proportional region",
+          "Delete the high-force measurements silently"
+        ],
+        1,
+        "Interpret the departure rather than hiding it."
+      ],
+      [
+        "An unloading measurement checks…",
+        [
+          "Only the force scale colour",
+          "The gravitational field name",
+          "Whether the original length is recovered"
+        ],
+        2,
+        "Recovery distinguishes elastic/inelastic response."
+      ]
+    ],
+    "calc": [
+      "A best-fit line changes by4 N over0.02 m. Find k in N/m.",
+      200,
+      "4 ÷ 0.02"
+    ],
+    "lab": {
+      "a": [
+        [
+          "100",
+          "Toy spring k100 N/m"
+        ],
+        [
+          "200",
+          "Toy spring k200 N/m"
+        ]
+      ],
+      "b": [
+        [
+          "0.01",
+          "0.01 m"
+        ],
+        [
+          "0.03",
+          "0.03 m"
+        ]
+      ],
+      "labels": [
+        "Spring",
+        "Extension"
+      ],
+      "unit": "N applied force"
+    },
+    "separate": false,
+    "higher": false,
+    "film": false,
+    "extra": null
+  },
+  {
+    "k": "moments",
+    "title": "Moments, levers and gears",
+    "refs": [
+      "5.4"
+    ],
+    "cards": [
+      [
+        "A turning effect",
+        "Moment M=F d, where d is the perpendicular distance from the pivot to the force’s line of action. Use N m. A longer lever arm can produce the same moment with a smaller force. A force directed through the pivot has zero moment even if applied far along the lever."
+      ],
+      [
+        "Balance clockwise and anticlockwise",
+        "A balanced object has equal total clockwise and anticlockwise moments about the pivot. A6 N downward force0.2 m left balances a3 N downward force0.4 m right: both moments are1.2 N m. Include every force with a moment, not just one pair."
+      ],
+      [
+        "Transmit rotation",
+        "Levers transmit turning effects. Meshing gears rotate in opposite directions; a smaller gear turns through more revolutions than a larger meshing gear. Changing gear sizes changes turning effect/speed tradeoffs. A simple ideal gear train transfers energy; it does not create energy."
+      ],
+      [
+        "Balance a lever",
+        "An opposing moment is fixed at4 N m. Choose force and perpendicular distance on the other side; predict that side’s moment and decide whether it balances. The diagram shows a constrained force direction. Draw your own pivot/line of action/perpendicular distance to demonstrate the unrestricted skill."
+      ]
+    ],
+    "practice": [
+      [
+        "The distance in M=Fd is…",
+        [
+          "Perpendicular pivot-to-line distance",
+          "Always the full lever length",
+          "Distance travelled"
+        ],
+        0,
+        "Use the shortest distance to the line of action."
+      ],
+      [
+        "A lever is balanced when…",
+        [
+          "Both forces must be equal",
+          "Clockwise and anticlockwise moment totals are equal",
+          "Every force is zero"
+        ],
+        1,
+        "Forces can differ if distances differ."
+      ],
+      [
+        "Meshing gears rotate…",
+        [
+          "In the same direction always",
+          "Only if equal size",
+          "In opposite directions"
+        ],
+        2,
+        "Their touching teeth move together at the contact."
+      ]
+    ],
+    "check": [
+      [
+        "5 N at perpendicular0.3 m gives moment…",
+        [
+          "1.5 N m",
+          "15 N m",
+          "0.06 N m"
+        ],
+        0,
+        "Multiply force by perpendicular distance."
+      ],
+      [
+        "A force line passes through the pivot. Moment is…",
+        [
+          "The force alone",
+          "Zero",
+          "Always maximum"
+        ],
+        1,
+        "Perpendicular distance is zero."
+      ],
+      [
+        "A12-tooth gear drives a24-tooth gear through2 turns. Driven gear turns…",
+        [
+          "4 turns",
+          "2 turns",
+          "1 turn in the opposite direction"
+        ],
+        2,
+        "The driven gear has twice as many teeth."
+      ]
+    ],
+    "calc": [
+      "Find force needed for a3 N m moment at perpendicular distance0.5 m.",
+      6,
+      "3 ÷ 0.5"
+    ],
+    "lab": {
+      "a": [
+        [
+          "4",
+          "4 N"
+        ],
+        [
+          "8",
+          "8 N"
+        ]
+      ],
+      "b": [
+        [
+          "0.5",
+          "0.5 m"
+        ],
+        [
+          "1",
+          "1 m"
+        ]
+      ],
+      "labels": [
+        "Applied force",
+        "Perpendicular distance"
+      ],
+      "unit": "N m moment"
+    },
+    "separate": true,
+    "higher": false,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "pressure",
+    "title": "Fluid pressure and surface forces",
+    "refs": [
+      "5.5.1.1"
+    ],
+    "cards": [
+      [
+        "Fluids exert normal forces",
+        "Liquids and gases are fluids. Pressure produces a force at right angles to a surface. Pressure is force per unit area: p=F/A, in pascals, where1 Pa=1 N/m². A gas can press on side walls and a lid, not only downward."
+      ],
+      [
+        "Separate force and pressure",
+        "For the same normal force, a smaller area gives a larger pressure. A200 N normal force across0.5 m² gives400 Pa. To find the total force for a given pressure, rearrange F=pA. Area units must be m²;100 cm²=0.01 m²."
+      ],
+      [
+        "Apply the direction condition",
+        "Use the component of force normal to the chosen surface. The arrows in this view point outward from fluid toward the container wall; the wall exerts an opposite force on the fluid. Neither force is a sideways friction arrow."
+      ],
+      [
+        "Change force and area",
+        "Choose normal force and surface area, predict pressure and reveal. The distribution is uniform in this simplified surface account; the demonstration does not calculate liquid depth, flow, gas compression or material failure."
+      ]
+    ],
+    "practice": [
+      [
+        "A pressure force acts…",
+        [
+          "Normal to the surface",
+          "Only parallel to the surface",
+          "Only upward"
+        ],
+        0,
+        "Normal means perpendicular."
+      ],
+      [
+        "At fixed force, halving area makes pressure…",
+        [
+          "Halve",
+          "Double",
+          "Stay fixed"
+        ],
+        1,
+        "p=F/A."
+      ],
+      [
+        "A pascal equals…",
+        [
+          "N m",
+          "kg/m",
+          "N/m²"
+        ],
+        2,
+        "Pressure is normal force per unit area."
+      ]
+    ],
+    "check": [
+      [
+        "100 N acts over0.2 m². Pressure is…",
+        [
+          "500 Pa",
+          "20 Pa",
+          "0.002 Pa"
+        ],
+        0,
+        "100/0.2=500."
+      ],
+      [
+        "A gas exerts force on a vertical wall…",
+        [
+          "Only downward along it",
+          "At right angles to it",
+          "Only if it is liquid"
+        ],
+        1,
+        "Pressure acts normal to all surfaces."
+      ],
+      [
+        "100 cm² equals…",
+        [
+          "1 m²",
+          "100 m²",
+          "0.01 m²"
+        ],
+        2,
+        "Square the length conversion."
+      ]
+    ],
+    "calc": [
+      "Find force from pressure300 Pa over0.4 m².",
+      120,
+      "300 × 0.4"
+    ],
+    "lab": {
+      "a": [
+        [
+          "100",
+          "100 N"
+        ],
+        [
+          "200",
+          "200 N"
+        ]
+      ],
+      "b": [
+        [
+          "0.2",
+          "0.2 m²"
+        ],
+        [
+          "0.4",
+          "0.4 m²"
+        ]
+      ],
+      "labels": [
+        "Normal force",
+        "Area"
+      ],
+      "unit": "Pa pressure"
+    },
+    "separate": true,
+    "higher": false,
+    "film": false,
+    "extra": null
+  },
+  {
+    "k": "depth",
+    "title": "Liquid depth, upthrust and floating",
+    "refs": [
+      "5.5.1.2"
+    ],
+    "cards": [
+      [
+        "Pressure increases with depth",
+        "The pressure due to a liquid column is p=hρg. Use column height/depth h in m, densityρ in kg/m³ and supplied g in N/kg. This is the additional liquid pressure; add surface pressure if asked for absolute pressure. Denser liquid or greater depth gives larger pressure."
+      ],
+      [
+        "A pressure difference gives upthrust",
+        "A submerged object has greater pressure on its bottom than its top. The vertical force difference gives upward upthrust; opposing horizontal forces can cancel. Upthrust depends on displaced fluid. The diagram exaggerates vertical pressure differences for clarity."
+      ],
+      [
+        "Float or sink",
+        "An unsupported object initially sinks if weight exceeds upthrust and rises if upthrust exceeds weight. It floats at rest when upthrust balances weight. A floating object displaces its own weight of fluid. Average object density and fluid density help decide whether it can float; shape affects the displaced volume."
+      ],
+      [
+        "Compare liquid columns",
+        "Choose depth and density with supplied g=10 N/kg. Predict pressure due to the column. The static model has no waves, viscosity or compressibility; it does not predict transient sinking speed. Use different depths to explain the pressure difference around a block."
+      ]
+    ],
+    "practice": [
+      [
+        "Pressure due to a liquid column is…",
+        [
+          "hρg",
+          "h/(ρg)",
+          "ρ/(hg)"
+        ],
+        0,
+        "Use SI units and supplied g."
+      ],
+      [
+        "Upthrust arises because…",
+        [
+          "Pressure is greater on top",
+          "Pressure is greater underneath",
+          "Fluid has no weight"
+        ],
+        1,
+        "The bottom upward force exceeds the top downward force."
+      ],
+      [
+        "Floating at rest requires…",
+        [
+          "Weight greater than upthrust",
+          "No gravity",
+          "Upthrust equal to weight"
+        ],
+        2,
+        "The vertical resultant is zero."
+      ]
+    ],
+    "check": [
+      [
+        "At h2 m,ρ1000 kg/m³,g10 N/kg, liquid pressure is…",
+        [
+          "20000 Pa",
+          "200 Pa",
+          "20 Pa"
+        ],
+        0,
+        "2×1000×10."
+      ],
+      [
+        "Weight6 N and upthrust4 N give…",
+        [
+          "A2 N upward resultant",
+          "A2 N downward resultant",
+          "Zero resultant"
+        ],
+        1,
+        "Gravity exceeds the upward force."
+      ],
+      [
+        "For absolute pressure beneath a liquid surface, also account for…",
+        [
+          "Only the vessel colour",
+          "Only its width",
+          "Pressure at the surface"
+        ],
+        2,
+        "hρg is the column contribution."
+      ]
+    ],
+    "calc": [
+      "For depth3 m, density800 kg/m³ and g10 N/kg, find liquid pressure in Pa.",
+      24000,
+      "3 × 800 × 10"
+    ],
+    "lab": {
+      "a": [
+        [
+          "1",
+          "1 m"
+        ],
+        [
+          "3",
+          "3 m"
+        ]
+      ],
+      "b": [
+        [
+          "800",
+          "800 kg/m³"
+        ],
+        [
+          "1000",
+          "1000 kg/m³"
+        ]
+      ],
+      "labels": [
+        "Depth",
+        "Density (g10 N/kg)"
+      ],
+      "unit": "Pa column pressure"
+    },
+    "separate": true,
+    "higher": true,
+    "film": false,
+    "extra": null
+  },
+  {
+    "k": "atmosphere",
+    "title": "Atmospheric pressure and altitude",
+    "refs": [
+      "5.5.2"
+    ],
+    "cards": [
+      [
+        "A thin layer around Earth",
+        "The atmosphere is a thin layer compared with Earth’s size. Air molecules continually move and collide with surfaces, producing atmospheric pressure. The atmosphere is denser closer to the ground and becomes less dense at higher altitudes."
+      ],
+      [
+        "Less air above",
+        "At a higher altitude there are fewer air molecules and less weight of air above each unit area. Atmospheric pressure therefore decreases with altitude. Pressure does not suddenly become zero at the top of a building; the change depends on the height and atmospheric conditions."
+      ],
+      [
+        "Use evidence carefully",
+        "Compare measured pressure at different heights while considering weather changes and instrument calibration. The gas particles are greatly enlarged and only a few are drawn. Their collisions represent a mechanism, not a literal number of air molecules."
+      ],
+      [
+        "Read a supplied altitude comparison",
+        "Choose lower/higher altitude and one of two invented weather datasets. Predict which point has lower pressure. Values are supplied illustrative comparisons, not a standard-atmosphere calculation or local weather forecast."
+      ]
+    ],
+    "practice": [
+      [
+        "Atmospheric pressure is caused by…",
+        [
+          "Air-molecule collisions with surfaces",
+          "Only sunshine",
+          "Only wind in one direction"
+        ],
+        0,
+        "Random molecular motion transfers momentum to surfaces."
+      ],
+      [
+        "At greater altitude, air is generally…",
+        [
+          "More dense",
+          "Less dense",
+          "Always the same density"
+        ],
+        1,
+        "There is less air above and lower pressure."
+      ],
+      [
+        "At a high mountain compared with sea level, pressure is generally…",
+        [
+          "Higher",
+          "Identical necessarily",
+          "Lower"
+        ],
+        2,
+        "The overlying column has less weight."
+      ]
+    ],
+    "check": [
+      [
+        "The atmosphere compared with Earth is…",
+        [
+          "A thin surrounding layer",
+          "Thicker than Earth’s diameter",
+          "Only a solid shell"
+        ],
+        0,
+        "Its relative scale matters."
+      ],
+      [
+        "A fair height/pressure comparison should consider…",
+        [
+          "Only the gauge colour",
+          "Weather changes and calibration",
+          "Only shoe size"
+        ],
+        1,
+        "Other factors can influence the measurements."
+      ],
+      [
+        "A drawing with ten gas markers represents…",
+        [
+          "Exactly ten real air molecules",
+          "A measured molecular collision rate",
+          "A schematic sample of random motion"
+        ],
+        2,
+        "The count and size are illustrative."
+      ]
+    ],
+    "calc": [
+      "A supplied pressure reading falls from100000 to80000 Pa. Find the decrease in Pa.",
+      20000,
+      "100000 − 80000"
+    ],
+    "lab": {
+      "a": [
+        [
+          "low",
+          "Lower altitude"
+        ],
+        [
+          "high",
+          "Higher altitude"
+        ]
+      ],
+      "b": [
+        [
+          "A",
+          "Dataset A:100/80 kPa"
+        ],
+        [
+          "B",
+          "Dataset B:98/78 kPa"
+        ]
+      ],
+      "labels": [
+        "Altitude",
+        "Supplied dataset"
+      ],
+      "unit": "kPa pressure"
+    },
+    "separate": true,
+    "higher": false,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "motion",
+    "title": "Distance, displacement, speed and velocity",
+    "refs": [
+      "5.6.1.1",
+      "5.6.1.2",
+      "5.6.1.3"
+    ],
+    "cards": [
+      [
+        "A journey has two measures",
+        "Distance is total path length, a scalar. Displacement is the straight-line change from start to finish with direction, a vector. Walk3 m east then3 m west: distance6 m, displacement0. Speed is scalar; velocity is speed in a stated direction."
+      ],
+      [
+        "Use distance = speed × time",
+        "For constant speed, s=vt. Average speed for a variable journey is total distance divided by total time, including stated stops. Do not simply average two speeds unless the time intervals are equal. Convert km/h to m/s by dividing by3.6."
+      ],
+      [
+        "Estimate sensible speeds",
+        "Typical walking speed is1.5 m/s, running3 m/s, cycling6 m/s and sound in air about330 m/s. Terrain, fitness, age and journey length affect human speeds. A car on a road may travel around13 m/s (about30 mph), while other transport varies widely. These are estimates, not universal constants."
+      ],
+      [
+        "Compare simple journeys",
+        "Choose constant speed and elapsed time. Predict total distance before watching a straight-line journey. The markers show equally spaced positions for equal times. A later return leg can change displacement without undoing the distance already travelled."
+      ]
+    ],
+    "practice": [
+      [
+        "Distance counts…",
+        [
+          "The whole path travelled",
+          "Only straight-line start-to-finish change",
+          "Direction only"
+        ],
+        0,
+        "Distance is a scalar path length."
+      ],
+      [
+        "Average speed is…",
+        [
+          "Always the mean of the two listed speeds",
+          "Total distance divided by total time",
+          "Displacement times time"
+        ],
+        1,
+        "Use the full time including stated stops."
+      ],
+      [
+        "Velocity includes…",
+        [
+          "Only magnitude",
+          "Only journey duration",
+          "Speed and direction"
+        ],
+        2,
+        "It is a vector."
+      ]
+    ],
+    "check": [
+      [
+        "A pupil walks4 m east then1 m west. Displacement is…",
+        [
+          "3 m east",
+          "5 m east",
+          "3 m west"
+        ],
+        0,
+        "Final position is3m east of start."
+      ],
+      [
+        "72 km/h is…",
+        [
+          "72 m/s",
+          "20 m/s",
+          "259.2 m/s"
+        ],
+        1,
+        "Divide by3.6."
+      ],
+      [
+        "A typical walking speed is about…",
+        [
+          "330 m/s",
+          "60 m/s",
+          "1.5 m/s"
+        ],
+        2,
+        "Human speeds depend on conditions."
+      ]
+    ],
+    "calc": [
+      "A journey covers150 m in30 s including a stop. Find average speed in m/s.",
+      5,
+      "150 ÷ 30"
+    ],
+    "lab": {
+      "a": [
+        [
+          "2",
+          "2 m/s"
+        ],
+        [
+          "4",
+          "4 m/s"
+        ]
+      ],
+      "b": [
+        [
+          "3",
+          "3 s"
+        ],
+        [
+          "6",
+          "6 s"
+        ]
+      ],
+      "labels": [
+        "Constant speed",
+        "Time"
+      ],
+      "unit": "m distance"
+    },
+    "separate": false,
+    "higher": false,
+    "film": true,
+    "extra": {
+      "title": "Higher: constant speed can still change velocity",
+      "text": "An object moving in a circle changes direction continuously even at constant speed. Its velocity changes, so it accelerates. The resultant force is toward the centre; it is perpendicular to the instantaneous velocity, not a force pushing the object outward."
+    }
+  },
+  {
+    "k": "distancegraph",
+    "title": "Reading distance–time graphs",
+    "refs": [
+      "5.6.1.4"
+    ],
+    "cards": [
+      [
+        "A slope tells you speed",
+        "On a distance–time graph, gradient = change in distance ÷ change in time. A steeper positive line means greater speed. A horizontal section means no further distance travelled during that time. A straight sloping line represents constant speed."
+      ],
+      [
+        "Construct from measurements",
+        "Choose sensible axis ranges, plot time horizontally and distance vertically with units, and plot measured points. A line or smooth curve should fit the evidence. Use a large gradient triangle, reading two points on the line rather than assuming it starts at the origin."
+      ],
+      [
+        "Curves represent changing speed",
+        "A curve getting steeper represents increasing speed; a curve getting flatter represents decreasing speed. Total distance cannot decrease in a cumulative-distance account. A position/displacement graph can decrease, but that is a different vertical quantity."
+      ],
+      [
+        "Compare slopes",
+        "Choose a distance increment and time interval; predict gradient in m/s and reveal the graph. This is constrained graph interpretation. It prepares for drawing and analysing your own measured graph, but does not itself provide unrestricted graph-construction evidence."
+      ]
+    ],
+    "practice": [
+      [
+        "Gradient of distance–time gives…",
+        [
+          "Speed",
+          "Acceleration",
+          "Mass"
+        ],
+        0,
+        "Distance change per time is speed."
+      ],
+      [
+        "A horizontal section means…",
+        [
+          "Moving backward necessarily",
+          "Stationary during that interval",
+          "Infinite speed"
+        ],
+        1,
+        "Distance does not increase."
+      ],
+      [
+        "A curve getting steeper shows…",
+        [
+          "Constant speed",
+          "Zero distance",
+          "Increasing speed"
+        ],
+        2,
+        "The instantaneous gradient increases."
+      ]
+    ],
+    "check": [
+      [
+        "Distance changes20 m over5 s on a line. Speed is…",
+        [
+          "4 m/s",
+          "100 m/s",
+          "0.25 m/s"
+        ],
+        0,
+        "Use20/5."
+      ],
+      [
+        "For a line starting at10 m rather than zero, gradient uses…",
+        [
+          "Only the final coordinate divided by time",
+          "Differences in both coordinates",
+          "Only the intercept"
+        ],
+        1,
+        "Gradient is Δdistance/Δtime."
+      ],
+      [
+        "A cumulative-distance graph moving downward would…",
+        [
+          "Show valid negative total path length",
+          "Always mean acceleration",
+          "Be inconsistent with its cumulative-distance label"
+        ],
+        2,
+        "Cumulative distance cannot decrease."
+      ]
+    ],
+    "calc": [
+      "A line rises45 m in15 s. Find speed in m/s.",
+      3,
+      "45 ÷ 15"
+    ],
+    "lab": {
+      "a": [
+        [
+          "12",
+          "12 m rise"
+        ],
+        [
+          "24",
+          "24 m rise"
+        ]
+      ],
+      "b": [
+        [
+          "3",
+          "3 s run"
+        ],
+        [
+          "6",
+          "6 s run"
+        ]
+      ],
+      "labels": [
+        "Distance change",
+        "Time change"
+      ],
+      "unit": "m/s gradient"
+    },
+    "separate": false,
+    "higher": false,
+    "film": false,
+    "extra": {
+      "title": "Higher: measure a tangent",
+      "text": "For instantaneous speed on a curved distance–time graph, draw a tangent at the chosen time and calculate its gradient using a large triangle on that tangent. Do not use the chord joining widely separated curve points. A tangent rising12 m over4 s gives3 m/s at the contact point."
+    }
+  },
+  {
+    "k": "acceleration",
+    "title": "Acceleration and uniform-motion calculations",
+    "refs": [
+      "5.6.1.5"
+    ],
+    "cards": [
+      [
+        "Velocity changes per second",
+        "Average acceleration a=(v−u)/t. Units are m/s². Choose a positive direction first. A vehicle changing from2 to14 m/s in4 s has acceleration3 m/s². Slowing while moving in the positive direction gives negative acceleration; the magnitude of deceleration is positive."
+      ],
+      [
+        "A second relationship",
+        "For uniform acceleration, v²−u²=2as. Rearrange carefully and use SI units. With u=0, a=2 m/s² and s=9 m, v²=36 and speed=6 m/s. The relationship assumes constant acceleration; it cannot be applied indiscriminately to a whole nonuniform journey."
+      ],
+      [
+        "Free fall and resistance",
+        "Near Earth, free-fall acceleration is about9.8 m/s² when gravity is the only significant force. Falling through air is not always free fall: air resistance changes the resultant. Everyday accelerations vary; reaching20 m/s from rest in10 s is about2 m/s² on average."
+      ],
+      [
+        "Predict a velocity change",
+        "The model starts from rest with constant acceleration. Choose a and time; predict final velocity. Position follows½at² while velocity follows at. Model time resets on replay; the object is not physically teleported back during one continuous journey."
+      ]
+    ],
+    "practice": [
+      [
+        "Acceleration is…",
+        [
+          "Change in velocity divided by time",
+          "Velocity times time",
+          "Distance divided by mass"
+        ],
+        0,
+        "Use final minus initial velocity."
+      ],
+      [
+        "Uniform acceleration means…",
+        [
+          "Velocity is constant",
+          "Acceleration is constant",
+          "Distance is zero"
+        ],
+        1,
+        "The squared-velocity relation uses this condition."
+      ],
+      [
+        "Free fall near Earth has acceleration about…",
+        [
+          "0.98 m/s",
+          "330 m/s²",
+          "9.8 m/s²"
+        ],
+        2,
+        "Only gravity is significant in ideal free fall."
+      ]
+    ],
+    "check": [
+      [
+        "Velocity8→20 m/s in4 s gives acceleration…",
+        [
+          "3 m/s²",
+          "7 m/s²",
+          "48 m/s²"
+        ],
+        0,
+        "(20−8)/4=3."
+      ],
+      [
+        "A car slows from15 to5 m/s in5 s, forward positive. Acceleration is…",
+        [
+          "+2 m/s²",
+          "−2 m/s²",
+          "−10 m/s²"
+        ],
+        1,
+        "(5−15)/5=−2."
+      ],
+      [
+        "With u0,a3 m/s²,s6 m, v is…",
+        [
+          "36 m/s",
+          "18 m/s",
+          "6 m/s"
+        ],
+        2,
+        "v²=2×3×6=36; take the positive speed root."
+      ]
+    ],
+    "calc": [
+      "Velocity changes from4 to16 m/s over6 s. Find average acceleration.",
+      2,
+      "(16 − 4) ÷ 6"
+    ],
+    "lab": {
+      "a": [
+        [
+          "1",
+          "1 m/s²"
+        ],
+        [
+          "2",
+          "2 m/s²"
+        ]
+      ],
+      "b": [
+        [
+          "2",
+          "2 s"
+        ],
+        [
+          "4",
+          "4 s"
+        ]
+      ],
+      "labels": [
+        "Constant acceleration from rest",
+        "Time"
+      ],
+      "unit": "m/s final velocity"
+    },
+    "separate": false,
+    "higher": false,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "velocitygraph",
+    "title": "Velocity–time graphs",
+    "refs": [
+      "5.6.1.5"
+    ],
+    "cards": [
+      [
+        "Gradient gives acceleration",
+        "On a velocity–time graph, gradient=(change in velocity)/(change in time). A horizontal line means constant velocity, not stationary unless velocity is zero. A downward slope can show slowing in the positive direction. Read signs as well as steepness."
+      ],
+      [
+        "Plot the measured motion",
+        "Place time on the horizontal axis and velocity on the vertical axis, with scales and units. Plot supplied measurements, then interpret segments or a best-fit curve. At a curved section, a tangent estimates instantaneous acceleration. A straight slope represents uniform acceleration."
+      ],
+      [
+        "Distinguish the two graph types",
+        "Distance–time gradient gives speed; velocity–time gradient gives acceleration. Their vertical quantities differ. Do not read the height of a velocity–time graph as distance. A velocity can be negative because direction is encoded by the chosen axis."
+      ],
+      [
+        "Change the slope",
+        "Choose a velocity change over a fixed interval and predict acceleration. A cursor follows the illustrative straight segment; the visual is original data, not a measured vehicle trace. Graph construction in this tool is constrained; unrestricted drawings remain separate."
+      ]
+    ],
+    "practice": [
+      [
+        "Velocity–time gradient gives…",
+        [
+          "Acceleration",
+          "Distance",
+          "Velocity itself"
+        ],
+        0,
+        "It is Δv/Δt."
+      ],
+      [
+        "A horizontal line at5 m/s means…",
+        [
+          "Stationary",
+          "Constant velocity5 m/s",
+          "Acceleration5 m/s²"
+        ],
+        1,
+        "Its gradient is zero."
+      ],
+      [
+        "A negative velocity indicates…",
+        [
+          "Negative time",
+          "No motion",
+          "Motion opposite the positive direction"
+        ],
+        2,
+        "Sign encodes direction."
+      ]
+    ],
+    "check": [
+      [
+        "A line rises from3 to15 m/s in4 s. Gradient is…",
+        [
+          "3 m/s²",
+          "4.5 m/s²",
+          "48 m/s²"
+        ],
+        0,
+        "(15−3)/4=3."
+      ],
+      [
+        "Height of a velocity–time graph represents…",
+        [
+          "Distance",
+          "Velocity",
+          "Acceleration"
+        ],
+        1,
+        "Read the labelled vertical axis."
+      ],
+      [
+        "A straight downward slope above zero represents…",
+        [
+          "Rest",
+          "Increasing positive speed",
+          "Constant negative acceleration while still moving forward"
+        ],
+        2,
+        "Velocity decreases at a steady rate."
+      ]
+    ],
+    "calc": [
+      "A velocity–time line falls by12 m/s in3 s. Find signed gradient.",
+      -4,
+      "−12 ÷ 3"
+    ],
+    "lab": {
+      "a": [
+        [
+          "6",
+          "Velocity rise6 m/s"
+        ],
+        [
+          "12",
+          "Velocity rise12 m/s"
+        ]
+      ],
+      "b": [
+        [
+          "2",
+          "2 s"
+        ],
+        [
+          "4",
+          "4 s"
+        ]
+      ],
+      "labels": [
+        "Velocity change",
+        "Elapsed time"
+      ],
+      "unit": "m/s² acceleration"
+    },
+    "separate": false,
+    "higher": false,
+    "film": true,
+    "extra": {
+      "title": "Higher: area gives displacement",
+      "text": "The signed area under a velocity–time graph gives displacement. For motion staying in one direction its magnitude gives distance. A rectangle at4 m/s lasting3 s gives12 m; a triangle from0 to8 m/s over3 s gives12 m. Below-axis area is negative displacement; add absolute areas for total distance if direction changes. Curved areas can be estimated by counting squares."
+    }
+  },
+  {
+    "k": "terminal",
+    "title": "Falling objects and terminal velocity",
+    "refs": [
+      "5.6.1.5"
+    ],
+    "cards": [
+      [
+        "Forces change during a fall",
+        "A falling object initially has weight greater than air resistance, so it accelerates downward. As speed increases, air resistance rises and the downward resultant decreases. Weight remains approximately constant for the same mass and gravitational field."
+      ],
+      [
+        "Reach a balanced speed",
+        "At terminal velocity, drag balances weight and resultant force is zero. Acceleration is zero, but the object is still moving. A larger drag at a given speed, such as an opened parachute, can give a lower terminal speed. Immediately after opening, upward drag can exceed weight and the falling object slows."
+      ],
+      [
+        "Read the motion",
+        "A velocity–time trace initially gets less steep as acceleration decreases and approaches a horizontal terminal-speed region. The supplied curve is an original qualitative shape, not measured parachute data. In separate Physics you should draw and interpret such a graph and connect it to the force account."
+      ],
+      [
+        "Compare force snapshots",
+        "Choose weight and drag, predict signed downward resultant and reveal. These selected states do not solve a complete fluid model. A nonzero upward resultant can occur while velocity is still downward: force changes velocity, not necessarily its instantaneous direction."
+      ]
+    ],
+    "practice": [
+      [
+        "Initially weight greater than drag gives…",
+        [
+          "Downward acceleration",
+          "Zero speed necessarily",
+          "Upward motion immediately"
+        ],
+        0,
+        "The resultant is downward."
+      ],
+      [
+        "At terminal velocity…",
+        [
+          "There are no forces",
+          "Drag equals weight",
+          "Weight disappears"
+        ],
+        1,
+        "Balanced forces give zero acceleration."
+      ],
+      [
+        "Terminal velocity means…",
+        [
+          "The object has stopped",
+          "Acceleration equals weight",
+          "Constant falling velocity"
+        ],
+        2,
+        "Velocity is nonzero and constant."
+      ]
+    ],
+    "check": [
+      [
+        "Weight20 N, drag12 N gives resultant…",
+        [
+          "8 N down",
+          "32 N down",
+          "8 N up"
+        ],
+        0,
+        "Subtract opposing forces."
+      ],
+      [
+        "A parachute opens and drag briefly exceeds weight. The falling object…",
+        [
+          "Must instantly move upward",
+          "Decelerates while it can still move downward",
+          "Loses its mass"
+        ],
+        1,
+        "Acceleration and velocity need not share a direction."
+      ],
+      [
+        "At terminal speed a velocity–time graph becomes…",
+        [
+          "Steeper",
+          "Vertical",
+          "Horizontal"
+        ],
+        2,
+        "The acceleration/gradient is zero."
+      ]
+    ],
+    "calc": [
+      "Weight30 N and drag22 N act oppositely. Find downward resultant.",
+      8,
+      "30 − 22"
+    ],
+    "lab": {
+      "a": [
+        [
+          "10",
+          "Weight10 N"
+        ],
+        [
+          "20",
+          "Weight20 N"
+        ]
+      ],
+      "b": [
+        [
+          "10",
+          "Drag10 N"
+        ],
+        [
+          "15",
+          "Drag15 N"
+        ]
+      ],
+      "labels": [
+        "Weight",
+        "Upward drag"
+      ],
+      "unit": "N downward resultant"
+    },
+    "separate": false,
+    "higher": false,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "firstlaw",
+    "title": "Newton’s first law and inertia",
+    "refs": [
+      "5.6.2.1"
+    ],
+    "cards": [
+      [
+        "Keep a constant velocity",
+        "If the resultant force is zero, a stationary object stays at rest and a moving object continues at the same speed in the same direction. A force is needed to change velocity, not to keep an ideal object moving at constant velocity."
+      ],
+      [
+        "Balance a real vehicle",
+        "A car at steady speed has drive balancing resistance. Turning a corner changes direction and therefore velocity, so it requires a resultant even if speed stays the same. Friction explains why everyday coasting objects slow when drive is removed."
+      ],
+      [
+        "Explain the interaction",
+        "Identify the chosen object and all important forces on it. Ask whether the vector sum is zero. A book resting on a table has balanced support and weight on the book; these are not Newton’s third-law partners because both act on the same object."
+      ],
+      [
+        "Remove the drive",
+        "Choose an ideal resistance-free track or a resistive track, then drive balanced with resistance or drive removed. Predict whether velocity stays constant or changes. The film shows an ideal no-resultant coast; it deliberately omits friction."
+      ]
+    ],
+    "practice": [
+      [
+        "Zero resultant means velocity…",
+        [
+          "Stays constant",
+          "Must be zero",
+          "Must increase"
+        ],
+        0,
+        "Rest is one possible constant velocity."
+      ],
+      [
+        "At steady straight-line speed a driven car has…",
+        [
+          "No resistance",
+          "Balanced drive and resistance",
+          "Unbalanced drive necessarily"
+        ],
+        1,
+        "The resultant is zero."
+      ],
+      [
+        "Turning at constant speed changes…",
+        [
+          "Only mass",
+          "No aspect of velocity",
+          "Velocity direction"
+        ],
+        2,
+        "Velocity is a vector."
+      ]
+    ],
+    "check": [
+      [
+        "On an ideal frictionless track, drive is removed from a moving trolley. It…",
+        [
+          "Continues at constant velocity",
+          "Immediately stops",
+          "Accelerates without a resultant"
+        ],
+        0,
+        "The first law applies when the resultant is zero."
+      ],
+      [
+        "A real trolley slows after a push ends because…",
+        [
+          "Motion needs a continuing forward force in every case",
+          "Resistive forces give a backward resultant",
+          "Its mass vanishes"
+        ],
+        1,
+        "Friction changes velocity."
+      ],
+      [
+        "Support and weight on a resting book are…",
+        [
+          "A third-law pair",
+          "Forces on different objects",
+          "Balanced forces on the same object"
+        ],
+        2,
+        "Third-law partners act on different objects."
+      ]
+    ],
+    "calc": [
+      "A car has320 N drive and320 N resistance. Find resultant magnitude.",
+      0,
+      "320 − 320"
+    ],
+    "lab": {
+      "a": [
+        [
+          "ideal",
+          "No resistance"
+        ],
+        [
+          "resist",
+          "Resistance present"
+        ]
+      ],
+      "b": [
+        [
+          "balance",
+          "Drive balances resistance"
+        ],
+        [
+          "remove",
+          "Drive removed"
+        ]
+      ],
+      "labels": [
+        "Track condition",
+        "Drive condition"
+      ],
+      "unit": "velocity change",
+      "choices": [
+        [
+          "0",
+          "Constant velocity"
+        ],
+        [
+          "1",
+          "Velocity changes"
+        ]
+      ]
+    },
+    "separate": false,
+    "higher": false,
+    "film": true,
+    "extra": {
+      "title": "Higher: inertia",
+      "text": "Inertia is the tendency of an object to remain at rest or continue in uniform straight-line motion. It does not mean a new force pushes the object forward. When a bus brakes, an unrestrained passenger tends to keep moving; a restraint exerts a force to change that motion."
+    }
+  },
+  {
+    "k": "secondlaw",
+    "title": "Newton’s second law",
+    "refs": [
+      "5.6.2.2"
+    ],
+    "cards": [
+      [
+        "Resultant force causes acceleration",
+        "F=ma links resultant force in N, mass in kg and acceleration in m/s². The acceleration is in the resultant force’s direction. Use the resultant, not just the driving force when resistance is present."
+      ],
+      [
+        "Change one variable at a time",
+        "At fixed mass, acceleration is proportional to resultant force. At fixed resultant force it is inversely proportional to mass: doubling mass halves acceleration. A6 N resultant on2 kg gives3 m/s². The proportionality symbol is ∝."
+      ],
+      [
+        "Estimate real motions",
+        "A1000 kg car accelerating at2 m/s² requires about2000 N resultant. Actual drive must also overcome resistance. Estimates depend on supplied mass, interval and assumptions; they are not exact engine ratings."
+      ],
+      [
+        "Predict the acceleration",
+        "Choose resultant force and trolley mass, predict a=F/m, then watch a from-rest trajectory with that acceleration. Total mass is the moving system’s mass. The illustrative track has no unmodelled resistance."
+      ]
+    ],
+    "practice": [
+      [
+        "F in F=ma means…",
+        [
+          "Resultant force",
+          "Only the largest force",
+          "Weight in every example"
+        ],
+        0,
+        "Sum the forces first."
+      ],
+      [
+        "At fixed mass, doubling resultant…",
+        [
+          "Halves acceleration",
+          "Doubles acceleration",
+          "Leaves it unchanged"
+        ],
+        1,
+        "a∝F."
+      ],
+      [
+        "At fixed resultant, doubling mass makes acceleration…",
+        [
+          "Double",
+          "Four times larger",
+          "Half"
+        ],
+        2,
+        "a is inversely proportional to m."
+      ]
+    ],
+    "check": [
+      [
+        "A12 N resultant acts on3 kg. Acceleration is…",
+        [
+          "4 m/s²",
+          "36 m/s²",
+          "0.25 m/s²"
+        ],
+        0,
+        "a=12/3."
+      ],
+      [
+        "Drive30 N, resistance10 N, mass5 kg. Acceleration is…",
+        [
+          "6 m/s²",
+          "4 m/s²",
+          "8 m/s²"
+        ],
+        1,
+        "Resultant20 N;20/5=4."
+      ],
+      [
+        "To estimate acceleration from a speed change you need…",
+        [
+          "Only force colour",
+          "Only final speed",
+          "Change in velocity and elapsed time"
+        ],
+        2,
+        "a=Δv/t."
+      ]
+    ],
+    "calc": [
+      "A15 N resultant acts on a5 kg trolley. Find acceleration.",
+      3,
+      "15 ÷ 5"
+    ],
+    "lab": {
+      "a": [
+        [
+          "4",
+          "4 N resultant"
+        ],
+        [
+          "8",
+          "8 N resultant"
+        ]
+      ],
+      "b": [
+        [
+          "2",
+          "2 kg"
+        ],
+        [
+          "4",
+          "4 kg"
+        ]
+      ],
+      "labels": [
+        "Resultant force",
+        "Moving mass"
+      ],
+      "unit": "m/s² acceleration"
+    },
+    "separate": false,
+    "higher": false,
+    "film": true,
+    "extra": {
+      "title": "Higher: inertial mass",
+      "text": "Inertial mass measures how difficult it is to change velocity. It is defined as the ratio of resultant force to acceleration, m=F/a, for a consistent system and direction. A12 N resultant producing3 m/s² implies inertial mass4 kg. It is not a separate force resisting motion."
+    }
+  },
+  {
+    "k": "accelpractical",
+    "title": "Investigating force, mass and acceleration",
+    "refs": [
+      "5.6.2.2"
+    ],
+    "cards": [
+      [
+        "Two controlled comparisons",
+        "Required practical7 (separate) or19 (Trilogy) tests how acceleration changes with force at fixed mass and with mass at fixed force. Use a trolley/track, pulley and falling masses or a suitable alternative, with light gates or a motion sensor. Define the moving system consistently."
+      ],
+      [
+        "Keep total mass controlled",
+        "When moving masses from trolley to hanger, the total moving mass can remain constant while the driving force changes. For the mass comparison, change total moving mass but maintain the same driving force. Keep track slope/alignment and release method controlled and reduce friction."
+      ],
+      [
+        "Collect and evaluate",
+        "Measure velocities/times to obtain acceleration; repeat and compare mean values, spread and anomalies. Plot a against force for fixed mass and a against1/m for fixed force to test proportional predictions. Consider pulley inertia, track friction, sensor alignment and masses reaching the floor; catch the trolley safely."
+      ],
+      [
+        "Analyse an ideal trial",
+        "Choose total moving mass and a supplied resultant force; predict acceleration. Here F is the known resultant, unlike a real hanging weight where tension, friction and acceleration of the hanger require attention. Generated readings have no noise; physical performance and independent graph construction remain separate."
+      ]
+    ],
+    "practice": [
+      [
+        "To vary force at fixed total moving mass, masses can be…",
+        [
+          "Transferred from trolley to hanger",
+          "Added to both without accounting",
+          "Removed from the whole system unnoticed"
+        ],
+        0,
+        "The redistribution changes drive while total moving mass stays fixed."
+      ],
+      [
+        "To test mass at fixed force, control…",
+        [
+          "Only trolley colour",
+          "Driving/resultant force and track conditions",
+          "The measured acceleration itself"
+        ],
+        1,
+        "Acceleration is the dependent variable."
+      ],
+      [
+        "Repeated readings help evaluate…",
+        [
+          "Only the apparatus name",
+          "Only units",
+          "Variation and anomalous measurements"
+        ],
+        2,
+        "They provide evidence about repeatability."
+      ]
+    ],
+    "check": [
+      [
+        "A doubles when F doubles at fixed mass. This supports…",
+        [
+          "a∝F",
+          "a∝1/F",
+          "No relationship"
+        ],
+        0,
+        "Direct proportionality predicts that change."
+      ],
+      [
+        "A major omitted effect in an ideal trolley model is…",
+        [
+          "Whether it is drawn blue",
+          "Friction and pulley effects",
+          "The question number"
+        ],
+        1,
+        "Real resultant force needs evaluation."
+      ],
+      [
+        "For fixed force, a plotted against1/m should ideally be…",
+        [
+          "A horizontal line",
+          "A decreasing straight line",
+          "A straight line through the origin"
+        ],
+        2,
+        "a=F(1/m)."
+      ]
+    ],
+    "calc": [
+      "A measured velocity rise is1.2 m/s over0.4 s. Find average acceleration.",
+      3,
+      "1.2 ÷ 0.4"
+    ],
+    "lab": {
+      "a": [
+        [
+          "6",
+          "6 N resultant"
+        ],
+        [
+          "12",
+          "12 N resultant"
+        ]
+      ],
+      "b": [
+        [
+          "3",
+          "3 kg total"
+        ],
+        [
+          "6",
+          "6 kg total"
+        ]
+      ],
+      "labels": [
+        "Supplied resultant",
+        "Total moving mass"
+      ],
+      "unit": "m/s² acceleration"
+    },
+    "separate": false,
+    "higher": false,
+    "film": false,
+    "extra": null
+  },
+  {
+    "k": "thirdlaw",
+    "title": "Newton’s third law",
+    "refs": [
+      "5.6.2.3"
+    ],
+    "cards": [
+      [
+        "Interactions come in pairs",
+        "When two objects interact, each exerts an equal-magnitude opposite-direction force on the other. Both forces are the same interaction type and act at the same time, on different objects. A larger object does not exert the larger member of the pair."
+      ],
+      [
+        "Name what acts on what",
+        "A hand pushes a wall; the wall pushes the hand oppositely. Earth pulls a falling object; the object pulls Earth oppositely. Equal forces can give very different accelerations because the masses differ. Do not put both forces in one object’s free-body diagram."
+      ],
+      [
+        "Equilibrium is a different account",
+        "Weight and support can balance on a stationary book, but their partners are book-on-Earth and book-on-table. Balanced forces act on the same object and may be different types; third-law partners act on different objects and are the same type."
+      ],
+      [
+        "Compare paired forces",
+        "Choose the magnitude of objectA onB and label its direction. Predict the signed force ofB onA, with right positive. The paired arrows sit on separate objects. No common acceleration is assumed, and the arrows do not cancel on one object."
+      ]
+    ],
+    "practice": [
+      [
+        "Third-law partners act on…",
+        [
+          "Different objects",
+          "The same object",
+          "Only objects with equal mass"
+        ],
+        0,
+        "They arise from one mutual interaction."
+      ],
+      [
+        "The two partner forces are…",
+        [
+          "Unequal if masses differ",
+          "Equal magnitude, opposite direction",
+          "Equal direction"
+        ],
+        1,
+        "The accelerations may still differ."
+      ],
+      [
+        "Weight/support on one book are…",
+        [
+          "A third-law pair",
+          "Always unequal",
+          "A possible balanced pair, not third-law partners"
+        ],
+        2,
+        "They act on the same object."
+      ]
+    ],
+    "check": [
+      [
+        "A lorry exerts500 N on a small car. Car-on-lorry force is…",
+        [
+          "500 N opposite",
+          "Smaller because car is lighter",
+          "Zero"
+        ],
+        0,
+        "Partner force magnitudes are equal."
+      ],
+      [
+        "Earth and an apple have different accelerations because…",
+        [
+          "Their gravity forces differ in magnitude",
+          "Their masses differ",
+          "Only the apple feels gravity"
+        ],
+        1,
+        "a=F/m for equal force magnitudes."
+      ],
+      [
+        "Partner to table-on-book support is…",
+        [
+          "Earth-on-book gravity",
+          "Book-on-Earth gravity",
+          "Book-on-table contact"
+        ],
+        2,
+        "Reverse the acting and receiving objects for the same interaction."
+      ]
+    ],
+    "calc": [
+      "A-on-B is +14 N (right positive). Find signed B-on-A force.",
+      -14,
+      "−14"
+    ],
+    "lab": {
+      "a": [
+        [
+          "10",
+          "10 N magnitude"
+        ],
+        [
+          "20",
+          "20 N magnitude"
+        ]
+      ],
+      "b": [
+        [
+          "-1",
+          "A-on-B points left"
+        ],
+        [
+          "1",
+          "A-on-B points right"
+        ]
+      ],
+      "labels": [
+        "Force magnitude",
+        "A-on-B direction"
+      ],
+      "unit": "N B-on-A (right positive)"
+    },
+    "separate": false,
+    "higher": false,
+    "film": false,
+    "extra": null
+  },
+  {
+    "k": "stopping",
+    "title": "Thinking distance, reaction time and stopping",
+    "refs": [
+      "5.6.3.1",
+      "5.6.3.2",
+      "5.6.3.3"
+    ],
+    "cards": [
+      [
+        "Two parts of stopping",
+        "Stopping distance = thinking distance + braking distance. During reaction time the vehicle is still travelling before braking begins. At roughly constant speed, thinking distance = speed × reaction time. Braking distance begins when the brakes act."
+      ],
+      [
+        "Reaction time varies",
+        "Typical human reaction times are about0.2–0.9 s. Tiredness, drugs/alcohol and distractions can increase reaction time. Measure with a ruler-drop test or a computer/light response test; control anticipation and practise effects, repeat and compare variability. A ruler measures fall distance, which must be converted to time using a supplied relationship."
+      ],
+      [
+        "Road and vehicle conditions",
+        "Wet/icy roads and poor tyres/brakes can increase braking distance by reducing effective braking. They need not increase the driver’s intrinsic reaction time. Higher speed increases thinking distance and usually braking distance. Compare supplied emergency-stop graphs for different vehicles/conditions; values are not interchangeable universal rules."
+      ],
+      [
+        "Watch the thinking interval",
+        "Choose speed and reaction time; predict distance travelled before braking starts. The loop separates a highlighted thinking phase from an illustrative later braking phase. Its selected control predicts only thinking distance; actual braking needs additional force/mass/road information."
+      ]
+    ],
+    "practice": [
+      [
+        "Stopping distance is…",
+        [
+          "Thinking plus braking distance",
+          "Only braking distance",
+          "Speed plus time"
+        ],
+        0,
+        "The thinking interval comes before brake application."
+      ],
+      [
+        "At fixed speed, a longer reaction time gives…",
+        [
+          "Less thinking distance",
+          "More thinking distance",
+          "Identical thinking distance"
+        ],
+        1,
+        "Distance=vt during reaction."
+      ],
+      [
+        "Wet roads mainly affect the…",
+        [
+          "Atomic mass",
+          "Direction convention",
+          "Braking distance"
+        ],
+        2,
+        "Grip/braking performance can change."
+      ]
+    ],
+    "check": [
+      [
+        "At10 m/s and reaction0.6 s, thinking distance is…",
+        [
+          "6 m",
+          "16.7 m",
+          "0.06 m"
+        ],
+        0,
+        "10×0.6=6."
+      ],
+      [
+        "Thinking8 m and braking24 m give stopping distance…",
+        [
+          "16 m",
+          "32 m",
+          "3 m"
+        ],
+        1,
+        "Add the two distances."
+      ],
+      [
+        "To compare reaction tests fairly, consider…",
+        [
+          "Only the ruler colour",
+          "Only the tallest student",
+          "Practice, anticipation, repeats and test conditions"
+        ],
+        2,
+        "Method effects can alter the apparent reaction time."
+      ]
+    ],
+    "calc": [
+      "At15 m/s with reaction0.8 s, find thinking distance.",
+      12,
+      "15 × 0.8"
+    ],
+    "lab": {
+      "a": [
+        [
+          "10",
+          "10 m/s"
+        ],
+        [
+          "20",
+          "20 m/s"
+        ]
+      ],
+      "b": [
+        [
+          "0.4",
+          "0.4 s"
+        ],
+        [
+          "0.8",
+          "0.8 s"
+        ]
+      ],
+      "labels": [
+        "Speed",
+        "Reaction time"
+      ],
+      "unit": "m thinking distance"
+    },
+    "separate": false,
+    "higher": false,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "braking",
+    "title": "Braking, energy and deceleration",
+    "refs": [
+      "5.6.3.3",
+      "5.6.3.4"
+    ],
+    "cards": [
+      [
+        "Transfer kinetic energy",
+        "Brake friction transfers energy from the vehicle’s kinetic store to internal energy of brakes and surroundings; brake temperature rises. Work done by an approximately constant braking force is Fs. Setting that equal to½mv² gives an ideal stopping-energy account."
+      ],
+      [
+        "Speed matters strongly",
+        "For fixed mass and braking force, doubling speed gives four times the initial kinetic energy and four times the ideal braking distance. Real road grip, brake/tyre condition and weather alter the available force. These assumptions must be stated when interpreting a squared-speed trend."
+      ],
+      [
+        "Deceleration and control",
+        "For a given distance, greater speed requires greater braking force. Larger braking force gives larger deceleration. Very large deceleration can cause loss of control and brakes can overheat. A generated energy comparison cannot establish safe stopping distances for a real journey."
+      ],
+      [
+        "Compare an ideal stop",
+        "The toy vehicle has mass1000 kg. Choose speed and constant opposing force; predict distance from½mv²/F. The film shows velocity falling and transferred energy increasing; it omits thinking time, tyre dynamics, brake fading, gradient and drag."
+      ]
+    ],
+    "practice": [
+      [
+        "Braking transfers kinetic energy mainly into…",
+        [
+          "Internal energy",
+          "Extra mass",
+          "New protons"
+        ],
+        0,
+        "Brakes and surroundings warm."
+      ],
+      [
+        "At fixed mass/force, doubling speed makes ideal braking distance…",
+        [
+          "Double",
+          "Four times as large",
+          "Half"
+        ],
+        1,
+        "Initial kinetic energy depends on v²."
+      ],
+      [
+        "Greater braking force gives…",
+        [
+          "Less deceleration always",
+          "No energy transfer",
+          "Greater deceleration"
+        ],
+        2,
+        "F=ma relates resultant force to acceleration."
+      ]
+    ],
+    "check": [
+      [
+        "A car’s speed triples at fixed mass. Its kinetic energy becomes…",
+        [
+          "Nine times larger",
+          "Three times larger",
+          "One-third"
+        ],
+        0,
+        "Energy scales with speed squared."
+      ],
+      [
+        "Why can an ideal model underestimate a real stop?",
+        [
+          "Its units are correct",
+          "Grip, overheating and other conditions differ",
+          "Energy is always destroyed"
+        ],
+        1,
+        "The simplified constant-force assumptions can fail."
+      ],
+      [
+        "At fixed braking force, a heavier vehicle at the same speed has…",
+        [
+          "Less kinetic energy",
+          "Zero braking work",
+          "More kinetic energy and ideal braking distance"
+        ],
+        2,
+        "Both are proportional to mass under the assumptions."
+      ]
+    ],
+    "calc": [
+      "For1000 kg at10 m/s, find initial kinetic energy in J.",
+      50000,
+      "0.5 × 1000 × 10²"
+    ],
+    "lab": {
+      "a": [
+        [
+          "10",
+          "10 m/s"
+        ],
+        [
+          "20",
+          "20 m/s"
+        ]
+      ],
+      "b": [
+        [
+          "2500",
+          "2500 N"
+        ],
+        [
+          "5000",
+          "5000 N"
+        ]
+      ],
+      "labels": [
+        "Initial speed (mass1000 kg)",
+        "Constant braking force"
+      ],
+      "unit": "m ideal braking distance"
+    },
+    "separate": false,
+    "higher": false,
+    "film": true,
+    "extra": {
+      "title": "Higher: estimate braking forces",
+      "text": "For a1000 kg vehicle slowing from20 m/s to rest in4 s, acceleration is−5 m/s² and resultant force is−5000 N. Alternatively energy lost200000 J over40 m gives average opposing force5000 N in an ideal level-road account. State whether your result is resultant force or braking force and which other forces are neglected."
+    }
+  },
+  {
+    "k": "momentum",
+    "title": "Momentum and conservation",
+    "refs": [
+      "5.7.1",
+      "5.7.2"
+    ],
+    "cards": [
+      [
+        "Mass times velocity",
+        "Momentum p=mv, in kg m/s. It is a vector, so choose positive direction and include signs. A2 kg trolley at3 m/s has momentum6 kg m/s. Equal speeds do not imply equal momentum if masses differ."
+      ],
+      [
+        "Define the closed system",
+        "Total momentum before an event equals total momentum after if the system has no resultant external force during it. The interaction forces between objects are internal; they redistribute momentum without changing the system total. Momentum conservation does not require kinetic energy conservation in every collision."
+      ],
+      [
+        "Explain a collision",
+        "If a moving trolley hits a stationary one, momentum can transfer to it. In a sticking collision the combined mass moves more slowly than the original trolley for equal masses. In explosions, opposite signed momenta can sum to the initial total. Direction signs prevent adding magnitudes incorrectly."
+      ],
+      [
+        "Explore the momentum account",
+        "Choose mass and signed velocity. Predict momentum and reveal a moving trolley with an arrow in its velocity direction. The demonstration isolates p=mv; the loop does not simulate an elastic collision law. Numerical two-object collision solving is reserved for the separate-Physics extension."
+      ]
+    ],
+    "practice": [
+      [
+        "Momentum is…",
+        [
+          "Mass times velocity",
+          "Mass divided by velocity",
+          "Only speed"
+        ],
+        0,
+        "p=mv."
+      ],
+      [
+        "Momentum conservation requires…",
+        [
+          "No internal interactions",
+          "No resultant external force on the system",
+          "Every collision to be elastic"
+        ],
+        1,
+        "Choose the system boundary."
+      ],
+      [
+        "A negative momentum indicates…",
+        [
+          "Negative mass",
+          "No motion",
+          "Motion opposite the chosen positive direction"
+        ],
+        2,
+        "Momentum is a signed vector component."
+      ]
+    ],
+    "check": [
+      [
+        "3 kg at−2 m/s has momentum…",
+        [
+          "−6 kg m/s",
+          "+6 kg m/s",
+          "−1.5 kg m/s"
+        ],
+        0,
+        "Mass is positive; velocity sets the sign."
+      ],
+      [
+        "Two trolleys stick. Kinetic energy…",
+        [
+          "Must stay constant because momentum does",
+          "Can decrease while total momentum is conserved",
+          "Must increase"
+        ],
+        1,
+        "Energy can transfer to internal stores/sound."
+      ],
+      [
+        "A closed explosion starting from rest must have…",
+        [
+          "Both momenta in the same direction",
+          "No fragment motion",
+          "Final vector momentum sum zero"
+        ],
+        2,
+        "Internal forces cannot change the system total."
+      ]
+    ],
+    "calc": [
+      "Find momentum of4 kg moving at3 m/s.",
+      12,
+      "4 × 3"
+    ],
+    "lab": {
+      "a": [
+        [
+          "2",
+          "2 kg"
+        ],
+        [
+          "4",
+          "4 kg"
+        ]
+      ],
+      "b": [
+        [
+          "-3",
+          "−3 m/s"
+        ],
+        [
+          "3",
+          "+3 m/s"
+        ]
+      ],
+      "labels": [
+        "Mass",
+        "Velocity (right positive)"
+      ],
+      "unit": "kg m/s momentum"
+    },
+    "separate": false,
+    "higher": true,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "collisions",
+    "title": "Calculating collision and recoil momentum",
+    "refs": [
+      "5.7.2"
+    ],
+    "cards": [
+      [
+        "Write before equals after",
+        "For an isolated two-object event, m₁u₁+m₂u₂=m₁v₁+m₂v₂ along a chosen positive direction. Include both objects and signs. This numerical collision-solving requirement is separate Physics Higher; Trilogy uses the conservation concept."
+      ],
+      [
+        "A sticking example",
+        "A2 kg trolley at3 m/s sticks to a stationary4 kg trolley. Initial momentum6 kg m/s equals6v afterwards, so v=1 m/s. Check that units are kg m/s and final velocity is plausible. Kinetic energy decreases; momentum still balances."
+      ],
+      [
+        "Recoil and opposite directions",
+        "An initially stationary system has total momentum zero. If a1 kg object leaves at+4 m/s, the remaining2 kg must have−4 kg m/s and velocity−2 m/s. Opposite signs matter; do not conserve scalar speeds. Real external forces may make a chosen system only approximately isolated."
+      ],
+      [
+        "Predict a sticking collision",
+        "The target trolley has mass2 kg and starts at rest. Choose moving mass and initial velocity; predict their common final velocity. The animation shows a single ideal sticking event and a momentum ledger. It omits wheel friction, deformation detail and kinetic-energy recovery."
+      ]
+    ],
+    "practice": [
+      [
+        "In collision calculations conserve total…",
+        [
+          "Signed momentum",
+          "Speed",
+          "Kinetic energy in every case"
+        ],
+        0,
+        "Direction is part of the vector account."
+      ],
+      [
+        "After trolleys stick, the moving mass is…",
+        [
+          "Only the original moving trolley",
+          "The sum of both masses",
+          "Always1 kg"
+        ],
+        1,
+        "They share the final velocity."
+      ],
+      [
+        "An explosion from rest gives final momenta whose sum is…",
+        [
+          "Always positive",
+          "Equal to total mass",
+          "Zero"
+        ],
+        2,
+        "Assuming no resultant external force."
+      ]
+    ],
+    "check": [
+      [
+        "1 kg at6 m/s sticks to stationary2 kg. Final velocity is…",
+        [
+          "2 m/s",
+          "6 m/s",
+          "3 m/s"
+        ],
+        0,
+        "6 kg m/s divided by3 kg."
+      ],
+      [
+        "A1 kg piece has+6 kg m/s. A3 kg remainder from a system initially at rest has velocity…",
+        [
+          "+2 m/s",
+          "−2 m/s",
+          "−6 m/s"
+        ],
+        1,
+        "Its momentum is−6;divide by3."
+      ],
+      [
+        "A result giving more momentum after an isolated collision than before suggests…",
+        [
+          "A valid closed-system solution",
+          "That direction is irrelevant",
+          "An error in signs, masses or assumptions"
+        ],
+        2,
+        "Check both sides of the equation."
+      ]
+    ],
+    "calc": [
+      "2 kg at4 m/s sticks to stationary2 kg. Find common final velocity.",
+      2,
+      "(2 × 4) ÷ (2 + 2)"
+    ],
+    "lab": {
+      "a": [
+        [
+          "2",
+          "2 kg incoming"
+        ],
+        [
+          "4",
+          "4 kg incoming"
+        ]
+      ],
+      "b": [
+        [
+          "2",
+          "2 m/s incoming"
+        ],
+        [
+          "4",
+          "4 m/s incoming"
+        ]
+      ],
+      "labels": [
+        "Incoming mass (target2 kg)",
+        "Incoming velocity"
+      ],
+      "unit": "m/s final common velocity"
+    },
+    "separate": true,
+    "higher": true,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "impact",
+    "title": "Force, momentum change and protection",
+    "refs": [
+      "5.7.3"
+    ],
+    "cards": [
+      [
+        "Change momentum over time",
+        "A resultant force changes momentum. Average force F=Δp/Δt, in newtons. Use final momentum minus initial momentum and a consistent positive direction. A2 kg object slowing from10 m/s to rest changes momentum by−20 kg m/s."
+      ],
+      [
+        "Spread the change over longer time",
+        "For the same momentum change, increasing collision time reduces average force. Seat belts, airbags, crumple zones and landing mats increase stopping time/distance while restraining or cushioning motion. They do not remove the momentum change required to stop an object."
+      ],
+      [
+        "Evaluate a protection claim",
+        "A force calculated from Δp/Δt is an average, not necessarily the peak. Compare supplied time, force and injury-related evidence; a longer stopping interval alone does not guarantee every outcome. Protection must restrain the object effectively and avoid additional hazards."
+      ],
+      [
+        "Compare two stopping times",
+        "A toy object of2 kg stops from a selected speed. Choose stopping time and predict force magnitude2v/t. The animation stretches the stopping sequence for clarity. It is not a crash-test body model or a design certification."
+      ]
+    ],
+    "practice": [
+      [
+        "Average force equals…",
+        [
+          "Momentum change divided by time",
+          "Momentum change times time",
+          "Only the mass"
+        ],
+        0,
+        "F=Δp/Δt."
+      ],
+      [
+        "For the same Δp, doubling stopping time…",
+        [
+          "Doubles force",
+          "Halves average force",
+          "Removes all force"
+        ],
+        1,
+        "Force is inversely proportional to time."
+      ],
+      [
+        "An average force is…",
+        [
+          "Always the peak force",
+          "An injury guarantee",
+          "A time-averaged momentum-change rate"
+        ],
+        2,
+        "Real force can vary throughout the collision."
+      ]
+    ],
+    "check": [
+      [
+        "Momentum changes by−30 kg m/s in0.5 s. Average force is…",
+        [
+          "−60 N",
+          "−15 N",
+          "+60 N"
+        ],
+        0,
+        "Use the signed change divided by time."
+      ],
+      [
+        "An airbag reduces average force by…",
+        [
+          "Eliminating the stopping momentum change",
+          "Increasing stopping time",
+          "Removing mass"
+        ],
+        1,
+        "The same object still has to stop."
+      ],
+      [
+        "A useful model limitation is…",
+        [
+          "It draws arrows",
+          "It uses numbers",
+          "It gives average force without a peak-force/body response model"
+        ],
+        2,
+        "That limits claims about injury or equipment performance."
+      ]
+    ],
+    "calc": [
+      "An object changes momentum by−24 kg m/s over0.3 s. Find signed average force.",
+      -80,
+      "−24 ÷ 0.3"
+    ],
+    "lab": {
+      "a": [
+        [
+          "4",
+          "Initial4 m/s"
+        ],
+        [
+          "8",
+          "Initial8 m/s"
+        ]
+      ],
+      "b": [
+        [
+          "0.2",
+          "0.2 s"
+        ],
+        [
+          "0.4",
+          "0.4 s"
+        ]
+      ],
+      "labels": [
+        "Initial speed (mass2 kg, final rest)",
+        "Stopping time"
+      ],
+      "unit": "N average force magnitude"
+    },
+    "separate": true,
+    "higher": true,
+    "film": true,
+    "extra": null
+  }
+]

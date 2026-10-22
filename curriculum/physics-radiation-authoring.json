@@ -1,0 +1,1310 @@
+[
+  {
+    "k": "atoms",
+    "title": "Atoms, isotopes and energy levels",
+    "refs": [
+      "4.1.1",
+      "4.1.2"
+    ],
+    "separate": false,
+    "cards": [
+      [
+        "A tiny nucleus, a much larger atom",
+        "An atom has a radius of about 1 × 10⁻¹⁰ m. Its positive nucleus contains protons and neutrons and holds most of its mass. The nuclear radius is less than one ten-thousandth of the atomic radius. The enlarged nucleus in this view cannot share the electron-shell scale."
+      ],
+      [
+        "Read the nuclear account",
+        "Atomic number Z counts protons. Mass number A counts protons plus neutrons; neutrons = A − Z. Neutral atoms have Z electrons. Isotopes share Z but differ in neutron number. A carbon-14 atom has 6 protons, 8 neutrons and 6 electrons. Losing an outer electron makes a positive ion without changing the nucleus."
+      ],
+      [
+        "Energy enters and leaves",
+        "Absorbing electromagnetic radiation can move an electron to a higher energy level, farther from the nucleus. A transition to a lower level emits electromagnetic radiation. These are electron transitions; they do not change proton number or describe nuclear decay."
+      ],
+      [
+        "Change the isotope or charge",
+        "Choose carbon-12 or carbon-14, then a neutral atom or singly positive ion. Predict the neutron and electron counts before revealing. Isotope changes affect neutrons; ion formation affects electrons. Shell rings and glowing markers are a teaching convention, not literal planetary paths."
+      ]
+    ],
+    "cases": [
+      [
+        "Changing carbon-12 to carbon-14 changes…",
+        [
+          "Neutron number",
+          "Proton number",
+          "Element identity"
+        ],
+        0,
+        "Both have Z=6; A differs by two."
+      ],
+      [
+        "A positive ion forms when an atom…",
+        [
+          "Gains a proton",
+          "Loses an outer electron",
+          "Loses its entire nucleus"
+        ],
+        1,
+        "Removing negative charge gives a positive ion."
+      ],
+      [
+        "An electron emits radiation when it…",
+        [
+          "Moves to a higher level",
+          "Becomes a neutron",
+          "Moves to a lower energy level"
+        ],
+        2,
+        "The emitted radiation carries away the energy difference."
+      ]
+    ],
+    "application": [
+      "A neutral nucleus has Z=11 and A=23. How many neutrons?",
+      12,
+      "23 − 11",
+      "A minus Z counts neutrons."
+    ],
+    "check": [
+      [
+        "A neutral atom has 9 protons. Its electron count is…",
+        [
+          "9",
+          "18",
+          "0"
+        ],
+        0,
+        "Neutral charge balances equal proton and electron numbers."
+      ],
+      [
+        "Two atoms have Z=8 and A=16/18. They are…",
+        [
+          "Different elements",
+          "Isotopes of one element",
+          "Oppositely charged ions necessarily"
+        ],
+        1,
+        "Equal Z identifies the element; A changes the neutron count."
+      ],
+      [
+        "An atom absorbs radiation and an electron moves outward. The nucleus…",
+        [
+          "Must split",
+          "Gains a proton",
+          "Can remain unchanged"
+        ],
+        2,
+        "Excitation is an electron-level change."
+      ]
+    ],
+    "lab": {
+      "a": [
+        [
+          "12",
+          "Carbon-12"
+        ],
+        [
+          "14",
+          "Carbon-14"
+        ]
+      ],
+      "b": [
+        [
+          "0",
+          "Neutral"
+        ],
+        [
+          "1",
+          "Singly positive"
+        ]
+      ],
+      "labels": [
+        "Isotope (Z=6)",
+        "Charge state"
+      ],
+      "unit": "neutrons / electrons",
+      "choices": [
+        [
+          "6/6",
+          "6 neutrons / 6 electrons"
+        ],
+        [
+          "6/5",
+          "6 neutrons / 5 electrons"
+        ],
+        [
+          "8/6",
+          "8 neutrons / 6 electrons"
+        ],
+        [
+          "8/5",
+          "8 neutrons / 5 electrons"
+        ]
+      ]
+    }
+  },
+  {
+    "k": "evidence",
+    "title": "How evidence changed the atom",
+    "refs": [
+      "4.1.3"
+    ],
+    "separate": false,
+    "cards": [
+      [
+        "Models answer to evidence",
+        "The early indivisible-sphere model changed after the electron was discovered. The plum-pudding model placed negative electrons inside spread-out positive charge. A scientific model must explain observations and may be replaced when new evidence disagrees."
+      ],
+      [
+        "Most pass through; a few turn back",
+        "In alpha scattering, most particles passed through thin metal foil with little deflection: the atom is mostly empty space. A small fraction deflected strongly or returned: positive charge and much of the mass occupy a tiny dense nucleus. The movie deliberately shows rare large deflections more often so you can see them."
+      ],
+      [
+        "Refine the nuclear model",
+        "Bohr proposed electrons at specific distances/energy levels; his calculations agreed with observations. Later work identified proton units of positive nuclear charge. Chadwick supplied evidence for neutrons about twenty years after the nuclear model was accepted. Detailed Bohr and Chadwick experimental apparatus is not required."
+      ],
+      [
+        "Test an explanation",
+        "Compare spread-out positive charge with a concentrated nucleus. Choose a beam passing far from the centre or close to it. Predict the model’s qualitative deflection. Individual paths and encounter frequencies are schematic; use the actual distribution of observations, not this edited movie, as historical evidence."
+      ]
+    ],
+    "cases": [
+      [
+        "Most alpha particles passing through suggests…",
+        [
+          "Mostly empty space",
+          "A completely solid atom",
+          "No nucleus can exist"
+        ],
+        0,
+        "Most paths encounter very little concentrated matter."
+      ],
+      [
+        "Rare large deflections imply…",
+        [
+          "Spread-out negative mass",
+          "A small concentrated positive nucleus",
+          "Every atom has a huge nucleus"
+        ],
+        1,
+        "Positive alphas can be strongly repelled in rare close approaches."
+      ],
+      [
+        "Chadwick is associated with evidence for…",
+        [
+          "Energy-level rings",
+          "The original sphere",
+          "Neutrons"
+        ],
+        2,
+        "Neutrons explain neutral nuclear mass."
+      ]
+    ],
+    "application": [
+      "Out of 20000 incident particles, 10 turn back. What percentage turns back?",
+      0.05,
+      "10 ÷ 20000 × 100",
+      "Rare events still place strong constraints on models."
+    ],
+    "check": [
+      [
+        "Why replace plum pudding?",
+        [
+          "It failed to explain rare strong scattering",
+          "It was older than Bohr",
+          "It contained electrons"
+        ],
+        0,
+        "A model is judged against evidence."
+      ],
+      [
+        "Which refinement concerns fixed electron energies?",
+        [
+          "Chadwick’s neutron",
+          "Bohr’s energy levels",
+          "A larger nucleus"
+        ],
+        1,
+        "Bohr adapted the nuclear model."
+      ],
+      [
+        "A teaching movie repeats one backscatter in five paths. This means…",
+        [
+          "20% of real alphas backscatter",
+          "The nucleus fills the atom",
+          "The rare event is exaggerated for clarity"
+        ],
+        2,
+        "Edited illustrative frequency is not measured evidence."
+      ]
+    ],
+    "lab": {
+      "a": [
+        [
+          "diffuse",
+          "Spread-out positive charge"
+        ],
+        [
+          "nuclear",
+          "Concentrated positive nucleus"
+        ]
+      ],
+      "b": [
+        [
+          "far",
+          "Far from centre"
+        ],
+        [
+          "close",
+          "Close approach"
+        ]
+      ],
+      "labels": [
+        "Model",
+        "Alpha approach"
+      ],
+      "unit": "qualitative deflection",
+      "choices": [
+        [
+          "small",
+          "Small deflection"
+        ],
+        [
+          "large",
+          "Strong deflection"
+        ]
+      ]
+    }
+  },
+  {
+    "k": "radiation",
+    "title": "Activity and types of radiation",
+    "refs": [
+      "4.2.1"
+    ],
+    "separate": false,
+    "cards": [
+      [
+        "An unstable nucleus changes",
+        "Radioactive decay is spontaneous and random: you cannot predict exactly when one nucleus will decay. Activity counts decays per second, in becquerel (Bq). A detector’s count rate counts recorded events per second; geometry, absorption and detector efficiency mean it need not equal the source activity."
+      ],
+      [
+        "Three emissions, different identities",
+        "Alpha is a helium nucleus: two protons and two neutrons. Beta-minus is a fast electron produced in the nucleus when a neutron becomes a proton; it is not an electron falling out of an outer shell. Gamma is electromagnetic radiation from the nucleus. Neutron emission is also possible."
+      ],
+      [
+        "Penetration and ionisation",
+        "Alpha is strongly ionising with a short air range (a few centimetres) and is stopped by paper/skin. Beta has intermediate ionisation and range, and thin aluminium can stop it. Gamma is weakly ionising and very penetrating; thick lead or concrete reduces its intensity rather than guaranteeing zero transmission."
+      ],
+      [
+        "Match a source to a job",
+        "A thickness gauge needs some radiation absorbed and some transmitted. An external source must reach its target; an internal alpha emitter can be very damaging to nearby tissue. Compare alpha/beta through paper/aluminium. Our barrier model gives qualitative outcomes, not dose or exact shield thicknesses."
+      ]
+    ],
+    "cases": [
+      [
+        "Activity measures…",
+        [
+          "Decays per second",
+          "Number of protons",
+          "Only detector clicks"
+        ],
+        0,
+        "One Bq means one nuclear decay each second."
+      ],
+      [
+        "Beta-minus comes from…",
+        [
+          "An outer shell falling off",
+          "A nuclear neutron changing to a proton",
+          "Two protons joining"
+        ],
+        1,
+        "The electron is produced in a nuclear change."
+      ],
+      [
+        "Which is most penetrating?",
+        [
+          "Alpha",
+          "Beta",
+          "Gamma"
+        ],
+        2,
+        "Gamma intensity is reduced by substantial shielding."
+      ]
+    ],
+    "application": [
+      "A detector records 240 events in 60 s. Find mean count rate.",
+      4,
+      "240 ÷ 60",
+      "Count rate = recorded counts ÷ counting time."
+    ],
+    "check": [
+      [
+        "A source has activity 100 Bq; a detector reads 12 counts/s. This is…",
+        [
+          "Possible: not every decay is detected",
+          "Impossible: both must be equal",
+          "Proof of no background"
+        ],
+        0,
+        "Detector geometry/efficiency and absorption matter."
+      ],
+      [
+        "Which emission is a helium nucleus?",
+        [
+          "Gamma",
+          "Alpha",
+          "Beta"
+        ],
+        1,
+        "Alpha contains two protons and two neutrons."
+      ],
+      [
+        "An external alpha source behind paper gives…",
+        [
+          "Guaranteed huge transmitted dose",
+          "More penetration than gamma",
+          "Strongly reduced alpha transmission"
+        ],
+        2,
+        "Paper stops alpha in this qualitative comparison."
+      ]
+    ],
+    "lab": {
+      "a": [
+        [
+          "alpha",
+          "Alpha"
+        ],
+        [
+          "beta",
+          "Beta"
+        ]
+      ],
+      "b": [
+        [
+          "paper",
+          "Paper"
+        ],
+        [
+          "aluminium",
+          "Thin aluminium"
+        ]
+      ],
+      "labels": [
+        "Emission",
+        "Barrier"
+      ],
+      "unit": "qualitative transmission",
+      "choices": [
+        [
+          "stopped",
+          "Stopped in the model"
+        ],
+        [
+          "passes",
+          "Passes in the model"
+        ]
+      ]
+    }
+  },
+  {
+    "k": "equations",
+    "title": "Balance nuclear equations",
+    "refs": [
+      "4.2.2"
+    ],
+    "separate": false,
+    "cards": [
+      [
+        "Keep two accounts",
+        "Nuclear equations balance total mass number (top number A) and atomic number/charge number (bottom number Z) on each side. Use ⁴₂α and ⁰₋₁β for alpha and beta-minus. The daughter element symbol may be supplied; identifying an unfamiliar daughter element is not required."
+      ],
+      [
+        "Alpha removes a small nucleus",
+        "In single alpha decay, the daughter has A − 4 and Z − 2. A parent with A=210,Z=84 produces a daughter with A=206,Z=82 plus ⁴₂α. The whole equation still totals A=210 and Z=84. Mass number is a nucleon count, not the emitted energy."
+      ],
+      [
+        "Beta changes nuclear charge",
+        "In beta-minus decay a neutron becomes a proton. Daughter A stays the same and Z increases by one; adding the emitted electron’s −1 balances charge. With A=14,Z=6, the daughter has A=14,Z=7. Gamma emission changes neither A nor Z."
+      ],
+      [
+        "Rebuild the ledger",
+        "Select one of two supplied parents and alpha/beta decay. Predict daughter A and Z before revealing. The animation isolates one event and uses enlarged symbols; it is not a prediction of a particular atom’s waiting time. Conservation applies to the entire equation, not the daughter alone."
+      ]
+    ],
+    "cases": [
+      [
+        "Single alpha decay changes daughter A by…",
+        [
+          "−4",
+          "+4",
+          "0"
+        ],
+        0,
+        "Alpha carries four nucleons away."
+      ],
+      [
+        "Single beta-minus decay changes daughter Z by…",
+        [
+          "−1",
+          "+1",
+          "0"
+        ],
+        1,
+        "The electron’s −1 balances an increase of one in nuclear charge."
+      ],
+      [
+        "Gamma changes A and Z by…",
+        [
+          "−4 and −2",
+          "0 and +1",
+          "0 and 0"
+        ],
+        2,
+        "Gamma carries energy without changing those counts."
+      ]
+    ],
+    "application": [
+      "A parent has A=238. After one alpha decay, find daughter A.",
+      234,
+      "238 − 4",
+      "One alpha carries four nucleons."
+    ],
+    "check": [
+      [
+        "After beta-minus decay of A=32,Z=15, daughter values are…",
+        [
+          "A32,Z16",
+          "A28,Z13",
+          "A32,Z14"
+        ],
+        0,
+        "A unchanged, Z increases by one."
+      ],
+      [
+        "After alpha decay of A=226,Z=88, daughter values are…",
+        [
+          "A226,Z89",
+          "A222,Z86",
+          "A230,Z90"
+        ],
+        1,
+        "Subtract four and two."
+      ],
+      [
+        "Why does beta-minus balance charge?",
+        [
+          "The electron has +1",
+          "Z falls by one",
+          "Daughter Z rises by one and emitted electron has −1"
+        ],
+        2,
+        "Total charge number remains the parent value."
+      ]
+    ],
+    "lab": {
+      "a": [
+        [
+          "210:84",
+          "Parent A210 Z84"
+        ],
+        [
+          "14:6",
+          "Parent A14 Z6"
+        ]
+      ],
+      "b": [
+        [
+          "alpha",
+          "Alpha decay"
+        ],
+        [
+          "beta",
+          "Beta-minus decay"
+        ]
+      ],
+      "labels": [
+        "Supplied parent (symbol X)",
+        "Emission"
+      ],
+      "unit": "daughter A / Z",
+      "choices": [
+        [
+          "206/82",
+          "206 / 82"
+        ],
+        [
+          "210/85",
+          "210 / 85"
+        ],
+        [
+          "10/4",
+          "10 / 4"
+        ],
+        [
+          "14/7",
+          "14 / 7"
+        ]
+      ]
+    }
+  },
+  {
+    "k": "half-life",
+    "title": "Random decay and half-life",
+    "refs": [
+      "4.2.3"
+    ],
+    "separate": false,
+    "cards": [
+      [
+        "Random individuals, predictable populations",
+        "A single nucleus has no scheduled decay time. For a large sample, a roughly constant fraction decays in equal intervals. Half-life is the time for the number of original unstable nuclei, activity or background-corrected count rate to fall to half its starting value."
+      ],
+      [
+        "Read a decay curve",
+        "For a source count rate 80,40,20,10 counts/s at 0,4,8,12 minutes, the half-life is 4 minutes. Start at any point and find the time to half that value. Equal half-lives remove equal fractions, not equal absolute counts. Small samples fluctuate more around a smooth expected curve."
+      ],
+      [
+        "Remove background first",
+        "If total rate is 50 counts/s and background is 10, the source contributes 40. Half this source rate is 20, so the corresponding total is 30, not 25. Keep detector geometry and counting time comparable; repeated/longer counts reduce relative random variation."
+      ],
+      [
+        "Follow an expected population",
+        "Choose 80 or 160 original nuclei and one or two half-lives. Predict the expected survivors. Markers disappear in a deterministic teaching sequence; real individual decay times are random. The smooth account gives an expectation, not a guarantee for a small real sample."
+      ]
+    ],
+    "cases": [
+      [
+        "Half-life means…",
+        [
+          "Time to halve original unstable nuclei",
+          "Time until every atom must decay",
+          "Time to remove half the protons per atom"
+        ],
+        0,
+        "It concerns a population of original unstable nuclei."
+      ],
+      [
+        "Equal half-lives remove…",
+        [
+          "Equal absolute numbers always",
+          "Equal fractions on average",
+          "No nuclei after the first interval"
+        ],
+        1,
+        "The surviving population gets smaller each interval."
+      ],
+      [
+        "Before finding half-life from detector rates, subtract…",
+        [
+          "The half-life",
+          "Source age",
+          "Background count rate"
+        ],
+        2,
+        "You need the source contribution."
+      ]
+    ],
+    "application": [
+      "Total rate is 74 counts/s; background is 10. Find source rate.",
+      64,
+      "74 − 10",
+      "Subtract background measured with the source removed."
+    ],
+    "check": [
+      [
+        "Corrected rates 96→48 take 3 min. Half-life is…",
+        [
+          "3 min",
+          "6 min",
+          "48 min"
+        ],
+        0,
+        "One halving takes three minutes."
+      ],
+      [
+        "Which individual nucleus decays next?",
+        [
+          "The oldest must",
+          "Cannot be predicted exactly",
+          "The largest drawn marker"
+        ],
+        1,
+        "Radioactive decay is random."
+      ],
+      [
+        "Total initial rate 30 with background 6. At one half-life total should be about…",
+        [
+          "15",
+          "12",
+          "18 counts/s"
+        ],
+        2,
+        "Source24 halves to12; add background6."
+      ]
+    ],
+    "lab": {
+      "a": [
+        [
+          "80",
+          "80 original nuclei"
+        ],
+        [
+          "160",
+          "160 original nuclei"
+        ]
+      ],
+      "b": [
+        [
+          "1",
+          "One half-life"
+        ],
+        [
+          "2",
+          "Two half-lives"
+        ]
+      ],
+      "labels": [
+        "Initial population",
+        "Elapsed intervals"
+      ],
+      "unit": "expected surviving nuclei"
+    }
+  },
+  {
+    "k": "hazards",
+    "title": "Contamination, irradiation and protection",
+    "refs": [
+      "4.2.4"
+    ],
+    "separate": false,
+    "cards": [
+      [
+        "Source material or exposure?",
+        "Contamination means unwanted radioactive material is present on or inside something. It continues emitting until removed or decayed. Irradiation means exposure to nuclear radiation; ordinary irradiation in this GCSE model does not make the exposed object radioactive."
+      ],
+      [
+        "Follow what remains",
+        "Move a sealed source away and irradiation from it ends. Remove an external source but leave contaminating dust behind and that dust remains a source. Contamination can spread; external irradiation is not itself a transferable substance. Alpha’s short range is little protection when an alpha source is inside tissue."
+      ],
+      [
+        "Reduce unnecessary exposure",
+        "Use the shortest suitable exposure time, greater distance and appropriate shielding. Handle school sources only through supervised approved procedures, using suitable holders and secure storage. Containment reduces contamination; shielding reduces irradiation. The type of emission and exposure route affect risk."
+      ],
+      [
+        "Scrutinise claims",
+        "Studies about radiation effects should publish methods, results and limitations so other scientists can check them through peer review and further research. One result is not certainty. Compare sealed versus leaking sources and whether the source has been moved away; predict whether local radioactive material remains."
+      ]
+    ],
+    "cases": [
+      [
+        "Contamination means…",
+        [
+          "Unwanted radioactive material present",
+          "Any brief light exposure",
+          "An object becoming hot"
+        ],
+        0,
+        "The radioactive substance is on or inside the object."
+      ],
+      [
+        "Moving a sealed source away…",
+        [
+          "Makes the exposed object decay",
+          "Ends exposure from that source",
+          "Spreads all irradiation as dust"
+        ],
+        1,
+        "Exposure does not leave radioactive source material behind."
+      ],
+      [
+        "Peer review helps scientists…",
+        [
+          "Guarantee no error exists",
+          "Replace evidence with votes",
+          "Check methods and interpretations"
+        ],
+        2,
+        "Published work can be scrutinised and tested."
+      ]
+    ],
+    "application": [
+      "An illustrative handling plan reduces exposure from 40 s to 10 s at the same rate. How many seconds are avoided?",
+      30,
+      "40 − 10",
+      "Time is one factor; actual dose also depends on source and shielding."
+    ],
+    "check": [
+      [
+        "Which can spread to another surface?",
+        [
+          "Contaminating radioactive dust",
+          "Irradiation as a deposited material",
+          "A previously received dose"
+        ],
+        0,
+        "Physical radioactive material can transfer."
+      ],
+      [
+        "Best control for leaking powder is…",
+        [
+          "Only a longer exposure",
+          "Containment plus suitable procedures",
+          "Removing every detector"
+        ],
+        1,
+        "Containment addresses material transfer."
+      ],
+      [
+        "Internal alpha contamination can be hazardous because…",
+        [
+          "Alpha becomes gamma inside",
+          "Alpha stops ionising inside",
+          "Strong ionisation occurs near tissue"
+        ],
+        2,
+        "The emission deposits energy over a short distance."
+      ]
+    ],
+    "lab": {
+      "a": [
+        [
+          "sealed",
+          "Sealed source"
+        ],
+        [
+          "dust",
+          "Leaking dust contaminates surface"
+        ]
+      ],
+      "b": [
+        [
+          "near",
+          "External source nearby"
+        ],
+        [
+          "away",
+          "External source removed"
+        ]
+      ],
+      "labels": [
+        "Source condition",
+        "External source position"
+      ],
+      "unit": "radioactive material remaining on surface",
+      "choices": [
+        [
+          "no",
+          "No deposited source material"
+        ],
+        [
+          "yes",
+          "Contaminating source material remains"
+        ]
+      ]
+    }
+  },
+  {
+    "k": "background",
+    "title": "Background radiation and dose",
+    "refs": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "separate": true,
+    "cards": [
+      [
+        "Radiation is already around us",
+        "Natural background includes radioactive rocks (including radon from the ground) and cosmic radiation. Human-made sources include fallout from nuclear tests and accidents. Location and occupation change exposure. A detector reading without an experimental source is not necessarily zero."
+      ],
+      [
+        "Compare dose with units",
+        "Radiation dose is expressed in sieverts (Sv); 1 Sv = 1000 mSv. You are not required to recall the unit, but must use supplied units consistently. Dose and health risk depend on exposure conditions; detector counts are not automatically a dose measurement."
+      ],
+      [
+        "Half-life is part of a risk account",
+        "For the same number of radioactive nuclei, shorter half-life means higher initial activity. Long-lived material remains an issue for longer. Compare activity, radiation type, amount, exposure route and duration; half-life alone cannot rank every hazard."
+      ],
+      [
+        "Correct a detector reading",
+        "Choose an illustrative site background and a measured total count rate. Subtract background to estimate source count rate, keeping geometry/time comparable. These invented counts demonstrate data correction; they are not local radiation surveys or personal dose estimates."
+      ]
+    ],
+    "cases": [
+      [
+        "A natural background source is…",
+        [
+          "Cosmic radiation",
+          "Only medical apparatus",
+          "Only weapons tests"
+        ],
+        0,
+        "Radiation can arrive from space."
+      ],
+      [
+        "1000 mSv equals…",
+        [
+          "1000 Sv",
+          "1 Sv",
+          "0.001 Sv"
+        ],
+        1,
+        "The prefix milli is one-thousandth."
+      ],
+      [
+        "Half-life alone…",
+        [
+          "Determines all personal risk",
+          "Replaces exposure-route information",
+          "Cannot rank all radiation hazards"
+        ],
+        2,
+        "Activity, type, amount and exposure matter."
+      ]
+    ],
+    "application": [
+      "Convert a supplied dose of 0.004 Sv to mSv.",
+      4,
+      "0.004 × 1000",
+      "Use consistent units before comparison."
+    ],
+    "check": [
+      [
+        "Why measure background first?",
+        [
+          "To estimate counts not due to the source",
+          "To eliminate nuclear decay",
+          "To guarantee a zero reading"
+        ],
+        0,
+        "Background contributes to total counts."
+      ],
+      [
+        "For equal numbers of unstable nuclei, a shorter half-life generally gives…",
+        [
+          "Lower initial activity",
+          "Higher initial activity",
+          "Identical activity necessarily"
+        ],
+        1,
+        "A larger fraction decays per unit time."
+      ],
+      [
+        "Two occupations have different doses. Which is needed before explaining why?",
+        [
+          "Only the job titles",
+          "Only a colour chart",
+          "Exposure duration and source conditions"
+        ],
+        2,
+        "A causal comparison needs relevant exposure information."
+      ]
+    ],
+    "lab": {
+      "a": [
+        [
+          "8",
+          "Background 8 counts/s"
+        ],
+        [
+          "12",
+          "Background 12 counts/s"
+        ]
+      ],
+      "b": [
+        [
+          "40",
+          "Total 40 counts/s"
+        ],
+        [
+          "60",
+          "Total 60 counts/s"
+        ]
+      ],
+      "labels": [
+        "Measured background",
+        "Measured total"
+      ],
+      "unit": "source counts/s"
+    }
+  },
+  {
+    "k": "uses",
+    "title": "Using radiation in medicine",
+    "refs": [
+      "4.3.3"
+    ],
+    "separate": true,
+    "cards": [
+      [
+        "Trace an organ’s function",
+        "A radioactive tracer can be introduced into the body and detected outside it. A suitable gamma emitter can provide a signal that escapes the body. Its half-life should allow the measurement but avoid unnecessary prolonged exposure; chemistry should target the intended pathway."
+      ],
+      [
+        "Treat unwanted tissue",
+        "Radiotherapy uses ionising radiation to damage or destroy unwanted tissue. External beams can be aimed from several directions to concentrate dose at the target while limiting healthy-tissue exposure. Some treatments use sources placed near or within the target. This is a conceptual comparison, not a treatment plan."
+      ],
+      [
+        "Weigh benefit and harm",
+        "Evaluate supplied evidence about diagnostic or treatment benefit alongside radiation harm, alternatives, uncertainty and consequences of doing nothing. A short half-life is not automatically suitable if most activity disappears before a tracer reaches the organ. A long half-life may prolong unnecessary exposure."
+      ],
+      [
+        "Choose for a stated purpose",
+        "Compare a tracer requiring external detection with a source intended to deposit energy close to tissue. Select a short-range strongly ionising alpha emission or penetrating gamma radiation and predict whether it matches the stated physical purpose. Real clinical selection needs many additional factors."
+      ]
+    ],
+    "cases": [
+      [
+        "An externally detected tracer generally needs…",
+        [
+          "Radiation that can leave the body",
+          "All radiation stopped immediately",
+          "Only a long air range for alpha"
+        ],
+        0,
+        "Gamma can reach an external detector."
+      ],
+      [
+        "A tracer half-life should…",
+        [
+          "Always be the longest possible",
+          "Allow measurement without excessive persistence",
+          "Be zero"
+        ],
+        1,
+        "Balance time to measure against unnecessary exposure."
+      ],
+      [
+        "Radiotherapy aims to…",
+        [
+          "Make every healthy cell radioactive",
+          "Avoid all ionisation",
+          "Damage unwanted tissue while limiting other damage"
+        ],
+        2,
+        "Ionisation has benefits and risks depending on where it occurs."
+      ]
+    ],
+    "application": [
+      "A supplied comparison has 85 successful outcomes out of 100 cases. Find the percentage.",
+      85,
+      "85 ÷ 100 × 100",
+      "This invented proportion is not a clinical effectiveness estimate."
+    ],
+    "check": [
+      [
+        "A tracer decays almost entirely before reaching its target. It is…",
+        [
+          "Poorly matched to the measurement timescale",
+          "Automatically best",
+          "Safe regardless of dose"
+        ],
+        0,
+        "The measurement needs enough activity at the relevant time."
+      ],
+      [
+        "Why use several beam directions?",
+        [
+          "To raise dose uniformly everywhere",
+          "To concentrate target dose while spreading other exposure",
+          "To convert gamma into alpha"
+        ],
+        1,
+        "Geometry helps reduce damage outside the target."
+      ],
+      [
+        "Evaluate a claimed radiation benefit using…",
+        [
+          "Only fear of radiation",
+          "Only a bright image",
+          "Supplied benefits, harms, alternatives and uncertainty"
+        ],
+        2,
+        "Compare evidence and consequences."
+      ]
+    ],
+    "lab": {
+      "a": [
+        [
+          "tracer",
+          "Signal must escape body"
+        ],
+        [
+          "local",
+          "Deposit energy over a short distance"
+        ]
+      ],
+      "b": [
+        [
+          "alpha",
+          "Alpha emission"
+        ],
+        [
+          "gamma",
+          "Gamma emission"
+        ]
+      ],
+      "labels": [
+        "Physical purpose",
+        "Emission"
+      ],
+      "unit": "purpose match",
+      "choices": [
+        [
+          "match",
+          "Matches this physical requirement"
+        ],
+        [
+          "mismatch",
+          "Does not match this requirement"
+        ]
+      ]
+    }
+  },
+  {
+    "k": "fission",
+    "title": "Nuclear fission and chain reactions",
+    "refs": [
+      "4.4.1"
+    ],
+    "separate": true,
+    "cards": [
+      [
+        "Split a large unstable nucleus",
+        "Fission splits a large unstable nucleus, such as uranium or plutonium. Spontaneous fission is rare; usually the nucleus first absorbs a neutron. The split produces two smaller nuclei of roughly similar size, two or three neutrons and gamma radiation."
+      ],
+      [
+        "Track the released energy",
+        "The products have kinetic energy and energy is released. A chain reaction occurs when emitted neutrons trigger further fissions. Not every emitted neutron must cause another event: some escape or are absorbed without causing fission. Our diagram shows a selected branch, not exact reactor geometry."
+      ],
+      [
+        "Control the chain",
+        "A reactor controls the chain reaction and energy release, using neutron absorption to regulate further fissions. An uncontrolled chain reaction is associated with a nuclear weapon. Reactor operation and weapon engineering are not equivalent; the lesson models only the principle of neutron multiplication/control."
+      ],
+      [
+        "Count a toy generation",
+        "Choose one or two starting fissions and one or two successful next-generation triggers per fission. Predict next-generation fissions. Real products and neutron numbers vary; this branching arithmetic is an illustrative model, not a real reactor criticality calculation."
+      ]
+    ],
+    "cases": [
+      [
+        "Fission usually begins when a suitable nucleus absorbs…",
+        [
+          "A neutron",
+          "An outer electron only",
+          "A sound wave"
+        ],
+        0,
+        "Neutron absorption can trigger the split."
+      ],
+      [
+        "A typical fission emits…",
+        [
+          "Only one intact parent",
+          "Smaller nuclei, neutrons and gamma",
+          "Only a pair of electrons"
+        ],
+        1,
+        "Energy is released and all products have kinetic energy."
+      ],
+      [
+        "A chain continues when emitted neutrons…",
+        [
+          "Turn into protons in air",
+          "Return to their original parent",
+          "Trigger further fissions"
+        ],
+        2,
+        "Further nuclei can absorb them and split."
+      ]
+    ],
+    "application": [
+      "In a toy chain, 3 fissions each trigger 2 further fissions. How many next-generation events?",
+      6,
+      "3 × 2",
+      "This counts successful triggers, not every neutron emitted."
+    ],
+    "check": [
+      [
+        "Why can a chain fail to grow?",
+        [
+          "Neutrons escape or are absorbed without fission",
+          "Energy cannot be transferred",
+          "All nuclei are identical spheres"
+        ],
+        0,
+        "Not every neutron starts another split."
+      ],
+      [
+        "A controlled reactor regulates…",
+        [
+          "Electron-shell colour",
+          "Neutrons causing further fission",
+          "Gravity"
+        ],
+        1,
+        "Neutron absorption helps control the chain."
+      ],
+      [
+        "A fission diagram should show…",
+        [
+          "Two light nuclei joining",
+          "A nucleus gaining electrons only",
+          "One large nucleus becoming smaller products with neutrons"
+        ],
+        2,
+        "Fission is splitting."
+      ]
+    ],
+    "lab": {
+      "a": [
+        [
+          "1",
+          "One starting fission"
+        ],
+        [
+          "2",
+          "Two starting fissions"
+        ]
+      ],
+      "b": [
+        [
+          "1",
+          "One successful trigger each"
+        ],
+        [
+          "2",
+          "Two successful triggers each"
+        ]
+      ],
+      "labels": [
+        "Initial generation",
+        "Successful next-generation triggers"
+      ],
+      "unit": "next-generation fissions"
+    }
+  },
+  {
+    "k": "fusion",
+    "title": "Nuclear fusion and energy",
+    "refs": [
+      "4.4.2"
+    ],
+    "separate": true,
+    "cards": [
+      [
+        "Join light nuclei",
+        "Nuclear fusion joins two light nuclei into a heavier nucleus. In a fusion reaction, some mass can be converted into energy carried by radiation and other products. Fusion supplies energy in stars; it is distinct from chemical bonding and from fission of a heavy nucleus."
+      ],
+      [
+        "Overcome electric repulsion",
+        "Positive nuclei repel. Very high temperatures give nuclei enough kinetic energy for close encounters that can lead to fusion. Stellar conditions sustain fusion; this animation is a schematic successful event, not a collision probability model or a laboratory design."
+      ],
+      [
+        "Compare three changes",
+        "Fission splits a large nucleus; fusion joins light nuclei; a chemical reaction rearranges electrons and bonds without changing the nuclei. Neither fusion nor fission should be explained as ordinary burning. Products and released radiation carry the energy away."
+      ],
+      [
+        "Keep the nucleon ledger",
+        "For an illustrative hydrogen-2 plus hydrogen-3 reaction, helium-4 plus a neutron conserves total A=5 and Z=2. Choose repeated copies of this supplied reaction and predict total nucleon count before the reaction. The mass difference involves binding energy; integer mass numbers count nucleons and do not measure exact rest masses."
+      ]
+    ],
+    "cases": [
+      [
+        "Fusion is…",
+        [
+          "Joining light nuclei",
+          "Splitting a heavy nucleus",
+          "Joining atoms with electron bonds only"
+        ],
+        0,
+        "Nuclear fusion changes nuclei."
+      ],
+      [
+        "High temperature helps because nuclei have…",
+        [
+          "No charge",
+          "More kinetic energy for close encounters",
+          "Less mass number by definition"
+        ],
+        1,
+        "The positive nuclei repel at a distance."
+      ],
+      [
+        "In fusion some mass can become…",
+        [
+          "Extra charge",
+          "Missing nucleons with no products",
+          "Energy of radiation/products"
+        ],
+        2,
+        "Total mass-energy is accounted for."
+      ]
+    ],
+    "application": [
+      "For the supplied ²H + ³H reaction, what total mass number is present before the reaction?",
+      5,
+      "2 + 3",
+      "Integer mass numbers count nucleons, not exact rest mass."
+    ],
+    "check": [
+      [
+        "Which process powers stable stars?",
+        [
+          "Nuclear fusion",
+          "Chemical combustion alone",
+          "Splitting water molecules"
+        ],
+        0,
+        "Fusion releases energy in stellar cores."
+      ],
+      [
+        "Fission differs from fusion because fission…",
+        [
+          "Joins light nuclei",
+          "Splits a large nucleus",
+          "Only rearranges electrons"
+        ],
+        1,
+        "The nuclear changes have opposite structural descriptions."
+      ],
+      [
+        "In ²₁H + ³₁H → ⁴₂He + ¹₀n, total Z is…",
+        [
+          "5",
+          "4",
+          "2 on both sides"
+        ],
+        2,
+        "Charge number balances:1+1=2+0."
+      ]
+    ],
+    "lab": {
+      "a": [
+        [
+          "1",
+          "One supplied fusion event"
+        ],
+        [
+          "2",
+          "Two supplied fusion events"
+        ]
+      ],
+      "b": [
+        [
+          "before",
+          "Before: H-2 + H-3"
+        ],
+        [
+          "after",
+          "After: He-4 + neutron"
+        ]
+      ],
+      "labels": [
+        "Number of copies",
+        "Side of nuclear ledger"
+      ],
+      "unit": "total nucleons"
+    }
+  }
+]

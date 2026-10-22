@@ -1,3 +1,7 @@
+## Physics completion programme — in progress
+
+Latest user scope: finish all remaining Physics lessons without batch approval pauses. See curriculum/physics-completion-plan.md. Atomic Structure/Radiation10 lessons now implemented locally (6shared/4separate, both tiers; Higher ratio extension). Science308 lessons/45Physics; Maths35 preserved. Initial516 combined automated checks pass. Browser QA in progress; first atoms full journey passed and wrong/premature actions rejected. Not yet published or GitHub synced for this programme. Continue remaining Forces, Waves, Magnetism and Space; update after each verified batch. Current global cache20261022-radiation01, Maths-r7 preserved. Do not claim entire Physics complete or specialist-reviewed.
+
 ## Physics Particle batch02 — implemented, published and GitHub updated
 
 Five lessons: internal energy/temperature, latent heat, heating/cooling curves and gas motion/temperature/pressure shared both tiers; separate-Physics gas compression/pV both tiers with mandatory Higher work/pump-warming extension. AQA8463/8464 4/6.3.2.1–.3,4/6.3.3.1,4.3.3.2 and HT4.3.3.3 checked22October2026. Existing Energy heating lesson retains its ID/practical and now cross-maps4/6.3.2.2; Particle lesson prerequisite links back to it, no duplicate SHC lesson. Latent-fusion AT5 is an opportunity, not a new required-practical claim. Full Particle statement/evidence reconciliation remains open; teaching coverage is not specialist/constructed/physical closure.

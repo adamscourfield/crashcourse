@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-thermal01r3';
-import{tasksForEl2,validEl2,advanceEl2,numericEl2,experimentOptions,experimentResult,experimentCases,experimentValid}from './el2-models.js?v=20261022-thermal01r3';import{showEl2}from './el2-visuals.js?v=20261022-thermal01r3';export{showEl2};
+import{syncProcessMovie}from './process-player.js?v=20261022-radiation01';
+import{tasksForEl2,validEl2,advanceEl2,numericEl2,experimentOptions,experimentResult,experimentCases,experimentValid}from './el2-models.js?v=20261022-radiation01';import{showEl2}from './el2-visuals.js?v=20261022-radiation01';export{showEl2};
 export function mountEl2(l,p,root,{save,done,feedback}){let ts=tasksForEl2(l.widget.slice(4)),w=p.widget;w.el2Task??=ts[0].id;w.el2Drafts??={};w.el2Passed??=[];let i=ts.findIndex(t=>t.id===w.el2Task);if(i<0)i=0;let t=ts[i],v=w.el2Drafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountEl2(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.el2Passed.includes(t.id));
 syncProcessMovie(l,1,{process:false});
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

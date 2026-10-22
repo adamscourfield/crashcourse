@@ -1,0 +1,535 @@
+[
+  {
+    "k": "system",
+    "title": "Our solar system and the birth of stars",
+    "refs": [
+      "8.1.1"
+    ],
+    "cards": [
+      [
+        "A system inside a galaxy",
+        "Our solar system contains one star, the Sun, eight planets, dwarf planets and natural satellites such as moons orbiting planets. The solar system is a small part of the Milky Way galaxy. A galaxy is not another name for one solar system."
+      ],
+      [
+        "Gravity forms a protostar",
+        "The Sun formed from a nebula of gas and dust drawn together by gravity. As the cloud contracts, temperature and pressure rise. A hot protostar forms; when conditions permit, hydrogen fusion begins in the core. Fusion is a nuclear process, not chemical burning."
+      ],
+      [
+        "A stable main-sequence star",
+        "Energy from fusion supports an outward effect against gravitational collapse. A stable main-sequence star has a balance between inward gravity and outward pressure effects associated with fusion energy. This is a dynamic energy-producing state, not a star with no forces."
+      ],
+      [
+        "Place an object in the hierarchy",
+        "Choose a planet/moon and its orbit centre. Predict whether that is the stated natural relationship. The orbit animation is a teaching diagram: planet sizes, separations and periods are independently exaggerated; the star-formation process uses a separate time scale."
+      ]
+    ],
+    "practice": [
+      [
+        "Our solar system is part of…",
+        [
+          "The Milky Way galaxy",
+          "Every galaxy simultaneously",
+          "Only Earth’s atmosphere"
+        ],
+        0,
+        "A galaxy contains many stars and systems."
+      ],
+      [
+        "A nebula contracts mainly because of…",
+        [
+          "Only electron colour",
+          "Gravitational attraction",
+          "Sound in vacuum"
+        ],
+        1,
+        "Gravity draws matter together."
+      ],
+      [
+        "Main-sequence stability involves…",
+        [
+          "No gravity",
+          "No energy release",
+          "A balance of gravitational collapse and outward effects from fusion energy"
+        ],
+        2,
+        "Fusion maintains the energy supply."
+      ]
+    ],
+    "check": [
+      [
+        "A natural satellite normally orbits…",
+        [
+          "A planet",
+          "Only a laboratory",
+          "Only another galaxy"
+        ],
+        0,
+        "Moons are natural satellites."
+      ],
+      [
+        "At the start of a star’s life, contraction causes…",
+        [
+          "Permanent cooling to absolute zero",
+          "Rising temperature/pressure enabling fusion",
+          "No physical change"
+        ],
+        1,
+        "The core must become hot enough."
+      ],
+      [
+        "The Sun’s energy source is…",
+        [
+          "Ordinary coal burning",
+          "Only stored sound",
+          "Nuclear fusion"
+        ],
+        2,
+        "Light nuclei join and release energy."
+      ]
+    ],
+    "calc": [
+      "A scale diagram assigns1 unit to each of the8 planets. What is their total count?",
+      8,
+      "8"
+    ],
+    "lab": {
+      "a": [
+        [
+          "planet",
+          "Planet"
+        ],
+        [
+          "moon",
+          "Natural moon"
+        ]
+      ],
+      "b": [
+        [
+          "star",
+          "Orbiting its star"
+        ],
+        [
+          "planet",
+          "Orbiting its planet"
+        ]
+      ],
+      "labels": [
+        "Object",
+        "Orbit centre"
+      ],
+      "unit": "stated natural relationship",
+      "choices": [
+        [
+          "yes",
+          "Matches the stated relationship"
+        ],
+        [
+          "no",
+          "Does not match this relationship"
+        ]
+      ]
+    },
+    "separate": true,
+    "higher": false,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "stars",
+    "title": "Stellar life cycles and new elements",
+    "refs": [
+      "8.1.2"
+    ],
+    "cards": [
+      [
+        "Mass sets the pathway",
+        "A star’s life cycle depends on its initial mass. Both pathways begin nebula → protostar → main sequence. Fusion builds heavier nuclei from lighter ones and releases energy in the stages considered here. A star does not become a planet when its fuel changes."
+      ],
+      [
+        "A Sun-sized star",
+        "After its main-sequence phase a Sun-sized star expands into a red giant. It sheds outer layers, leaving a hot dense white dwarf that cools. The GCSE pathway describes a later black dwarf; the universe is not yet old enough for white dwarfs to have cooled fully to such objects."
+      ],
+      [
+        "A much more massive star",
+        "A high-mass star becomes a red supergiant, then undergoes a supernova, leaving a neutron star or black hole depending on the remnant. Fusion in stars produces nuclei up to iron in the GCSE account; supernova processes produce heavier elements and disperse elements into space. Detailed modern neutron-star-merger nucleosynthesis is beyond the required model."
+      ],
+      [
+        "Choose the branch",
+        "Select a Sun-like/high-mass star and an endpoint candidate. Predict whether it matches that pathway. A branching animated timeline shows the two sequences; spacing and playback times are symbolic, not relative stellar lifetimes or a forecast for a particular observed star."
+      ]
+    ],
+    "practice": [
+      [
+        "The main determinant of a star’s life pathway is its…",
+        [
+          "Initial mass",
+          "Screen colour",
+          "Distance from Earth alone"
+        ],
+        0,
+        "Mass controls the conditions and evolution."
+      ],
+      [
+        "A Sun-like star leaves a…",
+        [
+          "Mandatory black hole",
+          "White dwarf after red-giant stages",
+          "Neutron star after every case"
+        ],
+        1,
+        "The high-mass pathway is different."
+      ],
+      [
+        "A supernova helps distribute…",
+        [
+          "Only original hydrogen",
+          "Only photons with no matter",
+          "Elements into surrounding space"
+        ],
+        2,
+        "This enriches material for later systems."
+      ]
+    ],
+    "check": [
+      [
+        "A high-mass star can end as…",
+        [
+          "A neutron star or black hole",
+          "Only a white dwarf",
+          "A small rocky planet"
+        ],
+        0,
+        "The remnant outcome depends on its mass."
+      ],
+      [
+        "Elements heavier than iron in the required stellar account are formed in…",
+        [
+          "Ordinary chemical burning",
+          "Supernova processes",
+          "Electron-shell filling alone"
+        ],
+        1,
+        "The specification uses this stellar model."
+      ],
+      [
+        "A black dwarf stage should be understood as…",
+        [
+          "A common directly observed object",
+          "The same as a black hole",
+          "A theoretical cooled remnant not yet expected within the universe’s age"
+        ],
+        2,
+        "Cooling time is extremely long."
+      ]
+    ],
+    "calc": [
+      "An illustrative timeline uses3 equal display steps before a branch and2 after. How many displayed transitions?",
+      5,
+      "3 + 2"
+    ],
+    "lab": {
+      "a": [
+        [
+          "sun",
+          "Sun-like mass"
+        ],
+        [
+          "massive",
+          "Much higher mass"
+        ]
+      ],
+      "b": [
+        [
+          "white",
+          "White-dwarf remnant"
+        ],
+        [
+          "neutron",
+          "Neutron-star/black-hole pathway"
+        ]
+      ],
+      "labels": [
+        "Initial mass group",
+        "Endpoint candidate"
+      ],
+      "unit": "pathway match",
+      "choices": [
+        [
+          "yes",
+          "Matches the pathway"
+        ],
+        [
+          "no",
+          "Does not match the pathway"
+        ]
+      ]
+    },
+    "separate": true,
+    "higher": false,
+    "film": true,
+    "extra": null
+  },
+  {
+    "k": "orbits",
+    "title": "Gravity and orbital motion",
+    "refs": [
+      "8.1.3"
+    ],
+    "cards": [
+      [
+        "Gravity keeps an orbit turning",
+        "Gravity provides the inward force that maintains a planet or satellite’s circular orbit. The object’s velocity is tangent to the path while the force points toward the centre. It is continuously falling toward the central body rather than needing an outward thrust to balance gravity."
+      ],
+      [
+        "Natural and artificial satellites",
+        "Planets orbit their star; moons are natural satellites orbiting planets; artificial satellites are human-made objects placed in orbit. The same gravitational interaction applies. Real orbits can be elliptical; this lesson uses circular paths to isolate the direction account."
+      ],
+      [
+        "Separate speed and direction",
+        "A stable circular path can have constant speed while the velocity direction changes. There is therefore an inward acceleration. It is not correct to draw gravity tangentially forward or to claim that orbiting means gravity has disappeared. Higher students must explain this velocity change explicitly."
+      ],
+      [
+        "Predict the inward direction",
+        "Choose a satellite at the right/top position of a circular orbit and the centre marker. Predict gravity’s direction. The loop keeps an inward force arrow and tangent velocity arrow distinct. Radius, period and body sizes are symbolic; no inverse-square calculation is required."
+      ]
+    ],
+    "practice": [
+      [
+        "The force maintaining a circular orbit is…",
+        [
+          "Gravity toward the centre",
+          "An outward magnetic force necessarily",
+          "No force"
+        ],
+        0,
+        "Gravity changes the velocity direction."
+      ],
+      [
+        "A human-made orbiting object is…",
+        [
+          "A natural moon",
+          "An artificial satellite",
+          "A star necessarily"
+        ],
+        1,
+        "Distinguish origin from gravitational mechanism."
+      ],
+      [
+        "An orbiting satellite’s instantaneous velocity is…",
+        [
+          "Toward the centre always",
+          "Zero",
+          "Tangent to the path"
+        ],
+        2,
+        "It is not the same direction as the inward force."
+      ]
+    ],
+    "check": [
+      [
+        "At the right-hand side of a circular orbit, gravity points…",
+        [
+          "Left toward the centre",
+          "Right away from the centre",
+          "Up along the tangent necessarily"
+        ],
+        0,
+        "Force points inward."
+      ],
+      [
+        "Natural moons and artificial satellites share…",
+        [
+          "Identical sizes",
+          "Gravity as their orbital interaction",
+          "Identical origins"
+        ],
+        1,
+        "The physical interaction is the same."
+      ],
+      [
+        "A circular-orbit diagram omits…",
+        [
+          "The existence of gravity",
+          "Any velocity",
+          "Ellipticity and other perturbations"
+        ],
+        2,
+        "The circular model isolates the key geometry."
+      ]
+    ],
+    "calc": [
+      "A toy circular path has circumference120 units and period30 s. Find average path speed.",
+      4,
+      "120 ÷ 30"
+    ],
+    "lab": {
+      "a": [
+        [
+          "right",
+          "Satellite right of centre"
+        ],
+        [
+          "top",
+          "Satellite above centre"
+        ]
+      ],
+      "b": [
+        [
+          "planet",
+          "Planet-centred orbit"
+        ],
+        [
+          "star",
+          "Star-centred orbit"
+        ]
+      ],
+      "labels": [
+        "Orbital position",
+        "Central attracting body"
+      ],
+      "unit": "gravity direction",
+      "choices": [
+        [
+          "left",
+          "Leftward toward centre"
+        ],
+        [
+          "down",
+          "Downward toward centre"
+        ]
+      ]
+    },
+    "separate": true,
+    "higher": false,
+    "film": true,
+    "extra": {
+      "title": "Higher: stable speed and radius",
+      "text": "In a circular orbit, gravity changes velocity direction while speed can stay constant. For a stable orbit around the same body, changing the orbital speed requires a change of orbital radius. Lower circular orbits have higher orbital speeds than higher circular orbits. A thrust/change of speed at one point can initially produce a noncircular path; do not infer instant movement to another circle. No orbital-speed equation is required here."
+    }
+  },
+  {
+    "k": "redshift",
+    "title": "Redshift, expansion and the Big Bang",
+    "refs": [
+      "8.2"
+    ],
+    "cards": [
+      [
+        "Compare spectral features",
+        "Light from most distant galaxies has spectral lines shifted to longer wavelengths compared with matching reference lines measured nearby. This is redshift. It does not mean every galaxy looks visibly red or that all wavelengths have the same numerical change. The pattern of matching lines identifies the comparison."
+      ],
+      [
+        "A distance–recession pattern",
+        "More distant galaxies generally show larger redshift and greater recession speeds. This supports expansion of space itself, rather than a special explosion centre located at Earth. A stretching-grid model separates points as the grid expands; points need not grow with the spacing."
+      ],
+      [
+        "Evidence and open questions",
+        "Expansion supports the Big Bang model: the universe began in an extremely hot dense state in a very small region. Observations of supernovae since1998 suggest accelerating expansion. Dark matter (called dark mass in the specification) and dark energy remain incompletely understood. Scientists develop and revise theories from observations; the model is not a complete explanation of everything."
+      ],
+      [
+        "Measure a supplied shift",
+        "Choose a reference wavelength and an observed increase; predict observed wavelength. The animation separates matching spectral markers while the galaxy grid spacing grows. It is a qualitative teaching analogy, not a full cosmological redshift–distance/time calculation."
+      ]
+    ],
+    "practice": [
+      [
+        "Redshift means an observed shift toward…",
+        [
+          "Longer wavelengths",
+          "Shorter wavelengths",
+          "No spectral pattern"
+        ],
+        0,
+        "Compare matching features with a reference."
+      ],
+      [
+        "The distance/redshift pattern supports…",
+        [
+          "A static universe with no change",
+          "Expansion of space",
+          "Earth as a special universal centre"
+        ],
+        1,
+        "The pattern is seen from our viewpoint without a special centre here."
+      ],
+      [
+        "The Big Bang model describes an early state that was…",
+        [
+          "Cold and dilute",
+          "A chemical fire in air",
+          "Extremely hot and dense"
+        ],
+        2,
+        "It is a cosmological model supported by observations."
+      ]
+    ],
+    "check": [
+      [
+        "A reference line500 nm is observed at550 nm. It is…",
+        [
+          "Redshifted",
+          "Blueshifted",
+          "Unchanged"
+        ],
+        0,
+        "Observed wavelength is larger."
+      ],
+      [
+        "Supernova observations since1998 suggest…",
+        [
+          "Expansion has necessarily stopped",
+          "Expansion is accelerating",
+          "Every galaxy is stationary"
+        ],
+        1,
+        "They changed understanding of cosmic expansion."
+      ],
+      [
+        "Dark matter/energy are examples of…",
+        [
+          "Fully solved classroom mechanisms",
+          "Proof observations are useless",
+          "Open questions in our understanding"
+        ],
+        2,
+        "Evidence can support a model while major questions remain."
+      ]
+    ],
+    "calc": [
+      "A500 nm reference line is observed at560 nm. Find the wavelength increase in nm.",
+      60,
+      "560 − 500"
+    ],
+    "lab": {
+      "a": [
+        [
+          "400",
+          "400 nm reference"
+        ],
+        [
+          "600",
+          "600 nm reference"
+        ]
+      ],
+      "b": [
+        [
+          "20",
+          "20 nm increase"
+        ],
+        [
+          "40",
+          "40 nm increase"
+        ]
+      ],
+      "labels": [
+        "Reference wavelength",
+        "Observed shift"
+      ],
+      "unit": "nm observed wavelength"
+    },
+    "separate": true,
+    "higher": false,
+    "film": true,
+    "extra": null
+  }
+]

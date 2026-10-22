@@ -1,3 +1,5 @@
+> Current priority (22 October2026): finish the entire remaining Physics teaching programme. Follow curriculum/physics-completion-plan.md and BUILD_STATUS.md; earlier recommendations below are historical.
+
 # Crash Course — lesson-building plan
 
 Last updated: 20 October 2026. This is the working plan for building the product across subjects and across sessions.

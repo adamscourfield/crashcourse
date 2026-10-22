@@ -1,5 +1,5 @@
-import {showCarbon} from './carbon-scenes.js?v=20261022-thermal01r3';
-import {useCases} from './carbon-models.js?v=20261022-thermal01r3';
+import {showCarbon} from './carbon-scenes.js?v=20261022-radiation01';
+import {useCases} from './carbon-models.js?v=20261022-radiation01';
 const $=s=>document.querySelector(s),button=(id,t)=>`<button id="${id}" class="secondary">${t}</button>`;
 const select=(id,title,values,value='')=>`<label for="${id}" class="field-label">${title}</label><select class="lab-select" id="${id}"><option value="">Choose</option>${values.map(([v,t])=>`<option value="${v}" ${v===value?'selected':''}>${t}</option>`).join('')}</select>`;
 export function mountCarbonWidget(l,p,root,{save,done,feedback}){

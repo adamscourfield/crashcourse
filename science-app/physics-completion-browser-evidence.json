@@ -1,0 +1,50 @@
+{
+  "journeys": [
+    {
+      "id": "science.physics.atomic-structure.atoms",
+      "check": 4,
+      "settings": 4
+    },
+    {
+      "id": "science.physics.atomic-structure.evidence",
+      "check": 4,
+      "settings": 4
+    },
+    {
+      "id": "science.physics.atomic-structure.radiation",
+      "check": 4,
+      "settings": 4
+    },
+    {
+      "id": "science.physics.atomic-structure.equations",
+      "check": 4,
+      "settings": 4
+    },
+    {
+      "id": "science.physics.atomic-structure.half-life",
+      "check": 5,
+      "settings": 4
+    },
+    {
+      "id": "science.physics.forces.components",
+      "check": 3,
+      "settings": 4
+    },
+    {
+      "id": "science.physics.forces.elasticity",
+      "check": 3,
+      "settings": 4
+    },
+    {
+      "id": "science.physics.forces.depth",
+      "check": 3,
+      "settings": 4
+    },
+    {
+      "id": "science.physics.forces.secondlaw",
+      "check": 4,
+      "settings": 4
+    }
+  ],
+  "views": []
+}
