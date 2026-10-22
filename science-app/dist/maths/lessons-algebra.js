@@ -6,15 +6,19 @@
 //   x² + bx + c including difference of two squares (Higher: ax² + bx + c), laws of indices ·
 //   A5 use and rearrange formulae · A6 equation vs identity (show-that arguments not marked) ·
 //   A17 solve linear equations algebraically · A21 (part) form and solve equations.
-// Not in this batch: algebraic fractions (A4 Higher), A6 proof, A7 functions, A17 graphical solutions.
+// Later batches add graphs (A8–A22), and batch 4 adds A7 functions, A4/A18 algebraic fractions, A6 proof,
+// A20 iteration and A21 forming equations in context (see skills-algebra3.js).
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261022-maths-r6';
+import { skillById } from './skills.js?v=20261022-maths-r7';
 
 const S = id => skillById[id];
+// Worked iteration for the iteration lesson: x_{n+1} = ∛(5 − 2x_n), x_0 = 1, and its cobweb path.
+const ITER_EG = [1]; for (let i = 0; i < 30; i++) ITER_EG.push(Math.cbrt(5 - 2 * ITER_EG.at(-1)));
+const ITER_WEB = [[1, 0]]; for (let i = 0; i < 5; i++) ITER_WEB.push([ITER_EG[i], ITER_EG[i + 1]], [ITER_EG[i + 1], ITER_EG[i + 1]]);
 
 export const algebraTopic = {
   id: 'maths.algebra', title: 'Algebra', short: 'Algebra', number: '02', status: 'partial',
-  coverage: 'Fifteen lessons on algebraic notation, substitution and vocabulary; simplifying and the laws of indices; expanding and factorising single and double brackets, including quadratics (Higher: three brackets and ax² + bx + c); solving linear equations; using and rearranging formulae; sequences and the nth term; linear (Higher: quadratic) inequalities; quadratic equations (Higher: completing the square and the formula); and simultaneous equations (Higher: linear/quadratic). Graphs: coordinates, straight lines, gradients and equations of lines (Higher: perpendicular), quadratic, cubic and reciprocal graphs (Higher: exponential, trigonometric, transformations), graphical solutions and (Higher) regions, real-life graphs (Higher: gradients, areas and circles). Plotted answers use an interactive grid. Functions, algebraic fractions, proof and iteration come later.',
+  coverage: 'Twenty lessons on algebraic notation, substitution and vocabulary; simplifying and the laws of indices; expanding and factorising single and double brackets, including quadratics (Higher: three brackets and ax² + bx + c); solving linear equations; using and rearranging formulae; sequences and the nth term; linear (Higher: quadratic) inequalities; quadratic equations (Higher: completing the square and the formula); and simultaneous equations (Higher: linear/quadratic). Graphs: coordinates, straight lines, gradients and equations of lines (Higher: perpendicular), quadratic, cubic and reciprocal graphs (Higher: exponential, trigonometric, transformations), graphical solutions and (Higher) regions, real-life graphs (Higher: gradients, areas and circles). Plotted answers use an interactive grid. Then forming and solving equations in context; functions (Higher: notation, inverse and composite); identities, show-that arguments and counterexamples (Higher: proof); and, Higher only, algebraic fractions with fractional indices and iteration.',
 };
 
 export const algebraLessons = [
@@ -408,7 +412,139 @@ export const algebraLessons = [
     checkPlan: [['maths.algebra.graph-real-life', 1], ['maths.algebra.graph-real-life', 1], ['maths.algebra.graph-real-life', 2], ['maths.algebra.graph-real-life', 2], ['maths.algebra.graph-real-life', 3], ['maths.algebra.graph-gradient-area', 1], ['maths.algebra.graph-gradient-area', 2], ['maths.algebra.graph-gradient-area', 3], ['maths.algebra.graph-circle', 1], ['maths.algebra.graph-circle', 2]],
     limits: 'Gradient-of-a-curve estimates accept answers within 0.6, because tangents drawn by hand vary; the tangent itself is not marked. Exponential growth graphs in context (A14 Higher), areas under curves (rather than straight-line graphs) and financial graphs are not practised yet. A15 and A16 are Higher only.',
   },
+  {
+    id: 'maths.algebra.functions',
+    topicId: 'maths.algebra',
+    title: 'Functions: machines, notation, inverses and composites',
+    refs: ['A7'],
+    minutes: 40,
+    model: 'function-machine',
+    prerequisites: ['maths.algebra.notation', 'maths.algebra.formulae'],
+    big: 'A function machine applies operations in order to an input to give an output. To work backwards, undo each operation with its inverse, last one first. Higher: f(x) = 3x − 4 is function notation, and f(5) is the output when x = 5. The inverse function f^{−1}(x) undoes f. The composite function fg(x) means f(g(x)): apply g first, then f.',
+    learn: [
+      { title: 'Function machines.', text: 'Input 5 → × 3 → − 4 → output 11. The order matters: − 4 first and then × 3 gives 3. With input x, the first machine outputs 3x − 4; the other order gives 3(x − 4). Use brackets when a whole expression is multiplied or divided.',
+        example: { prompt: 'Input 6 into "÷ 2, then + 7".', steps: ['6 ÷ 2 = 3', '3 + 7 = 10'] },
+        visual: { kind: 'fmachine', ops: ['× 3', '− 4'], input: '5', output: '11' } },
+      { title: 'Working backwards.', text: 'Which input gives 26 from "× 3, then − 4"? Reverse the machine: undo − 4 first with + 4, then undo × 3 with ÷ 3. 26 + 4 = 30 and 30 ÷ 3 = 10. Check: 10 × 3 − 4 = 26.',
+        example: { prompt: '"+ 5, then × 2" gives 30. Find the input.', steps: ['Undo × 2: 30 ÷ 2 = 15', 'Undo + 5: 15 − 5 = 10'] },
+        visual: { kind: 'fmachine', ops: ['+ 4', '÷ 3'], input: '26', output: '10', reverse: true, caption: 'Inverse operations in reverse order' } },
+      { title: 'Higher: function notation.', text: 'f(x) = 2x^2 − 3 names a function f. f(−2) = 2 × (−2)^2 − 3 = 5: square first, then multiply. f(x) = 13 is an equation to solve. f(2x) means replace every x with 2x: f(2x) = 2(2x)^2 − 3 = 8x^2 − 3.',
+        example: { prompt: 'f(x) = 5x + 1. Solve f(x) = 21.', steps: ['5x + 1 = 21', '5x = 20', 'x = 4'] },
+        visual: { kind: 'work', lines: ['f(x) = 2x^2 − 3', 'f(−2) = 2 × (−2)^2 − 3', '= 2 × 4 − 3 = 5'] } },
+      { title: 'Higher: inverse and composite functions.', text: 'For f(x) = 3x + 2, write y = 3x + 2 and make x the subject: x = {y − 2/3}, so f^{−1}(x) = {x − 2/3}. If g(x) = x^2, then fg(x) = f(x^2) = 3x^2 + 2, but gf(x) = g(3x + 2) = (3x + 2)^2. The order matters.',
+        example: { prompt: 'f(x) = x − 4 and g(x) = 2x. Work out gf(5).', steps: ['gf(5) = g(f(5)): f first', 'f(5) = 1', 'g(1) = 2'] },
+        visual: { kind: 'work', lines: ['y = 3x + 2', 'y − 2 = 3x', 'x = {y − 2/3}', 'f^{−1}(x) = {x − 2/3}'] } },
+    ],
+    skills: [S('maths.algebra.func-machine'), S('maths.algebra.func-notation'), S('maths.algebra.func-inverse')],
+    checkPlan: [['maths.algebra.func-machine', 1], ['maths.algebra.func-machine', 2], ['maths.algebra.func-machine', 3], ['maths.algebra.func-notation', 1], ['maths.algebra.func-notation', 2], ['maths.algebra.func-notation', 3], ['maths.algebra.func-inverse', 1], ['maths.algebra.func-inverse', 2], ['maths.algebra.func-inverse', 3], ['maths.algebra.func-inverse', 3]],
+    limits: 'Function notation, inverse functions and composite functions are Higher only; Foundation practises function machines (forwards, backwards and with an input x). Domain and range are beyond 1MA1 and are not covered.',
+  },
+  {
+    id: 'maths.algebra.algebraic-fractions',
+    topicId: 'maths.algebra',
+    title: 'Algebraic fractions and fractional indices',
+    refs: ['A4', 'A18'],
+    minutes: 55,
+    higherOnly: true,
+    model: 'fraction-cancel',
+    prerequisites: ['maths.algebra.quadratics', 'maths.algebra.quadratic-equations'],
+    big: 'Algebraic fractions follow the rules of number fractions. To simplify, factorise the top and the bottom and cancel common factors: whole brackets, never single terms. To add or subtract, use a common denominator. To multiply, factorise and cancel; to divide, multiply by the reciprocal. To solve an equation, multiply every term by the common denominator. Negative indices mean reciprocals and fractional indices mean roots: x^{−2} = {1/x^2} and (8x^6)^{1/3} = 2x^2.',
+    learn: [
+      { title: 'Simplifying: cancel factors, not terms.', text: 'In {x^2 + 5x + 6/x + 2}, factorise the top: (x + 2)(x + 3). The factor (x + 2) multiplies the whole top and the whole bottom, so it cancels, leaving x + 3. You cannot cancel the x in x + 3 against the x in x + 2: they are terms, not factors.',
+        example: { prompt: 'Simplify {x^2 − 9/x^2 + x − 6}', steps: ['Top: (x + 3)(x − 3)', 'Bottom: (x + 3)(x − 2)', 'Cancel (x + 3): {x − 3/x − 2}'] },
+        visual: { kind: 'work', lines: ['{x^2 + 5x + 6/x + 2}', '= {(x + 2)(x + 3)/x + 2}', '= x + 3'], caption: 'Cancel a whole factor' } },
+      { title: 'Adding and subtracting.', text: 'Use a common denominator, as with {1/3} + {1/4} = {7/12}. {x + 1/3} + {x − 2/4} = {4(x + 1) + 3(x − 2)/12} = {7x − 2/12}. With letters: {2/x + 1} + {3/x − 2} = {2(x − 2) + 3(x + 1)/(x + 1)(x − 2)} = {5x − 1/(x + 1)(x − 2)}. When subtracting, the minus applies to the whole second numerator.',
+        example: { prompt: 'Write {x/2} − {x − 1/3} as a single fraction.', steps: ['{3x/6} − {2(x − 1)/6}', '3x − 2x + 2 = x + 2', '{x + 2/6}'] },
+        visual: { kind: 'work', lines: ['{2/x + 1} + {3/x − 2}', '= {2(x − 2) + 3(x + 1)/(x + 1)(x − 2)}', '= {5x − 1/(x + 1)(x − 2)}'] } },
+      { title: 'Multiplying, dividing and solving.', text: 'Factorise everything, cancel, then multiply. To divide, turn the second fraction upside down and multiply. To solve {3/x + 1} + {2/x − 1} = 1, multiply every term by (x + 1)(x − 1): 3(x − 1) + 2(x + 1) = x^2 − 1. Rearrange to x^2 − 5x = 0, so x = 0 or x = 5. Check that neither makes a denominator 0.',
+        example: { prompt: 'Solve {x + 1/2} + {x − 3/5} = 4', steps: ['Multiply by 10: 5(x + 1) + 2(x − 3) = 40', '7x − 1 = 40', 'x = {41/7}'] },
+        visual: { kind: 'work', lines: ['{x^2 − 4/3x} × {6x/x + 2}', '= {(x + 2)(x − 2)/3x} × {6x/x + 2}', '= 2(x − 2)'] } },
+      { title: 'Negative and fractional indices.', text: 'x^{−n} = {1/x^n}, so {6x^2/3x^5} = 2x^{−3} = {2/x^3}. A power of {1/n} is the nth root, and {m/n} is the nth root raised to the power m: (27x^6)^{2/3} = (3x^2)^2 = 9x^4. Apply the power to the number and to the letter. A negative fractional power is a reciprocal as well.',
+        example: { prompt: 'Simplify (16x^8)^{1/2}', steps: ['√16 = 4', 'x^8 to the power {1/2} is x^4', '4x^4'] },
+        visual: { kind: 'work', lines: ['(27x^6)^{2/3}', '= (∛27 × x^{6 ÷ 3})^2', '= (3x^2)^2 = 9x^4'] } },
+    ],
+    skills: [S('maths.algebra.afrac-simplify'), S('maths.algebra.afrac-add'), S('maths.algebra.afrac-solve'), S('maths.algebra.alg-indices')],
+    checkPlan: [['maths.algebra.afrac-simplify', 1], ['maths.algebra.afrac-simplify', 2], ['maths.algebra.afrac-simplify', 3], ['maths.algebra.afrac-add', 1], ['maths.algebra.afrac-add', 2], ['maths.algebra.afrac-add', 3], ['maths.algebra.afrac-solve', 1], ['maths.algebra.afrac-solve', 2], ['maths.algebra.alg-indices', 2], ['maths.algebra.alg-indices', 3]],
+    limits: 'Higher only. Answers must be one fraction with no common factor left between top and bottom; an equivalent but uncancelled answer, or a sum of separate fractions, is marked as partly right. A denominator may be left factorised or expanded. Fractional powers in answers are not needed: every answer simplifies to whole-number indices.',
+  },
+  {
+    id: 'maths.algebra.proof',
+    topicId: 'maths.algebra',
+    title: 'Identities, show that and proof',
+    refs: ['A6', 'A3'],
+    minutes: 45,
+    model: 'proof-builder',
+    prerequisites: ['maths.algebra.quadratics', 'maths.algebra.notation'],
+    big: 'An identity (≡) is true for every value of the letter; an equation is true only for particular values. In an identity the coefficients on both sides match, which lets you find unknowns. Write numbers with algebra: an even number is 2n, an odd number 2n + 1, consecutive numbers n, n + 1, n + 2. One counterexample disproves a claim, but examples can never prove one. Higher: a proof uses algebra that works for every n and ends with a clear reason, often a factorised form such as 4(n + 1).',
+    learn: [
+      { title: 'Identities and equations.', text: '3(x + 2) ≡ 3x + 6 is true whatever x is: an identity. 3(x + 2) = 2x + 9 is true only when x = 3: an equation. In an identity the coefficients match: a(x + 3) + b(x − 1) ≡ 5x + 7 gives a + b = 5 and 3a − b = 7, so a = 3 and b = 2.',
+        example: { prompt: 'Is 2(x + 4) − x = x + 8 an identity?', steps: ['Left side: 2x + 8 − x = x + 8', 'The same as the right side for every x: yes, an identity'] },
+        visual: { kind: 'work', lines: ['a(x + 3) + b(x − 1) ≡ 5x + 7', 'x terms: a + b = 5', 'numbers: 3a − b = 7', 'a = 3, b = 2'] } },
+      { title: 'Writing numbers with algebra.', text: 'If n is a whole number, 2n is always even and 2n + 1 is always odd. Three consecutive numbers are n, n + 1, n + 2. To show (n + 3)^2 − (n − 3)^2 is a multiple of 12, expand both: n^2 + 6n + 9 − (n^2 − 6n + 9) = 12n, which is 12 × n.',
+        example: { prompt: 'Show that (n + 1)^2 − n^2 is always odd.', steps: ['n^2 + 2n + 1 − n^2 = 2n + 1', '2n is even, so 2n + 1 is odd'] },
+        visual: { kind: 'work', lines: ['even: 2n', 'odd: 2n + 1', 'consecutive: n, n + 1, n + 2', 'consecutive odd: 2n + 1, 2n + 3'] } },
+      { title: 'Counterexamples.', text: '"n^2 + n + 11 is always prime" is true for n = 0 to 9, but n = 10 gives 121 = 11 × 11. One counterexample shows a claim is false. Checking examples, however many, never proves a claim for every number.',
+        example: { prompt: 'Show that "squaring a number always makes it bigger" is false.', steps: ['Try {1/2}: ({1/2})^2 = {1/4}', '{1/4} is smaller than {1/2}, so the claim is false'] },
+        visual: { kind: 'work', lines: ['n = 9: 81 + 9 + 11 = 101, prime', 'n = 10: 100 + 10 + 11 = 121 = 11 × 11', 'Not prime: the claim is false'] } },
+      { title: 'Higher: algebraic proof.', text: 'Prove the sum of two consecutive odd numbers is a multiple of 4: (2n + 1) + (2n + 3) = 4n + 4 = 4(n + 1). n + 1 is a whole number, so the sum is a multiple of 4: factorising shows the multiple. To prove x^2 − 6x + 11 > 0 for all x, complete the square: (x − 3)^2 + 2. A square is never negative, so the expression is at least 2.',
+        example: { prompt: 'Prove that (2n + 3)^2 − (2n + 1)^2 is a multiple of 8.', steps: ['4n^2 + 12n + 9 − (4n^2 + 4n + 1)', '= 8n + 8', '= 8(n + 1), a multiple of 8'] },
+        visual: { kind: 'work', lines: ['(2n + 1) + (2n + 3)', '= 4n + 4', '= 4(n + 1)', 'a multiple of 4 ∎'] } },
+    ],
+    skills: [S('maths.algebra.identities'), S('maths.algebra.show-that'), S('maths.algebra.proof')],
+    checkPlan: [['maths.algebra.identities', 1], ['maths.algebra.identities', 2], ['maths.algebra.identities', 3], ['maths.algebra.show-that', 1], ['maths.algebra.show-that', 2], ['maths.algebra.show-that', 3], ['maths.algebra.show-that', 3], ['maths.algebra.proof', 1], ['maths.algebra.proof', 2], ['maths.algebra.proof', 3]],
+    limits: 'Written arguments are not marked as free text. Practice marks the algebra that carries a proof (a simplified, factorised or completed-square form), the choice of a correct final line, and the choice of a counterexample. Proof and identities of the form a(x + b)^2 + c are Higher only.',
+  },
+  {
+    id: 'maths.algebra.iteration',
+    topicId: 'maths.algebra',
+    title: 'Solving equations by iteration',
+    refs: ['A20'],
+    minutes: 45,
+    higherOnly: true,
+    calculator: true,
+    model: 'iteration-stepper',
+    prerequisites: ['maths.algebra.formulae', 'maths.algebra.nonlinear-graphs'],
+    big: 'If f(a) and f(b) have opposite signs, the graph of y = f(x) crosses the x-axis between a and b, so f(x) = 0 has a solution there. Rearranging f(x) = 0 as x = g(x) gives an iteration formula x_{n + 1} = g(x_n). Put the starting value in, use each output as the next input, and stop when the values agree to the accuracy needed. Use the ANS key to keep full calculator accuracy.',
+    learn: [
+      { title: 'A change of sign.', text: 'For f(x) = x^3 + 2x − 5: f(1) = 1 + 2 − 5 = −2 and f(2) = 8 + 4 − 5 = 7. One is negative and one positive, and the curve is unbroken, so it crosses 0 between x = 1 and x = 2.',
+        example: { prompt: 'f(x) = x^3 − 4x − 2. Show there is a solution between 2 and 3.', steps: ['f(2) = 8 − 8 − 2 = −2', 'f(3) = 27 − 12 − 2 = 13', 'The sign changes, so there is a solution between 2 and 3'] },
+        visual: { kind: 'g', g: { xr: [-1, 3], yr: [-8, 12], ystep: 2, height: 240, fns: [{ expr: 'x^3 + 2x - 5', label: 'y = x³ + 2x − 5' }], points: [[1, -2, '(1, −2)'], [2, 7, '(2, 7)']] }, caption: 'Negative at 1, positive at 2' } },
+      { title: 'Rearranging into x = g(x).', text: 'x^3 + 2x − 5 = 0 can be rearranged as x^3 = 5 − 2x, so x = ∛(5 − 2x). This gives the iteration formula x_{n + 1} = ∛(5 − 2x_n). Other rearrangements are possible, such as x = {5 − x^3/2}, but not every rearrangement leads to the solution.',
+        example: { prompt: 'Rearrange x^2 − 3x − 1 = 0 into the form x = 3 + {1/x}.', steps: ['x^2 = 3x + 1', 'Divide every term by x: x = 3 + {1/x}'] },
+        visual: { kind: 'work', lines: ['x^3 + 2x − 5 = 0', 'x^3 = 5 − 2x', 'x = ∛(5 − 2x)', 'x_{n + 1} = ∛(5 − 2x_n)'] } },
+      { title: 'Iterating to a solution.', text: `x_{n + 1} = ∛(5 − 2x_n) with x_0 = 1: ${ITER_EG.slice(1, 6).map((v, i) => `x_{${i + 1}} = ${v.toFixed(5)}…`).join(', ')}. The values zig-zag in on ${ITER_EG.at(-1).toFixed(2)} (2 d.p.). On a graph, each step goes up to y = g(x) and across to y = x, closing in on where they cross.`,
+        example: { prompt: 'x_{n + 1} = 3 + {1/x_n}, x_0 = 3. Find x_2 to 3 d.p.', steps: ['x_1 = 3 + {1/3} = 3.33333…', 'x_2 = 3 + 1 ÷ 3.33333… = 3.3', 'x_2 = 3.300'] },
+        visual: { kind: 'g', g: { xr: [0, 2], yr: [0, 2], xstep: 0.5, ystep: 0.5, height: 260, fns: [{ expr: 'x', label: 'y = x' }, { expr: 'cbrt(5 - 2x)', label: 'y = ∛(5 − 2x)' }], polys: [{ pts: ITER_WEB }] }, caption: 'The iteration closes in on the crossing point' } },
+    ],
+    skills: [S('maths.algebra.iter-sign'), S('maths.algebra.iter-rearrange'), S('maths.algebra.iter-compute')],
+    checkPlan: [['maths.algebra.iter-sign', 1], ['maths.algebra.iter-sign', 2], ['maths.algebra.iter-sign', 2], ['maths.algebra.iter-rearrange', 1], ['maths.algebra.iter-rearrange', 2], ['maths.algebra.iter-compute', 1], ['maths.algebra.iter-compute', 2], ['maths.algebra.iter-compute', 2], ['maths.algebra.iter-compute', 3], ['maths.algebra.iter-compute', 3]],
+    limits: 'Higher only; a calculator lesson. Answers for x_1 and x_3 accept small differences caused by rounding intermediate values. A sign change is marked by the two function values; the written conclusion appears in the worked solution but is not marked. Convergence and divergence are illustrated, not assessed.',
+  },
+  {
+    id: 'maths.algebra.forming-equations',
+    topicId: 'maths.algebra',
+    title: 'Forming and solving equations in context',
+    refs: ['A21', 'A17', 'A18'],
+    minutes: 45,
+    model: 'equation-builder',
+    prerequisites: ['maths.algebra.linear-equations'],
+    big: 'Choose a letter for the unknown and write every other quantity in terms of it. Use a fact to make an equation: angles in a triangle add to 180°, a perimeter is the sum of the sides, a total is the sum of its parts. Solve, then answer the question actually asked: it may want an angle or a length rather than x. Check that the answer makes sense: round up to whole minibuses, and reject a negative length.',
+    learn: [
+      { title: 'Equations from shapes.', text: 'A triangle has angles x°, 2x° and (x + 20)°. Angles in a triangle add up to 180°: x + 2x + x + 20 = 180, so 4x + 20 = 180, 4x = 160 and x = 40. The angles are 40°, 80° and 60°.',
+        example: { prompt: 'A rectangle is (2x + 1) cm by (x + 3) cm with perimeter 32 cm. Find x.', steps: ['2(2x + 1) + 2(x + 3) = 32', '6x + 8 = 32', 'x = 4'] },
+        visual: { kind: 'tri', labels: ['x°', '2x°', '(x + 20)°'] } },
+      { title: 'Equations from words.', text: 'Bea has 4 more cards than Amir, and Cal has twice as many as Amir. Together they have 52. Let Amir have x: x + (x + 4) + 2x = 52, so 4x + 4 = 52 and x = 12. Three consecutive numbers that add to 72 are n, n + 1 and n + 2: 3n + 3 = 72, so n = 23.',
+        example: { prompt: 'I multiply a number by 5 and subtract 3. I get the same as when I double it and add 9. Find the number.', steps: ['5n − 3 = 2n + 9', '3n = 12', 'n = 4'] },
+        visual: { kind: 'work', lines: ['Amir: x', 'Bea: x + 4', 'Cal: 2x', 'x + (x + 4) + 2x = 52'] } },
+      { title: 'Does the answer make sense?', text: '75 people travel in minibuses holding 16: 75 ÷ 16 = 4.6875, so 5 minibuses are needed, because 4 would leave people behind. Higher: a rectangle x cm by (x + 3) cm with area 40 cm² gives x^2 + 3x − 40 = 0, so (x + 8)(x − 5) = 0. A length cannot be −8, so x = 5.',
+        example: { prompt: 'Boxes hold 12 eggs. How many boxes can be filled from 100 eggs?', steps: ['100 ÷ 12 = 8.33…', 'Only full boxes count: 8'] },
+        visual: { kind: 'work', lines: ['x(x + 3) = 40', 'x^2 + 3x − 40 = 0', '(x + 8)(x − 5) = 0', 'x = 5 (a length cannot be −8)'] } },
+    ],
+    skills: [S('maths.algebra.form-geometry'), S('maths.algebra.form-context'), S('maths.algebra.form-interpret')],
+    checkPlan: [['maths.algebra.form-geometry', 1], ['maths.algebra.form-geometry', 2], ['maths.algebra.form-geometry', 3], ['maths.algebra.form-geometry', 3], ['maths.algebra.form-context', 1], ['maths.algebra.form-context', 2], ['maths.algebra.form-context', 3], ['maths.algebra.form-interpret', 1], ['maths.algebra.form-interpret', 1], ['maths.algebra.form-interpret', 2]],
+    limits: 'Contexts come from a set of templates. Forming the equation is taught and shown in each worked solution; the final answer is marked. Rejecting solutions of quadratic equations in context is Higher only.',
+  },
 ];
 
-export const algebraOrder = ['maths.algebra.notation', 'maths.algebra.simplify', 'maths.algebra.single-brackets', 'maths.algebra.quadratics', 'maths.algebra.linear-equations', 'maths.algebra.formulae', 'maths.algebra.sequences', 'maths.algebra.inequalities', 'maths.algebra.quadratic-equations', 'maths.algebra.simultaneous', 'maths.algebra.coordinates-lines', 'maths.algebra.line-equations', 'maths.algebra.nonlinear-graphs', 'maths.algebra.graphical-solutions', 'maths.algebra.real-life-graphs'];
+export const algebraOrder = ['maths.algebra.notation', 'maths.algebra.simplify', 'maths.algebra.single-brackets', 'maths.algebra.quadratics', 'maths.algebra.linear-equations', 'maths.algebra.formulae', 'maths.algebra.sequences', 'maths.algebra.inequalities', 'maths.algebra.quadratic-equations', 'maths.algebra.simultaneous', 'maths.algebra.coordinates-lines', 'maths.algebra.line-equations', 'maths.algebra.nonlinear-graphs', 'maths.algebra.graphical-solutions', 'maths.algebra.real-life-graphs', 'maths.algebra.forming-equations', 'maths.algebra.functions', 'maths.algebra.proof', 'maths.algebra.algebraic-fractions', 'maths.algebra.iteration'];
 export const orderedAlgebra = algebraOrder.map(id => algebraLessons.find(l => l.id === id));

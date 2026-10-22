@@ -203,3 +203,11 @@ sup .mtok-op{min-width:34px;min-height:34px;font-size:18px;vertical-align:super}
 .mtable-in{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px 14px}
 .mtable-in label{display:flex;align-items:center;gap:6px;font-size:14px;color:var(--navy)}
 #mathsContent .mtable-in input.lab-input{width:64px;margin:0}
+/* Algebra batch 4: working boxes, claims, proofs, line tiles */
+.mwork{margin:10px auto;max-width:520px;padding:14px 18px;border:1px solid #b7c8d640;border-radius:12px;color:var(--cream);font-family:var(--serif);font-size:19px;line-height:1.9;text-align:center}
+.mbigexpr{color:var(--cream);font-family:var(--serif);font-size:24px;text-align:center;margin:18px 0 10px}
+.mclaim{color:var(--cream);font-family:var(--serif);font-size:19px;font-style:italic;text-align:center;margin:12px 8px}
+.mproof{color:var(--cream);font-size:16px;line-height:1.7;margin:10px 0 0;padding-left:26px}
+.mproof .mmuted{color:#b7c8d6;list-style:none;margin-left:-26px}
+.mtiles-wide{flex-direction:column;align-items:stretch}
+.choice.mtile.mtile-line{font-family:inherit;font-size:15px;text-align:left;padding:10px 14px}

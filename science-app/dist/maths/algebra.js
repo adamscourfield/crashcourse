@@ -6,13 +6,14 @@
 //           2x + 6 and 6 + x + x are equal, and (v − u)/a equals v/a − u/a.
 //   form  - from the written structure: 'simplified' (like terms collected, no brackets),
 //           'expanded', 'factorised' (fully), 'notation' (simplified and no × or ÷ signs,
-//           fractions rather than decimals for coefficients) or 'any'.
+//           fractions rather than decimals for coefficients), 'fraction' (one algebraic fraction
+//           with no common factor left between top and bottom) or 'any'.
 //
 // Syntax accepted: numbers, single letters (implicit multiplication: 3ab, 2(x + 1),
 // (x + 1)(x − 2)), + − × * · ÷ /, ^ or ² ³ for powers, brackets. "x2" is refused with a hint,
 // and "1/2x" is refused as ambiguous, because the student meant something definite and the
 // marker must not guess.
-import { F, add, sub, mul, div, eq, gcd, normalise } from './frac.js?v=20261022-maths-r6';
+import { F, add, sub, mul, div, eq, gcd, normalise } from './frac.js?v=20261022-maths-r7';
 
 /* ───────── polynomials and rational functions ───────── */
 const mkey = m => Object.keys(m).filter(v => m[v]).sort().map(v => v + m[v]).join('·');
@@ -189,9 +190,13 @@ function mono(node, acc = { exps: {}, mulNums: 0, divNums: 0, bad: false, dec: f
       else acc.bad = true;
       break;
     case 'neg': if (dividing) acc.bad = true; else mono(node.e, acc); break;
-    case 'paren': if (isNumeric(node.e)) { if (dividing) acc.divNums++; else acc.mulNums++; } else acc.bad = true; break;
+    case 'paren':
+      if (isNumeric(node.e)) { if (dividing) acc.divNums++; else acc.mulNums++; }
+      else if (dividing && ['mul', 'var', 'pow'].includes(node.e.k)) mono(node.e, acc, true); // 1/(9x^4)
+      else acc.bad = true;
+      break;
     case 'mul':
-      for (const f of node.fs) mono(f.e, acc, f.op === '/');
+      for (const f of node.fs) mono(f.e, acc, dividing !== (f.op === '/'));
       break;
     default: acc.bad = true;
   }
@@ -215,7 +220,7 @@ function hasParen(n) {
   if (!n || typeof n !== 'object') return false;
   if (n.k === 'paren') return !isNumeric(n.e);
   if (n.k === 'add') return n.ts.some(t => hasParen(t.e));
-  if (n.k === 'mul') return n.fs.some(f => hasParen(f.e));
+  if (n.k === 'mul') return n.fs.some(f => (f.op === '/' && f.e.k === 'paren' && ['mul', 'var', 'pow'].includes(f.e.e.k) ? hasParen(f.e.e) : hasParen(f.e)));
   if (n.k === 'neg') return hasParen(n.e);
   if (n.k === 'pow') return hasParen(n.b);
   return false;
@@ -285,6 +290,62 @@ function completedSquare(ast) {
   return squares === 1;
 }
 
+/* ───────── single simplified algebraic fraction ───────── */
+function hasDiv(n) {
+  if (!n || typeof n !== 'object') return false;
+  if (n.k === 'mul') return n.fs.some(f => f.op === '/' || hasDiv(f.e));
+  if (n.k === 'add') return n.ts.some(t => hasDiv(t.e));
+  if (n.k === 'paren' || n.k === 'neg') return hasDiv(n.e);
+  if (n.k === 'pow') return n.e < 0 || hasDiv(n.b);
+  return false;
+}
+/** Univariate polynomial (Map form) → dense coefficient array, or null if several letters. */
+function dense(p) {
+  const out = [];
+  let letter = null;
+  for (const { m, c } of p.values()) {
+    const vs = Object.keys(m);
+    if (vs.length > 1) return null;
+    if (vs.length) { if (letter && letter !== vs[0]) return null; letter = vs[0]; }
+    out[vs.length ? m[vs[0]] : 0] = c;
+  }
+  for (let i = 0; i < out.length; i++) out[i] ??= F(0);
+  return out;
+}
+const trim = a => { while (a.length && a[a.length - 1].n === 0) a.pop(); return a; };
+function polyRem(a, b) {
+  a = trim([...a]);
+  while (a.length >= b.length && a.length) {
+    const k = div(a[a.length - 1], b[b.length - 1]), sh = a.length - b.length;
+    for (let i = 0; i < b.length; i++) a[i + sh] = sub(a[i + sh], mul(k, b[i]));
+    trim(a);
+  }
+  return a;
+}
+/** Degree of gcd(a, b) for dense polynomials with rational coefficients. */
+function gcdDegree(a, b) {
+  a = trim([...a]); b = trim([...b]);
+  while (b.length) { const r = polyRem(a, b); a = b; b = r; }
+  return a.length - 1;
+}
+/** 'ok', 'want-single-fraction' or 'not-cancelled' for an answer that should be one fraction in lowest terms. */
+function fractionInfo(ast) {
+  let node = ast;
+  while (node.k === 'neg') node = node.e;
+  if (!hasDiv(node)) return sumInfo(node).dec ? 'notation-decimal' : 'ok'; // a polynomial: nothing left to cancel
+  if (node.k !== 'mul') return 'want-single-fraction';
+  const divs = node.fs.filter(f => f.op === '/');
+  if (divs.length !== 1 || node.fs[node.fs.length - 1].op !== '/') return 'want-single-fraction';
+  const top = node.fs.slice(0, -1), bottom = node.fs[node.fs.length - 1].e;
+  if (top.some(f => hasDiv(f.e)) || hasDiv(bottom)) return 'want-single-fraction';
+  const N = top.reduce((acc, f) => rMul(acc, evaluate(f.e)), R(pConst(F(1)))).n, D = evaluate(bottom).n;
+  const cs = [...N.values(), ...D.values()].map(t => t.c);
+  if (cs.every(c => c.d === 1) && cs.reduce((g, c) => gcd(g, Math.abs(c.n)), 0) > 1) return 'not-cancelled';
+  const a = dense(N), b = dense(D);
+  if (a && b && trim([...b]).length > 1 && gcdDegree(a, b) > 0) return 'not-cancelled';
+  return 'ok';
+}
+
 /* ───────── marking ───────── */
 const HINTS = {
   'letter-digit': 'Write the number before the letter (3a, not a3), and use ^ for powers: x^2.',
@@ -330,6 +391,7 @@ export function markAlgebra(spec, raw) {
   if (!rEquivalent(value, target)) return { status: 'wrong', code: 'value' };
   const form = spec.form || 'any';
   if (form === 'any') return { status: 'correct' };
+  if (form === 'fraction') { const f = fractionInfo(parsed.ast); return f === 'ok' ? { status: 'correct' } : { status: 'partial', code: f }; }
   if (form === 'completed-square') return completedSquare(parsed.ast) ? { status: 'correct' } : { status: 'partial', code: 'want-completed-square' };
   if (form === 'factorised') {
     const f = factorInfo(parsed.ast);

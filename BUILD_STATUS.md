@@ -1,3 +1,37 @@
+## Maths: Edexcel 1MA1 Algebra batch 04 — functions, algebraic fractions, proof, iteration, forming equations; on GitHub `main`, not published
+
+Five Algebra lessons (16–20):
+- **Forming and solving equations in context** (A21, A17, A18).
+- **Functions** (A7; Higher: notation, inverse and composite).
+- **Identities, show that and proof** (A6, A3; Higher: proof).
+- **Algebraic fractions and fractional indices** (A4, A18; Higher only).
+- **Solving equations by iteration** (A20; Higher only, calculator).
+
+There are 16 new skills (94 in all) and five investigations. Algebra now has 20 lessons: 18 at Foundation and 20 at Higher.
+
+**Engine changes:**
+- a single-simplified-fraction answer form (an uncancelled answer, or a sum of fractions, is marked partly right);
+- divided monomials such as 1/(9x^4) are now accepted as simplified (this fixes a latent fault);
+- subscripts in markup;
+- sqrt() and cbrt() in graphs;
+- a calculator badge driven by the lesson and item.
+
+**QA:**
+- 494 automated tests pass on `main` 71ab5d7 plus this change; `tests/maths-algebra3.test.js` checks every item independently against its printed prompt.
+- Browser walk-throughs: the new flow 7 has 78 checks; the earlier six were rerun (87, 68, 62, 94, 69 and 64); 522 in total.
+- One defect was found and fixed in browser QA: a visual-name clash with the Number function machine.
+- Brief: `curriculum/briefs/maths-algebra-batch-04.md`.
+
+**Cache:** maths modules are at `20261022-maths-r7`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication of lessons 16–20;
+- specialist review;
+- free-text proofs are not marked;
+- algebraic surd expressions, exponential graphs in context, areas under curves, dashed region boundaries, and surd-ratio geometric sequences.
+
+**Next:** Ratio, proportion and rates of change (R1–R16).
+
 ## Physics static/particle batch01 — implemented, published and GitHub updated
 
 Five lessons: three separate-Physics both-tier lessons on electron transfer, non-contact forces, radial fields/sparks (4.2.5.1/.2); two shared both-tier lessons on density/practical preparation and state changes/mass conservation (4/6.3.1.1/.2). Official8463/8464 statements checked22October2026. Density preparation covers regular dimensions, irregular displacement and liquid container subtraction, Physics RP5/Trilogy RP17 AT1, not physical certification. Field-pattern recognition/constrained direction choice supports drawing requirements but unrestricted independent field drawings remain evidence gap. Full Electricity statement/evidence reconciliation remains pending; do not mark topic certified/closed merely because all section headings have teaching.

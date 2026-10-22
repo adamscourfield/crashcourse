@@ -12,7 +12,7 @@
 //   {kind:'points', points:[[x,y],…], grid}     plot exactly these points (any order)
 //   {kind:'line', m:{n,d}, c:{n,d}, grid}       plot at least two points on y = mx + c
 // Raw answers are "x,y;x,y" — the same format as solution pairs.
-import { F, num, fracMarkup, normalise } from './frac.js?v=20261022-maths-r6';
+import { F, num, fracMarkup, normalise } from './frac.js?v=20261022-maths-r7';
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const COL = { ink: '#e4ebf0', muted: '#b7c8d6', grid: '#b7c8d626', axis: '#b7c8d6', a: '#ed8b78', b: '#a8d5b5', c: '#f2d48a', cream: '#f8f6f2', navy: '#182e44' };
@@ -21,11 +21,11 @@ const COL = { ink: '#e4ebf0', muted: '#b7c8d6', grid: '#b7c8d626', axis: '#b7c8d
 const D = Math.PI / 180;
 export function fnOf(expr) {
   let e = String(expr).replace(/−/g, '-').replace(/×/g, '*').replace(/÷/g, '/').replace(/\s+/g, '');
-  e = e.replace(/(sin|cos|tan)\(/g, '@$1(');
+  e = e.replace(/(sin|cos|tan|sqrt|cbrt)\(/g, '@$1(');
   for (let i = 0; i < 3; i++) e = e.replace(/(\d|x|\))(?=[x(@])/g, '$1*');
-  e = e.replace(/\^/g, '**').replace(/(^|[(+\-*/])-/g, '$1(-1)*').replace(/@(sin|cos|tan)/g, 'T.$1');
-  if (!/^[\dx+\-*/().]*$/.test(e.replace(/T\.(sin|cos|tan)/g, ''))) throw new Error('bad graph expression ' + expr);
-  const T = { sin: d => Math.sin(d * D), cos: d => Math.cos(d * D), tan: d => Math.tan(d * D) };
+  e = e.replace(/\^/g, '**').replace(/(^|[(+\-*/])-/g, '$1(-1)*').replace(/@(sin|cos|tan|sqrt|cbrt)/g, 'T.$1');
+  if (!/^[\dx+\-*/().]*$/.test(e.replace(/T\.(sin|cos|tan|sqrt|cbrt)/g, ''))) throw new Error('bad graph expression ' + expr);
+  const T = { sin: d => Math.sin(d * D), cos: d => Math.cos(d * D), tan: d => Math.tan(d * D), sqrt: Math.sqrt, cbrt: Math.cbrt };
   const f = Function('x', 'T', `return (${e});`);
   return x => f(x, T);
 }

@@ -12,7 +12,7 @@ import {rateFigure,catalystFigure} from './kinetic-figures.js?v=20261022-matter0
 import {profileFigure} from './energy-graphs.js?v=20261022-matter01r3';
 import {topics,topicById,topicLessons,contextKey,contextRun,courseFor,specRefs} from './registry.js?v=20261022-matter01r3';
 import {lessons,conceptNames,sourceURLs} from './content.js?v=20261022-matter01r3';
-import {createMathsStudio} from './maths/studio.js?v=20261022-maths-r6';import {STORAGE_KEY,subjects,restore,session,eligible,grade,recordConcept,updateCompletion,dueConcepts,isCorrect} from './progress.js?v=20261022-matter01r3';
+import {createMathsStudio} from './maths/studio.js?v=20261022-maths-r7';import {STORAGE_KEY,subjects,restore,session,eligible,grade,recordConcept,updateCompletion,dueConcepts,isCorrect} from './progress.js?v=20261022-matter01r3';
 import {showScene,mountWidget} from './widgets.js?v=20261022-matter01r3';
 import {renderDiagram} from './visual.js?v=20261022-matter01r3';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
