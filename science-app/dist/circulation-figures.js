@@ -1,5 +1,5 @@
-import{anatomicalHeartFigure}from './heart-anatomy.js?v=20261022-electricity02r3';
-import{circuit,gasSnapshot}from './circulation-models.js?v=20261022-electricity02r3';
+import{anatomicalHeartFigure}from './heart-anatomy.js?v=20261022-electricity02r4';
+import{circuit,gasSnapshot}from './circulation-models.js?v=20261022-electricity02r4';
 const text=(x,y,t,s=16)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f8f6f2" font-size="${s}">${t}</text>`;
 export const circSvg=(label,body)=>`<svg class="shell-diagram circ-diagram" viewBox="0 0 480 350" role="img" aria-label="${label}">${body}</svg>`;
 export const heartFigure=anatomicalHeartFigure;

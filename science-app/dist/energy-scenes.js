@@ -1,6 +1,6 @@
-import {renderDiagram} from './visual.js?v=20261022-electricity02r3';
-import {profileFigure} from './energy-graphs.js?v=20261022-electricity02r3';
-import {transferCases,temperatureAccount} from './energy-models.js?v=20261022-electricity02r3';
+import {renderDiagram} from './visual.js?v=20261022-electricity02r4';
+import {profileFigure} from './energy-graphs.js?v=20261022-electricity02r4';
+import {transferCases,temperatureAccount} from './energy-models.js?v=20261022-electricity02r4';
 export function showEnergy(kind='transfer',t=transferCases[0],reveal=true,profile={reactants:40,products:25,peak:90}){
  if(kind.startsWith('profile')){const data=kind==='profile-endo'?{reactants:40,products:55,peak:90}:profile;renderDiagram('From reactants to products','Relative energy · no numerical energy units',profileFigure(data)+'<p class="diagram-caption">A compares the chosen starting level with the peak. B compares the endpoint levels. Not a time graph.</p>','REACTION PROFILE · SYMBOLIC LEVELS');return;}
  if(kind==='endo')t=transferCases[1];const a=temperatureAccount(t.initial,t.final),out=a.direction==='out',text=(x,y,s,size=14)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f8f6f2" font-family="sans-serif" font-size="${size}">${s}</text>`;

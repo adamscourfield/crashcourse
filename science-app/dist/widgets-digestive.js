@@ -1,5 +1,5 @@
-import{renderDiagram,renderCustomModel}from './visual.js?v=20261022-electricity02r3';
-import{enzymeCases,temperatureData,phData,conditionResult,foodMatch,validSites,fatGeometry,fatOutcome}from './digestive-models.js?v=20261022-electricity02r3';
+import{renderDiagram,renderCustomModel}from './visual.js?v=20261022-electricity02r4';
+import{enzymeCases,temperatureData,phData,conditionResult,foodMatch,validSites,fatGeometry,fatOutcome}from './digestive-models.js?v=20261022-electricity02r4';
 const txt=(x,y,t,s=15)=>`<text x="${x}" y="${y}" fill="#f8f6f2" text-anchor="middle" font-size="${s}">${t}</text>`;
 const svg=(label,body)=>`<svg class="shell-diagram" role="img" aria-label="${label}" viewBox="0 0 480 350">${body}</svg>`;
 const opts=(pairs,value)=>'<option value="">Choose…</option>'+pairs.map(([v,t])=>`<option value="${v}" ${String(v)===String(value)?'selected':''}>${t}</option>`).join('');

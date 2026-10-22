@@ -1,7 +1,7 @@
-import {nanoLessons,nanoConcepts} from './content-nano.js?v=20261022-electricity02r3';
-import {carbonLessons,carbonConcepts} from './content-carbon.js?v=20261022-electricity02r3';
-import {structureLessons,structureConcepts} from './content-structures.js?v=20261022-electricity02r3';
-import {covalentLessons,covalentConcepts} from './content-covalent.js?v=20261022-electricity02r3';
+import {nanoLessons,nanoConcepts} from './content-nano.js?v=20261022-electricity02r4';
+import {carbonLessons,carbonConcepts} from './content-carbon.js?v=20261022-electricity02r4';
+import {structureLessons,structureConcepts} from './content-structures.js?v=20261022-electricity02r4';
+import {covalentLessons,covalentConcepts} from './content-covalent.js?v=20261022-electricity02r4';
 const Q=(id,prompt,options,answer,why,concept)=>({id:'bonding.'+id,prompt,options,answer,why,concept:'bonding.'+concept});
 const C=(title,text,scene)=>({title,text,scene});
 export const bondingLessons=[
