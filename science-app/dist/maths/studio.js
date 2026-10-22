@@ -16,6 +16,9 @@ import { visual5, MODELS5 } from './models-algebra2.js?v=20261022-maths-r7';
 import { visual6, MODELS6 } from './models-graphs.js?v=20261022-maths-r7';
 import { visual7, MODELS7 } from './models-algebra3.js?v=20261022-maths-r7';
 import { MODELS8 } from './models-algebra4.js?v=20261022-maths-r7';
+import { visual9, MODELS9 } from './models-ratio.js?v=20261022-maths-r7';
+import { MODELS10 } from './models-ratio2.js?v=20261022-maths-r7';
+import { ratioTopic, orderedRatio } from './lessons-ratio.js?v=20261022-maths-r7';
 import { visual, mountModel } from './models-number.js?v=20261022-maths-r7';
 import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r7';
 import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r7';
@@ -23,8 +26,8 @@ import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r7';
 import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r7';
 
 const STAGES = ['Discover', 'Investigate', 'Practise', 'Check'];
-const orderedLessons = [...numberLessons, ...orderedAlgebra];
-const mathsTopics = [...numberTopics, algebraTopic];
+const orderedLessons = [...numberLessons, ...orderedAlgebra, ...orderedRatio];
+const mathsTopics = [...numberTopics, algebraTopic, ratioTopic];
 const EVENT_TEXT = { up: 'Level up', down: 'Stepping back a level to rebuild', practised: 'Skill secure' };
 
 export function createMathsStudio({ root, modal, closeModal, onProgress }) {
@@ -103,7 +106,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const c = l.learn[p.card];
     p.reveal ??= {};
     const shown = p.reveal[p.card] ?? 0;
-    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual) || visual2(c.visual) || visual3(c.visual) || visual4(c.visual) || visual5(c.visual) || visual6(c.visual) || visual7(c.visual)}</div>`;
+    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual) || visual2(c.visual) || visual3(c.visual) || visual4(c.visual) || visual5(c.visual) || visual6(c.visual) || visual7(c.visual) || visual9(c.visual)}</div>`;
     $('#mTitle').textContent = c.title;
     const pre = p.card === 0 && l.prerequisites?.length ? `<div class="prerequisites"><span>Prior learning:</span>${l.prerequisites.map(id => `<button class="text-button" data-mpre="${id}">${esc(orderedLessons.find(x => x.id === id)?.title || id)}</button>`).join('')}</div>` : '';
     $('#mBody').innerHTML = `${pre}<p>${mathHTML(c.text)}</p><div class="mexample"><div class="mexample-q"><span class="eyebrow">EXAMPLE</span><p>${mathHTML(c.example.prompt)}</p></div><ol class="msteps">${c.example.steps.map((st, i) => `<li ${i < shown ? '' : 'hidden'}>${mathHTML(st)}</li>`).join('')}</ol>${shown < c.example.steps.length ? `<button class="secondary" id="mReveal">${shown ? 'Next step' : 'Try it, then show the first step'}</button>` : ''}</div><div class="reading-dots">${l.learn.map((_, i) => `<button data-mcard="${i}" aria-label="Explanation ${i + 1}" class="${i === p.card ? 'current' : ''}">${i + 1}</button>`).join('')}</div>`;
@@ -118,7 +121,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const generation = modelGeneration, panel = $('#mPanel'), body = $('#mBody');
     $('#mTitle').textContent = '';
     $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
-    (MODELS8[l.model] || MODELS7[l.model] || MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
+    (MODELS10[l.model] || MODELS9[l.model] || MODELS8[l.model] || MODELS7[l.model] || MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
       panel, body, w: p.widget, tier: s.tier,
       isActive: () => generation === modelGeneration && panel.isConnected && body.isConnected && $('#mPanel') === panel && !!$('#mTitle'),
       save, feedback, setTitle: t => ($('#mTitle').textContent = t),

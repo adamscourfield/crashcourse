@@ -1,3 +1,35 @@
+## Maths: Edexcel 1MA1 Ratio, proportion and rates of change — batches 01–02 (8 lessons); on GitHub `main`, not published
+
+A new third Maths topic (`maths.ratio`), now available on the course map. Every R1–R16 statement is taught and practised; see `curriculum/maths-ratio-requirements.csv`.
+
+**Batch 01:**
+- ratio notation and fractions (R3, R4, R6, R8);
+- sharing and combining ratios (R5);
+- proportion, best buys and conversions (R7, R10, R11, R1);
+- percentages, change, original value and simple interest (R9);
+- compound interest, growth and decay (R16, calculator; Higher: iterative processes).
+
+**Batch 02:**
+- direct and inverse proportion equations and graphs (R10, R13, R14; Higher: powers, roots and formulae);
+- scale drawings, maps and similar shapes (R2, R12; Higher: area and volume factors);
+- compound units and rates of change (R1, R11, R14; Higher: R15 chords and tangents).
+
+There are 17 new skills (116 in all) and eight investigations. Money answers must show 2 d.p.; unsimplified ratios are marked as partly right.
+
+**QA:**
+- 518 automated tests pass (`tests/maths-ratio.test.js`: 9 tests, including independent re-solves of every printed prompt).
+- A new test renders every Maths worked-example visual through the studio's dispatch chain and fails on name clashes (the defect class behind the `machine` and `bars` console errors found in browser QA).
+- All ten Maths browser walk-throughs pass: 87, 68, 62, 94, 69, 64, 78, 53, 70 and 46 checks, 691 in total.
+- Briefs: `curriculum/briefs/maths-ratio-batch-01.md` and `-02.md`.
+
+**Cache:** maths modules are at `20261022-maths-r7`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication;
+- specialist review.
+
+**Next:** Geometry and measures (G1–G25).
+
 ## Maths: Edexcel 1MA1 Algebra batch 05 — remaining Algebra gaps closed; on GitHub `main`, not published
 
 Two lessons close the gaps recorded after batch 04:

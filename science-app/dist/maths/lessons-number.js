@@ -20,7 +20,7 @@ export const mathsTopics = [
 ];
 
 export const mathsCourseMap = [
-  ['Number', 'maths.number'], ['Algebra', 'maths.algebra'], ['Ratio, proportion and rates of change', null], ['Geometry and measures', null], ['Probability', null], ['Statistics', null],
+  ['Number', 'maths.number'], ['Algebra', 'maths.algebra'], ['Ratio, proportion and rates of change', 'maths.ratio'], ['Geometry and measures', null], ['Probability', null], ['Statistics', null],
 ];
 
 export const mathsSource = 'https://qualifications.pearson.com/content/dam/pdf/GCSE/mathematics/2015/specification-and-sample-assesment/gcse-maths-2015-specification.pdf';

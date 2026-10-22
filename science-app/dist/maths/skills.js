@@ -7,8 +7,10 @@ import { algebraSkills2 } from './skills-algebra2.js?v=20261022-maths-r7';
 import { graphSkills } from './skills-graphs.js?v=20261022-maths-r7';
 import { algebraSkills3 } from './skills-algebra3.js?v=20261022-maths-r7';
 import { algebraSkills4 } from './skills-algebra4.js?v=20261022-maths-r7';
+import { ratioSkills } from './skills-ratio.js?v=20261022-maths-r7';
+import { ratioSkills2 } from './skills-ratio2.js?v=20261022-maths-r7';
 
-export const allSkills = [...numberSkills, ...numberSkills2, ...numberSkills3, ...algebraSkills, ...algebraSkills2, ...graphSkills, ...algebraSkills3, ...algebraSkills4];
+export const allSkills = [...numberSkills, ...numberSkills2, ...numberSkills3, ...algebraSkills, ...algebraSkills2, ...graphSkills, ...algebraSkills3, ...algebraSkills4, ...ratioSkills, ...ratioSkills2];
 export const skillById = Object.fromEntries(allSkills.map(s => [s.id, s]));
 if (Object.keys(skillById).length !== allSkills.length) throw new Error('Duplicate maths skill id');
 export function generate(skillId, level, seed) {
