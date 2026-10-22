@@ -14,15 +14,15 @@
     "Published Site (not published)"
   ],
   "scope": "Maths Algebra batch 02: sequences, inequalities, quadratic and simultaneous equations; solution-set, inequality and list answers",
-  "automatedSuite": "447 tests pass (npm test) on main 24dc0cd plus Algebra batch 02",
+  "automatedSuite": "470 tests pass (npm test) on main 406f618 plus Algebra batch 03",
   "summary": {
     "checks": 69,
     "passed": 69,
     "failed": 0
   },
   "checks": [
-    "course map: Algebra has 10 lessons",
-    "Algebra progress 0 / 10",
+    "course map: Algebra has 15 lessons",
+    "Algebra progress 0 / 15",
     "sequences card 1 has a visual",
     "sequences card 2 has a visual",
     "sequences card 3 has a visual",
@@ -79,7 +79,7 @@
     "formula answers to 2 d.p. accepted",
     "Higher: quadratic nth term appears in sequences",
     "Number progress unaffected",
-    "Algebra progress 1 / 10",
+    "Algebra progress 1 / 15",
     "science storage unchanged",
     "390px: sequences stage 2 has no overflow",
     "390px: sequences stage 3 has no overflow",

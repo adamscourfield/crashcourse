@@ -1,9 +1,9 @@
 // Visual models and investigations for Algebra batch 2: sequences, inequalities, quadratic and
 // simultaneous equations. visual5() draws worked-example diagrams; MODELS5 holds the investigations.
-import { mathHTML, esc } from './render.js?v=20261022-maths-r5';
-import { F, eq, num, parseNumber } from './frac.js?v=20261022-maths-r5';
-import { C, btn, progressDots } from './models-number.js?v=20261022-maths-r5';
-import { markAlgebra, equivalent, evalAt, algebraHint } from './algebra.js?v=20261022-maths-r5';
+import { mathHTML, esc } from './render.js?v=20261022-maths-r6';
+import { F, eq, num, parseNumber } from './frac.js?v=20261022-maths-r6';
+import { C, btn, progressDots } from './models-number.js?v=20261022-maths-r6';
+import { markAlgebra, equivalent, evalAt, algebraHint } from './algebra.js?v=20261022-maths-r6';
 
 const W = 600;
 const M = s => mathHTML(s);

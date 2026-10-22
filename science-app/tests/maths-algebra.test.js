@@ -13,6 +13,7 @@ import { orderedLessons as numberLessons } from '../dist/maths/lessons-number.js
 import { levelsFor, topLevel, freshMaths, lessonState, lessonDone } from '../dist/maths/mastery.js';
 import { visual4 } from '../dist/maths/models-algebra.js';
 import { visual5 } from '../dist/maths/models-algebra2.js';
+import { visual6 } from '../dist/maths/models-graphs.js';
 
 const N = 250;
 const algebraSkills = allSkills.filter(sk => sk.id.startsWith('maths.algebra.'));
@@ -195,8 +196,8 @@ test('algebra marking: equivalence, form, notation and unreadable input', () => 
 
 test('Higher-only algebra sits only in final Higher levels; Foundation checks never reach it', () => {
   const higher = algebraSkills.flatMap(sk => sk.levels.map((l, i) => (l.higher ? `${sk.id}@${i + 1}` : null)).filter(Boolean));
-  assert.deepEqual(higher.sort(), ['maths.algebra.expand-double@3', 'maths.algebra.factorise-quadratic@3', 'maths.algebra.quad-solve@3']);
-  assert.deepEqual(algebraSkills.filter(sk => sk.higherOnly).map(sk => sk.id).sort(), ['maths.algebra.ineq-quadratic', 'maths.algebra.quad-complete-square', 'maths.algebra.quad-formula', 'maths.algebra.seq-nth-quadratic', 'maths.algebra.sim-nonlinear']);
+  assert.deepEqual(higher.sort(), ['maths.algebra.expand-double@3', 'maths.algebra.factorise-quadratic@3', 'maths.algebra.graph-line-equation@3', 'maths.algebra.graph-recognise@2', 'maths.algebra.quad-solve@3']);
+  assert.deepEqual(algebraSkills.filter(sk => sk.higherOnly).map(sk => sk.id).sort(), ['maths.algebra.graph-circle', 'maths.algebra.graph-gradient-area', 'maths.algebra.graph-regions', 'maths.algebra.graph-transform', 'maths.algebra.ineq-quadratic', 'maths.algebra.quad-complete-square', 'maths.algebra.quad-formula', 'maths.algebra.seq-nth-quadratic', 'maths.algebra.sim-nonlinear']);
   for (const sk of algebraSkills) assert.ok(sk.levels.slice(0, levelsFor(sk, 'Foundation').length).every(l => !l.higher), sk.id);
   for (const l of orderedAlgebra) for (const [id, lv] of l.checkPlan) assert.ok(!levelsFor(skillById[id], 'Foundation')[Math.min(lv, topLevel(skillById[id], 'Foundation')) - 1].higher);
 });
@@ -211,7 +212,7 @@ test('algebra lesson records: ids, refs, prerequisites, visuals and check plans'
     for (const p of l.prerequisites || []) assert.ok(known.has(p), `${l.id} prerequisite ${p} must come earlier`);
     known.add(l.id);
     assert.ok(l.learn.length >= 3);
-    for (const c of l.learn) assert.ok(c.example.steps.length && (visual4(c.visual) || visual5(c.visual)).length > 20, `${l.id}: ${c.title} visual`);
+    for (const c of l.learn) assert.ok(c.example.steps.length && (visual4(c.visual) || visual5(c.visual) || visual6(c.visual)).length > 20, `${l.id}: ${c.title} visual`);
     assert.equal(l.checkPlan.length, 10);
     for (const [id, lv] of l.checkPlan) { assert.ok(l.skills.some(sk => sk.id === id), `${l.id} check uses foreign skill ${id}`); assert.ok(lv >= 1 && lv <= skillById[id].levels.length); }
     assert.equal(new Set(l.checkPlan.map(([id]) => id)).size, l.skills.length, `${l.id} check must sample every skill`);
