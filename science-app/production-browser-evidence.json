@@ -159,7 +159,7 @@
       "progress": "25 / 25"
     }
   ],
-  "assessment": "INDEPENDENT TOPIC ASSESSMENT\nEcology\n\n25 questions, one from each available lesson. This checks available lessons, not the full topic. First answers count. Results include explanations. Pass mark: 80%.\n\nStart assessment →",
+  "assessment": "INDEPENDENT TOPIC ASSESSMENT\nEcology\n\n25 questions, one from each available lesson. This checks available lessons, not the full topic. First answers count. Results include explanations. Pass mark: 80%.\n\nStart assessment \u2192",
   "mathsPreserved": true,
   "consoleErrors": [],
   "limitations": [
@@ -168,7 +168,23 @@
     "Original model counts and yields not calibrated forecasts",
     "No full assistive-technology/device certification"
   ],
-  "publication": "pending",
+  "publication": {
+    "status": "succeeded",
+    "source_commit": "8eaa065ff83a08b15bed0385203ca60b6da57d81",
+    "deployment": "appgdep_6ad9d465bc94819196cdf560789fcbcb",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_5329c3382fa0819197ff98e65ecbe36a",
+    "url": "https://gcse-science-atom-lab.newbuddy32.chatgpt.site/",
+    "published_at": "2026-10-22T09:16:39Z",
+    "audience": "owner_private_preserved",
+    "liveEcologyLessons": 25,
+    "liveNewProcess": "mycoprotein default inline process, Loop checked, single player",
+    "liveMathsLessons": 15,
+    "liveConsoleErrors": [],
+    "proof": "crash-course-ecology06.png",
+    "githubSourceCommit": "c4ba1bd3a005ea8004ecc4cab75ab15187a15a7a",
+    "githubRepository": "https://github.com/adamscourfield/crashcourse",
+    "githubBranch": "main"
+  },
   "notesVerified": true,
   "integration": {
     "remoteCommit": "14803ca",

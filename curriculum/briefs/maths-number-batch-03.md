@@ -125,3 +125,5 @@ Evidence: `science-app/maths-browser-evidence-3.json` (with the refreshed `-evid
 2. Publish Number to the Site with a global cache bump.
 3. Add conjugate rationalisation at Higher.
 4. Build expression-equivalence marking, then start the Algebra strand.
+
+Publication22October2026: lessons11–15 included in combined Ecology06 release; deployment appgdep_6ad9d465bc94819196cdf560789fcbcb, source8eaa065ff83a08b15bed0385203ca60b6da57d81. All15 Maths lessons preserved. Original403-test/217-browser-check evidence retained;411 combined tests and subject/model/mobile smoke checks pass. See BUILD_STATUS.md and production-browser-evidence.json. Specialist and written-working/expression limitations remain.
