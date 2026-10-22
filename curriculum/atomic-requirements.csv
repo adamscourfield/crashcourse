@@ -1,0 +1,52 @@
+requirement_id,aqa_separate_ref,aqa_trilogy_ref,objective,lesson_ids,teaching_evidence,assessment_evidence,coverage_status,remaining_work
+atomic-01,4.1.1.1,5.1.1.1,Define atom and element,particles,Discover 1,c-p1; p-o2,covered_representative,
+atomic-02,4.1.1.1,5.1.1.1,Link symbols to element names,periodic,First-20 clickable table,Table missions; c-t2,needs_more_practice,Broaden independent symbol/name recall across the required set
+atomic-03,4.1.1.1,5.1.1.1,Know required first-20 and Group 1/7 names/symbols,periodic;alkali;halogens,First-20 table; named group families,Representative table missions,needs_more_practice,Add a varied symbol drill; all required names are taught but not independently checked
+atomic-04,4.1.1.1,5.1.1.1,Identify compound and fixed ratio,particles,Discover 2 and molecule construction,c-p1; p-co2,covered_representative,
+atomic-05,4.1.1.1,5.1.1.1,Explain new substances and energy transfer in reactions,particles;equations,Discover 3; atom rearrangement,Balancing lab; c-e1,cross_topic,Extend energy-change evidence in Energy changes
+atomic-06,4.1.1.1,5.1.1.1,Distinguish chemical decomposition from physical separation,particles;separation,Discover 3; separation methods,c-p3,covered_representative,
+atomic-07,4.1.1.1,5.1.1.1,Name familiar compounds from formulae,equations,Discover 1 naming examples,p-e1,needs_more_practice,Expand name/formula variety as new compounds are taught
+atomic-08,4.1.1.1,5.1.1.1,Write word and balanced symbol equations,equations,Hydrogen/water worked equation; coefficient lab,p-e2; c-e1; c-e2,cross_topic,Add constructed word-equation/formula responses and further specified reactions in Chemical changes and Organic chemistry
+atomic-09,4.1.1.1,5.1.1.1,Balance ionic and half-equations where appropriate (Higher),equations,Higher Discover 3,p-eht; c-eht,cross_topic,Further reaction-specific applications in Chemical changes
+atomic-10,4.1.1.2,5.1.1.2,Describe mixture and unchanged substance properties,particles;separation,Discover explanation,c-p2,covered_representative,
+atomic-11,4.1.1.2,5.1.1.2,Explain filtration and choose it for insoluble solids,separation,Discover 1; method scenario 1,c-s1,covered_representative,
+atomic-12,4.1.1.2,5.1.1.2,Explain crystallisation and choose it for crystals,separation,Discover 1; method scenario 2,Lab method selection,covered_representative,
+atomic-13,4.1.1.2,5.1.1.2,Explain simple distillation and choose solvent recovery,separation,Discover 2; method scenario 3,p-s1,covered_representative,
+atomic-14,4.1.1.2,5.1.1.2,Explain fractional distillation of miscible liquids,separation,Discover 2; method scenario 4,c-s2,covered_representative,
+atomic-15,4.1.1.2,5.1.1.2,Explain chromatography and choose separation of colours,separation,Discover 3; method scenario 5,p-s2; c-s3,covered_representative,
+atomic-16,4.1.1.3,5.1.1.3,Link new evidence to changing models,models,Discover 1–3; scattering lab,c-m3,covered_representative,
+atomic-17,4.1.1.3,5.1.1.3,Explain electron discovery and plum pudding,models,Discover 1; historical model,c-m1,covered_representative,
+atomic-18,4.1.1.3,5.1.1.3,Infer concentrated positive mass from scattering,models,Discover 2; three alpha paths,p-m1; p-m2; atomic.evidence.models,covered_representative,
+atomic-19,4.1.1.3,5.1.1.3,Compare diffuse charge with nuclear model,models,Historical 3D/2D models,atomic.evidence.models,covered_representative,
+atomic-20,4.1.1.3,5.1.1.3,Identify Bohr energy levels and later proton evidence,models,Discover 3,c-m2; subatomic charge checks,covered_representative,
+atomic-21,4.1.1.3,5.1.1.3,Identify Chadwick neutron evidence and historical ordering,models,Discover 3,atomic.evidence.neutron,covered_representative,
+atomic-22,4.1.1.4,5.1.1.4,State relative particle charges and atomic neutrality,subatomic,Discover 1–2; atom/ion lab,p-a1; p-a2; c-a1,covered_representative,
+atomic-23,4.1.1.4,5.1.1.4,Use proton count to identify an element,subatomic,Discover 2; element chooser,c-me2,covered_representative,
+atomic-24,4.1.1.5,5.1.1.5,Describe typical atomic and nuclear radii,subatomic,Discover 3; scale analogy,c-a3,covered_representative,
+atomic-25,4.1.1.5,5.1.1.5,State particle masses and location of atomic mass,subatomic,Discover 1 and 3,Particle explanations; representative application,needs_more_practice,Add independent relative-mass and scale explanation tasks
+atomic-26,4.1.1.5,5.1.1.5,Use mass number and atomic number,isotopes,Discover 1,p-i1; c-i1,covered_representative,
+atomic-27,4.1.1.5,5.1.1.5,Explain isotopes as different neutron counts,isotopes,Discover 1–2,p-i2,covered_representative,
+atomic-28,4.1.1.5,5.1.1.5,Calculate proton/neutron/electron counts in atoms and ions,isotopes;subatomic,Worked Cl-37 and Na examples; atom/ion lab,c-i1; atomic.numeric.aluminium-ion,covered_representative,
+atomic-29,4.1.1.5,5.1.1.5,Use isotope notation,isotopes,Discover 1; mass/atomic-number explanation,c-i1,covered_representative,
+atomic-30,4.1.1.6,5.1.1.6,Define abundance-weighted relative atomic mass,isotopes,Discover 3; isotope-mixture slider,c-i2; c-i3,covered_representative,
+atomic-31,4.1.1.6,5.1.1.6,Calculate weighted relative atomic mass,isotopes,Free numeric lab entry,atomic.numeric.weighted-mass,covered_representative,
+atomic-32,4.1.1.7,5.1.1.7,Fill lowest available shells for first 20,electrons,Discover 1–2; shell builder,p-el1; p-el2; c-el1; c-el2,covered_representative,
+atomic-33,4.1.1.7,5.1.1.7,Represent arrangements as lists and diagrams,electrons;subatomic,Number lists; first-20 atom selector; diagram alternative,Na/Ca shell builder,needs_more_practice,Broaden independently constructed diagrams beyond Na and Ca
+atomic-34,4.1.2.1,5.1.2.1,Order table by atomic number,periodic,Discover 1,c-t1,covered_representative,
+atomic-35,4.1.2.1,5.1.2.1,Connect groups/periods to electron arrangements,periodic,Discover 1; table missions,p-t1; c-t3,covered_representative,
+atomic-36,4.1.2.1,5.1.2.1,Predict chemistry from position,periodic;alkali;halogens,Group explanations and reaction/displacement labs,Group check items,covered_representative,
+atomic-37,4.1.2.2,5.1.2.2,Explain early weight ordering and unsuitable grouping,periodic,Discover 3,p-t2,covered_representative,
+atomic-38,4.1.2.2,5.1.2.2,Explain Mendeleev gaps and successful predictions,periodic,Discover 3,p-t2,covered_representative,
+atomic-39,4.1.2.2,5.1.2.2,Use isotopes to explain weight-order anomalies,periodic,Discover 3,Explanation only,needs_more_practice,Add a data-based mass/proton-order anomaly question
+atomic-40,4.1.2.3,5.1.2.3,Compare metal/non-metal properties and position,metals,Discover 1–2; classification lab,p-me1; c-me1; c-me3,covered_representative,
+atomic-41,4.1.2.3,5.1.2.3,Explain positive metal ions and electron behaviour,metals,Discover 3; atom/ion lab,p-me2; c-me2,covered_representative,
+atomic-42,4.1.2.4,5.1.2.4,Explain Group 0 stability including helium exception,noble,Discover 1,p-n1; c-n1; c-n3,covered_representative,
+atomic-43,4.1.2.4,5.1.2.4,Predict Group 0 boiling-point trend,noble,Discover 2–3; comparison lab,p-n2; c-n2,covered_representative,
+atomic-44,4.1.2.5,5.1.2.5,Explain Group 1 outer electron and reactivity trend,alkali,Discover 1 and 3,p-g1; c-g1; c-g3,covered_representative,
+atomic-45,4.1.2.5,5.1.2.5,Describe Li/Na/K reactions with water/oxygen/chlorine,alkali,Discover 2; reagent explorer,p-g2; c-g2,needs_more_practice,Add independent observations/equations across all nine metal/reagent combinations
+atomic-46,4.1.2.6,5.1.2.6,Describe halogen molecules and physical trends,halogens,Discover 1,p-h2; c-h1,covered_representative,
+atomic-47,4.1.2.6,5.1.2.6,Explain halogen compounds with metals/non-metals,halogens,Discover 2; NaCl/HCl examples,Explanations and later bond-type practice,needs_more_practice,Add independent product classification beyond examples
+atomic-48,4.1.2.6,5.1.2.6,Explain reactivity and predict displacement,halogens,Discover 2–3; three predictions,p-h1; c-h2; c-h3,covered_representative,
+atomic-49,4.1.3.1,,Compare transition metals with Group 1,transition,Discover 1; family comparison,p-tr1; c-tr2,covered_representative,
+atomic-50,4.1.3.2,,Recognise variable-charge ions and coloured compounds,transition,Discover 2; named examples,p-tr2; c-tr3,covered_representative,
+atomic-51,4.1.3.2,,Recognise catalyst uses and named element examples,transition,Discover 1–3; catalyst task,c-tr1; catalyst task,covered_representative,

@@ -1,0 +1,9 @@
+export const osmosisCases=[{id:'dilute',name:'Outside more dilute',answer:'in',effect:'Water enters overall',description:'Outside solution is more dilute than the cell contents.'},{id:'concentrated',name:'Outside more concentrated',answer:'out',effect:'Water leaves overall',description:'Outside solution is more concentrated than the cell contents.'},{id:'equal',name:'Equal effective concentration',answer:'balanced',effect:'No net water movement',description:'Solutions have equal effective concentration across this membrane.'}];
+export const osmosisStep=value=>Math.max(0,Math.min(4,Math.floor(Number(value)||0)));
+export function osmosisState(id='dilute',value=0){const step=osmosisStep(value),c=osmosisCases.find(c=>c.id===id)||osmosisCases[0],direction=c.answer==='in'?1:c.answer==='out'?-1:0;return{step,direction,scale:1+direction*step*.045,inward:step?(direction>0?3:direction<0?1:2):0,outward:step?(direction<0?3:direction>0?1:2):0};}
+export const percentageChange=(initial,final)=>Number(initial)>0&&Number.isFinite(Number(final))?(Number(final)-Number(initial))/Number(initial)*100:null;
+export const massRate=(initial,final,hours)=>Number(hours)>0?(Number(final)-Number(initial))/Number(hours):null;
+export const osmosisRows=[0,.2,.4,.6,.8].map((concentration,i)=>{const pct=12-i*6,initial=2,finals=[pct-1,pct,pct+1].map(p=>Number((initial*(1+p/100)).toFixed(2)));return{concentration,initial,finals,mean:finals.reduce((a,b)=>a+b,0)/3,pct};});
+export const mean=values=>values.reduce((a,b)=>a+Number(b),0)/values.length;
+export function plotValid(points={}){return osmosisRows.every((r,i)=>Number.isFinite(Number(points[i]))&&String(points[i]??'').trim()!==''&&Math.abs(Number(points[i])-r.pct)<.01);}
+export function practicalPlanValid(w){return w.control==='same'&&w.blot==='blot'&&w.prediction==='gain';}

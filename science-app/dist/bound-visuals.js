@@ -1,0 +1,1 @@
+import{renderDiagram}from './visual.js?v=20261022-bound-r2';import{boundFigure}from './bound-figures.js?v=20261022-bound-r2';export function showBound(spec='extinction',w={}){renderDiagram(w.title||'Populations and communities',w.label||'Original educational evidence',boundFigure({kind:spec.split(':')[0],...w}),'POPULATIONS AND COMMUNITIES');}

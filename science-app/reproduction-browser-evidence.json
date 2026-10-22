@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-21",
+  "flows": [
+    {
+      "title": "Puberty & reproductive hormones",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Which pairing is correct?\n✓ Which change is controlled by reproductive hormones?\n✓ Which structure produces the main female reproductive hormone in the GCSE model?\n✓ An egg leaves an ovary. Name the event.\n✓ Which is a reproductive cell rather than a hormone?\n✓ How should a28-day GCSE cycle be interpreted?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "The menstrual cycle: events & roles",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ A follicle contains a maturing egg. Which pituitary hormone supports this?\n✓ Which hormone stimulates release of the egg?\n✓ Which role fits oestrogen in this basic model?\n✓ Progesterone is most directly linked to…\n✓ Which correctly separates two events?\n✓ What can the example animation establish?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Hormone interactions & cycle graphs",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Which feedback link limits further FSH release?\n✓ Which temporary interaction precedes ovulation?\n✓ After ovulation, which hormone helps maintain the lining and inhibits FSH/LH?\n✓ On the fresh graph, on which supplied day does LH peak?\n✓ On the fresh graph, progesterone falls from 7 at day 22 to 1 at day 28. Fall?\n✓ What does a schematic hormone graph alone fail to establish?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Contraception: mechanisms & evidence",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Which mechanism fits hormonal inhibition of egg maturation?\n✓ Which pair are barrier methods?\n✓ Which statement about intrauterine methods is accurate?\n✓ What is the main action of spermicide?\n✓ Sterilisation primarily interrupts…\n✓ Why cannot science alone choose a method for everyone?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "lesson": "fertility-treatment",
+      "score": "7/7",
+      "practice": 5
+    }
+  ],
+  "phone": [
+    {
+      "page": 390,
+      "task": "1 / 3 · Match hormone sources and actions",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Distinguish cell, organ and signal",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Interpret the simplified model",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Coordinate the ovary and uterus",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Match the four hormone roles",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Separate the two organs",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Read the original relative-unit graph",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Build the ovarian feedback sequence",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Identify stimulatory and inhibitory links",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Classify each mechanism",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Evaluate an original classroom dataset",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Connect evidence and values",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Build the IVF pathway",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Compare drug treatment and IVF",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Weigh outcomes and limitations",
+      "width": 390
+    }
+  ],
+  "resume": {
+    "completion": "25/25",
+    "graphDay": 28,
+    "numericDraft": 6
+  },
+  "scope": {
+    "separateHigher": 25,
+    "separateFoundation": 19,
+    "trilogyHigher": 14,
+    "trilogyFoundation": 11
+  },
+  "notes": "All five full flows; wrong investigation and practice retries; IVF microscopy practice and seventh check verified separately. Phone widths measured at all15 tasksets. Presence of a hidden process container is not a visibility assertion."
+}

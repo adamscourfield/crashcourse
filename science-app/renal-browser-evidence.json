@@ -1,0 +1,196 @@
+{
+  "date": "2026-10-21",
+  "fullFlows": [
+    {
+      "title": "Water balance & osmosis",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ A body cell swells in very dilute surrounding fluid. Why?\n✓ A concentrated body fluid surrounds a cell. Predict the change.\n✓ Which loss occurs via the lungs?\n✓ Which combination is found in sweat?\n✓ Which statement distinguishes urea and urine?\n✓ Similar fluid concentrations on both sides mean…\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Kidneys: filter, recover, excrete",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Which process moves useful glucose from filtered fluid back to blood?\n✓ Which pair can be selectively reabsorbed?\n✓ Why can glucose enter filtrate without normally appearing in final urine?\n✓ Which normally does not cross the filtration barrier?\n✓ Fresh ledger: filtered ions18, returned13. Amount remaining?\n✓ Which conclusion fits the fresh bar chart?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Urea: from excess amino acids to excretion",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Amino acids are present in excess. Where is their nitrogen processed into urea?\n✓ What is the toxic intermediate?\n✓ Which sequence is correct?\n✓ How does urea reach the kidneys?\n✓ Which statement is accurate?\n✓ Why is this animation not a chemical equation?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "ADH: regulate water reabsorption",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Blood becomes too concentrated. What is expected?\n✓ How does ADH increase water recovery?\n✓ A person has more dilute blood after water intake. Which response fits?\n✓ What happens as suitable concentration is restored?\n✓ Fresh model:20 filtered water units,17 returned. How many remain?\n✓ Which comparison is correct?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Kidney failure: dialysis & transplant",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ A dialyser contains a membrane with small pores. Which normally stays in blood?\n✓ Fresh fluid has no urea. Predict the net movement.\n✓ Why use suitable glucose concentration in dialysis fluid?\n✓ Which comparison is balanced?\n✓ Why may anti-rejection medicines increase infection risk?\n✓ A candidate cannot currently receive a suitable donor organ. Which conclusion fits?\nNext lesson →\nTry the check again\nReview concepts"
+    }
+  ],
+  "phoneInvestigations": [
+    {
+      "lesson": "Water balance & osmosis",
+      "challenge": "1 / 3 · Predict cell water movement",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "Water balance & osmosis",
+      "challenge": "2 / 3 · Distinguish loss routes",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "Water balance & osmosis",
+      "challenge": "3 / 3 · Account for a supplied water sample",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "Kidneys: filter, recover, excrete",
+      "challenge": "3 / 3 · Translate the table and bars",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "Kidneys: filter, recover, excrete",
+      "challenge": "1 / 3 · Build filtration and recovery",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "Kidneys: filter, recover, excrete",
+      "challenge": "2 / 3 · Choose what is recovered or retained",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "Urea: from excess amino acids to excretion",
+      "challenge": "1 / 3 · Trace safe nitrogen excretion",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "Urea: from excess amino acids to excretion",
+      "challenge": "2 / 3 · Distinguish production and removal",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "Urea: from excess amino acids to excretion",
+      "challenge": "3 / 3 · Explain rapid conversion",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "ADH: regulate water reabsorption",
+      "challenge": "1 / 3 · Build the concentrated-blood response",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "ADH: regulate water reabsorption",
+      "challenge": "2 / 3 · Compare water availability",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "ADH: regulate water reabsorption",
+      "challenge": "3 / 3 · Calculate the urine remainder",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "Kidney failure: dialysis & transplant",
+      "challenge": "1 / 3 · Predict membrane exchange",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "Kidney failure: dialysis & transplant",
+      "challenge": "2 / 3 · Trace extracorporeal blood treatment",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    },
+    {
+      "lesson": "Kidney failure: dialysis & transplant",
+      "challenge": "3 / 3 · Compare treatment trade-offs",
+      "layout": {
+        "scroll": 390,
+        "width": 390
+      }
+    }
+  ],
+  "phoneFilms": [
+    {
+      "lesson": "Water balance & osmosis",
+      "loop": true,
+      "width": 304,
+      "caption": "2 / 4 · Water still moves both ways; the cell loses water and shrinks."
+    },
+    {
+      "lesson": "Kidneys: filter, recover, excrete",
+      "loop": true,
+      "width": 304,
+      "caption": "2 / 3 · Useful glucose, some ions and water are selectively reabsorbed into blood."
+    },
+    {
+      "lesson": "Urea: from excess amino acids to excretion",
+      "loop": true,
+      "width": 304,
+      "caption": "2 / 4 · Deamination produces toxic ammonia."
+    },
+    {
+      "lesson": "ADH: regulate water reabsorption",
+      "loop": true,
+      "width": 304,
+      "caption": "2 / 4 · ADH increases kidney-tubule permeability to water."
+    },
+    {
+      "lesson": "Kidney failure: dialysis & transplant",
+      "loop": true,
+      "width": 304,
+      "caption": "2 / 4 · The membrane allows small urea molecules to cross down a concentration gradient."
+    }
+  ],
+  "checks": {
+    "wrongComparisons": true,
+    "outOfOrderStages": true,
+    "swappedBarsRejected": true,
+    "barDraftRestored": true,
+    "wrongFirstLockedOnReload": true,
+    "failedCheck": "4/6 67%",
+    "retake": "6/6 100%",
+    "separateHigher": "20/20",
+    "separateFoundation": "16/16",
+    "combinedHigher": "9/9",
+    "keyboardScrubAndReplay": true
+  },
+  "limitations": [
+    "Not specialist review",
+    "No full screen-reader or physical-device certification"
+  ]
+}

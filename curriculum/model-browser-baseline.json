@@ -1,0 +1,590 @@
+[
+  {
+    "id": "particles",
+    "captionOverlap": false,
+    "controls": 7,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "Your atoms",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "equations",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Balance the atoms",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "separation",
+    "captionOverlap": false,
+    "controls": 3,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Filtration",
+    "overflow": false,
+    "svgLabels": [
+      null
+    ]
+  },
+  {
+    "id": "models",
+    "captionOverlap": false,
+    "controls": 2,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Scattering evidence",
+    "overflow": false,
+    "svgLabels": [
+      null
+    ]
+  },
+  {
+    "id": "subatomic",
+    "captionOverlap": false,
+    "controls": 3,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "Chlorine-35",
+    "overflow": false,
+    "svgLabels": [
+      "Chlorine: 17 protons, 18 neutrons, 18 electrons"
+    ]
+  },
+  {
+    "id": "isotopes",
+    "captionOverlap": false,
+    "controls": 3,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Isotope mixture",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "electrons",
+    "captionOverlap": false,
+    "controls": 6,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Build the shells",
+    "overflow": false,
+    "svgLabels": [
+      null
+    ]
+  },
+  {
+    "id": "periodic",
+    "captionOverlap": true,
+    "controls": 1,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "The first 20 elements",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "metals",
+    "captionOverlap": false,
+    "controls": 3,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "Aluminium-27",
+    "overflow": false,
+    "svgLabels": [
+      "Aluminium: 13 protons, 14 neutrons, 13 electrons"
+    ]
+  },
+  {
+    "id": "noble",
+    "captionOverlap": false,
+    "controls": 3,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Noble-gas boiling points",
+    "overflow": false,
+    "svgLabels": [
+      null
+    ]
+  },
+  {
+    "id": "alkali",
+    "captionOverlap": false,
+    "controls": 3,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Lithium + water",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "halogens",
+    "captionOverlap": false,
+    "controls": 3,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Displacement explorer",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "transition",
+    "captionOverlap": false,
+    "controls": 3,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Group 1 metals",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.bonding.chemical-bonds",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "Metallic bonding",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.bonding.ionic-bonding",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Sodium oxide",
+    "overflow": false,
+    "svgLabels": [
+      null
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.ionic-lattices",
+    "captionOverlap": false,
+    "controls": 7,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "Sodium chloride lattice",
+    "overflow": false,
+    "svgLabels": [
+      "A 2D slice of alternating positive sodium ions and negative chloride ions"
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.covalent-single",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Your electron-pair diagram",
+    "overflow": false,
+    "svgLabels": [
+      "Your outer-shell diagram for HCl; shared pairs 1, lone pairs by atom 3, 0"
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.covalent-molecules",
+    "captionOverlap": false,
+    "controls": 11,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Your electron-pair diagram",
+    "overflow": false,
+    "svgLabels": [
+      "Your outer-shell diagram for CH₄; shared pairs 1, 1, 1, 1, lone pairs by atom 0, 0, 0, 0, 0"
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.metallic",
+    "captionOverlap": false,
+    "controls": 6,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Distorted layers",
+    "overflow": false,
+    "svgLabels": [
+      "Different sizes distort the rows and obstruct sliding"
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.states",
+    "captionOverlap": false,
+    "controls": 8,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "At the transition",
+    "overflow": false,
+    "svgLabels": [
+      "Two phases coexist: a regular solid group and an irregular liquid group. The displayed proportions are arbitrary."
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.molecular-properties",
+    "captionOverlap": false,
+    "controls": 7,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "Separated, intact molecules",
+    "overflow": false,
+    "svgLabels": [
+      "Three separated intact water molecules"
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.polymers",
+    "captionOverlap": false,
+    "controls": 11,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Build the repeating unit",
+    "overflow": false,
+    "svgLabels": [
+      "Polyethene repeating unit with 1 C–C bonds, 4 C–H bonds and 1/1 continuation bonds"
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.giant-covalent",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Read the connections",
+    "overflow": false,
+    "svgLabels": [
+      "Silica connectivity fragment: each Si links four O; oxygen links continue into the network. Flat layout is not the 3D shape."
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.diamond",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "Diamond network fragment",
+    "overflow": false,
+    "svgLabels": [
+      "Central diamond carbon with four covalent neighbours; the network continues beyond them"
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.graphite",
+    "captionOverlap": false,
+    "controls": 6,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "Graphite layer fragments",
+    "overflow": false,
+    "svgLabels": [
+      "Three projected hexagonal sheets without interlayer covalent bonds"
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.graphene-fullerenes",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "Buckminsterfullerene",
+    "overflow": false,
+    "svgLabels": [
+      "Schematic spherical fullerene cage with a pentagonal ring, not a full atom-count diagram"
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.nano-sizes",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Orders of size",
+    "overflow": false,
+    "svgLabels": [
+      "Logarithmic ruler from 0.1 to 10000 nm with marker at 10000 nm"
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.nano-surface",
+    "captionOverlap": false,
+    "controls": 7,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "The same material, divided",
+    "overflow": false,
+    "svgLabels": [
+      "8 separate cubes each of side 5 nm; total material volume 1000 cubic nm"
+    ]
+  },
+  {
+    "id": "science.chemistry.bonding.nano-uses",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Evaluate the evidence",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.quantitative.mass-conservation",
+    "captionOverlap": false,
+    "controls": 8,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Follow the weighed boundary",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.quantitative.formula-mass",
+    "captionOverlap": false,
+    "controls": 7,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "Your atom inventory",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.quantitative.uncertainty",
+    "captionOverlap": false,
+    "controls": 7,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Readings form a distribution",
+    "overflow": false,
+    "svgLabels": [
+      "Readings 3.1, 3.2, 3.3 grams on a rescaled axis; dashed line marks the mean."
+    ]
+  },
+  {
+    "id": "science.chemistry.quantitative.concentration",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Volume and solute mass",
+    "overflow": false,
+    "svgLabels": [
+      "Schematic solution vessel at1500 cubic centimetres and4 grams per cubic decimetre, not to scale."
+    ]
+  },
+  {
+    "id": "science.chemistry.quantitative.moles",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": false,
+    "modelEmpty": false,
+    "name": "Water",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.quantitative.reaction-masses",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Mass → mol → mol → mass",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.quantitative.limiting-reactants",
+    "captionOverlap": false,
+    "controls": 6,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Which supply runs out?",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.quantitative.balance-masses",
+    "captionOverlap": false,
+    "controls": 8,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Mass → amount → whole ratio",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.quantitative.percentage-yield",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Possible → collected",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.quantitative.atom-economy",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Reactants → desired product",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.quantitative.molar-concentration",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Solution → amount → mass",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.quantitative.reacting-solutions",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Known → ratio → unknown",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.quantitative.gas-volumes",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Amount sets the gas volume",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.changes.oxygen-redox",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Track the oxygen transfer",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.changes.reactivity-series",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Read evidence → infer order",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.changes.metal-extraction",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Position sets the extraction route",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.changes.electron-redox",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Donated = accepted",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.changes.acid-metals",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Metal + acid → salt + gas",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.changes.neutralisation-salts",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Choose products from the reactant type",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.changes.soluble-salts",
+    "captionOverlap": false,
+    "controls": 8,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Reaction → pure, dry crystals",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.changes.ph-neutralisation",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Read the pH scale",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.changes.titrations",
+    "captionOverlap": false,
+    "controls": 7,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Read initial and final levels",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.changes.acid-strength",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Ionisation ≠ concentration",
+    "overflow": false,
+    "svgLabels": []
+  },
+  {
+    "id": "science.chemistry.changes.electrolysis-process",
+    "captionOverlap": false,
+    "controls": 5,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Charge needs mobile carriers",
+    "overflow": false,
+    "svgLabels": [
+      "Mobile positive ions move to negative cathode; negative ions to positive anode. Inert electrodes and external direct-current supply."
+    ]
+  },
+  {
+    "id": "science.chemistry.changes.molten-electrolysis",
+    "captionOverlap": false,
+    "controls": 4,
+    "diagram": true,
+    "modelEmpty": false,
+    "name": "Two electrodes. Two products.",
+    "overflow": false,
+    "svgLabels": [
+      "Mobile positive ions move to negative cathode; negative ions to positive anode. Inert electrodes and external direct-current supply."
+    ]
+  }
+]

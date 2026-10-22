@@ -1,0 +1,381 @@
+{
+  "reviewDate": "2026-10-21",
+  "scope": "Source-level inventory supporting per-lesson representation decisions; not new browser QA of unchanged models",
+  "files": [
+    {
+      "file": "acid-scenes.js",
+      "studentControls": 0,
+      "builds": 2
+    },
+    {
+      "file": "amount-scenes.js",
+      "studentControls": 0,
+      "builds": 5
+    },
+    {
+      "file": "aqueous-scenes.js",
+      "studentControls": 0,
+      "builds": 3
+    },
+    {
+      "file": "carbon-scenes.js",
+      "studentControls": 0,
+      "builds": 4
+    },
+    {
+      "file": "catalog-scenes.js",
+      "studentControls": 0,
+      "builds": 2
+    },
+    {
+      "file": "cell-scenes.js",
+      "studentControls": 0,
+      "builds": 2
+    },
+    {
+      "file": "changes-scenes.js",
+      "studentControls": 0,
+      "builds": 2
+    },
+    {
+      "file": "efficiency-scenes.js",
+      "studentControls": 0,
+      "builds": 2
+    },
+    {
+      "file": "electro-scenes.js",
+      "studentControls": 0,
+      "builds": 2
+    },
+    {
+      "file": "energy-scenes.js",
+      "studentControls": 0,
+      "builds": 3
+    },
+    {
+      "file": "equilibrium-scenes.js",
+      "studentControls": 0,
+      "builds": 2
+    },
+    {
+      "file": "health-visuals.js",
+      "studentControls": 0,
+      "builds": 5
+    },
+    {
+      "file": "industry-scenes.js",
+      "studentControls": 0,
+      "builds": 3
+    },
+    {
+      "file": "infection-visuals.js",
+      "studentControls": 0,
+      "builds": 2
+    },
+    {
+      "file": "kinetic-scenes.js",
+      "studentControls": 0,
+      "builds": 3
+    },
+    {
+      "file": "medicine-visuals.js",
+      "studentControls": 0,
+      "builds": 4
+    },
+    {
+      "file": "nano-scenes.js",
+      "studentControls": 0,
+      "builds": 5
+    },
+    {
+      "file": "photo-visuals.js",
+      "studentControls": 0,
+      "builds": 4
+    },
+    {
+      "file": "plant-visuals.js",
+      "studentControls": 0,
+      "builds": 4
+    },
+    {
+      "file": "practical-rate-scenes.js",
+      "studentControls": 0,
+      "builds": 2
+    },
+    {
+      "file": "quant-scenes.js",
+      "studentControls": 0,
+      "builds": 5
+    },
+    {
+      "file": "rate-scenes.js",
+      "studentControls": 0,
+      "builds": 3
+    },
+    {
+      "file": "redox-scenes.js",
+      "studentControls": 0,
+      "builds": 2
+    },
+    {
+      "file": "saltph-scenes.js",
+      "studentControls": 0,
+      "builds": 3
+    },
+    {
+      "file": "special-infection-visuals.js",
+      "studentControls": 0,
+      "builds": 2
+    },
+    {
+      "file": "stoich-scenes.js",
+      "studentControls": 0,
+      "builds": 3
+    },
+    {
+      "file": "structure-scenes.js",
+      "studentControls": 0,
+      "builds": 6
+    },
+    {
+      "file": "thermal-scenes.js",
+      "studentControls": 0,
+      "builds": 5
+    },
+    {
+      "file": "titration-scenes.js",
+      "studentControls": 0,
+      "builds": 3
+    },
+    {
+      "file": "visual.js",
+      "studentControls": 10,
+      "builds": 11
+    },
+    {
+      "file": "volume-scenes.js",
+      "studentControls": 0,
+      "builds": 2
+    },
+    {
+      "file": "widgets-acids.js",
+      "studentControls": 4,
+      "builds": 0
+    },
+    {
+      "file": "widgets-active.js",
+      "studentControls": 11,
+      "builds": 4
+    },
+    {
+      "file": "widgets-amounts.js",
+      "studentControls": 11,
+      "builds": 0
+    },
+    {
+      "file": "widgets-aqueous.js",
+      "studentControls": 2,
+      "builds": 0
+    },
+    {
+      "file": "widgets-biology.js",
+      "studentControls": 5,
+      "builds": 2
+    },
+    {
+      "file": "widgets-carbon.js",
+      "studentControls": 15,
+      "builds": 0
+    },
+    {
+      "file": "widgets-catalog.js",
+      "studentControls": 5,
+      "builds": 0
+    },
+    {
+      "file": "widgets-cells.js",
+      "studentControls": 2,
+      "builds": 0
+    },
+    {
+      "file": "widgets-changes.js",
+      "studentControls": 3,
+      "builds": 0
+    },
+    {
+      "file": "widgets-circulation.js",
+      "studentControls": 16,
+      "builds": 9
+    },
+    {
+      "file": "widgets-covalent.js",
+      "studentControls": 8,
+      "builds": 3
+    },
+    {
+      "file": "widgets-culture.js",
+      "studentControls": 39,
+      "builds": 5
+    },
+    {
+      "file": "widgets-diffusion.js",
+      "studentControls": 15,
+      "builds": 5
+    },
+    {
+      "file": "widgets-digestion-practical.js",
+      "studentControls": 12,
+      "builds": 5
+    },
+    {
+      "file": "widgets-digestive.js",
+      "studentControls": 19,
+      "builds": 6
+    },
+    {
+      "file": "widgets-division.js",
+      "studentControls": 16,
+      "builds": 3
+    },
+    {
+      "file": "widgets-efficiency.js",
+      "studentControls": 4,
+      "builds": 0
+    },
+    {
+      "file": "widgets-electro.js",
+      "studentControls": 2,
+      "builds": 0
+    },
+    {
+      "file": "widgets-energy.js",
+      "studentControls": 2,
+      "builds": 0
+    },
+    {
+      "file": "widgets-equilibrium.js",
+      "studentControls": 4,
+      "builds": 0
+    },
+    {
+      "file": "widgets-health.js",
+      "studentControls": 8,
+      "builds": 0
+    },
+    {
+      "file": "widgets-industry.js",
+      "studentControls": 4,
+      "builds": 0
+    },
+    {
+      "file": "widgets-infection.js",
+      "studentControls": 5,
+      "builds": 0
+    },
+    {
+      "file": "widgets-kinetics.js",
+      "studentControls": 2,
+      "builds": 0
+    },
+    {
+      "file": "widgets-medicines.js",
+      "studentControls": 5,
+      "builds": 0
+    },
+    {
+      "file": "widgets-nano.js",
+      "studentControls": 14,
+      "builds": 0
+    },
+    {
+      "file": "widgets-organisation.js",
+      "studentControls": 28,
+      "builds": 6
+    },
+    {
+      "file": "widgets-osmosis.js",
+      "studentControls": 18,
+      "builds": 4
+    },
+    {
+      "file": "widgets-photosynthesis.js",
+      "studentControls": 5,
+      "builds": 0
+    },
+    {
+      "file": "widgets-plants.js",
+      "studentControls": 7,
+      "builds": 2
+    },
+    {
+      "file": "widgets-quant.js",
+      "studentControls": 16,
+      "builds": 0
+    },
+    {
+      "file": "widgets-rate-practical.js",
+      "studentControls": 2,
+      "builds": 0
+    },
+    {
+      "file": "widgets-rates.js",
+      "studentControls": 2,
+      "builds": 0
+    },
+    {
+      "file": "widgets-redox.js",
+      "studentControls": 2,
+      "builds": 0
+    },
+    {
+      "file": "widgets-saltph.js",
+      "studentControls": 5,
+      "builds": 0
+    },
+    {
+      "file": "widgets-special-infection.js",
+      "studentControls": 6,
+      "builds": 0
+    },
+    {
+      "file": "widgets-specialisation.js",
+      "studentControls": 11,
+      "builds": 3
+    },
+    {
+      "file": "widgets-stem.js",
+      "studentControls": 11,
+      "builds": 3
+    },
+    {
+      "file": "widgets-stoich.js",
+      "studentControls": 4,
+      "builds": 0
+    },
+    {
+      "file": "widgets-structures.js",
+      "studentControls": 24,
+      "builds": 4
+    },
+    {
+      "file": "widgets-thermal.js",
+      "studentControls": 2,
+      "builds": 0
+    },
+    {
+      "file": "widgets-titration.js",
+      "studentControls": 6,
+      "builds": 0
+    },
+    {
+      "file": "widgets-volume.js",
+      "studentControls": 3,
+      "builds": 0
+    },
+    {
+      "file": "widgets.js",
+      "studentControls": 42,
+      "builds": 15
+    }
+  ]
+}

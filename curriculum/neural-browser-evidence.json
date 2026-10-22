@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-21",
+  "flows": [
+    8,
+    8,
+    8,
+    8,
+    9
+  ],
+  "allFifteenChallenges": true,
+  "practiceWrongRetryEach": true,
+  "reflexDraft": {
+    "step": 3,
+    "action": "relay",
+    "restored": true
+  },
+  "synapseStage": "diffusion retained",
+  "reactionDraft": {
+    "quietRuns": 2,
+    "mean": "170",
+    "restored": true
+  },
+  "firstWrongLockedAfterReload": true,
+  "retake": "8/9",
+  "sharedCompletion": "5/5 Trilogy Foundation→Separate Higher",
+  "phone": [
+    {
+      "gap": 24,
+      "title": "Restore a generic target",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Identify controlled internal conditions",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Match detection, coordination and response",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "client": 356,
+      "content": 356,
+      "film": "Homeostasis: a corrective response",
+      "paused": true
+    },
+    {
+      "gap": 24,
+      "title": "Identify effector outputs",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Locate central and connecting structures",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Relate neurone structure to function",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "client": 356,
+      "content": 356,
+      "film": "Nervous response: trace the signal",
+      "paused": true
+    },
+    {
+      "gap": 24,
+      "title": "Explain the protective response",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Build the spinal reflex route",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Compare incoming and outgoing signals",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "client": 356,
+      "content": 356,
+      "film": "Spinal reflex: incoming to outgoing",
+      "paused": true
+    },
+    {
+      "gap": 24,
+      "title": "Distinguish the signal forms",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Advance a chemical synapse",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Test the transmission components",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "client": 356,
+      "content": 356,
+      "film": "Chemical synapse: electrical to chemical to electrical",
+      "paused": true
+    },
+    {
+      "gap": 24,
+      "title": "Plot and interpret the condition means",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Plan a fair reaction-time comparison",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 266.109375,
+      "title": "Collect and average the supplied repeats",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "client": 356,
+      "content": 356,
+      "film": "Ruler catch: prepare, release, catch, record",
+      "paused": true
+    }
+  ],
+  "consoleErrors": []
+}

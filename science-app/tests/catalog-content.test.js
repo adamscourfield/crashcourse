@@ -1,0 +1,8 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {lessons} from '../dist/content.js';
+import {catalogTaskCorrect,labFieldCorrect} from '../dist/catalog-labs.js';
+const batch=lessons.filter(l=>l.widget?.startsWith('catalog-'));
+test('all forty new lessons have explanation, investigation, practice and independent evidence',()=>{assert.equal(batch.length,40);for(const l of batch){assert.ok(l.learn.length>=3,l.id);assert.ok(l.lab.length>=3,l.id);assert.ok(l.practice.length>=3,l.id);assert.ok(l.check.length>=5,l.id);for(const q of [...l.practice,...l.check]){assert.ok(q.feedback||q.explanation||q.why,q.id);if(q.choices)assert.ok(q.answer>=0&&q.answer<q.choices.length,q.id);}}});
+test('every authored investigation accepts its complete answer and rejects blank or a changed field',()=>{for(const l of batch)for(const t of l.lab){const a=Object.fromEntries(t.fields.map(f=>[f.key,f.answer]));assert.ok(catalogTaskCorrect(t,a),t.id);assert.ok(!catalogTaskCorrect(t,{}),t.id);for(const f of t.fields){const wrong=f.type==='number'?Number(f.answer)+10:f.type==='select'?f.options.find(o=>String(o.value)!==String(f.answer)).value:'incorrect';assert.ok(!labFieldCorrect(f,wrong),t.id+f.key);assert.ok(!catalogTaskCorrect(t,{...a,[f.key]:wrong}),t.id+f.key);if(f.type==='select')assert.ok(f.options.some(o=>o.value===f.answer),t.id);}}});
+test('organic and resource tier boundaries remain explicit',()=>{const by=id=>lessons.find(l=>l.id.endsWith('.'+id));for(const id of ['weak-organic-acids','condensation-polymers','amino-acids']){assert.ok(by(id).higher,id);assert.ok(by(id).separate,id);}assert.ok(!by('addition-polymers').higher);assert.ok(!by('natural-polymers').higher);});

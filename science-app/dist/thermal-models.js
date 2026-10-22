@@ -1,0 +1,15 @@
+export const temperatureRows=[{concentration:.25,initial:20,maximum:23},{concentration:.5,initial:20,maximum:26.1},{concentration:.75,initial:20,maximum:29}];
+export const practicalSteps=[
+{id:'plan',title:'Isolate the comparison',prompt:'Test acid concentration in fresh neutralisation trials. Keep enough alkali for the full tested range.',fields:[['independent','Change deliberately',[['concentration','Acid concentration'],['cup','Cup material'],['maximum','Maximum temperature']],'concentration'],['dependent','Compare the measured',[['rise','Temperature rise'],['volume','Total liquid volume'],['lid','Lid thickness']],'rise'],['control','Keep constant',[['both','Volumes, initial temperature and other conditions'],['none','No other conditions'],['rise','The measured temperature rise']],'both']]},
+{id:'data',title:'Read the evidence',prompt:'Same volumes and initial conditions; only acid concentration changes. Use maximum minus initial for each rise.'},
+{id:'evaluate',title:'Improve the evidence',prompt:'Repeated rises at one concentration are 8.0, 8.2 and 14.0°C. Some heat also escapes from the warm cup.',fields:[['repeat','Handle the unusual repeat',[['discard','Delete 14.0 without checking'],['check','Check method and repeat the condition'],['keep','Treat all readings as exact']],'check'],['improve','Reduce heat loss',[['open','Remove the lid'],['insulate','Use an insulated cup and lid'],['delay','Delay recording the maximum']],'insulate']]}
+];
+export const near=(v,target,tolerance=.1)=>v!==''&&v!==null&&v!==undefined&&Number.isFinite(Number(v))&&Math.abs(Number(v)-target)<=tolerance;
+export function practicalThermalCorrect(t,a){if(t.id==='data')return temperatureRows.every((r,i)=>near(a['rise'+i],r.maximum-r.initial,.01))&&a.trend==='increase';return t.fields.every(([id,,,answer])=>a[id]===answer);}
+export const bondCases=[
+{id:'hcl',equation:'H₂ + Cl₂ → 2HCl',rows:[{key:'hh',label:'H–H',side:'break',energy:436,count:1,order:1},{key:'clcl',label:'Cl–Cl',side:'break',energy:242,count:1,order:1},{key:'hcl',label:'H–Cl',side:'form',energy:431,count:2,order:1}]},
+{id:'ammonia',equation:'N₂ + 3H₂ → 2NH₃',rows:[{key:'nn',label:'N≡N',side:'break',energy:945,count:1,order:3},{key:'hh',label:'H–H',side:'break',energy:436,count:3,order:1},{key:'nh',label:'N–H',side:'form',energy:391,count:6,order:1}]},
+{id:'no',equation:'N₂ + O₂ → 2NO',rows:[{key:'nn',label:'N≡N',side:'break',energy:945,count:1,order:3},{key:'oo',label:'O=O',side:'break',energy:498,count:1,order:2},{key:'no',label:'N=O',side:'form',energy:631,count:2,order:2}]}
+];
+export function bondAccount(rows){const broken=rows.filter(r=>r.side==='break').reduce((s,r)=>s+r.count*r.energy,0),formed=rows.filter(r=>r.side==='form').reduce((s,r)=>s+r.count*r.energy,0),overall=broken-formed;return {broken,formed,overall,kind:overall<0?'exo':overall>0?'endo':'zero'};}
+export function bondCorrect(t,a){const e=bondAccount(t.rows);return t.rows.every(r=>near(a[r.key],r.count,0))&&near(a.broken,e.broken)&&near(a.formed,e.formed)&&near(a.overall,e.overall)&&a.kind===e.kind;}

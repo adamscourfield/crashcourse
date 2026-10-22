@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-21",
+  "flows": [
+    8,
+    8,
+    9,
+    8,
+    9
+  ],
+  "practiceWrongRetryEach": true,
+  "allFifteenChallenges": true,
+  "pulseDraftReload": "36 retained",
+  "higherDraft": {
+    "step": 2,
+    "selected": "liver",
+    "restoredAfterFoundationSwitch": true
+  },
+  "firstWrongLockedAfterReload": true,
+  "metabolismRetake": "8/9",
+  "oldTopicProgress": "5/10 retained before new teaching;10/10 after",
+  "phone": [
+    {
+      "gap": 24,
+      "title": "Compare matched seed evidence",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Test the oxygen requirement",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Use the transferred energy",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "client": 356,
+      "content": 356,
+      "film": "Aerobic respiration: inputs to energy use",
+      "startsPaused": true
+    },
+    {
+      "gap": 24,
+      "title": "Separate the fermentation products",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Match organism and products",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Compare equal glucose inputs",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "client": 356,
+      "content": 356,
+      "film": "Anaerobic routes: organism matters",
+      "startsPaused": true
+    },
+    {
+      "gap": 248.2109375,
+      "title": "Convert a timed pulse count",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 241.0078125,
+      "title": "Follow the exercise response",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Compare supply with demand",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "client": 356,
+      "content": 356,
+      "film": "Exercise: demand and oxygen delivery",
+      "startsPaused": true
+    },
+    {
+      "gap": 24,
+      "title": "Interpret recovery carefully",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Trace transport and conversion",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 248.2109375,
+      "title": "Separate extra oxygen from total",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "client": 356,
+      "content": 356,
+      "film": "Recovery: muscle to liver",
+      "startsPaused": true
+    },
+    {
+      "gap": 24,
+      "title": "Assemble the lipid building blocks",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Route the metabolic material",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "gap": 24,
+      "title": "Connect breakdown and synthesis",
+      "viewport": 390,
+      "width": 390
+    },
+    {
+      "client": 356,
+      "content": 356,
+      "film": "Metabolic synthesis: build one lipid",
+      "startsPaused": true
+    }
+  ],
+  "consoleErrors": []
+}

@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-21",
+  "desktopBindings": [
+    "separation",
+    "science.chemistry.bonding.ionic-bonding",
+    "science.chemistry.bonding.states",
+    "science.chemistry.changes.electrolysis-process",
+    "science.chemistry.changes.molten-electrolysis",
+    "science.chemistry.rates.collision-theory",
+    "science.chemistry.rates.dynamic-equilibrium",
+    "science.chemistry.organic.distillation",
+    "science.chemistry.analysis.chromatography-rf",
+    "science.chemistry.analysis.chromatography-practical",
+    "science.biology.cells.cell-cycle",
+    "science.biology.cells.diffusion",
+    "science.biology.cells.osmosis",
+    "science.biology.cells.active-transport",
+    "science.biology.organisation.enzyme-action",
+    "science.biology.organisation.digestive-enzymes",
+    "science.biology.organisation.heart",
+    "science.biology.organisation.double-circulation",
+    "science.biology.organisation.root-uptake",
+    "science.biology.organisation.xylem-transpiration",
+    "science.biology.organisation.phloem-translocation",
+    "science.biology.infection-and-response.resistance",
+    "science.biology.infection-and-response.monoclonal-production",
+    "science.biology.bioenergetics.photosynthesis"
+  ],
+  "phone": [
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Distillation: evaporate, cool, collect",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Electron transfer: sodium and chlorine",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Particle motion in three states",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Molten lead bromide: ion movement",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "One successful collision",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Dynamic equilibrium in a closed system",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Chromatography: a spot separates",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Cell cycle: copy, separate, divide",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Diffusion: random motion, net spread",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Osmosis: follow the water",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Active transport: against the gradient",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "An enzyme cycle",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Follow one route through the double circulation",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Water: soil to atmosphere",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Translocation: source to sink",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Resistance: selection over generations",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Making monoclonal antibodies",
+      "viewport": 390
+    },
+    {
+      "content": 356,
+      "dialog": 356,
+      "page": 390,
+      "svg": true,
+      "title": "Photosynthesis: matter and energy",
+      "viewport": 390
+    }
+  ],
+  "pauseHeld": true,
+  "loopBoundaryWrapped": true,
+  "investigationUnchanged": true
+}

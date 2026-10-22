@@ -1,0 +1,270 @@
+{
+  "date": "2026-10-21",
+  "fullFlows": [
+    {
+      "title": "Genes, environment & variation",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Same genotype, different light conditions and heights: what is supported?\n✓ Different genotypes grown in the same conditions can show…\n✓ When do mutations occur?\n✓ Sexual reproduction contributes by…\n✓ A rare new phenotype suited to new conditions may…\n✓ Fictional G1 height changes from10 to16 cm. Difference?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Evolution by natural selection",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ A dark habitat favours an existing dark variant. Over generations it may…\n✓ What must be passed on for this example to produce inherited change?\n✓ In a fresh fictional cohort,12 of20 have the dark variant. Percentage?\n✓ A trait advantageous in one habitat…\n✓ The model’s fixed20-offspring size is…\n✓ Evolutionary theory links current species to…\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Selective breeding: benefits & risks",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ A farmer chooses high-milk-yield parents. This is…\n✓ Which set contains other required goals?\n✓ Why continue over many generations?\n✓ A narrow breeding pool may…\n✓ Which evaluation is balanced?\n✓ Unlike gene transfer, selective breeding…\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Genetic engineering: uses & choices",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ How does gene transfer differ from selective breeding?\n✓ A crop with disease resistance may offer…\n✓ Which is a potential environmental concern to investigate?\n✓ Human insulin from engineered bacteria should be…\n✓ A claim of possible long-term harm…\n✓ Research on inherited disorders is…\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Enzymes, vectors & gene transfer",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Correct sequence?\n✓ Which description identifies a plasmid here?\n✓ What is distinct from the vector?\n✓ Early introduction is part of the GCSE process because…\n✓ What connects an inserted gene to a protein-based trait?\n✓ A limitation of the process model is…\nNext lesson →\nTry the check again\nReview concepts"
+    }
+  ],
+  "mobile": [
+    {
+      "lesson": "Genes, environment & variation",
+      "task": "1 / 3 · Compare genetic and environmental causes",
+      "overflow": false
+    },
+    {
+      "lesson": "Genes, environment & variation",
+      "task": "2 / 3 · Distinguish new variants from reshuffling",
+      "overflow": false
+    },
+    {
+      "lesson": "Genes, environment & variation",
+      "task": "3 / 3 · Read a controlled phenotype comparison",
+      "overflow": false
+    },
+    {
+      "lesson": "Evolution by natural selection",
+      "task": "2 / 3 · Test selection in two habitats",
+      "overflow": false
+    },
+    {
+      "lesson": "Evolution by natural selection",
+      "task": "3 / 3 · Interpret a fresh cohort",
+      "overflow": false
+    },
+    {
+      "lesson": "Evolution by natural selection",
+      "task": "1 / 3 · Build the selection explanation",
+      "overflow": false
+    },
+    {
+      "lesson": "Selective breeding: benefits & risks",
+      "task": "1 / 3 · Order repeated artificial selection",
+      "overflow": false
+    },
+    {
+      "lesson": "Selective breeding: benefits & risks",
+      "task": "2 / 3 · Match the required breeding goals",
+      "overflow": false
+    },
+    {
+      "lesson": "Selective breeding: benefits & risks",
+      "task": "3 / 3 · Evaluate a breeding programme",
+      "overflow": false
+    },
+    {
+      "lesson": "Genetic engineering: uses & choices",
+      "task": "1 / 3 · Distinguish gene transfer from selective breeding",
+      "overflow": false
+    },
+    {
+      "lesson": "Genetic engineering: uses & choices",
+      "task": "2 / 3 · Interpret supplied application evidence",
+      "overflow": false
+    },
+    {
+      "lesson": "Genetic engineering: uses & choices",
+      "task": "3 / 3 · Separate evidence, concerns and judgements",
+      "overflow": false
+    },
+    {
+      "lesson": "Enzymes, vectors & gene transfer",
+      "task": "1 / 3 · Build the gene-transfer pathway",
+      "overflow": false
+    },
+    {
+      "lesson": "Enzymes, vectors & gene transfer",
+      "task": "2 / 3 · Distinguish gene, vector and product",
+      "overflow": false
+    },
+    {
+      "lesson": "Enzymes, vectors & gene transfer",
+      "task": "3 / 3 · Link early introduction and expression",
+      "overflow": false
+    }
+  ],
+  "teachingCards": [
+    {
+      "lesson": "Genes, environment & variation",
+      "card": 1,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Genes, environment & variation",
+      "card": 2,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Genes, environment & variation",
+      "card": 3,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Genes, environment & variation",
+      "card": 4,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Evolution by natural selection",
+      "card": 1,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Evolution by natural selection",
+      "card": 2,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Evolution by natural selection",
+      "card": 3,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Evolution by natural selection",
+      "card": 4,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Selective breeding: benefits & risks",
+      "card": 1,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Selective breeding: benefits & risks",
+      "card": 2,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Selective breeding: benefits & risks",
+      "card": 3,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Selective breeding: benefits & risks",
+      "card": 4,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Genetic engineering: uses & choices",
+      "card": 1,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Genetic engineering: uses & choices",
+      "card": 2,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Genetic engineering: uses & choices",
+      "card": 3,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Genetic engineering: uses & choices",
+      "card": 4,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Enzymes, vectors & gene transfer",
+      "card": 1,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Enzymes, vectors & gene transfer",
+      "card": 2,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Enzymes, vectors & gene transfer",
+      "card": 3,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Enzymes, vectors & gene transfer",
+      "card": 4,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    }
+  ],
+  "scopes": [
+    {
+      "route": "separate",
+      "tier": "Foundation",
+      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n16\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n16 / 16\nReset lesson"
+    },
+    {
+      "route": "combined",
+      "tier": "Foundation",
+      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n14\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n14 / 14\nReset lesson"
+    },
+    {
+      "route": "combined",
+      "tier": "Higher",
+      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n16\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n16 / 16\nReset lesson"
+    },
+    {
+      "route": "separate",
+      "tier": "Higher",
+      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n20\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n20 / 20\nReset lesson"
+    }
+  ],
+  "cohortReload": "Light habitat, generation1,13 light/7 dark and prediction restored after reload",
+  "numericFigure": "Fresh cohort8 light/12 dark agrees with question",
+  "consoleErrors": [],
+  "limitations": "Technical QA; no specialist review, unrestricted written/freehand assessment or physical-device/screen-reader certification"
+}

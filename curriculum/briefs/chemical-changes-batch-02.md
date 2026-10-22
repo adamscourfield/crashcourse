@@ -1,0 +1,15 @@
+# Chemical changes batch02 —16 October2026
+
+Shared Trilogy8464/Chemistry8462. Extraction both tiers refs5.4.1.3/4.4.1.3; electron redox Higher only refs5.4.1.4/4.4.1.4. Checked official AQA Chemical changes page and Trilogy chemistry content. Prerequisites oxygen-redox/reactivity-series and ionic-bonding. Stable IDs science.chemistry.changes.metal-extraction and electron-redox.
+
+Objectives: explain native unreactive metals versus compounds, choose carbon reduction for oxides below carbon, interpret process data and identify oxygen gain/loss. Higher defines oxidation loss/reduction gain of electrons, constructs half-equations and net ionic displacement equations conserving atoms and charge. Extraction lab3 material/method/rationale decisions; electron lab3 free-entry paired half-equations plus ionic equations for Zn/Cu2+,Mg/Cu2+,Fe/Cu2+. Species supplied and copper product specified; normalize common Unicode/ASCII notation and either side term order, but do not accept misplaced electrons/incorrect charge or coefficients. Text entries are saved before checking. Visual electron ledger shows donated/accepted counts after valid construction; not a reaction animation or apparatus. Independent tests choice/numeric only; independent unrestricted equation writing remains evidence gap. Guided lab construction is recorded separately.
+
+3 Discover,3 practice,5 checks each. Route/tier filtering and earlier histories retained. Wrong method/charge feedback and draft reload to test. No metallurgy-process detail required; electrolysis preview is a cross-topic link, not implemented practical instruction. Authoring skills WS1.2,WS4.1,MS3a; no claim these are explicit paragraph codes. No specialist review. Next acid–metal reactions and neutralisation/salts.
+
+QA/publication evidence recorded below.
+
+## Verification
+
+59 Node checks pass, including equation notation/order acceptance, wrong charge/electron/spectator rejection and Higher fallback preservation. Both lesson flows reached5/5 after Discover,3/3 labs and practice. Wrong physical extraction and electron-side feedback exercised; both drafts survived reload. Foundation modal has3 lessons and excludes electron redox; returning Higher restored all three written equation accounts. Phone390 has no horizontal overflow; scene/caption bounds separated; console clean. Guided free-entry equations are supported; independent checks remain choice/numeric, so unrestricted independent equation-writing mastery is not claimed. No specialist review/practical fulfilment.
+
+Files: content-redox.js,redox-models.js,redox-scenes.js,widgets-redox.js; shell registry/integration. Publication: Succeeded16 October2026 at16:52 BST. Source3a966871dbc57842475c575f42efaa1b3a83ee8d; deployment appgdep_6ad2484b91b88191b40136673a518f67; version appgprj_6ad1be5897a88191909a03ad57857103~appgver_ba056011b41c819181faa9f068d0ed98. Existing owner-private audience preserved. Live refreshed46 lessons and electron-redox opened. Screenshot crash-course-electron-redox-preview.png.

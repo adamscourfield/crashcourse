@@ -1,0 +1,19 @@
+# Local and private configuration
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencies and caches
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.cache/
+coverage/
+
+# Generated deployment packages; source and QA screenshots are tracked
+/science-app*.tar.gz

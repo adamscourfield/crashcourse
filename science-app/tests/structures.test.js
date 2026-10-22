@@ -1,0 +1,9 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {stateAt,stateCases,polymerCounts,validRepeat} from '../dist/structure-models.js';
+import {lessons} from '../dist/content.js';
+import {restore,session} from '../dist/progress.js';
+test('phase prediction handles coexistence boundaries and negative temperatures',()=>{assert.deepEqual(stateCases.map(t=>stateAt(t.t,t.mp,t.bp)),['solid','liquid','gas','solid + liquid']);assert.equal(stateAt(80,-20,80),'liquid + gas');assert.equal(stateAt(-19,-20,80),'liquid');assert.throws(()=>stateAt(0,10,5));assert.throws(()=>stateAt(NaN,0,100));});
+test('polyethene repeats preserve counts and single bonds',()=>{assert.deepEqual(polymerCounts(7),{C:14,H:28});assert.throws(()=>polymerCounts(2.5));assert.equal(validRepeat({cc:1,ch:4,left:1,right:1}),true);assert.equal(validRepeat({cc:2,ch:4,left:1,right:1}),false);assert.equal(validRepeat({cc:1,ch:4,left:0,right:1}),false);});
+test('particle-model limitations are Higher-only in all stages',()=>{const l=lessons.find(l=>l.id==='science.chemistry.bonding.states');assert.equal(l.learn.filter(c=>!c.higher).length,3);assert.equal(l.learn.filter(c=>c.higher).length,1);assert.equal(l.practice.filter(q=>!l.higherQuestions.includes(q.id)).length,3);assert.equal(l.check.filter(q=>!l.higherQuestions.includes(q.id)).length,5);assert.ok(l.higherQuestions.every(id=>[...l.practice,...l.check].some(q=>q.id===id)));});
+test('new lab drafts and older completed lessons survive restoration',()=>{const s=restore(null,null,lessons);session(s,'particles').complete=true;const p=session(s,'science.chemistry.bonding.polymers');p.widget={repeat:{cc:1,ch:2,left:1,right:0},n:7,h:'24',passed:[]};const r=restore(JSON.stringify(s),null,lessons);assert.equal(session(r,'particles').complete,true);assert.deepEqual(session(r,'science.chemistry.bonding.polymers').widget,p.widget);assert.equal(session(r,'science.chemistry.bonding.polymers').widgetDone,false);});

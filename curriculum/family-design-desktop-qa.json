@@ -1,0 +1,34 @@
+[
+  {
+    "id": "particles",
+    "bodyColour": "rgb(248, 246, 242)",
+    "overflow": false,
+    "primary": "rgb(237, 139, 120)",
+    "titleFont": "\"DM Serif Display\", Georgia, serif",
+    "width": 1074
+  },
+  {
+    "id": "science.chemistry.bonding.diamond",
+    "bodyColour": "rgb(248, 246, 242)",
+    "overflow": false,
+    "primary": "rgb(237, 139, 120)",
+    "titleFont": "\"DM Serif Display\", Georgia, serif",
+    "width": 1074
+  },
+  {
+    "id": "science.chemistry.quantitative.balance-masses",
+    "bodyColour": "rgb(248, 246, 242)",
+    "overflow": false,
+    "primary": "rgb(237, 139, 120)",
+    "titleFont": "\"DM Serif Display\", Georgia, serif",
+    "width": 1074
+  },
+  {
+    "id": "science.chemistry.changes.titrations",
+    "bodyColour": "rgb(248, 246, 242)",
+    "overflow": false,
+    "primary": "rgb(237, 139, 120)",
+    "titleFont": "\"DM Serif Display\", Georgia, serif",
+    "width": 1074
+  }
+]

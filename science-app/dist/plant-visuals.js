@@ -1,0 +1,13 @@
+import{renderCustomModel,renderDiagram}from './visual.js?v=20261022-bound-r2';
+import{buildLeaf,buildRoot,buildTube,buildStoma,buildWhole}from './plant-meshes.js?v=20261022-bound-r2';
+import{leafFigure,rootFigure,tubeFigure,stomaFigure,wholeFigure,potometerFigure,sampleFigure,plantGraph}from './plant-figures.js?v=20261022-bound-r2';
+import{leafParts,temperatureData}from './plant-models.js?v=20261022-bound-r2';
+export function showPlant(spec='leaf:all',w={}){let[kind,variant]=spec.split(':'),build,figure,name,formula;const note='<p class="diagram-caption">Original schematic · sizes and steps are symbolic.</p>';
+if(kind==='leaf'){w={part:variant||'all',...w};figure=leafFigure(w);build=buildLeaf;name='Inside the leaf';formula=w.neutral?'Identify the labelled features':leafParts.find(p=>p.id===w.part)?.name||'Tissues cooperate within one organ';}
+else if(kind==='root'){w={kind:variant==='ions'?'ions':'water',...w};figure=rootFigure(w);build=buildRoot;name='Across a root-hair surface';formula=w.kind==='ions'?'Mineral ions · energy-dependent uptake':'Water · osmosis across a membrane';}
+else if(kind==='tube'){w={tissue:variant==='phloem'?'phloem':'xylem',...w};figure=tubeFigure(w);build=buildTube;name=w.tissue==='phloem'?'Pores connect neighbouring cells':'A hollow, reinforced pathway';formula=w.tissue==='phloem'?'Phloem · dissolved sugars':'Xylem · water and mineral ions';}
+else if(kind==='stoma'){w={open:variant!=='closed',...w};figure=stomaFigure(w);build=buildStoma;name='A pore with two roles';formula=w.open?'Gas exchange and water loss':'Closure reduces both exchanges';}
+else if(kind==='whole'){figure=wholeFigure(w);build=buildWhole;name='Roots, stem and leaves';formula=w.cargo==='sugar'?'Sugars to use or storage':'Water and ions towards leaves';}
+else {figure=kind==='sample'?sampleFigure(w.side||'lower',Number(w.index)||0):kind==='graph'?plantGraph(w.points||temperatureData):potometerFigure(w);name=kind==='sample'?'Sample the surface':kind==='graph'?'Plot the evidence':'Measure uptake, then interpret';formula=kind==='sample'?'Count pores in comparable fields':kind==='graph'?'Original data · moderate conditions':'A bubble records uptake, not exact water loss';renderDiagram(name,formula,figure+note,'PLANT INVESTIGATION');return;}
+renderCustomModel({name,formula,kicker:'SCHEMATIC PLANT CUTAWAY',aria:name+'. '+formula+'. Symbolic geometry; labelled diagram available.',atoms:[],bonds:[],radius:kind==='leaf'?2.65:2.5,viewKey:'plant-'+kind,startPaused:true,note:'Symbolic colours and sizes · not a microscope image',diagram:figure+note,build:(g,T)=>build(g,T,w)});
+}

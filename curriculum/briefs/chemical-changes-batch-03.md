@@ -1,0 +1,13 @@
+# Chemical changes batch03 —16 October2026
+
+Shared Trilogy8464/Chemistry8462 both tiers. Acid-metals refs5.4.2.1/4.4.2.1; neutralisation/salts refs5.4.2.2/4.4.2.2. Official AQA Chemical changes and Trilogy chemistry pages checked16 October2026. Acid-metal scope Mg,Zn,Fe with dilute hydrochloric/sulfuric acid only; Higher card/questions identify metal oxidation and H+ reduction. No nitric acid/metal generalisation. Neutralisation includes hydroxide/oxide bases, alkalis, carbonates, chloride/nitrate/sulfate naming and charge-balanced formulae. pH/ionic neutralisation and salt practical follow separately.
+
+Stable IDs science.chemistry.changes.acid-metals and neutralisation-salts. Prerequisites reactivity, ionic lattices/formulae.3 base Discover cards plus Higher acid-redox card. Labs:3 free-entry salt formula and gas/product predictions per lesson, including sulfate and nitrate bracket cases. ASCII/Unicode subscripts accepted; formula case matters. Reveal symbolic products only after correct entries. Saved drafts and feedback; native controls; no practical apparatus, rates or procedural claim. Practice acid3base+1Higher, neutral3. Independent checks acid5base+1Higher, neutral6; numeric/choice evidence distinct from guided free formula production. Recall concepts record metal/acid salts, hydrogen, acid-redox, neutralisation patterns, salt ions and formulae. Existing route/tier filters and histories retained. Next soluble salts practical preparation and pH; later titration/strong-weak/electrolysis. No specialist review.
+
+QA/publication evidence below.
+
+## Verification
+
+62 Node checks pass. Both Higher lesson flows reached6/6 after Discover,3/3 labs and practice. Incorrect salt charge/gas feedback exercised; both drafts survived reload. Unicode nitrate formula accepted with brackets; incorrect ion grouping/case rejected by tests. Foundation shows3 acid cards and filters Higher redox questions; existing saved lab work remains. Phone390 has no horizontal overflow; console clean. Guided formula construction is distinct from independent choice checks; no unrestricted writing mastery, specialist review or practical fulfilment claimed.
+
+Files: content-acids.js,acid-models.js,acid-scenes.js,widgets-acids.js and shell integration. Publication: Succeeded16 October2026 at18:41 BST. Source99a4f11012a812f2b76acef8a954d8934a012641; deployment appgdep_6ad261cfbb108191b34513a6e176eb6d; version appgprj_6ad1be5897a88191909a03ad57857103~appgver_214e75ded0b48191a57060b6947a57b7. Existing owner-private audience preserved. Live refreshed48 lessons and neutralisation-salts opened. Screenshot crash-course-acids-preview.png.

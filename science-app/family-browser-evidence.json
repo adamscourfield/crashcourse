@@ -1,0 +1,258 @@
+{
+  "date": "2026-10-21",
+  "fullFlows": [
+    {
+      "title": "Construct & predict genetic crosses",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Which gametes can BB produce?\n✓ Bb × bb gives which offspring set?\n✓ Bb × Bb gives bb probability…\n✓ Two recessive cells out of four give…\n✓ A correct cross must include…\n✓ A50% chance means…\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Read genetic family trees",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ In the displayed recessive family, I-1 is unaffected but has an affected child. I-1 must be…\n✓ Which genotype is certain for affected II-1?\n✓ What is established about unaffected II-2?\n✓ Which link identifies offspring?\n✓ Why is the key necessary?\n✓ A small family tree may…\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Polydactyly & cystic fibrosis",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Which genotype is affected by polydactyly in the supplied P model?\n✓ Which genotype is affected by recessive CF in the supplied F/f model?\n✓ What is the carrier probability in Ff × Ff?\n✓ What does CF affect, as required here?\n✓ Pp × pp gives an affected probability of…\n✓ After an affected child, Ff × Ff gives the next child an ff chance of…\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Evaluate embryo screening",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ A test does not identify the specified condition. Which conclusion follows?\n✓ Why consider patients’ perspectives?\n✓ Which distinguishes testing from gene therapy?\n✓ A fictional8-embryo set has6 without the tested condition identified. Percentage?\n✓ Which ethical issue can remain despite accurate biological evidence?\n✓ Why can a good test result still fail to lead to a birth?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Chromosomal sex inheritance",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ How many autosome pairs are typical in ordinary body cells?\n✓ In the standard GCSE model XY represents…\n✓ Which combination produces XX?\n✓ Probability of XY per event in the supplied model?\n✓ After three XX outcomes, the next XY probability remains…\n✓ What is a limitation of this cross?\nNext lesson →\nTry the check again\nReview concepts"
+    }
+  ],
+  "mobile": [
+    {
+      "page": 390,
+      "task": "1 / 3 · Construct Aa × aa",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Construct Aa × Aa",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Calculate a constructed outcome",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Read the family-tree key",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Infer the recessive family genotypes",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Apply the inferred parental cross",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Complete supplied polydactyly cross",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Complete supplied carrier cross",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Distinguish carrier, affected and independent risk",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Separate testing from guaranteed outcomes",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Interpret a fictional embryo dataset",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Weigh evidence and differing values",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Complete the supplied XX × XY cross",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Distinguish pairs from gamete sets",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Interpret independent chromosome outcomes",
+      "width": 390
+    }
+  ],
+  "cards": [
+    {
+      "lesson": "Construct & predict genetic crosses",
+      "card": 1,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Construct & predict genetic crosses",
+      "card": 2,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Construct & predict genetic crosses",
+      "card": 3,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Construct & predict genetic crosses",
+      "card": 4,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Read genetic family trees",
+      "card": 1,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Read genetic family trees",
+      "card": 2,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Read genetic family trees",
+      "card": 3,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Read genetic family trees",
+      "card": 4,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Polydactyly & cystic fibrosis",
+      "card": 1,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Polydactyly & cystic fibrosis",
+      "card": 2,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Polydactyly & cystic fibrosis",
+      "card": 3,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Polydactyly & cystic fibrosis",
+      "card": 4,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Evaluate embryo screening",
+      "card": 1,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Evaluate embryo screening",
+      "card": 2,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Evaluate embryo screening",
+      "card": 3,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Evaluate embryo screening",
+      "card": 4,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Chromosomal sex inheritance",
+      "card": 1,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Chromosomal sex inheritance",
+      "card": 2,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Chromosomal sex inheritance",
+      "card": 3,
+      "visible": true,
+      "loop": true
+    },
+    {
+      "lesson": "Chromosomal sex inheritance",
+      "card": 4,
+      "visible": false,
+      "loop": true
+    }
+  ],
+  "scopes": [
+    {
+      "route": "Combined · Trilogy",
+      "tier": "Higher",
+      "progress": "11 / 11"
+    },
+    {
+      "route": "Combined · Trilogy",
+      "tier": "Foundation",
+      "progress": "10 / 10"
+    },
+    {
+      "route": "Separate sciences",
+      "tier": "Foundation",
+      "progress": "12 / 12"
+    },
+    {
+      "route": "Separate sciences",
+      "tier": "Higher",
+      "progress": "15 / 15"
+    }
+  ],
+  "resume": {
+    "editedHeader": "A",
+    "restored": true,
+    "corrected": "a"
+  },
+  "independent": {
+    "firstWrongLocked": true,
+    "failed": "4/6 67%",
+    "retake": "6/6 100%"
+  },
+  "visual": "Assessment pedigree backing corrected and visually rechecked; key/status readable on white card. Model limitations stated.",
+  "limits": "Technical QA only; specialist and unrestricted written/freehand evidence outstanding."
+}

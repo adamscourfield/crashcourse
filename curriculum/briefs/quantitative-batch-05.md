@@ -1,0 +1,17 @@
+# Quantitative batch05 — 16 October 2026
+
+Identity: science.chemistry.quantitative.molar-concentration, reacting-solutions, gas-volumes. Separate Chemistry8462, Higher only. AQA4.3.4 (first two) and4.3.5 (gas) checked16 October2026 at https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/quantitative-chemistry . q5.
+
+Objectives: use n=cV and m=nMr with dm³ volume, rearrange and explain c=m/(Mr V); infer unknown concentration from completely reacting solution volumes and equation ratios; use24 dm³/mol at RTP20°C/1atm, gas mass↔mol↔volume and gaseous coefficient-volume ratios at equal conditions. Prerequisites: concentration, moles, reaction masses. Titration calculation link is explicit but practical technique remains for Chemical changes; these are idealised complete-reaction data, not procedural training.
+
+Three original Discover cards and worked examples each. Labs:3 solution amount/mass tasks;3 reacting-solution known amount/required amount/unknown concentration tasks including1:2 ratios in both directions;3 gas amount/volume accounts including a gas-to-gas ratio. Predictions entered before result, saved inputs, text feedback and non-colour visual account. All use labelled native inputs; static diagrams need no motion setting. Misconceptions: cm³÷1000; c in mol/dm³ differs from g/dm³ by molar mass; equal reacting volumes do not imply equal concentrations; volume ratios apply only to gases at equal T/P;24dm³ is RTP-specific, not all temperatures. No apparatus/practical fulfilment claim.
+
+Practice3 and independent check5 per lesson, fresh numerical examples and explicit tolerances; first answers/retries and80% completion rules remain. Recall concepts include molar amount/mass/relationship, solution ratio/concentration, RTP conditions and gas mass/ratio/rearrangement. Route/tier changes hide lessons but retain progress and separate runs. Official skills:4.3.4 WS4.2,4.3,4.6 MS1a,1c,3b,3c AT1,3,8 opportunities;4.3.5 WS1.2,4.1,4.2,4.3,4.6 MS1a,1c,3b,3c. Authoring calculations do not fulfil AT practical evidence.
+
+Next: audit/reconcile Quantitative requirement statements and remaining independent evidence gaps before marking complete; then Chemical changes. Specialist review not performed. QA and publication evidence recorded below.
+
+## Verification evidence
+
+53 Node tests pass. All3 lesson flows reached5/5 after Discover,3/3 lab cases and3 practice items. Wrong cm³ conversion, reacting coefficient ratio and gas rearrangement produced feedback; all3 drafts survived reload. Foundation and Combined modals excluded all3 lessons; returning Separate Higher restored reacting-volume work. Regression tests cover both qualification/tier restrictions and saved Higher assessment/draft preservation. Phone390 has no horizontal overflow; scene/caption bounds separated; console clean. Technical QA is not specialist review, practical fulfilment or unrestricted written mastery.
+
+Files: content-volume.js, volume-models.js, volume-scenes.js, widgets-volume.js; shell integration and curriculum register updates. Publication: Succeeded16 October2026 at15:03 BST. Source93848cbf5553c824b2d3d28931bd2efbbd1a0057; deployment appgdep_6ad22e84d4a481919bd4069a4de7c331; version appgprj_6ad1be5897a88191909a03ad57857103~appgver_267de74ef0588191a6fb1bd5c0588624. Existing owner-private audience preserved. Live refreshed42 lessons and molar-concentration opened. Screenshot crash-course-volumes-preview.png.

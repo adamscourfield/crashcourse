@@ -1,0 +1,30 @@
+# Chemical changes batch08 — aluminium and electrode half-equations
+
+## Identity and eligibility
+New runtime/curriculum IDs science.chemistry.changes.aluminium-extraction (both routes/both tiers) and science.chemistry.changes.electrode-half-equations (both routes, Higher only). Science/Chemistry, AQA8462 4.4.3.3 and4.4.3.1/5; Trilogy8464 5.4.3.3 and5.4.3.1/5. Version20261018-c8; official source check18 October2026. Prerequisites: carbon extraction/molten electrolysis; Higher electron redox and aqueous products for equations.
+
+Sources: https://www.aqa.org.uk/subjects/chemistry/gcse/chemistry-8462/specification/subject-content/chemical-changes ; https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/chemistry-subject-content ; Oak AQA aluminium extraction lesson https://www.thenational.academy/teachers/programmes/chemistry-secondary-ks4-foundation-aqa/units/electrolysis/lessons/electrolysis-extracting-aluminium .
+
+## Purpose and misconceptions
+Explain electrolysis selection above carbon, energy to maintain molten electrolyte and drive current, cryolite mixture's lower operating temperature, aluminium at cathode and carbon-anode consumption by oxygen. Diagnose cryolite as source of aluminium, carbon reduction of aluminium oxide, electrodes melting, cryolite eliminating electrical demand.
+Higher: write balanced cathode/anode half-equations, conserving element atoms and charge; recognise reduction/gain and oxidation/loss. Diagnose wrong electron side, coefficient/subscript confusion, unbalanced water/oxygen and spectators.
+
+## Discover
+Aluminium: three short cards, labelled cell cross-section and decision/result model. No exact operating-temperature requirement; schematic chemistry, not plant engineering or rates. Higher: three worked steps covering Al3+, diatomic halide and aqueous H+/OH− equations. State symbols optional in marking; Unicode and ASCII notation documented. Prior-knowledge links lead to existing prerequisites. Representation connects to exam cell diagrams and symbolic equations.
+
+## Investigate
+Aluminium: three decisions about route/reason, electrolyte/energy and anode maintenance. Predict before revealing result; all3 causal pairs required. Typed Higher activity: five half-equation tasks (aluminium, bromide, hydrogen, hydroxide, oxide), with a live atom/charge ledger for the learner's entered equation and balance feedback. Correct identity, side, species and balance required; order and integer multiples accepted. All5 required. Incorrect drafts, current task and successful cases persist. Native labelled selects/inputs, no colour-only decisions or motion dependency, readable symbolic diagrams.
+
+## Practise and independent check
+3 aluminium practice/6 independent questions;5 Higher practice (3 full-entry equations)/7 independent (5 full-entry equations plus2 interpretation). Stable IDs and explicit keys/why in content-industry.js. Fresh metal/halide examples distinguish transfer from copying. Independent typed answers have no live ledger or worked model, lock first submission and retain after reload. All equivalent permitted whole-number scales/term orders accepted; unsupported species, wrong electrons/charge and changed products rejected. Format hint does not reveal the answer.
+
+Existing first practice attempt/retry records retained; check80% plus all other stages required. Same-bank retakes and bounded equation marking do not prove every possible equation or unrestricted written explanation. Recall concepts separate extraction, cryolite/energy, anode consumption, cathode reduction and anode oxidation/aqueous balance. Errors trigger immediate remediation; completion schedules browser-local review. Higher lesson disappears on Foundation while retaining draft/check history; topic/route/tier assessment scoping preserved. No progress migration or school practical fulfilment.
+
+## Skills, verification and handover
+Author WS1.2/WS3.5/WS4.1/WS4.2 mappings: model use, causal explanation and chemical symbols; not a claim AQA prints each code beside each paragraph. No new physical practical attainment. Statement coverage map and registers to be updated after checks. Technical model/parser, independent marking, Higher filters and persistence tests required; browser wrong/retry, draft/check reload, route/tier and phone flows required. Specialist review not performed. Implementation and technical QA passed; privately published and live verified. Next: reconcile Chemical changes at statement level, then Energy changes with evidence gaps carried forward.
+
+### Actual verification
+Implemented content-industry.js, half-equations.js, industry-scenes.js and widgets-industry.js; integrated typed equation input/marking/result output across existing shared assessment/review controls.91 automated tests pass, syntax/diff checks pass. Browser full aluminium6/6 and final Higher6/7 including a deliberate wrong cathode equation; correct result text and recall schedule. Five guided balances passed, with incorrect Al/oxide charge diagnostics; wrong extraction and typed practice retry; drafts, corrected practice and locked first answers survive reload; Foundation hides Higher lesson, Combined Higher restores it.390px table/cell/check layouts inspected, no horizontal overflow/caption collision or console errors. Registers/coverage/handover updated. No specialist review or physical practical fulfilment. Privately published and live verified.
+
+
+Changes batch08 publication: succeeded18 October2026 at20:18:46 UTC. Source1762c9ee1d88e47205393613f8c4cf9652ee3159; deployment appgdep_6ad52996ef1081919ecaa71b0718a07f; version appgprj_6ad1be5897a88191909a03ad57857103~appgver_b00ac44ee28081919181432c315425f9. Existing owner-private audience preserved. Live list confirms16 Separate Higher Chemical changes lessons with Higher-only writing label; aluminium lesson opened; console clean. Screenshot crash-course-aluminium-preview.png. Next Chemical changes statement reconciliation, then Energy changes. Specialist review and school practical fulfilment remain outstanding.

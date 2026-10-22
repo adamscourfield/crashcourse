@@ -1,0 +1,269 @@
+{
+  "date": "2026-10-21",
+  "fullFlows": [
+    {
+      "title": "Plant & animal cloning",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Growing a plant from a piece of its parent is…\n✓ A rare plant could be multiplied from small cell groups using…\n✓ An early embryo is separated and placed in host mothers. This is…\n✓ After an adult nucleus enters an enucleated egg, the next GCSE step is…\n✓ Which animal supplies the adult-cell clone’s main nuclear information?\n✓ A farm uses one cloned genotype throughout. A concern is…\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Darwin, Lamarck & changing explanations",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Which contributed to Darwin’s developing explanation?\n✓ A bird uses its wings more, so all offspring inherit stronger wings. Which mechanism is proposed?\n✓ Which is consistent with natural selection?\n✓ Darwin published On the Origin of Species in…\n✓ Why did the unknown inheritance mechanism matter?\n✓ A historical explanation gains stronger support when…\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Wallace & the origin of species",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Who independently proposed natural selection alongside Darwin?\n✓ Joint Darwin–Wallace writings appeared in…\n✓ Which order fits the worked pathway?\n✓ Two populations look different but produce fertile offspring together. The appearance alone…\n✓ Separated populations become unable to produce fertile offspring together. This supports…\n✓ Which limitation belongs to the island animation?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Mendel & the development of genetics",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Mendel’s plant experiments took place mainly in the…\n✓ His inherited units were proposed to…\n✓ Chromosome behaviour was observed before…\n✓ Early-20th-century work supported genes being…\n✓ A fresh fictional sample contains 90 dominant and 30 recessive plants. Dominant percentage?\n✓ Why does the modern gene theory involve many scientists?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Fossils & evidence for evolution",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Which pair provides evidence of evolution?\n✓ A shell’s material is replaced during decay. The fossil pathway is…\n✓ A preserved burrow is…\n✓ In the supplied undisturbed stack, a fossil in the top layer is…\n✓ Why is the early fossil record incomplete?\n✓ On a branching tree, two modern tips sharing a node have…\nNext lesson →\nTry the check again\nReview concepts"
+    }
+  ],
+  "mobile": [
+    {
+      "lesson": "Plant & animal cloning",
+      "task": "1 / 3 · Trace adult nuclear information",
+      "overflow": false
+    },
+    {
+      "lesson": "Plant & animal cloning",
+      "task": "2 / 3 · Choose a cloning method",
+      "overflow": false
+    },
+    {
+      "lesson": "Plant & animal cloning",
+      "task": "3 / 3 · Evaluate copying a genotype",
+      "overflow": false
+    },
+    {
+      "lesson": "Darwin, Lamarck & changing explanations",
+      "task": "1 / 3 · Diagnose the proposed mechanism",
+      "overflow": false
+    },
+    {
+      "lesson": "Darwin, Lamarck & changing explanations",
+      "task": "2 / 3 · Explain gradual acceptance",
+      "overflow": false
+    },
+    {
+      "lesson": "Darwin, Lamarck & changing explanations",
+      "task": "3 / 3 · Use evidence rather than reputation",
+      "overflow": false
+    },
+    {
+      "lesson": "Wallace & the origin of species",
+      "task": "1 / 3 · Build a conditional speciation pathway",
+      "overflow": false
+    },
+    {
+      "lesson": "Wallace & the origin of species",
+      "task": "2 / 3 · Connect contributions and evidence",
+      "overflow": false
+    },
+    {
+      "lesson": "Wallace & the origin of species",
+      "task": "3 / 3 · Test the species claim",
+      "overflow": false
+    },
+    {
+      "lesson": "Mendel & the development of genetics",
+      "task": "1 / 3 · Link discoveries across time",
+      "overflow": false
+    },
+    {
+      "lesson": "Mendel & the development of genetics",
+      "task": "2 / 3 · Interpret an original pea dataset",
+      "overflow": false
+    },
+    {
+      "lesson": "Mendel & the development of genetics",
+      "task": "3 / 3 · Explain delayed recognition",
+      "overflow": false
+    },
+    {
+      "lesson": "Fossils & evidence for evolution",
+      "task": "1 / 3 · Distinguish fossil pathways",
+      "overflow": false
+    },
+    {
+      "lesson": "Fossils & evidence for evolution",
+      "task": "2 / 3 · Interpret original layers and branches",
+      "overflow": false
+    },
+    {
+      "lesson": "Fossils & evidence for evolution",
+      "task": "3 / 3 · Judge strength and gaps in evidence",
+      "overflow": false
+    }
+  ],
+  "cards": [
+    {
+      "lesson": "Plant & animal cloning",
+      "card": 1,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Plant & animal cloning",
+      "card": 2,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Plant & animal cloning",
+      "card": 3,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Plant & animal cloning",
+      "card": 4,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Darwin, Lamarck & changing explanations",
+      "card": 1,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Darwin, Lamarck & changing explanations",
+      "card": 2,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Darwin, Lamarck & changing explanations",
+      "card": 3,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Darwin, Lamarck & changing explanations",
+      "card": 4,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Wallace & the origin of species",
+      "card": 1,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Wallace & the origin of species",
+      "card": 2,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Wallace & the origin of species",
+      "card": 3,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Wallace & the origin of species",
+      "card": 4,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Mendel & the development of genetics",
+      "card": 1,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Mendel & the development of genetics",
+      "card": 2,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Mendel & the development of genetics",
+      "card": 3,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Mendel & the development of genetics",
+      "card": 4,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Fossils & evidence for evolution",
+      "card": 1,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Fossils & evidence for evolution",
+      "card": 2,
+      "process": true,
+      "loop": "",
+      "overflow": false
+    },
+    {
+      "lesson": "Fossils & evidence for evolution",
+      "card": 3,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    },
+    {
+      "lesson": "Fossils & evidence for evolution",
+      "card": 4,
+      "process": false,
+      "loop": null,
+      "overflow": false
+    }
+  ],
+  "scopes": [
+    {
+      "route": "separate",
+      "tier": "Foundation",
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n21\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n21 / 21\nReset lesson"
+    },
+    {
+      "route": "combined",
+      "tier": "Foundation",
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n15\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n15 / 15\nReset lesson"
+    },
+    {
+      "route": "combined",
+      "tier": "Higher",
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n17\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n17 / 17\nReset lesson"
+    },
+    {
+      "route": "separate",
+      "tier": "Higher",
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n25\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n25 / 25\nReset lesson"
+    }
+  ],
+  "resume": "Adult cloning next-stage selection divide restored after reload",
+  "consoleErrors": [],
+  "limitations": "Technical QA, not specialist review or unrestricted writing/freehand/physical-device certification"
+}

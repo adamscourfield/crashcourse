@@ -1,0 +1,251 @@
+{
+  "date": "2026-10-21",
+  "fullFlows": [
+    {
+      "title": "Nucleotides & the DNA polymer",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Where is a base attached?\n✓ Which part differs among the four DNA nucleotides?\n✓ A DNA strand has a backbone of…\n✓ Changing base order can change…\n✓ Two sequences have the same letters in different orders. Must their information match?\n✓ What is the model code used here?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Protein synthesis & folding",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ The complement of ACG is…\n✓ What determines amino-acid order?\n✓ What is joined into the growing chain?\n✓ After assembly, a protein…\n✓ An enzyme shape changes at its active site. What may happen?\n✓ Which statement matches the model limit?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Coding & non-coding variants",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Most mutations…\n✓ A changed enzyme active site may…\n✓ An insertion is…\n✓ A variant in a switch region could change…\n✓ Does non-coding mean biologically useless?\n✓ Why use groups of three in the edit model?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Alleles, genotype & phenotype",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Genotype means…\n✓ With A dominant, Aa shows…\n✓ A recessive phenotype in the paired model appears with…\n✓ Dominant means…\n✓ Most characteristics are influenced by…\n✓ What does a gamete carry for this modelled gene?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Complete genetic crosses",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Aa × aa gives aa probability…\n✓ AA × aa gives offspring genotype…\n✓ Aa × Aa phenotype ratio dominant:recessive is…\n✓ A25% recessive chance means…\n✓ Two Aa cells out of4 represent…\n✓ What is supplied in this lesson’s completion tasks?\nNext lesson →\nTry the check again\nReview concepts"
+    }
+  ],
+  "phone": [
+    {
+      "page": 390,
+      "task": "1 / 3 · Interpret the nucleotide diagram",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Connect sequence to a protein",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Count complete coding triplets",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Match complementary DNA bases",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Assemble and fold the chain",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Link shape with protein function",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Compare insertion and deletion",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Avoid assuming every variant is harmful",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Distinguish coding from regulatory effects",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Match gene, allele and phenotype",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Classify allele pairs",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Apply the bounded dominant/recessive model",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Complete Aa × Aa",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Complete Aa × aa",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Calculate and interpret a probability",
+      "width": 390
+    }
+  ],
+  "cards": [
+    {
+      "lesson": "Nucleotides & the DNA polymer",
+      "card": 1,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Nucleotides & the DNA polymer",
+      "card": 2,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Nucleotides & the DNA polymer",
+      "card": 3,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Nucleotides & the DNA polymer",
+      "card": 4,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Protein synthesis & folding",
+      "card": 1,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Protein synthesis & folding",
+      "card": 2,
+      "visible": true,
+      "loop": true
+    },
+    {
+      "lesson": "Protein synthesis & folding",
+      "card": 3,
+      "visible": true,
+      "loop": true
+    },
+    {
+      "lesson": "Protein synthesis & folding",
+      "card": 4,
+      "visible": true,
+      "loop": true
+    },
+    {
+      "lesson": "Coding & non-coding variants",
+      "card": 1,
+      "visible": true,
+      "loop": true
+    },
+    {
+      "lesson": "Coding & non-coding variants",
+      "card": 2,
+      "visible": true,
+      "loop": true
+    },
+    {
+      "lesson": "Coding & non-coding variants",
+      "card": 3,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Coding & non-coding variants",
+      "card": 4,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Alleles, genotype & phenotype",
+      "card": 1,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Alleles, genotype & phenotype",
+      "card": 2,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Alleles, genotype & phenotype",
+      "card": 3,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Alleles, genotype & phenotype",
+      "card": 4,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Complete genetic crosses",
+      "card": 1,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Complete genetic crosses",
+      "card": 2,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Complete genetic crosses",
+      "card": 3,
+      "visible": false,
+      "loop": true
+    },
+    {
+      "lesson": "Complete genetic crosses",
+      "card": 4,
+      "visible": false,
+      "loop": true
+    }
+  ],
+  "scopes": [
+    {
+      "route": "Combined · Trilogy",
+      "tier": "Higher",
+      "progress": "6 / 6"
+    },
+    {
+      "route": "Combined · Trilogy",
+      "tier": "Foundation",
+      "progress": "6 / 6"
+    },
+    {
+      "route": "Separate sciences",
+      "tier": "Foundation",
+      "progress": "8 / 8"
+    },
+    {
+      "route": "Separate sciences",
+      "tier": "Higher",
+      "progress": "10 / 10"
+    }
+  ],
+  "resume": {
+    "editedGridCell": "aa",
+    "restoredThenCorrected": "Aa"
+  },
+  "limits": "Technical QA, selected response/structured grid evidence; specialist and independent written/drawing review outstanding."
+}

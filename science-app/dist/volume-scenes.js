@@ -1,0 +1,9 @@
+import {renderDiagram} from './visual.js?v=20261022-bound-r2';
+const fmt=n=>Number(n.toPrecision(6));
+export function showVolume(kind,t=null,r=null){
+ const molar=kind==='molar-concentration',reacting=kind==='reacting-solutions';let title,formula,rows;
+ if(molar){title='Solution → amount → mass';formula='n = cV · m = nMᵣ';rows=[t?`${t.solute} · ${t.c} mol/dm³ · ${t.cm3} cm³`:'Convert solution volume to dm³',r?`Amount ${fmt(r.amount)} mol`:'Amount = concentration × volume',r?`Mass ${fmt(r.mass)} g`:'Mass = amount × molar mass'];}
+ else if(reacting){title='Known → ratio → unknown';formula=t?.equation||'Apply the balanced equation';rows=[t?`${t.known}: ${t.c} mol/dm³ · ${t.knownCm3} cm³`:'Find the known amount first',r?`${fmt(r.known)} mol → ${fmt(r.unknown)} mol`:'Use unknown coefficient ÷ known coefficient',r?`${t.unknown}: ${fmt(r.concentration)} mol/dm³`:'Divide by unknown solution volume in dm³'];}
+ else{title='Amount sets the gas volume';formula='RTP · 20°C · 1 atmosphere';rows=[t?.kind==='ratio'?t.equation:t?`${t.mass} g ${t.gas} · Mᵣ ${t.mr}`:'Gas amounts and gas equation ratios',r?`Given gas amount ${fmt(r.amount)} mol`:'At RTP: amount = volume ÷ 24',r?`Required volume ${fmt(r.volume)} dm³`:'At equal T/P: gas volumes follow coefficients'];}
+ renderDiagram(title,formula,`<div class="inventory-board"><span class="eyebrow">${reacting?'COMPLETE-REACTION ACCOUNT':molar?'SOLUTION AMOUNT ACCOUNT':'GAS VOLUME ACCOUNT'}</span>${rows.map(text=>`<div class="inventory-row"><span>${text}</span></div>`).join('')}<p class="diagram-caption">${reacting?'Idealised reacting volumes; this does not teach practical titration technique.':molar?'Total solution volume, not solvent volume. Schematic account, not apparatus.':'24 dm³ per mol applies at the stated RTP. Complete conversion assumed in ratio tasks.'}</p></div>`,reacting?'PREDICT · CONVERT · APPLY THE RATIO':molar?'MOL/DM³ DIFFERS FROM G/DM³':'SAME TEMPERATURE AND PRESSURE');
+}

@@ -1,0 +1,325 @@
+{
+  "date": "2026-10-21",
+  "fullFlows": [
+    {
+      "title": "Adrenaline, thyroxine & feedback",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ An unexpected threat triggers a faster heartbeat. Which hormone is involved?\n✓ Where is thyroxine produced?\n✓ What does basal metabolic rate describe?\n✓ A diagram shows high thyroxine inhibiting pituitary stimulation. What follows?\n✓ Thyroxine falls below the suitable range. What happens in the simplified loop?\n✓ Which explanation links adrenaline to respiration?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Plant growth: light & gravity",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ A lamp is on the left of a shoot. Which direction does it grow?\n✓ In that shoot, which side elongates more?\n✓ A horizontal shoot has more auxin on its lower side. What follows?\n✓ A horizontal root has more auxin on its lower side. What follows?\n✓ Which statement compares the tissues correctly?\n✓ What causes the curvature?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Investigating seedling growth",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ Which is a suitable controlled variable in a light-direction test?\n✓ Which setup helps isolate a gravity response?\n✓ A root grows from 7 mm to 25 mm. Increase?\n✓ Three length increases are 8, 10 and 12 mm. Mean?\n✓ Which drawing is most useful scientifically?\n✓ What does the digital schematic demonstrate?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Using auxins in plant production",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ A nursery wants cuttings to establish roots. Which treatment fits?\n✓ What does rooting powder supply?\n✓ Which is a use of auxins in laboratories?\n✓ How can weed control benefit a cereal crop?\n✓ A field has fewer wildflowers after weed control. What ecological effect is plausible?\n✓ Fictional plots have 20 versus 15 wildflower species. Percentage decrease?\nNext lesson →\nTry the check again\nReview concepts"
+    },
+    {
+      "title": "Gibberellins, ethene & crop control",
+      "result": "LESSON CHECK · RUN 1\n6 / 6 · 100%\n\nLesson complete. Your next recall review is 22 Oct.\n\n✓ A grower wants to break seed dormancy. Which hormone?\n✓ Which conditions still matter for germination?\n✓ Which pair gives two further gibberellin uses?\n✓ Ethene is associated with…\n✓ Fruit must be ready after a journey. Which is a reasonable use?\n✓ Fictional batches ripen in 8 versus 5 days. Reduction in time?\nNext lesson →\nTry the check again\nReview concepts"
+    }
+  ],
+  "mobileInvestigations": [
+    {
+      "page": 390,
+      "task": "1 / 3 · Match glands and responses",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Build the negative feedback loop",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Interpret inhibitory control",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Predict growth towards light",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Compare root and shoot responses",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Explain a phototropic bend",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Assemble a labelled observation",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Plan a fair seedling comparison",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Calculate growth from repeated measurements",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Follow a cutting as roots form",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Match auxin applications",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Evaluate supplied field evidence",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "1 / 3 · Choose the plant hormone for the goal",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "2 / 3 · Follow a possible germination sequence",
+      "width": 390
+    },
+    {
+      "page": 390,
+      "task": "3 / 3 · Evaluate timing during transport",
+      "width": 390
+    }
+  ],
+  "mobileCards": [
+    {
+      "lesson": "Adrenaline, thyroxine & feedback",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "Adrenaline: prepare for action"
+    },
+    {
+      "lesson": "Adrenaline, thyroxine & feedback",
+      "card": 2,
+      "visible": true,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "Thyroxine: close the control loop"
+    },
+    {
+      "lesson": "Adrenaline, thyroxine & feedback",
+      "card": 3,
+      "visible": true,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "Thyroxine: close the control loop"
+    },
+    {
+      "lesson": "Adrenaline, thyroxine & feedback",
+      "card": 4,
+      "visible": false,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "Thyroxine: close the control loop"
+    },
+    {
+      "lesson": "Plant growth: light & gravity",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "Watch unequal growth bend a shoot"
+    },
+    {
+      "lesson": "Plant growth: light & gravity",
+      "card": 2,
+      "visible": true,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "A shoot curves upwards"
+    },
+    {
+      "lesson": "Plant growth: light & gravity",
+      "card": 3,
+      "visible": true,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "A root curves downwards"
+    },
+    {
+      "lesson": "Plant growth: light & gravity",
+      "card": 4,
+      "visible": false,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "A root curves downwards"
+    },
+    {
+      "lesson": "Investigating seedling growth",
+      "card": 1,
+      "visible": false,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "A root curves downwards"
+    },
+    {
+      "lesson": "Investigating seedling growth",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "A root curves downwards"
+    },
+    {
+      "lesson": "Investigating seedling growth",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "A root curves downwards"
+    },
+    {
+      "lesson": "Investigating seedling growth",
+      "card": 4,
+      "visible": false,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "A root curves downwards"
+    },
+    {
+      "lesson": "Using auxins in plant production",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "A cutting establishes roots"
+    },
+    {
+      "lesson": "Using auxins in plant production",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "A cutting establishes roots"
+    },
+    {
+      "lesson": "Using auxins in plant production",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "A cutting establishes roots"
+    },
+    {
+      "lesson": "Using auxins in plant production",
+      "card": 4,
+      "visible": false,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "A cutting establishes roots"
+    },
+    {
+      "lesson": "Gibberellins, ethene & crop control",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "Gibberellin and seed germination"
+    },
+    {
+      "lesson": "Gibberellins, ethene & crop control",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "Gibberellin and seed germination"
+    },
+    {
+      "lesson": "Gibberellins, ethene & crop control",
+      "card": 3,
+      "visible": true,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "Ethene and progressive fruit ripening"
+    },
+    {
+      "lesson": "Gibberellins, ethene & crop control",
+      "card": 4,
+      "visible": false,
+      "loop": true,
+      "page": 390,
+      "panel": 344,
+      "title": "Ethene and progressive fruit ripening"
+    }
+  ],
+  "scopes": [
+    {
+      "route": "Separate sciences",
+      "tier": "Foundation",
+      "heading": "Homeostasis: keeping conditions right",
+      "lesson": "HOMEOSTASIS STUDIO LESSON 01 / 21",
+      "progress": "21 / 21"
+    },
+    {
+      "route": "Combined · Trilogy",
+      "tier": "Foundation",
+      "heading": "Homeostasis: keeping conditions right",
+      "lesson": "HOMEOSTASIS STUDIO LESSON 01 / 11",
+      "progress": "11 / 11"
+    },
+    {
+      "route": "Combined · Trilogy",
+      "tier": "Higher",
+      "heading": "Homeostasis: keeping conditions right",
+      "lesson": "HOMEOSTASIS STUDIO LESSON 01 / 15",
+      "progress": "15 / 15"
+    },
+    {
+      "route": "Separate sciences",
+      "tier": "Higher",
+      "heading": "Homeostasis: keeping conditions right",
+      "lesson": "HOMEOSTASIS STUDIO LESSON 01 / 30",
+      "progress": "30 / 30"
+    }
+  ],
+  "independentCheck": {
+    "firstWrongLockedAfterReload": true,
+    "failed": "4/6 67%",
+    "retake": "6/6 100%"
+  },
+  "resume": {
+    "editedDrawingRootLabel": "seed",
+    "restoredThenCorrected": true,
+    "prior25CompletionsRetained": true
+  },
+  "limits": "Technical QA, structured schematic labelling rather than freehand drawing; no physical apparatus or specialist review. Growth SVG rendering corrected and visually rechecked after flows."
+}

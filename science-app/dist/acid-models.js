@@ -1,0 +1,4 @@
+export function normaliseFormula(s){return String(s).trim().replace(/[₀₁₂₃₄₅₆₇₈₉]/g,c=>'₀₁₂₃₄₅₆₇₈₉'.indexOf(c)).replace(/\s/g,'');}
+export const metalAcidTasks=[{reactants:'Mg + dilute HCl',ions:'Mg²⁺ and Cl⁻',salt:'MgCl2',products:'hydrogen'},{reactants:'Zn + dilute H₂SO₄',ions:'Zn²⁺ and SO₄²⁻',salt:'ZnSO4',products:'hydrogen'},{reactants:'Fe + dilute HCl (Fe²⁺ formed)',ions:'Fe²⁺ and Cl⁻',salt:'FeCl2',products:'hydrogen'}];
+export const neutralTasks=[{reactants:'MgO + HCl',ions:'Mg²⁺ and Cl⁻',salt:'MgCl2',products:'water'},{reactants:'NaOH + H₂SO₄',ions:'Na⁺ and SO₄²⁻',salt:'Na2SO4',products:'water'},{reactants:'CaCO₃ + HNO₃',ions:'Ca²⁺ and NO₃⁻',salt:'Ca(NO3)2',products:'water-co2'}];
+export function validSaltAccount(task,salt,products){return normaliseFormula(salt)===task.salt&&products===task.products;}

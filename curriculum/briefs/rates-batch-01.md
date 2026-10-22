@@ -1,0 +1,25 @@
+# Rates batch01 — mean rate and collision theory
+
+## Identity and eligibility
+AQA Chemistry8462 4.6.1.1–3 / Trilogy8464 5.6.1.1–3, checked19 October2026. Official Chemistry rate-and-extent page and Trilogy chemistry-subject-content. Shared both tiers. Stable IDs science.chemistry.rates.mean-rate and collision-theory. Higher-only card/practice/check for mol/s; no Higher-only whole lesson. Version20261019-r1. Energy chapter31-objective audit recorded separately; one direct recharge check added without renaming IDs.
+
+## Purpose, prerequisites and misconceptions
+Mean-rate: calculate quantity change divided by elapsed time for product volume and reactant mass; identify units and choose comparable intervals; mol/s Higher only. Prerequisite conservation mass; prior graph skills. Counter time/quantity reversal, using final reading instead of difference, total elapsed time for a subinterval and confusing speed with total yield. Collision: link concentration/pressure to frequency, temperature to frequency and energetic collisions, solid fragmentation to exposed surface per mass. Prerequisite reaction-profiles. Counter every collision reacting, heating lowering activation threshold, pressure affecting solids identically to gases, and smaller pieces meaning smaller total mass. Surface/volume and simple proportionality applied to illustrative fixed-speed encounter counts, not universal rate law.
+
+## Discover and Investigate
+Mean:3 shared explanation cards and1 Higher card;3 saved numerical accounts from volume and mass records. Enter quantity change, elapsed time and mean rate; table/interval chart reveals account only after correctness. Collision:4 cards;4 supplied controlled changes require rate prediction and causal explanation. Diagram compares particle density, speed arrows, energy threshold and exposed cubes; shows chosen condition, not a numerical reaction simulator. Select changed condition, predict before revealing causal interpretation. All cases required; drafts and passed cases saved. Native labelled inputs/selects with keyboard access, text/non-colour SVGs, no required animation. Illustrative records, not school-practical fulfilment.
+
+## Practice and independent check
+Original question IDs rates.p-mean*/c-mean* and p-collision*/c-collision*. Keys/units/tolerances and feedback in content-rates.js. Fresh data, subinterval arithmetic, mass consumed, supplied-count ratio and wrong-mechanism distractors. Independent first answers locked;80% plus other stages; same-bank retakes limited. Higher moles filtered from Foundation; topic6 assessment and recall isolated by route/tier/topic. New concepts schedule recall, errors eligible for immediate review. Resume retains inputs/cases and unrelated progress.
+
+## Skills and gaps
+Author MS1a/1c/1d/4a, WS1.2/3.5 and MS5c mappings; distinguish from paragraph-specific official mappings. Graph construction/tangents, catalysts, required practical gas/turbidity methods and reversible/equilibrium content follow. Extended written explanations and physical practical competence remain outside these constrained tasks. Specialist review outstanding.
+
+## Verification and handover
+Record actual tests/browser/publication after execution. Next rate graphs and tangents (quantitative tangent gradient Higher only), catalysts, then practical preparation. Preserve explicit Energy and earlier-topic gaps.
+
+
+Energy audit / Rates01 checkpoint:67 lessons,201 practice,342 independent checks. 109 Node tests pass; syntax/diff checks pass. Energy31-objective audit validates every lesson/question ID and inherited tier/route scope; direct recharge check added and browser scored7/7 without changing old IDs. Rates mean-rate Higher flow7/7 and collision flow6/6 completed. Wrong inverted rate, final-reading/subinterval arithmetic and lower-barrier collision explanation corrected; drafts and first-answer locks survive reload. Foundation shows3 mean explanation cards and6 checks; Higher shows4/7 and mol/s items; shared route switches preserve work. New2-question topic assessment first answer survives reload/topic switch. Both390px activities inspected without horizontal overflow/caption collision; keyboard Tab order verified; console error log empty. Numeric mole-rate tolerances reject zero in automated checks. No physical-device/full screen-reader or specialist review claim. Privately published and live verified. Next Rate graphs and tangents (numeric gradient Higher only); catalysts; gas-volume and turbidity practical preparation.
+
+
+Energy audit / Rates01 publication succeeded19 October2026 at07:17:08 UTC. Source97a9f59222172fbe507f045f1d7c23fe9b5e5c7a; deployment appgdep_6ad5c3e577b08191a54a9f0e8f8a4eb0; version appgprj_6ad1be5897a88191909a03ad57857103~appgver_1129dffff23c819189a048dab9f9f660. Existing owner-private audience preserved. Live topic06 list and both new lessons verified; collision activity mounted; console errors empty. Screenshot crash-course-rates-preview.png. Next graphs/tangents and catalysts, then required practical preparation. Specialist review and school practical fulfilment remain outstanding.

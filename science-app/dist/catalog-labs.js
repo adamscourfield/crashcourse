@@ -1,0 +1,4 @@
+export const normaliseLabFormula=value=>String(value??'').trim().replace(/[₀-₉]/g,c=>'₀₁₂₃₄₅₆₇₈₉'.indexOf(c)).replace(/[⁰¹²³⁴⁵⁶⁷⁸⁹]/g,c=>'⁰¹²³⁴⁵⁶⁷⁸⁹'.indexOf(c)).replace(/⁺/g,'+').replace(/[⁻−–]/g,'-').replace(/⟶|→|⇒|=>/g,'->').replace(/\s/g,'');
+export function labFieldCorrect(f,value){if(f.type==='number')return String(value??'').trim()!==''&&Number.isFinite(Number(value))&&Math.abs(Number(value)-Number(f.answer))<=(f.tolerance??.001);if(f.type==='formula')return (f.answers||[f.answer]).some(a=>normaliseLabFormula(value)===normaliseLabFormula(a));return (f.answers||[f.answer]).some(a=>String(value)===String(a));}
+export const catalogTaskCorrect=(t,a)=>t.fields.every(f=>labFieldCorrect(f,a[f.key]));
+export const escapeLab=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

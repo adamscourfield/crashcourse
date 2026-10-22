@@ -1,0 +1,9 @@
+export const nmToM=n=>n*1e-9;
+export function sizeBand(n){if(!Number.isFinite(n)||n<=0)throw new RangeError('Positive finite diameter required');if(n<1)return 'below';if(n===100||n===2500)return 'boundary';if(n<=100)return 'nano';if(n<2500)return 'fine';if(n<=10000)return 'coarse';return 'above';}
+export function cubeData(d=10,n=1){if(!Number.isFinite(d)||d<=0||!Number.isInteger(n)||n<1||n>10)throw new RangeError('Positive side and whole subdivisions required');const side=d/n,count=n**3,area=6*side**2,volume=side**3;return {side,count,area,volume,totalArea:area*count,totalVolume:volume*count,ratio:6/side};}
+export const sizeTasks=[{nm:20,band:'nano'},{nm:500,band:'fine'},{nm:6000,band:'coarse'},{nm:5,band:'nano'}];
+export const nanoCases=[
+{title:'Catalyst trial',data:'Fictional trial: a nanoparticle catalyst gives the same product yield using 2 g rather than 10 g of the comparison catalyst. Worker exposure to airborne dust during catalyst recovery was not measured.',benefit:'less',risk:'release',why:'The trial supports using less catalyst for this yield. It does not establish safety for workers exposed to airborne dust.'},
+{title:'UV formulation trial',data:'Fictional trial: a formulation provides the target UV protection with less visible whitening. Tests on inhaling an aerosol containing the particles have not been done.',benefit:'uv',risk:'inhaled',why:'Protection and appearance are measured benefits. Inhalation evidence is relevant if aerosol exposure is proposed.'},
+{title:'Antimicrobial coating',data:'Fictional trial: a nanoparticle coating reduces bacterial growth on a test surface by 70% over 24 hours. Release into water and effects on aquatic organisms were not measured.',benefit:'bacteria',risk:'water',why:'The result supports reduced growth under these test conditions. Release and aquatic effects remain unanswered.'}
+];
