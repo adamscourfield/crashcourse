@@ -48,7 +48,7 @@ await page.click('#mapButton');
 const mapTxt = await page.locator('dialog').innerText();
 const RN = Number((mapTxt.match(/Ratio, proportion and rates of change\s*(\d+) lessons available/) || [])[1]);
 ok(RN >= 5, 'course map: Ratio is available with ' + RN + ' lessons');
-ok(/Geometry and measures\s*Planned/.test(mapTxt), 'course map: Geometry still planned');
+ok(/Geometry and measures\s*\d+ lessons available/.test(mapTxt) && /Probability\s*Planned/.test(mapTxt), 'course map: Geometry available, Probability still planned');
 await page.click('[data-mtopic="maths.ratio"]'); await page.click('#closeModal');
 ok((await page.locator('#sideProgress').innerText()) === `0 / ${RN}`, 'Ratio topic progress starts at 0');
 ok((await page.locator('#mH1').innerText()).includes('Ratio notation'), 'Ratio opens on its first lesson');

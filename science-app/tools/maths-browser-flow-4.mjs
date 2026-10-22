@@ -50,7 +50,7 @@ await goLesson('maths.number.powers', 0);
 await page.click('#mapButton');
 const mapText = await page.locator('dialog').innerText();
 const algN = Number((mapText).match(/Algebra\s*(\d+) lessons available/)?.[1]); ok(algN >= 10, 'course map shows Algebra with ' + algN + ' lessons');
-ok(/Geometry and measures\s*Planned/.test(mapText), 'unbuilt topics stay planned');
+ok(/Probability\s*Planned/.test(mapText) && /Statistics\s*Planned/.test(mapText), 'unbuilt topics stay planned');
 await page.click('[data-mtopic="maths.algebra"]');
 const listText = await page.locator('dialog').innerText();
 ok(listText.includes('TOPIC 02') && listText.includes('Solving linear equations') && !listText.includes('Negative numbers'), 'lesson list is scoped to Algebra');

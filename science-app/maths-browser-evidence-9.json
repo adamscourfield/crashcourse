@@ -11,7 +11,7 @@
   },
   "checks": [
     "course map: Ratio is available with 8 lessons",
-    "course map: Geometry still planned",
+    "course map: Geometry available, Probability still planned",
     "Ratio topic progress starts at 0",
     "Ratio opens on its first lesson",
     "notation card 1 has a visual",
