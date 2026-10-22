@@ -1,24 +1,25 @@
 // Maths studio: lesson flow, generated practice with mastery ladders, independent checks,
 // spaced interleaved review and topic assessment. Owns its own saved state (MATHS_KEY) so it
 // can never alter science progress.
-import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r6';
-import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r6';
-import { algebraMatches, algebraPreview } from './algebra.js?v=20261022-maths-r6';
-import { parseSolutions, solutionsMatch, inequalityMatches } from './sets.js?v=20261022-maths-r6';
-import { graphSVG, graphInputHTML, bindGraphInput, lineFeedback, pointsFeedback } from './graph.js?v=20261022-maths-r6';
-import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261022-maths-r6';
-import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r6';
-import { generate, skillById } from './skills.js?v=20261022-maths-r6';
-import { orderedLessons as numberLessons, mathsTopics as numberTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r6';
-import { algebraTopic, orderedAlgebra } from './lessons-algebra.js?v=20261022-maths-r6';
-import { visual4, MODELS4 } from './models-algebra.js?v=20261022-maths-r6';
-import { visual5, MODELS5 } from './models-algebra2.js?v=20261022-maths-r6';
-import { visual6, MODELS6 } from './models-graphs.js?v=20261022-maths-r6';
-import { visual, mountModel } from './models-number.js?v=20261022-maths-r6';
-import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r6';
-import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r6';
-import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r6';
-import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r6';
+import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r7';
+import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r7';
+import { algebraMatches, algebraPreview } from './algebra.js?v=20261022-maths-r7';
+import { parseSolutions, solutionsMatch, inequalityMatches } from './sets.js?v=20261022-maths-r7';
+import { graphSVG, graphInputHTML, bindGraphInput, lineFeedback, pointsFeedback } from './graph.js?v=20261022-maths-r7';
+import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261022-maths-r7';
+import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r7';
+import { generate, skillById } from './skills.js?v=20261022-maths-r7';
+import { orderedLessons as numberLessons, mathsTopics as numberTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r7';
+import { algebraTopic, orderedAlgebra } from './lessons-algebra.js?v=20261022-maths-r7';
+import { visual4, MODELS4 } from './models-algebra.js?v=20261022-maths-r7';
+import { visual5, MODELS5 } from './models-algebra2.js?v=20261022-maths-r7';
+import { visual6, MODELS6 } from './models-graphs.js?v=20261022-maths-r7';
+import { visual7, MODELS7 } from './models-algebra3.js?v=20261022-maths-r7';
+import { visual, mountModel } from './models-number.js?v=20261022-maths-r7';
+import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r7';
+import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r7';
+import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r7';
+import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r7';
 
 const STAGES = ['Discover', 'Investigate', 'Practise', 'Check'];
 const orderedLessons = [...numberLessons, ...orderedAlgebra];
@@ -75,6 +76,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     $('#mNumber').textContent = `LESSON ${String(idx + 1).padStart(2, '0')} / ${String(list.length).padStart(2, '0')}`;
     $('#mH1').textContent = l.title;
     $('#mMeta').innerHTML = `<div>◷ ${l.minutes} min · ${l.higherOnly ? 'Higher only' : 'Foundation and Higher'}</div>`;
+    $('#mCalc').textContent = l.calculator ? 'Calculator' : 'Non-calculator';
     $('#mStatus').textContent = p.complete ? `Complete · best check ${p.best}%` : '';
     $('#mBig').textContent = l.big;
     $('#mSpec').textContent = 'Edexcel 1MA1 · ' + l.refs.join(', ');
@@ -100,7 +102,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const c = l.learn[p.card];
     p.reveal ??= {};
     const shown = p.reveal[p.card] ?? 0;
-    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual) || visual2(c.visual) || visual3(c.visual) || visual4(c.visual) || visual5(c.visual) || visual6(c.visual)}</div>`;
+    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual) || visual2(c.visual) || visual3(c.visual) || visual4(c.visual) || visual5(c.visual) || visual6(c.visual) || visual7(c.visual)}</div>`;
     $('#mTitle').textContent = c.title;
     const pre = p.card === 0 && l.prerequisites?.length ? `<div class="prerequisites"><span>Prior learning:</span>${l.prerequisites.map(id => `<button class="text-button" data-mpre="${id}">${esc(orderedLessons.find(x => x.id === id)?.title || id)}</button>`).join('')}</div>` : '';
     $('#mBody').innerHTML = `${pre}<p>${mathHTML(c.text)}</p><div class="mexample"><div class="mexample-q"><span class="eyebrow">EXAMPLE</span><p>${mathHTML(c.example.prompt)}</p></div><ol class="msteps">${c.example.steps.map((st, i) => `<li ${i < shown ? '' : 'hidden'}>${mathHTML(st)}</li>`).join('')}</ol>${shown < c.example.steps.length ? `<button class="secondary" id="mReveal">${shown ? 'Next step' : 'Try it, then show the first step'}</button>` : ''}</div><div class="reading-dots">${l.learn.map((_, i) => `<button data-mcard="${i}" aria-label="Explanation ${i + 1}" class="${i === p.card ? 'current' : ''}">${i + 1}</button>`).join('')}</div>`;
@@ -115,7 +117,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const generation = modelGeneration, panel = $('#mPanel'), body = $('#mBody');
     $('#mTitle').textContent = '';
     $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
-    (MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
+    (MODELS7[l.model] || MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
       panel, body, w: p.widget, tier: s.tier,
       isActive: () => generation === modelGeneration && panel.isConnected && body.isConnected && $('#mPanel') === panel && !!$('#mTitle'),
       save, feedback, setTitle: t => ($('#mTitle').textContent = t),
@@ -302,7 +304,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const item = pr.item, answered = !!pr.answer;
     $('#mTitle').innerHTML = mathHTML(item.prompt);
     const ex = pr.example ? `<div class="mexample assisted"><span class="eyebrow">WORKED EXAMPLE · A SIMILAR QUESTION</span><p>${mathHTML(pr.example.prompt)}</p>${pr.example.graph ? `<div class="mfig">${graphSVG(pr.example.graph)}</div>` : ''}<ol class="msteps">${pr.example.steps.map(st => `<li>${mathHTML(st)}</li>`).join('')}</ol><p class="mfinal">Answer: <strong>${mathHTML(answerMarkup(pr.example.answer))}</strong></p></div>` : '';
-    $('#mBody').innerHTML = `${ladder(l, p, target)}<div class="mq-meta"><span class="mbadge">${(pr.mode || target.mode) === 'mixed' ? 'Mixed' : 'Level ' + item.level}</span><span class="mbadge">Non-calculator</span>${pr.assisted ? '<span class="mbadge soft">After an example</span>' : ''}</div>${ex}${controls(item, answered ? pr.answer.raw : pr.draft, answered)}${answered && pr.answer.status !== 'correct' ? solution(item) : ''}${!answered && !pr.example ? '<button class="text-button mhelp" id="mExample">Show me a worked example first</button>' : ''}`;
+    $('#mBody').innerHTML = `${ladder(l, p, target)}<div class="mq-meta"><span class="mbadge">${(pr.mode || target.mode) === 'mixed' ? 'Mixed' : 'Level ' + item.level}</span><span class="mbadge">${item.calculator ? 'Calculator' : 'Non-calculator'}</span>${pr.assisted ? '<span class="mbadge soft">After an example</span>' : ''}</div>${ex}${controls(item, answered ? pr.answer.raw : pr.draft, answered)}${answered && pr.answer.status !== 'correct' ? solution(item) : ''}${!answered && !pr.example ? '<button class="text-button mhelp" id="mExample">Show me a worked example first</button>' : ''}`;
     if (answered) feedback(pr.answer.msg, pr.answer.status !== 'correct');
     bindControls(item, value => {
       if (pr.answer) return;
@@ -346,7 +348,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     }
     const c = p.check, item = c.items[c.index], a = c.answers[item.id];
     $('#mTitle').innerHTML = mathHTML(item.prompt);
-    $('#mBody').innerHTML = `<p class="check-rule">First answers count.</p><div class="mq-meta"><span class="mbadge">Non-calculator</span></div>${controls(item, a ?? c.drafts[item.id], a !== undefined)}`;
+    $('#mBody').innerHTML = `<p class="check-rule">First answers count.</p><div class="mq-meta"><span class="mbadge">${item.calculator ? 'Calculator' : 'Non-calculator'}</span></div>${controls(item, a ?? c.drafts[item.id], a !== undefined)}`;
     bindControls(item, value => {
       if (c.answers[item.id] !== undefined) return;
       const res = mark(item.answer, value);
@@ -516,7 +518,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     $('#mKicker').textContent = assessing ? 'ASSESSMENT' : 'REVIEW · ' + skillById[item.skill].name.toUpperCase();
     $('#mTitle').innerHTML = mathHTML(item.prompt);
     $('#mPanel').innerHTML = '';
-    $('#mBody').innerHTML = `${assessing ? '<p class="check-rule">First answers count.</p>' : ''}<div class="mq-meta"><span class="mbadge">Non-calculator</span></div>${controls(item, a ?? run.drafts[item.id], a !== undefined)}${!assessing && a !== undefined && mark(item.answer, a).status !== 'correct' ? solution(item) : ''}`;
+    $('#mBody').innerHTML = `${assessing ? '<p class="check-rule">First answers count.</p>' : ''}<div class="mq-meta"><span class="mbadge">${item.calculator ? 'Calculator' : 'Non-calculator'}</span></div>${controls(item, a ?? run.drafts[item.id], a !== undefined)}${!assessing && a !== undefined && mark(item.answer, a).status !== 'correct' ? solution(item) : ''}`;
     feedback('');
     if (a !== undefined) {
       const res = mark(item.answer, a);

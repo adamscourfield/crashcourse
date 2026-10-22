@@ -1,5 +1,5 @@
-import {limitingAccount,massRatio,limitingTasks,balancingTasks,atomsBalanced} from './stoich-models.js?v=20261022-thermal01';
-import {showStoich} from './stoich-scenes.js?v=20261022-thermal01';
+import {limitingAccount,massRatio,limitingTasks,balancingTasks,atomsBalanced} from './stoich-models.js?v=20261022-thermal01r2';
+import {showStoich} from './stoich-scenes.js?v=20261022-thermal01r2';
 const input=(id,label,v='')=>`<label class="field-label" for="${id}">${label}</label><input class="lab-input" id="${id}" type="number" step="any" value="${v}">`;
 export function mountStoichWidget(l,p,root,{save,done,feedback}){
  const w=p.widget;w.task??=0;w.answers??={};w.passed??=[];const i=w.task,a=w.answers[i]??={},lim=l.widget==='stoich-limiting',t=(lim?limitingTasks:balancingTasks)[i],$=s=>root.querySelector(s);

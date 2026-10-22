@@ -2,13 +2,46 @@
 
 Five lessons: internal energy/temperature, latent heat, heating/cooling curves and gas motion/temperature/pressure shared both tiers; separate-Physics gas compression/pV both tiers with mandatory Higher work/pump-warming extension. AQA8463/8464 4/6.3.2.1–.3,4/6.3.3.1,4.3.3.2 and HT4.3.3.3 checked22October2026. Existing Energy heating lesson retains its ID/practical and now cross-maps4/6.3.2.2; Particle lesson prerequisite links back to it, no duplicate SHC lesson. Latent-fusion AT5 is an opportunity, not a new required-practical claim. Full Particle statement/evidence reconciliation remains open; teaching coverage is not specialist/constructed/physical closure.
 
-Science298 lessons:113 Chemistry150 Biology35 Physics. Maths30/78 skills unchanged.1109 Science practice/1904 independent checks before filters;21/31 added including1 Higher practice/check. Separate Higher298/Foundation261; Trilogy Higher221/Foundation203. Particle7 separate/6 Trilogy; Electricity18/15 unchanged.125 films/119 bindings. Six explicit process cards across5 lessons autoplay inline/Loop, reduced-motion paused; remaining cards direct. All controlled conditions required: internal4,latent4,curves10,gas4,compression4 including expansion. Higher adds3 work/condition comparisons, revalidated at completion. Physical values for gas are not inferred from a Celsius ratio.
+Science298 lessons:113 Chemistry150 Biology35 Physics. Maths35/94 skills retained after merging c22678f.1109 Science practice/1904 independent checks before filters;21/31 added including1 Higher practice/check. Separate Higher298/Foundation261; Trilogy Higher221/Foundation203. Particle7 separate/6 Trilogy; Electricity18/15 unchanged.125 films/119 bindings. Six explicit process cards across5 lessons autoplay inline/Loop, reduced-motion paused; remaining cards direct. All controlled conditions required: internal4,latent4,curves10,gas4,compression4 including expansion. Higher adds3 work/condition comparisons, revalidated at completion. Physical values for gas are not inferred from a Celsius ratio.
 
 497 combined automated tests passed, including the original Chemistry thermal checks and10 new Particle tests. Five full browser journeys6/6,6/6,6/6,6/6,7/7 Higher compression. Wrong comparisons/numbers/reasons/sequences/predictions/practice and premature actions rejected; universal conclusions cannot complete model evidence.37 teaching/task views fit390px without page overflow or duplicate player;6 process cards default Pause/Loop. Expansion0.008m³/initial200000Pa/wrong prediction9 restores across reload/Foundation/hidden Trilogy/back. Foundation compression4cards/3tasks; Higher5cards/4tasks. Particle assessment6Trilogy/7Separate. Direct cooling diagram, shared Energy SHC prerequisite and4.3.2.2 source reference checked. Maths Number15/Algebra15 and Science restoration verified; no browser console errors. Existing density/state IDs retained; restore tests preserve prior completion. Gradient namespace distinct between direct diagrams and films; fixed marker-count tests pass.
 
 Original toy material c1000J/(kg°C), fusion10000J/kg at20°C, vaporisation20000J/kg at80°C; not water. Curve1kg/1000W, no losses/fixed pressure,120model seconds. Each unequal-duration region gets equal playback time; cursor reports model seconds. Cooling reverses the ideal energy account. Latent energy changes arrangement, not temperature; mcΔθ confined to single-phase changes. Gas trajectories/speeds/wall arrows qualitative, no calibrated pressure/temperature law or collision statistics. Fixed-temperature compression retains mass/size/speed scale and uses absolute pressure/pV; a reservoir removes work energy. Higher rapid approximately insulated compression can warm gas and does not use pV constant. Friction/leaks/real pump dynamics omitted. Physical practical/uncertainty, unrestricted graph/writing, full assistive-device and specialist evidence remain separate.
 
-Files: content-physics-thermal.js; mat2-models/figures/visuals/films.js; widgets-mat2.js; existing Energy heating references extended; content/widget/process/registry/source notes integrated. Global20261022-thermal01; Maths-r6 unchanged. Brief physics-particle-batch-02.md; map physics-particle-batch02-requirements.csv; browser evidence science-app/thermal-particles-browser-evidence.json. Publication/GitHub pending. Next: Atomic Structure/Radiation batch, share Chemistry overlap by stable references after scoping. Full Particle/Electricity/Energy/Biology evidence audits and specialist review remain open.
+Files: content-physics-thermal.js; mat2-models/figures/visuals/films.js; widgets-mat2.js; existing Energy heating references extended; content/widget/process/registry/source notes integrated. Global20261022-thermal01r2; incoming Maths-r7 preserved. Brief physics-particle-batch-02.md; map physics-particle-batch02-requirements.csv; browser evidence science-app/thermal-particles-browser-evidence.json. Publication/GitHub pending. Next: Atomic Structure/Radiation batch, share Chemistry overlap by stable references after scoping. Full Particle/Electricity/Energy/Biology evidence audits and specialist review remain open.
+## Maths: Edexcel 1MA1 Algebra batch 04 — functions, algebraic fractions, proof, iteration, forming equations; on GitHub `main`, not published
+
+Five Algebra lessons (16–20):
+- **Forming and solving equations in context** (A21, A17, A18).
+- **Functions** (A7; Higher: notation, inverse and composite).
+- **Identities, show that and proof** (A6, A3; Higher: proof).
+- **Algebraic fractions and fractional indices** (A4, A18; Higher only).
+- **Solving equations by iteration** (A20; Higher only, calculator).
+
+There are 16 new skills (94 in all) and five investigations. Algebra now has 20 lessons: 18 at Foundation and 20 at Higher.
+
+**Engine changes:**
+- a single-simplified-fraction answer form (an uncancelled answer, or a sum of fractions, is marked partly right);
+- divided monomials such as 1/(9x^4) are now accepted as simplified (this fixes a latent fault);
+- subscripts in markup;
+- sqrt() and cbrt() in graphs;
+- a calculator badge driven by the lesson and item.
+
+**QA:**
+- 494 automated tests pass on `main` 71ab5d7 plus this change; `tests/maths-algebra3.test.js` checks every item independently against its printed prompt.
+- Browser walk-throughs: the new flow 7 has 78 checks; the earlier six were rerun (87, 68, 62, 94, 69 and 64); 522 in total.
+- One defect was found and fixed in browser QA: a visual-name clash with the Number function machine.
+- Brief: `curriculum/briefs/maths-algebra-batch-04.md`.
+
+**Cache:** maths modules are at `20261022-maths-r7`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication of lessons 16–20;
+- specialist review;
+- free-text proofs are not marked;
+- algebraic surd expressions, exponential graphs in context, areas under curves, dashed region boundaries, and surd-ratio geometric sequences.
+
+**Next:** Ratio, proportion and rates of change (R1–R16).
 
 ## Physics static/particle batch01 — implemented, published and GitHub updated
 

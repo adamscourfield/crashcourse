@@ -3,7 +3,7 @@
 // and records how it was written, so marking can separate value from form:
 //   value  - compared after simplifying every surd (√12 → 2√3) and collecting terms
 //   form   - correct only with one simplified irrational term, no surd in a denominator
-import { F, add, mul, div, eq, normalise, fracMarkup, num } from './frac.js?v=20261022-maths-r6';
+import { F, add, mul, div, eq, normalise, fracMarkup, num } from './frac.js?v=20261022-maths-r7';
 
 export function squareFree(r) { // r = k²·s → {k, s}
   let k = 1, s = r;

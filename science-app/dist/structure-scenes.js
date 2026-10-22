@@ -1,5 +1,5 @@
-import {phaseKinds} from './model-geometry.js?v=20261022-thermal01';
-import {enable3D,renderModel,renderDiagram} from './visual.js?v=20261022-thermal01';
+import {phaseKinds} from './model-geometry.js?v=20261022-thermal01r2';
+import {enable3D,renderModel,renderDiagram} from './visual.js?v=20261022-thermal01r2';
 const label=(x,y,s,size=13)=>`<text x="${x}" y="${y}" fill="#d4dfe7" font-family="sans-serif" font-size="${size}" text-anchor="middle">${s}</text>`;
 const svg=(body,aria)=>`<svg class="lab-svg" viewBox="0 0 440 285" role="img" aria-label="${aria}">${body}</svg>`;
 export function showPhase(state){

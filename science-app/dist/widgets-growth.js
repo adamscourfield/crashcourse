@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-thermal01';
-import{tasksForGrowth,validGrowth,advanceGrowth,numericGrowth,drawingValid}from './growth-models.js?v=20261022-thermal01';import{showHormoneGrowth}from './growth-visuals.js?v=20261022-thermal01';export{showHormoneGrowth};
+import{syncProcessMovie}from './process-player.js?v=20261022-thermal01r2';
+import{tasksForGrowth,validGrowth,advanceGrowth,numericGrowth,drawingValid}from './growth-models.js?v=20261022-thermal01r2';import{showHormoneGrowth}from './growth-visuals.js?v=20261022-thermal01r2';export{showHormoneGrowth};
 export function mountHormoneGrowth(l,p,root,{save,done,feedback}){let ts=tasksForGrowth(l.widget.slice(8)),w=p.widget;w.growthTask??=ts[0].id;w.growthDrafts??={};w.growthPassed??=[];let i=ts.findIndex(t=>t.id===w.growthTask);if(i<0)i=0;let t=ts[i],v=w.growthDrafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountHormoneGrowth(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.growthPassed.includes(t.id));
 syncProcessMovie(l,1,['setup','length','drawing','applications','biodiversity','logistics','control','gravity'].includes(t.kind)?{process:false}:t.kind==='germination'?{processFilm:'growth-germination'}:null);
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

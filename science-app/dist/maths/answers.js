@@ -19,11 +19,11 @@
 //                 for mastery, as it would lose the final mark in an exam.
 //   'wrong'     - wrong value
 //   'invalid'   - could not be read; nothing is recorded and the student fixes the format
-import { markAlgebra, algebraPreview } from './algebra.js?v=20261022-maths-r6';
-import { markPoints, markLine, pointsMarkup, lineMarkup, parsePoints } from './graph.js?v=20261022-maths-r6';
-import { markSolutions, solutionsMarkup, solutionsGiven, markInequality, inequalityMarkup, markList, listMarkup } from './sets.js?v=20261022-maths-r6';
-import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261022-maths-r6';
-import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r6';
+import { markAlgebra, algebraPreview } from './algebra.js?v=20261022-maths-r7';
+import { markPoints, markLine, pointsMarkup, lineMarkup, parsePoints } from './graph.js?v=20261022-maths-r7';
+import { markSolutions, solutionsMarkup, solutionsGiven, markInequality, inequalityMarkup, markList, listMarkup } from './sets.js?v=20261022-maths-r7';
+import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261022-maths-r7';
+import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r7';
 
 export function isPrime(n) {
   if (!Number.isInteger(n) || n < 2) return false;
@@ -218,6 +218,8 @@ export const PARTIAL_MESSAGES = {
   'line-two-points': 'Plot at least two points on the line.',
   'one-solution': 'That solution is right, but there is another. A quadratic equation usually has two solutions: find both.',
   'ineq-ends': 'The boundary values are right, but check each sign: ≤ and ≥ include the boundary value; < and > do not.',
+  'want-single-fraction': 'That is equivalent, but write it as a single fraction: one numerator over one denominator.',
+  'not-cancelled': 'That is equivalent, but the top and bottom still share a common factor. Factorise both and cancel it.',
   'want-completed-square': 'That is equivalent, but the question asks for the completed-square form (x + p)^2 + q.',
   'interval-ends': 'The two end values are right, but check the signs. The lower bound is included (≤); the upper bound is not (<), because it would round up.',
 };

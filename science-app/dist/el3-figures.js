@@ -1,4 +1,4 @@
-import{experimentResult}from './el3-models.js?v=20261022-thermal01';
+import{experimentResult}from './el3-models.js?v=20261022-thermal01r2';
 const ink='#faf5ed',mint='#a9cabe',coral='#f38b73',dim='#aec1cb',blue='#91b8e5';
 const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const fmt=x=>Number(Number(x).toFixed(3));
 const T=(x,y,s,n=18,c=ink)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="${c}" font-family="sans-serif" font-size="${n}">${esc(s)}</text>`;

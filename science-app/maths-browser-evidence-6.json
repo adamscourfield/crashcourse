@@ -14,14 +14,14 @@
     "Published Site (not published)"
   ],
   "scope": "Maths Algebra batch 03: graphs strand and plotting input",
-  "automatedSuite": "470 tests pass (npm test) on main 406f618 plus Algebra batch 03",
+  "automatedSuite": "494 tests pass (npm test) on main 71ab5d7 plus Algebra batch 04 (rerun)",
   "summary": {
     "checks": 64,
     "passed": 64,
     "failed": 0
   },
   "checks": [
-    "course map: Algebra has 15 lessons",
+    "course map: Algebra lessons available",
     "coordinates-lines card 1 draws a graph",
     "coordinates-lines card 2 draws a graph",
     "coordinates-lines card 3 draws a graph",

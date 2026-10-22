@@ -1,4 +1,4 @@
-import{buildHeart}from './heart-anatomy.js?v=20261022-thermal01';
+import{buildHeart}from './heart-anatomy.js?v=20261022-thermal01r2';
 export function buildCirculation(group,T,kind,w={}){
  const mat=(color,more={})=>new T.MeshStandardMaterial({color,roughness:.32,...more});
  if(kind==='heart'){buildHeart(group,T,w);return;}
