@@ -1,7 +1,7 @@
-import{showPlant}from './plant-visuals.js?v=20261022-matter01r3';
-import{renderDiagram}from './visual.js?v=20261022-matter01r3';
-import{leafFigure}from './plant-figures.js?v=20261022-matter01r3';
-import{leafParts,leafLabels,environmentalTrials,stomaCounts,temperatureData,sugarDestinations,rootMovement}from './plant-models.js?v=20261022-matter01r3';
+import{showPlant}from './plant-visuals.js?v=20261022-thermal01';
+import{renderDiagram}from './visual.js?v=20261022-thermal01';
+import{leafFigure}from './plant-figures.js?v=20261022-thermal01';
+import{leafParts,leafLabels,environmentalTrials,stomaCounts,temperatureData,sugarDestinations,rootMovement}from './plant-models.js?v=20261022-thermal01';
 export{showPlant};
 export function mountPlant(l,p,root,{save,done,feedback}){const w=p.widget,$=s=>root.querySelector(s),mode=l.widget,total=['plant-xylem','plant-stomata'].includes(mode)?4:3;w.task??=0;w.passed??=[];const task=w.task%total;
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([v,t])=>`<option value="${v}" ${String(v)===String(value)?'selected':''}>${t}</option>`).join('')}</select>`;

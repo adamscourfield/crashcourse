@@ -723,10 +723,12 @@ export const phy1Lessons=[
     "short": "Specific heat capacity & virtual practical",
     "topicId": "science.physics.energy",
     "refs": [
-      "1.1.3"
+      "1.1.3",
+      "3.2.2"
     ],
     "combinedRefs": [
-      "1.1.3"
+      "1.1.3",
+      "3.2.2"
     ],
     "separate": false,
     "higher": false,

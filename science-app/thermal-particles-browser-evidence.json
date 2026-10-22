@@ -1,0 +1,309 @@
+{
+  "date": "2026-10-22",
+  "lessons": [
+    {
+      "lesson": "science.physics.particle-model-of-matter.internal-energy",
+      "score": "6/6",
+      "complete": true
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.latent-heat",
+      "score": "6/6",
+      "complete": true
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.heating-curves",
+      "score": "6/6",
+      "complete": true
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-temperature",
+      "score": "6/6",
+      "complete": true
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-compression",
+      "score": "7/7",
+      "complete": true
+    }
+  ],
+  "mobile": [
+    {
+      "lesson": "science.physics.particle-model-of-matter.internal-energy",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.internal-energy",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.internal-energy",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.internal-energy",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.internal-energy",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.internal-energy",
+      "task": "calculate",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.internal-energy",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.latent-heat",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.latent-heat",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.latent-heat",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.latent-heat",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.latent-heat",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.latent-heat",
+      "task": "calculate",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.latent-heat",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.heating-curves",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.heating-curves",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.heating-curves",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.heating-curves",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.heating-curves",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.heating-curves",
+      "task": "calculate",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.heating-curves",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-temperature",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-temperature",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-temperature",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-temperature",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-temperature",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-temperature",
+      "task": "sequence",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-temperature",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-compression",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-compression",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-compression",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-compression",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-compression",
+      "card": 4,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-compression",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-compression",
+      "task": "calculate",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-compression",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.gas-compression",
+      "task": "work",
+      "scroll": 390,
+      "width": 390
+    }
+  ],
+  "wrongPaths": [
+    "premature progression",
+    "comparison",
+    "numeric value and reason",
+    "causal sequence",
+    "numeric and qualitative prediction",
+    "practice retry",
+    "universal conclusion rejected"
+  ],
+  "resume": "compression0.008m³/initial200000Pa/wrong prediction9 survives reload/Foundation/hidden Trilogy/back",
+  "scope": "Particle6Trilogy/7Separate; compression Foundation4cards3tasks/Higher5cards4tasks; SHC prerequisite opens existing stable Energy lesson with3.2.2 source ref",
+  "maths": "Before merge Number15/Algebra15 preserved; incoming c22678f integration smoke pending",
+  "limitations": "Technical QA is not specialist review, physical practical/uncertainty, unrestricted graph/writing or full assistive-device certification."
+}

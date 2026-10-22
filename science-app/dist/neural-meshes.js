@@ -1,4 +1,4 @@
-import{reflexPoints,synapseState}from './neural-models.js?v=20261022-matter01r3';
+import{reflexPoints,synapseState}from './neural-models.js?v=20261022-thermal01';
 const material=(T,c,opts={})=>new T.MeshStandardMaterial({color:c,roughness:.3,metalness:.03,...opts});
 function ball(g,T,p,r,c,name,scale=[1,1,1]){let m=new T.Mesh(new T.SphereGeometry(r,28,20),material(T,c));m.position.set(...p);m.scale.set(...scale);m.name=name||'';g.add(m);return m;}
 function rod(g,T,a,b,r,c,name){let p=new T.Vector3(...a),q=new T.Vector3(...b),d=q.clone().sub(p),m=new T.Mesh(new T.CylinderGeometry(r,r,d.length(),20),material(T,c));m.position.copy(p.add(q).multiplyScalar(.5));m.quaternion.setFromUnitVectors(new T.Vector3(0,1,0),d.normalize());m.name=name||'';g.add(m);}

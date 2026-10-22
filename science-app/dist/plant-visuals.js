@@ -1,7 +1,7 @@
-import{renderCustomModel,renderDiagram}from './visual.js?v=20261022-matter01r3';
-import{buildLeaf,buildRoot,buildTube,buildStoma,buildWhole}from './plant-meshes.js?v=20261022-matter01r3';
-import{leafFigure,rootFigure,tubeFigure,stomaFigure,wholeFigure,potometerFigure,sampleFigure,plantGraph}from './plant-figures.js?v=20261022-matter01r3';
-import{leafParts,temperatureData}from './plant-models.js?v=20261022-matter01r3';
+import{renderCustomModel,renderDiagram}from './visual.js?v=20261022-thermal01';
+import{buildLeaf,buildRoot,buildTube,buildStoma,buildWhole}from './plant-meshes.js?v=20261022-thermal01';
+import{leafFigure,rootFigure,tubeFigure,stomaFigure,wholeFigure,potometerFigure,sampleFigure,plantGraph}from './plant-figures.js?v=20261022-thermal01';
+import{leafParts,temperatureData}from './plant-models.js?v=20261022-thermal01';
 export function showPlant(spec='leaf:all',w={}){let[kind,variant]=spec.split(':'),build,figure,name,formula;const note='<p class="diagram-caption">Original schematic · sizes and steps are symbolic.</p>';
 if(kind==='leaf'){w={part:variant||'all',...w};figure=leafFigure(w);build=buildLeaf;name='Inside the leaf';formula=w.neutral?'Identify the labelled features':leafParts.find(p=>p.id===w.part)?.name||'Tissues cooperate within one organ';}
 else if(kind==='root'){w={kind:variant==='ions'?'ions':'water',...w};figure=rootFigure(w);build=buildRoot;name='Across a root-hair surface';formula=w.kind==='ions'?'Mineral ions · energy-dependent uptake':'Water · osmosis across a membrane';}

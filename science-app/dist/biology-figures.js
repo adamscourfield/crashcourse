@@ -1,13 +1,13 @@
-import {bloodFigure} from './circulation-figures.js?v=20261022-matter01r3';
-import {zoneFigure}from './culture-figures.js?v=20261022-matter01r3';
-import {transportFigure}from './active-figures.js?v=20261022-matter01r3';
-import {osmosisGraph}from './osmosis-figures.js?v=20261022-matter01r3';
-import {detailedCellFigure as cellFigure} from './cell-diagrams.js?v=20261022-matter01r3';
-import {chromosomeFigure,cycleFigure} from './division-figures.js?v=20261022-matter01r3';
-import {specialCellFigure,fateFigure} from './special-cell-figures.js?v=20261022-matter01r3';
+import {bloodFigure} from './circulation-figures.js?v=20261022-thermal01';
+import {zoneFigure}from './culture-figures.js?v=20261022-thermal01';
+import {transportFigure}from './active-figures.js?v=20261022-thermal01';
+import {osmosisGraph}from './osmosis-figures.js?v=20261022-thermal01';
+import {detailedCellFigure as cellFigure} from './cell-diagrams.js?v=20261022-thermal01';
+import {chromosomeFigure,cycleFigure} from './division-figures.js?v=20261022-thermal01';
+import {specialCellFigure,fateFigure} from './special-cell-figures.js?v=20261022-thermal01';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let figureSerial=0;
 export const organelleNames={nucleus:'Nucleus',cytoplasm:'Cytoplasm',membrane:'Cell membrane',mitochondria:'Mitochondria',ribosomes:'Ribosomes',wall:'Cell wall',chloroplasts:'Chloroplasts',vacuole:'Permanent vacuole',dna:'Circular DNA',plasmid:'Plasmid'};
-export {detailedCellFigure as cellFigure} from './cell-diagrams.js?v=20261022-matter01r3';
+export {detailedCellFigure as cellFigure} from './cell-diagrams.js?v=20261022-thermal01';
 export function microscopeFigure({focus=4,zoom=1}={}){const f=Math.max(0,Math.min(8,Number(focus)||0)),z=Math.max(1,Math.min(3,Number(zoom)||1)),id='bioMicro'+(++figureSerial);return '<svg class="bio-cell-art" viewBox="0 0 420 330" role="img" aria-label="Simulated plant tissue view; focus '+f+' of8; illustrative view enlargement '+z+'"><title>Simulated microscope view</title><desc>Illustrative plant cell walls, not a photograph. View enlargement is not calibrated magnification. Blur does not model real resolution.</desc><defs><clipPath id="'+id+'clip"><circle cx="210" cy="160" r="141"/></clipPath><filter id="'+id+'blur"><feGaussianBlur stdDeviation="'+Math.abs(f-4)*1.4+'"/></filter></defs><circle cx="210" cy="160" r="145" fill="#d7ded7" stroke="#91a5b3" stroke-width="6"/><g clip-path="url(#'+id+'clip)"><g transform="translate(210 160) scale('+z+') translate(-210 -160)" filter="url(#'+id+'blur)">'+Array.from({length:20},(_,i)=>{const x=40+(i%5)*76,y=18+Math.floor(i/5)*77;return '<rect x="'+x+'" y="'+y+'" width="72" height="72" rx="12" fill="#c7d1ca" stroke="#6e897f" stroke-width="3"/><ellipse cx="'+(x+17)+'" cy="'+(y+26)+'" rx="6" ry="8" fill="#aa7979"/>';}).join('')+'</g></g><text x="210" y="326" text-anchor="middle" fill="#e5edf0" font-size="13">View enlargement · uncalibrated</text></svg>';}
 export function biologyFigure(f){if(f.kind==='bio-blood')return bloodFigure(f.component,false);if(f.kind==='bio-zone')return zoneFigure({...f,assessment:true});if(f.kind==='bio-transport')return transportFigure({...f,assessment:true});if(f.kind==='bio-osmosis-graph')return osmosisGraph({...f,assessment:true});if(f.kind==='bio-chromosomes')return chromosomeFigure({...f,assessment:true});if(f.kind==='bio-cycle')return cycleFigure({...f,assessment:true});if(f.kind==='bio-special')return specialCellFigure(f);if(f.kind==='bio-fate')return fateFigure(f);if(f.kind==='bio-cell')return cellFigure(f);if(f.kind==='bio-scale'){const u=Number(f.micrometres)||20;return '<svg viewBox="0 0 420 160" role="img" aria-label="Schematic scale bar labelled '+u+' micrometres"><title>Scale bar</title><path d="M80 80 H340 M80 65 V95 M340 65 V95" stroke="currentColor" stroke-width="3"/><text x="210" y="130" text-anchor="middle" fill="currentColor" font-size="22">'+u+' μm</text></svg>';}return '';}
