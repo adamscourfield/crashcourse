@@ -8,7 +8,7 @@
 //   A17 solve linear equations algebraically · A21 (part) form and solve equations.
 // Not in this batch: algebraic fractions (A4 Higher), A6 proof, A7 functions, A17 graphical solutions.
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261022-maths-r4';
+import { skillById } from './skills.js?v=20261022-maths-r4p1';
 
 const S = id => skillById[id];
 

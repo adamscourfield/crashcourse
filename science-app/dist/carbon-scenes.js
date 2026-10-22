@@ -1,5 +1,5 @@
-import {diamondGraph,grapheneGraph,c60Graph} from './carbon-models.js?v=20261022-physics01';
-import {renderModel,renderDiagram,enable3D} from './visual.js?v=20261022-physics01';
+import {diamondGraph,grapheneGraph,c60Graph} from './carbon-models.js?v=20261022-physics02r1';
+import {renderModel,renderDiagram,enable3D} from './visual.js?v=20261022-physics02r1';
 const text=(x,y,s,size=12,colour='#f8f6f2')=>`<text x="${x}" y="${y}" fill="${colour}" text-anchor="middle" font-family="sans-serif" font-size="${size}">${s}</text>`;
 const svg=(body,aria)=>`<svg class="lab-svg" viewBox="0 0 440 285" role="img" aria-label="${aria}">${body}</svg>`;
 export function carbonDiagram(kind,slide=0){

@@ -1,8 +1,8 @@
 // Registry of every maths skill. Lessons, the studio and tests look skills up here.
-import { numberSkills } from './skills-number.js?v=20261022-maths-r4';
-import { numberSkills2 } from './skills-number2.js?v=20261022-maths-r4';
-import { numberSkills3 } from './skills-number3.js?v=20261022-maths-r4';
-import { algebraSkills } from './skills-algebra.js?v=20261022-maths-r4';
+import { numberSkills } from './skills-number.js?v=20261022-maths-r4p1';
+import { numberSkills2 } from './skills-number2.js?v=20261022-maths-r4p1';
+import { numberSkills3 } from './skills-number3.js?v=20261022-maths-r4p1';
+import { algebraSkills } from './skills-algebra.js?v=20261022-maths-r4p1';
 
 export const allSkills = [...numberSkills, ...numberSkills2, ...numberSkills3, ...algebraSkills];
 export const skillById = Object.fromEntries(allSkills.map(s => [s.id, s]));

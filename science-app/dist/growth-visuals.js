@@ -1,2 +1,2 @@
-import{renderDiagram}from './visual.js?v=20261022-physics01';import{growthFigure}from './growth-figures.js?v=20261022-physics01';
+import{renderDiagram}from './visual.js?v=20261022-physics02r1';import{growthFigure}from './growth-figures.js?v=20261022-physics02r1';
 export function showHormoneGrowth(spec='light',w={}){let[k]=spec.split(':'),o={kind:k,progress:.65,...w};renderDiagram(w.title||({light:'Unequal growth bends the shoot',feedback:'Thyroxine negative feedback',cutting:'Roots develop on a cutting',germination:'A seed begins to grow',ripening:'Fruit ripening',drawing:'Labelled seedling observation'})[k]||'Follow the evidence',w.label||'Original educational schematic',growthFigure(o),'HORMONES AND GROWTH');}

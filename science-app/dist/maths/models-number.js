@@ -1,9 +1,9 @@
 // Visual models for the Number pilot: static diagrams for worked examples (visual())
 // and interactive investigations (mountModel()). Everything is SVG/HTML: keyboard
 // operable, no colour-only meaning, and no motion when reduced motion is requested.
-import { mathHTML, esc } from './render.js?v=20261022-maths-r4';
-import { F, gcd, lcm, num, parseNumber, eq } from './frac.js?v=20261022-maths-r4';
-import { primeFactors, primesMarkup } from './answers.js?v=20261022-maths-r4';
+import { mathHTML, esc } from './render.js?v=20261022-maths-r4p1';
+import { F, gcd, lcm, num, parseNumber, eq } from './frac.js?v=20261022-maths-r4p1';
+import { primeFactors, primesMarkup } from './answers.js?v=20261022-maths-r4p1';
 
 const C = { ink: '#e4ebf0', muted: '#b7c8d6', faint: '#b7c8d640', coral: '#ed8b78', cream: '#f8f6f2', fill: '#f0b4a6', navy: '#182e44', green: '#a8d5b5' };
 const W = 600;

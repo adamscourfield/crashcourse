@@ -1,5 +1,5 @@
-import{showHealth}from './health-visuals.js?v=20261022-physics01';
-import{arteryStates,treatments,diseaseLinks,riskCases,durations,frequencies,incidence,scatterPoints}from './health-models.js?v=20261022-physics01';
+import{showHealth}from './health-visuals.js?v=20261022-physics02r1';
+import{arteryStates,treatments,diseaseLinks,riskCases,durations,frequencies,incidence,scatterPoints}from './health-models.js?v=20261022-physics02r1';
 export{showHealth};
 const choices={effect:[['cardio','Cardiovascular disease'],['diabetes','Type 2 diabetes'],['liver','Liver / brain impairment'],['lung','Lung disease / lung cancer'],['fetus','Fetal development'],['cancer','Cancer risk']]};
 export function mountHealth(l,p,root,{save,done,feedback}){

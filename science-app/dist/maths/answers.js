@@ -19,9 +19,9 @@
 //                 for mastery, as it would lose the final mark in an exam.
 //   'wrong'     - wrong value
 //   'invalid'   - could not be read; nothing is recorded and the student fixes the format
-import { markAlgebra, algebraPreview } from './algebra.js?v=20261022-maths-r4';
-import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261022-maths-r4';
-import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r4';
+import { markAlgebra, algebraPreview } from './algebra.js?v=20261022-maths-r4p1';
+import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261022-maths-r4p1';
+import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r4p1';
 
 export function isPrime(n) {
   if (!Number.isInteger(n) || n < 2) return false;

@@ -1,4 +1,4 @@
-import{factorData}from './photo-models.js?v=20261022-physics01';
+import{factorData}from './photo-models.js?v=20261022-physics02r1';
 const mat=(T,c,e={})=>new T.MeshStandardMaterial({color:c,roughness:.3,metalness:.03,...e});
 function ball(g,T,x,y,z,r,c,scale=[1,1,1],name=''){let m=new T.Mesh(new T.SphereGeometry(r,24,18),mat(T,c));m.position.set(x,y,z);m.scale.set(...scale);m.name=name;g.add(m);return m;}
 function box(g,T,x,y,z,a,b,c,color,name=''){let m=new T.Mesh(new T.BoxGeometry(a,b,c),mat(T,color));m.position.set(x,y,z);m.name=name;g.add(m);return m;}

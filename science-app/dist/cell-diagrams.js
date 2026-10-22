@@ -1,4 +1,4 @@
-import {cellType,cellParts,selectedPart}from './cell-anatomy.js?v=20261022-physics01';
+import {cellType,cellParts,selectedPart}from './cell-anatomy.js?v=20261022-physics02r1';
 let serial=0;
 export function detailedCellFigure({type='animal',highlight='',labelled=false}={}){
  type=cellType(type);highlight=selectedPart(type,highlight);const id='cellDiagram'+(++serial),plant=type==='plant',bacterium=type==='bacterium';const stroke=key=>highlight===key?' stroke="#f58b79" stroke-width="5"':' stroke="#e4ece8" stroke-opacity=".65" stroke-width="1.5"';const selected=key=>highlight===key?'#f58b79':'';

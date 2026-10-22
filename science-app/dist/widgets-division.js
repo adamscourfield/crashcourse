@@ -1,7 +1,7 @@
-import {renderDiagram}from './visual.js?v=20261022-physics01';
-import {chromosomeFigure,cycleFigure}from './division-figures.js?v=20261022-physics01';
-import {chromosomeChallenges,chromosomeIDs,copyIDs,allocationValid,nucleusInventory,stageIndex}from './division-models.js?v=20261022-physics01';
-import {escapeLab}from './catalog-labs.js?v=20261022-physics01';
+import {renderDiagram}from './visual.js?v=20261022-physics02r1';
+import {chromosomeFigure,cycleFigure}from './division-figures.js?v=20261022-physics02r1';
+import {chromosomeChallenges,chromosomeIDs,copyIDs,allocationValid,nucleusInventory,stageIndex}from './division-models.js?v=20261022-physics02r1';
+import {escapeLab}from './catalog-labs.js?v=20261022-physics02r1';
 export function showChromosomes(level='nucleus',w={}){renderDiagram('Chromosomes, DNA & genes',level==='gene'?'A gene is a section of DNA':level==='nucleus'?'Two illustrative chromosome pairs':level==='chromosome'?'Many genes along one chromosome':'DNA molecule · selected region',chromosomeFigure({level,region:w.region||'A'})+'<p class="diagram-caption">Symbolic zoom levels use different scales. Rods represent unreplicated chromosomes; only a few illustrative gene regions are highlighted.</p>','EXPLORE THE GENETIC MATERIAL');}
 export function showCycle(stage=0,w={}){stage=stageIndex(stage);renderDiagram(['Prepare to divide','Copy the DNA','Allocate complete sets','Divide the cell contents','Two daughter cells'][stage],stage===0&&w.grown?'Growth and more sub-cellular structures':'Three overall stages · five teaching snapshots',cycleFigure({stage,assignments:stage===2?w.assignments:null,grown:w.grown})+'<p class="diagram-caption">Four chromosomes are a small teaching example. Nuclear outlines in allocation mode are targets, not a time-lapse. Rods, colours and timing are symbolic; these are not named mitosis phases.</p>','TRACK A COMPLETE SET INTO EACH CELL');}
 const optionHTML=(options,answer)=>'<option value="">Choose…</option>'+options.map(([value,label])=>'<option value="'+escapeLab(value)+'"'+(answer===value?' selected':'')+'>'+escapeLab(label)+'</option>').join('');

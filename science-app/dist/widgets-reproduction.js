@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-physics01';
-import{tasksForRepro,validRepro,advanceRepro,numericRepro}from './repro-models.js?v=20261022-physics01';import{showRepro}from './repro-visuals.js?v=20261022-physics01';export{showRepro};
+import{syncProcessMovie}from './process-player.js?v=20261022-physics02r1';
+import{tasksForRepro,validRepro,advanceRepro,numericRepro}from './repro-models.js?v=20261022-physics02r1';import{showRepro}from './repro-visuals.js?v=20261022-physics02r1';export{showRepro};
 export function mountRepro(l,p,root,{save,done,feedback}){let ts=tasksForRepro(l.widget.slice(6)),w=p.widget;w.reproTask??=ts[0].id;w.reproDrafts??={};w.reproPassed??=[];let i=ts.findIndex(t=>t.id===w.reproTask);if(i<0)i=0;let t=ts[i],v=w.reproDrafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountRepro(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.reproPassed.includes(t.id));
 syncProcessMovie(l,1,['methods','evidence','graph'].includes(t.kind)?{process:false}:null);
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

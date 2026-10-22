@@ -1,4 +1,4 @@
-import{ledgerFigure,compostFigure,biogasFigure,milkFigure}from './eco3-figures.js?v=20261022-physics01';
+import{ledgerFigure,compostFigure,biogasFigure,milkFigure}from './eco3-figures.js?v=20261022-physics02r1';
 const film=(title,steps,render,note)=>({title,steps,render,note,duration:18});
 export const eco3Films={
 'eco3-carbon':film('Follow carbon between stores',['Photosynthesis transfers atmospheric carbon into plants.','Feeding transfers carbon to animals.','Plant respiration returns carbon dioxide.','Animal respiration returns carbon dioxide.','Death and waste supply decomposing material.','Decomposer respiration returns carbon dioxide.'],p=>ledgerFigure({ledger:'carbon',progress:p,moving:true}),'Selected carbon stores only; fossil fuels, oceans and other routes omitted. Moving signal traces material transfer, not measured travel time. Box counts are a fixed starting illustration, distinct from your editable account. Matter cycles; energy is not recycled identically.'),

@@ -1,9 +1,9 @@
 // Visual models and investigations for Algebra batch 1.
 // visual4() draws worked-example diagrams; MODELS4 holds the six investigations.
-import { mathHTML, esc } from './render.js?v=20261022-maths-r4';
-import { F, add, sub, mul, div, eq, num, parseNumber, fracMarkup } from './frac.js?v=20261022-maths-r4';
-import { C, btn, progressDots } from './models-number.js?v=20261022-maths-r4';
-import { markAlgebra, equivalent, algebraHint } from './algebra.js?v=20261022-maths-r4';
+import { mathHTML, esc } from './render.js?v=20261022-maths-r4p1';
+import { F, add, sub, mul, div, eq, num, parseNumber, fracMarkup } from './frac.js?v=20261022-maths-r4p1';
+import { C, btn, progressDots } from './models-number.js?v=20261022-maths-r4p1';
+import { markAlgebra, equivalent, algebraHint } from './algebra.js?v=20261022-maths-r4p1';
 
 const W = 600;
 const fm = f => (f.d === 1 ? num(f.n) : fracMarkup(f));
@@ -86,6 +86,7 @@ function mountExprMachine(ctx) {
   const S = w.mach, B = w.sub;
   const run = ops => n => ops.reduce((v, o) => OPS[o].f(v), n);
   const render = () => {
+    if (ctx.isActive && !ctx.isActive()) return;
     if (S.done.length < MACHINE_TASKS.length) {
       const T = MACHINE_TASKS[S.task], f = run(S.ops);
       ctx.setTitle(`Build a machine for ${T.target}.`);
@@ -139,6 +140,7 @@ function mountTermSorter(ctx) {
   const S = w.sort, I = w.idx;
   const allPlaced = () => TILES.every((_, i) => S.placed[i]);
   const render = () => {
+    if (ctx.isActive && !ctx.isActive()) return;
     if (!S.done) {
       ctx.setTitle(allPlaced() ? 'Write the simplified expression.' : 'Sort the terms.');
       ctx.panel.innerHTML = `<div class="mpanel-k">PART A · LIKE TERMS</div><p class="mexpr">${M('3a + 2b − a + 5 + a^2 + 4b − 2 + 2a^2')}</p><div class="mbins">${BINS.map(([k, label]) => `<div class="mbin"><span>${M(label)}</span><div>${TILES.map((t, i) => (S.placed[i] === k ? `<i>${M(t[0])}</i>` : '')).join('')}</div></div>`).join('')}</div>`;
@@ -190,6 +192,7 @@ function mountAreaBracket(ctx) {
   const w = ctx.w; w.exp ??= { task: 0, a: ['', ''], done: [] }; w.fac ??= { task: 0, pick: null, done: [] };
   const E = w.exp, Fa = w.fac;
   const render = () => {
+    if (ctx.isActive && !ctx.isActive()) return;
     if (E.done.length < EXPAND_TASKS.length) {
       const T = EXPAND_TASKS[E.task];
       ctx.setTitle(`Expand ${T.whole.replace('^2', '²')}.`);
@@ -243,6 +246,7 @@ function mountGridQuadratic(ctx) {
   const w = ctx.w; w.grid ??= { task: 0, a: ['', '', '', ''], done: [] }; w.pairs ??= { task: 0, done: [] };
   const G = w.grid, P = w.pairs;
   const render = () => {
+    if (ctx.isActive && !ctx.isActive()) return;
     if (G.done.length < GRID_TASKS.length) {
       const T = GRID_TASKS[G.task], solved = G.done.includes(G.task);
       const cells = ['x^2', term(T.b, 'x'), term(T.a, 'x'), num(T.a * T.b)];
@@ -307,6 +311,7 @@ function mountBalance(ctx) {
   const cur = () => { const T = EQ_TASKS[Bl.task]; let st = { a: fr(T.start.a), b: fr(T.start.b), c: fr(T.start.c), d: fr(T.start.d) }; for (const mv of Bl.hist) st = apply(st, mv); return st; };
   const solved = st => eq(st.a, F(1)) && st.b.n === 0 && st.c.n === 0;
   const render = () => {
+    if (ctx.isActive && !ctx.isActive()) return;
     if (Bl.done.length >= EQ_TASKS.length) return doneCard(ctx, balanceSVG({ left: 'x', right: '5' }), 'Whatever you do to one side, do to the other, and the balance stays level. Undo the operations in reverse order: remove the added number, then divide by the coefficient. With x on both sides, first subtract the smaller x term from both sides so x appears once.');
     const st = cur(), T = EQ_TASKS[Bl.task];
     const L = plain(side(st.a, st.b)), R = plain(side(st.c, st.d));
@@ -349,6 +354,7 @@ function mountReverse(ctx) {
   const w = ctx.w; w.rev ??= { task: 0, chosen: [], answer: '', done: [] };
   const Rv = w.rev;
   const render = () => {
+    if (ctx.isActive && !ctx.isActive()) return;
     if (Rv.done.length >= REV_TASKS.length) return doneCard(ctx, visual4({ kind: 'rearr', subject: 'w', forward: ['+ l', '× 2'], result: 'P', reverse: ['÷ 2', '− l'] }), 'To change the subject, list what happens to the new subject in order, then undo those operations in reverse order. The last operation applied is the first one you undo. Keep the whole of the other side together: (v − u) is divided by a, not just u.');
     const T = REV_TASKS[Rv.task], built = Rv.chosen.length === T.right.length;
     ctx.setTitle(`Make ${T.subject} the subject of ${T.formula}.`);

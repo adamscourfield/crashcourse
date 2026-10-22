@@ -216,3 +216,11 @@ test('algebra lesson records: ids, refs, prerequisites, visuals and check plans'
     assert.deepEqual(lessonDone(lessonState(s, l.id), l, 'Foundation', s), { discover: false, investigate: false, practise: false, check: false });
   }
 });
+
+test('inactive Algebra model callbacks cannot write to a previous subject or stage', async () => {
+  const { MODELS4 } = await import('../dist/maths/models-algebra.js');
+  for (const mount of Object.values(MODELS4)) {
+    const stale = new Proxy({}, { get() { throw new Error('stale DOM read'); }, set() { throw new Error('stale DOM write'); } });
+    assert.doesNotThrow(() => mount({ w: {}, tier: 'Higher', panel: stale, body: stale, isActive: () => false, setTitle() { throw new Error('stale title'); } }));
+  }
+});

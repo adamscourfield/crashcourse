@@ -1,0 +1,416 @@
+{
+  "date": "2026-10-22",
+  "journeys": [
+    {
+      "lesson": "science.physics.energy.power",
+      "result": true,
+      "checks": 6,
+      "wrongComparisonNumericReasonPredictionAndPracticeRejected": true,
+      "settings": [
+        "120:2",
+        "120:4",
+        "240:2",
+        "240:4"
+      ]
+    },
+    {
+      "lesson": "science.physics.energy.dissipation",
+      "result": true,
+      "checks": 6,
+      "wrongComparisonNumericReasonPredictionAndPracticeRejected": true,
+      "settings": [
+        "100:0.25",
+        "100:0.4",
+        "200:0.25",
+        "200:0.4"
+      ]
+    },
+    {
+      "lesson": "science.physics.energy.insulation",
+      "result": true,
+      "checks": 6,
+      "wrongComparisonNumericReasonPredictionAndPracticeRejected": true,
+      "settings": [
+        "1:1",
+        "1:2",
+        "2:1",
+        "2:2"
+      ]
+    },
+    {
+      "lesson": "science.physics.energy.efficiency",
+      "result": true,
+      "checks": 8,
+      "wrongComparisonNumericReasonPredictionAndPracticeRejected": true,
+      "settings": [
+        "100:0.6",
+        "100:0.8",
+        "200:0.6",
+        "200:0.8"
+      ]
+    },
+    {
+      "lesson": "science.physics.energy.resources",
+      "result": true,
+      "checks": 10,
+      "wrongComparisonNumericReasonPredictionAndPracticeRejected": true,
+      "settings": [
+        "20:calm",
+        "20:windy",
+        "40:calm",
+        "40:windy"
+      ]
+    }
+  ],
+  "mobile": [
+    {
+      "lesson": "science.physics.energy.power",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.power",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.power",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.power",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.power",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.power",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.power",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.dissipation",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.dissipation",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.dissipation",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.dissipation",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.dissipation",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.dissipation",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.dissipation",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.insulation",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.insulation",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.insulation",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.insulation",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.insulation",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.insulation",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.insulation",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.efficiency",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.efficiency",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.efficiency",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.efficiency",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.efficiency",
+      "card": 4,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.efficiency",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.efficiency",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.efficiency",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.efficiency",
+      "task": 3,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.resources",
+      "card": 0,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.resources",
+      "card": 1,
+      "visible": true,
+      "loop": true,
+      "n": 1,
+      "pause": true,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.resources",
+      "card": 2,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.resources",
+      "card": 3,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.resources",
+      "card": 4,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.resources",
+      "card": 5,
+      "visible": false,
+      "loop": true,
+      "n": 1,
+      "pause": false,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.resources",
+      "task": 0,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.resources",
+      "task": 1,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    },
+    {
+      "lesson": "science.physics.energy.resources",
+      "task": 2,
+      "n": 1,
+      "sw": 390,
+      "w": 390
+    }
+  ],
+  "scope": "Foundation efficiency4 cards/3 tasks; Higher5 cards/4 tasks. Numeric/comparison/model evidence wrong paths rejected; unit test revalidates Foundation→Higher completion.",
+  "resume": "Insulation conductivity2/thickness1 wrong prediction32 restored after reload and Trilogy/back; earlier5 Physics and25 Ecology completions retained. Both routes/Foundation and Higher show10 eligible Energy lessons.",
+  "sources": "4.1.2.1 RP2 preparation only Separate; Trilogy note explicitly excludes RP2 requirement. Source-notes ReferenceError found during QA, repaired and retested.",
+  "assessment": "New-start assessment offers10 questions from10 eligible lessons",
+  "maths": "15 Number and6 Algebra menus preserved; expression machine ×2 then+5 accepted for2n+5; Science restores.",
+  "limitations": "Technical QA; not specialist review, unrestricted writing/graphing, school practical evidence or full assistive-technology/device certification",
+  "integrationRepair": "New Algebra stale delayed redraw reproduced on subject switch; six models now honour active generation/connected panel guards. Re-tested switching away during both700ms machine success transitions: Science retained and Discover title stayed Writing algebra; fresh-preview console had no errors. Added unit check for all six inactive models. Maths cache r4p1, global physics02r1."
+}

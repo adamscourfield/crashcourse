@@ -1,20 +1,20 @@
 // Maths studio: lesson flow, generated practice with mastery ladders, independent checks,
 // spaced interleaved review and topic assessment. Owns its own saved state (MATHS_KEY) so it
 // can never alter science progress.
-import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r4';
-import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r4';
-import { algebraMatches, algebraPreview } from './algebra.js?v=20261022-maths-r4';
-import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261022-maths-r4';
-import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r4';
-import { generate, skillById } from './skills.js?v=20261022-maths-r4';
-import { orderedLessons as numberLessons, mathsTopics as numberTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r4';
-import { algebraTopic, orderedAlgebra } from './lessons-algebra.js?v=20261022-maths-r4';
-import { visual4, MODELS4 } from './models-algebra.js?v=20261022-maths-r4';
-import { visual, mountModel } from './models-number.js?v=20261022-maths-r4';
-import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r4';
-import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r4';
-import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r4';
-import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r4';
+import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r4p1';
+import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r4p1';
+import { algebraMatches, algebraPreview } from './algebra.js?v=20261022-maths-r4p1';
+import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261022-maths-r4p1';
+import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r4p1';
+import { generate, skillById } from './skills.js?v=20261022-maths-r4p1';
+import { orderedLessons as numberLessons, mathsTopics as numberTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r4p1';
+import { algebraTopic, orderedAlgebra } from './lessons-algebra.js?v=20261022-maths-r4p1';
+import { visual4, MODELS4 } from './models-algebra.js?v=20261022-maths-r4p1';
+import { visual, mountModel } from './models-number.js?v=20261022-maths-r4p1';
+import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r4p1';
+import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r4p1';
+import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r4p1';
+import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r4p1';
 
 const STAGES = ['Discover', 'Investigate', 'Practise', 'Check'];
 const orderedLessons = [...numberLessons, ...orderedAlgebra];
@@ -60,7 +60,9 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     $('#mContinue').onclick = onContinue;
   }
 
+  let modelGeneration = 0;
   function render() {
+    modelGeneration++;
     if (!$('#mPanel')) shell();
     if (view !== 'lesson') return renderRun();
     const l = lesson(), p = lessonState(s, l.id), d = lessonDone(p, l, s.tier, s);
@@ -106,10 +108,12 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
 
   /* ───────── investigate ───────── */
   function renderInvestigate(l, p) {
+    const generation = modelGeneration, panel = $('#mPanel'), body = $('#mBody');
     $('#mTitle').textContent = '';
     $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
     (MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
-      panel: $('#mPanel'), body: $('#mBody'), w: p.widget, tier: s.tier,
+      panel, body, w: p.widget, tier: s.tier,
+      isActive: () => generation === modelGeneration && panel.isConnected && body.isConnected && $('#mPanel') === panel && !!$('#mTitle'),
       save, feedback, setTitle: t => ($('#mTitle').textContent = t),
       done: () => { if (!p.widgetDone) { p.widgetDone = true; save(); render(); } $('#mHint').textContent = 'Complete ✓'; },
     });

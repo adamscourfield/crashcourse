@@ -1,5 +1,5 @@
-import {catalogTaskCorrect,escapeLab} from './catalog-labs.js?v=20261022-physics01';
-import {showCatalog} from './catalog-scenes.js?v=20261022-physics01';
+import {catalogTaskCorrect,escapeLab} from './catalog-labs.js?v=20261022-physics02r1';
+import {showCatalog} from './catalog-scenes.js?v=20261022-physics02r1';
 function orderedOptions(options,key){return options.map((o,i)=>({o,k:[...key+o.value].reduce((h,c)=>Math.imul(h^c.charCodeAt(0),16777619)>>>0,2166136261),i})).sort((a,b)=>a.k-b.k||a.i-b.i).map(x=>x.o);}
 export function mountCatalog(l,p,root,{save,done,feedback}){
  const tasks=l.lab,w=p.widget;w.task??=0;w.answers??={};w.passed??=[];
