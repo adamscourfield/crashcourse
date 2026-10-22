@@ -222,22 +222,22 @@
     {
       "route": "combined",
       "tier": "Foundation",
-      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n9\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n9 / 9\nReset lesson"
+      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n9\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined \u00b7 Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n9 / 9\nReset lesson"
     },
     {
       "route": "combined",
       "tier": "Higher",
-      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n9\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n9 / 9\nReset lesson"
+      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n9\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined \u00b7 Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n9 / 9\nReset lesson"
     },
     {
       "route": "separate",
       "tier": "Foundation",
-      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n11\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n11 / 11\nReset lesson"
+      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n11\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined \u00b7 Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n11 / 11\nReset lesson"
     },
     {
       "route": "separate",
       "tier": "Higher",
-      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n12\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n12 / 12\nReset lesson"
+      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n12\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined \u00b7 Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n12 / 12\nReset lesson"
     }
   ],
   "assessment": "New-start modal offers12 questions, one per available Separate Higher Ecology lesson",
@@ -248,5 +248,20 @@
     "Physical practical work outstanding",
     "No full assistive-technology/device certification"
   ],
-  "publication": "pending"
+  "publication": {
+    "status": "succeeded",
+    "source_commit": "7659027b7d203179de8d66a4df9af74d80e59efb",
+    "deployment": "appgdep_6ad9bd9a94ec8191922cb22095a1327f",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_d2f15fc9fd04819191f42e1fab4a993a",
+    "url": "https://gcse-science-atom-lab.newbuddy32.chatgpt.site/",
+    "published_at": "2026-10-22T07:41:02Z",
+    "audience": "owner_private_preserved",
+    "liveInventory": 12,
+    "liveDefault": "carbon inline autoplay and Loop; single player",
+    "liveConsoleErrors": [],
+    "proof": "crash-course-ecology03.png",
+    "githubSourceCommit": "2d03bd53530964fbc71b7bfe35046a3f30137681",
+    "githubBranch": "main",
+    "githubRepository": "https://github.com/adamscourfield/crashcourse"
+  }
 }

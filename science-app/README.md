@@ -1,11 +1,12 @@
 # Crash Course
 
-A buildless GCSE learning app. Published through Sites; source identity is in `.openai/hosting.json`. All teaching content and questions are original. Alignment was checked against AQA’s online specifications on 16–19 October 2026.
+A buildless GCSE learning app. Published through Sites; source identity is in `.openai/hosting.json`. All teaching content and questions are original. Alignment is checked per batch against AQA’s official specifications; the latest source checks are dated22 October2026 in the curriculum records.
 
 ## Available content
 
-Biology now has7 shared both-tier Cell biology lessons: eukaryotes/prokaryotes, animal/plant structures, microscopy, specialisation, differentiation, chromosomes/DNA/genes and the cell cycle.28 practice and63 independent checks accompany cell cutaways, adaptation comparisons, branching development and keyboard focus/view activities. This first Biology batch is partial; remaining Cell biology, other Biology and Physics lessons are planned. Total app:120 lessons,371 practice and668 independent checks. Both Biology qualification variants use4.x reference prefixes; separate Biology uses8461. Discipline changes preserve topic-specific assessment/review contexts.
+Current source, 22 October 2026: 250 lessons (113 Chemistry and 137 Biology), 908 practice items and 1603 independent-check items before course/tier filtering. Separate sciences has 213 Foundation /250 Higher lessons; Trilogy has166 Foundation /184 Higher. Biology has103 Trilogy Higher lessons. Earlier Biology topic evidence audits remain open; Physics and other subjects are planned.
 
+Ecology has12 Separate Higher /11 Separate Foundation /9 Trilogy lessons. Latest five cover carbon and water cycling, separate decomposition/biogas, separate milk-decay practical preparation and separate Higher environmental change.13 Ecology roadmap units remain. See root `BUILD_STATUS.md`, curriculum registers and `recycling-browser-evidence.json` for current checks and publication evidence. There are79 process films with76 lesson bindings; process cards default to looping autoplay, reduced-motion paused, while evidence and experimental views remain direct.
 
 113 Chemistry lessons across all ten AQA topics:13 Atomic,16 Bonding,13 Quantitative,16 Chemical changes,7 Energy,8 Rates/equilibrium,13 Organic,7 Analysis,6 Atmosphere and14 Resources. There are343 practice and605 independent-check items before course/tier filtering. Each lesson includes explanations, investigation, feedback-led practice, independent checks and concept recall.
 
