@@ -1,3 +1,36 @@
+## Maths: Edexcel 1MA1 Number batch 03 — all N1–N16 now taught (15 lessons), on GitHub `main`, lessons 11–15 not yet published
+
+Five lessons were added to the ten published with Ecology05:
+- listing and the product rule (N5; product rule Higher-only);
+- units and measures (N13);
+- speed, density and pressure (N13);
+- exact answers with π and surds (N8; the surd skills are Higher-only and hidden at Foundation);
+- fractions in ratios, reciprocals and inequality symbols (N11, N3, N1).
+
+Fraction → recurring decimal (N10 Higher) is now assessed.
+
+Engine additions:
+- an `exact` answer kind (a + b√r, bπ). It marks unsimplified surds, unrationalised denominators and decimal approximations as right value, wrong form;
+- a `ratio` answer kind (simplest form; reversed order diagnosed);
+- whole-skill `higherOnly` flags;
+- checks topped up to 10 items when Higher-only skills are hidden;
+- a 20-question topic assessment drawn across all lessons.
+
+The engine now has 38 skills.
+
+QA:
+- 403 automated tests pass after rebasing onto `main` 1231c2e (380 science + 23 maths).
+- Browser walk-throughs: batch 03 passes 62 checks (`tools/maths-browser-flow-3.mjs`). The pilot (87) and batch 02 (68) flows were rerun and pass, so 217 checks pass in total.
+- Evidence: `science-app/maths-browser-evidence-3.json`.
+
+Remaining gaps are listed per statement in `curriculum/maths-number-requirements.csv`: no conjugate surd denominators; written lists and methods are not marked; metric units only.
+
+Brief: `curriculum/briefs/maths-number-batch-03.md`.
+
+**Cache:** `app.js` now imports `maths/studio.js?v=20261022-maths-r3`, but `index.html` still loads `app.js?v=20261022-eco5`. **Publishing lessons 11–15 requires a global version bump.**
+
+Not done: Site publication of lessons 11–15; teacher or specialist review. Next steps: Adam reviews the lessons; publish them; build expression-equivalence marking before Algebra.
+
 ## Ecology batch05 — implemented, published and GitHub source updated
 
 Five lessons: maintaining biodiversity shared both tiers, trophic/decomposer nutrition, biomass pyramids, biomass transfer and food security separate Biology both tiers. AQA8461/8464 4.7.3.6 plus separate4.7.4.1/.2/.3 and4.7.5.1 checked22October2026.25 grouped teaching/support requirements mapped in biology-ecology-batch05-requirements.csv. Required examples: breeding endangered species, rare-habitat protection/regeneration, margins/hedgerows in monoculture, reduced deforestation/CO₂ and recycling; numbered feeding roles/apex and extracellular enzymes→soluble products→diffusion; accurate common-scale pyramids; about1% light energy versus about10% biomass, loss routes including faeces/respiration CO₂/water/urinary urea/water, supplied efficiency; demand/diets/transport/pests/pathogens/rain/input costs/conflict and sustainable food access. Explicit skill links: conservation WS1.4/1.5, pyramids WS1.2/MS2c, biomass MS1c, food security WS1.4; trophic model reading is an authoring opportunity.

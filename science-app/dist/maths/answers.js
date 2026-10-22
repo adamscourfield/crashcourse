@@ -9,6 +9,8 @@
 //   {kind:'standard', a:{n,d}, n}               A × 10^n with 1 ≤ |A| < 10
 //   {kind:'power', base, exp}                   a single power such as 5^7 or 2^-3
 //   {kind:'interval', lo:{n,d}, hi:{n,d}, loIn, hiIn}   error interval such as 4.25 ≤ x < 4.35
+//   {kind:'exact', a:{n,d}, b:{n,d}, r}         a + b√r (r a square-free integer) or a + bπ (r = 'pi')
+//   {kind:'ratio', parts:[2, 5]}                ratio in simplest whole-number form
 //
 // mark() returns {status, code}. status is one of:
 //   'correct'   - full marks
@@ -17,7 +19,8 @@
 //                 for mastery, as it would lose the final mark in an exam.
 //   'wrong'     - wrong value
 //   'invalid'   - could not be read; nothing is recorded and the student fixes the format
-import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r2';
+import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261022-maths-r3';
+import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261022-maths-r3';
 
 export function isPrime(n) {
   if (!Number.isInteger(n) || n < 2) return false;
@@ -88,7 +91,7 @@ export function parseInterval(raw) {
 export function answerValue(spec, raw) {
   if (spec.kind === 'standard') { const s = parseStandard(raw); if (s) return mul(s.a, pow10(s.n)); }
   if (spec.kind === 'power') { const p = parsePower(raw); if (p) return powValue(p.base, p.exp); }
-  if (spec.kind === 'interval' || spec.kind === 'choice' || spec.kind === 'primes') return null;
+  if (['interval', 'choice', 'primes', 'exact', 'ratio'].includes(spec.kind)) return null;
   const p = parseNumber(raw);
   return p ? p.value : null;
 }
@@ -112,6 +115,8 @@ export function mark(spec, raw) {
     return { status: 'wrong', code: allPrime ? 'wrong-product' : 'wrong-product-composite', given: f };
   }
 
+  if (spec.kind === 'exact') return markExact(spec, raw);
+  if (spec.kind === 'ratio') return markRatio(spec, raw);
   if (spec.kind === 'interval') {
     const iv = parseInterval(raw);
     if (!iv) return { status: 'invalid', code: 'format-interval' };
@@ -182,6 +187,10 @@ export const PARTIAL_MESSAGES = {
   'sf-format': 'That has the right value, but show all the significant figures asked for, including a final zero if there is one.',
   'want-standard': 'That has the right value, but it is not in standard form. The first number must be at least 1 and less than 10.',
   'want-power': 'That has the right value, but the question asks for a single power of the given base.',
+  'want-exact': 'That is a decimal approximation. The question asks for an exact answer: leave it in terms of π or as a surd.',
+  'not-rationalised': 'That has the right value, but the denominator still contains a surd. Multiply the top and bottom by that surd to rationalise it.',
+  'surd-not-simplified': 'That has the right value, but it is not fully simplified. Take out any square factor (√12 = 2√3) and collect like terms.',
+  'ratio-not-simplest': 'That ratio is equivalent, but not in its simplest form. Divide every part by their highest common factor, using whole numbers.',
   'interval-ends': 'The two end values are right, but check the signs. The lower bound is included (≤); the upper bound is not (<), because it would round up.',
 };
 
@@ -204,6 +213,8 @@ export function answerMarkup(spec) {
   if (spec.kind === 'decimal') return decText(F(spec.value.n, spec.value.d), decimalPlacesFor(spec)) ?? fracMarkup(F(spec.value.n, spec.value.d));
   if (spec.kind === 'standard') return `${decText(F(spec.a.n, spec.a.d))} × 10^{${num(spec.n)}}`;
   if (spec.kind === 'power') return `${spec.base < 0 ? `(${num(spec.base)})` : spec.base}^{${num(spec.exp)}}`;
+  if (spec.kind === 'exact') return exactMarkup(spec);
+  if (spec.kind === 'ratio') return ratioMarkup(spec);
   if (spec.kind === 'interval') return `${decText(F(spec.lo.n, spec.lo.d))} ${spec.loIn ? '≤' : '<'} x ${spec.hiIn ? '≤' : '<'} ${decText(F(spec.hi.n, spec.hi.d))}`;
   return spec.options[spec.answer];
 }
@@ -216,6 +227,7 @@ export function givenMarkup(spec, raw) {
     const f = parsePrimeProduct(raw);
     return f ? Object.entries(f).map(([b, k]) => (k > 1 ? `${b}^${k}` : b)).join(' × ') : normalise(raw);
   }
+  if (spec.kind === 'exact' || spec.kind === 'ratio') return normalise(raw).replace(/pi/gi, 'π').replace(/-/g, '−');
   if (['standard', 'power', 'interval'].includes(spec.kind)) return normalise(raw).replace(/<=/g, '≤').replace(/\^\(?(-?\d+)\)?/g, (_, k) => `^{${k.replace('-', '−')}}`).replace(/-/g, '−').replace(/\s*[x*]\s*10/gi, ' × 10');
   const p = parseNumber(raw);
   if (!p) return normalise(raw);

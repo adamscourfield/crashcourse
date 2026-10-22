@@ -137,3 +137,14 @@ sup .mtok-op{min-width:34px;min-height:34px;font-size:18px;vertical-align:super}
 #mathsContent .mfrac-stack input.lab-input{width:76px}
 #mathsContent .mint input.lab-input{width:auto;flex:1;min-width:0}
 @media(max-width:800px){#mathsContent .mint-iv input.lab-input{width:74px}#mathsContent .mint-iv .mop{min-width:40px;padding:0}.mint-iv{gap:6px}}
+
+/* batch 3 models */
+.mslots{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin:auto}
+.mslots span{display:grid;place-items:center;width:74px;height:74px;border-radius:12px;background:#f8f6f218;border:1.5px solid #f8f6f260}
+.mslots b{font-family:var(--serif);font-size:28px;color:var(--cream);font-weight:400}.mslots i{font-style:normal;font-size:10px;color:#b7c8d6}
+.mslots em{color:var(--coral);font-style:normal;font-size:20px}
+.mgrid-pick{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}.mgrid-pick .choice{font-size:11px;min-height:44px;padding:6px}
+.mhand{display:grid;gap:4px}.mhand-row{display:grid;grid-template-columns:44px repeat(5,minmax(0,1fr));gap:4px;align-items:center}.mhand-row span{font-size:12px;font-weight:600;color:var(--navy)}.mhand .choice{min-height:40px;padding:4px;font-size:11px}
+.mcube{width:150px;height:150px;margin:auto;border:2px solid var(--cream);background:var(--fill,#f0b4a6);position:relative;transform:skewY(-8deg);box-shadow:24px -24px 0 -2px #f0b4a680}
+.mcube span{position:absolute;color:var(--navy);font-size:12px;font-weight:600}.mcube span:nth-child(1){bottom:-22px;left:50px;color:#e4ebf0}.mcube span:nth-child(2){left:-48px;top:62px;color:#e4ebf0}.mcube span:nth-child(3){right:-60px;top:-6px;color:#e4ebf0}
+@media(max-width:800px){.mgrid-pick{grid-template-columns:repeat(2,minmax(0,1fr))}.mhand-row{grid-template-columns:36px repeat(5,minmax(0,1fr))}}

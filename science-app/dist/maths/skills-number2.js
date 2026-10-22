@@ -4,9 +4,9 @@
 // 22 October 2026): estimating roots (N6), fractional indices (N7), recurring decimals (N10),
 // upper and lower bounds (N16).
 // Same contract as skills-number.js: generators are pure functions of (level, seed).
-import { rng, int, pick, shuffled } from './rng.js?v=20261022-maths-r2';
-import { F, add, sub, mul, div, eq, gcd, num, fracMarkup, decText, D } from './frac.js?v=20261022-maths-r2';
-import { make } from './skills-number.js?v=20261022-maths-r2';
+import { rng, int, pick, shuffled } from './rng.js?v=20261022-maths-r3';
+import { F, add, sub, mul, div, eq, gcd, num, fracMarkup, decText, D } from './frac.js?v=20261022-maths-r3';
+import { make } from './skills-number.js?v=20261022-maths-r3';
 
 const dt = f => { const t = decText(f); if (t === null) throw new Error('non-terminating ' + f.n + '/' + f.d); return t; };
 const dec = (f, extra = {}) => ({ kind: 'decimal', value: { n: f.n, d: f.d }, ...extra });
@@ -165,7 +165,19 @@ const fdpConvert = {
       return make(this.id, level, seed, { prompt: `Write ${pc}% as a decimal.`, answer: dec(f),
         steps: [`Divide by 100: ${pc} ÷ 100 = ${dt(f)}`], traps: [tv(div(D(String(pc)), F(10)), 'Divide by 100, not 10: move every digit two places.')] });
     }
-    const kind = pick(r, ['one', 'two', 'mixed']);
+    const kind = pick(r, ['one', 'two', 'mixed', 'f2r']);
+    if (kind === 'f2r') {
+      const opts = [[1, 3, recur('', '3')], [2, 3, recur('', '6')], [1, 6, recur('1', '6')], [5, 6, recur('8', '3')], [2, 9, recur('', '2')], [7, 9, recur('', '7')], ...[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(n => [n, 11, recur('', String(9 * n).padStart(2, '0'))])];
+      const [n, d, right] = pick(r, opts);
+      const digits = right.replace(/\u0307/g, '').slice(2);
+      const wrong = d === 11 ? [`0.${digits}`, recur('', digits[1] + digits[0]), recur('', digits[0])]
+        : d === 6 ? [`0.${digits}`, recur('', digits), recur('', digits[1])]
+        : [`0.${digits}`, recur('', String((Number(digits) + 1) % 10)), `0.${digits}${digits}`];
+      const uniq = [...new Set(wrong)].filter(w => w !== right).slice(0, 3);
+      const c = choice(r, right, uniq, o => (o.includes(DOT) ? `Divide ${n} by ${d}: ${(n / d).toFixed(6)}… Check which digits repeat.` : `${o} is a terminating decimal. ${n} ÷ ${d} never ends: the digits repeat.`));
+      return make(this.id, level, seed, { prompt: `Which is ${fracMarkup(F(n, d))} written as a decimal?`, ...c,
+        steps: [`Divide: ${n} ÷ ${d} = ${(n / d).toFixed(6)}…`, `The repeating block is shown with dots: ${right}`] });
+    }
     if (kind === 'one') {
       const a = int(r, 1, 8), f = F(a, 9);
       return make(this.id, level, seed, { prompt: `Write ${recur('', String(a))} as a fraction in its simplest form. (The dot shows the digit recurs.)`, answer: fracAns(f),

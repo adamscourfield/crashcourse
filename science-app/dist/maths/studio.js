@@ -1,15 +1,17 @@
 // Maths studio: lesson flow, generated practice with mastery ladders, independent checks,
 // spaced interleaved review and topic assessment. Owns its own saved state (MATHS_KEY) so it
 // can never alter science progress.
-import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r2';
-import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r2';
-import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r2';
-import { generate, skillById } from './skills.js?v=20261022-maths-r2';
-import { orderedLessons, mathsTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r2';
-import { visual, mountModel } from './models-number.js?v=20261022-maths-r2';
-import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r2';
-import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r2';
-import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r2';
+import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r3';
+import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r3';
+import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261022-maths-r3';
+import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r3';
+import { generate, skillById } from './skills.js?v=20261022-maths-r3';
+import { orderedLessons, mathsTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r3';
+import { visual, mountModel } from './models-number.js?v=20261022-maths-r3';
+import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r3';
+import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r3';
+import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r3';
+import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r3';
 
 const STAGES = ['Discover', 'Investigate', 'Practise', 'Check'];
 const EVENT_TEXT = { up: 'Level up', down: 'Stepping back a level to rebuild', practised: 'Skill secure' };
@@ -84,7 +86,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const c = l.learn[p.card];
     p.reveal ??= {};
     const shown = p.reveal[p.card] ?? 0;
-    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual) || visual2(c.visual)}</div>`;
+    $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual) || visual2(c.visual) || visual3(c.visual)}</div>`;
     $('#mTitle').textContent = c.title;
     const pre = p.card === 0 && l.prerequisites?.length ? `<div class="prerequisites"><span>Prior learning:</span>${l.prerequisites.map(id => `<button class="text-button" data-mpre="${id}">${esc(orderedLessons.find(x => x.id === id)?.title || id)}</button>`).join('')}</div>` : '';
     $('#mBody').innerHTML = `${pre}<p>${mathHTML(c.text)}</p><div class="mexample"><div class="mexample-q"><span class="eyebrow">EXAMPLE</span><p>${mathHTML(c.example.prompt)}</p></div><ol class="msteps">${c.example.steps.map((st, i) => `<li ${i < shown ? '' : 'hidden'}>${mathHTML(st)}</li>`).join('')}</ol>${shown < c.example.steps.length ? `<button class="secondary" id="mReveal">${shown ? 'Next step' : 'Try it, then show the first step'}</button>` : ''}</div><div class="reading-dots">${l.learn.map((_, i) => `<button data-mcard="${i}" aria-label="Explanation ${i + 1}" class="${i === p.card ? 'current' : ''}">${i + 1}</button>`).join('')}</div>`;
@@ -98,8 +100,8 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
   function renderInvestigate(l, p) {
     $('#mTitle').textContent = '';
     $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
-    (MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
-      panel: $('#mPanel'), body: $('#mBody'), w: p.widget,
+    (MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
+      panel: $('#mPanel'), body: $('#mBody'), w: p.widget, tier: s.tier,
       save, feedback, setTitle: t => ($('#mTitle').textContent = t),
       done: () => { if (!p.widgetDone) { p.widgetDone = true; save(); render(); } $('#mHint').textContent = 'Complete ✓'; },
     });
@@ -135,6 +137,8 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       const op = inc => (inc ? '≤' : '<');
       return `<fieldset class="mans mint-iv" ${locked ? 'disabled' : ''}><legend class="field-label">Your error interval</legend><input class="lab-input" data-ilo inputmode="decimal" autocomplete="off" aria-label="Lower bound" value="${esc(p.lo ? dec(p.lo) : '')}"><button type="button" class="msign mop" data-iop="lo" aria-label="Lower sign: ${op(p.loIn)}">${op(p.loIn)}</button><span class="mvar">x</span><button type="button" class="msign mop" data-iop="hi" aria-label="Upper sign: ${op(p.hiIn)}">${op(p.hiIn)}</button><input class="lab-input" data-ihi inputmode="decimal" autocomplete="off" aria-label="Upper bound" value="${esc(p.hi ? dec(p.hi) : '')}"></fieldset><p class="micro-note">Tap a sign to switch between &lt; and ≤.</p>${submit}`;
     }
+    if (a.kind === 'exact') return `<label class="field-label" for="mText">Your exact answer</label><input class="lab-input mtext" id="mText" autocomplete="off" spellcheck="false" value="${esc(v)}" ${locked ? 'disabled' : ''}><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey="√">√</button><button type="button" class="secondary" data-mkey="π">π</button><button type="button" class="secondary" data-mkey="/">/</button>'}</div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : '<p class="micro-note">For example 3π, 2√5, 4 − 2√3 or 2√3/3.</p>'}${submit}`;
+    if (a.kind === 'ratio') return `<label class="field-label" for="mText">Your ratio</label><input class="lab-input mtext" id="mText" inputmode="text" autocomplete="off" placeholder="e.g. 3:4" value="${esc(v)}" ${locked ? 'disabled' : ''}><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey=":">:</button>'}</div>${submit}`;
     if (a.kind === 'primes') return `<label class="field-label" for="mText">Your answer</label><input class="lab-input mtext" id="mText" autocomplete="off" spellcheck="false" value="${esc(v)}" ${locked ? 'disabled' : ''}><div class="mkeys">${locked ? '' : '<button type="button" class="secondary" data-mkey=" × ">×</button><button type="button" class="secondary" data-mkey="^">x<sup>n</sup></button>'}</div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : ''}${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
     return `<label class="field-label" for="mText">Your answer${a.kind === 'decimal' && a.dp != null ? ` (${a.dp} decimal place${a.dp === 1 ? '' : 's'})` : ''}</label><div class="mint"><button type="button" class="msign" data-msign-text aria-label="Make negative" ${locked ? 'disabled' : ''}>±</button><input class="lab-input mtext" id="mText" inputmode="${a.kind === 'decimal' ? 'decimal' : 'numeric'}" autocomplete="off" value="${esc(v)}" ${locked ? 'disabled' : ''}></div>${item.note ? `<p class="micro-note">${esc(item.note)}</p>` : ''}${locked ? '' : '<button class="secondary" id="mSubmit">Check answer</button>'}`;
   }
@@ -175,6 +179,12 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       }
       return '';
     }
+    if (item.answer.kind === 'exact') return item.exTraps?.find(t => exactMatches(t, raw))?.why || '';
+    if (item.answer.kind === 'ratio') {
+      if (result.reversed) return 'The parts are in the wrong order. Write them in the same order as the question names them.';
+      const p = parseRatio(raw);
+      return (p && item.raTraps?.find(t => ratioProportional(p, t.parts))?.why) || '';
+    }
     if (item.answer.kind === 'interval') {
       const iv = parseInterval(raw);
       const t = iv && item.ivTraps?.find(t => eq(iv.lo, F(t.lo.n, t.lo.d)) && eq(iv.hi, F(t.hi.n, t.hi.d)));
@@ -185,7 +195,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const trap = item.traps?.find(t => eq(v, F(t.v.n, t.v.d)));
     return trap ? trap.why : '';
   }
-  const FORMAT_HELP = { 'format-standard': 'Fill in both boxes: a number from 1 up to 10, and the power of 10.', 'format-power': 'Fill in both boxes: the base and the power.', 'format-interval': 'Give both end values of the interval.', primes: 'Write primes joined by × (type x or *), for example 2^3 x 5.', format: 'Write a whole number, a decimal, a fraction like 3/4, or a mixed number like 1 3/4.' };
+  const FORMAT_HELP = { 'format-standard': 'Fill in both boxes: a number from 1 up to 10, and the power of 10.', 'format-power': 'Fill in both boxes: the base and the power.', 'format-interval': 'Give both end values of the interval.', 'format-exact': 'Write an exact answer such as 3π, 2√5, 4 − 2√3 or 2√3/3. Use the √ and π buttons.', 'format-ratio': 'Write a ratio with colons, such as 3:4.', primes: 'Write primes joined by × (type x or *), for example 2^3 x 5.', format: 'Write a whole number, a decimal, a fraction like 3/4, or a mixed number like 1 3/4.' };
   const invalidText = (item, res) => (res.code === 'empty' ? 'Enter an answer first.' : FORMAT_HELP[res.code] || FORMAT_HELP[item.answer.kind === 'primes' ? 'primes' : 'format']);
   const solution = item => `<div class="msolution"><span class="eyebrow">WORKED SOLUTION</span><ol class="msteps">${item.steps.map(st => `<li>${mathHTML(st)}</li>`).join('')}</ol><p class="mfinal">Answer: <strong>${mathHTML(answerMarkup(item.answer))}</strong></p></div>`;
 
@@ -259,7 +269,9 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
   /* ───────── check ───────── */
   function startCheck(l, p) {
     const run = (p.history.length || 0) + 1;
-    const plan = l.checkPlan.filter(([id]) => lessonSkills(l).some(sk => sk.id === id));
+    const allowed = lessonSkills(l);
+    const plan = l.checkPlan.filter(([id]) => allowed.some(sk => sk.id === id));
+    for (let i = 0; plan.length < 10 && allowed.length; i++) { const sk = allowed[i % allowed.length]; plan.push([sk.id, topLevel(sk, s.tier)]); }
     const items = shuffled(rng(l.id + run + Date.now()), plan.map(([id, lv]) => generate(id, Math.min(lv, topLevel(skillById[id], s.tier)), newSeed())));
     p.check = { run, items, answers: {}, drafts: {}, index: 0, startedAt: Date.now() };
   }
@@ -398,11 +410,19 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       view = 'review'; closeModal(); render();
     };
   }
+  /** Up to 20 skills: one from every lesson, then other skills at random, each skill at most once. */
+  function assessmentSkills() {
+    const r = rng(newSeed()), pickFrom = list => list[Math.floor(r() * list.length)];
+    const chosen = [];
+    for (const l of lessons()) { const opts = lessonSkills(l).filter(sk => !chosen.includes(sk)); if (opts.length) chosen.push(pickFrom(opts)); }
+    const rest = shuffled(r, allSkills().filter(sk => !chosen.includes(sk)));
+    return [...chosen, ...rest].slice(0, Math.max(20, lessons().length));
+  }
   function startAssessment() {
     const active = s.runs.assessment;
     if (active && !active.finished && active.tier === s.tier) { view = 'assessment'; closeModal(); return render(); }
-    const sks = allSkills();
-    modal(`<span class="eyebrow">INDEPENDENT TOPIC ASSESSMENT</span><h2>Number: available lessons</h2><p>${sks.length} new questions, one from each skill in the available lessons, at the top level for your tier and in mixed order. This checks the five pilot lessons, not the whole Number topic. First answers count; worked solutions appear at the end. Pass mark: ${RULES.checkPass}%.</p><button class="primary" id="maBegin">Start assessment →</button>`);
+    const sks = assessmentSkills();
+    modal(`<span class="eyebrow">INDEPENDENT TOPIC ASSESSMENT</span><h2>Number: available lessons</h2><p>${sks.length} new questions covering every available lesson, at the top level for your tier and in mixed order. Each attempt draws a different selection of skills. First answers count; worked solutions appear at the end. Pass mark: ${RULES.checkPass}%.</p><button class="primary" id="maBegin">Start assessment →</button>`);
     document.getElementById('maBegin').onclick = () => {
       s.runs.assessment = { kind: 'assessment', tier: s.tier, queue: shuffled(rng(newSeed()), sks.map(sk => generate(sk.id, topLevel(sk, s.tier), newSeed()))), answers: {}, drafts: {}, index: 0, finished: false, startedAt: Date.now() };
       view = 'assessment'; closeModal(); render();

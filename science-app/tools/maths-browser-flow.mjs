@@ -95,7 +95,7 @@ await page.waitForSelector('#mH1');
 ok((await page.locator('#mH1').innerText()) === 'Negative numbers', 'maths opens on lesson 1 Negative numbers');
 ok(await page.locator('#route').isHidden(), 'science pathway select hidden in maths');
 ok((await page.locator('#courseName').innerText()).includes('Edexcel'), 'sidebar names Edexcel course');
-ok((await page.locator('#sideProgress').innerText()) === '0 / 10', 'sidebar shows 0 / 10 maths lessons');
+ok((await page.locator('#sideProgress').innerText()) === '0 / 15', 'sidebar shows 0 / 15 maths lessons');
 await shot('m01-discover');
 
 // ── discover: reveal steps and read all cards ──
@@ -202,7 +202,7 @@ ok((await page.locator('dialog h2').innerText()).startsWith('10 / 10'), 'retake 
 ok((await page.locator('dialog').innerText()).includes('Lesson complete'), 'lesson completes');
 s = await mstate();
 ok(s.lessons['maths.number.negatives'].complete && s.lessons['maths.number.negatives'].best === 100, 'completion and best score saved');
-ok((await page.locator('#sideProgress').innerText()) === '1 / 10', 'sidebar progress 1 / 10');
+ok((await page.locator('#sideProgress').innerText()) === '1 / 15', 'sidebar progress 1 / 15');
 await page.click('#mrNext');
 ok((await page.locator('#mH1').innerText()) === 'Order of operations and inverses', 'next lesson opens');
 
@@ -230,7 +230,7 @@ for (let guard2 = 0; guard2 < 60; guard2++) {
   s = await mstate(); const w = s.lessons[s.lessonId].widget;
   if (w.order?.done?.length === 4) break;
   if (await page.locator('[data-act="onext"]').count()) { await page.click('[data-act="onext"]'); continue; }
-  const right = await page.evaluate(async () => { const m = await import('./maths/models-number.js?v=20261022-maths-r2'); const st = JSON.parse(localStorage.getItem('crash-course-maths-v1')); return m.nextOp(st.lessons[st.lessonId].widget.order.tk); });
+  const right = await page.evaluate(async () => { const m = await import('./maths/models-number.js?v=20261022-maths-r3'); const st = JSON.parse(localStorage.getItem('crash-course-maths-v1')); return m.nextOp(st.lessons[st.lessonId].widget.order.tk); });
   await page.click(`[data-op="${right}"]`);
 }
 await shot('m06-order-model');
@@ -305,7 +305,7 @@ await shot('m10-fraction-practice');
 await page.click('#assessmentButton');
 await page.click('#maBegin');
 s = await mstate();
-ok(s.runs.assessment.queue.length === 26, 'assessment samples all 26 skills');
+ok(s.runs.assessment.queue.length === 20, 'assessment draws 20 questions across all lessons');
 await enter(s.runs.assessment.queue[0], rawFor(s.runs.assessment.queue[0].answer));
 await page.reload(); await page.waitForSelector('#mH1');
 ok((await page.locator('#mH1').innerText()) === 'Topic assessment', 'unfinished assessment resumes after reload');
