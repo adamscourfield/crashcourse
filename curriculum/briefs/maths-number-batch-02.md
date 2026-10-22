@@ -67,3 +67,5 @@ Science batches bump the `?v=` string in every module. To avoid conflicting with
 1. Adam reviews lessons 6–10 in the browser.
 2. Remaining Number: N5 listing and product rule (Higher), N8 surds and π, N13 units and compound measures, N11 with Ratio.
 3. Expression-equivalence marking, then Algebra.
+
+Publication22October2026: included in the combined Ecology05 release, deployment appgdep_6ad9cfa2332c8191b4da49ad85dc4d20, source2fc5da5392336b18adf235c2270cf70e438b2f9e. Original389-test/155-browser-check Maths evidence retained; combined399 tests and Science/Maths subject/tier/mobile smoke checks pass. See BUILD_STATUS.md and feeding-browser-evidence.json. Specialist and written-working/expression-marking limits remain.

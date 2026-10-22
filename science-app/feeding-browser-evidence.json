@@ -222,32 +222,48 @@
     {
       "route": "combined",
       "tier": "Foundation",
-      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n15\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n15 / 15\nReset lesson"
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n15\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined \u00b7 Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n15 / 15\nReset lesson"
     },
     {
       "route": "combined",
       "tier": "Higher",
-      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n15\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n15 / 15\nReset lesson"
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n15\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined \u00b7 Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n15 / 15\nReset lesson"
     },
     {
       "route": "separate",
       "tier": "Foundation",
-      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n21\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n21 / 21\nReset lesson"
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n21\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined \u00b7 Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n21 / 21\nReset lesson"
     },
     {
       "route": "separate",
       "tier": "Higher",
-      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n22\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n22 / 22\nReset lesson"
+      "sidebar": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n22\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined \u00b7 Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n22 / 22\nReset lesson"
     }
   ],
-  "assessment": "INDEPENDENT TOPIC ASSESSMENT\nEcology\n\n22 questions, one from each available lesson. This checks available lessons, not the full topic. First answers count. Results include explanations. Pass mark: 80%.\n\nStart assessment →",
+  "assessment": "INDEPENDENT TOPIC ASSESSMENT\nEcology\n\n22 questions, one from each available lesson. This checks available lessons, not the full topic. First answers count. Results include explanations. Pass mark: 80%.\n\nStart assessment \u2192",
   "consoleErrors": [],
   "limits": [
     "Technical QA not specialist review",
     "Constrained pyramid construction and evaluation not unrestricted freehand/extended writing",
     "No physical practical or full assistive-technology certification"
   ],
-  "publication": "pending",
+  "publication": {
+    "status": "succeeded",
+    "source_commit": "2fc5da5392336b18adf235c2270cf70e438b2f9e",
+    "deployment": "appgdep_6ad9cfa2332c8191b4da49ad85dc4d20",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_b282d8ce3d048191be59913c5e0b52c5",
+    "url": "https://gcse-science-atom-lab.newbuddy32.chatgpt.site/",
+    "published_at": "2026-10-22T08:56:18Z",
+    "audience": "owner_private_preserved",
+    "liveScienceInventory": 22,
+    "liveProof": "proportional pyramid values800/160/32/6.4 with common1000g/m\u00b2 full width",
+    "liveMaths": "Negative numbers opens via subject selector; Science restores after switch",
+    "liveConsoleErrors": [],
+    "proof": "crash-course-ecology05.png",
+    "githubSourceCommit": "3ac4cac6f185eb084f71e33e4fc07c1b03af2aba",
+    "githubRepository": "https://github.com/adamscourfield/crashcourse",
+    "githubBranch": "main"
+  },
   "integration": {
     "remoteCommit": "2a1a2c0",
     "mathsLessonsPreserved": 10,
