@@ -1,4 +1,4 @@
-import {chromosomeIDs,nucleusInventory,stageIndex} from './division-models.js?v=20261022-eco2';
+import {chromosomeIDs,nucleusInventory,stageIndex} from './division-models.js?v=20261022-eco3';
 let serial=0;
 const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function rod(id,x,y,{copied=false,label=true,small=false}={}){const long=id.startsWith('A'),h=(long?58:38)*(small?.7:1),colour=id.endsWith('1')?'#edab94':'#bed2d3';return '<g transform="translate('+x+' '+y+')"><path d="M-5 '+(-h/2)+' Q5 0 -5 '+h/2+'" fill="none" stroke="'+colour+'" stroke-width="8" stroke-linecap="round"/>'+(copied?'<path d="M7 '+(-h/2)+' Q-3 0 7 '+h/2+'" fill="none" stroke="'+colour+'" stroke-width="8" stroke-linecap="round"/>':'')+'<path d="M-10 -9 H2 M-10 9 H2" stroke="#182e44" stroke-width="2"/>'+(label?'<text x="0" y="'+(h/2+18)+'" fill="#e5edf0" font-size="16" text-anchor="middle">'+id+'</text>':'')+'</g>';}

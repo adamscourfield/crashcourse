@@ -1,5 +1,5 @@
-import {solutionMass,moleAccount,reactionAccount,concentrationTasks,moleTasks,ratioTasks} from './amount-models.js?v=20261022-eco2';
-import {showSolution,showMole,showRatio} from './amount-scenes.js?v=20261022-eco2';
+import {solutionMass,moleAccount,reactionAccount,concentrationTasks,moleTasks,ratioTasks} from './amount-models.js?v=20261022-eco3';
+import {showSolution,showMole,showRatio} from './amount-scenes.js?v=20261022-eco3';
 const fmt=n=>Number(n.toPrecision(10));
 const $=s=>document.querySelector(s),btn=(id,t)=>`<button class="secondary" id="${id}">${t}</button>`,input=(id,label,value='')=>`<label class="field-label" for="${id}">${label}</label><input class="lab-input" id="${id}" type="number" step="any" value="${value}">`;
 export function mountAmountWidget(l,p,root,{save,done,feedback}){const w=p.widget;w.task??=0;w.passed??=[];w.answers??={};const i=w.task;const again=()=>{save();mountAmountWidget(l,p,root,{save,done,feedback});};const success=message=>{if(!w.passed.includes(i))w.passed.push(i);save();$('#amountProgress').textContent=w.passed.length+' / 3 tasks correct';feedback(message);if(w.passed.length===3){p.widgetDone=true;save();done();feedback('All three calculation tasks complete. '+message);}};

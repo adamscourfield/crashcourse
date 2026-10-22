@@ -1,4 +1,4 @@
-import{focusState}from './senses-models.js?v=20261022-eco2';
+import{focusState}from './senses-models.js?v=20261022-eco3';
 export const st=(x,y,s,z=16)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f8f6f2" font-size="${z}">${s}</text>`;
 const line=(a,b,c='#aec9cc')=>`<path d="M${a}L${b}" stroke="${c}" stroke-width="2" fill="none"/>`;
 export const sensesSVG=(body,label)=>`<svg viewBox="0 0 560 380" role="img" aria-label="${label}"><defs><radialGradient id="sensesSkin"><stop stop-color="#f0c1ae"/><stop offset="1" stop-color="#b77971"/></radialGradient><radialGradient id="sensesLens"><stop stop-color="#d9eeee"/><stop offset="1" stop-color="#83afb9"/></radialGradient></defs>${body}</svg>`;

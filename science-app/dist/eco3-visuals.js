@@ -1,0 +1,1 @@
+import{renderDiagram}from './visual.js?v=20261022-eco3';import{eco3Figure}from './eco3-figures.js?v=20261022-eco3';export function showEco3(spec='carbon-process',w={}){renderDiagram(w.title||'Materials keep moving',w.label||'Original educational model',eco3Figure({kind:spec.split(':')[0],...w}),'ECOLOGY');}

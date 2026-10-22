@@ -1,0 +1,252 @@
+{
+  "batch": "Ecology03",
+  "date": "2026-10-22",
+  "automatedTests": 362,
+  "fullFlows": [
+    {
+      "lesson": "science.biology.ecology.carbon",
+      "check": "6/6",
+      "wrongReasoningRejected": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.water",
+      "check": "6/6",
+      "wrongReasoningRejected": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.decay",
+      "check": "6/6",
+      "wrongReasoningRejected": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.decay-practical",
+      "check": "6/6",
+      "wrongReasoningRejected": true,
+      "practiceCorrection": true
+    },
+    {
+      "lesson": "science.biology.ecology.environment-change",
+      "check": "6/6",
+      "wrongReasoningRejected": true,
+      "practiceCorrection": true
+    }
+  ],
+  "mobile": {
+    "width": 390,
+    "cards": [
+      {
+        "lesson": "science.biology.ecology.carbon",
+        "card": 1,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.carbon",
+        "card": 2,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.carbon",
+        "card": 3,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.carbon",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.water",
+        "card": 1,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.water",
+        "card": 2,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.water",
+        "card": 3,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.water",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.decay",
+        "card": 1,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.decay",
+        "card": 2,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.decay",
+        "card": 3,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.decay",
+        "card": 4,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.decay-practical",
+        "card": 1,
+        "movie": true,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.decay-practical",
+        "card": 2,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.decay-practical",
+        "card": 3,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.decay-practical",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.environment-change",
+        "card": 1,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.environment-change",
+        "card": 2,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.environment-change",
+        "card": 3,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      },
+      {
+        "lesson": "science.biology.ecology.environment-change",
+        "card": 4,
+        "movie": false,
+        "players": 1,
+        "scroll": 390,
+        "width": 390
+      }
+    ],
+    "investigationSets": 15,
+    "overflow": false,
+    "singlePlayer": true,
+    "processCardsAutoplayAndLoop": 8
+  },
+  "resume": {
+    "carbonLedger": true,
+    "milkDraft": {
+      "temperature": 35,
+      "elapsed": 50,
+      "mean": 99,
+      "restored": true
+    },
+    "higherMap": {
+      "scenario": "warmer",
+      "prediction": 1,
+      "hiddenOnFoundation": true,
+      "restoredOnHigher": true
+    }
+  },
+  "courseTierProgress": [
+    {
+      "route": "combined",
+      "tier": "Foundation",
+      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n9\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n9 / 9\nReset lesson"
+    },
+    {
+      "route": "combined",
+      "tier": "Higher",
+      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n9\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n9 / 9\nReset lesson"
+    },
+    {
+      "route": "separate",
+      "tier": "Foundation",
+      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n11\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n11 / 11\nReset lesson"
+    },
+    {
+      "route": "separate",
+      "tier": "Higher",
+      "progress": "Crash\nCOURSE\nSubject\nScience\nMaths\nEnglish Language\nEnglish Literature\nHistory\nGeography\nScience studio\nCourse map\nReview\n12\nTopic assessment\nAQA GCSE Science\nYour pathway\nCombined · Trilogy\nSeparate sciences\nFoundation\nHigher\nTopic progress\n12 / 12\nReset lesson"
+    }
+  ],
+  "assessment": "New-start modal offers12 questions, one per available Separate Higher Ecology lesson",
+  "consoleErrors": [],
+  "limitations": [
+    "Technical QA is not specialist review",
+    "Bounded graph construction, not unrestricted freehand",
+    "Physical practical work outstanding",
+    "No full assistive-technology/device certification"
+  ],
+  "publication": "pending"
+}
