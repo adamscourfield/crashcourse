@@ -406,11 +406,20 @@
       "w": 390
     }
   ],
-  "scope": "Foundation efficiency4 cards/3 tasks; Higher5 cards/4 tasks. Numeric/comparison/model evidence wrong paths rejected; unit test revalidates Foundation→Higher completion.",
+  "scope": "Foundation efficiency4 cards/3 tasks; Higher5 cards/4 tasks. Numeric/comparison/model evidence wrong paths rejected; unit test revalidates Foundation\u2192Higher completion.",
   "resume": "Insulation conductivity2/thickness1 wrong prediction32 restored after reload and Trilogy/back; earlier5 Physics and25 Ecology completions retained. Both routes/Foundation and Higher show10 eligible Energy lessons.",
   "sources": "4.1.2.1 RP2 preparation only Separate; Trilogy note explicitly excludes RP2 requirement. Source-notes ReferenceError found during QA, repaired and retested.",
   "assessment": "New-start assessment offers10 questions from10 eligible lessons",
-  "maths": "15 Number and6 Algebra menus preserved; expression machine ×2 then+5 accepted for2n+5; Science restores.",
+  "maths": "15 Number and6 Algebra menus preserved; expression machine \u00d72 then+5 accepted for2n+5; Science restores.",
   "limitations": "Technical QA; not specialist review, unrestricted writing/graphing, school practical evidence or full assistive-technology/device certification",
-  "integrationRepair": "New Algebra stale delayed redraw reproduced on subject switch; six models now honour active generation/connected panel guards. Re-tested switching away during both700ms machine success transitions: Science retained and Discover title stayed Writing algebra; fresh-preview console had no errors. Added unit check for all six inactive models. Maths cache r4p1, global physics02r1."
+  "integrationRepair": "New Algebra stale delayed redraw reproduced on subject switch; six models now honour active generation/connected panel guards. Re-tested switching away during both700ms machine success transitions: Science retained and Discover title stayed Writing algebra; fresh-preview console had no errors. Added unit check for all six inactive models. Maths cache r4p1, global physics02r1.",
+  "publication": {
+    "date": "2026-10-22T12:44:12Z",
+    "url": "https://gcse-science-atom-lab.newbuddy32.chatgpt.site/",
+    "source": "7242644f03a70a21bcc01e6fc30413296fe51dfe",
+    "deployment": "appgdep_6ada050c28448191b85468c5d69961c7",
+    "live": "Energy10 inventory; new power process playing/Loop checked; Maths Algebra6 available; no console errors",
+    "proof": "crash-course-physics02.png",
+    "audience": "owner-private unchanged"
+  }
 }

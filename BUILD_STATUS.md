@@ -1,4 +1,4 @@
-## Physics Energy batch02 — implemented and checked; publication pending
+## Physics Energy batch02 — implemented, published and GitHub updated
 
 Five lessons: power; conservation/dissipation; thermal conduction/insulation; efficiency; resources/reliability/impacts. Shared8463/8464 both tiers under existing Energy topic. Exact refs4/6.1.1.4, .1.2.1, .1.2.2 and .1.3 checked22October2026. Efficiency-improvement card,1 practice/2 checks and fourth investigation are Higher only, enforced again by completion requirements. Insulation RP2 AT1/5 preparation is separate Physics only; Trilogy shares conduction teaching and rod AT1/5 opportunity, not RP2. Resources covers all named families, uses, reliability, environmental issues, trends and social/political/economic/ethical constraints; no generator-mechanism requirement.29 grouped teaching/support mapping rows; full Energy statement/evidence audit remains outstanding.
 
@@ -8,9 +8,11 @@ Science273 lessons:113 Chemistry,150 Biology,10 Physics; Maths21 (15 Number,6 Al
 
 Merged concurrent Maths Algebra commit5109308 before implementation. Number15/Algebra6 menus and expression machine verified. A delayed Algebra redraw could write after changing subject/stage; added generation/connected-panel guards to all six Algebra models and a unit check. Re-tested leaving immediately after both700ms success callbacks: Science remains intact, Discover remains Writing algebra, fresh preview console has no errors. Cache20261022-physics02r1 and maths-r4p1 ensure repaired modules load. Original Maths311-browser-check evidence remains distinct from this integration smoke test. Technical QA is not specialist review, unrestricted writing/graphing, physical practical evidence or full accessibility/device certification.
 
-Files: content-physics-transfer.js; phy2-models/figures/visuals/films.js; widgets-phy2.js; content/widget/registry/process/source-note integration; Maths studio/model callback guards. Evidence physics-transfer-browser-evidence.json; brief physics-energy-batch-02-brief.md; physics-energy-batch02-requirements.csv. Publication/GitHub verification pending. Next: reconcile Energy assessable statements/skills and independent evidence across both batches, then brief first Electricity lessons. Earlier Biology evidence audits and specialist reviews remain open. Ten Energy lessons are an authoring inventory, not proof of full qualification/evidence closure.
+Files: content-physics-transfer.js; phy2-models/figures/visuals/films.js; widgets-phy2.js; content/widget/registry/process/source-note integration; Maths studio/model callback guards. Evidence physics-transfer-browser-evidence.json; brief physics-energy-batch-02-brief.md; physics-energy-batch02-requirements.csv. Published22October2026 at12:44:12UTC through the existing owner-private Site. Sites source7242644f03a70a21bcc01e6fc30413296fe51dfe; deployment appgdep_6ada050c28448191b85468c5d69961c7; version appgprj_6ad1be5897a88191909a03ad57857103~appgver_f25ddf6056e081918175757691af3ab2. Archive science-app-physics02.tar.gz; proof crash-course-physics02.png. Live10-lesson Energy inventory, new power inline process/Pause/Loop and Maths Algebra6-lesson availability verified, with no live console errors. Owner-private audience preserved. Canonical combined source/tests/coverage/QA commit8da4a65 pushed to origin/main; final publication records/proof follow in the handover commit. Concurrent Maths Algebra commit5109308 and all21 Maths lessons included; original marking/specialist limits remain unchanged. Next: reconcile Energy assessable statements/skills and independent evidence across both batches, then brief first Electricity lessons. Earlier Biology evidence audits and specialist reviews remain open. Ten Energy lessons are an authoring inventory, not proof of full qualification/evidence closure.
 
-## Maths: Edexcel 1MA1 Algebra batch 01 — six lessons and algebra marking, on GitHub `main`, not published
+## Maths Algebra batch01 — prior handover, now published with Physics Energy02
+
+The six Algebra lessons were included in the combined publication above. The following records the original Maths QA; its publication task is now complete.
 
 **Engine first.** `dist/maths/algebra.js` marks typed algebra by exact equivalence, then by the form the question asks for:
 - simplified, expanded, fully factorised, A1 notation, or any equivalent form;
@@ -37,10 +39,10 @@ The studio is now topic-aware. The course map switches between Number and Algebr
 - Brief: `curriculum/briefs/maths-algebra-batch-01.md`.
 - Evidence: `science-app/maths-browser-evidence-4.json`.
 
-**Cache:** maths modules are at `20261022-maths-r4`. **Publishing needs a global `?v=` bump**, because `index.html` still loads `app.js?v=20261022-physics01`.
+**Cache:** maths modules are at `20261022-maths-r4`. **Original publishing note (now resolved by Physics Energy02): global `?v=` bump required**, because `index.html` still loads `app.js?v=20261022-physics01`.
 
 **Not done:**
-- Site publication;
+- Site publication: completed with Physics Energy02;
 - teacher or specialist review;
 - algebraic fractions, function notation, graphs, A18–A25;
 - show-that arguments and proofs are not marked.
