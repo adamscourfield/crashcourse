@@ -1,5 +1,5 @@
-import {cellPairs,fuelChoices,fuelHalfTasks,cellCorrect,fuelCorrect,fuelHalfCorrect} from './cell-models.js?v=20261022-electricity03';
-import {showCells} from './cell-scenes.js?v=20261022-electricity03';
+import {cellPairs,fuelChoices,fuelHalfTasks,cellCorrect,fuelCorrect,fuelHalfCorrect} from './cell-models.js?v=20261022-electricity03r2';
+import {showCells} from './cell-scenes.js?v=20261022-electricity03r2';
 const field=(id,label,type='number')=>`<label class="field-label" for="cell-${id}">${label}</label><input class="lab-input" id="cell-${id}" type="${type}" ${type==='number'?'step="any"':'autocomplete="off" spellcheck="false"'}>`;
 const select=(id,label,opts)=>`<label class="field-label" for="cell-${id}">${label}</label><select class="lab-select" id="cell-${id}"><option value="">Choose…</option>${opts.map(([v,s])=>`<option value="${v}">${s}</option>`).join('')}</select>`;
 export function mountCellWidget(l,p,root,{save,done,feedback}){const kind=l.widget.slice(6),tasks=kind==='voltage'?cellPairs:kind==='fuel'?fuelChoices:fuelHalfTasks,correct=kind==='voltage'?cellCorrect:kind==='fuel'?fuelCorrect:fuelHalfCorrect,w=p.widget;w.task??=0;w.answers??={};w.passed??=[];const i=w.task%tasks.length,t=tasks[i],a=w.answers[t.id]??={};w.answers[t.id]=a;const $=s=>root.querySelector(s);let body='',keys=[];

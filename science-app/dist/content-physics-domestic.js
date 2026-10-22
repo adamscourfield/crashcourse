@@ -401,7 +401,8 @@ export const el3Lessons=[
       "WS1.2",
       "WS1.4",
       "MS3b",
-      "MS3c"
+      "MS3c",
+      "WS4.5"
     ],
     "widget": "el3-power",
     "practice": [

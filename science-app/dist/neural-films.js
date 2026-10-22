@@ -1,4 +1,4 @@
-import{neuralFigure,neuralSVG,nt}from './neural-figures.js?v=20261022-electricity03';
+import{neuralFigure,neuralSVG,nt}from './neural-figures.js?v=20261022-electricity03r2';
 const phase=(p,n)=>Math.min(n-1,Math.floor(Math.max(0,Math.min(1,p))*n));const make=(title,steps,note,render)=>({title,steps,note,render,duration:12});
 export const neuralFilms={
  'neuro-control':make('Homeostasis: a corrective response',['An internal value departs from its optimum.','A receptor detects the change.','A coordination centre processes the information.','An effector response moves the value back towards optimum.'],'Generic control example in arbitrary units, not a specific hormone or patient simulation. Stages overlap in living control systems; reset returns the example to its starting deviation.',p=>neuralFigure({kind:'control',value:p<.6?8:8-3*Math.min(1,(p-.6)/.4),result:'Detect → coordinate → respond; regulation maintains suitable internal conditions.'})),

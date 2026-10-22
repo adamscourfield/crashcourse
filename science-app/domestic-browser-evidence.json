@@ -1,0 +1,303 @@
+{
+  "date": "2026-10-22",
+  "lessons": [
+    {
+      "id": "science.physics.electricity.sources",
+      "score": "6/6"
+    },
+    {
+      "id": "science.physics.electricity.mains",
+      "score": "6/6"
+    },
+    {
+      "id": "science.physics.electricity.power",
+      "score": "6/6"
+    },
+    {
+      "id": "science.physics.electricity.appliances",
+      "score": "6/6"
+    },
+    {
+      "id": "science.physics.electricity.grid",
+      "score": "7/7"
+    }
+  ],
+  "wrongPaths": [
+    "premature task progression",
+    "comparison",
+    "numeric value",
+    "numeric reason",
+    "experiment prediction",
+    "practice retry"
+  ],
+  "mobile": [
+    {
+      "lesson": "science.physics.electricity.sources",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.sources",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.sources",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.sources",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.sources",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.sources",
+      "task": "calculate",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.sources",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.mains",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.mains",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.mains",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.mains",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.mains",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.mains",
+      "task": "calculate",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.mains",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.power",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.power",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.power",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.power",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.power",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.power",
+      "task": "calculate",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.power",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.appliances",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.appliances",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.appliances",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.appliances",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.appliances",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.appliances",
+      "task": "calculate",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.appliances",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.grid",
+      "card": 0,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.grid",
+      "card": 1,
+      "process": true,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.grid",
+      "card": 2,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.grid",
+      "card": 3,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.grid",
+      "card": 4,
+      "process": false,
+      "players": 1,
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.grid",
+      "task": "compare",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.grid",
+      "task": "calculate",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.grid",
+      "task": "model",
+      "scroll": 390,
+      "width": 390
+    },
+    {
+      "lesson": "science.physics.electricity.grid",
+      "task": "transformer",
+      "scroll": 390,
+      "width": 390
+    }
+  ],
+  "resume": "Grid200V/2000W/wrong prediction7 survives reload/TrilogyFoundation/back; Foundation3tasks4cards/Higher4tasks5cards",
+  "scope": "15-lesson Foundation Trilogy topic assessment; Higher transformer requirements separately unit-tested",
+  "mathsMerge": "origin/main0d9de13,30lessons78skills; graph table and five typed plotted points accepted",
+  "limitations": "Prior Energy/Ecology completion not confirmed in final localhost state; do not claim retained browser completion counts. Shared-origin state changed during QA; stable IDs and restore regression tests pass. Technical QA is not specialist review, full device/accessibility audit, physical practical or unrestricted writing/drawing."
+}

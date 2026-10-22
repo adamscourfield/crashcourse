@@ -1,4 +1,4 @@
-import{impactFigure}from './eco4-figures.js?v=20261022-electricity03';
+import{impactFigure}from './eco4-figures.js?v=20261022-electricity03r2';
 const f=(kind,title,steps,note)=>({title,steps,note,duration:16,render:p=>impactFigure({kind,progress:p,movie:true,state:'1'})});
 export const eco4Films={
 'eco4-waste':f('waste','Follow a possible pollution pathway',['Identify nutrient/sewage input.','Organic growth and dead material may increase.','Decomposition uses dissolved oxygen.','Lower oxygen can harm aquatic animals.'],'A selected indirect water-pollution pathway, not a toxic-dose forecast or identical effect for every discharge. Moving marker traces sequence, not pollutant mass or measured flow speed.'),
