@@ -1,4 +1,4 @@
-import{exerciseData,recoveryData}from './resp-models.js?v=20261022-thermal01r2';
+import{exerciseData,recoveryData}from './resp-models.js?v=20261022-thermal01r3';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const rt=(x,y,s,size=19)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f8f6f2" font-size="${size}">${esc(s)}</text>`;
 export const respSVG=(art,label)=>`<svg class="shell-diagram resp-diagram" viewBox="0 0 560 400" role="img" aria-label="${esc(label)}">${art}</svg>`;

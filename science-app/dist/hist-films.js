@@ -1,4 +1,4 @@
-import{cloneFigure,speciationFigure,fossilFigure}from './hist-figures.js?v=20261022-thermal01r2';
+import{cloneFigure,speciationFigure,fossilFigure}from './hist-figures.js?v=20261022-thermal01r3';
 const make=(title,steps,render,note)=>({title,steps,duration:16,render,note});
 export const histFilms={
 'hist-adult-clone':make('Follow the adult nucleus',['Remove the unfertilised egg nucleus.','Insert the adult body-cell nucleus.','Stimulate division to form an embryo.','Transfer the ball of embryo cells into a host uterus.'],p=>cloneFigure({kind:'adult-clone',progress:p}),'Conceptual adult cloning, not a laboratory protocol. Nuclear DNA follows the adult donor; egg cytoplasm/mitochondria and host environment are distinct. It does not guarantee success or identical phenotype. Symbolic scale and compressed time.'),

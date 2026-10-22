@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-thermal01r2';
-import{tasksForMat1,validMat1,advanceMat1,numericMat1,experimentOptions,experimentResult,experimentCases,experimentValid,predictionValid,outputLabel}from './mat1-models.js?v=20261022-thermal01r2';import{showMat1}from './mat1-visuals.js?v=20261022-thermal01r2';export{showMat1};
+import{syncProcessMovie}from './process-player.js?v=20261022-thermal01r3';
+import{tasksForMat1,validMat1,advanceMat1,numericMat1,experimentOptions,experimentResult,experimentCases,experimentValid,predictionValid,outputLabel}from './mat1-models.js?v=20261022-thermal01r3';import{showMat1}from './mat1-visuals.js?v=20261022-thermal01r3';export{showMat1};
 export function mountMat1(l,p,root,{save,done,feedback}){let ts=tasksForMat1(l.widget.slice(5),l.learnerTier),w=p.widget;w.mat1Task??=ts[0].id;w.mat1Drafts??={};w.mat1Passed??=[];let i=ts.findIndex(t=>t.id===w.mat1Task);if(i<0)i=0;let t=ts[i],v=w.mat1Drafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountMat1(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.mat1Passed.includes(t.id));
 syncProcessMovie(l,1,{process:false});
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

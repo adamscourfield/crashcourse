@@ -1,4 +1,4 @@
-import{densityReading,finalStates}from './mat1-models.js?v=20261022-thermal01r2';
+import{densityReading,finalStates}from './mat1-models.js?v=20261022-thermal01r3';
 const ink='#faf5ed',mint='#a9cabe',coral='#f18d77',dim='#adbecb';const esc=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const fmt=x=>Number(Number(x).toFixed(3));
 const T=(x,y,s,n=18,c=ink)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="${c}" font-family="sans-serif" font-size="${n}">${esc(s)}</text>`;
 const L=(x,y,u,v,c=dim,w=3)=>`<path d="M${x} ${y}L${u} ${v}" fill="none" stroke="${c}" stroke-width="${w}"/>`;

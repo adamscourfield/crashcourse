@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-thermal01r2';
-import{tasksForPhy2,validPhy2,advancePhy2,numericPhy2,experimentOptions,experimentResult,experimentCases,experimentValid}from './phy2-models.js?v=20261022-thermal01r2';import{showPhy2}from './phy2-visuals.js?v=20261022-thermal01r2';export{showPhy2};
+import{syncProcessMovie}from './process-player.js?v=20261022-thermal01r3';
+import{tasksForPhy2,validPhy2,advancePhy2,numericPhy2,experimentOptions,experimentResult,experimentCases,experimentValid}from './phy2-models.js?v=20261022-thermal01r3';import{showPhy2}from './phy2-visuals.js?v=20261022-thermal01r3';export{showPhy2};
 export function mountPhy2(l,p,root,{save,done,feedback}){let ts=tasksForPhy2(l.widget.slice(5),l.learnerTier),w=p.widget;w.phy2Task??=ts[0].id;w.phy2Drafts??={};w.phy2Passed??=[];let i=ts.findIndex(t=>t.id===w.phy2Task);if(i<0)i=0;let t=ts[i],v=w.phy2Drafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountPhy2(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.phy2Passed.includes(t.id));
 syncProcessMovie(l,1,{process:false});
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;
