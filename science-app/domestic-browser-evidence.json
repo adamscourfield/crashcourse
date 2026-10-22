@@ -299,5 +299,12 @@
   "resume": "Grid200V/2000W/wrong prediction7 survives reload/TrilogyFoundation/back; Foundation3tasks4cards/Higher4tasks5cards",
   "scope": "15-lesson Foundation Trilogy topic assessment; Higher transformer requirements separately unit-tested",
   "mathsMerge": "origin/main0d9de13,30lessons78skills; graph table and five typed plotted points accepted",
-  "limitations": "Prior Energy/Ecology completion not confirmed in final localhost state; do not claim retained browser completion counts. Shared-origin state changed during QA; stable IDs and restore regression tests pass. Technical QA is not specialist review, full device/accessibility audit, physical practical or unrestricted writing/drawing."
+  "limitations": "Prior Energy/Ecology completion not confirmed in final localhost state; do not claim retained browser completion counts. Shared-origin state changed during QA; stable IDs and restore regression tests pass. Technical QA is not specialist review, full device/accessibility audit, physical practical or unrestricted writing/drawing.",
+  "publication": {
+    "status": "succeeded",
+    "source": "8d02227618c32e6f8af2df878584e80651c86bfb",
+    "deployment": "appgdep_6ada56a6a78c8191b43622ec49dbcf4b",
+    "url": "https://gcse-science-atom-lab.newbuddy32.chatgpt.site/",
+    "live": "Electricity15, Grid looping process, Maths Number15/Algebra15 graph lessons; no console errors"
+  }
 }
