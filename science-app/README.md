@@ -1,3 +1,5 @@
+Published question-flow update23October2026: automatic correct-practice and independent-check navigation across Science/Maths; Enter submission; wrong-answer feedback retained; optional Stay here.603 automated checks and focused browser QA passed. Publication identifiers in BUILD_STATUS.md; design/limits in curriculum/question-flow.md. App/studio entry cache20261023-flow01; unchanged Science dependency identity physicscomplete01 and Maths dependencies r9 retained.
+
 Published23October2026; all361Science teaching lessons and latest50Maths lessons are live. Deployment/source IDs and proof: root BUILD_STATUS.md.
 
 # Current release: all Science teaching roadmaps implemented

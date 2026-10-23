@@ -1,3 +1,4 @@
+import {cancelQuestionAdvance,questionFlow} from '../question-flow.js?v=20261023-flow01';
 // Maths studio: lesson flow, generated practice with mastery ladders, independent checks,
 // spaced interleaved review and topic assessment. Owns its own saved state (MATHS_KEY) so it
 // can never alter science progress.
@@ -74,6 +75,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
 
   let modelGeneration = 0;
   function render() {
+    cancelQuestionAdvance();
     modelGeneration++;
     if (!$('#mPanel')) shell();
     if (view !== 'lesson') return renderRun();
@@ -218,7 +220,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     if (item.answer.kind === 'algebra') $$('[data-mkey]').forEach(b => b.addEventListener('click', pv));
     $$('.mfrac-in input, .mans input, #mText, [data-sol]').forEach(i => {
       i.addEventListener('input', () => { onDraft?.(readValue(item)); pv(); });
-      i.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); onAnswer(readValue(item)); } });
+      i.addEventListener('keydown', e => { if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); onAnswer(readValue(item)); } });
     });
   }
   function diagnose(item, raw, result) {
@@ -294,16 +296,9 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
   function renderPractice(l, p) {
     const target = practiceTarget(l, p);
     const pr = p.practice;
-    const keep = !!(pr.item && pr.answer); // an answered item stays on screen until Next, even if it just secured the skill
+    const keep = !!(pr.item && pr.answer); // Keep feedback visible before advancing, including a newly secured skill.
     $('#mPanel').innerHTML = '';
-    if (!keep && target.mode === 'done') {
-      $('#mTitle').textContent = 'Practice complete.';
-      const total = lessonSkills(l).reduce((t, sk) => t + skillState(s, sk.id).log.length, 0) + p.mixed.log.length;
-      $('#mBody').innerHTML = `${ladder(l, p, target)}<p>Every skill is secure at its top level and you passed the mixed round, across ${total} questions. Next, the independent check: ten new questions, no worked examples, first answers count.</p>`;
-      $('#mContinue').textContent = 'Start the independent check →';
-      $('#mHint').textContent = '';
-      return;
-    }
+    if (!keep && target.mode === 'done') { p.stage = 3; render(); return; }
     if (!keep && (!pr.item || pr.item.skill !== target.skill.id || (pr.mode || 'skill') !== target.mode || (target.mode === 'skill' && pr.item.level !== Math.min(target.level, topLevel(target.skill, s.tier)) && !pr.answer))) {
       pr.item = generate(target.skill.id, Math.min(target.level, topLevel(target.skill, s.tier)), newSeed());
       pr.mode = target.mode; pr.answer = null; pr.assisted = false; pr.example = null; pr.draft = '';
@@ -328,10 +323,10 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       const msg = (correct ? 'Correct.' : res.status === 'partial' ? 'Nearly.' : 'Not this time.') + (why ? ' ' + why : '') + (!correct && !why ? ' Compare your working with the worked solution.' : '') + (event ? ` ${EVENT_TEXT[event]}${event === 'up' ? `: level ${skillState(s, item.skill).level}.` : '.'}` : '');
       pr.answer = { raw: value, status: res.status, msg };
       save(); render();
-      $('#mContinue')?.focus();
     }, draft => { pr.draft = draft; save(); });
     $('#mExample')?.addEventListener('click', () => { pr.example = generate(item.skill, item.level, newSeed()); pr.assisted = true; save(); render(); });
-    $('#mContinue').textContent = answered ? 'Next question →' : 'Skip for now →';
+    $('#mContinue').textContent = answered && pr.answer.status !== 'correct' ? 'Try another question →' : 'Next question →';
+    questionFlow($('#mContinue'), {answered, automatic: pr.answer?.status === 'correct', next: onContinue, guard: () => !root.hidden && view === 'lesson' && lesson().id === l.id && p.stage === 2});
     $('#mHint').textContent = (pr.mode || target.mode) === 'mixed' ? 'Mixed round: skills interleaved' : skillById[item.skill].name;
   }
 
@@ -362,10 +357,11 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       if (res.status === 'invalid') { feedback(invalidText(item, res), true); return; }
       c.answers[item.id] = value;
       save(); render(); feedback('Answer recorded.');
-      $('#mContinue')?.focus();
+
     }, draft => { c.drafts[item.id] = draft; save(); });
     if (a !== undefined) feedback('Answer recorded.');
     $('#mContinue').textContent = c.index === c.items.length - 1 ? 'See my results →' : 'Next question →';
+    questionFlow($('#mContinue'), {answered: a !== undefined, delay: 650, next: onContinue, guard: () => !root.hidden && view === 'lesson' && lesson().id === l.id && p.stage === 3});
     $('#mHint').textContent = `Independent check ${c.index + 1} / ${c.items.length}`;
   }
   function finishCheck(l, p) {
@@ -539,10 +535,11 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       const k = skillState(s, item.skill), ok = res.status === 'correct';
       if (assessing) { if (!ok) flagForRecall(k); }
       else if (!run.early || !ok) recordRecall(k, ok);
-      save(); render(); $('#mContinue')?.focus();
+      save(); render();
     }, draft => { run.drafts[item.id] = draft; save(); });
     $('#mContinue').hidden = false;
     $('#mContinue').textContent = run.index === run.queue.length - 1 ? 'See results →' : 'Next question →';
+    questionFlow($('#mContinue'), {answered: a !== undefined, automatic: assessing || (a !== undefined && mark(item.answer, a).status === 'correct'), delay: assessing ? 650 : 2400, next: nextRun, guard: () => !root.hidden && view !== 'lesson'});
     $('#mHint').textContent = `${run.index + 1} / ${run.queue.length}`;
     save();
   }

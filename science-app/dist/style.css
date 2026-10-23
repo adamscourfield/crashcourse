@@ -74,3 +74,5 @@
 @media(max-width:600px){#processMovie{padding:85px 20px 24px}#processMovie .movie-heading h2{font-size:25px}#processMovie #movieCaption{min-height:6em}.scene-top .process-open{font-size:11px}}
 
 .eco2-input-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.eco2-input-grid label{min-width:0;font-size:13px}.eco2-input-grid input{box-sizing:border-box;width:100%}
+
+.flow-pause {font-size: .8rem; margin-inline-start: auto; padding: .5rem;}

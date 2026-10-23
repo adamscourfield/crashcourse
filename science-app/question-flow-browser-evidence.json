@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-23",
+  "feature": "shared automatic question navigation",
+  "preview": "http://localhost:4177/",
+  "automated_tests_passed": 603,
+  "browser_cases": [
+    "Science three-question wrong/correct practice journey into Check",
+    "Science four-question independent check to automatic results",
+    "Stay here cancellation and manual continuation",
+    "Blank equation rejected; correct equation submitted with Enter",
+    "Lesson modal cancels pending navigation",
+    "Saved equation response restored on reload",
+    "Science/Maths switching and Foundation tier change",
+    "Polymer choice-to-numeric automatic sequence; blank rejected; Enter correct",
+    "Maths blank rejected; Enter correct advances to fresh generated item",
+    "Maths wrong answer retains worked solution and Try another question",
+    "Maths ten-question typed/choice check advances to results",
+    "Phone390x844 numeric footer no horizontal overflow",
+    "All Science practice now uses focused question layout; question-specific figures retained"
+  ],
+  "console_errors_observed": [],
+  "limitations": [
+    "Focused interaction sampling rather than every question",
+    "Full assistive-device and student usability review remain open",
+    "Wrong-answer feedback deliberately requires correction or another-question action"
+  ],
+  "publication": {
+    "status": "succeeded",
+    "source": "f217f97b8f9ffdbaec85ac22bbd7ad2ec2263e46",
+    "deployment": "appgdep_6adaf7586918819189c4fa3056997241",
+    "url": "https://gcse-science-atom-lab.newbuddy32.chatgpt.site/",
+    "audience": "owner-private unchanged",
+    "live_check": "Heart practice focused layout and correct-answer automatic transition",
+    "proof": "crash-course-question-flow-live.png"
+  }
+}

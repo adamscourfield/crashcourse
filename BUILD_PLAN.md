@@ -1,3 +1,5 @@
+> Latest user priority23October2026: simplify answering questions. Shared automatic practice/check flow implemented; preserve it for future lessons. See curriculum/question-flow.md and BUILD_STATUS.md for QA/publication. No new curriculum units in this change.
+
 > Physics teaching roadmap implemented23October2026. See BUILD_STATUS.md for publication and evidence gaps; curriculum/physics-completion-coverage.md for route/tier totals. Next priority is specialist and constructed-evidence review. Earlier recommendations below are historical.
 
 > Current priority (22 October2026): finish the entire remaining Physics teaching programme. Follow curriculum/physics-completion-plan.md and BUILD_STATUS.md; earlier recommendations below are historical.
