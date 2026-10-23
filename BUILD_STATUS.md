@@ -1,3 +1,36 @@
+## Maths: Edexcel 1MA1 Geometry and measures — batch 03 (Geometry 11–15); topic complete; on GitHub `main`, not published
+
+**Batch 03 lessons:**
+- congruence and similarity (G5, G6, G19);
+- circle theorems (G10, G9; Higher only);
+- 3D solids, plans and elevations (G12, G13);
+- sine rule, cosine rule, ½ab sin C and 3D (G22, G23, G20; Higher only, calculator);
+- vectors (G24, G25; Higher: ratios on a line and parallel vectors).
+
+**Totals:** every G1–G25 statement is now referenced, taught and practised. Geometry has 15 lessons: 13 at Foundation, plus 2 Higher-only. The engine has 146 skills. Column vectors are answered as top and bottom numbers; vector expressions are marked by equivalence.
+
+**QA:**
+- 633 automated tests pass (`tests/maths-geometry3.test.js`: 8 tests). Every circle-theorem answer is measured on the drawn circle.
+- All thirteen Maths walk-throughs pass: 87, 68, 62, 94, 69, 64, 78, 53, 69, 46, 77, 72 and 67 checks, 906 in total.
+- QA found and fixed:
+  - a semicircle diagram drawn with the complementary angle;
+  - an ambiguous cuboid-net option;
+  - column traps equal to the answer;
+  - an unparseable ratio-answer format.
+- Brief: `curriculum/briefs/maths-geometry-batch-03.md`.
+
+**Not met yet:**
+- Drawing plans, elevations, constructions and proofs is not marked on screen.
+- The paraphrased statement wording needs checking against the Pearson PDF.
+
+**Cache:** the `20261023-maths-r10` versions are current (Geometry 6–10 were published upstream). **Publishing Geometry 11–15 needs a global version bump.**
+
+**Not done:**
+- Site publication of Geometry 11–15;
+- specialist review.
+
+**Next:** Probability (P1–P9), then Statistics (S1–S6).
+
 ## Geography imagery audit — published23October2026
 
 Reviewed all five built Geography lessons. Added optional six-rock photoreal reference to Rock families; AI-generated label/limitations/alternative text visible at point of use. Other four retain analytical maps/profiles/process/layers; authentic located photos and dated pairs to be sourced when those evidence activities are authored. Audit and full generation prompt: curriculum/geography-imagery-audit.md. Asset science-app/dist/geography/images/rock-textures-v1.png. Six focused tests passed; syntax/diff checks, image loading/alt text, modal close/return, existing5/5 progress and390px no-overflow checked. Live image/modal verified with no console errors. No new lessons, curriculum closure or specialist review claimed.
