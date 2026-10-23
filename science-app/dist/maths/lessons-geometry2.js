@@ -4,8 +4,8 @@
 //   G20 Pythagoras and trigonometry in right-angled triangles (2D) · G21 exact trigonometric values ·
 //   G24 translations as column vectors.
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261023-maths-r11';
-import { rtFig, bearingFig } from './skills-geometry2.js?v=20261023-maths-r11';
+import { skillById } from './skills.js?v=20261023-maths-r12';
+import { rtFig, bearingFig } from './skills-geometry2.js?v=20261023-maths-r12';
 
 const S = id => skillById[id];
 const geo = (fig, caption) => ({ kind: 'geo', fig, caption });

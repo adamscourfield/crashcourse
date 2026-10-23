@@ -5,6 +5,32 @@
 636full automated tests passed;9focused tests after final source-question refinement. Five browser journeys all100%; premature/wrong challenge blocked; practice retry and check first-answer reload lock;75%failed then100%retake passed. Hard-defence view/observations restored. Five390px layouts fit.15/15completion preserved through noncoastal5/5 and return/reload. Photo loaded4288px with visible attribution; static view has no animation control. Actual live/source-question final QA and publication identifiers follow. No full assistive-device/specialist review; authentic OS/BGS/GIS/weather evidence, constructed writing and physical fieldwork remain open. All coastal lettered teaching statements mapped, not full independent-evidence closure. Roadmap88authoring units:15built/73provisional, not a fixed final lesson count.
 
 Brief curriculum/briefs/geography-a-coasts-02.md; mapping curriculum/geography-a-coasts02-coverage.csv; case library curriculum/geography-a-case-library.csv. Next: brief first five river-process lessons against1.7a–c, verifying a named UK river and data. Keep shared/option/progress separation. Publication/GitHub sync follow.
+## Maths: Edexcel 1MA1 Probability — batch 01 (4 lessons, P1–P9); on GitHub `main`, not published
+
+A fifth Maths topic (`maths.probability`), now on the course map. All four lessons are for both tiers; conditional probability (P9) is a Higher-only skill inside lesson 4.
+
+**Lessons:**
+- probability scale, relative and expected frequency (P1–P5);
+- sample spaces and Venn diagrams with set notation (P6, P7);
+- combined events and tree diagrams with and without replacement (P8);
+- two-way tables, frequency trees and conditional probability (P6, P9).
+
+**Totals:** 8 new skills (154 in all) and 4 investigations: a coin tosser, a dice grid, a tree builder and a conditional filter. Probabilities can be typed as any equivalent fraction. Tables, Venn diagrams and trees are drawn from each question's numbers.
+
+**QA:**
+- 642 automated tests pass (`tests/maths-probability.test.js`: 7 tests). Combined and conditional answers are checked by enumerating every ordered draw from the bag.
+- All fourteen Maths walk-throughs pass: 87, 68, 62, 94, 69, 64, 78, 53, 70, 46, 77, 72, 67 and 59 checks, 966 in total.
+- Flows 4, 9 and 11 now check that the course map lists only built topics, rather than naming Probability as unbuilt.
+- Screenshot review found tree-diagram node words drawn over the branches; fixed.
+- Brief: `curriculum/briefs/maths-probability-batch-01.md`.
+
+**Cache:** maths modules are at `20261023-maths-r11`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication;
+- specialist review.
+
+**Next:** Statistics (S1–S6).
 
 ## Coastal Geography and Maths Geometry batch03 — published and GitHub synced
 

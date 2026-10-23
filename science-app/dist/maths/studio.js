@@ -3,40 +3,42 @@ import {cancelQuestionAdvance,questionFlow} from '../question-flow.js?v=20261023
 // Maths studio: lesson flow, generated practice with mastery ladders, independent checks,
 // spaced interleaved review and topic assessment. Owns its own saved state (MATHS_KEY) so it
 // can never alter science progress.
-import { mathHTML, mathText, esc } from './render.js?v=20261023-maths-r11';
-import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261023-maths-r11';
-import { algebraMatches, algebraPreview } from './algebra.js?v=20261023-maths-r11';
-import { parseSolutions, solutionsMatch, inequalityMatches } from './sets.js?v=20261023-maths-r11';
-import { graphSVG, graphInputHTML, bindGraphInput, lineFeedback, pointsFeedback, parsePoints } from './graph.js?v=20261023-maths-r11';
-import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261023-maths-r11';
-import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261023-maths-r11';
-import { generate, skillById } from './skills.js?v=20261023-maths-r11';
-import { orderedLessons as numberLessons, mathsTopics as numberTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261023-maths-r11';
-import { algebraTopic, orderedAlgebra } from './lessons-algebra.js?v=20261023-maths-r11';
-import { visual4, MODELS4 } from './models-algebra.js?v=20261023-maths-r11';
-import { visual5, MODELS5 } from './models-algebra2.js?v=20261023-maths-r11';
-import { visual6, MODELS6 } from './models-graphs.js?v=20261023-maths-r11';
-import { visual7, MODELS7 } from './models-algebra3.js?v=20261023-maths-r11';
-import { MODELS8 } from './models-algebra4.js?v=20261023-maths-r11';
-import { visual9, MODELS9 } from './models-ratio.js?v=20261023-maths-r11';
-import { MODELS10 } from './models-ratio2.js?v=20261023-maths-r11';
-import { figSVG, visualGeo } from './geomfig.js?v=20261023-maths-r11';
-import { ratioTopic, orderedRatio } from './lessons-ratio.js?v=20261023-maths-r11';
-import { geometryTopic, orderedGeometry } from './lessons-geometry.js?v=20261023-maths-r11';
-import { MODELS11 } from './models-geometry.js?v=20261023-maths-r11';
-import { orderedGeometry2 } from './lessons-geometry2.js?v=20261023-maths-r11';
-import { MODELS12 } from './models-geometry2.js?v=20261023-maths-r11';
-import { orderedGeometry3 } from './lessons-geometry3.js?v=20261023-maths-r11';
-import { MODELS13 } from './models-geometry3.js?v=20261023-maths-r11';
-import { visual, mountModel } from './models-number.js?v=20261023-maths-r11';
-import { visual2, MODELS2 } from './models-number2.js?v=20261023-maths-r11';
-import { visual3, MODELS3 } from './models-number3.js?v=20261023-maths-r11';
-import { newSeed, rng, shuffled } from './rng.js?v=20261023-maths-r11';
-import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261023-maths-r11';
+import { mathHTML, mathText, esc } from './render.js?v=20261023-maths-r12';
+import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261023-maths-r12';
+import { algebraMatches, algebraPreview } from './algebra.js?v=20261023-maths-r12';
+import { parseSolutions, solutionsMatch, inequalityMatches } from './sets.js?v=20261023-maths-r12';
+import { graphSVG, graphInputHTML, bindGraphInput, lineFeedback, pointsFeedback, parsePoints } from './graph.js?v=20261023-maths-r12';
+import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261023-maths-r12';
+import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261023-maths-r12';
+import { generate, skillById } from './skills.js?v=20261023-maths-r12';
+import { orderedLessons as numberLessons, mathsTopics as numberTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261023-maths-r12';
+import { algebraTopic, orderedAlgebra } from './lessons-algebra.js?v=20261023-maths-r12';
+import { visual4, MODELS4 } from './models-algebra.js?v=20261023-maths-r12';
+import { visual5, MODELS5 } from './models-algebra2.js?v=20261023-maths-r12';
+import { visual6, MODELS6 } from './models-graphs.js?v=20261023-maths-r12';
+import { visual7, MODELS7 } from './models-algebra3.js?v=20261023-maths-r12';
+import { MODELS8 } from './models-algebra4.js?v=20261023-maths-r12';
+import { visual9, MODELS9 } from './models-ratio.js?v=20261023-maths-r12';
+import { MODELS10 } from './models-ratio2.js?v=20261023-maths-r12';
+import { figSVG, visualGeo } from './geomfig.js?v=20261023-maths-r12';
+import { ratioTopic, orderedRatio } from './lessons-ratio.js?v=20261023-maths-r12';
+import { geometryTopic, orderedGeometry } from './lessons-geometry.js?v=20261023-maths-r12';
+import { MODELS11 } from './models-geometry.js?v=20261023-maths-r12';
+import { orderedGeometry2 } from './lessons-geometry2.js?v=20261023-maths-r12';
+import { MODELS12 } from './models-geometry2.js?v=20261023-maths-r12';
+import { orderedGeometry3 } from './lessons-geometry3.js?v=20261023-maths-r12';
+import { MODELS13 } from './models-geometry3.js?v=20261023-maths-r12';
+import { probabilityTopic, orderedProbability } from './lessons-probability.js?v=20261023-maths-r12';
+import { MODELS14 } from './models-probability.js?v=20261023-maths-r12';
+import { visual, mountModel } from './models-number.js?v=20261023-maths-r12';
+import { visual2, MODELS2 } from './models-number2.js?v=20261023-maths-r12';
+import { visual3, MODELS3 } from './models-number3.js?v=20261023-maths-r12';
+import { newSeed, rng, shuffled } from './rng.js?v=20261023-maths-r12';
+import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261023-maths-r12';
 
 const STAGES = ['Discover', 'Investigate', 'Practise', 'Check'];
-const orderedLessons = [...numberLessons, ...orderedAlgebra, ...orderedRatio, ...orderedGeometry, ...orderedGeometry2, ...orderedGeometry3];
-const mathsTopics = [...numberTopics, algebraTopic, ratioTopic, geometryTopic];
+const orderedLessons = [...numberLessons, ...orderedAlgebra, ...orderedRatio, ...orderedGeometry, ...orderedGeometry2, ...orderedGeometry3, ...orderedProbability];
+const mathsTopics = [...numberTopics, algebraTopic, ratioTopic, geometryTopic, probabilityTopic];
 const EVENT_TEXT = { up: 'Level up', down: 'Stepping back a level to rebuild', practised: 'Skill secure' };
 
 export function createMathsStudio({ root, modal, closeModal, onProgress }) {
@@ -131,7 +133,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const generation = modelGeneration, panel = $('#mPanel'), body = $('#mBody');
     $('#mTitle').textContent = '';
     $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
-    (MODELS13[l.model] || MODELS12[l.model] || MODELS11[l.model] || MODELS10[l.model] || MODELS9[l.model] || MODELS8[l.model] || MODELS7[l.model] || MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
+    (MODELS14[l.model] || MODELS13[l.model] || MODELS12[l.model] || MODELS11[l.model] || MODELS10[l.model] || MODELS9[l.model] || MODELS8[l.model] || MODELS7[l.model] || MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
       panel, body, w: p.widget, tier: s.tier,
       isActive: () => generation === modelGeneration && panel.isConnected && body.isConnected && $('#mPanel') === panel && !!$('#mTitle'),
       save, feedback, setTitle: t => ($('#mTitle').textContent = t),

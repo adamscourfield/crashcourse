@@ -1,5 +1,5 @@
-import {lessons,topics,topic,source} from './content.js?v=20261023-coasts02r2';
-import {scene,controls,requirements} from './model.js?v=20261023-coasts02r2';
+import {lessons,topics,topic,source} from './content.js?v=20261023-coasts02r3';
+import {scene,controls,requirements} from './model.js?v=20261023-coasts02r3';
 import {questionFlow,cancelQuestionAdvance} from '../question-flow.js?v=20261023-flow01';
 import {recordConcept,dueConcepts} from '../progress.js?v=20261023-physicscomplete01';
 import {summarise} from '../progress-summary.js?v=20261023-mastery01';

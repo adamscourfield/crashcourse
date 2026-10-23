@@ -2,10 +2,10 @@
 // units and compound measures (N13), exact calculation with π and surds (N8; Higher: surds),
 // fractions in ratio problems (N11), reciprocals (N3) and inequality symbols (N1).
 // Same contract as the other skill modules: generators are pure functions of (level, seed).
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r11';
-import { F, add, sub, mul, div, eq, gcd, num, fracMarkup, decText, D } from './frac.js?v=20261023-maths-r11';
-import { make } from './skills-number.js?v=20261023-maths-r11';
-import { squareFree } from './exact.js?v=20261023-maths-r11';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r12';
+import { F, add, sub, mul, div, eq, gcd, num, fracMarkup, decText, D } from './frac.js?v=20261023-maths-r12';
+import { make } from './skills-number.js?v=20261023-maths-r12';
+import { squareFree } from './exact.js?v=20261023-maths-r12';
 
 const dt = f => { const t = decText(f); if (t === null) throw new Error('non-terminating ' + f.n + '/' + f.d); return t; };
 const dec = (f, extra = {}) => ({ kind: 'decimal', value: { n: f.n, d: f.d }, ...extra });

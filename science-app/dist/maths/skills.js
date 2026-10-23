@@ -1,19 +1,20 @@
 // Registry of every maths skill. Lessons, the studio and tests look skills up here.
-import { numberSkills } from './skills-number.js?v=20261023-maths-r11';
-import { numberSkills2 } from './skills-number2.js?v=20261023-maths-r11';
-import { numberSkills3 } from './skills-number3.js?v=20261023-maths-r11';
-import { algebraSkills } from './skills-algebra.js?v=20261023-maths-r11';
-import { algebraSkills2 } from './skills-algebra2.js?v=20261023-maths-r11';
-import { graphSkills } from './skills-graphs.js?v=20261023-maths-r11';
-import { algebraSkills3 } from './skills-algebra3.js?v=20261023-maths-r11';
-import { algebraSkills4 } from './skills-algebra4.js?v=20261023-maths-r11';
-import { ratioSkills } from './skills-ratio.js?v=20261023-maths-r11';
-import { ratioSkills2 } from './skills-ratio2.js?v=20261023-maths-r11';
-import { geometrySkills } from './skills-geometry.js?v=20261023-maths-r11';
-import { geometrySkills2 } from './skills-geometry2.js?v=20261023-maths-r11';
-import { geometrySkills3 } from './skills-geometry3.js?v=20261023-maths-r11';
+import { numberSkills } from './skills-number.js?v=20261023-maths-r12';
+import { numberSkills2 } from './skills-number2.js?v=20261023-maths-r12';
+import { numberSkills3 } from './skills-number3.js?v=20261023-maths-r12';
+import { algebraSkills } from './skills-algebra.js?v=20261023-maths-r12';
+import { algebraSkills2 } from './skills-algebra2.js?v=20261023-maths-r12';
+import { graphSkills } from './skills-graphs.js?v=20261023-maths-r12';
+import { algebraSkills3 } from './skills-algebra3.js?v=20261023-maths-r12';
+import { algebraSkills4 } from './skills-algebra4.js?v=20261023-maths-r12';
+import { ratioSkills } from './skills-ratio.js?v=20261023-maths-r12';
+import { ratioSkills2 } from './skills-ratio2.js?v=20261023-maths-r12';
+import { geometrySkills } from './skills-geometry.js?v=20261023-maths-r12';
+import { geometrySkills2 } from './skills-geometry2.js?v=20261023-maths-r12';
+import { geometrySkills3 } from './skills-geometry3.js?v=20261023-maths-r12';
+import { probabilitySkills } from './skills-probability.js?v=20261023-maths-r12';
 
-export const allSkills = [...numberSkills, ...numberSkills2, ...numberSkills3, ...algebraSkills, ...algebraSkills2, ...graphSkills, ...algebraSkills3, ...algebraSkills4, ...ratioSkills, ...ratioSkills2, ...geometrySkills, ...geometrySkills2, ...geometrySkills3];
+export const allSkills = [...numberSkills, ...numberSkills2, ...numberSkills3, ...algebraSkills, ...algebraSkills2, ...graphSkills, ...algebraSkills3, ...algebraSkills4, ...ratioSkills, ...ratioSkills2, ...geometrySkills, ...geometrySkills2, ...geometrySkills3, ...probabilitySkills];
 export const skillById = Object.fromEntries(allSkills.map(s => [s.id, s]));
 if (Object.keys(skillById).length !== allSkills.length) throw new Error('Duplicate maths skill id');
 export function generate(skillId, level, seed) {

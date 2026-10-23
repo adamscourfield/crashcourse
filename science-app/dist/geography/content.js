@@ -1,5 +1,5 @@
-import {coastalLessons2} from './content-coasts2.js?v=20261023-coasts02r2';
-import {coastalLessons,coastTopic} from './content-coasts.js?v=20261023-coasts02r2';
+import {coastalLessons2} from './content-coasts2.js?v=20261023-coasts02r3';
+import {coastalLessons,coastTopic} from './content-coasts.js?v=20261023-coasts02r3';
 export const source='https://qualifications.pearson.com/content/dam/pdf/GCSE/Geography-A/2016/specification-and-sample-assessments/gcse-2016-l12-geography-a-spec.pdf';
 export const topic={id:'geography.a.uk-landscape-overview',title:'The UK’s landscapes',discipline:'Physical geography'};
 const Q=(id,prompt,options,answer,why,concept)=>({id:'geo.a.'+id,prompt,options,answer,why,concept:'geo.a.'+concept});

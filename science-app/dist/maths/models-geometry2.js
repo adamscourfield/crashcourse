@@ -1,10 +1,10 @@
 // Investigations for Geometry batch 2: squares on the sides, ratios that stay fixed, a
 // transformation lab, compass arcs and loci, and turning to a bearing. Every render checks ctx.isActive.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r11';
-import { btn, progressDots } from './models-number.js?v=20261023-maths-r11';
-import { figSVG } from './geomfig.js?v=20261023-maths-r11';
-import { graphSVG } from './graph.js?v=20261023-maths-r11';
-import { rtFig, bearingFig } from './skills-geometry2.js?v=20261023-maths-r11';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r12';
+import { btn, progressDots } from './models-number.js?v=20261023-maths-r12';
+import { figSVG } from './geomfig.js?v=20261023-maths-r12';
+import { graphSVG } from './graph.js?v=20261023-maths-r12';
+import { rtFig, bearingFig } from './skills-geometry2.js?v=20261023-maths-r12';
 
 const M = s => mathHTML(s);
 const vNum = s => { const t = String(s ?? '').trim().replace(/−/g, '-').replace(/°$/, ''); if (/^-?\d+\/\d+$/.test(t)) { const [a, b] = t.split('/').map(Number); return a / b; } return t === '' || Number.isNaN(Number(t)) ? null : Number(t); };

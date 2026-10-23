@@ -1,4 +1,4 @@
-import {createGeographyStudio} from './geography/studio.js?v=20261023-coasts02r2';
+import {createGeographyStudio} from './geography/studio.js?v=20261023-coasts02r3';
 import {scienceSummary} from './progress-summary.js?v=20261023-mastery01';
 import {dashboardHTML} from './mastery-dashboard.js?v=20261023-mastery01';
 import {cancelQuestionAdvance,questionFlow} from './question-flow.js?v=20261023-flow01';
@@ -17,7 +17,7 @@ import {rateFigure,catalystFigure} from './kinetic-figures.js?v=20261023-physics
 import {profileFigure} from './energy-graphs.js?v=20261023-physicscomplete01';
 import {topics,topicById,topicLessons,contextKey,contextRun,courseFor,specRefs} from './registry.js?v=20261023-physicscomplete01';
 import {lessons,conceptNames,sourceURLs} from './content.js?v=20261023-physicscomplete01';
-import {createMathsStudio} from './maths/studio.js?v=20261023-maths-r11';import {STORAGE_KEY,subjects,restore,session,eligible,grade,recordConcept,updateCompletion,dueConcepts,isCorrect} from './progress.js?v=20261023-geography01';
+import {createMathsStudio} from './maths/studio.js?v=20261023-maths-r12';import {STORAGE_KEY,subjects,restore,session,eligible,grade,recordConcept,updateCompletion,dueConcepts,isCorrect} from './progress.js?v=20261023-geography01';
 import {showScene,mountWidget} from './widgets.js?v=20261023-physicscomplete01';
 import {renderDiagram} from './visual.js?v=20261023-physicscomplete01';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];

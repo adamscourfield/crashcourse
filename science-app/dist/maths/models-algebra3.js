@@ -1,11 +1,11 @@
 // Visual models and investigations for Algebra batch 4: functions, algebraic fractions, proof,
 // iteration and forming equations. visual7() draws worked-example diagrams; MODELS7 holds the
 // investigations. Every render checks ctx.isActive so a stale redraw cannot paint a newer view.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r11';
-import { num } from './frac.js?v=20261023-maths-r11';
-import { C, btn, progressDots } from './models-number.js?v=20261023-maths-r11';
-import { graphSVG } from './graph.js?v=20261023-maths-r11';
-import { equivalent, markAlgebra, algebraPreview } from './algebra.js?v=20261023-maths-r11';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r12';
+import { num } from './frac.js?v=20261023-maths-r12';
+import { C, btn, progressDots } from './models-number.js?v=20261023-maths-r12';
+import { graphSVG } from './graph.js?v=20261023-maths-r12';
+import { equivalent, markAlgebra, algebraPreview } from './algebra.js?v=20261023-maths-r12';
 
 const M = s => mathHTML(s);
 const W = 600;

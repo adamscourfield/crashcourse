@@ -1,5 +1,5 @@
-import {views2,requirements2,scene2} from './model-coasts2.js?v=20261023-coasts02r2';
-import {coastalViews,coastalRequirements,coastalScene} from './model-coasts.js?v=20261023-coasts02r2';
+import {views2,requirements2,scene2} from './model-coasts2.js?v=20261023-coasts02r3';
+import {coastalViews,coastalRequirements,coastalScene} from './model-coasts.js?v=20261023-coasts02r3';
 import {UK_PATH} from './uk-outline.js?v=20261023-geography01';
 export const specimens={granite:['Granite','Igneous: interlocking coarse crystals, slow cooling at depth.'],basalt:['Basalt','Igneous: usually fine crystals, cooled more quickly near the surface.'],sandstone:['Sandstone','Sedimentary: deposited sand grains held by cement.'],chalk:['Chalk','Sedimentary: largely microscopic marine remains.'],slate:['Slate','Metamorphic: cleavage developed as existing rock changed in the solid state.'],schist:['Schist','Metamorphic: visible minerals commonly aligned during solid-state change.']};
 export const requirements={...requirements2,...coastalRequirements,rocks:Object.keys(specimens),map:['dartmoor','downs','highlands'],profile:['left','right'],process:['0','1','2'],landuse:['fields','trees','town']};

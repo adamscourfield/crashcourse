@@ -47,7 +47,8 @@ const sciBefore = await page.evaluate(() => localStorage.getItem('crash-course-v
 await page.selectOption('#subject', 'maths'); await page.waitForSelector('#mH1');
 await page.click('#mapButton');
 const mapTxt = await page.locator('dialog').innerText();
-ok(/Ratio, proportion and rates of change/.test(mapTxt) && /Geometry and measures/.test(mapTxt) && !/Probability/.test(mapTxt), 'course map links Ratio and Geometry; unbuilt Probability is not listed');
+ok(/Ratio, proportion and rates of change/.test(mapTxt) && /Geometry and measures/.test(mapTxt), 'course map links Ratio and Geometry');
+ok((await page.locator('dialog .topic-link').count()) >= 1 && (await page.locator('dialog .topic-link').count()) === (await page.locator('dialog .topic-link[data-mtopic]').count()), 'course map lists only built topics, each as a link');
 await page.click('[data-mtopic="maths.ratio"]'); await page.click('#closeModal');
 const RN = Number((await page.locator('#sideProgress').innerText()).split('/ ')[1]);
 ok(RN >= 5 && (await page.locator('#sideProgress').innerText()) === `0 / ${RN}`, 'Ratio topic progress starts at 0 of ' + RN);
