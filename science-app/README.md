@@ -1,3 +1,5 @@
+River batch01 and incoming Maths Statistics published23October2026:20Geography/68Maths lessons;652merged checks. Maths S2/drawn-chart gaps, Geography authentic/constructed evidence and specialist review remain. Publication/proof/next batch: BUILD_STATUS.md. Cache rivers01r3/Maths-r13.
+
 Geography river batch01:20lessons total;5new1.7a–c lessons, looping process models/static profiles and real dated EA stage evidence.645tests and browser journeys; limits/publication BUILD_STATUS.md and geography-rivers01-browser-evidence.json.
 
 Geography coastal batch02 and incoming Maths Probability published23October2026.643merged tests;Geography15lessons,Maths64lessons/154skills. Source/deployment/proof/limits in BUILD_STATUS.md. Cache coasts02r3/Maths-r12; audience unchanged.

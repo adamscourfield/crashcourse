@@ -28,6 +28,18 @@
     "Authentic BGS/OS/weather climate data and constructed evidence open",
     "No full assistive-device/specialist/fieldwork certification"
   ],
-  "publication": "pending",
+  "publication": {
+    "status": "succeeded",
+    "source": "be7d0c3fe875c70880a886c507631fe1f6d85610",
+    "deployment": "appgdep_6adb6b543c68819183fa13fbea3b2772",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_6da139d5d5e08191b553f2c3cc1d0906",
+    "proof": "crash-course-rivers-live.png",
+    "live_checks": [
+      "Three Geography topic links",
+      "20lesson denominator",
+      "Tees worked4m3/s base model with Pause/Loop",
+      "No console errors"
+    ]
+  },
   "merged_maths": "Statistics from269ba64 preserved;68Maths lessons/160skills. Author walkthroughs retained, not rerun."
 }
