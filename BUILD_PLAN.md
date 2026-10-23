@@ -1,3 +1,5 @@
+> Current Weather04: five drought lessons bring Geography to60built;all2.1–2.8weather teaching groups introduced. Nextfive ecosystems/biodiversity3.x,exact statements/briefs first. Process films default looping;dated/estimated source evidence static. Extended skills,constructed evidence and specialist review remain separate. ActualQA/publication in BUILD_STATUS.md.
+
 > Current batch Weather03: five shared tropical-cyclone lessons2.5/2.6 bring Geography to55built. Nextfive: drought2.7/2.8 with named contrasting cases, exact briefs first. Keep process films default looping and genuine source evidence static; GIS/socialmedia/constructed/specialist evidence remain separate. Actual QA/publication in BUILD_STATUS.md.
 
 > Batch size: user requests five lessons at a time. Weather01 adds five shared lessons2.1a_b/2.2a_b;Geography45built across five topics. Nextfive2.3greenhouse_process/sources/effects and2.4UKpast/regionalcontrols. Preserve authentic/constructed/specialist evidence boundaries. ActualQA/publication in BUILD_STATUS.md.

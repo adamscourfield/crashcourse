@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-23",
+  "preview": "http://localhost:4177/",
+  "lessons": [
+    {
+      "lesson": "geography.a.weather.drought-causes",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ A normally wet region can experience drought…\n✓ Low soil moisture that stresses crops is associated with…\n✓ Which human action can worsen downstream water shortage?\n✓ Why avoid saying deforestation always reduces river flow?\nTry check again",
+      "wrongChallenge": true,
+      "wrongPractice": true,
+      "reloadLocked": true,
+      "failed75Retake100": true
+    },
+    {
+      "lesson": "geography.a.weather.drought-patterns",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ An abnormal shift in a rain belt can increase drought risk by…\n✓ Using the displayed rounded values,2010 exceeds2006 by…\n✓ What can this one-point annual graph establish by itself?\n✓ Which statement about changing drought risk is strongest?\nTry check again"
+    },
+    {
+      "lesson": "geography.a.weather.australia-drought",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ The storage decline shown is…\n✓ Why did low Murray flows have more than one explanation?\n✓ Which connects the drought to people’s livelihoods?\n✓ Why is a national rainfall average insufficient here?\nTry check again"
+    },
+    {
+      "lesson": "geography.a.weather.somalia-drought",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which explanation avoids a weather-only account?\n✓ The estimated excess deaths aged5or older are…\n✓ What distinguishes this excess-mortality figure?\n✓ A loss of pasture can affect…\nTry check again"
+    },
+    {
+      "lesson": "geography.a.weather.drought-responses",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which chronology is supported?\n✓ What did cash-for-work combine in the Somalia response?\n✓ Using the UN snapshot, the approximate number not yet reached was…\n✓ Which comparison is most defensible?\nTry check again"
+    }
+  ],
+  "mobile": [
+    {
+      "lesson": "geography.a.weather.drought-causes",
+      "view": "aridity",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-causes",
+      "view": "lag",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-causes",
+      "view": "agriculture",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-causes",
+      "view": "human",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-causes",
+      "view": "forest",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-patterns",
+      "view": "descent",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-patterns",
+      "view": "season",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-patterns",
+      "view": "variability",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-patterns",
+      "view": "rain",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "table": 296,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-patterns",
+      "view": "table",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "table": 296,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.australia-drought",
+      "view": "stores",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "table": 296,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.australia-drought",
+      "view": "people",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.australia-drought",
+      "view": "wetlands",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.australia-drought",
+      "view": "allocation",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.australia-drought",
+      "view": "saving",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.somalia-drought",
+      "view": "cascade",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.somalia-drought",
+      "view": "grazing",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.somalia-drought",
+      "view": "mortality",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "table": 296,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.somalia-drought",
+      "view": "access",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-responses",
+      "view": "australia",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-responses",
+      "view": "somalia",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-responses",
+      "view": "coverage",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "table": 296,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.drought-responses",
+      "view": "compare",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    }
+  ],
+  "phoneQuestions": [
+    {
+      "id": "geo.a.w4.somalia-drought.c1",
+      "page": 390,
+      "width": 390
+    },
+    {
+      "id": "geo.a.w4.somalia-drought.c2",
+      "page": 390,
+      "table": 300,
+      "width": 390
+    },
+    {
+      "id": "geo.a.w4.somalia-drought.c3",
+      "page": 390,
+      "table": 300,
+      "width": 390
+    },
+    {
+      "id": "geo.a.w4.somalia-drought.c4",
+      "page": 390,
+      "width": 390
+    }
+  ],
+  "pathways": {
+    "coasts_glaciers": "49/49",
+    "coasts_rivers": "46/46",
+    "rivers_glaciers": "50/50 after reload"
+  },
+  "keyboard": "Native player Space pauses; Enter resumes",
+  "gates": "premature Continue/wrong challenge blocked;correctable practice;5/5views restored;independent first answer locked after reload;75%fail/100%retake",
+  "motion": "process views default Pause/Loop;static source evidence hides player",
+  "dataAudit": "NASA POWER monthly mm/day multiplied by actual Gregorian month lengths;26annual estimates1990–2015;annual13excluded;storage percentagepoints,mortality subsets and20%coverage validated",
+  "accessibleValues": "native chart table296px in390pxpage;independent source tables300px",
+  "consoleErrors": [],
+  "reducedMotion": "shared paused-start code retained;not separately emulated",
+  "specialistReview": "not performed",
+  "publication": "pending"
+}

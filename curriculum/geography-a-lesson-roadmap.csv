@@ -4,8 +4,6 @@ geography.a.landscapes.geology-map,Reading the UK’s geology,overview,1.1a,impl
 geography.a.landscapes.geology-relief,Why uplands and lowlands differ,overview,1.1b,implemented
 geography.a.landscapes.physical-landscapes,Physical processes shape landscapes,overview,1.2a,implemented
 geography.a.landscapes.people-landscapes,People change landscapes,overview,1.2b,implemented
-geography.a.weather.2-7,Drought causes and patterns,weather,2.7,provisional_planned_split_after_statement_brief
-geography.a.weather.2-8,Drought impacts and responses,weather,2.8,provisional_planned_split_after_statement_brief
 geography.a.ecosystems.3-1,Global ecosystems and controls,ecosystems,3.1,provisional_planned_split_after_statement_brief
 geography.a.ecosystems.3-2,Biosphere resources,ecosystems,3.2,provisional_planned_split_after_statement_brief
 geography.a.ecosystems.3-3,UK ecosystems and pressures,ecosystems,3.3,provisional_planned_split_after_statement_brief
@@ -113,3 +111,8 @@ geography.a.weather.cyclone-patterns,Where and when cyclones occur,weather,2.5a;
 geography.a.weather.katrina,Katrina: hazards and impacts in the USA,weather,2.6a;2.6b: USA developed-country example;Integrated skill3: wind classification,implemented
 geography.a.weather.haiyan,Haiyan: impacts in the Philippines,weather,2.6a;2.6b: Philippines emerging-country example;Integrated skill4: satellite and impact evidence introduction,implemented
 geography.a.weather.cyclone-responses,Responding to cyclones: compare the cases,weather,2.6c: USA and Philippines;2.6a: compound hazards;Integrated skill4: source evaluation introduction,implemented
+geography.a.weather.drought-causes,Drought: when water runs short,weather,2.7a;2.7b,implemented
+geography.a.weather.drought-patterns,Why drought risk changes across places and time,weather,2.7c;Integrated skill5: medium-term rainfall graphs,implemented
+geography.a.weather.australia-drought,Australia: the Millennium Drought,weather,2.8a;2.8b: developed-country example;Integrated skill6: storage evidence,implemented
+geography.a.weather.somalia-drought,"Somalia: drought and food insecurity,2010–12",weather,2.8a;2.8b: developing-country example;Integrated skill6: socioeconomic evidence,implemented
+geography.a.weather.drought-responses,Responding to drought: Australia and Somalia,weather,2.8c;2.8a: risk and trade-offs;Integrated skill6: assistance snapshot,implemented

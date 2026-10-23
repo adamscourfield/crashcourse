@@ -1,4 +1,4 @@
-import {createGeographyStudio} from './geography/studio.js?v=20261023-weather03';
+import {createGeographyStudio} from './geography/studio.js?v=20261023-weather04';
 import {scienceSummary} from './progress-summary.js?v=20261023-mastery01';
 import {dashboardHTML} from './mastery-dashboard.js?v=20261023-mastery01';
 import {cancelQuestionAdvance,questionFlow} from './question-flow.js?v=20261023-flow01';

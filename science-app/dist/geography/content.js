@@ -1,14 +1,15 @@
-import {weatherLessons3} from './content-weather3.js?v=20261023-weather03';
-import {weatherLessons2} from './content-weather2.js?v=20261023-weather03';
-import {weatherTopic,weatherLessons} from './content-weather.js?v=20261023-weather03';
-import {glacierLessons3} from './content-glaciers3.js?v=20261023-weather03';
-import {glacierLessons2} from './content-glaciers2.js?v=20261023-weather03';
-import {teesLessons} from './content-tees.js?v=20261023-weather03';
-import {glacierTopic,glacierLessons} from './content-glaciers.js?v=20261023-weather03';
-import {riverLessons2} from './content-rivers2.js?v=20261023-weather03';
-import {riverLessons,riverTopic} from './content-rivers.js?v=20261023-weather03';
-import {coastalLessons2} from './content-coasts2.js?v=20261023-weather03';
-import {coastalLessons,coastTopic} from './content-coasts.js?v=20261023-weather03';
+import {weatherLessons4} from './content-weather4.js?v=20261023-weather04';
+import {weatherLessons3} from './content-weather3.js?v=20261023-weather04';
+import {weatherLessons2} from './content-weather2.js?v=20261023-weather04';
+import {weatherTopic,weatherLessons} from './content-weather.js?v=20261023-weather04';
+import {glacierLessons3} from './content-glaciers3.js?v=20261023-weather04';
+import {glacierLessons2} from './content-glaciers2.js?v=20261023-weather04';
+import {teesLessons} from './content-tees.js?v=20261023-weather04';
+import {glacierTopic,glacierLessons} from './content-glaciers.js?v=20261023-weather04';
+import {riverLessons2} from './content-rivers2.js?v=20261023-weather04';
+import {riverLessons,riverTopic} from './content-rivers.js?v=20261023-weather04';
+import {coastalLessons2} from './content-coasts2.js?v=20261023-weather04';
+import {coastalLessons,coastTopic} from './content-coasts.js?v=20261023-weather04';
 export const source='https://qualifications.pearson.com/content/dam/pdf/GCSE/Geography-A/2016/specification-and-sample-assessments/gcse-2016-l12-geography-a-spec.pdf';
 export const topic={id:'geography.a.uk-landscape-overview',title:'The UK’s landscapes',discipline:'Physical geography'};
 const Q=(id,prompt,options,answer,why,concept)=>({id:'geo.a.'+id,prompt,options,answer,why,concept:'geo.a.'+concept});
@@ -57,4 +58,4 @@ make('people-landscapes','People change landscapes',['1.2b','Integrated skill 4'
 ];
 
 export const topics=[topic,coastTopic,riverTopic,glacierTopic,weatherTopic];
-export const lessons=[...coreLessons,...coastalLessons,...coastalLessons2,...riverLessons,...riverLessons2,...teesLessons,...glacierLessons,...glacierLessons2,...glacierLessons3,...weatherLessons,...weatherLessons2,...weatherLessons3];
+export const lessons=[...coreLessons,...coastalLessons,...coastalLessons2,...riverLessons,...riverLessons2,...teesLessons,...glacierLessons,...glacierLessons2,...glacierLessons3,...weatherLessons,...weatherLessons2,...weatherLessons3,...weatherLessons4];
