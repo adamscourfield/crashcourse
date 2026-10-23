@@ -1,6 +1,6 @@
 # Current release: all Science teaching roadmaps implemented
 
-361Science lessons:113Chemistry150Biology98Physics.37Maths lessons/99skills, including incoming Algebra21–22.581merged automated checks and representative browser journeys passed; publication state/identifiers in BUILD_STATUS.md. Physics has route/tier filters, purposeful process loops and static diagrams; specialist, constructed-response and physical practical evidence remain separate. Global20261023-physicscomplete01,Maths-r8.
+361Science lessons:113Chemistry150Biology98Physics.50Maths lessons/126skills, including incoming Algebra21–22,Ratio1–8 andGeometry1–5.599merged automated checks and representative browser journeys passed; publication state/identifiers in BUILD_STATUS.md. Physics has route/tier filters, purposeful process loops and static diagrams; specialist, constructed-response and physical practical evidence remain separate. Global20261023-physicscomplete01,Maths-r9.
 
 The batch handovers below are historical.
 

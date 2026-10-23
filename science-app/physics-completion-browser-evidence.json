@@ -2620,6 +2620,11 @@
     "algebraHigher": 22,
     "algebraFoundation": 19,
     "newExponentialLessonRendered": true,
-    "scienceSessionRestored": true
+    "scienceSessionRestored": true,
+    "total": 50,
+    "skills": 126,
+    "ratio": 8,
+    "geometry": 5,
+    "geometryLessonRendered": true
   }
 }
