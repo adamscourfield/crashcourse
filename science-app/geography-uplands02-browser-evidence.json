@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-23",
+  "journeys": [
+    {
+      "id": "geography.a.glaciers.valleys",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.glaciers.roche-moutonnee",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.glaciers.moraines",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.glaciers.streamlined-landforms",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.glaciers.upland-landuse",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "premature": "Answer this challenge first.",
+  "wrongChallenge": "Look again at the evidence and the process described.",
+  "viewsRestored": "Views compared: 4 / 4",
+  "independentLockedAfterReload": true,
+  "failedCheck": "75% · Keep building",
+  "retake": "100% · Lesson complete",
+  "phone": [
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Glacial troughs and hanging valleys",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Reading a roche moutonnée",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Ground and terminal moraines",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Crag-and-tail and drumlins",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Farming, forestry and upland settlement",
+      "width": 390
+    }
+  ],
+  "pathways": [
+    {
+      "pair": [
+        "coasts",
+        "glaciers"
+      ],
+      "progress": "My progress\n24 / 24"
+    },
+    {
+      "pair": [
+        "coasts",
+        "rivers"
+      ],
+      "progress": "My progress\n26 / 26"
+    },
+    {
+      "pair": [
+        "rivers",
+        "glaciers"
+      ],
+      "progress": "My progress\n25 / 25"
+    }
+  ],
+  "reload": "25 / 25",
+  "consoleErrors": [],
+  "limitations": [
+    "Shared reduced-motion code inspected; not separately emulated",
+    "No full assistive-device or specialist review",
+    "Diagrams are not authentic OS/GIS or constructed/physical fieldwork evidence"
+  ]
+}

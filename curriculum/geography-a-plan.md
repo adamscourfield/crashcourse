@@ -73,3 +73,7 @@ Five further river lessons1.8a–c/1.9a–b bring Geography to25built (5shared/1
 
 ## Uplands01 —23October2026
 NamedTees1.10a plus four glaciers lessons1.11a–c/corrie-tarn-arête subset1.12a. Geography30built (5shared/10coasts/11rivers/4glaciers),90practice/120checks; roadmap98units30built/68provisional, not fixed final size. Built denominators26coasts+rivers,19coasts+glaciers,20rivers+glaciers,30unselected.4topics eligible as options allow; old records retained. Exact coverage and evidence gaps in geography-a-uplands01-coverage.csv and briefs/geography-a-uplands-01.md. Remaining1.12aforms and1.12b_c/1.13/1.14still planned; next five briefs recorded in handover.
+
+
+## Uplands02 —23October2026
+Five lessons add remaining1.12a named forms,1.12b_c and1.13a. Geography35built (5shared/10coasts/11rivers/9glaciers),105practice/140checks; roadmap102authoring units35built/67provisional after splitting remaininglandforms and retaining1.13bdevelopment separately. Built student denominators26coasts+rivers,24coasts+glaciers,25rivers+glaciers,35exploratory. All1.12landforms now introduced; genuineOSrecognition and constructed explanations remain open. Next five briefs: water storage/supply, renewable energy, recreation/tourism, conservation1.13b;named UK glaciated landscape1.14a. Exact mapping: geography-a-uplands02-coverage.csv;briefs/geography-a-uplands-02.md.

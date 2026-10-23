@@ -4,8 +4,7 @@ geography.a.landscapes.geology-map,Reading the UK’s geology,overview,1.1a,impl
 geography.a.landscapes.geology-relief,Why uplands and lowlands differ,overview,1.1b,implemented
 geography.a.landscapes.physical-landscapes,Physical processes shape landscapes,overview,1.2a,implemented
 geography.a.landscapes.people-landscapes,People change landscapes,overview,1.2b,implemented
-geography.a.glaciers.1-12,Remaining glacial erosional and depositional landforms,glaciers,1.12a_remaining;1.12b_c,provisional_planned_split_after_statement_brief
-geography.a.glaciers.1-13,Upland land use and management,glaciers,1.13,provisional_planned_split_after_statement_brief
+geography.a.glaciers.1-13,Upland development: water energy tourism conservation,glaciers,1.13b,provisional_planned_split_after_statement_brief
 geography.a.glaciers.1-14,Named UK glaciated landscape,glaciers,1.14,provisional_planned_split_after_statement_brief
 geography.a.weather.2-1,Global circulation and heat transfer,weather,2.1,provisional_planned_split_after_statement_brief
 geography.a.weather.2-2,Natural climate change and evidence,weather,2.2,provisional_planned_split_after_statement_brief
@@ -97,3 +96,8 @@ geography.a.glaciers.ice-processes,How moving ice changes the land,glaciers,1.11
 geography.a.glaciers.upland-slopes,Upland slopes after the ice,glaciers,1.11b,implemented
 geography.a.glaciers.climate-weather,"Past ice, present weather",glaciers,1.11c;Integrated skill 14: conceptual introduction,implemented
 geography.a.glaciers.corries-aretes,"Corries, tarns and arêtes",glaciers,1.12a: corries; glacial lakes/tarns; arêtes;Integrated skill 15: diagram introduction,implemented
+geography.a.glaciers.valleys,Glacial troughs and hanging valleys,glaciers,1.12a: troughs; truncated spurs; hanging valleys; glacial lakes;Integrated skill 15: diagram introduction,implemented
+geography.a.glaciers.roche-moutonnee,Reading a roche moutonnée,glaciers,1.12a: roche moutonnées;Integrated skill 15: diagram introduction,implemented
+geography.a.glaciers.moraines,Ground and terminal moraines,glaciers,1.12b;Integrated skill 15: diagram introduction,implemented
+geography.a.glaciers.streamlined-landforms,Crag-and-tail and drumlins,glaciers,1.12c;Integrated skill 15: diagram introduction,implemented
+geography.a.glaciers.upland-landuse,"Farming, forestry and upland settlement",glaciers,1.13a;Integrated skill 16: diagram introduction,implemented

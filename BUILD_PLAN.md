@@ -1,3 +1,5 @@
+> Uplands02: Geography35built (5shared/10coasts/11rivers/9glaciers). All1.12named glacial landforms and1.13afarming/forestry/settlement mechanisms introduced; genuineOS/GIS, constructed and specialist evidence remain open. Next five: water supply, energy, tourism, conservation1.13b;named landscape1.14a. Actual QA/publication in BUILD_STATUS.md.
+
 > Uplands01: Geography30built (5shared/10coasts/11rivers/4glaciers); namedTees1.10a and1.11a–c plus corrie/tarn/arête subset1.12a. Next remaining glacial landforms and human effects. Authentic OS/weather/GIS and constructed/specialist evidence remain separate. BUILD_STATUS.md has actual QA/publication.
 
 > River batch02: Geography25lessons (5shared/10coasts/10rivers);1.8a–c/1.9a–b landforms/flooding/management implemented. Genuine dated High Force image plus17process views/four static comparisons. Next named1.10synthesis, then glaciated-upland briefs; authentic/constructed evidence remains distinct. Actual QA/publication: BUILD_STATUS.md.
