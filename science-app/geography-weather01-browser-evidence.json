@@ -3,33 +3,33 @@
   "journeys": [
     {
       "id": "geography.a.weather.circulation",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.weather.heat-transfer",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.weather.past-climates",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.weather.natural-causes",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.weather.climate-evidence",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     }
   ],
-  "sharedMenu": "GEOGRAPHY A · SHARED CORE",
+  "sharedMenu": "GEOGRAPHY A \u00b7 SHARED CORE",
   "premature": "Answer this challenge first.",
   "wrongChallenge": "Look again at the evidence and the process described.",
   "practiceCorrection": "Try again. Warm moist air rises, cools and can condense; the pattern varies.",
   "observationsRestored": "Views compared: 4 / 4",
   "independentLockedAfterReload": true,
-  "failedCheck": "75% · Keep building",
-  "retake": "100% · Lesson complete",
+  "failedCheck": "75% \u00b7 Keep building",
+  "retake": "100% \u00b7 Lesson complete",
   "phone": [
     {
       "model": 296,
@@ -91,5 +91,15 @@
     "No full assistive-device or specialist review",
     "Shared reduced-motion code inspected; not separately emulated",
     "Schematic cells/timelines/orbits/proxies are not measured records or constructed evidence"
-  ]
+  ],
+  "publication": {
+    "source": "d56300e331b5c40e6a25159dbacdab17e954a4d2",
+    "deployment": "appgdep_6adba89234d08191b5720865f0380e49",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_3e7d5f1f5f508191b3c5e1d2dcb21786",
+    "status": "succeeded",
+    "time": "2026-10-23T18:34:09Z",
+    "live": "45denominator;shared topic label;circulation Pause/Loop;static winds player hidden;no errors",
+    "proof": "crash-course-weather01-live.png"
+  },
+  "automatedTests": 673
 }
