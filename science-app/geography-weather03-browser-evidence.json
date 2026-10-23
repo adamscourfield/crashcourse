@@ -4,7 +4,7 @@
   "lessons": [
     {
       "lesson": "geography.a.weather.cyclone-formation",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which sequence explains development?\n✓ In the Southern Hemisphere, near-surface cyclone air generally spirals…\n✓ Where are the strongest winds commonly found in a mature cyclone?\n✓ After a cyclone weakens over land…\nTry check again",
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 Which sequence explains development?\n\u2713 In the Southern Hemisphere, near-surface cyclone air generally spirals\u2026\n\u2713 Where are the strongest winds commonly found in a mature cyclone?\n\u2713 After a cyclone weakens over land\u2026\nTry check again",
       "wrongChallenge": true,
       "wrongPractice": true,
       "checkReloadLocked": true,
@@ -12,19 +12,19 @@
     },
     {
       "lesson": "geography.a.weather.cyclone-patterns",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which hemisphere has a cyclone circulation clockwise near the surface?\n✓ The Atlantic’s typical hurricane season is…\n✓ Why can30 storms in2020 and14 in2022 not establish a climate trend?\n✓ On the dated Katrina map,29August1200UTC is…\nTry check again"
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 Which hemisphere has a cyclone circulation clockwise near the surface?\n\u2713 The Atlantic\u2019s typical hurricane season is\u2026\n\u2713 Why can30 storms in2020 and14 in2022 not establish a climate trend?\n\u2713 On the dated Katrina map,29August1200UTC is\u2026\nTry check again"
     },
     {
       "lesson": "geography.a.weather.katrina",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which is an economic impact of Katrina?\n✓ A storm-surge height alone can determine Saffir–Simpson wind category…\n✓ Why does the updated1,392 death figure need a definition?\n✓ Which explanation best links impacts?\nTry check again"
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 Which is an economic impact of Katrina?\n\u2713 A storm-surge height alone can determine Saffir\u2013Simpson wind category\u2026\n\u2713 Why does the updated1,392 death figure need a definition?\n\u2713 Which explanation best links impacts?\nTry check again"
     },
     {
       "lesson": "geography.a.weather.haiyan",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which source best tests a claim about7November cloud structure?\n✓ Which is primarily a social impact?\n✓ Which follows from the boat data shown?\n✓ Why compare image date and impact-report date?\nTry check again"
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 Which source best tests a claim about7November cloud structure?\n\u2713 Which is primarily a social impact?\n\u2713 Which follows from the boat data shown?\n\u2713 Why compare image date and impact-report date?\nTry check again"
     },
     {
       "lesson": "geography.a.weather.cyclone-responses",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which action is associated with USACE after Katrina?\n✓ FAO support for boats, seeds and farming after Haiyan chiefly aimed to…\n✓ Which comparison is best supported?\n✓ To evaluate a social-media damage claim, first…\nTry check again"
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 Which action is associated with USACE after Katrina?\n\u2713 FAO support for boats, seeds and farming after Haiyan chiefly aimed to\u2026\n\u2713 Which comparison is best supported?\n\u2713 To evaluate a social-media damage claim, first\u2026\nTry check again"
     }
   ],
   "mobile": [
@@ -272,5 +272,26 @@
   "consoleErrors": [],
   "reducedMotion": "shared paused-start code retained;not separately emulated",
   "specialistReview": "not performed",
-  "publication": "pending"
+  "publication": {
+    "status": "succeeded",
+    "updated_at": "2026-10-23T19:50:38.513945+00:00",
+    "source": "7de00fe86ed10a964b7c5ae14f12dc8e30d49d14",
+    "deployment": "appgdep_6adbba825d048191aab19d5aec051164",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_398936dd362c819188ee9888f406c384",
+    "url": "https://gcse-science-atom-lab.newbuddy32.chatgpt.site/",
+    "liveChecks": [
+      "55built denominator",
+      "15shared weather menu lessons",
+      "formation Pause/Loop default",
+      "static dated Katrina position",
+      "NASAimage720pxloaded and credited",
+      "no console errors"
+    ],
+    "proof": "crash-course-weather03-live.png"
+  },
+  "automatedTests": {
+    "full": 678,
+    "focusedGeography": 23,
+    "passed": true
+  }
 }
