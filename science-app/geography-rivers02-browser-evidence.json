@@ -4,23 +4,23 @@
   "journeys": [
     {
       "lesson": "geography.a.rivers.erosional-landforms",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "lesson": "geography.a.rivers.depositional-landforms",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "lesson": "geography.a.rivers.meanders",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "lesson": "geography.a.rivers.flooding",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "lesson": "geography.a.rivers.management",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     }
   ],
   "premature": "Answer this challenge first.",
@@ -28,8 +28,8 @@
   "wrongPractice": "Try again. Resistance does not make rock immune to failure when its support is removed.",
   "observationsRestored": "5 / 5; photo selection retained after reload",
   "independentFirstAnswer": "disabled answers after reload; later auto-next",
-  "failedCheck": "75% · Keep building",
-  "retake": "100% · Lesson complete",
+  "failedCheck": "75% \u00b7 Keep building",
+  "retake": "100% \u00b7 Lesson complete",
   "phone": [
     {
       "model": 296,
@@ -91,5 +91,16 @@
     "Reduced motion uses shared paused-start code; not separately emulated this batch",
     "No full assistive-device or specialist review",
     "Reading hydrographs is not drawing; OS/GIS and physical fieldwork remain separate"
-  ]
+  ],
+  "publication": {
+    "source": "4c926dc29997c1063494dd39ac95caa190868ad8",
+    "deployment": "appgdep_6adb73ce60848191a02d2b7053e2e80a",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_b3f4cb06cfc081919cfe9076bee73586",
+    "status": "succeeded",
+    "time": "2026-10-23T14:48:59Z",
+    "proof": "crash-course-rivers02-live.png",
+    "live": "25built; High Force1600px loaded; source credit; static player hidden; waterfall Pause autoplay; no console errors"
+  },
+  "mergedTests": 656,
+  "maths": "Incoming8995291 preserved;161skills; new pictogram card inspected; author flows retained not rerun"
 }
