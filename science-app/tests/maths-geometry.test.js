@@ -167,7 +167,7 @@ test('geometry lesson records: order, refs, prerequisites, visuals, check plans,
     assert.equal(l.topicId, 'maths.geometry');
     assert.ok(l.refs.every(r => /^G\d+$/.test(r)));
     for (const p of l.prerequisites) assert.ok(all.has(p), `${l.id} prerequisite ${p}`);
-    assert.equal(l.learn.length, 3);
+    assert.ok(l.learn.length >= 3);
     for (const c of l.learn) { const html = visualGeo(c.visual) || visual7(c.visual); assert.ok(html.length > 50 && !/NaN|undefined/.test(html), `${l.id}: ${c.title}`); assert.ok(c.example.steps.length); }
     assert.equal(l.checkPlan.length, 10);
     const ids = l.skills.map(s => s.id);

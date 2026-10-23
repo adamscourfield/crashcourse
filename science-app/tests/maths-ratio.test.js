@@ -220,7 +220,8 @@ test('every maths worked-example visual renders through the studio dispatch chai
   const { orderedGeometry3 } = await import('../dist/maths/lessons-geometry3.js');
   const { orderedProbability } = await import('../dist/maths/lessons-probability.js');
   const { orderedStatistics } = await import('../dist/maths/lessons-statistics.js');
-  for (const l of [...numberLessons, ...orderedAlgebra, ...orderedRatio, ...orderedGeometry, ...orderedGeometry2, ...orderedGeometry3, ...orderedProbability, ...orderedStatistics]) for (const c of l.learn) {
+  const { orderedGeometry4 } = await import('../dist/maths/lessons-geometry4.js');
+  for (const l of [...numberLessons, ...orderedAlgebra, ...orderedRatio, ...orderedGeometry, ...orderedGeometry2, ...orderedGeometry3, ...orderedGeometry4, ...orderedProbability, ...orderedStatistics]) for (const c of l.learn) {
     let first = -1, html = '';
     for (let i = 0; i < chain.length && first < 0; i++) { html = chain[i](c.visual); if (html) first = i; }
     assert.ok(first >= 0 && html.length > 20 && !/NaN|undefined/.test(html), `${l.id}: ${c.title} has no visual`);

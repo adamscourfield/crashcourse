@@ -137,7 +137,7 @@ test('geometry batch 3 records: order, refs, prerequisites, tiers, calculator fl
   const geo = [...orderedGeometry, ...orderedGeometry2, ...orderedGeometry3], refs = new Set(geo.flatMap(l => l.refs));
   for (let i = 1; i <= 25; i++) assert.ok(refs.has('G' + i), 'G' + i + ' is referenced by a Geometry lesson');
   assert.equal(geo.length, 15); assert.equal(geo.filter(l => !l.higherOnly).length, 13);
-  assert.ok(/Fifteen lessons/.test(geometryTopic.coverage));
+  assert.ok(/Sixteen lessons/.test(geometryTopic.coverage));
   for (const l of orderedGeometry3) {
     for (const p of l.prerequisites) assert.ok(ids.has(p), `${l.id} prerequisite ${p}`);
     assert.equal(l.learn.length, 3); assert.equal(l.checkPlan.length, 10);

@@ -11,6 +11,7 @@
 // All teaching text and questions are original.
 import { skillById } from './skills.js?v=20261023-maths-r14';
 import { raysFig, triFig, parallelFig, polygonFig, circleFig, sectorFig, cuboidFig, prismFig, cylFig } from './skills-geometry.js?v=20261023-maths-r14';
+import { letteredFig } from './skills-geometry4.js?v=20261023-maths-r14';
 
 const S = id => skillById[id];
 const geo = (fig, caption) => ({ kind: 'geo', fig, caption });
@@ -22,7 +23,7 @@ const lFig = { h: 320, polys: [{ pts: [[150, 40], [360, 40], [360, 100], [450, 1
 
 export const geometryTopic = {
   id: 'maths.geometry', title: 'Geometry and measures', short: 'Geometry', number: '04', status: 'partial',
-  coverage: 'Fifteen lessons covering G1–G25: angles and parallel lines; polygons; area; circles and sectors; volume and surface area; Pythagoras; trigonometry and exact values; transformations; constructions and loci; bearings and elevation; congruence and similarity; circle theorems (Higher); solids, plans and elevations; sine and cosine rules and 3D (Higher); vectors. Every question has its own diagram or grid.',
+  coverage: 'Sixteen lessons covering G1–G25: angles, three-letter angle notation and parallel lines; polygons; area; circles and sectors; volume and surface area; Pythagoras; trigonometry and exact values; transformations; constructions and loci; bearings and elevation; congruence and similarity; circle theorems (Higher); solids, plans and elevations; sine and cosine rules and 3D (Higher); vectors; spheres, cones and composite solids, with frustums at Higher. Every question has its own diagram or grid.',
 };
 
 export const geometryLessons = [
@@ -31,7 +32,7 @@ export const geometryLessons = [
     topicId: 'maths.geometry',
     title: 'Angle facts and parallel lines',
     refs: ['G1', 'G3', 'G6'],
-    minutes: 45,
+    minutes: 50,
     model: 'angle-explorer',
     prerequisites: ['maths.algebra.linear-equations'],
     big: 'Angles on a straight line add up to 180°, angles around a point add up to 360° and angles in a triangle add up to 180°. Vertically opposite angles are equal. An isosceles triangle has two equal sides and two equal base angles. With parallel lines, corresponding angles (F) are equal, alternate angles (Z) are equal and co-interior angles (C) add up to 180°. Give the reason for each step.',
@@ -45,9 +46,12 @@ export const geometryLessons = [
       { title: 'Parallel lines.', text: 'A line crossing two parallel lines makes matching angles. Corresponding angles sit in the same position at each crossing (F shape) and are equal. Alternate angles are between the parallel lines on opposite sides (Z shape) and are equal. Co-interior angles are between the lines on the same side (C shape) and add up to 180°.',
         example: { prompt: 'Alternate to an angle of 64°. Find it.', steps: ['Alternate angles are equal', '64°'] },
         visual: geo(parallelFig(60, [{ at: 'P', quad: 'bl', label: '60°' }, { at: 'Q', quad: 'tr', label: '60°' }, { at: 'Q', quad: 'tl', label: '120°' }]), 'Alternate angles equal; co-interior angles add to 180°') },
+      { title: 'Naming angles with three letters.', text: 'Angle ABC is the angle at B, between the lines BA and BC: the middle letter is always the vertex. Angle ABC and angle CBA are the same angle. When a question describes a shape in words ("ABC is isosceles with AB = AC"), sketch it first: the equal sides meet at A, so the base angles ABC and ACB are equal.',
+        example: { prompt: 'In triangle PQR, angle PQR = 50° and angle QRP = 60°. Find angle QPR.', steps: ['angle PQR is at Q, angle QRP is at R', 'angle QPR is at P: 180 − 50 − 60 = 70°'] },
+        visual: geo(letteredFig(['A', 'B', 'C', 'D'], [[110, 280], [480, 290], [430, 70], [170, 90]], [{ at: 'A', from: 'B', to: 'C', label: 'x' }], ['A', 'C'], 'Quadrilateral ABCD with diagonal AC; angle x at A between AB and AC'), 'x is angle BAC (or CAB): the vertex A is the middle letter') },
     ],
-    skills: [S('maths.geometry.angle-facts'), S('maths.geometry.parallel')],
-    checkPlan: [['maths.geometry.angle-facts', 1], ['maths.geometry.angle-facts', 1], ['maths.geometry.angle-facts', 2], ['maths.geometry.angle-facts', 3], ['maths.geometry.angle-facts', 3], ['maths.geometry.parallel', 1], ['maths.geometry.parallel', 2], ['maths.geometry.parallel', 2], ['maths.geometry.parallel', 3], ['maths.geometry.parallel', 3]],
+    skills: [S('maths.geometry.angle-facts'), S('maths.geometry.parallel'), S('maths.geometry.angle-notation')],
+    checkPlan: [['maths.geometry.angle-facts', 1], ['maths.geometry.angle-facts', 2], ['maths.geometry.angle-facts', 3], ['maths.geometry.angle-facts', 3], ['maths.geometry.parallel', 1], ['maths.geometry.parallel', 2], ['maths.geometry.parallel', 3], ['maths.geometry.angle-notation', 1], ['maths.geometry.angle-notation', 2], ['maths.geometry.angle-notation', 3]],
     limits: 'Diagrams are generated and marked "not drawn accurately". The angle is marked; the written reason is shown in each worked solution but not marked. Angle problems with algebra are practised in the Algebra lesson on forming equations.',
   },
   {
