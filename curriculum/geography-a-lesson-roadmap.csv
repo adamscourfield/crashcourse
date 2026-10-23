@@ -4,8 +4,6 @@ geography.a.landscapes.geology-map,Reading the UK’s geology,overview,1.1a,impl
 geography.a.landscapes.geology-relief,Why uplands and lowlands differ,overview,1.1b,implemented
 geography.a.landscapes.physical-landscapes,Physical processes shape landscapes,overview,1.2a,implemented
 geography.a.landscapes.people-landscapes,People change landscapes,overview,1.2b,implemented
-geography.a.weather.2-3,Human climate change and impacts,weather,2.3,provisional_planned_split_after_statement_brief
-geography.a.weather.2-4,UK climate and controls,weather,2.4,provisional_planned_split_after_statement_brief
 geography.a.weather.2-5,Tropical cyclone formation and pattern,weather,2.5,provisional_planned_split_after_statement_brief
 geography.a.weather.2-6,Cyclone impacts and responses across development contexts,weather,2.6,provisional_planned_split_after_statement_brief
 geography.a.weather.2-7,Drought causes and patterns,weather,2.7,provisional_planned_split_after_statement_brief
@@ -107,3 +105,8 @@ geography.a.weather.heat-transfer,Moving heat around the planet,weather,2.1b,imp
 geography.a.weather.past-climates,Glacials and interglacials,weather,2.2a,implemented
 geography.a.weather.natural-causes,Natural causes of climate change,weather,2.2b: Milankovitch cycles; solar variation; volcanism,implemented
 geography.a.weather.climate-evidence,Reading evidence of past climates,weather,2.2b: ice cores; pollen; tree rings; historical sources,implemented
+geography.a.weather.enhanced-greenhouse,The enhanced greenhouse effect,weather,2.3a,implemented
+geography.a.weather.emission-sources,Where greenhouse gases come from,weather,2.3a: industry; transport; energy; farming,implemented
+geography.a.weather.climate-impacts,"Climate change: crops, seas and glaciers",weather,2.3b,implemented
+geography.a.weather.uk-climate-history,Reading the UK’s changing climate,weather,2.4a;Integrated skill1: line graphs and bar charts,implemented
+geography.a.weather.uk-climate-controls,Why the UK’s climate varies,weather,2.4b;2.4c,implemented

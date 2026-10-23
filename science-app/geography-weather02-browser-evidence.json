@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-23",
+  "preview": "http://localhost:4177/",
+  "lessons": [
+    {
+      "lesson": "geography.a.weather.enhanced-greenhouse",
+      "check": "100% after75% retake",
+      "wrongChallenge": true,
+      "wrongPractice": true,
+      "reloadLocked": true
+    },
+    {
+      "lesson": "geography.a.weather.emission-sources",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which pair is correctly matched?\n✓ Industry can emit CO₂ through…\n✓ Which statement about farming is strongest?\n✓ Equal masses of CO₂ and CH₄…\nTry check again"
+    },
+    {
+      "lesson": "geography.a.weather.climate-impacts",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which judgement about crop yields is most defensible?\n✓ Sea-level rise can affect people through…\n✓ A glacier front retreats while ice moves downslope. This is…\n✓ Why can the loop not predict one community’s exact future?\nTry check again"
+    },
+    {
+      "lesson": "geography.a.weather.uk-climate-history",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Using the two latest displayed bars, the increase is…\n✓ Which year is warmer in this displayed record:2022 or2021?\n✓ Which conclusion is supported by the bar chart?\n✓ To investigate UK conditions around1100CE, also use…\nTry check again",
+      "graphQuestion": true
+    },
+    {
+      "lesson": "geography.a.weather.uk-climate-controls",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which best explains varied UK weather?\n✓ At similar latitude, a high upland site is generally…\n✓ An eastern rain shadow may form when…\n✓ Which qualification improves a regional climate explanation?\nTry check again"
+    }
+  ],
+  "mobile": [
+    {
+      "lesson": "geography.a.weather.enhanced-greenhouse",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.emission-sources",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.climate-impacts",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.uk-climate-history",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.uk-climate-controls",
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    }
+  ],
+  "pathways": {
+    "coasts_glaciers": "39/39",
+    "coasts_rivers": "36/36",
+    "rivers_glaciers": "40/40 after reload"
+  },
+  "realGraph": {
+    "source": "Met Office HadCET v2.1.1.0",
+    "annual": "1659–2025",
+    "line": true,
+    "bars": true,
+    "independentStimulus": true,
+    "table": true,
+    "phoneGraphWidth": 300,
+    "phoneTableWidth": 300,
+    "phonePageWidth": 390
+  },
+  "findings": [
+    "source-link contrast corrected",
+    "independent graph given dark contrast surface",
+    "modal navigation cancels pending automatic-question timer"
+  ],
+  "consoleErrors": [],
+  "reducedMotion": "shared paused-start code retained; not separately emulated",
+  "specialistReview": "not performed",
+  "publication": "pending"
+}

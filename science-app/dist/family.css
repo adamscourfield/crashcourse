@@ -156,3 +156,14 @@ dialog:has(.mastery-dashboard){width:min(1120px,94vw);max-width:1120px}.mastery-
 @media(max-width:800px){.geo-panel{min-height:400px}.geo-controls .scene-button{font-size:11px}}
 
 .geo-panel .eyebrow{color:#e2eaec}
+/* Geography source links stay readable on both model and question surfaces. */
+#geographyContent #gPanel .geo-caption a{color:#f4c2af;text-underline-offset:3px}
+#geographyContent .geo-data{width:100%;border-collapse:collapse;font-size:13px;line-height:1.6}
+#geographyContent .geo-data caption{text-align:left;padding:0 0 12px;font-weight:600}
+#geographyContent .geo-data th,#geographyContent .geo-data td{padding:8px 10px;text-align:left;border-bottom:1px solid #8ba5b755}
+#geographyContent #gBody .geo-caption{color:var(--muted);margin-bottom:20px}
+#geographyContent #gBody .geo-caption a{color:var(--navy);text-underline-offset:3px}
+#geographyContent #gBody .geo-scene{background:#1b3448;border-radius:14px;padding:16px;box-sizing:border-box;margin:12px 0}
+#geographyContent .geo-chart-values{font-size:13px;margin:12px 0 20px}
+#geographyContent .geo-chart-values summary{cursor:pointer;padding:10px 0;text-decoration:underline;text-underline-offset:3px}
+#geographyContent .geo-chart-values[open] summary{margin-bottom:10px}
