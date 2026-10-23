@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-23",
+  "subject": "Edexcel Geography A1GA0 Issue5",
+  "built_lessons": 5,
+  "practice_items": 15,
+  "check_items": 20,
+  "automated_tests_passed": 618,
+  "browser_cases": [
+    "Blank pathway rejected; two landscape choices plus resource and physical/human fieldwork restored on reload",
+    "Five full lesson journeys completed5/5",
+    "Premature investigation continuation rejected",
+    "All required model view comparisons and challenge sets completed",
+    "Automatic check navigation to results;75percent rejected;100percent retake passed",
+    "Wrong recall first answer locked after reload; correct recall clears gap",
+    "Science and Maths progress retained across subject switches",
+    "Five model/card layouts at390px no horizontal overflow",
+    "Process full0-1-2-0 cycle autoplay with Loop default observed"
+  ],
+  "limits": [
+    "152content references indexed; future detailed briefs and full audit pending",
+    "Authentic geological/OS maps and constructed writing need separate evidence",
+    "No actual fieldwork participation or specialist-review claim",
+    "Topic assessment not yet built"
+  ],
+  "console_errors_observed": []
+}

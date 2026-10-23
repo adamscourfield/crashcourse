@@ -151,3 +151,8 @@ dialog:has(.mastery-dashboard){width:min(1120px,94vw);max-width:1120px}.mastery-
 @media(max-width:800px){#progressBadge{margin:0;font-size:9px}.mastery-overview{gap:20px;align-items:flex-start}.mastery-ring{width:120px;height:120px;padding:10px}.mastery-ring strong{font-size:28px}.mastery-counts{grid-template-columns:1fr;gap:12px}.mastery-counts>div{gap:2px}.mastery-counts strong{font-size:24px}.mastery-counts span{font-size:11px}.mastery-stages{grid-template-columns:1fr 1fr}.mastery-performance{grid-template-columns:1fr}.mastery-stat{display:grid;grid-template-columns:1fr auto;gap:8px}.mastery-stat small{grid-column:1/-1}.mastery-stat strong{grid-row:1/3;grid-column:2}.mastery-actions{grid-template-columns:1fr;gap:0}.mastery-topic>summary{grid-template-columns:1fr 68px 12px;gap:12px}}
 #progressButton[hidden]{display:none!important}
 @media(max-width:800px){.sidebar .nav{flex:1 1 16%;min-width:0}}
+
+.geo-panel{padding:28px 24px;display:flex;flex-direction:column;gap:18px}.geo-scene{width:100%;max-height:355px}.geo-caption{font-size:12px;line-height:1.7;color:#dae3e7;margin:0}.geo-controls{display:flex;flex-wrap:wrap;gap:8px}.geo-controls [aria-pressed="true"]{border-color:var(--coral);background:#ed8b7825}.geo-loop{font-size:12px;color:#eaf0f1}.geo-option{display:flex;align-items:center;gap:12px;padding:12px 0;font-size:14px}#modal fieldset{border:0;padding:16px 0;border-bottom:1px solid var(--line)}#modal legend{font-weight:600;font-size:14px}body:has(#geographyContent:not([hidden])) #assessmentButton{display:none!important}
+@media(max-width:800px){.geo-panel{min-height:400px}.geo-controls .scene-button{font-size:11px}}
+
+.geo-panel .eyebrow{color:#e2eaec}

@@ -1,3 +1,5 @@
+Geography A first batch23October2026: five shared1GA0 lessons, student pathway choices, independent Geography storage/recall, model controls, looping physical-process sequence and shared My progress.618tests and five full browser journeys passed. All-option roadmap/limits: curriculum/geography-a-plan.md. Source/publication handover: BUILD_STATUS.md. Entry cache geography01; Science/player/automatic-flow identities retained.
+
 Published student mastery dashboard23October2026: My progress badge and shared overview, milestone counts, accuracy, gaps, recall and topic/lesson actions.612 tests and browser/mobile checks passed; no storage migration. Metrics/limits: curriculum/mastery-dashboard.md. Publication: BUILD_STATUS.md. Cache entry mastery01; shared flow/player/dependency identity retained.
 
 Published course map cleanup23October2026: one link per topic; stale availability flags removed; shared Science topic picker and consistent Maths list.113 focused checks and desktop/mobile QA passed. Cache entry map01; unchanged dependency/player/flow identities retained. Publication: root BUILD_STATUS.md.

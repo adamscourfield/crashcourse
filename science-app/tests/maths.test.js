@@ -50,9 +50,9 @@ function evalPrompt(prompt) {
   return Function(`return (${e});`)();
 }
 
-test('maths is offered as an available subject; other non-science subjects stay planned', () => {
+test('maths is offered as an available subject; Geography is available while other subjects stay planned', () => {
   assert.equal(subjects.find(s => s.id === 'maths').status, 'available');
-  assert.ok(subjects.filter(s => !['science', 'maths'].includes(s.id)).every(s => s.status === 'planned'));
+  assert.ok(subjects.filter(s => !['science', 'maths', 'geography'].includes(s.id)).every(s => s.status === 'planned'));
 });
 
 test('every skill level generates deterministic, JSON-safe items whose own answer marks correct', () => {
