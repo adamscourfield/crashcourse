@@ -1,0 +1,9 @@
+# River evidence provenance —23October2026
+
+Barnard Castle/River Tees Environment Agency station F3504: https://environment.data.gov.uk/flood-monitoring/id/stations/F3504.html . Official page identifies instantaneous stage in metres, sampled every15minutes, and lists a historical high3.092m on23December2013 at18:30 and low0.297m on4September2017 at04:30. Only these two dated values are transcribed into river-data.js. They are not live readings, a continuous time series, paired rainfall, annual means or discharge. Gauge-datum stage is not necessarily total channel depth. The supplied timestamps are retained as printed; no timezone conversion inferred. Do not infer event causes from the values alone. No claim that extrema are immutable or exhaustive current records.
+
+EA data reuse: Open Government Licence v3 https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/ . Attribution: Environment Agency. API documentation https://environment.data.gov.uk/flood-monitoring/doc/reference . No current flood-risk advice or real-time service claimed.
+
+Tees source/mouth and lower-course modification: Tees Valley Museums https://teesvalleymuseums.org/blog/post/the-river-tees/ . Course/location support: Esri UK Education https://storymaps.arcgis.com/stories/28da69ef031348a4b32052b83e178e4e . No precise length/elevation quoted. Locality diagrams are original schematic route/concept drawings, not a surveyed course or geological map.
+
+Discharge cases in river-data.js (areas8/16m², speeds0.5/1m/s) and practice/check numerical examples are invented controlled teaching cases, NOT measured Tees data. Q=A×mean velocity; width×mean depth is an approximate area estimate. FSC fieldwork source https://www.field-studies-council.org/resources/14-16-%20geography/rivers/fieldwork/ . NRFA25008 identified for future flow-data work; no API values obtained or invented. Authentic paired UK weather/climate data analysis remains a separate evidence task.

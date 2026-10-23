@@ -1,5 +1,6 @@
-import {coastalLessons2} from './content-coasts2.js?v=20261023-coasts02r3';
-import {coastalLessons,coastTopic} from './content-coasts.js?v=20261023-coasts02r3';
+import {riverLessons,riverTopic} from './content-rivers.js?v=20261023-rivers01';
+import {coastalLessons2} from './content-coasts2.js?v=20261023-rivers01';
+import {coastalLessons,coastTopic} from './content-coasts.js?v=20261023-rivers01';
 export const source='https://qualifications.pearson.com/content/dam/pdf/GCSE/Geography-A/2016/specification-and-sample-assessments/gcse-2016-l12-geography-a-spec.pdf';
 export const topic={id:'geography.a.uk-landscape-overview',title:'The UK’s landscapes',discipline:'Physical geography'};
 const Q=(id,prompt,options,answer,why,concept)=>({id:'geo.a.'+id,prompt,options,answer,why,concept:'geo.a.'+concept});
@@ -47,5 +48,5 @@ make('people-landscapes','People change landscapes',['1.2b','Integrated skill 4'
 [Q('human.c1','A landscape containing a river, fields and a town is shaped by…',['Physical and human processes','Only glaciers','Only rock colour'],0,'Natural and human influences interact.','land-use'),Q('human.c2','A map shows more buildings than before. It directly supports…',['An increase in mapped built area','Every resident’s reason for moving','A change in all underlying geology'],0,'Do not claim motives from map symbols alone.','map-evidence'),Q('human.c3','1cm on a1:50000 map represents…',['500m','50m','50000km'],0,'50000cm=500m.','map-scale'),Q('human.c4','Which change can forestry create?',['A different pattern of tree cover','Instant metamorphism of all rocks','An absence of every physical process'],0,'Human land use changes visible landscape patterns.','land-use')],'landuse')
 ];
 
-export const topics=[topic,coastTopic];
-export const lessons=[...coreLessons,...coastalLessons,...coastalLessons2];
+export const topics=[topic,coastTopic,riverTopic];
+export const lessons=[...coreLessons,...coastalLessons,...coastalLessons2,...riverLessons];

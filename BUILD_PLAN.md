@@ -1,3 +1,5 @@
+> River batch01: Geography20lessons, new rivers topic and five1.7a–c introductions. Stage vs discharge explicitly separated; source evidence and current publication in BUILD_STATUS.md. Next river landforms/flooding/defences.
+
 > Coastal batch02: five further lessons bring Geography to15; coastal teaching refs1.3–1.6 mapped, authentic/constructed evidence and specialist review open. Next river processes. Named image policy: genuine2013 Old Harry photo credited at point of use.
 
 > Coastal batch01: five lessons added; Geography10 built, optional topic/progress/recall now pathway scoped. Next coastal deposition/management/named landscape. See BUILD_STATUS.md for actual publication/QA.

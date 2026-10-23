@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-23",
+  "lessons": [
+    "geography.a.rivers.slopes",
+    "geography.a.rivers.sediment",
+    "geography.a.rivers.downstream",
+    "geography.a.rivers.tees-flow",
+    "geography.a.rivers.weather"
+  ],
+  "automated_full_passed": 645,
+  "focused_passed": 11,
+  "browser": [
+    "Five complete journeys",
+    "Premature/wrong challenge blocked",
+    "Eight sediment observations and final model view restored",
+    "Wrong discharge-unit practice corrected",
+    "Independent first answer locked after reload;75percent fail;100percent retake",
+    "Static profiles no player; route/EA record hide player; processes start Pause/Loop",
+    "Independent EA source table without teaching analysis"
+  ],
+  "limits": [
+    "Stage is not discharge or paired rainfall",
+    "Invented Q cases not Tees measurements",
+    "Authentic BGS/OS/weather climate data and constructed evidence open",
+    "No full assistive-device/specialist/fieldwork certification"
+  ],
+  "publication": "pending"
+}

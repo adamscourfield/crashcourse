@@ -7,7 +7,7 @@ https://qualifications.pearson.com/content/dam/pdf/GCSE/Geography-A/2016/specifi
 
 Source PDF SHA256:23a7efbc494586728d805813bbd63622047a23a277e07b8ecad1218c875136b3. The PDF was read locally for layout and reference indexing; it is not redistributed. Pearson’s current Issue5 supersedes the older1h30 Paper1 timing: Paper1 is1h45 from2026,94marks/37.5%; Paper2 is1h30,94marks/37.5%; Paper3 is1h30,64marks/25%. Spelling/grammar/specialist terminology contribute within each paper. The qualification is not separated into the Science/Maths Foundation/Higher pathways.
 
-User decision: cover all options for the platform; students choose their own exam pathway. No school’s choices are silently assumed. The app provides the shared core and ten coastal teaching lessons, and stores the pathway separately from Science and Maths progress.
+User decision: cover all options for the platform; students choose their own exam pathway. No school’s choices are silently assumed. The app provides the shared core, ten coastal teaching lessons and five river lessons, and stores the pathway separately from Science and Maths progress.
 
 ## Course structure and choices
 
@@ -29,7 +29,7 @@ The specification requires three in-depth case studies (UK city, developing/emer
 
 ## Planning artefacts
 
-- geography-a-lesson-roadmap.csv:88 current authoring units across14 course/option/skills groups;15 built,73 provisional. Grouped units will split when detailed lesson briefs are written. This is not a fixed full-course lesson total or a claim the remaining units are fully designed.
+- geography-a-lesson-roadmap.csv:92 current authoring units across14 course/option/skills groups;20 built,72 provisional. Grouped units will split when detailed lesson briefs are written. This is not a fixed full-course lesson total or a claim the remaining units are fully designed.
 - geography-a-requirements.csv:152 lettered content references indexed for Topics1–6 and8, each linked to a planned authoring group. Beyond the first core, status explicitly remains statement-brief pending. A reference index is not a completed content audit.
 - geography-a-fieldwork-requirements.csv:30 separate rows for required question/method/context/secondary-source evidence and the six enquiry stages.
 - geography-a-skills.csv:30 general/cartographic/graphical/numerical/statistical/enquiry skills and13 grouped exam command entries.
@@ -56,7 +56,9 @@ Issue5 Appendix1 says at least two fieldwork **occasions**, outside classroom an
 
 Coastal teaching refs1.3a–1.6a now built in ten lessons. Second brief/mapping: briefs/geography-a-coasts-02.md; geography-a-coasts02-coverage.csv. Swanage Bay/Old Harry is one named example, with genuine attributed2013 photograph, not a replacement for every school’s case choice. Case library geography-a-case-library.csv. Authentic OS/BGS/GIS and UK weather-data tasks, constructed explanations/calculations, extended management judgements and specialist review remain open.
 
-Next: brief first five river lessons against1.7a–c: subaerial slope processes; river erosion/transport/deposition; channel and valley changes downstream; discharge/velocity/sediment along a named UK river; weather/climate effects. Verify the named river and datasets before implementation. Retain course option separation and use looping process models only where time/movement explains the objective.
+First five river-process lessons against1.7a–c now implemented. Tees source/mouth verified; two historical EA stage values are authentic but not discharge, a hydrograph or paired UK rainfall. Q=A×v examples are explicitly invented. Brief/mapping: briefs/geography-a-rivers-01.md; geography-a-rivers01-coverage.csv. UK BGS-map/profile and weather-data evidence remain open.
+
+Next five: brief1.8a erosional/geology landforms,1.8b depositional forms,1.8c meanders/oxbows,1.9a human flood causes/effects,1.9b river defences. Named1.10landscape synthesis follows; do not mark it covered merely from the Tees location introduction. Continue genuine imagery where recognition needs it, and default loops for process models while static evidence stays static.
 
 ## Publication and QA
 
