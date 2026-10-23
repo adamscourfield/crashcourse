@@ -4,8 +4,7 @@ geography.a.landscapes.geology-map,Reading the UK’s geology,overview,1.1a,impl
 geography.a.landscapes.geology-relief,Why uplands and lowlands differ,overview,1.1b,implemented
 geography.a.landscapes.physical-landscapes,Physical processes shape landscapes,overview,1.2a,implemented
 geography.a.landscapes.people-landscapes,People change landscapes,overview,1.2b,implemented
-geography.a.coasts.1-3,Coastal processes and controls,coasts,1.3,provisional_planned_split_after_statement_brief
-geography.a.coasts.1-4,Coastal landforms,coasts,1.4,provisional_planned_split_after_statement_brief
+geography.a.coasts.1-4,Coastal depositional landforms,coasts,1.4b,provisional_planned_split_after_statement_brief
 geography.a.coasts.1-5,Coastal change and management,coasts,1.5,provisional_planned_split_after_statement_brief
 geography.a.coasts.1-6,Named UK coastal landscape,coasts,1.6,provisional_planned_split_after_statement_brief
 geography.a.rivers.1-7,River processes and profiles,rivers,1.7,provisional_planned_split_after_statement_brief
@@ -81,3 +80,8 @@ geography.a.skills.6,Ratios units area frequency and logarithmic scales,skills,p
 geography.a.skills.7,Averages spread quartiles percentages and percentiles,skills,pp31–32;Appendix3,provisional_planned_split_after_statement_brief
 geography.a.skills.8,Bivariate data best-fit interpolation extrapolation and bias,skills,pp31–32;Appendix3,provisional_planned_split_after_statement_brief
 geography.a.skills.9,Geographical reasoning and command words,skills,pp31–32;Appendix3,provisional_planned_split_after_statement_brief
+geography.a.coasts.weathering,Weathering and mass movement,coasts,1.3a,implemented
+geography.a.coasts.sediment,Erosion and sediment journeys,coasts,1.3a,implemented
+geography.a.coasts.waves-geology,Waves meet the rocks,coasts,1.3b;Integrated skill 5: introductory,implemented
+geography.a.coasts.weather-retreat,"Weather, storms and retreat",coasts,1.3c;Integrated skill 6: teaching data,implemented
+geography.a.coasts.erosional-landforms,How coastal landforms develop,coasts,1.4a;Integrated skill 7: diagram introduction,implemented

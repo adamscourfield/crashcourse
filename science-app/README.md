@@ -1,3 +1,5 @@
+Geography coastal batch01: five lessons/15practice/20checks,30 model views; looping/manual/reduced-motion controls. Topic/pathway progress and review scoped with hidden-option records retained.627 full tests plus8focused; five full browser journeys and390px fit. Brief/mapping/QA/publication: BUILD_STATUS.md;curriculum/briefs/geography-a-coasts-01.md;geography-coasts-browser-evidence.json.
+
 Release23October2026: Geography first5 and Maths Geometry6–10 published together;625 merged tests passed. Maths55lessons/136skills, cache r10. Publication identifiers/proof: BUILD_STATUS.md.
 
 Geography A first batch23October2026: five shared1GA0 lessons, student pathway choices, independent Geography storage/recall, model controls, looping physical-process sequence and shared My progress.618tests and five full browser journeys passed. All-option roadmap/limits: curriculum/geography-a-plan.md. Source/publication handover: BUILD_STATUS.md. Entry cache geography01; Science/player/automatic-flow identities retained.

@@ -1,3 +1,5 @@
+> Coastal batch01: five lessons added; Geography10 built, optional topic/progress/recall now pathway scoped. Next coastal deposition/management/named landscape. See BUILD_STATUS.md for actual publication/QA.
+
 > Geography imagery policy23October2026: use photoreal references for recognition; genuine sourced photos for named sites and dated change evidence; retain analytical diagrams/process loops. Audit curriculum/geography-imagery-audit.md.
 
 > Current subject build23October2026: Edexcel Geography A1GA0, Issue5. User requests all options with student pathway selection. First5 shared landscape lessons implemented; provisional82-unit roadmap and precise next Coastal batch in curriculum/geography-a-plan.md. Keep Science/Maths/Geography state independent and preserve automatic flow, model policy and My progress.

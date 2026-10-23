@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-23",
+  "lessons": [
+    "geography.a.coasts.weathering",
+    "geography.a.coasts.sediment",
+    "geography.a.coasts.waves-geology",
+    "geography.a.coasts.weather-retreat",
+    "geography.a.coasts.erosional-landforms"
+  ],
+  "automated_full_passed": 627,
+  "final_focused_passed": 8,
+  "practice_items": 15,
+  "check_items": 20,
+  "browser": [
+    "Five complete journeys",
+    "Premature/wrong challenge blocked; practice retry",
+    "Independent first answer reload lock;75percent fail;100percent retake",
+    "Pathway coast10of10 to noncoast5of5 and reload/back preserves all completion",
+    "Topic-specific recall opens coastal question",
+    "Five390px layouts no horizontal overflow",
+    "Default Pause/Loop; manual End pauses; single playback stops"
+  ],
+  "limits": [
+    "Conceptual not calibrated or named-site models",
+    "Teaching retreat data not real UK monitoring",
+    "Constructed and authentic map/weather evidence open",
+    "Reduced-motion startup code inspected; no full assistive-device or specialist review"
+  ],
+  "publication": "pending"
+}

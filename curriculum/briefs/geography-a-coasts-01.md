@@ -1,0 +1,30 @@
+# Coastal processes batch 01 — five lesson briefs
+
+## Identity and eligibility
+Geography; Pearson Edexcel GCSE Geography A1GA0 Issue5 September2025, untiered. Checked23October2026. Source: https://qualifications.pearson.com/content/dam/pdf/GCSE/Geography-A/2016/specification-and-sample-assessments/gcse-2016-l12-geography-a-spec.pdf printed p8. All five available within coasts option; shared core remains available to all. With no pathway chosen show built lessons as exploratory; choosing rivers/glaciers excludes coastal lessons from totals/recall/navigation without deleting progress. IDs geography.a.coasts.weathering; sediment; waves-geology; weather-retreat; erosional-landforms. Prerequisites shared rock families, resistance, physical processes; coastal lessons ordered as listed.
+
+## Learning purpose and coverage
+| ID suffix | Statement scope | Observable objectives and misconceptions |
+|---|---|---|
+| weathering |1.3a subaerial processes|Distinguish mechanical, chemical and biological weathering; distinguish planar sliding from rotational slumping; explain saturation/toe erosion as potential triggers. Weathering happens in place, gravity moves a mass; rainfall does not guarantee failure.|
+| sediment |1.3a marine erosion/transport/deposition|Distinguish hydraulic action, abrasion, attrition, solution; traction/saltation/suspension/dissolved transport; explain oblique swash and downslope backwash moving sediment alongshore; predict reversal and deposition when transport capacity falls. Sediment moves alongshore, not simply the entire sea.|
+| waves-geology |1.3b|Compare constructive/destructive swash/backwash; compare parallel/perpendicular rock bands; explain joints/faults as weaknesses and differential resistance as a control. Relative resistance is not absolute immunity. Concordant coasts can be breached.|
+| weather-retreat |1.3c; integrated skill6 introductory|Explain wind strength/duration/fetch, exposure, seasonality, storms and rainfall/slope links; distinguish prevailing from daily wind; calculate multi-year mean recession and distinguish mean from annual prediction. Teaching data are invented, not UK observations or full weather-data skill fulfilment.|
+| erosional-landforms |1.4a|Explain differential erosion of headlands/bays; cave→arch→stack sequence; hydraulic action/abrasion and weathering/mass movement; cliff notch, collapse, retreat/platform development. Stack pathway is conditional, not every cliff’s lifecycle.|
+
+## Discover
+Each lesson has three original explanation cards and causal worked comparisons. Original animated SVGs show repeated short process sequences, with view selectors for process variants, Pause/Play, Loop, manual beginning/middle/end. Reduced-motion starts paused; text describes changing evidence and labels distinguish roles without relying on colour. Static geology/feature views remain labelled; animation only where movement/time is meaningful. Conceptual stages are not calibrated rates, exact shapes, literal scaled fluid simulations or named-site photographs. No fabricated before/after evidence. Diagrams are more useful for this batch’s causal objectives; genuine located images may be added for the later named UK coast study.
+
+## Investigate
+Four challenges each: identify mechanism; predict contrasting case; interpret model evidence; avoid overclaim. Every labelled view must be compared AND all challenge answers correct; premature progression blocked; mistakes receive correction guidance and remain editable. Model selectors alter movement path (planar/rotational, rolling/bouncing/suspended, oblique swash, wave balance, erosion stages). Timeline is reversible, and completing view observations does not bypass questions. Predict before comparing the contrasting view. Weather lesson worked example: retreat0m at year0,6m at year2,15m at year5 =>15/5=3m/year; interval6/2 and9/3 also3. Separate practice/check examples vary totals/years. No real monitoring claim.
+
+## Practise / independent check
+Each lesson three feedback-led practice items plus four fresh independent selected-response checks, original IDs geo.a.coast.<suffix>.p1–p3/c1–c4; stable concept IDs. Keys and full reasoning in content-coasts.js. Distractors target mechanism/transport confusion, immunity claims, reversing swash/backwash, dividing by number of observations rather than elapsed years, deterministic storm/landform claims. First practice attempt retained, retry editable; correct auto-next with Stay here. Check first answers lock, auto-next;80% plus all four stages completes. Fixed retake set clearly named Try check again. No extended-writing, constructed calculation, authentic OS/BGS map, physical fieldwork or specialist evidence certification.
+
+## Review / skills / resume
+Missed concepts schedule recall; topic-specific review and mastery scoped to pathway; hidden-option records retained across changes. All IDs unchanged for existing core. Restore model selection, reading, challenges, answers and review. Compare causal diagrams and teaching time-series; read map-like plans but authentic geological/OS interpretation integrated skills5/7 remains open. Skill6 only arithmetic teaching support, genuine UK weather/multi-year data pending. Skills8/managing coast, deposition landforms1.4b and named example1.6 remain later work.
+
+## Verification and handover
+Check content/model consistency, every view finite, all gate failures, option scope and restore; browser full five journeys, wrong/retry, resume, first-answer lock, autoplay/reduced-motion policy, manual stages, mobile fit, existing core progress. Update registers/statement map/status and publication identifiers separately. Next: depositional forms, human impacts, defences and named UK coast. Technical checks are not specialist review.
+
+Supporting primary sources checked23October2026: https://www.bgs.ac.uk/discovering-geology/earth-hazards/landslides/ ; https://www.bgs.ac.uk/discovering-geology/geological-processes/erosion/ ; https://www.noaa.gov/jetstream/ocean/waves ; https://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/storms/storm-surge . No third-party photos copied.
