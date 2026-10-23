@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-radiation01';
-import{tasksForFrc1,validFrc1,advanceFrc1,numericFrc1,experimentOptions,experimentResult,experimentCases,experimentValid,predictionValid,outputLabel}from './frc1-models.js?v=20261022-radiation01';import{showFrc1}from './frc1-visuals.js?v=20261022-radiation01';export{showFrc1};
+import{syncProcessMovie}from './process-player.js?v=20261023-physicscomplete01';
+import{tasksForFrc1,validFrc1,advanceFrc1,numericFrc1,experimentOptions,experimentResult,experimentCases,experimentValid,predictionValid,outputLabel}from './frc1-models.js?v=20261023-physicscomplete01';import{showFrc1}from './frc1-visuals.js?v=20261023-physicscomplete01';export{showFrc1};
 export function mountFrc1(l,p,root,{save,done,feedback}){let ts=tasksForFrc1(l.widget.slice(5),l.learnerTier),w=p.widget;w.frc1Task??=ts[0].id;w.frc1Drafts??={};w.frc1Passed??=[];let i=ts.findIndex(t=>t.id===w.frc1Task);if(i<0)i=0;let t=ts[i],v=w.frc1Drafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountFrc1(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.frc1Passed.includes(t.id));
 syncProcessMovie(l,1,{process:false});
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

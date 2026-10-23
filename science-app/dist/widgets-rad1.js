@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-radiation01';
-import{tasksForRad1,validRad1,advanceRad1,numericRad1,experimentOptions,experimentResult,experimentCases,experimentValid,predictionValid,outputLabel}from './rad1-models.js?v=20261022-radiation01';import{showRad1}from './rad1-visuals.js?v=20261022-radiation01';export{showRad1};
+import{syncProcessMovie}from './process-player.js?v=20261023-physicscomplete01';
+import{tasksForRad1,validRad1,advanceRad1,numericRad1,experimentOptions,experimentResult,experimentCases,experimentValid,predictionValid,outputLabel}from './rad1-models.js?v=20261023-physicscomplete01';import{showRad1}from './rad1-visuals.js?v=20261023-physicscomplete01';export{showRad1};
 export function mountRad1(l,p,root,{save,done,feedback}){let ts=tasksForRad1(l.widget.slice(5),l.learnerTier),w=p.widget;w.rad1Task??=ts[0].id;w.rad1Drafts??={};w.rad1Passed??=[];let i=ts.findIndex(t=>t.id===w.rad1Task);if(i<0)i=0;let t=ts[i],v=w.rad1Drafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountRad1(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.rad1Passed.includes(t.id));
 syncProcessMovie(l,1,{process:false});
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

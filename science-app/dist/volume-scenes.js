@@ -1,4 +1,4 @@
-import {renderDiagram} from './visual.js?v=20261022-radiation01';
+import {renderDiagram} from './visual.js?v=20261023-physicscomplete01';
 const fmt=n=>Number(n.toPrecision(6));
 export function showVolume(kind,t=null,r=null){
  const molar=kind==='molar-concentration',reacting=kind==='reacting-solutions';let title,formula,rows;

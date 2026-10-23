@@ -134,3 +134,7 @@ button[data-site][aria-pressed="true"]::before{content:'✓ ';font-weight:700}
 #diagram:has(.special-diagram){bottom:max(var(--caption-space,250px),190px)}
 
 #diagram:has(.photo-diagram),#diagram:has(.photo-data){bottom:max(var(--caption-space,250px),190px)}.photo-data{width:100%;border-collapse:collapse;color:inherit;font-size:13px}.photo-data th,.photo-data td{padding:7px 6px;text-align:center;border-bottom:1px solid #9eb3b544}.scene-panel .photo-data{color:#f4eee5}.scene-panel:has(#diagram .photo-data){min-height:880px}.scene-panel:has(#diagram .photo-diagram):has(#diagram .photo-data){min-height:950px}.activity .photo-data{font-size:12px;margin:10px 0}
+/* Physics diagrams carry their own model heading and labels. Give that teaching
+   space to the visual rather than a second generic caption below it. */
+.scene-panel:not(.process-view):has(#diagram > :is(.rad1-diagram,.frc1-diagram,.wav1-diagram,.mag1-diagram,.spa1-diagram)) > .scene-title{display:none}
+.scene-panel:not(.process-view) > #diagram:has(> :is(.rad1-diagram,.frc1-diagram,.wav1-diagram,.mag1-diagram,.spa1-diagram)){top:70px;bottom:48px}

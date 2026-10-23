@@ -1,4 +1,4 @@
-import{reflexLabels,synapseState,reactionTrials,rulerScale}from './neural-models.js?v=20261022-radiation01';
+import{reflexLabels,synapseState,reactionTrials,rulerScale}from './neural-models.js?v=20261023-physicscomplete01';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const nt=(x,y,s,size=18)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f8f6f2" font-size="${size}">${esc(s)}</text>`;
 export const neuralSVG=(art,label)=>`<svg class="shell-diagram neural-diagram" viewBox="0 0 560 400" role="img" aria-label="${esc(label)}">${art}</svg>`;

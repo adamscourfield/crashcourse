@@ -1,3 +1,5 @@
+> Physics teaching roadmap implemented23October2026. See BUILD_STATUS.md for publication and evidence gaps; curriculum/physics-completion-coverage.md for route/tier totals. Next priority is specialist and constructed-evidence review. Earlier recommendations below are historical.
+
 > Current priority (22 October2026): finish the entire remaining Physics teaching programme. Follow curriculum/physics-completion-plan.md and BUILD_STATUS.md; earlier recommendations below are historical.
 
 # Crash Course — lesson-building plan

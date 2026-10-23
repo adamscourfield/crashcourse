@@ -1,3 +1,9 @@
+# Current release: all Science teaching roadmaps implemented
+
+361Science lessons:113Chemistry150Biology98Physics.37Maths lessons/99skills, including incoming Algebra21–22.581merged automated checks and representative browser journeys passed; publication state/identifiers in BUILD_STATUS.md. Physics has route/tier filters, purposeful process loops and static diagrams; specialist, constructed-response and physical practical evidence remain separate. Global20261023-physicscomplete01,Maths-r8.
+
+The batch handovers below are historical.
+
 ## Physics Electricity batch02 — implemented, published and GitHub updated
 
 Five shared both-tier lessons: series circuits, parallel circuits, resistor-combinations practical preparation, thermistors/thermostats and LDRs/automatic lights. AQA8463/8464 4/6.2.2, .2.1.3 and .2.1.4 checked22October2026. Series sameI/sharedpd/summedR/equivalentR calculations; parallel samepd across closed branches/summedI/lowerR/adding or opening branches. No parallel equivalent-resistance formula or numerical equivalent-resistance assessment required. Combinations plus previous wire lesson now cover both planned RP3 Physics/RP15 Trilogy teaching-preparation parts, AT1/6/7; physical competence remains separate. NTC thermistorR falls withT; LDRR falls with illumination, with AT6 measurement/graph opportunities and thermostat/dark-light applications.28 grouped teaching/support rows; no complete Electricity statement/evidence audit or specialist certification claimed.

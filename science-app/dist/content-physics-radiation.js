@@ -43,7 +43,11 @@ export const rad1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "subatomic",
+      "isotopes",
+      "electrons"
+    ],
     "skills": [
       "WS1.2",
       "WS3.5",
@@ -195,7 +199,9 @@ export const rad1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "models"
+    ],
     "skills": [
       "WS1.2",
       "WS3.5",
@@ -347,7 +353,9 @@ export const rad1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.atomic-structure.atoms"
+    ],
     "skills": [
       "WS1.2",
       "WS3.5",
@@ -494,12 +502,14 @@ export const rad1Lessons=[
       },
       {
         "title": "Rebuild the ledger",
-        "text": "Select one of two supplied parents and alpha/beta decay. Predict daughter A and Z before revealing. The animation isolates one event and uses enlarged symbols; it is not a prediction of a particular atom’s waiting time. Conservation applies to the entire equation, not the daughter alone.",
+        "text": "Choose a supplied alpha-decay or beta-minus example, then select whether to find daughter A or Z. Predict the missing number before revealing. The examples specify a decay mode; balancing an equation alone does not predict whether any arbitrary isotope will undergo that mode. The animation isolates one event and uses enlarged symbols; it is not a prediction of a particular atom’s waiting time. Conservation applies to the entire equation, not the daughter alone.",
         "scene": "rad1:equations:3",
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.atomic-structure.radiation"
+    ],
     "skills": [
       "WS1.2",
       "WS3.5",
@@ -658,7 +668,9 @@ export const rad1Lessons=[
         "higher": true
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.atomic-structure.radiation"
+    ],
     "skills": [
       "WS1.2",
       "WS3.5",
@@ -826,7 +838,9 @@ export const rad1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.atomic-structure.radiation"
+    ],
     "skills": [
       "WS1.2",
       "WS3.5",
@@ -977,7 +991,9 @@ export const rad1Lessons=[
         "processFilm": "rad1-background"
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.atomic-structure.half-life"
+    ],
     "skills": [
       "WS1.2",
       "WS3.5",
@@ -1127,7 +1143,9 @@ export const rad1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.atomic-structure.hazards"
+    ],
     "skills": [
       "WS1.2",
       "WS3.5",
@@ -1277,7 +1295,9 @@ export const rad1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.atomic-structure.equations"
+    ],
     "skills": [
       "WS1.2",
       "WS3.5",
@@ -1427,7 +1447,9 @@ export const rad1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.atomic-structure.atoms"
+    ],
     "skills": [
       "WS1.2",
       "WS3.5",

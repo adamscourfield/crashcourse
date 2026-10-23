@@ -39,7 +39,9 @@ export const spa1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.atomic-structure.fusion"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -177,7 +179,9 @@ export const spa1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.space-physics.system"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -322,7 +326,9 @@ export const spa1Lessons=[
         "higher": true
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.forces.motion"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -476,7 +482,9 @@ export const spa1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.waves.spectrum"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",

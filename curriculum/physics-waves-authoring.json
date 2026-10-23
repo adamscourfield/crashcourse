@@ -1,98 +1,213 @@
 [
   {
-    "k": "types",
-    "title": "Transverse and longitudinal waves",
-    "refs": [
-      "6.1.1"
+    "runtime": {
+      "id": "science.physics.waves.types",
+      "title": "Transverse and longitudinal waves",
+      "short": "Transverse and longitudinal waves",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.1.1"
+      ],
+      "combinedRefs": [
+        "6.1.1"
+      ],
+      "separate": false,
+      "higher": false,
+      "minutes": 35,
+      "big": "Waves transfer energy without an overall transfer of the medium’s material. A floating marker moves up/down as ripples pass rather than travelling across the whole tank. Air molecules vibrate around local positions as a sound disturbance travels.",
+      "learn": [
+        {
+          "title": "Disturbance and travel are different",
+          "text": "Waves transfer energy without an overall transfer of the medium’s material. A floating marker moves up/down as ripples pass rather than travelling across the whole tank. Air molecules vibrate around local positions as a sound disturbance travels.",
+          "scene": "wav1:types:0",
+          "process": false
+        },
+        {
+          "title": "Compare the oscillation direction",
+          "text": "In a transverse wave, oscillation is perpendicular to energy-transfer direction. Water ripples are treated as a transverse example in this course, although real surface-particle motion is more complex. In a longitudinal wave, oscillations are parallel to travel, creating compressions and rarefactions. Sound in air is longitudinal.",
+          "scene": "wav1:types:1",
+          "process": true,
+          "processFilm": "wav1-types"
+        },
+        {
+          "title": "Watch one marker",
+          "text": "Follow the highlighted marker, not just the moving crest/compression. Its local repeated motion differs from the pattern’s progress. A slinky can demonstrate both directions, with care not to confuse the physical coil shape with the representation of air particles.",
+          "scene": "wav1:types:2",
+          "process": false
+        },
+        {
+          "title": "Predict the oscillation",
+          "text": "Choose transverse/longitudinal and the travel direction. Predict whether oscillation is perpendicular or parallel. The dots show local oscillation while the disturbance crosses the view; they do not drift along with each crest. Shapes/amplitudes are exaggerated and not molecular paths.",
+          "scene": "wav1:types:3",
+          "process": false
+        }
+      ],
+      "prerequisites": [],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-types",
+      "practice": [
+        {
+          "id": "wav1.types.practice1",
+          "prompt": "A wave mainly transfers…",
+          "options": [
+            "Energy without net transport of the medium",
+            "All medium particles across the tank",
+            "Only mass"
+          ],
+          "answer": 0,
+          "why": "Local oscillation carries a travelling disturbance.",
+          "concept": "wav1.types"
+        },
+        {
+          "id": "wav1.types.practice2",
+          "prompt": "Sound in air is…",
+          "options": [
+            "Transverse",
+            "Longitudinal",
+            "A stationary magnetic field"
+          ],
+          "answer": 1,
+          "why": "Compressions/rarefactions travel through the air.",
+          "concept": "wav1.types"
+        },
+        {
+          "id": "wav1.types.practice3",
+          "prompt": "In a transverse wave oscillations are…",
+          "options": [
+            "Parallel to travel",
+            "Absent",
+            "Perpendicular to travel"
+          ],
+          "answer": 2,
+          "why": "Compare directions, not the drawn line shape alone.",
+          "concept": "wav1.types"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.types.check1",
+          "prompt": "A floating marker rises and falls while ripples pass. This supports…",
+          "options": [
+            "Energy travels while water has local oscillation",
+            "Every water particle crosses the tank",
+            "No wave exists"
+          ],
+          "answer": 0,
+          "why": "Disturbance and medium motion differ.",
+          "concept": "wav1.types"
+        },
+        {
+          "id": "wav1.types.check2",
+          "prompt": "A longitudinal compression is a region where particles are…",
+          "options": [
+            "More spread out",
+            "Closer together",
+            "At zero temperature"
+          ],
+          "answer": 1,
+          "why": "Rarefaction has lower particle concentration.",
+          "concept": "wav1.types"
+        },
+        {
+          "id": "wav1.types.check3",
+          "prompt": "For a wave travelling right, transverse oscillation could be…",
+          "options": [
+            "Right only",
+            "Right and left only",
+            "Up and down"
+          ],
+          "answer": 2,
+          "why": "It is perpendicular to rightward travel.",
+          "concept": "wav1.types"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "completionKey": "wav1Passed"
+      }
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "types",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "A wave mainly transfers…",
+            [
+              "Energy without net transport of the medium",
+              "All medium particles across the tank",
+              "Only mass"
+            ],
+            0,
+            "Local oscillation carries a travelling disturbance."
+          ],
+          [
+            "1",
+            "Sound in air is…",
+            [
+              "Transverse",
+              "Longitudinal",
+              "A stationary magnetic field"
+            ],
+            1,
+            "Compressions/rarefactions travel through the air."
+          ],
+          [
+            "2",
+            "In a transverse wave oscillations are…",
+            [
+              "Parallel to travel",
+              "Absent",
+              "Perpendicular to travel"
+            ],
+            2,
+            "Compare directions, not the drawn line shape alone."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "types-data",
+        "type": "numeric",
+        "prompt": "A marker completes12 oscillations in3 s. Find frequency in Hz.",
+        "answer": 4,
+        "unit": "stated units",
+        "reasonChoices": [
+          "12 ÷ 3",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "types-model",
+        "type": "experiment",
+        "experiment": "types",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      }
     ],
-    "cards": [
-      [
-        "Disturbance and travel are different",
-        "Waves transfer energy without an overall transfer of the medium’s material. A floating marker moves up/down as ripples pass rather than travelling across the whole tank. Air molecules vibrate around local positions as a sound disturbance travels."
-      ],
-      [
-        "Compare the oscillation direction",
-        "In a transverse wave, oscillation is perpendicular to energy-transfer direction. Water ripples are treated as a transverse example in this course, although real surface-particle motion is more complex. In a longitudinal wave, oscillations are parallel to travel, creating compressions and rarefactions. Sound in air is longitudinal."
-      ],
-      [
-        "Watch one marker",
-        "Follow the highlighted marker, not just the moving crest/compression. Its local repeated motion differs from the pattern’s progress. A slinky can demonstrate both directions, with care not to confuse the physical coil shape with the representation of air particles."
-      ],
-      [
-        "Predict the oscillation",
-        "Choose transverse/longitudinal and the travel direction. Predict whether oscillation is perpendicular or parallel. The dots show local oscillation while the disturbance crosses the view; they do not drift along with each crest. Shapes/amplitudes are exaggerated and not molecular paths."
-      ]
-    ],
-    "practice": [
-      [
-        "A wave mainly transfers…",
-        [
-          "Energy without net transport of the medium",
-          "All medium particles across the tank",
-          "Only mass"
-        ],
-        0,
-        "Local oscillation carries a travelling disturbance."
-      ],
-      [
-        "Sound in air is…",
-        [
-          "Transverse",
-          "Longitudinal",
-          "A stationary magnetic field"
-        ],
-        1,
-        "Compressions/rarefactions travel through the air."
-      ],
-      [
-        "In a transverse wave oscillations are…",
-        [
-          "Parallel to travel",
-          "Absent",
-          "Perpendicular to travel"
-        ],
-        2,
-        "Compare directions, not the drawn line shape alone."
-      ]
-    ],
-    "check": [
-      [
-        "A floating marker rises and falls while ripples pass. This supports…",
-        [
-          "Energy travels while water has local oscillation",
-          "Every water particle crosses the tank",
-          "No wave exists"
-        ],
-        0,
-        "Disturbance and medium motion differ."
-      ],
-      [
-        "A longitudinal compression is a region where particles are…",
-        [
-          "More spread out",
-          "Closer together",
-          "At zero temperature"
-        ],
-        1,
-        "Rarefaction has lower particle concentration."
-      ],
-      [
-        "For a wave travelling right, transverse oscillation could be…",
-        [
-          "Right only",
-          "Right and left only",
-          "Up and down"
-        ],
-        2,
-        "It is perpendicular to rightward travel."
-      ]
-    ],
-    "calc": [
-      "A marker completes12 oscillations in3 s. Find frequency in Hz.",
-      4,
-      "12 ÷ 3"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "transverse",
@@ -129,105 +244,224 @@
         ]
       ]
     },
-    "separate": false,
-    "higher": false,
-    "film": true,
-    "extra": null
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "properties",
-    "title": "Amplitude, wavelength, frequency and speed",
-    "refs": [
-      "6.1.2"
+    "runtime": {
+      "id": "science.physics.waves.properties",
+      "title": "Amplitude, wavelength, frequency and speed",
+      "short": "Amplitude, wavelength, frequency and speed",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.1.2"
+      ],
+      "combinedRefs": [
+        "6.1.2"
+      ],
+      "separate": false,
+      "higher": false,
+      "minutes": 35,
+      "big": "Amplitude is maximum displacement from equilibrium, not peak-to-trough height. Wavelength λ is distance between adjacent equivalent-phase points, such as crest to crest or compression to compression. Frequency f is cycles per second in hertz. Period T is time per cycle: T=1/f.",
+      "learn": [
+        {
+          "title": "Name four wave quantities",
+          "text": "Amplitude is maximum displacement from equilibrium, not peak-to-trough height. Wavelength λ is distance between adjacent equivalent-phase points, such as crest to crest or compression to compression. Frequency f is cycles per second in hertz. Period T is time per cycle: T=1/f.",
+          "scene": "wav1:properties:0",
+          "process": false
+        },
+        {
+          "title": "Use v = fλ",
+          "text": "Wave speed is frequency times wavelength. For f=5 Hz and λ=0.4 m, v=2 m/s. All waves obey the wave equation. Use metres for wavelength and seconds for time. Rearranging gives λ=v/f and f=v/λ.",
+          "scene": "wav1:properties:1",
+          "process": true,
+          "processFilm": "wav1-properties"
+        },
+        {
+          "title": "Changing medium",
+          "text": "Frequency is fixed by the source. When a sound wave enters a medium with a different speed, wavelength changes in proportion to speed at unchanged frequency. This explicit speed/frequency/wavelength transmission requirement is separate Physics. It does not mean amplitude or energy transmission must stay unchanged.",
+          "scene": "wav1:properties:2",
+          "process": false
+        },
+        {
+          "title": "Make a wave prediction",
+          "text": "Choose frequency and wavelength; predict wave speed. Markers oscillate locally and crests move across a ruler. The horizontal distance represents model wavelength while playback is slowed; visual speed is illustrative and the numerical ledger supplies SI values.",
+          "scene": "wav1:properties:3",
+          "process": false
+        }
+      ],
+      "prerequisites": [
+        "science.physics.waves.types"
+      ],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-properties",
+      "practice": [
+        {
+          "id": "wav1.properties.practice1",
+          "prompt": "Amplitude is measured from…",
+          "options": [
+            "Equilibrium to maximum displacement",
+            "Crest to adjacent crest",
+            "Peak to trough"
+          ],
+          "answer": 0,
+          "why": "Peak-to-trough is twice the amplitude for a symmetric wave.",
+          "concept": "wav1.properties"
+        },
+        {
+          "id": "wav1.properties.practice2",
+          "prompt": "Period is…",
+          "options": [
+            "Frequency times wavelength",
+            "1/frequency",
+            "Frequency squared"
+          ],
+          "answer": 1,
+          "why": "Units are seconds per cycle.",
+          "concept": "wav1.properties"
+        },
+        {
+          "id": "wav1.properties.practice3",
+          "prompt": "Wave speed equals…",
+          "options": [
+            "f/λ",
+            "λ/f",
+            "fλ"
+          ],
+          "answer": 2,
+          "why": "Check units:1/s ×m=m/s.",
+          "concept": "wav1.properties"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.properties.check1",
+          "prompt": "A wave has f4 Hz and λ0.5 m. Speed is…",
+          "options": [
+            "2 m/s",
+            "8 m/s",
+            "0.125 m/s"
+          ],
+          "answer": 0,
+          "why": "Wave speed=fλ=4 Hz×0.5 m=2 m/s.",
+          "concept": "wav1.properties"
+        },
+        {
+          "id": "wav1.properties.check2",
+          "prompt": "A period of0.02 s corresponds to…",
+          "options": [
+            "0.02 Hz",
+            "50 Hz",
+            "2 Hz"
+          ],
+          "answer": 1,
+          "why": "Frequency is reciprocal period:1/0.02 s=50 Hz.",
+          "concept": "wav1.properties"
+        },
+        {
+          "id": "wav1.properties.check3",
+          "prompt": "A symmetric wave has peak-to-trough height8 cm. Amplitude is…",
+          "options": [
+            "8 cm",
+            "16 cm",
+            "4 cm"
+          ],
+          "answer": 2,
+          "why": "Amplitude is half the full vertical excursion.",
+          "concept": "wav1.properties"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "completionKey": "wav1Passed"
+      }
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "properties",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "Amplitude is measured from…",
+            [
+              "Equilibrium to maximum displacement",
+              "Crest to adjacent crest",
+              "Peak to trough"
+            ],
+            0,
+            "Peak-to-trough is twice the amplitude for a symmetric wave."
+          ],
+          [
+            "1",
+            "Period is…",
+            [
+              "Frequency times wavelength",
+              "1/frequency",
+              "Frequency squared"
+            ],
+            1,
+            "Units are seconds per cycle."
+          ],
+          [
+            "2",
+            "Wave speed equals…",
+            [
+              "f/λ",
+              "λ/f",
+              "fλ"
+            ],
+            2,
+            "Check units:1/s ×m=m/s."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "properties-data",
+        "type": "numeric",
+        "prompt": "For speed6 m/s and frequency3 Hz, find wavelength in m.",
+        "answer": 2,
+        "unit": "stated units",
+        "reasonChoices": [
+          "6 ÷ 3",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "properties-model",
+        "type": "experiment",
+        "experiment": "properties",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      }
     ],
-    "cards": [
-      [
-        "Name four wave quantities",
-        "Amplitude is maximum displacement from equilibrium, not peak-to-trough height. Wavelength λ is distance between adjacent equivalent-phase points, such as crest to crest or compression to compression. Frequency f is cycles per second in hertz. Period T is time per cycle: T=1/f."
-      ],
-      [
-        "Use v = fλ",
-        "Wave speed is frequency times wavelength. For f=5 Hz and λ=0.4 m, v=2 m/s. All waves obey the wave equation. Use metres for wavelength and seconds for time. Rearranging gives λ=v/f and f=v/λ."
-      ],
-      [
-        "Changing medium",
-        "Frequency is fixed by the source. When a sound wave enters a medium with a different speed, wavelength changes in proportion to speed at unchanged frequency. This explicit speed/frequency/wavelength transmission requirement is separate Physics. It does not mean amplitude or energy transmission must stay unchanged."
-      ],
-      [
-        "Make a wave prediction",
-        "Choose frequency and wavelength; predict wave speed. Markers oscillate locally and crests move across a ruler. The horizontal distance represents model wavelength while playback is slowed; visual speed is illustrative and the numerical ledger supplies SI values."
-      ]
-    ],
-    "practice": [
-      [
-        "Amplitude is measured from…",
-        [
-          "Equilibrium to maximum displacement",
-          "Crest to adjacent crest",
-          "Peak to trough"
-        ],
-        0,
-        "Peak-to-trough is twice the amplitude for a symmetric wave."
-      ],
-      [
-        "Period is…",
-        [
-          "Frequency times wavelength",
-          "1/frequency",
-          "Frequency squared"
-        ],
-        1,
-        "Units are seconds per cycle."
-      ],
-      [
-        "Wave speed equals…",
-        [
-          "f/λ",
-          "λ/f",
-          "fλ"
-        ],
-        2,
-        "Check units:1/s ×m=m/s."
-      ]
-    ],
-    "check": [
-      [
-        "A wave has f4 Hz and λ0.5 m. Speed is…",
-        [
-          "2 m/s",
-          "8 m/s",
-          "0.125 m/s"
-        ],
-        0,
-        "4×0.5=2."
-      ],
-      [
-        "A period of0.02 s corresponds to…",
-        [
-          "0.02 Hz",
-          "50 Hz",
-          "2 Hz"
-        ],
-        1,
-        "f=1/0.02."
-      ],
-      [
-        "A symmetric wave has peak-to-trough height8 cm. Amplitude is…",
-        [
-          "8 cm",
-          "16 cm",
-          "4 cm"
-        ],
-        2,
-        "Amplitude is half the full vertical excursion."
-      ]
-    ],
-    "calc": [
-      "For speed6 m/s and frequency3 Hz, find wavelength in m.",
-      2,
-      "6 ÷ 3"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "2",
@@ -254,105 +488,221 @@
       ],
       "unit": "m/s wave speed"
     },
-    "separate": false,
-    "higher": false,
-    "film": true,
-    "extra": null
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "measure",
-    "title": "Measuring waves in water, solids and air",
-    "refs": [
-      "6.1.2"
+    "runtime": {
+      "id": "science.physics.waves.measure",
+      "title": "Measuring waves in water, solids and air",
+      "short": "Measuring waves in water, solids and air",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.1.2"
+      ],
+      "combinedRefs": [
+        "6.1.2"
+      ],
+      "separate": false,
+      "higher": false,
+      "minutes": 35,
+      "big": "Required practical8 (separate) or20 (Trilogy) investigates frequency, wavelength and speed in a ripple tank and in a solid. Use a vibrating source, shallow water, illumination and a scale for ripples; use a vibrating string/cord with a signal generator for waves in a solid. Keep electrical equipment appropriately separated from water and control volume/amplitude.",
+      "learn": [
+        {
+          "title": "Choose suitable apparatus",
+          "text": "Required practical8 (separate) or20 (Trilogy) investigates frequency, wavelength and speed in a ripple tank and in a solid. Use a vibrating source, shallow water, illumination and a scale for ripples; use a vibrating string/cord with a signal generator for waves in a solid. Keep electrical equipment appropriately separated from water and control volume/amplitude.",
+          "scene": "wav1:measure:0",
+          "process": false
+        },
+        {
+          "title": "Measure repeated intervals",
+          "text": "Measure several wavelengths then divide by the number of complete wavelength intervals to reduce relative reading error. Determine frequency from source calibration or count cycles over a timed interval. A strobe/frozen image can help read a pattern, but avoid confusing it with an actual stationary wave or a different strobe alias. Calculate v=fλ.",
+          "scene": "wav1:measure:1",
+          "process": false
+        },
+        {
+          "title": "Measure speed of sound",
+          "text": "Use two microphones a measured distance apart with a data logger/oscilloscope to measure arrival delay of a pulse; v=distance/time. An echo method needs twice the reflector distance for the out-and-back path. Avoid hand timing a short sound journey; long baselines and repeats improve resolution. Record methods, uncertainties and controls.",
+          "scene": "wav1:measure:2",
+          "process": false
+        },
+        {
+          "title": "Analyse a ripple measurement",
+          "text": "Choose measured length covering four wavelengths and source frequency. Predict speed using λ=length/4, then v=fλ. Generated images/data are ideal; they prepare for judging apparatus suitability and real measurements rather than establish hands-on competence.",
+          "scene": "wav1:measure:3",
+          "process": false
+        }
+      ],
+      "prerequisites": [],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-measure",
+      "practice": [
+        {
+          "id": "wav1.measure.practice1",
+          "prompt": "Measuring several wavelengths then dividing helps…",
+          "options": [
+            "Reduce relative reading uncertainty",
+            "Eliminate every error",
+            "Change the source frequency"
+          ],
+          "answer": 0,
+          "why": "A larger baseline reduces the relative effect of a ruler error.",
+          "concept": "wav1.measure"
+        },
+        {
+          "id": "wav1.measure.practice2",
+          "prompt": "A microphone delay method uses…",
+          "options": [
+            "Only sound loudness",
+            "Microphone separation divided by arrival-time delay",
+            "Distance times delay"
+          ],
+          "answer": 1,
+          "why": "The same pulse travels between the microphones.",
+          "concept": "wav1.measure"
+        },
+        {
+          "id": "wav1.measure.practice3",
+          "prompt": "For an echo from a wall, sound travels…",
+          "options": [
+            "Only to the wall",
+            "Half the wall distance",
+            "To the wall and back"
+          ],
+          "answer": 2,
+          "why": "Use twice the one-way distance.",
+          "concept": "wav1.measure"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.measure.check1",
+          "prompt": "Four wavelengths span0.8 m. One wavelength is…",
+          "options": [
+            "0.2 m",
+            "3.2 m",
+            "0.8 m"
+          ],
+          "answer": 0,
+          "why": "Divide by four complete intervals.",
+          "concept": "wav1.measure"
+        },
+        {
+          "id": "wav1.measure.check2",
+          "prompt": "Two microphones0.66 m apart detect a pulse0.002 s apart. Speed is…",
+          "options": [
+            "0.00132 m/s",
+            "330 m/s",
+            "33 m/s"
+          ],
+          "answer": 1,
+          "why": "The pulse covers0.66 m in0.002 s, so speed=330 m/s.",
+          "concept": "wav1.measure"
+        },
+        {
+          "id": "wav1.measure.check3",
+          "prompt": "Hand timing a very short sound trip is poor because…",
+          "options": [
+            "Sound has no speed",
+            "Distances cannot be measured",
+            "Reaction time is large compared with the travel time"
+          ],
+          "answer": 2,
+          "why": "Instrument time resolution matters.",
+          "concept": "wav1.measure"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "completionKey": "wav1Passed"
+      }
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "measure",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "Measuring several wavelengths then dividing helps…",
+            [
+              "Reduce relative reading uncertainty",
+              "Eliminate every error",
+              "Change the source frequency"
+            ],
+            0,
+            "A larger baseline reduces the relative effect of a ruler error."
+          ],
+          [
+            "1",
+            "A microphone delay method uses…",
+            [
+              "Only sound loudness",
+              "Microphone separation divided by arrival-time delay",
+              "Distance times delay"
+            ],
+            1,
+            "The same pulse travels between the microphones."
+          ],
+          [
+            "2",
+            "For an echo from a wall, sound travels…",
+            [
+              "Only to the wall",
+              "Half the wall distance",
+              "To the wall and back"
+            ],
+            2,
+            "Use twice the one-way distance."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "measure-data",
+        "type": "numeric",
+        "prompt": "An echo returns0.4 s after a pulse; supplied sound speed is300 m/s. Find reflector distance.",
+        "answer": 60,
+        "unit": "stated units",
+        "reasonChoices": [
+          "300 × 0.4 ÷ 2",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "measure-model",
+        "type": "experiment",
+        "experiment": "measure",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      }
     ],
-    "cards": [
-      [
-        "Choose suitable apparatus",
-        "Required practical8 (separate) or20 (Trilogy) investigates frequency, wavelength and speed in a ripple tank and in a solid. Use a vibrating source, shallow water, illumination and a scale for ripples; use a vibrating string/cord with a signal generator for waves in a solid. Keep electrical equipment appropriately separated from water and control volume/amplitude."
-      ],
-      [
-        "Measure repeated intervals",
-        "Measure several wavelengths then divide by the number of complete wavelength intervals to reduce relative reading error. Determine frequency from source calibration or count cycles over a timed interval. A strobe/frozen image can help read a pattern, but avoid confusing it with an actual stationary wave or a different strobe alias. Calculate v=fλ."
-      ],
-      [
-        "Measure speed of sound",
-        "Use two microphones a measured distance apart with a data logger/oscilloscope to measure arrival delay of a pulse; v=distance/time. An echo method needs twice the reflector distance for the out-and-back path. Avoid hand timing a short sound journey; long baselines and repeats improve resolution. Record methods, uncertainties and controls."
-      ],
-      [
-        "Analyse a ripple measurement",
-        "Choose measured length covering four wavelengths and source frequency. Predict speed using λ=length/4, then v=fλ. Generated images/data are ideal; they prepare for judging apparatus suitability and real measurements rather than establish hands-on competence."
-      ]
-    ],
-    "practice": [
-      [
-        "Measuring several wavelengths then dividing helps…",
-        [
-          "Reduce relative reading uncertainty",
-          "Eliminate every error",
-          "Change the source frequency"
-        ],
-        0,
-        "A larger baseline reduces the relative effect of a ruler error."
-      ],
-      [
-        "A microphone delay method uses…",
-        [
-          "Only sound loudness",
-          "Microphone separation divided by arrival-time delay",
-          "Distance times delay"
-        ],
-        1,
-        "The same pulse travels between the microphones."
-      ],
-      [
-        "For an echo from a wall, sound travels…",
-        [
-          "Only to the wall",
-          "Half the wall distance",
-          "To the wall and back"
-        ],
-        2,
-        "Use twice the one-way distance."
-      ]
-    ],
-    "check": [
-      [
-        "Four wavelengths span0.8 m. One wavelength is…",
-        [
-          "0.2 m",
-          "3.2 m",
-          "0.8 m"
-        ],
-        0,
-        "Divide by four complete intervals."
-      ],
-      [
-        "Two microphones0.66 m apart detect a pulse0.002 s apart. Speed is…",
-        [
-          "0.00132 m/s",
-          "330 m/s",
-          "33 m/s"
-        ],
-        1,
-        "0.66/0.002=330."
-      ],
-      [
-        "Hand timing a very short sound trip is poor because…",
-        [
-          "Sound has no speed",
-          "Distances cannot be measured",
-          "Reaction time is large compared with the travel time"
-        ],
-        2,
-        "Instrument time resolution matters."
-      ]
-    ],
-    "calc": [
-      "An echo returns0.4 s after a pulse; supplied sound speed is300 m/s. Find reflector distance.",
-      60,
-      "300 × 0.4 ÷ 2"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "0.8",
@@ -379,105 +729,220 @@
       ],
       "unit": "m/s speed"
     },
-    "separate": false,
-    "higher": false,
-    "film": false,
-    "extra": null
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "reflection",
-    "title": "Reflection, transmission and absorption",
-    "refs": [
-      "6.1.3"
+    "runtime": {
+      "id": "science.physics.waves.reflection",
+      "title": "Reflection, transmission and absorption",
+      "short": "Reflection, transmission and absorption",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.1.3"
+      ],
+      "combinedRefs": [],
+      "separate": true,
+      "higher": false,
+      "minutes": 35,
+      "big": "A wave arriving at a boundary can be reflected, transmitted or absorbed. Absorption transfers energy into the material. Reflection changes travel direction back into the original medium; transmission carries energy onward. The proportions depend on materials, wave and surface conditions.",
+      "learn": [
+        {
+          "title": "Three outcomes at a boundary",
+          "text": "A wave arriving at a boundary can be reflected, transmitted or absorbed. Absorption transfers energy into the material. Reflection changes travel direction back into the original medium; transmission carries energy onward. The proportions depend on materials, wave and surface conditions.",
+          "scene": "wav1:reflection:0",
+          "process": false
+        },
+        {
+          "title": "Measure from the normal",
+          "text": "Draw a normal perpendicular to the surface where the ray meets it. Angle of incidence equals angle of reflection, both measured between ray and normal. A ray diagram represents travel direction, not the oscillation direction. Mark arrows on both rays.",
+          "scene": "wav1:reflection:1",
+          "process": true,
+          "processFilm": "wav1-reflection"
+        },
+        {
+          "title": "Prepare the light practical",
+          "text": "Separate required practical9 investigates reflection by different surfaces and refraction by different substances. Use a ray box, narrow slit, surface/block, paper and protractor. Trace rays, mark the boundary and normal, measure angles from the normal, repeat and compare surfaces. Avoid looking into a bright beam and use school procedures.",
+          "scene": "wav1:reflection:2",
+          "process": false
+        },
+        {
+          "title": "Predict the reflected ray",
+          "text": "Choose incidence angle and smooth/rough surface. Predict the local reflection angle for an individual surface facet. Roughness changes the facet normals and scatters a beam even though each local reflection obeys the law. The model uses a representative labelled facet, not a roughness distribution.",
+          "scene": "wav1:reflection:3",
+          "process": false
+        }
+      ],
+      "prerequisites": [],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-reflection",
+      "practice": [
+        {
+          "id": "wav1.reflection.practice1",
+          "prompt": "Incidence/reflection angles are measured from…",
+          "options": [
+            "The normal",
+            "The surface",
+            "The page edge"
+          ],
+          "answer": 0,
+          "why": "The normal is perpendicular to the surface.",
+          "concept": "wav1.reflection"
+        },
+        {
+          "id": "wav1.reflection.practice2",
+          "prompt": "Absorption transfers wave energy…",
+          "options": [
+            "Back without entering",
+            "Into the material",
+            "Into negative mass"
+          ],
+          "answer": 1,
+          "why": "The absorber gains energy.",
+          "concept": "wav1.reflection"
+        },
+        {
+          "id": "wav1.reflection.practice3",
+          "prompt": "At a boundary waves may be…",
+          "options": [
+            "Only reflected",
+            "Only transmitted",
+            "Reflected, absorbed or transmitted"
+          ],
+          "answer": 2,
+          "why": "More than one outcome can occur.",
+          "concept": "wav1.reflection"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.reflection.check1",
+          "prompt": "Incidence is35° from normal. Reflection angle is…",
+          "options": [
+            "35°",
+            "55°",
+            "70°"
+          ],
+          "answer": 0,
+          "why": "Angles from the normal are equal.",
+          "concept": "wav1.reflection"
+        },
+        {
+          "id": "wav1.reflection.check2",
+          "prompt": "A ray30° from the surface is…",
+          "options": [
+            "30° from normal",
+            "60° from normal",
+            "90° from normal"
+          ],
+          "answer": 1,
+          "why": "Normal and surface differ by90°.",
+          "concept": "wav1.reflection"
+        },
+        {
+          "id": "wav1.reflection.check3",
+          "prompt": "A rough surface scatters because…",
+          "options": [
+            "Reflection law fails everywhere",
+            "There is no reflection",
+            "Local surface normals vary"
+          ],
+          "answer": 2,
+          "why": "Each facet can still obey equal local angles.",
+          "concept": "wav1.reflection"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "completionKey": "wav1Passed"
+      }
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "reflection",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "Incidence/reflection angles are measured from…",
+            [
+              "The normal",
+              "The surface",
+              "The page edge"
+            ],
+            0,
+            "The normal is perpendicular to the surface."
+          ],
+          [
+            "1",
+            "Absorption transfers wave energy…",
+            [
+              "Back without entering",
+              "Into the material",
+              "Into negative mass"
+            ],
+            1,
+            "The absorber gains energy."
+          ],
+          [
+            "2",
+            "At a boundary waves may be…",
+            [
+              "Only reflected",
+              "Only transmitted",
+              "Reflected, absorbed or transmitted"
+            ],
+            2,
+            "More than one outcome can occur."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "reflection-data",
+        "type": "numeric",
+        "prompt": "A ray is25° from the surface. Find its angle from the normal.",
+        "answer": 65,
+        "unit": "stated units",
+        "reasonChoices": [
+          "90 − 25",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "reflection-model",
+        "type": "experiment",
+        "experiment": "reflection",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      }
     ],
-    "cards": [
-      [
-        "Three outcomes at a boundary",
-        "A wave arriving at a boundary can be reflected, transmitted or absorbed. Absorption transfers energy into the material. Reflection changes travel direction back into the original medium; transmission carries energy onward. The proportions depend on materials, wave and surface conditions."
-      ],
-      [
-        "Measure from the normal",
-        "Draw a normal perpendicular to the surface where the ray meets it. Angle of incidence equals angle of reflection, both measured between ray and normal. A ray diagram represents travel direction, not the oscillation direction. Mark arrows on both rays."
-      ],
-      [
-        "Prepare the light practical",
-        "Separate required practical9 investigates reflection by different surfaces and refraction by different substances. Use a ray box, narrow slit, surface/block, paper and protractor. Trace rays, mark the boundary and normal, measure angles from the normal, repeat and compare surfaces. Avoid looking into a bright beam and use school procedures."
-      ],
-      [
-        "Predict the reflected ray",
-        "Choose incidence angle and smooth/rough surface. Predict the local reflection angle for an individual surface facet. Roughness changes the facet normals and scatters a beam even though each local reflection obeys the law. The model uses a representative labelled facet, not a roughness distribution."
-      ]
-    ],
-    "practice": [
-      [
-        "Incidence/reflection angles are measured from…",
-        [
-          "The normal",
-          "The surface",
-          "The page edge"
-        ],
-        0,
-        "The normal is perpendicular to the surface."
-      ],
-      [
-        "Absorption transfers wave energy…",
-        [
-          "Back without entering",
-          "Into the material",
-          "Into negative mass"
-        ],
-        1,
-        "The absorber gains energy."
-      ],
-      [
-        "At a boundary waves may be…",
-        [
-          "Only reflected",
-          "Only transmitted",
-          "Reflected, absorbed or transmitted"
-        ],
-        2,
-        "More than one outcome can occur."
-      ]
-    ],
-    "check": [
-      [
-        "Incidence is35° from normal. Reflection angle is…",
-        [
-          "35°",
-          "55°",
-          "70°"
-        ],
-        0,
-        "Angles from the normal are equal."
-      ],
-      [
-        "A ray30° from the surface is…",
-        [
-          "30° from normal",
-          "60° from normal",
-          "90° from normal"
-        ],
-        1,
-        "Normal and surface differ by90°."
-      ],
-      [
-        "A rough surface scatters because…",
-        [
-          "Reflection law fails everywhere",
-          "There is no reflection",
-          "Local surface normals vary"
-        ],
-        2,
-        "Each facet can still obey equal local angles."
-      ]
-    ],
-    "calc": [
-      "A ray is25° from the surface. Find its angle from the normal.",
-      65,
-      "90 − 25"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "20",
@@ -504,105 +969,220 @@
       ],
       "unit": "degrees local reflection angle"
     },
-    "separate": true,
-    "higher": false,
-    "film": true,
-    "extra": null
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "sound",
-    "title": "Sound, solids and hearing",
-    "refs": [
-      "6.1.4"
+    "runtime": {
+      "id": "science.physics.waves.sound",
+      "title": "Sound, solids and hearing",
+      "short": "Sound, solids and hearing",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.1.4"
+      ],
+      "combinedRefs": [],
+      "separate": true,
+      "higher": true,
+      "minutes": 35,
+      "big": "Sound can travel through solids as vibrations. A vibrating solid can set nearby air into pressure oscillations; air sound can make a solid vibrate. These conversions happen in loudspeaker cones, microphones and the ear. They are mechanical waves and need a material medium.",
+      "learn": [
+        {
+          "title": "Sound crosses different materials",
+          "text": "Sound can travel through solids as vibrations. A vibrating solid can set nearby air into pressure oscillations; air sound can make a solid vibrate. These conversions happen in loudspeaker cones, microphones and the ear. They are mechanical waves and need a material medium.",
+          "scene": "wav1:sound:0",
+          "process": false
+        },
+        {
+          "title": "From air to the ear",
+          "text": "Pressure oscillations vibrate the eardrum and other structures in the ear, producing the sensation of sound through further biological processes. The conversion works over a limited frequency range. A schematic eardrum is not a complete anatomical or hearing-diagnostic model.",
+          "scene": "wav1:sound:1",
+          "process": true,
+          "processFilm": "wav1-sound"
+        },
+        {
+          "title": "A limited hearing range",
+          "text": "Normal human hearing is approximately20 Hz to20000 Hz (20 kHz). Individual sensitivity varies and can change with age or damage. Frequency influences pitch; amplitude/intensity influences loudness. Ultrasound is above the upper human hearing limit, not necessarily louder sound.",
+          "scene": "wav1:sound:2",
+          "process": false
+        },
+        {
+          "title": "Classify a frequency",
+          "text": "Choose frequency and the supplied normal hearing range. Predict whether it falls within the range. The animation shows an exaggerated air compression driving a solid membrane; its playback rate is unrelated to the actual audible frequency.",
+          "scene": "wav1:sound:3",
+          "process": false
+        }
+      ],
+      "prerequisites": [],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-sound",
+      "practice": [
+        {
+          "id": "wav1.sound.practice1",
+          "prompt": "Sound can travel through…",
+          "options": [
+            "Solids as vibrations",
+            "Only empty space",
+            "Only air"
+          ],
+          "answer": 0,
+          "why": "Solids can transmit mechanical disturbances.",
+          "concept": "wav1.sound"
+        },
+        {
+          "id": "wav1.sound.practice2",
+          "prompt": "The eardrum converts air pressure oscillations to…",
+          "options": [
+            "Gamma rays",
+            "Vibrations of a solid",
+            "No motion"
+          ],
+          "answer": 1,
+          "why": "This conversion is part of hearing.",
+          "concept": "wav1.sound"
+        },
+        {
+          "id": "wav1.sound.practice3",
+          "prompt": "Normal upper hearing limit is about…",
+          "options": [
+            "20 Hz",
+            "200 Hz",
+            "20 kHz"
+          ],
+          "answer": 2,
+          "why": "20kHz equals20000Hz.",
+          "concept": "wav1.sound"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.sound.check1",
+          "prompt": "A25 kHz wave is…",
+          "options": [
+            "Ultrasound relative to normal human hearing",
+            "Always very loud audible sound",
+            "A low-pitch audible wave"
+          ],
+          "answer": 0,
+          "why": "Its frequency exceeds20000Hz.",
+          "concept": "wav1.sound"
+        },
+        {
+          "id": "wav1.sound.check2",
+          "prompt": "Increasing frequency mainly raises…",
+          "options": [
+            "Wavelength in every medium",
+            "Pitch",
+            "Mass of air"
+          ],
+          "answer": 1,
+          "why": "Frequency sets pitch for an audible tone.",
+          "concept": "wav1.sound"
+        },
+        {
+          "id": "wav1.sound.check3",
+          "prompt": "The hearing model omits…",
+          "options": [
+            "The existence of vibrations",
+            "Any medium",
+            "Detailed anatomy and individual frequency response"
+          ],
+          "answer": 2,
+          "why": "It is not a clinical hearing test.",
+          "concept": "wav1.sound"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "completionKey": "wav1Passed"
+      }
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "sound",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "Sound can travel through…",
+            [
+              "Solids as vibrations",
+              "Only empty space",
+              "Only air"
+            ],
+            0,
+            "Solids can transmit mechanical disturbances."
+          ],
+          [
+            "1",
+            "The eardrum converts air pressure oscillations to…",
+            [
+              "Gamma rays",
+              "Vibrations of a solid",
+              "No motion"
+            ],
+            1,
+            "This conversion is part of hearing."
+          ],
+          [
+            "2",
+            "Normal upper hearing limit is about…",
+            [
+              "20 Hz",
+              "200 Hz",
+              "20 kHz"
+            ],
+            2,
+            "20kHz equals20000Hz."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "sound-data",
+        "type": "numeric",
+        "prompt": "Convert0.018 MHz to Hz.",
+        "answer": 18000,
+        "unit": "stated units",
+        "reasonChoices": [
+          "0.018 × 1000000",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "sound-model",
+        "type": "experiment",
+        "experiment": "sound",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      }
     ],
-    "cards": [
-      [
-        "Sound crosses different materials",
-        "Sound can travel through solids as vibrations. A vibrating solid can set nearby air into pressure oscillations; air sound can make a solid vibrate. These conversions happen in loudspeaker cones, microphones and the ear. They are mechanical waves and need a material medium."
-      ],
-      [
-        "From air to the ear",
-        "Pressure oscillations vibrate the eardrum and other structures in the ear, producing the sensation of sound through further biological processes. The conversion works over a limited frequency range. A schematic eardrum is not a complete anatomical or hearing-diagnostic model."
-      ],
-      [
-        "A limited hearing range",
-        "Normal human hearing is approximately20 Hz to20000 Hz (20 kHz). Individual sensitivity varies and can change with age or damage. Frequency influences pitch; amplitude/intensity influences loudness. Ultrasound is above the upper human hearing limit, not necessarily louder sound."
-      ],
-      [
-        "Classify a frequency",
-        "Choose frequency and the supplied normal hearing range. Predict whether it falls within the range. The animation shows an exaggerated air compression driving a solid membrane; its playback rate is unrelated to the actual audible frequency."
-      ]
-    ],
-    "practice": [
-      [
-        "Sound can travel through…",
-        [
-          "Solids as vibrations",
-          "Only empty space",
-          "Only air"
-        ],
-        0,
-        "Solids can transmit mechanical disturbances."
-      ],
-      [
-        "The eardrum converts air pressure oscillations to…",
-        [
-          "Gamma rays",
-          "Vibrations of a solid",
-          "No motion"
-        ],
-        1,
-        "This conversion is part of hearing."
-      ],
-      [
-        "Normal upper hearing limit is about…",
-        [
-          "20 Hz",
-          "200 Hz",
-          "20 kHz"
-        ],
-        2,
-        "20kHz equals20000Hz."
-      ]
-    ],
-    "check": [
-      [
-        "A25 kHz wave is…",
-        [
-          "Ultrasound relative to normal human hearing",
-          "Always very loud audible sound",
-          "A low-pitch audible wave"
-        ],
-        0,
-        "Its frequency exceeds20000Hz."
-      ],
-      [
-        "Increasing frequency mainly raises…",
-        [
-          "Wavelength in every medium",
-          "Pitch",
-          "Mass of air"
-        ],
-        1,
-        "Frequency sets pitch for an audible tone."
-      ],
-      [
-        "The hearing model omits…",
-        [
-          "The existence of vibrations",
-          "Any medium",
-          "Detailed anatomy and individual frequency response"
-        ],
-        2,
-        "It is not a clinical hearing test."
-      ]
-    ],
-    "calc": [
-      "Convert0.018 MHz to Hz.",
-      18000,
-      "0.018 × 1000000"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "10",
@@ -639,105 +1219,222 @@
         ]
       ]
     },
-    "separate": true,
-    "higher": true,
-    "film": true,
-    "extra": null
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "detection",
-    "title": "Ultrasound, sonar and seismic evidence",
-    "refs": [
-      "6.1.5"
+    "runtime": {
+      "id": "science.physics.waves.detection",
+      "title": "Ultrasound, sonar and seismic evidence",
+      "short": "Ultrasound, sonar and seismic evidence",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.1.5"
+      ],
+      "combinedRefs": [],
+      "separate": true,
+      "higher": true,
+      "minutes": 35,
+      "big": "Ultrasound partly reflects at boundaries between media. Measure the return time and use supplied wave speed: one-way depth=vt/2. Different speeds, absorption and reflection can reveal structures inside objects. Medical imaging and industrial flaw detection exploit these differences.",
+      "learn": [
+        {
+          "title": "Echoes reveal hidden boundaries",
+          "text": "Ultrasound partly reflects at boundaries between media. Measure the return time and use supplied wave speed: one-way depth=vt/2. Different speeds, absorption and reflection can reveal structures inside objects. Medical imaging and industrial flaw detection exploit these differences.",
+          "scene": "wav1:detection:0",
+          "process": false
+        },
+        {
+          "title": "Sound the sea",
+          "text": "High-frequency echo sounding sends a pulse toward an object/seabed and records a reflected signal. The pulse travels out and back, so divide total path length by two. A single speed is an approximation if the medium varies. Multiple echoes can indicate several boundaries.",
+          "scene": "wav1:detection:1",
+          "process": true,
+          "processFilm": "wav1-detection"
+        },
+        {
+          "title": "Seismic waves probe Earth",
+          "text": "Earthquakes generate longitudinal P-waves that travel through solids and liquids at different speeds, and transverse S-waves that cannot travel through liquid. Arrival times, paths and shadow regions provide evidence for Earth’s internal structure and core. The model is evidence-based inference, not direct viewing of the core.",
+          "scene": "wav1:detection:2",
+          "process": false
+        },
+        {
+          "title": "Predict an echo depth",
+          "text": "Choose supplied wave speed and round-trip time; predict one-way distance. Watch a pulse travel out and back. The scale and playback are exaggerated. The single-boundary homogeneous-medium model omits scattering, variable speeds and signal processing.",
+          "scene": "wav1:detection:3",
+          "process": false
+        }
+      ],
+      "prerequisites": [
+        "science.physics.waves.properties"
+      ],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-detection",
+      "practice": [
+        {
+          "id": "wav1.detection.practice1",
+          "prompt": "An echo depth calculation uses…",
+          "options": [
+            "vt/2",
+            "2vt",
+            "v/t"
+          ],
+          "answer": 0,
+          "why": "The measured travel time is out-and-back.",
+          "concept": "wav1.detection"
+        },
+        {
+          "id": "wav1.detection.practice2",
+          "prompt": "Which seismic wave cannot travel through a liquid?",
+          "options": [
+            "P-wave",
+            "S-wave",
+            "Both always pass"
+          ],
+          "answer": 1,
+          "why": "S-waves are transverse.",
+          "concept": "wav1.detection"
+        },
+        {
+          "id": "wav1.detection.practice3",
+          "prompt": "Seismic observations support…",
+          "options": [
+            "Direct photographs of the core",
+            "No model of Earth",
+            "Inference about hidden internal structure"
+          ],
+          "answer": 2,
+          "why": "Different wave behaviours constrain the model.",
+          "concept": "wav1.detection"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.detection.check1",
+          "prompt": "At1500 m/s, echo return0.2 s indicates depth…",
+          "options": [
+            "150 m",
+            "300 m",
+            "7500 m"
+          ],
+          "answer": 0,
+          "why": "The pulse travels out and back:one-way distance=1500×0.2/2=150 m.",
+          "concept": "wav1.detection"
+        },
+        {
+          "id": "wav1.detection.check2",
+          "prompt": "P-waves are…",
+          "options": [
+            "Transverse only in vacuum",
+            "Longitudinal and able to cross solids/liquids",
+            "Unable to cross liquids"
+          ],
+          "answer": 1,
+          "why": "Their speeds differ between materials.",
+          "concept": "wav1.detection"
+        },
+        {
+          "id": "wav1.detection.check3",
+          "prompt": "A single-speed echo calculation may fail when…",
+          "options": [
+            "Time is measured in seconds",
+            "There is a reflector",
+            "Speed varies along the path"
+          ],
+          "answer": 2,
+          "why": "The homogeneous-medium assumption needs checking.",
+          "concept": "wav1.detection"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "completionKey": "wav1Passed"
+      }
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "detection",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "An echo depth calculation uses…",
+            [
+              "vt/2",
+              "2vt",
+              "v/t"
+            ],
+            0,
+            "The measured travel time is out-and-back."
+          ],
+          [
+            "1",
+            "Which seismic wave cannot travel through a liquid?",
+            [
+              "P-wave",
+              "S-wave",
+              "Both always pass"
+            ],
+            1,
+            "S-waves are transverse."
+          ],
+          [
+            "2",
+            "Seismic observations support…",
+            [
+              "Direct photographs of the core",
+              "No model of Earth",
+              "Inference about hidden internal structure"
+            ],
+            2,
+            "Different wave behaviours constrain the model."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "detection-data",
+        "type": "numeric",
+        "prompt": "An ultrasonic echo returns after0.00008 s at supplied speed1500 m/s. Find boundary depth in m.",
+        "answer": 0.06,
+        "unit": "stated units",
+        "reasonChoices": [
+          "1500 × 0.00008 ÷ 2",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "detection-model",
+        "type": "experiment",
+        "experiment": "detection",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      }
     ],
-    "cards": [
-      [
-        "Echoes reveal hidden boundaries",
-        "Ultrasound partly reflects at boundaries between media. Measure the return time and use supplied wave speed: one-way depth=vt/2. Different speeds, absorption and reflection can reveal structures inside objects. Medical imaging and industrial flaw detection exploit these differences."
-      ],
-      [
-        "Sound the sea",
-        "High-frequency echo sounding sends a pulse toward an object/seabed and records a reflected signal. The pulse travels out and back, so divide total path length by two. A single speed is an approximation if the medium varies. Multiple echoes can indicate several boundaries."
-      ],
-      [
-        "Seismic waves probe Earth",
-        "Earthquakes generate longitudinal P-waves that travel through solids and liquids at different speeds, and transverse S-waves that cannot travel through liquid. Arrival times, paths and shadow regions provide evidence for Earth’s internal structure and core. The model is evidence-based inference, not direct viewing of the core."
-      ],
-      [
-        "Predict an echo depth",
-        "Choose supplied wave speed and round-trip time; predict one-way distance. Watch a pulse travel out and back. The scale and playback are exaggerated. The single-boundary homogeneous-medium model omits scattering, variable speeds and signal processing."
-      ]
-    ],
-    "practice": [
-      [
-        "An echo depth calculation uses…",
-        [
-          "vt/2",
-          "2vt",
-          "v/t"
-        ],
-        0,
-        "The measured travel time is out-and-back."
-      ],
-      [
-        "Which seismic wave cannot travel through a liquid?",
-        [
-          "P-wave",
-          "S-wave",
-          "Both always pass"
-        ],
-        1,
-        "S-waves are transverse."
-      ],
-      [
-        "Seismic observations support…",
-        [
-          "Direct photographs of the core",
-          "No model of Earth",
-          "Inference about hidden internal structure"
-        ],
-        2,
-        "Different wave behaviours constrain the model."
-      ]
-    ],
-    "check": [
-      [
-        "At1500 m/s, echo return0.2 s indicates depth…",
-        [
-          "150 m",
-          "300 m",
-          "7500 m"
-        ],
-        0,
-        "1500×0.2/2."
-      ],
-      [
-        "P-waves are…",
-        [
-          "Transverse only in vacuum",
-          "Longitudinal and able to cross solids/liquids",
-          "Unable to cross liquids"
-        ],
-        1,
-        "Their speeds differ between materials."
-      ],
-      [
-        "A single-speed echo calculation may fail when…",
-        [
-          "Time is measured in seconds",
-          "There is a reflector",
-          "Speed varies along the path"
-        ],
-        2,
-        "The homogeneous-medium assumption needs checking."
-      ]
-    ],
-    "calc": [
-      "An ultrasonic echo returns after0.00008 s at supplied speed1500 m/s. Find boundary depth in m.",
-      0.06,
-      "1500 × 0.00008 ÷ 2"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "1000",
@@ -764,105 +1461,222 @@
       ],
       "unit": "m one-way distance"
     },
-    "separate": true,
-    "higher": true,
-    "film": true,
-    "extra": null
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "spectrum",
-    "title": "The electromagnetic spectrum",
-    "refs": [
-      "6.2.1"
+    "runtime": {
+      "id": "science.physics.waves.spectrum",
+      "title": "The electromagnetic spectrum",
+      "short": "The electromagnetic spectrum",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.2.1"
+      ],
+      "combinedRefs": [
+        "6.2.1"
+      ],
+      "separate": false,
+      "higher": false,
+      "minutes": 35,
+      "big": "Electromagnetic waves are transverse and transfer energy from a source to an absorber. All types travel at the same speed in vacuum, about3×10⁸ m/s; the GCSE specification also treats their speed in air as the same. They do not require a material medium.",
+      "learn": [
+        {
+          "title": "One continuous family",
+          "text": "Electromagnetic waves are transverse and transfer energy from a source to an absorber. All types travel at the same speed in vacuum, about3×10⁸ m/s; the GCSE specification also treats their speed in air as the same. They do not require a material medium.",
+          "scene": "wav1:spectrum:0",
+          "process": false
+        },
+        {
+          "title": "Order the bands",
+          "text": "From long wavelength/low frequency to short wavelength/high frequency: radio, microwave, infrared, visible (red to violet), ultraviolet, X-ray, gamma. These named groups form a continuous spectrum rather than seven isolated wave speeds. Human eyes detect only the visible band.",
+          "scene": "wav1:spectrum:1",
+          "process": true,
+          "processFilm": "wav1-spectrum"
+        },
+        {
+          "title": "Frequency versus wavelength",
+          "text": "At fixed speed v=fλ, higher frequency means shorter wavelength. A radio and gamma wave in vacuum have very different wavelengths but equal speeds. Their interactions with matter and potential uses differ; visible colours occupy only a narrow portion.",
+          "scene": "wav1:spectrum:2",
+          "process": false
+        },
+        {
+          "title": "Compare two frequencies",
+          "text": "Choose frequency in MHz and a multiplier. Predict vacuum wavelength using λ=300/f when f is in MHz. The animated wave is a schematic transverse trace, not a literal electric-field magnitude or an audible oscillation.",
+          "scene": "wav1:spectrum:3",
+          "process": false
+        }
+      ],
+      "prerequisites": [],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-spectrum",
+      "practice": [
+        {
+          "id": "wav1.spectrum.practice1",
+          "prompt": "All EM waves in vacuum have the same…",
+          "options": [
+            "Speed",
+            "Wavelength",
+            "Frequency"
+          ],
+          "answer": 0,
+          "why": "They share c, not f orλ.",
+          "concept": "wav1.spectrum"
+        },
+        {
+          "id": "wav1.spectrum.practice2",
+          "prompt": "Immediately beyond violet in increasing frequency lies…",
+          "options": [
+            "Infrared",
+            "Ultraviolet",
+            "Radio"
+          ],
+          "answer": 1,
+          "why": "UV has shorter wavelength than visible violet.",
+          "concept": "wav1.spectrum"
+        },
+        {
+          "id": "wav1.spectrum.practice3",
+          "prompt": "Increasing EM frequency in vacuum gives…",
+          "options": [
+            "Greater speed",
+            "Longer wavelength",
+            "Shorter wavelength"
+          ],
+          "answer": 2,
+          "why": "c=fλ stays fixed.",
+          "concept": "wav1.spectrum"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.spectrum.check1",
+          "prompt": "Which sequence goes from lower to higher frequency?",
+          "options": [
+            "Radio → microwave → infrared",
+            "Gamma → X-ray → UV",
+            "Visible → infrared → microwave"
+          ],
+          "answer": 0,
+          "why": "Recall the continuous spectrum order.",
+          "concept": "wav1.spectrum"
+        },
+        {
+          "id": "wav1.spectrum.check2",
+          "prompt": "An EM wave can cross space because it…",
+          "options": [
+            "Needs air everywhere",
+            "Does not require a material medium",
+            "Is always audible"
+          ],
+          "answer": 1,
+          "why": "It is not a mechanical sound wave.",
+          "concept": "wav1.spectrum"
+        },
+        {
+          "id": "wav1.spectrum.check3",
+          "prompt": "Our eyes directly detect…",
+          "options": [
+            "Every EM band",
+            "Only gamma rays",
+            "A limited visible band"
+          ],
+          "answer": 2,
+          "why": "Other bands need appropriate detectors.",
+          "concept": "wav1.spectrum"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "completionKey": "wav1Passed"
+      }
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "spectrum",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "All EM waves in vacuum have the same…",
+            [
+              "Speed",
+              "Wavelength",
+              "Frequency"
+            ],
+            0,
+            "They share c, not f orλ."
+          ],
+          [
+            "1",
+            "Immediately beyond violet in increasing frequency lies…",
+            [
+              "Infrared",
+              "Ultraviolet",
+              "Radio"
+            ],
+            1,
+            "UV has shorter wavelength than visible violet."
+          ],
+          [
+            "2",
+            "Increasing EM frequency in vacuum gives…",
+            [
+              "Greater speed",
+              "Longer wavelength",
+              "Shorter wavelength"
+            ],
+            2,
+            "c=fλ stays fixed."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "spectrum-data",
+        "type": "numeric",
+        "prompt": "At c=300000000 m/s and f=100000000 Hz, find wavelength in m.",
+        "answer": 3,
+        "unit": "stated units",
+        "reasonChoices": [
+          "300000000 ÷ 100000000",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "spectrum-model",
+        "type": "experiment",
+        "experiment": "spectrum",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      }
     ],
-    "cards": [
-      [
-        "One continuous family",
-        "Electromagnetic waves are transverse and transfer energy from a source to an absorber. All types travel at the same speed in vacuum, about3×10⁸ m/s; the GCSE specification also treats their speed in air as the same. They do not require a material medium."
-      ],
-      [
-        "Order the bands",
-        "From long wavelength/low frequency to short wavelength/high frequency: radio, microwave, infrared, visible (red to violet), ultraviolet, X-ray, gamma. These named groups form a continuous spectrum rather than seven isolated wave speeds. Human eyes detect only the visible band."
-      ],
-      [
-        "Frequency versus wavelength",
-        "At fixed speed v=fλ, higher frequency means shorter wavelength. A radio and gamma wave in vacuum have very different wavelengths but equal speeds. Their interactions with matter and potential uses differ; visible colours occupy only a narrow portion."
-      ],
-      [
-        "Compare two frequencies",
-        "Choose frequency in MHz and a multiplier. Predict vacuum wavelength using λ=300/f when f is in MHz. The animated wave is a schematic transverse trace, not a literal electric-field magnitude or an audible oscillation."
-      ]
-    ],
-    "practice": [
-      [
-        "All EM waves in vacuum have the same…",
-        [
-          "Speed",
-          "Wavelength",
-          "Frequency"
-        ],
-        0,
-        "They share c, not f orλ."
-      ],
-      [
-        "Immediately beyond violet in increasing frequency lies…",
-        [
-          "Infrared",
-          "Ultraviolet",
-          "Radio"
-        ],
-        1,
-        "UV has shorter wavelength than visible violet."
-      ],
-      [
-        "Increasing EM frequency in vacuum gives…",
-        [
-          "Greater speed",
-          "Longer wavelength",
-          "Shorter wavelength"
-        ],
-        2,
-        "c=fλ stays fixed."
-      ]
-    ],
-    "check": [
-      [
-        "Which sequence goes from lower to higher frequency?",
-        [
-          "Radio → microwave → infrared",
-          "Gamma → X-ray → UV",
-          "Visible → infrared → microwave"
-        ],
-        0,
-        "Recall the continuous spectrum order."
-      ],
-      [
-        "An EM wave can cross space because it…",
-        [
-          "Needs air everywhere",
-          "Does not require a material medium",
-          "Is always audible"
-        ],
-        1,
-        "It is not a mechanical sound wave."
-      ],
-      [
-        "Our eyes directly detect…",
-        [
-          "Every EM band",
-          "Only gamma rays",
-          "A limited visible band"
-        ],
-        2,
-        "Other bands need appropriate detectors."
-      ]
-    ],
-    "calc": [
-      "At c=300000000 m/s and f=100000000 Hz, find wavelength in m.",
-      3,
-      "300000000 ÷ 100000000"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "100",
@@ -889,105 +1703,267 @@
       ],
       "unit": "m vacuum wavelength"
     },
-    "separate": false,
-    "higher": false,
-    "film": true,
-    "extra": null
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "refraction",
-    "title": "Refraction at a boundary",
-    "refs": [
-      "6.2.2"
-    ],
-    "cards": [
-      [
-        "Draw the boundary and normal",
-        "Refraction is a change of wave direction at a boundary when the speed changes and incidence is oblique. Draw a normal at the incidence point, mark travel arrows and measure both angles from it. A normal-incidence ray changes speed without bending."
+    "runtime": {
+      "id": "science.physics.waves.refraction",
+      "title": "Refraction at a boundary",
+      "short": "Refraction at a boundary",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.2.2"
       ],
-      [
-        "Toward or away from normal",
-        "On entering a slower medium, an oblique ray bends toward the normal. On entering a faster medium, it bends away. Frequency remains set by the source, so changing speed changes wavelength. The drawn medium is an ideal transparent region, not a material identification test."
+      "combinedRefs": [
+        "6.2.2"
       ],
-      [
-        "Measure with a block",
-        "Trace incident/emergent rays through a transparent block, mark the block outline, remove it and draw the internal path. Compare several angles, keeping ray width small and reading the protractor from the normal. This prepares the refraction part of separate practical9; common students still construct refraction ray diagrams."
+      "separate": false,
+      "higher": false,
+      "minutes": 35,
+      "big": "Refraction is a change of wave direction at a boundary when the speed changes and incidence is oblique. Draw a normal at the incidence point, mark travel arrows and measure both angles from it. A normal-incidence ray changes speed without bending.",
+      "learn": [
+        {
+          "title": "Draw the boundary and normal",
+          "text": "Refraction is a change of wave direction at a boundary when the speed changes and incidence is oblique. Draw a normal at the incidence point, mark travel arrows and measure both angles from it. A normal-incidence ray changes speed without bending.",
+          "scene": "wav1:refraction:0",
+          "process": false
+        },
+        {
+          "title": "Toward or away from normal",
+          "text": "On entering a slower medium, an oblique ray bends toward the normal. On entering a faster medium, it bends away. Frequency remains set by the source, so changing speed changes wavelength. The drawn medium is an ideal transparent region, not a material identification test.",
+          "scene": "wav1:refraction:1",
+          "process": true,
+          "processFilm": "wav1-refraction"
+        },
+        {
+          "title": "Measure with a block",
+          "text": "Trace incident/emergent rays through a transparent block, mark the block outline, remove it and draw the internal path. Compare several angles, keeping ray width small and reading the protractor from the normal. This prepares the refraction part of separate practical9; common students still construct refraction ray diagrams.",
+          "scene": "wav1:refraction:2",
+          "process": false
+        },
+        {
+          "title": "Predict the bend",
+          "text": "Choose faster/slower destination and normal/oblique incidence. Predict toward, away or no bend. Exact illustrative angles are supplied rather than using a required Snell-law calculation. The model omits dispersion, partial reflection and total internal reflection.",
+          "scene": "wav1:refraction:3",
+          "process": false
+        },
+        {
+          "title": "Higher: wavefronts explain the turn",
+          "text": "When one part of an oblique wavefront enters a slower medium first, that part advances less while the other side still travels faster. The wavefront turns; its perpendicular ray turns toward the normal. Wavelength is shorter at the same frequency. Absorption, transmission and reflection can vary with wavelength and material.",
+          "scene": "wav1:refraction:4",
+          "process": false,
+          "higher": true
+        }
       ],
-      [
-        "Predict the bend",
-        "Choose faster/slower destination and normal/oblique incidence. Predict toward, away or no bend. Exact illustrative angles are supplied rather than using a required Snell-law calculation. The model omits dispersion, partial reflection and total internal reflection."
+      "prerequisites": [
+        "science.physics.waves.properties"
+      ],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-refraction",
+      "practice": [
+        {
+          "id": "wav1.refraction.practice1",
+          "prompt": "Refraction angles are measured from…",
+          "options": [
+            "The normal",
+            "The surface",
+            "The page edge"
+          ],
+          "answer": 0,
+          "why": "Label the perpendicular normal.",
+          "concept": "wav1.refraction"
+        },
+        {
+          "id": "wav1.refraction.practice2",
+          "prompt": "An oblique wave entering a slower medium bends…",
+          "options": [
+            "Away from normal",
+            "Toward normal",
+            "Never changes direction"
+          ],
+          "answer": 1,
+          "why": "Speed change changes the wavefront direction.",
+          "concept": "wav1.refraction"
+        },
+        {
+          "id": "wav1.refraction.practice3",
+          "prompt": "At normal incidence, a speed change causes…",
+          "options": [
+            "Always a90° turn",
+            "A frequency change",
+            "No bend though wavelength may change"
+          ],
+          "answer": 2,
+          "why": "The ray remains along the normal.",
+          "concept": "wav1.refraction"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.refraction.check1",
+          "prompt": "An oblique ray enters a faster medium. It bends…",
+          "options": [
+            "Away from normal",
+            "Toward normal",
+            "Only backward"
+          ],
+          "answer": 0,
+          "why": "The angle from the normal increases.",
+          "concept": "wav1.refraction"
+        },
+        {
+          "id": "wav1.refraction.check2",
+          "prompt": "Which must be drawn before measuring incidence?",
+          "options": [
+            "Only a coloured region",
+            "A normal at the boundary",
+            "The final answer"
+          ],
+          "answer": 1,
+          "why": "Angles refer to the normal.",
+          "concept": "wav1.refraction"
+        },
+        {
+          "id": "wav1.refraction.check3",
+          "prompt": "In transmission across a stationary boundary, the source frequency…",
+          "options": [
+            "Must double",
+            "Becomes zero",
+            "Remains unchanged"
+          ],
+          "answer": 2,
+          "why": "Speed and wavelength change together.",
+          "concept": "wav1.refraction"
+        },
+        {
+          "id": "wav1.refraction.check-higher",
+          "prompt": "Which change explains oblique refraction into a slower medium?",
+          "options": [
+            "One side of a wavefront slows first, turning the wavefront",
+            "Frequency suddenly becomes zero",
+            "The ray ignores speed"
+          ],
+          "answer": 0,
+          "why": "Wavefront turning follows unequal advance across the boundary.",
+          "concept": "wav1.refraction"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model",
+          "higher"
+        ],
+        "completionKey": "wav1Passed"
+      },
+      "higherQuestions": [
+        "wav1.refraction.check-higher"
       ]
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "refraction",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "Refraction angles are measured from…",
+            [
+              "The normal",
+              "The surface",
+              "The page edge"
+            ],
+            0,
+            "Label the perpendicular normal."
+          ],
+          [
+            "1",
+            "An oblique wave entering a slower medium bends…",
+            [
+              "Away from normal",
+              "Toward normal",
+              "Never changes direction"
+            ],
+            1,
+            "Speed change changes the wavefront direction."
+          ],
+          [
+            "2",
+            "At normal incidence, a speed change causes…",
+            [
+              "Always a90° turn",
+              "A frequency change",
+              "No bend though wavelength may change"
+            ],
+            2,
+            "The ray remains along the normal."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "refraction-data",
+        "type": "numeric",
+        "prompt": "A refracted wave has speed2 m/s and unchanged frequency5 Hz. Find wavelength in m.",
+        "answer": 0.4,
+        "unit": "stated units",
+        "reasonChoices": [
+          "2 ÷ 5",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "refraction-model",
+        "type": "experiment",
+        "experiment": "refraction",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      },
+      {
+        "id": "higher",
+        "title": "Higher: explain the extension",
+        "kind": "refraction",
+        "type": "compare",
+        "higher": true,
+        "cases": [
+          [
+            "0",
+            "Which change explains oblique refraction into a slower medium?",
+            [
+              "One side of a wavefront slows first, turning the wavefront",
+              "Frequency suddenly becomes zero",
+              "The ray ignores speed"
+            ],
+            0,
+            "Wavefront turning follows unequal advance across the boundary."
+          ]
+        ]
+      }
     ],
-    "practice": [
-      [
-        "Refraction angles are measured from…",
-        [
-          "The normal",
-          "The surface",
-          "The page edge"
-        ],
-        0,
-        "Label the perpendicular normal."
-      ],
-      [
-        "An oblique wave entering a slower medium bends…",
-        [
-          "Away from normal",
-          "Toward normal",
-          "Never changes direction"
-        ],
-        1,
-        "Speed change changes the wavefront direction."
-      ],
-      [
-        "At normal incidence, a speed change causes…",
-        [
-          "Always a90° turn",
-          "A frequency change",
-          "No bend though wavelength may change"
-        ],
-        2,
-        "The ray remains along the normal."
-      ]
-    ],
-    "check": [
-      [
-        "An oblique ray enters a faster medium. It bends…",
-        [
-          "Away from normal",
-          "Toward normal",
-          "Only backward"
-        ],
-        0,
-        "The angle from the normal increases."
-      ],
-      [
-        "Which must be drawn before measuring incidence?",
-        [
-          "Only a coloured region",
-          "A normal at the boundary",
-          "The final answer"
-        ],
-        1,
-        "Angles refer to the normal."
-      ],
-      [
-        "In transmission across a stationary boundary, the source frequency…",
-        [
-          "Must double",
-          "Becomes zero",
-          "Remains unchanged"
-        ],
-        2,
-        "Speed and wavelength change together."
-      ]
-    ],
-    "calc": [
-      "A refracted wave has speed2 m/s and unchanged frequency5 Hz. Find wavelength in m.",
-      0.4,
-      "2 ÷ 5"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "slower",
@@ -1028,108 +2004,264 @@
         ]
       ]
     },
-    "separate": false,
-    "higher": false,
-    "film": true,
-    "extra": {
-      "title": "Higher: wavefronts explain the turn",
-      "text": "When one part of an oblique wavefront enters a slower medium first, that part advances less while the other side still travels faster. The wavefront turns; its perpendicular ray turns toward the normal. Wavelength is shorter at the same frequency. Absorption, transmission and reflection can vary with wavelength and material."
-    }
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "hazards",
-    "title": "EM production, absorption and radiation risk",
-    "refs": [
-      "6.2.3"
-    ],
-    "cards": [
-      [
-        "Atoms and nuclei emit and absorb",
-        "Changes in atoms and their nuclei can generate or absorb electromagnetic radiation over a wide range of frequencies. Gamma rays originate from nuclear changes; electron-level transitions are different. Transfer of energy does not require visible light."
+    "runtime": {
+      "id": "science.physics.waves.hazards",
+      "title": "EM production, absorption and radiation risk",
+      "short": "EM production, absorption and radiation risk",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.2.3"
       ],
-      [
-        "Different waves, different hazards",
-        "Ultraviolet can cause premature skin ageing and increase skin-cancer risk. X-rays and gamma rays are ionising and can cause gene mutations and cancer. Risk depends on type and dose; a useful exposure can still carry risk. Draw conclusions from supplied data, not just the band’s name."
+      "combinedRefs": [
+        "6.2.3"
       ],
-      [
-        "Compare dose consistently",
-        "A supplied dose may be in Sv or mSv;1000 mSv=1 Sv. The unit is not required recall, but comparisons need matching units. Evaluate consequences, exposure conditions, benefits and uncertainties. A detector count or an image brightness is not automatically a dose measurement."
+      "separate": false,
+      "higher": false,
+      "minutes": 35,
+      "big": "Changes in atoms and their nuclei can generate or absorb electromagnetic radiation over a wide range of frequencies. Gamma rays originate from nuclear changes; electron-level transitions are different. Transfer of energy does not require visible light.",
+      "learn": [
+        {
+          "title": "Atoms and nuclei emit and absorb",
+          "text": "Changes in atoms and their nuclei can generate or absorb electromagnetic radiation over a wide range of frequencies. Gamma rays originate from nuclear changes; electron-level transitions are different. Transfer of energy does not require visible light.",
+          "scene": "wav1:hazards:0",
+          "process": false
+        },
+        {
+          "title": "Different waves, different hazards",
+          "text": "Ultraviolet can cause premature skin ageing and increase skin-cancer risk. X-rays and gamma rays are ionising and can cause gene mutations and cancer. Risk depends on type and dose; a useful exposure can still carry risk. Draw conclusions from supplied data, not just the band’s name.",
+          "scene": "wav1:hazards:1",
+          "process": false
+        },
+        {
+          "title": "Compare dose consistently",
+          "text": "A supplied dose may be in Sv or mSv;1000 mSv=1 Sv. The unit is not required recall, but comparisons need matching units. Evaluate consequences, exposure conditions, benefits and uncertainties. A detector count or an image brightness is not automatically a dose measurement.",
+          "scene": "wav1:hazards:2",
+          "process": false
+        },
+        {
+          "title": "Read a dose comparison",
+          "text": "Choose a supplied dose in mSv and a number of equal exposures. Predict their total in mSv. This arithmetic is an invented same-condition comparison, not a personal medical-risk estimate or an assumption that biological responses always combine linearly.",
+          "scene": "wav1:hazards:3",
+          "process": false
+        },
+        {
+          "title": "Higher: radio circuits oscillate",
+          "text": "Oscillations in an electrical circuit can produce radio waves. An incoming radio wave absorbed by a suitable circuit can induce an alternating current at the same frequency. Emission and reception transfer energy through oscillating electrical and electromagnetic systems; the detector does not have to be at the transmitter.",
+          "scene": "wav1:hazards:4",
+          "process": false,
+          "higher": true
+        }
       ],
-      [
-        "Read a dose comparison",
-        "Choose a supplied dose in mSv and a number of equal exposures. Predict their total in mSv. This arithmetic is an invented same-condition comparison, not a personal medical-risk estimate or an assumption that biological responses always combine linearly."
+      "prerequisites": [],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-hazards",
+      "practice": [
+        {
+          "id": "wav1.hazards.practice1",
+          "prompt": "Gamma emission originates in…",
+          "options": [
+            "The nucleus",
+            "Only an outer shell",
+            "Only a vibrating string"
+          ],
+          "answer": 0,
+          "why": "Distinguish nuclear and electron changes.",
+          "concept": "wav1.hazards"
+        },
+        {
+          "id": "wav1.hazards.practice2",
+          "prompt": "UV exposure can increase risk of…",
+          "options": [
+            "Only hearing loss",
+            "Skin ageing and skin cancer",
+            "Mass disappearing"
+          ],
+          "answer": 1,
+          "why": "Hazard depends on type and dose.",
+          "concept": "wav1.hazards"
+        },
+        {
+          "id": "wav1.hazards.practice3",
+          "prompt": "A valid dose comparison needs…",
+          "options": [
+            "Only matching colours",
+            "Only exposure counts",
+            "Consistent units and exposure context"
+          ],
+          "answer": 2,
+          "why": "Risk is not determined by the radiation name alone.",
+          "concept": "wav1.hazards"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.hazards.check1",
+          "prompt": "0.003 Sv equals…",
+          "options": [
+            "3 mSv",
+            "0.003 mSv",
+            "3000 mSv"
+          ],
+          "answer": 0,
+          "why": "Multiply Sv by1000 for mSv.",
+          "concept": "wav1.hazards"
+        },
+        {
+          "id": "wav1.hazards.check2",
+          "prompt": "X-rays and gamma can…",
+          "options": [
+            "Only warm skin harmlessly",
+            "Ionise tissue and cause mutations",
+            "Never affect cells"
+          ],
+          "answer": 1,
+          "why": "Ionisation can damage biological molecules.",
+          "concept": "wav1.hazards"
+        },
+        {
+          "id": "wav1.hazards.check3",
+          "prompt": "A benefit–risk judgment should use…",
+          "options": [
+            "Only a frightening label",
+            "Only the image quality",
+            "Supplied outcomes, dose, alternatives and uncertainty"
+          ],
+          "answer": 2,
+          "why": "Weigh relevant evidence and consequences.",
+          "concept": "wav1.hazards"
+        },
+        {
+          "id": "wav1.hazards.check-higher",
+          "prompt": "A radio wave absorbed by a suitable circuit can induce…",
+          "options": [
+            "AC at the radio-wave frequency",
+            "Only DC regardless of frequency",
+            "A current at an unrelated mandatory frequency"
+          ],
+          "answer": 0,
+          "why": "Reception can produce matching electrical oscillations.",
+          "concept": "wav1.hazards"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model",
+          "higher"
+        ],
+        "completionKey": "wav1Passed"
+      },
+      "higherQuestions": [
+        "wav1.hazards.check-higher"
       ]
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "hazards",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "Gamma emission originates in…",
+            [
+              "The nucleus",
+              "Only an outer shell",
+              "Only a vibrating string"
+            ],
+            0,
+            "Distinguish nuclear and electron changes."
+          ],
+          [
+            "1",
+            "UV exposure can increase risk of…",
+            [
+              "Only hearing loss",
+              "Skin ageing and skin cancer",
+              "Mass disappearing"
+            ],
+            1,
+            "Hazard depends on type and dose."
+          ],
+          [
+            "2",
+            "A valid dose comparison needs…",
+            [
+              "Only matching colours",
+              "Only exposure counts",
+              "Consistent units and exposure context"
+            ],
+            2,
+            "Risk is not determined by the radiation name alone."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "hazards-data",
+        "type": "numeric",
+        "prompt": "Convert the supplied0.006 Sv into mSv.",
+        "answer": 6,
+        "unit": "stated units",
+        "reasonChoices": [
+          "0.006 × 1000",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "hazards-model",
+        "type": "experiment",
+        "experiment": "hazards",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      },
+      {
+        "id": "higher",
+        "title": "Higher: explain the extension",
+        "kind": "hazards",
+        "type": "compare",
+        "higher": true,
+        "cases": [
+          [
+            "0",
+            "A radio wave absorbed by a suitable circuit can induce…",
+            [
+              "AC at the radio-wave frequency",
+              "Only DC regardless of frequency",
+              "A current at an unrelated mandatory frequency"
+            ],
+            0,
+            "Reception can produce matching electrical oscillations."
+          ]
+        ]
+      }
     ],
-    "practice": [
-      [
-        "Gamma emission originates in…",
-        [
-          "The nucleus",
-          "Only an outer shell",
-          "Only a vibrating string"
-        ],
-        0,
-        "Distinguish nuclear and electron changes."
-      ],
-      [
-        "UV exposure can increase risk of…",
-        [
-          "Only hearing loss",
-          "Skin ageing and skin cancer",
-          "Mass disappearing"
-        ],
-        1,
-        "Hazard depends on type and dose."
-      ],
-      [
-        "A valid dose comparison needs…",
-        [
-          "Only matching colours",
-          "Only exposure counts",
-          "Consistent units and exposure context"
-        ],
-        2,
-        "Risk is not determined by the radiation name alone."
-      ]
-    ],
-    "check": [
-      [
-        "0.003 Sv equals…",
-        [
-          "3 mSv",
-          "0.003 mSv",
-          "3000 mSv"
-        ],
-        0,
-        "Multiply Sv by1000 for mSv."
-      ],
-      [
-        "X-rays and gamma can…",
-        [
-          "Only warm skin harmlessly",
-          "Ionise tissue and cause mutations",
-          "Never affect cells"
-        ],
-        1,
-        "Ionisation can damage biological molecules."
-      ],
-      [
-        "A benefit–risk judgment should use…",
-        [
-          "Only a frightening label",
-          "Only the image quality",
-          "Supplied outcomes, dose, alternatives and uncertainty"
-        ],
-        2,
-        "Weigh relevant evidence and consequences."
-      ]
-    ],
-    "calc": [
-      "Convert the supplied0.006 Sv into mSv.",
-      6,
-      "0.006 × 1000"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "2",
@@ -1156,108 +2288,264 @@
       ],
       "unit": "mSv total"
     },
-    "separate": false,
-    "higher": false,
-    "film": false,
-    "extra": {
-      "title": "Higher: radio circuits oscillate",
-      "text": "Oscillations in an electrical circuit can produce radio waves. An incoming radio wave absorbed by a suitable circuit can induce an alternating current at the same frequency. Emission and reception transfer energy through oscillating electrical and electromagnetic systems; the detector does not have to be at the transmitter."
-    }
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "applications",
-    "title": "Using the electromagnetic spectrum",
-    "refs": [
-      "6.2.4"
-    ],
-    "cards": [
-      [
-        "Communication and heating",
-        "Radio waves carry radio/TV signals. Microwaves are used for satellite communication and cooking; infrared is used in electrical heaters, cooking and thermal cameras. Visible light is used for fibre-optic communication. The named band is linked to a useful interaction, not a unique speed in vacuum."
+    "runtime": {
+      "id": "science.physics.waves.applications",
+      "title": "Using the electromagnetic spectrum",
+      "short": "Using the electromagnetic spectrum",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.2.4"
       ],
-      [
-        "Light, imaging and treatment",
-        "Ultraviolet is used in energy-efficient lamps (with materials that emit visible light) and sun tanning, which carries skin risk. X-rays and gamma rays have medical imaging and treatment uses. Choose a wave according to what it must penetrate, transmit, detect or deposit energy in."
+      "combinedRefs": [
+        "6.2.4"
       ],
-      [
-        "Compare alternatives",
-        "An infrared camera detects emitted infrared rather than seeing visible colour. A fibre carries a modulated light signal; it is not a sound pipe. Cooking uses energy absorbed by the food. Real communication systems also depend on atmosphere, bandwidth, detectors and engineering constraints."
+      "separate": false,
+      "higher": false,
+      "minutes": 35,
+      "big": "Radio waves carry radio/TV signals. Microwaves are used for satellite communication and cooking; infrared is used in electrical heaters, cooking and thermal cameras. Visible light is used for fibre-optic communication. The named band is linked to a useful interaction, not a unique speed in vacuum.",
+      "learn": [
+        {
+          "title": "Communication and heating",
+          "text": "Radio waves carry radio/TV signals. Microwaves are used for satellite communication and cooking; infrared is used in electrical heaters, cooking and thermal cameras. Visible light is used for fibre-optic communication. The named band is linked to a useful interaction, not a unique speed in vacuum.",
+          "scene": "wav1:applications:0",
+          "process": false
+        },
+        {
+          "title": "Light, imaging and treatment",
+          "text": "Ultraviolet is used in energy-efficient lamps (with materials that emit visible light) and sun tanning, which carries skin risk. X-rays and gamma rays have medical imaging and treatment uses. Choose a wave according to what it must penetrate, transmit, detect or deposit energy in.",
+          "scene": "wav1:applications:1",
+          "process": false
+        },
+        {
+          "title": "Compare alternatives",
+          "text": "An infrared camera detects emitted infrared rather than seeing visible colour. A fibre carries a modulated light signal; it is not a sound pipe. Cooking uses energy absorbed by the food. Real communication systems also depend on atmosphere, bandwidth, detectors and engineering constraints.",
+          "scene": "wav1:applications:2",
+          "process": false
+        },
+        {
+          "title": "Match a requirement",
+          "text": "Choose a thermal-image or internal-transmission imaging requirement, then infrared or X-ray. Predict the stated match. This constrained selection illustrates a physical reason, not a universal product choice or clinical recommendation.",
+          "scene": "wav1:applications:3",
+          "process": false
+        },
+        {
+          "title": "Higher: explain suitability",
+          "text": "Microwaves can pass through Earth’s atmosphere for satellite links; radio waves can carry broadcast signals; infrared is readily absorbed to warm surfaces and emitted by warm objects for thermal imaging. Visible light can be guided in optical fibres. UV can excite lamp coatings to emit visible light but can damage skin. X-rays penetrate soft tissue differently from bone; gamma can reach internal detectors/targets. Suitability depends on the interaction needed, with risks evaluated alongside benefits.",
+          "scene": "wav1:applications:4",
+          "process": false,
+          "higher": true
+        }
       ],
-      [
-        "Match a requirement",
-        "Choose a thermal-image or internal-transmission imaging requirement, then infrared or X-ray. Predict the stated match. This constrained selection illustrates a physical reason, not a universal product choice or clinical recommendation."
+      "prerequisites": [],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-applications",
+      "practice": [
+        {
+          "id": "wav1.applications.practice1",
+          "prompt": "Satellite communication commonly uses…",
+          "options": [
+            "Microwaves",
+            "Only sound in space",
+            "Only gamma rays"
+          ],
+          "answer": 0,
+          "why": "Microwaves can carry the signal through the atmosphere.",
+          "concept": "wav1.applications"
+        },
+        {
+          "id": "wav1.applications.practice2",
+          "prompt": "Thermal cameras detect…",
+          "options": [
+            "Only visible green light",
+            "Infrared radiation",
+            "Only audible sound"
+          ],
+          "answer": 1,
+          "why": "Warm objects emit infrared.",
+          "concept": "wav1.applications"
+        },
+        {
+          "id": "wav1.applications.practice3",
+          "prompt": "Fibre-optic communication commonly uses…",
+          "options": [
+            "Sound waves in air",
+            "Radioactive dust",
+            "Visible/optical light signals"
+          ],
+          "answer": 2,
+          "why": "Light transfers the modulated signal along the fibre.",
+          "concept": "wav1.applications"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.applications.check1",
+          "prompt": "An electrical radiant heater mainly uses…",
+          "options": [
+            "Infrared",
+            "X-rays",
+            "Gamma"
+          ],
+          "answer": 0,
+          "why": "Absorbed infrared transfers energy to surfaces.",
+          "concept": "wav1.applications"
+        },
+        {
+          "id": "wav1.applications.check2",
+          "prompt": "UV tanning should be evaluated with…",
+          "options": [
+            "No possible health effect",
+            "Skin damage/cancer risk as well as the intended effect",
+            "Only the lamp colour"
+          ],
+          "answer": 1,
+          "why": "The application does not remove the hazard.",
+          "concept": "wav1.applications"
+        },
+        {
+          "id": "wav1.applications.check3",
+          "prompt": "X-ray imaging depends partly on…",
+          "options": [
+            "All tissue absorbing identically",
+            "X-rays having a different vacuum speed",
+            "Different absorption/transmission in different tissues"
+          ],
+          "answer": 2,
+          "why": "Different interactions create the image contrast.",
+          "concept": "wav1.applications"
+        },
+        {
+          "id": "wav1.applications.check-higher",
+          "prompt": "Why are microwaves useful for satellite links?",
+          "options": [
+            "They can pass through the atmosphere and carry signals",
+            "They travel faster than radio in vacuum",
+            "They are mechanical waves"
+          ],
+          "answer": 0,
+          "why": "Suitability depends on propagation and signal transfer.",
+          "concept": "wav1.applications"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model",
+          "higher"
+        ],
+        "completionKey": "wav1Passed"
+      },
+      "higherQuestions": [
+        "wav1.applications.check-higher"
       ]
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "applications",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "Satellite communication commonly uses…",
+            [
+              "Microwaves",
+              "Only sound in space",
+              "Only gamma rays"
+            ],
+            0,
+            "Microwaves can carry the signal through the atmosphere."
+          ],
+          [
+            "1",
+            "Thermal cameras detect…",
+            [
+              "Only visible green light",
+              "Infrared radiation",
+              "Only audible sound"
+            ],
+            1,
+            "Warm objects emit infrared."
+          ],
+          [
+            "2",
+            "Fibre-optic communication commonly uses…",
+            [
+              "Sound waves in air",
+              "Radioactive dust",
+              "Visible/optical light signals"
+            ],
+            2,
+            "Light transfers the modulated signal along the fibre."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "applications-data",
+        "type": "numeric",
+        "prompt": "A signal travels600000 m at supplied speed300000000 m/s. Find transit time in s.",
+        "answer": 0.002,
+        "unit": "stated units",
+        "reasonChoices": [
+          "600000 ÷ 300000000",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "applications-model",
+        "type": "experiment",
+        "experiment": "applications",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      },
+      {
+        "id": "higher",
+        "title": "Higher: explain the extension",
+        "kind": "applications",
+        "type": "compare",
+        "higher": true,
+        "cases": [
+          [
+            "0",
+            "Why are microwaves useful for satellite links?",
+            [
+              "They can pass through the atmosphere and carry signals",
+              "They travel faster than radio in vacuum",
+              "They are mechanical waves"
+            ],
+            0,
+            "Suitability depends on propagation and signal transfer."
+          ]
+        ]
+      }
     ],
-    "practice": [
-      [
-        "Satellite communication commonly uses…",
-        [
-          "Microwaves",
-          "Only sound in space",
-          "Only gamma rays"
-        ],
-        0,
-        "Microwaves can carry the signal through the atmosphere."
-      ],
-      [
-        "Thermal cameras detect…",
-        [
-          "Only visible green light",
-          "Infrared radiation",
-          "Only audible sound"
-        ],
-        1,
-        "Warm objects emit infrared."
-      ],
-      [
-        "Fibre-optic communication commonly uses…",
-        [
-          "Sound waves in air",
-          "Radioactive dust",
-          "Visible/optical light signals"
-        ],
-        2,
-        "Light transfers the modulated signal along the fibre."
-      ]
-    ],
-    "check": [
-      [
-        "An electrical radiant heater mainly uses…",
-        [
-          "Infrared",
-          "X-rays",
-          "Gamma"
-        ],
-        0,
-        "Absorbed infrared transfers energy to surfaces."
-      ],
-      [
-        "UV tanning should be evaluated with…",
-        [
-          "No possible health effect",
-          "Skin damage/cancer risk as well as the intended effect",
-          "Only the lamp colour"
-        ],
-        1,
-        "The application does not remove the hazard."
-      ],
-      [
-        "X-ray imaging depends partly on…",
-        [
-          "All tissue absorbing identically",
-          "X-rays having a different vacuum speed",
-          "Different absorption/transmission in different tissues"
-        ],
-        2,
-        "Different interactions create the image contrast."
-      ]
-    ],
-    "calc": [
-      "A signal travels600000 m at supplied speed300000000 m/s. Find transit time in s.",
-      0.002,
-      "600000 ÷ 300000000"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "thermal",
@@ -1294,108 +2582,221 @@
         ]
       ]
     },
-    "separate": false,
-    "higher": false,
-    "film": false,
-    "extra": {
-      "title": "Higher: explain suitability",
-      "text": "Microwaves can pass through Earth’s atmosphere for satellite links; radio waves can carry broadcast signals; infrared is readily absorbed to warm surfaces and emitted by warm objects for thermal imaging. Visible light can be guided in optical fibres. UV can excite lamp coatings to emit visible light but can damage skin. X-rays penetrate soft tissue differently from bone; gamma can reach internal detectors/targets. Suitability depends on the interaction needed, with risks evaluated alongside benefits."
-    }
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "lenses",
-    "title": "Lenses, ray diagrams and magnification",
-    "refs": [
-      "6.2.5"
+    "runtime": {
+      "id": "science.physics.waves.lenses",
+      "title": "Lenses, ray diagrams and magnification",
+      "short": "Lenses, ray diagrams and magnification",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.2.5"
+      ],
+      "combinedRefs": [],
+      "separate": true,
+      "higher": false,
+      "minutes": 35,
+      "big": "A lens refracts light. A convex/converging lens brings incident parallel rays toward a principal focus; focal length is distance from lens centre to focus. A concave/diverging lens spreads parallel rays as if they came from a focus on the incoming side.",
+      "learn": [
+        {
+          "title": "Convex and concave lenses",
+          "text": "A lens refracts light. A convex/converging lens brings incident parallel rays toward a principal focus; focal length is distance from lens centre to focus. A concave/diverging lens spreads parallel rays as if they came from a focus on the incoming side.",
+          "scene": "wav1:lenses:0",
+          "process": false
+        },
+        {
+          "title": "Construct the image",
+          "text": "Use a ray parallel to the principal axis then through the far focus for a convex lens; a ray through the lens centre continues straight in the thin-lens model. Their crossing gives a real inverted image. With the object inside a convex focal length, extend emerging rays backward to find an upright virtual image. A concave lens forms a virtual image.",
+          "scene": "wav1:lenses:1",
+          "process": false
+        },
+        {
+          "title": "Real, virtual and magnified",
+          "text": "A real image can be projected onto a screen; a virtual image is found by backward extensions and cannot be projected at that apparent location. Magnification=image height/object height, using the same length units; it has no unit. A converging lens can give real or virtual images depending on object position.",
+          "scene": "wav1:lenses:2",
+          "process": false
+        },
+        {
+          "title": "Compare image sizes",
+          "text": "Choose object and supplied image heights, predict magnification and reveal a ray schematic. The actual image heights are supplied measurements, not a thin-lens-equation solution from the fixed drawing. Independent ray construction still needs your own correctly scaled diagram.",
+          "scene": "wav1:lenses:3",
+          "process": false
+        }
+      ],
+      "prerequisites": [
+        "science.physics.waves.refraction"
+      ],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-lenses",
+      "practice": [
+        {
+          "id": "wav1.lenses.practice1",
+          "prompt": "Focal length is distance from…",
+          "options": [
+            "Lens centre to principal focus",
+            "Object to image",
+            "Top to bottom of lens"
+          ],
+          "answer": 0,
+          "why": "Use the principal axis.",
+          "concept": "wav1.lenses"
+        },
+        {
+          "id": "wav1.lenses.practice2",
+          "prompt": "A concave lens forms…",
+          "options": [
+            "Always a real image",
+            "A virtual image",
+            "No refracted rays"
+          ],
+          "answer": 1,
+          "why": "Diverging rays can be extended backward.",
+          "concept": "wav1.lenses"
+        },
+        {
+          "id": "wav1.lenses.practice3",
+          "prompt": "Magnification has…",
+          "options": [
+            "Units of mm",
+            "Units of cm",
+            "No units"
+          ],
+          "answer": 2,
+          "why": "It is a ratio of same-unit lengths.",
+          "concept": "wav1.lenses"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.lenses.check1",
+          "prompt": "Image12 mm and object4 mm give magnification…",
+          "options": [
+            "3",
+            "0.333 mm",
+            "8 mm"
+          ],
+          "answer": 0,
+          "why": "12/4=3 with no unit.",
+          "concept": "wav1.lenses"
+        },
+        {
+          "id": "wav1.lenses.check2",
+          "prompt": "An image projected onto a screen is…",
+          "options": [
+            "Always virtual",
+            "Real",
+            "Impossible with a convex lens"
+          ],
+          "answer": 1,
+          "why": "Actual rays meet at a real image.",
+          "concept": "wav1.lenses"
+        },
+        {
+          "id": "wav1.lenses.check3",
+          "prompt": "For an object inside a convex focal length, the image is…",
+          "options": [
+            "Always real and inverted",
+            "At the focus necessarily",
+            "Virtual and upright"
+          ],
+          "answer": 2,
+          "why": "Backward extensions locate the apparent image.",
+          "concept": "wav1.lenses"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "completionKey": "wav1Passed"
+      }
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "lenses",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "Focal length is distance from…",
+            [
+              "Lens centre to principal focus",
+              "Object to image",
+              "Top to bottom of lens"
+            ],
+            0,
+            "Use the principal axis."
+          ],
+          [
+            "1",
+            "A concave lens forms…",
+            [
+              "Always a real image",
+              "A virtual image",
+              "No refracted rays"
+            ],
+            1,
+            "Diverging rays can be extended backward."
+          ],
+          [
+            "2",
+            "Magnification has…",
+            [
+              "Units of mm",
+              "Units of cm",
+              "No units"
+            ],
+            2,
+            "It is a ratio of same-unit lengths."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "lenses-data",
+        "type": "numeric",
+        "prompt": "Object height5 mm and image height20 mm: find magnification.",
+        "answer": 4,
+        "unit": "stated units",
+        "reasonChoices": [
+          "20 ÷ 5",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "lenses-model",
+        "type": "experiment",
+        "experiment": "lenses",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      }
     ],
-    "cards": [
-      [
-        "Convex and concave lenses",
-        "A lens refracts light. A convex/converging lens brings incident parallel rays toward a principal focus; focal length is distance from lens centre to focus. A concave/diverging lens spreads parallel rays as if they came from a focus on the incoming side."
-      ],
-      [
-        "Construct the image",
-        "Use a ray parallel to the principal axis then through the far focus for a convex lens; a ray through the lens centre continues straight in the thin-lens model. Their crossing gives a real inverted image. With the object inside a convex focal length, extend emerging rays backward to find an upright virtual image. A concave lens forms a virtual image."
-      ],
-      [
-        "Real, virtual and magnified",
-        "A real image can be projected onto a screen; a virtual image is found by backward extensions and cannot be projected at that apparent location. Magnification=image height/object height, using the same length units; it has no unit. A converging lens can give real or virtual images depending on object position."
-      ],
-      [
-        "Compare image sizes",
-        "Choose object and supplied image heights, predict magnification and reveal a ray schematic. The actual image heights are supplied measurements, not a thin-lens-equation solution from the fixed drawing. Independent ray construction still needs your own correctly scaled diagram."
-      ]
-    ],
-    "practice": [
-      [
-        "Focal length is distance from…",
-        [
-          "Lens centre to principal focus",
-          "Object to image",
-          "Top to bottom of lens"
-        ],
-        0,
-        "Use the principal axis."
-      ],
-      [
-        "A concave lens forms…",
-        [
-          "Always a real image",
-          "A virtual image",
-          "No refracted rays"
-        ],
-        1,
-        "Diverging rays can be extended backward."
-      ],
-      [
-        "Magnification has…",
-        [
-          "Units of mm",
-          "Units of cm",
-          "No units"
-        ],
-        2,
-        "It is a ratio of same-unit lengths."
-      ]
-    ],
-    "check": [
-      [
-        "Image12 mm and object4 mm give magnification…",
-        [
-          "3",
-          "0.333 mm",
-          "8 mm"
-        ],
-        0,
-        "12/4=3 with no unit."
-      ],
-      [
-        "An image projected onto a screen is…",
-        [
-          "Always virtual",
-          "Real",
-          "Impossible with a convex lens"
-        ],
-        1,
-        "Actual rays meet at a real image."
-      ],
-      [
-        "For an object inside a convex focal length, the image is…",
-        [
-          "Always real and inverted",
-          "At the focus necessarily",
-          "Virtual and upright"
-        ],
-        2,
-        "Backward extensions locate the apparent image."
-      ]
-    ],
-    "calc": [
-      "Object height5 mm and image height20 mm: find magnification.",
-      4,
-      "20 ÷ 5"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "4",
@@ -1422,105 +2823,219 @@
       ],
       "unit": "magnification"
     },
-    "separate": true,
-    "higher": false,
-    "film": true,
-    "extra": null
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "colour",
-    "title": "Visible colour, surfaces and filters",
-    "refs": [
-      "6.2.6"
+    "runtime": {
+      "id": "science.physics.waves.colour",
+      "title": "Visible colour, surfaces and filters",
+      "short": "Visible colour, surfaces and filters",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.2.6"
+      ],
+      "combinedRefs": [],
+      "separate": true,
+      "higher": false,
+      "minutes": 35,
+      "big": "Each visible colour covers a narrow wavelength/frequency band. White light contains a mixture of visible wavelengths. A smooth surface reflects a beam in one direction (specular reflection); a rough surface scatters reflected rays (diffuse reflection).",
+      "learn": [
+        {
+          "title": "Visible colours are wavelength bands",
+          "text": "Each visible colour covers a narrow wavelength/frequency band. White light contains a mixture of visible wavelengths. A smooth surface reflects a beam in one direction (specular reflection); a rough surface scatters reflected rays (diffuse reflection).",
+          "scene": "wav1:colour:0",
+          "process": false
+        },
+        {
+          "title": "Reflection gives an opaque object its colour",
+          "text": "An opaque object appears the colour of wavelengths it reflects strongly under the available illumination. A red object reflects red and absorbs much other visible light; under only blue light it may look dark. White reflects visible wavelengths broadly; black absorbs them broadly.",
+          "scene": "wav1:colour:1",
+          "process": false
+        },
+        {
+          "title": "Filters transmit selectively",
+          "text": "A colour filter transmits selected wavelengths and absorbs others. A red filter transmits red; it cannot add red to a purely blue incoming beam. Transparent materials transmit a clear image; translucent materials transmit light but scatter it. Real filters have broad, imperfect transmission bands.",
+          "scene": "wav1:colour:2",
+          "process": false
+        },
+        {
+          "title": "Predict a filter result",
+          "text": "Choose an ideal red/blue incoming beam and red/blue filter. Predict transmitted colour or no beam. Colour labels accompany every outcome. This ideal single-band model omits partial transmission, perception and real spectral curves.",
+          "scene": "wav1:colour:3",
+          "process": false
+        }
+      ],
+      "prerequisites": [],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-colour",
+      "practice": [
+        {
+          "id": "wav1.colour.practice1",
+          "prompt": "An opaque red object in white light appears red because it…",
+          "options": [
+            "Reflects red more strongly",
+            "Creates red nuclei",
+            "Transmits every colour"
+          ],
+          "answer": 0,
+          "why": "Other wavelengths are absorbed more strongly.",
+          "concept": "wav1.colour"
+        },
+        {
+          "id": "wav1.colour.practice2",
+          "prompt": "A red filter mainly…",
+          "options": [
+            "Adds red to any beam",
+            "Transmits red and absorbs other bands",
+            "Reflects all colours equally"
+          ],
+          "answer": 1,
+          "why": "A filter selects from incoming light.",
+          "concept": "wav1.colour"
+        },
+        {
+          "id": "wav1.colour.practice3",
+          "prompt": "Diffuse reflection is associated with…",
+          "options": [
+            "A perfect smooth mirror only",
+            "No reflected light",
+            "Varying surface normals on a rough surface"
+          ],
+          "answer": 2,
+          "why": "Reflection is scattered in different directions.",
+          "concept": "wav1.colour"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.colour.check1",
+          "prompt": "A red object under ideal blue-only light may appear…",
+          "options": [
+            "Dark",
+            "Bright red automatically",
+            "White"
+          ],
+          "answer": 0,
+          "why": "There may be little red available to reflect.",
+          "concept": "wav1.colour"
+        },
+        {
+          "id": "wav1.colour.check2",
+          "prompt": "An ideal blue filter with blue incoming light transmits…",
+          "options": [
+            "Red",
+            "Blue",
+            "Every band"
+          ],
+          "answer": 1,
+          "why": "Its pass band matches the incoming band.",
+          "concept": "wav1.colour"
+        },
+        {
+          "id": "wav1.colour.check3",
+          "prompt": "A translucent material…",
+          "options": [
+            "Transmits a perfectly clear image always",
+            "Absorbs every wavelength",
+            "Transmits light with scattering"
+          ],
+          "answer": 2,
+          "why": "Light gets through without a clear view.",
+          "concept": "wav1.colour"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "completionKey": "wav1Passed"
+      }
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "colour",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "An opaque red object in white light appears red because it…",
+            [
+              "Reflects red more strongly",
+              "Creates red nuclei",
+              "Transmits every colour"
+            ],
+            0,
+            "Other wavelengths are absorbed more strongly."
+          ],
+          [
+            "1",
+            "A red filter mainly…",
+            [
+              "Adds red to any beam",
+              "Transmits red and absorbs other bands",
+              "Reflects all colours equally"
+            ],
+            1,
+            "A filter selects from incoming light."
+          ],
+          [
+            "2",
+            "Diffuse reflection is associated with…",
+            [
+              "A perfect smooth mirror only",
+              "No reflected light",
+              "Varying surface normals on a rough surface"
+            ],
+            2,
+            "Reflection is scattered in different directions."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "colour-data",
+        "type": "numeric",
+        "prompt": "A supplied white-light source has100 model units and a filter transmits25. Find percentage transmitted.",
+        "answer": 25,
+        "unit": "stated units",
+        "reasonChoices": [
+          "25 ÷ 100 × 100",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "colour-model",
+        "type": "experiment",
+        "experiment": "colour",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      }
     ],
-    "cards": [
-      [
-        "Visible colours are wavelength bands",
-        "Each visible colour covers a narrow wavelength/frequency band. White light contains a mixture of visible wavelengths. A smooth surface reflects a beam in one direction (specular reflection); a rough surface scatters reflected rays (diffuse reflection)."
-      ],
-      [
-        "Reflection gives an opaque object its colour",
-        "An opaque object appears the colour of wavelengths it reflects strongly under the available illumination. A red object reflects red and absorbs much other visible light; under only blue light it may look dark. White reflects visible wavelengths broadly; black absorbs them broadly."
-      ],
-      [
-        "Filters transmit selectively",
-        "A colour filter transmits selected wavelengths and absorbs others. A red filter transmits red; it cannot add red to a purely blue incoming beam. Transparent materials transmit a clear image; translucent materials transmit light but scatter it. Real filters have broad, imperfect transmission bands."
-      ],
-      [
-        "Predict a filter result",
-        "Choose an ideal red/blue incoming beam and red/blue filter. Predict transmitted colour or no beam. Colour labels accompany every outcome. This ideal single-band model omits partial transmission, perception and real spectral curves."
-      ]
-    ],
-    "practice": [
-      [
-        "An opaque red object in white light appears red because it…",
-        [
-          "Reflects red more strongly",
-          "Creates red nuclei",
-          "Transmits every colour"
-        ],
-        0,
-        "Other wavelengths are absorbed more strongly."
-      ],
-      [
-        "A red filter mainly…",
-        [
-          "Adds red to any beam",
-          "Transmits red and absorbs other bands",
-          "Reflects all colours equally"
-        ],
-        1,
-        "A filter selects from incoming light."
-      ],
-      [
-        "Diffuse reflection is associated with…",
-        [
-          "A perfect smooth mirror only",
-          "No reflected light",
-          "Varying surface normals on a rough surface"
-        ],
-        2,
-        "Reflection is scattered in different directions."
-      ]
-    ],
-    "check": [
-      [
-        "A red object under ideal blue-only light may appear…",
-        [
-          "Dark",
-          "Bright red automatically",
-          "White"
-        ],
-        0,
-        "There may be little red available to reflect."
-      ],
-      [
-        "An ideal blue filter with blue incoming light transmits…",
-        [
-          "Red",
-          "Blue",
-          "Every band"
-        ],
-        1,
-        "Its pass band matches the incoming band."
-      ],
-      [
-        "A translucent material…",
-        [
-          "Transmits a perfectly clear image always",
-          "Absorbs every wavelength",
-          "Transmits light with scattering"
-        ],
-        2,
-        "Light gets through without a clear view."
-      ]
-    ],
-    "calc": [
-      "A supplied white-light source has100 model units and a filter transmits25. Find percentage transmitted.",
-      25,
-      "25 ÷ 100 × 100"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "red",
@@ -1561,106 +3076,263 @@
         ]
       ]
     },
-    "separate": true,
-    "higher": false,
-    "film": false,
-    "extra": null
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "blackbody",
-    "title": "Black bodies and thermal emission",
-    "refs": [
-      "6.3.1",
-      "6.3.2"
-    ],
-    "cards": [
-      [
-        "Every object emits radiation",
-        "All objects emit and absorb infrared radiation regardless of temperature. A hotter object emits more energy per second. Temperature changes both emission intensity and the wavelength distribution: the peak shifts toward shorter wavelengths as temperature increases."
+    "runtime": {
+      "id": "science.physics.waves.blackbody",
+      "title": "Black bodies and thermal emission",
+      "short": "Black bodies and thermal emission",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.3.1",
+        "6.3.2"
       ],
-      [
-        "An ideal absorber and emitter",
-        "A perfect black body absorbs all radiation incident on it, with no reflection or transmission. A good absorber is also a good emitter, so a perfect black body is the best possible emitter at a given temperature. It is an ideal model, not simply any object painted black."
+      "combinedRefs": [],
+      "separate": true,
+      "higher": false,
+      "minutes": 35,
+      "big": "All objects emit and absorb infrared radiation regardless of temperature. A hotter object emits more energy per second. Temperature changes both emission intensity and the wavelength distribution: the peak shifts toward shorter wavelengths as temperature increases.",
+      "learn": [
+        {
+          "title": "Every object emits radiation",
+          "text": "All objects emit and absorb infrared radiation regardless of temperature. A hotter object emits more energy per second. Temperature changes both emission intensity and the wavelength distribution: the peak shifts toward shorter wavelengths as temperature increases.",
+          "scene": "wav1:blackbody:0",
+          "process": false
+        },
+        {
+          "title": "An ideal absorber and emitter",
+          "text": "A perfect black body absorbs all radiation incident on it, with no reflection or transmission. A good absorber is also a good emitter, so a perfect black body is the best possible emitter at a given temperature. It is an ideal model, not simply any object painted black.",
+          "scene": "wav1:blackbody:1",
+          "process": false
+        },
+        {
+          "title": "Read a spectrum",
+          "text": "An emission spectrum plots intensity against wavelength. Hotter black-body curves are higher and peak at shorter wavelengths. A thermal camera’s false colours are chosen display colours; they do not mean a room-temperature object emits visible blue/red as drawn.",
+          "scene": "wav1:blackbody:2",
+          "process": false
+        },
+        {
+          "title": "Compare ideal spectra",
+          "text": "Choose a lower/higher supplied temperature and a low/high emitted-power comparison. Predict which spectrum peaks at shorter wavelength. The curves are qualitative illustrations, not Planck-law calculations or calibrated temperatures.",
+          "scene": "wav1:blackbody:3",
+          "process": false
+        },
+        {
+          "title": "Higher: balance incoming and outgoing radiation",
+          "text": "Constant temperature requires absorbed radiation power to equal emitted radiation power. If absorption exceeds emission, temperature rises; if emission exceeds absorption, it falls. Earth’s temperature depends on absorption, emission and reflection into space, including surface and atmospheric interactions. Compare energy-flow arrows and supplied values; a one-box model omits circulation, feedbacks and wavelength-dependent atmosphere.",
+          "scene": "wav1:blackbody:4",
+          "process": false,
+          "higher": true
+        }
       ],
-      [
-        "Read a spectrum",
-        "An emission spectrum plots intensity against wavelength. Hotter black-body curves are higher and peak at shorter wavelengths. A thermal camera’s false colours are chosen display colours; they do not mean a room-temperature object emits visible blue/red as drawn."
+      "prerequisites": [],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
       ],
-      [
-        "Compare ideal spectra",
-        "Choose a lower/higher supplied temperature and a low/high emitted-power comparison. Predict which spectrum peaks at shorter wavelength. The curves are qualitative illustrations, not Planck-law calculations or calibrated temperatures."
+      "widget": "wav1-blackbody",
+      "practice": [
+        {
+          "id": "wav1.blackbody.practice1",
+          "prompt": "A perfect black body…",
+          "options": [
+            "Absorbs all incident radiation",
+            "Reflects every wavelength",
+            "Transmits every wavelength"
+          ],
+          "answer": 0,
+          "why": "No incident energy is reflected or transmitted.",
+          "concept": "wav1.blackbody"
+        },
+        {
+          "id": "wav1.blackbody.practice2",
+          "prompt": "At higher temperature, emission generally…",
+          "options": [
+            "Always decreases",
+            "Increases with peak toward shorter wavelengths",
+            "Has an unchanged spectrum"
+          ],
+          "answer": 1,
+          "why": "Intensity and wavelength distribution change.",
+          "concept": "wav1.blackbody"
+        },
+        {
+          "id": "wav1.blackbody.practice3",
+          "prompt": "At the same temperature a good absorber is also…",
+          "options": [
+            "Always transparent",
+            "Unable to emit",
+            "A good emitter"
+          ],
+          "answer": 2,
+          "why": "Absorption and emission properties are linked.",
+          "concept": "wav1.blackbody"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.blackbody.check1",
+          "prompt": "A cold object can emit infrared because…",
+          "options": [
+            "All objects emit radiation",
+            "Only glowing objects emit",
+            "It must be radioactive"
+          ],
+          "answer": 0,
+          "why": "Emission does not require visible glow.",
+          "concept": "wav1.blackbody"
+        },
+        {
+          "id": "wav1.blackbody.check2",
+          "prompt": "A false-colour thermal image is…",
+          "options": [
+            "A visible-wavelength photograph necessarily",
+            "A display representation of detected infrared",
+            "A direct chemical analysis"
+          ],
+          "answer": 1,
+          "why": "Display colours are assigned.",
+          "concept": "wav1.blackbody"
+        },
+        {
+          "id": "wav1.blackbody.check3",
+          "prompt": "A hotter black-body curve has a peak at…",
+          "options": [
+            "Longer wavelength necessarily",
+            "The same wavelength necessarily",
+            "Shorter wavelength"
+          ],
+          "answer": 2,
+          "why": "Its wavelength distribution changes.",
+          "concept": "wav1.blackbody"
+        },
+        {
+          "id": "wav1.blackbody.check-higher",
+          "prompt": "An object absorbs80 W and emits60 W of radiation. Its temperature tends to…",
+          "options": [
+            "Rise",
+            "Stay constant",
+            "Fall"
+          ],
+          "answer": 0,
+          "why": "Net radiation input is20W; the energy store increases.",
+          "concept": "wav1.blackbody"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model",
+          "higher"
+        ],
+        "completionKey": "wav1Passed"
+      },
+      "higherQuestions": [
+        "wav1.blackbody.check-higher"
       ]
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "blackbody",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "A perfect black body…",
+            [
+              "Absorbs all incident radiation",
+              "Reflects every wavelength",
+              "Transmits every wavelength"
+            ],
+            0,
+            "No incident energy is reflected or transmitted."
+          ],
+          [
+            "1",
+            "At higher temperature, emission generally…",
+            [
+              "Always decreases",
+              "Increases with peak toward shorter wavelengths",
+              "Has an unchanged spectrum"
+            ],
+            1,
+            "Intensity and wavelength distribution change."
+          ],
+          [
+            "2",
+            "At the same temperature a good absorber is also…",
+            [
+              "Always transparent",
+              "Unable to emit",
+              "A good emitter"
+            ],
+            2,
+            "Absorption and emission properties are linked."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "blackbody-data",
+        "type": "numeric",
+        "prompt": "An object emits240 J in6 s. Find emitted power in W.",
+        "answer": 40,
+        "unit": "stated units",
+        "reasonChoices": [
+          "240 ÷ 6",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "blackbody-model",
+        "type": "experiment",
+        "experiment": "blackbody",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      },
+      {
+        "id": "higher",
+        "title": "Higher: explain the extension",
+        "kind": "blackbody",
+        "type": "compare",
+        "higher": true,
+        "cases": [
+          [
+            "0",
+            "An object absorbs80 W and emits60 W of radiation. Its temperature tends to…",
+            [
+              "Rise",
+              "Stay constant",
+              "Fall"
+            ],
+            0,
+            "Net radiation input is20W; the energy store increases."
+          ]
+        ]
+      }
     ],
-    "practice": [
-      [
-        "A perfect black body…",
-        [
-          "Absorbs all incident radiation",
-          "Reflects every wavelength",
-          "Transmits every wavelength"
-        ],
-        0,
-        "No incident energy is reflected or transmitted."
-      ],
-      [
-        "At higher temperature, emission generally…",
-        [
-          "Always decreases",
-          "Increases with peak toward shorter wavelengths",
-          "Has an unchanged spectrum"
-        ],
-        1,
-        "Intensity and wavelength distribution change."
-      ],
-      [
-        "At the same temperature a good absorber is also…",
-        [
-          "Always transparent",
-          "Unable to emit",
-          "A good emitter"
-        ],
-        2,
-        "Absorption and emission properties are linked."
-      ]
-    ],
-    "check": [
-      [
-        "A cold object can emit infrared because…",
-        [
-          "All objects emit radiation",
-          "Only glowing objects emit",
-          "It must be radioactive"
-        ],
-        0,
-        "Emission does not require visible glow."
-      ],
-      [
-        "A false-colour thermal image is…",
-        [
-          "A visible-wavelength photograph necessarily",
-          "A display representation of detected infrared",
-          "A direct chemical analysis"
-        ],
-        1,
-        "Display colours are assigned."
-      ],
-      [
-        "A hotter black-body curve has a peak at…",
-        [
-          "Longer wavelength necessarily",
-          "The same wavelength necessarily",
-          "Shorter wavelength"
-        ],
-        2,
-        "Its wavelength distribution changes."
-      ]
-    ],
-    "calc": [
-      "An object emits240 J in6 s. Find emitted power in W.",
-      40,
-      "240 ÷ 6"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "lower",
@@ -1697,108 +3369,221 @@
         ]
       ]
     },
-    "separate": true,
-    "higher": false,
-    "film": true,
-    "extra": {
-      "title": "Higher: balance incoming and outgoing radiation",
-      "text": "Constant temperature requires absorbed radiation power to equal emitted radiation power. If absorption exceeds emission, temperature rises; if emission exceeds absorption, it falls. Earth’s temperature depends on absorption, emission and reflection into space, including surface and atmospheric interactions. Compare energy-flow arrows and supplied values; a one-box model omits circulation, feedbacks and wavelength-dependent atmosphere."
-    }
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   },
   {
-    "k": "infrared",
-    "title": "Investigating infrared surfaces",
-    "refs": [
-      "6.2.2"
+    "runtime": {
+      "id": "science.physics.waves.infrared",
+      "title": "Investigating infrared surfaces",
+      "short": "Investigating infrared surfaces",
+      "topicId": "science.physics.waves",
+      "refs": [
+        "6.2.2"
+      ],
+      "combinedRefs": [
+        "6.2.2"
+      ],
+      "separate": false,
+      "higher": false,
+      "minutes": 35,
+      "big": "Required practical10 (separate) or21 (Trilogy) investigates how infrared absorbed or radiated depends on the surface. Compare matt black and shiny surfaces while controlling temperatures, area, distance, angle and detector settings. A Leslie cube with different faces can provide a common internal temperature for emission comparisons.",
+      "learn": [
+        {
+          "title": "Compare the nature of surfaces",
+          "text": "Required practical10 (separate) or21 (Trilogy) investigates how infrared absorbed or radiated depends on the surface. Compare matt black and shiny surfaces while controlling temperatures, area, distance, angle and detector settings. A Leslie cube with different faces can provide a common internal temperature for emission comparisons.",
+          "scene": "wav1:infrared:0",
+          "process": false
+        },
+        {
+          "title": "Measure emitted radiation",
+          "text": "Keep detector position/distance and face area comparable; allow a stable temperature and record repeated readings. Matt dark surfaces are generally better emitters than shiny reflective surfaces at equal temperature. Detector readings are evidence under the apparatus conditions, not a universal colour-only law.",
+          "scene": "wav1:infrared:1",
+          "process": false
+        },
+        {
+          "title": "Investigate absorption fairly",
+          "text": "Use identical containers/sensors and equal incident radiation/initial temperature. Compare temperature rise over the same time with other heat transfers controlled as far as possible. Avoid touching hot apparatus; follow school procedures. Conduction, convection and cooling can affect results.",
+          "scene": "wav1:infrared:2",
+          "process": false
+        },
+        {
+          "title": "Predict an illustrative reading",
+          "text": "Choose matt/shiny surface and one of two common source temperatures. Predict which supplied relative detector reading applies. Values are original toy data, not emissivities or a complete cooling model. Physical apparatus use and uncertainty evaluation remain school evidence.",
+          "scene": "wav1:infrared:3",
+          "process": false
+        }
+      ],
+      "prerequisites": [],
+      "skills": [
+        "WS1.2",
+        "MS3b",
+        "MS3c",
+        "MS4a"
+      ],
+      "widget": "wav1-infrared",
+      "practice": [
+        {
+          "id": "wav1.infrared.practice1",
+          "prompt": "For an emission comparison, keep…",
+          "options": [
+            "Temperature and detector geometry comparable",
+            "Only the surface names equal",
+            "Every reading forced equal"
+          ],
+          "answer": 0,
+          "why": "Control confounding variables.",
+          "concept": "wav1.infrared"
+        },
+        {
+          "id": "wav1.infrared.practice2",
+          "prompt": "At equal temperature matt black is generally…",
+          "options": [
+            "A poorer emitter than shiny",
+            "A better emitter than shiny",
+            "A perfect black body necessarily"
+          ],
+          "answer": 1,
+          "why": "Real surfaces approximate rather than equal the ideal.",
+          "concept": "wav1.infrared"
+        },
+        {
+          "id": "wav1.infrared.practice3",
+          "prompt": "A Leslie cube helps control…",
+          "options": [
+            "The detector count to zero",
+            "The wavelength to one colour",
+            "The source temperature across faces"
+          ],
+          "answer": 2,
+          "why": "Different faces share the heated interior.",
+          "concept": "wav1.infrared"
+        }
+      ],
+      "check": [
+        {
+          "id": "wav1.infrared.check1",
+          "prompt": "Changing detector distance between surfaces makes comparison…",
+          "options": [
+            "Potentially confounded",
+            "Automatically more accurate",
+            "Independent of geometry"
+          ],
+          "answer": 0,
+          "why": "Distance affects received radiation.",
+          "concept": "wav1.infrared"
+        },
+        {
+          "id": "wav1.infrared.check2",
+          "prompt": "An absorption trial should compare…",
+          "options": [
+            "Different starting temperatures without correction",
+            "Equal incident radiation and controlled initial conditions",
+            "Only the final container colours"
+          ],
+          "answer": 1,
+          "why": "Control conditions to interpret the temperature change.",
+          "concept": "wav1.infrared"
+        },
+        {
+          "id": "wav1.infrared.check3",
+          "prompt": "A simulated high detector reading proves…",
+          "options": [
+            "Hands-on practical competence",
+            "A universal emissivity value",
+            "Only the stated model comparison"
+          ],
+          "answer": 2,
+          "why": "Real data and uncertainty need separate evidence.",
+          "concept": "wav1.infrared"
+        }
+      ],
+      "widgetRequirements": {
+        "Foundation": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "Higher": [
+          "compare",
+          "calculate",
+          "model"
+        ],
+        "completionKey": "wav1Passed"
+      }
+    },
+    "tasks": [
+      {
+        "id": "compare",
+        "title": "Compare and explain",
+        "kind": "infrared",
+        "type": "compare",
+        "cases": [
+          [
+            "0",
+            "For an emission comparison, keep…",
+            [
+              "Temperature and detector geometry comparable",
+              "Only the surface names equal",
+              "Every reading forced equal"
+            ],
+            0,
+            "Control confounding variables."
+          ],
+          [
+            "1",
+            "At equal temperature matt black is generally…",
+            [
+              "A poorer emitter than shiny",
+              "A better emitter than shiny",
+              "A perfect black body necessarily"
+            ],
+            1,
+            "Real surfaces approximate rather than equal the ideal."
+          ],
+          [
+            "2",
+            "A Leslie cube helps control…",
+            [
+              "The detector count to zero",
+              "The wavelength to one colour",
+              "The source temperature across faces"
+            ],
+            2,
+            "Different faces share the heated interior."
+          ]
+        ]
+      },
+      {
+        "id": "calculate",
+        "title": "Calculate and explain",
+        "kind": "infrared-data",
+        "type": "numeric",
+        "prompt": "Three detector readings are18,20,22 relative units. Find the mean.",
+        "answer": 20,
+        "unit": "stated units",
+        "reasonChoices": [
+          "(18 + 20 + 22) ÷ 3",
+          "Multiply all supplied quantities regardless of relationship",
+          "Ignore the stated conditions"
+        ],
+        "reason": 0,
+        "why": "Use the relationship, direction and units in Discover."
+      },
+      {
+        "id": "model",
+        "title": "Predict and compare every setting",
+        "kind": "infrared-model",
+        "type": "experiment",
+        "experiment": "infrared",
+        "why": "Use the selected quantities and the stated physical assumptions."
+      }
     ],
-    "cards": [
-      [
-        "Compare the nature of surfaces",
-        "Required practical10 (separate) or21 (Trilogy) investigates how infrared absorbed or radiated depends on the surface. Compare matt black and shiny surfaces while controlling temperatures, area, distance, angle and detector settings. A Leslie cube with different faces can provide a common internal temperature for emission comparisons."
-      ],
-      [
-        "Measure emitted radiation",
-        "Keep detector position/distance and face area comparable; allow a stable temperature and record repeated readings. Matt dark surfaces are generally better emitters than shiny reflective surfaces at equal temperature. Detector readings are evidence under the apparatus conditions, not a universal colour-only law."
-      ],
-      [
-        "Investigate absorption fairly",
-        "Use identical containers/sensors and equal incident radiation/initial temperature. Compare temperature rise over the same time with other heat transfers controlled as far as possible. Avoid touching hot apparatus; follow school procedures. Conduction, convection and cooling can affect results."
-      ],
-      [
-        "Predict an illustrative reading",
-        "Choose matt/shiny surface and one of two common source temperatures. Predict which supplied relative detector reading applies. Values are original toy data, not emissivities or a complete cooling model. Physical apparatus use and uncertainty evaluation remain school evidence."
-      ]
-    ],
-    "practice": [
-      [
-        "For an emission comparison, keep…",
-        [
-          "Temperature and detector geometry comparable",
-          "Only the surface names equal",
-          "Every reading forced equal"
-        ],
-        0,
-        "Control confounding variables."
-      ],
-      [
-        "At equal temperature matt black is generally…",
-        [
-          "A poorer emitter than shiny",
-          "A better emitter than shiny",
-          "A perfect black body necessarily"
-        ],
-        1,
-        "Real surfaces approximate rather than equal the ideal."
-      ],
-      [
-        "A Leslie cube helps control…",
-        [
-          "The detector count to zero",
-          "The wavelength to one colour",
-          "The source temperature across faces"
-        ],
-        2,
-        "Different faces share the heated interior."
-      ]
-    ],
-    "check": [
-      [
-        "Changing detector distance between surfaces makes comparison…",
-        [
-          "Potentially confounded",
-          "Automatically more accurate",
-          "Independent of geometry"
-        ],
-        0,
-        "Distance affects received radiation."
-      ],
-      [
-        "An absorption trial should compare…",
-        [
-          "Different starting temperatures without correction",
-          "Equal incident radiation and controlled initial conditions",
-          "Only the final container colours"
-        ],
-        1,
-        "Control conditions to interpret the temperature change."
-      ],
-      [
-        "A simulated high detector reading proves…",
-        [
-          "Hands-on practical competence",
-          "A universal emissivity value",
-          "Only the stated model comparison"
-        ],
-        2,
-        "Real data and uncertainty need separate evidence."
-      ]
-    ],
-    "calc": [
-      "Three detector readings are18,20,22 relative units. Find the mean.",
-      20,
-      "(18 + 20 + 22) ÷ 3"
-    ],
-    "lab": {
+    "experiment": {
       "a": [
         [
           "matt",
@@ -1825,9 +3610,11 @@
       ],
       "unit": "relative detector units"
     },
-    "separate": false,
-    "higher": false,
-    "film": false,
-    "extra": null
+    "source_checked": "2026-10-22",
+    "source_urls": {
+      "combined": "https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content",
+      "separate": "https://www.aqa.org.uk/subjects/physics/gcse/physics-8463/specification/subject-content/waves"
+    },
+    "authoring_note": "Snapshot of the implemented lesson and activity contract. Runtime JS is canonical; no generator is provided. Numerical models are separately implemented/tested in wav1-models.js."
   }
 ]

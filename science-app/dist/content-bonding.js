@@ -1,7 +1,7 @@
-import {nanoLessons,nanoConcepts} from './content-nano.js?v=20261022-radiation01';
-import {carbonLessons,carbonConcepts} from './content-carbon.js?v=20261022-radiation01';
-import {structureLessons,structureConcepts} from './content-structures.js?v=20261022-radiation01';
-import {covalentLessons,covalentConcepts} from './content-covalent.js?v=20261022-radiation01';
+import {nanoLessons,nanoConcepts} from './content-nano.js?v=20261023-physicscomplete01';
+import {carbonLessons,carbonConcepts} from './content-carbon.js?v=20261023-physicscomplete01';
+import {structureLessons,structureConcepts} from './content-structures.js?v=20261023-physicscomplete01';
+import {covalentLessons,covalentConcepts} from './content-covalent.js?v=20261023-physicscomplete01';
 const Q=(id,prompt,options,answer,why,concept)=>({id:'bonding.'+id,prompt,options,answer,why,concept:'bonding.'+concept});
 const C=(title,text,scene)=>({title,text,scene});
 export const bondingLessons=[

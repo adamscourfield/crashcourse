@@ -1,6 +1,8 @@
 # Crash Course
 
-An interactive GCSE learning platform supporting AQA Combined Science: Trilogy and separate sciences, with Foundation/Higher filtering, and Pearson Edexcel GCSE Mathematics (1MA1): fifteen Number lessons covering N1–N16 and twenty-two Algebra lessons (lessons 21–22 on GitHub, not yet published), with generated, mastery-based practice and algebra answers marked by equivalence. The platform is designed to support additional subjects as their curricula are built.
+An interactive GCSE learning platform supporting AQA Combined Science: Trilogy and separate sciences, with Foundation/Higher filtering, and Pearson Edexcel GCSE Mathematics (1MA1): fifteen Number lessons covering N1–N16 and twenty-two Algebra lessons, with generated, mastery-based practice and algebra answers marked by equivalence. The platform is designed to support additional subjects as their curricula are built.
+
+Science teaching roadmaps now contain361lessons:113Chemistry,150Biology and98Physics (separate Higher inventory; route/tier filtering applies). Specialist review, independent constructed evidence and supervised practical performance remain distinct from teaching availability. See [BUILD_STATUS.md](BUILD_STATUS.md) for verification and publication status.
 
 ## Project source
 

@@ -598,7 +598,9 @@ export const mag1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.magnetism-and-electromagnetism.motoreffect"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -736,7 +738,9 @@ export const mag1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.magnetism-and-electromagnetism.motoreffect"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -1150,7 +1154,9 @@ export const mag1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.magnetism-and-electromagnetism.induction"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -1288,7 +1294,10 @@ export const mag1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.electricity.grid",
+      "science.physics.magnetism-and-electromagnetism.induction"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",

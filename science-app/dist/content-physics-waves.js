@@ -181,7 +181,9 @@ export const wav1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.waves.types"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -734,7 +736,9 @@ export const wav1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.waves.properties"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -1021,7 +1025,9 @@ export const wav1Lessons=[
         "higher": true
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.waves.properties"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -1498,7 +1504,9 @@ export const wav1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.waves.refraction"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",

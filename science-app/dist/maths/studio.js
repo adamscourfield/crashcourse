@@ -1,26 +1,26 @@
 // Maths studio: lesson flow, generated practice with mastery ladders, independent checks,
 // spaced interleaved review and topic assessment. Owns its own saved state (MATHS_KEY) so it
 // can never alter science progress.
-import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r7';
-import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r7';
-import { algebraMatches, algebraPreview } from './algebra.js?v=20261022-maths-r7';
-import { parseSolutions, solutionsMatch, inequalityMatches } from './sets.js?v=20261022-maths-r7';
-import { graphSVG, graphInputHTML, bindGraphInput, lineFeedback, pointsFeedback } from './graph.js?v=20261022-maths-r7';
-import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261022-maths-r7';
-import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r7';
-import { generate, skillById } from './skills.js?v=20261022-maths-r7';
-import { orderedLessons as numberLessons, mathsTopics as numberTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r7';
-import { algebraTopic, orderedAlgebra } from './lessons-algebra.js?v=20261022-maths-r7';
-import { visual4, MODELS4 } from './models-algebra.js?v=20261022-maths-r7';
-import { visual5, MODELS5 } from './models-algebra2.js?v=20261022-maths-r7';
-import { visual6, MODELS6 } from './models-graphs.js?v=20261022-maths-r7';
-import { visual7, MODELS7 } from './models-algebra3.js?v=20261022-maths-r7';
-import { MODELS8 } from './models-algebra4.js?v=20261022-maths-r7';
-import { visual, mountModel } from './models-number.js?v=20261022-maths-r7';
-import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r7';
-import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r7';
-import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r7';
-import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r7';
+import { mathHTML, mathText, esc } from './render.js?v=20261022-maths-r8';
+import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261022-maths-r8';
+import { algebraMatches, algebraPreview } from './algebra.js?v=20261022-maths-r8';
+import { parseSolutions, solutionsMatch, inequalityMatches } from './sets.js?v=20261022-maths-r8';
+import { graphSVG, graphInputHTML, bindGraphInput, lineFeedback, pointsFeedback } from './graph.js?v=20261022-maths-r8';
+import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261022-maths-r8';
+import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261022-maths-r8';
+import { generate, skillById } from './skills.js?v=20261022-maths-r8';
+import { orderedLessons as numberLessons, mathsTopics as numberTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261022-maths-r8';
+import { algebraTopic, orderedAlgebra } from './lessons-algebra.js?v=20261022-maths-r8';
+import { visual4, MODELS4 } from './models-algebra.js?v=20261022-maths-r8';
+import { visual5, MODELS5 } from './models-algebra2.js?v=20261022-maths-r8';
+import { visual6, MODELS6 } from './models-graphs.js?v=20261022-maths-r8';
+import { visual7, MODELS7 } from './models-algebra3.js?v=20261022-maths-r8';
+import { MODELS8 } from './models-algebra4.js?v=20261022-maths-r8';
+import { visual, mountModel } from './models-number.js?v=20261022-maths-r8';
+import { visual2, MODELS2 } from './models-number2.js?v=20261022-maths-r8';
+import { visual3, MODELS3 } from './models-number3.js?v=20261022-maths-r8';
+import { newSeed, rng, shuffled } from './rng.js?v=20261022-maths-r8';
+import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261022-maths-r8';
 
 const STAGES = ['Discover', 'Investigate', 'Practise', 'Check'];
 const orderedLessons = [...numberLessons, ...orderedAlgebra];

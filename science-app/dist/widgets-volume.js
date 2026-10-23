@@ -1,5 +1,5 @@
-import {solutionAccount,reactingAccount,gasMassAccount,gasRatioVolume,molarTasks,reactingTasks,gasTasks} from './volume-models.js?v=20261022-radiation01';
-import {showVolume} from './volume-scenes.js?v=20261022-radiation01';
+import {solutionAccount,reactingAccount,gasMassAccount,gasRatioVolume,molarTasks,reactingTasks,gasTasks} from './volume-models.js?v=20261023-physicscomplete01';
+import {showVolume} from './volume-scenes.js?v=20261023-physicscomplete01';
 const input=(id,label,v='')=>`<label class="field-label" for="${id}">${label}</label><input class="lab-input" id="${id}" type="number" step="any" value="${v}">`;
 export function mountVolumeWidget(l,p,root,{save,done,feedback}){
  const w=p.widget;w.task??=0;w.answers??={};w.passed??=[];const i=w.task,a=w.answers[i]??={},kind=l.widget.slice(7),molar=kind==='molar-concentration',reacting=kind==='reacting-solutions',t=(molar?molarTasks:reacting?reactingTasks:gasTasks)[i],$=s=>root.querySelector(s);let result,fields,prompt;

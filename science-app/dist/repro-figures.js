@@ -1,4 +1,4 @@
-import{cycleDays,cycleCurves,freshCycleCurves,cycleState,ivfStage,curveValue}from './repro-models.js?v=20261022-radiation01';
+import{cycleDays,cycleCurves,freshCycleCurves,cycleState,ivfStage,curveValue}from './repro-models.js?v=20261023-physicscomplete01';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const xt=(x,y,s,z=16)=>`<text x="${x}" y="${y}" text-anchor="middle" fill="#f8f6f2" font-size="${z}">${esc(s)}</text>`;
 const line=(d,c='#b8cfd2',w=3)=>`<path d="${d}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round"/>`;

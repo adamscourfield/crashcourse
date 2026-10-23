@@ -599,7 +599,9 @@ export const frc1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.energy.stores"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -739,7 +741,9 @@ export const frc1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.energy.elastic"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -1290,7 +1294,9 @@ export const frc1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.forces.pressure"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -2510,7 +2516,9 @@ export const frc1Lessons=[
         "higher": true
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.forces.resultant"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -3097,7 +3105,9 @@ export const frc1Lessons=[
         "higher": true
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.energy.kinetic"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -3393,7 +3403,9 @@ export const frc1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.forces.momentum"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",
@@ -3531,7 +3543,9 @@ export const frc1Lessons=[
         "process": false
       }
     ],
-    "prerequisites": [],
+    "prerequisites": [
+      "science.physics.forces.momentum"
+    ],
     "skills": [
       "WS1.2",
       "MS3b",

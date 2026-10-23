@@ -1,4 +1,4 @@
-import{radiationFigure}from './rad1-figures.js?v=20261022-radiation01';
+import{radiationFigure}from './rad1-figures.js?v=20261023-physicscomplete01';
 const entries=[
 ['atoms','Electron energy transitions',['Absorb radiation: electron moves to higher level.','The nucleus stays unchanged.','Emit radiation: electron moves to lower level.','The emitted radiation carries energy away.']],
 ['evidence','A selected close alpha encounter',['Approach the foil.','Positive alpha approaches a positive nucleus.','Strong repulsion turns this selected trajectory.','Rare large deflections support a concentrated nucleus.']],

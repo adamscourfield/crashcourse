@@ -1,7 +1,7 @@
-import{renderDiagram,renderCustomModel}from './visual.js?v=20261022-radiation01';
-import{circuit,vesselCases,vesselValid,valveFlow,bloodParts,gasSnapshot,exchangeCase,exchangeComparisons}from './circulation-models.js?v=20261022-radiation01';
-import{heartFigure,circuitFigure,vesselFigure,bloodFigure,lungFigure,valveFigure,circSvg}from './circulation-figures.js?v=20261022-radiation01';
-import{buildCirculation}from './circulation-meshes.js?v=20261022-radiation01';
+import{renderDiagram,renderCustomModel}from './visual.js?v=20261023-physicscomplete01';
+import{circuit,vesselCases,vesselValid,valveFlow,bloodParts,gasSnapshot,exchangeCase,exchangeComparisons}from './circulation-models.js?v=20261023-physicscomplete01';
+import{heartFigure,circuitFigure,vesselFigure,bloodFigure,lungFigure,valveFigure,circSvg}from './circulation-figures.js?v=20261023-physicscomplete01';
+import{buildCirculation}from './circulation-meshes.js?v=20261023-physicscomplete01';
 const opts=(pairs,v)=>'<option value="">Choose…</option>'+pairs.map(([k,t])=>`<option value="${k}" ${String(k)===String(v)?'selected':''}>${t}</option>`).join('');
 const note='<p class="diagram-caption">Functional schematics, not anatomical measurements or real flow rates. Blood is never blue. Colours and sizes are symbolic; components are separately enlarged. Counterfactuals isolate one role.</p>';
 export function showCirculation(kind='heart',w={}){

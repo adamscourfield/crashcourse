@@ -3,9 +3,9 @@
 //   {id, skill, level, seed, calculator, prompt, answer, steps, traps?, optionWhy?, note?}
 // prompt/steps/options use render.js markup: {3/4}, {1 2/3}, ^2, √, and a true minus sign.
 // traps: wrong values that reveal a specific misconception, each with targeted feedback.
-import { rng, int, pick, shuffled, intExcept } from './rng.js?v=20261022-maths-r7';
-import { F, add, sub, mul, div, eq, gcd, lcm, num, fracMarkup, fromMixed, mixedParts } from './frac.js?v=20261022-maths-r7';
-import { isPrime, primeFactors, primesMarkup, specValue } from './answers.js?v=20261022-maths-r7';
+import { rng, int, pick, shuffled, intExcept } from './rng.js?v=20261022-maths-r8';
+import { F, add, sub, mul, div, eq, gcd, lcm, num, fracMarkup, fromMixed, mixedParts } from './frac.js?v=20261022-maths-r8';
+import { isPrime, primeFactors, primesMarkup, specValue } from './answers.js?v=20261022-maths-r8';
 
 const t = n => (n < 0 ? `(${num(n)})` : String(n)); // operand after an operator
 const fm = (f, mixed = false) => fracMarkup(f, { mixed });

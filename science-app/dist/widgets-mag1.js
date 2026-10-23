@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-radiation01';
-import{tasksForMag1,validMag1,advanceMag1,numericMag1,experimentOptions,experimentResult,experimentCases,experimentValid,predictionValid,outputLabel}from './mag1-models.js?v=20261022-radiation01';import{showMag1}from './mag1-visuals.js?v=20261022-radiation01';export{showMag1};
+import{syncProcessMovie}from './process-player.js?v=20261023-physicscomplete01';
+import{tasksForMag1,validMag1,advanceMag1,numericMag1,experimentOptions,experimentResult,experimentCases,experimentValid,predictionValid,outputLabel}from './mag1-models.js?v=20261023-physicscomplete01';import{showMag1}from './mag1-visuals.js?v=20261023-physicscomplete01';export{showMag1};
 export function mountMag1(l,p,root,{save,done,feedback}){let ts=tasksForMag1(l.widget.slice(5),l.learnerTier),w=p.widget;w.mag1Task??=ts[0].id;w.mag1Drafts??={};w.mag1Passed??=[];let i=ts.findIndex(t=>t.id===w.mag1Task);if(i<0)i=0;let t=ts[i],v=w.mag1Drafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountMag1(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.mag1Passed.includes(t.id));
 syncProcessMovie(l,1,{process:false});
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;

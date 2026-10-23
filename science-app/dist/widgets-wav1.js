@@ -1,5 +1,5 @@
-import{syncProcessMovie}from './process-player.js?v=20261022-radiation01';
-import{tasksForWav1,validWav1,advanceWav1,numericWav1,experimentOptions,experimentResult,experimentCases,experimentValid,predictionValid,outputLabel}from './wav1-models.js?v=20261022-radiation01';import{showWav1}from './wav1-visuals.js?v=20261022-radiation01';export{showWav1};
+import{syncProcessMovie}from './process-player.js?v=20261023-physicscomplete01';
+import{tasksForWav1,validWav1,advanceWav1,numericWav1,experimentOptions,experimentResult,experimentCases,experimentValid,predictionValid,outputLabel}from './wav1-models.js?v=20261023-physicscomplete01';import{showWav1}from './wav1-visuals.js?v=20261023-physicscomplete01';export{showWav1};
 export function mountWav1(l,p,root,{save,done,feedback}){let ts=tasksForWav1(l.widget.slice(5),l.learnerTier),w=p.widget;w.wav1Task??=ts[0].id;w.wav1Drafts??={};w.wav1Passed??=[];let i=ts.findIndex(t=>t.id===w.wav1Task);if(i<0)i=0;let t=ts[i],v=w.wav1Drafts[t.id]??={case:0,answer:'',seen:[],step:0},$=s=>root.querySelector(s),remount=()=>mountWav1(l,p,root,{save,done,feedback});p.widgetDone=ts.every(t=>w.wav1Passed.includes(t.id));
 syncProcessMovie(l,1,{process:false});
 const field=(id,label,options,value)=>`<label class="field-label" for="${id}">${label}</label><select class="lab-select" id="${id}"><option value="">Choose…</option>${options.map(([a,b])=>`<option value="${a}" ${String(a)===String(value)?'selected':''}>${b}</option>`).join('')}</select>`;
