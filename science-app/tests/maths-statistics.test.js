@@ -33,7 +33,7 @@ function rawFor(a) {
 const tableRows = fig => { const L = fig.labels, ys = [...new Set(L.map(l => l.at[1]))].sort((a, b) => a - b); return ys.map(y => L.filter(l => l.at[1] === y).sort((a, b) => a.at[0] - b.at[0]).map(l => l.t)); };
 
 test('statistics skills: deterministic, JSON-safe, self-marking, traps wrong and explained, charts render', () => {
-  assert.equal(statisticsSkills.length, 6);
+  assert.equal(statisticsSkills.length, 7);
   for (const sk of statisticsSkills) for (let lv = 1; lv <= sk.levels.length; lv++) for (let i = 0; i < N; i++) {
     const it = sk.gen(lv, 'g' + i), txt = JSON.stringify(it), tag = `${sk.id}@${lv}: ${it.prompt}`;
     assert.equal(txt, JSON.stringify(sk.gen(lv, 'g' + i)));
@@ -90,6 +90,39 @@ test('charts and sampling: frequencies from the drawn bars and pie angles; estim
   for (const it of items('sampling', 3)) { const [m1, s1, m2, s2] = nums(it.prompt); const o = correctOption(it); assert.ok(o.startsWith(m1 > m2 ? 'Class A' : 'Class B') && o.includes(`${s1 < s2 ? 'Class A' : 'Class B'} was more consistent`), it.prompt); }
 });
 
+test('pictograms, vertical line charts and time series: read from the drawn symbols, lines and points', () => {
+  // Pictogram: symbols per row from the drawn sector angles; key from the drawn key label.
+  const picto = fig => {
+    const key = Number(fig.labels.find(l => /^= /.test(l.t)).t.split(' ')[1]), keyY = fig.labels.find(l => l.t === 'Key:').at[1] - 5;
+    const rows = fig.labels.filter(l => l.anchor === 'end' && l.t !== 'Key:').map(l => ({ cat: l.t, sym: sum(fig.sectors.filter(sc => sc.c[1] === l.at[1] - 5).map(sc => (sc.a2 - sc.a1) / 360)) }));
+    assert.ok(near(sum(fig.sectors.filter(sc => sc.c[1] === keyY).map(sc => sc.a2 - sc.a1)), 360), 'the key is one whole symbol');
+    return { key, rows };
+  };
+  for (const it of items('charts2', 1)) {
+    const { key, rows } = picto(it.fig), v = c => rows.find(x => x.cat === c).sym * key;
+    for (const x of rows) assert.ok([0, 0.25, 0.5, 0.75].some(q => near(x.sym % 1, q, 1e-9)), 'symbols are whole, halves or quarters');
+    let m;
+    if ((m = it.prompt.match(/How many people chose (\w+)\?/))) assert.equal(it.answer.value, v(m[1]), it.prompt);
+    else if ((m = it.prompt.match(/more people chose (\w+) than (\w+)/))) assert.equal(it.answer.value, v(m[1]) - v(m[2]), it.prompt);
+    else { const n = nums(it.prompt)[0]; assert.ok(near(val(it.answer), n / key), it.prompt); }
+  }
+  for (const it of items('charts2', 2)) {
+    const xs = it.graph.polys.map(p => Number(it.graph.xcats.find(c => c[0] === p.pts[0][0])[1])), fs = it.graph.polys.map(p => p.pts[1][1]);
+    for (const p of it.graph.polys) assert.equal(p.pts[0][0], p.pts[1][0], 'each line is vertical');
+    if (/mode/.test(it.prompt)) assert.equal(it.answer.value, xs[fs.indexOf(Math.max(...fs))]);
+    else if (/total number/.test(it.prompt)) assert.equal(it.answer.value, sum(xs.map((x, i) => x * fs[i])));
+    else assert.equal(it.answer.value, sum(fs));
+  }
+  for (const it of items('charts2', 3)) {
+    const pts = it.graph.polys[0].pts, month = m => pts[it.graph.xcats.find(c => c[1] === m)[0] - 1][1];
+    assert.deepEqual(it.graph.points.map(p => p.slice(0, 2)), pts, 'points drawn on the line');
+    for (const [, y] of pts) assert.equal(y % 5, 0, 'readings sit on grid lines');
+    let m;
+    if ((m = it.prompt.match(/from (\w+) to (\w+)\?/))) assert.equal(it.answer.value, Math.abs(month(m[2]) - month(m[1])), it.prompt);
+    else { const [a, b] = correctOption(it).split(' to '), rise = month(b) - month(a); for (let i = 1; i < pts.length; i++) assert.ok(pts[i][1] - pts[i - 1][1] <= rise); assert.ok(rise > 0); }
+  }
+});
+
 test('scatter graphs: correlation from the drawn points, estimates from the drawn line', () => {
   const r = pts => { const n = pts.length, mx = sum(pts.map(p => p[0])) / n, my = sum(pts.map(p => p[1])) / n, sxy = sum(pts.map(p => (p[0] - mx) * (p[1] - my))), sxx = sum(pts.map(p => (p[0] - mx) ** 2)), syy = sum(pts.map(p => (p[1] - my) ** 2)); return sxy / Math.sqrt(sxx * syy); };
   for (const it of items('scatter', 1)) { const rr = r(it.graph.points), o = correctOption(it); if (o.startsWith('Positive')) assert.ok(rr > 0.7, rr); else if (o.startsWith('Negative')) assert.ok(rr < -0.7, rr); else assert.ok(Math.abs(rr) < 0.4, rr); }
@@ -128,7 +161,8 @@ test('statistics lesson records: order, refs S1–S6, tiers, calculator flags an
   const ids = new Set([...numberLessons, ...orderedAlgebra, ...orderedGeometry, ...orderedStatistics].map(l => l.id));
   for (const l of orderedStatistics) {
     for (const p of l.prerequisites) assert.ok(ids.has(p), `${l.id} prerequisite ${p}`);
-    assert.equal(l.learn.length, 3); assert.equal(l.checkPlan.length, 10);
+    assert.ok(l.learn.length >= 3); assert.equal(l.checkPlan.length, 10);
+    for (const sk of l.skills) assert.ok(l.checkPlan.some(([id]) => id === sk.id), `${l.id}: ${sk.id} is checked`);
     const tier = l.higherOnly ? 'Higher' : 'Foundation';
     for (const [id, lv] of l.checkPlan) { const sk = l.skills.find(s => s.id === id); assert.ok(sk && lv <= levelsFor(sk, tier).length, `${l.id}: ${id}@${lv}`); }
     const calcItems = l.skills.some(sk => sk.levels.some((_, i) => Array.from({ length: 30 }, (_, k) => generate(sk.id, i + 1, 'c' + k)).some(it => it.calculator)));

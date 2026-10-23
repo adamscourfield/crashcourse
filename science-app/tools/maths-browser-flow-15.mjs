@@ -98,6 +98,22 @@ for (let g = 0; g < 30 && !sawChart; g++) {
   await enter(it);
 }
 ok(sawChart, 'charts practice drew a chart');
+// Keep going until the pictogram / line chart / time-series skill comes up; try its trap first.
+let saw2 = false;
+for (let g = 0; g < 60 && !saw2; g++) {
+  s = await mstate(); const L = s.lessons[s.lessonId]; if (L.stage === 3) break;
+  if (L.practice.answer) { await cont(); continue; }
+  it = L.practice.item; if (!it) break;
+  if (it.skill === 'maths.statistics.charts2') {
+    saw2 = true; ok((await page.locator('#mBody .mfig svg').count()) === 1, `S2 chart drawn (${it.fig ? 'pictogram' : 'line chart'})`); await shot('s06-charts2');
+    const t = (it.traps || [])[0];
+    if (t && it.answer.kind !== 'choice') { await page.fill('#mText', String(+(t.v.n / t.v.d).toFixed(4))); await page.click('#mSubmit'); ok((await feedback()).includes(t.why.slice(0, 25)), 'S2 trap explained: ' + t.why.slice(0, 40)); await cont(); s = await mstate(); it = s.lessons[s.lessonId].practice.item; }
+    if (it && it.skill === 'maths.statistics.charts2') { await enter(it); ok((await feedback()).startsWith('Correct'), 'S2 item answered from its chart'); }
+    break;
+  }
+  await enter(it);
+}
+ok(saw2, 'charts lesson reaches pictogram / line chart / time-series practice');
 
 // ── Foundation: scatter lesson to mastery and check (single skill: no mixed round) ──
 await readCards('maths.statistics.scatter'); await page.click('[data-mstage="2"]');

@@ -65,7 +65,6 @@ The engine now has 160 skills. The averages lesson allows a calculator; the othe
 ## Known limitations
 
 - **Not marked on screen:** constructing charts, histograms, cumulative frequency graphs, box plots and freehand lines of best fit (the investigation offers three lines to choose from).
-- **Thin practice:** pictograms, vertical line charts and time-series graphs (S2) are taught in the cards but not generated as practice items.
 - **Written comparisons** of distributions and sampling judgements are chosen from options, not written.
 - **Not reviewed.** Item wording and difficulty have not been reviewed by a maths teacher.
 
@@ -73,6 +72,15 @@ The engine now has 160 skills. The averages lesson allows a calculator; the othe
 
 Maths modules are at `20261023-maths-r12`. **Publishing needs a global version bump.**
 
+## Follow-up (same day): S2 practice gap closed
+
+A seventh skill, `maths.statistics.charts2` (Pictograms, vertical line charts and time series), now sits in the charts lesson with a fourth teaching card:
+- **Pictograms** are drawn with a key; part symbols (halves, and quarters when the key divides by 4) are drawn as fractions of a disc. Items ask for a row's frequency, a difference, and how many symbols to draw for a new number (traps: counting symbols, multiplying instead of dividing, rounding a part symbol up).
+- **Vertical line charts** for discrete data (pets, goals, siblings): mode (trap: the frequency), how many households (trap: Σfx), total pets (trap: Σf).
+- **Time-series graphs** by month: change between two months, and the biggest rise (choice, each wrong option explained with its own change).
+- The test re-solves every item from the drawn symbols, lines and points. Flow 15 now reaches this skill in practice, triggers its trap and answers it (60 checks).
+- 161 skills. 651 automated tests pass; flows 1, 14 and 15 re-run and pass.
+
 ## Next
 
-Specialist review across all six topics; fill the S2 practice gap (pictograms, line charts, time series); publish Statistics.
+Specialist review across all six topics; publish Statistics.

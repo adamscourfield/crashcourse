@@ -6,7 +6,7 @@
 //   correlation and causation, lines of best fit, interpolation and extrapolation.
 // All teaching text and questions are original.
 import { skillById } from './skills.js?v=20261023-maths-r13';
-import { tableFig, pieFig, bars } from './skills-statistics.js?v=20261023-maths-r13';
+import { tableFig, pieFig, bars, pictoFig } from './skills-statistics.js?v=20261023-maths-r13';
 
 const S = id => skillById[id];
 const geo = (fig, caption) => ({ kind: 'geo', fig, caption });
@@ -14,7 +14,7 @@ const g = (spec, caption) => ({ kind: 'g', g: spec, caption });
 
 export const statisticsTopic = {
   id: 'maths.statistics', title: 'Statistics', short: 'Statistics', number: '06', status: 'partial',
-  coverage: 'Four lessons covering S1–S6: averages and range from lists and frequency tables, including estimated means; bar charts and pie charts; sampling, bias and comparing distributions; scatter graphs, correlation and lines of best fit; and (Higher) histograms, cumulative frequency and box plots.',
+  coverage: 'Four lessons covering S1–S6: averages and range from lists and frequency tables, including estimated means; bar charts, pictograms, vertical line charts, time-series graphs and pie charts; sampling, bias and comparing distributions; scatter graphs, correlation and lines of best fit; and (Higher) histograms, cumulative frequency and box plots.',
 };
 
 export const statisticsLessons = [
@@ -56,6 +56,9 @@ export const statisticsLessons = [
       { title: 'Bar charts.', text: 'Read the height of each bar against the frequency scale. Bars are the same width with gaps between them for categories. The mode is the tallest bar.',
         example: { prompt: 'Bars 4, 9, 6. Total?', steps: ['4 + 9 + 6 = 19'] },
         visual: g(bars(['Bus', 'Car', 'Walk'], [4, 9, 6], { ystep: 1 }), 'Car is the modal choice') },
+      { title: 'Pictograms, line charts and time series.', text: 'A pictogram needs a key. If one symbol = 4 people, then 2½ symbols = 2.5 × 4 = 10 people, and 6 people need 6 ÷ 4 = 1½ symbols. A vertical line chart shows discrete values (0, 1, 2, … pets) with a line whose height is the frequency. A time-series graph plots a value against time: read the change between two times by subtracting, and the steepest upward segment is the biggest rise.',
+        example: { prompt: 'Key: one symbol = 4. A row has 3¼ symbols.', steps: ['3.25 × 4', '= 13 people'] },
+        visual: geo(pictoFig(['Bus', 'Car', 'Walk'], [2.5, 4, 1.25], 4, 'people', 'Pictogram: Bus 2½ symbols, Car 4, Walk 1¼; key one symbol = 4 people'), 'Bus 10, Car 16, Walk 5') },
       { title: 'Pie charts.', text: '40 people: 360 ÷ 40 = 9° each. 10 people → 90°, 18 → 162°, 12 → 108°. Check the angles add up to 360°. Back the other way: a 54° sector of 40 people is {54/360} × 40 = 6 people.',
         example: { prompt: '30 people; a 96° sector. How many?', steps: ['{96/360} × 30', '= 8'] },
         visual: geo(pieFig(['Bus', 'Car', 'Walk'], [90, 162, 108], 'Pie chart: Bus 90°, Car 162°, Walk 108°'), '9° per person: 90°, 162°, 108°') },
@@ -63,9 +66,9 @@ export const statisticsLessons = [
         example: { prompt: 'Median 54 v 48; range 20 v 32. Compare.', steps: ['The first group scored higher on average (median 54 > 48)', 'and was more consistent (range 20 < 32)'] },
         visual: { kind: 'work', lines: ['average: which is higher?', 'spread: which is more consistent?', 'always say it in context'] } },
     ],
-    skills: [S('maths.statistics.charts'), S('maths.statistics.sampling')],
-    checkPlan: [['maths.statistics.charts', 1], ['maths.statistics.charts', 1], ['maths.statistics.charts', 2], ['maths.statistics.charts', 3], ['maths.statistics.charts', 3], ['maths.statistics.sampling', 1], ['maths.statistics.sampling', 1], ['maths.statistics.sampling', 2], ['maths.statistics.sampling', 3], ['maths.statistics.sampling', 3]],
-    limits: 'Drawing bar charts and pie charts is not marked; angles and frequencies are. Time-series line graphs are read in the Algebra lesson on real-life graphs. Comparisons are chosen from options rather than written.',
+    skills: [S('maths.statistics.charts'), S('maths.statistics.charts2'), S('maths.statistics.sampling')],
+    checkPlan: [['maths.statistics.charts', 1], ['maths.statistics.charts', 2], ['maths.statistics.charts', 3], ['maths.statistics.charts2', 1], ['maths.statistics.charts2', 2], ['maths.statistics.charts2', 3], ['maths.statistics.sampling', 1], ['maths.statistics.sampling', 2], ['maths.statistics.sampling', 3], ['maths.statistics.sampling', 3]],
+    limits: 'Drawing bar charts, pie charts, pictograms and line graphs is not marked; angles, frequencies and the number of symbols are. Comparisons are chosen from options rather than written.',
   },
   {
     id: 'maths.statistics.scatter',
