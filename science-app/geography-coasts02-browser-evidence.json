@@ -7,7 +7,7 @@
     "geography.a.coasts.soft-management",
     "geography.a.coasts.swanage"
   ],
-  "automated_full_passed": 636,
+  "automated_full_passed": 643,
   "final_focused_passed": 9,
   "browser": [
     "Five complete lesson journeys at100percent",
@@ -27,5 +27,6 @@
     "First named example not all school alternatives"
   ],
   "publication": "pending",
-  "console_errors_observed": []
+  "console_errors_observed": [],
+  "merged_maths": "Probability four lessons preserved;64lessons/154skills;four-lesson Higher menu verified. Incoming author browser evidence retained, not rerun."
 }
