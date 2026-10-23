@@ -3,32 +3,32 @@
   "journeys": [
     {
       "id": "geography.a.glaciers.water-supply",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.glaciers.renewable-energy",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.glaciers.tourism",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.glaciers.conservation",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.glaciers.thirlmere-helvellyn",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     }
   ],
   "premature": "Answer this challenge first.",
   "wrongChallenge": "Look again at the evidence and the process described.",
-  "practiceCorrection": "Try again. 600+150−100−20=630m³. Account for each input and output once.",
+  "practiceCorrection": "Try again. 600+150\u2212100\u221220=630m\u00b3. Account for each input and output once.",
   "observationsRestored": "Views compared: 4 / 4",
   "independentLockedAfterReload": true,
-  "failedCheck": "75% · Keep building",
-  "retake": "100% · Lesson complete",
+  "failedCheck": "75% \u00b7 Keep building",
+  "retake": "100% \u00b7 Lesson complete",
   "phone": [
     {
       "model": 296,
@@ -90,5 +90,16 @@
     "No full assistive-device or specialist review",
     "Shared reduced-motion implementation inspected; not separately emulated",
     "Original diagrams and photograph do not replace authentic OS/GIS or constructed/physical fieldwork evidence"
-  ]
+  ],
+  "publication": {
+    "source": "304c5fcea37038725d37af704c0b2e7d3dadfb50",
+    "deployment": "appgdep_6adba409f1cc819195140f99038269db",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_26cb8fcb68d08191b89700b6bb1d1eb9",
+    "status": "succeeded",
+    "time": "2026-10-23T18:14:47Z",
+    "live": "40denominator;1920px genuine photo loaded/source credited;static player hidden;engineering Pause/Loop;no errors",
+    "proof": "crash-course-uplands03-live.png"
+  },
+  "mergedTests": 672,
+  "maths": "658f6eamerge;73lessons/172skills;four-entry menu/first problem lesson inspected;authorflows retained not rerun"
 }
