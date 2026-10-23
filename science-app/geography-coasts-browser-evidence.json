@@ -26,6 +26,17 @@
     "Constructed and authentic map/weather evidence open",
     "Reduced-motion startup code inspected; no full assistive-device or specialist review"
   ],
-  "publication": "pending",
+  "publication": {
+    "status": "succeeded",
+    "source": "5e80fddf19423fb03ab1e4babee39f2e55a1049a",
+    "deployment": "appgdep_6adb5df3533081918347f1ca332be480",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_15efc693731c81918acac0b4bd32ed4f",
+    "proof": "crash-course-coasts-live.png",
+    "live_checks": [
+      "Both topic links with exploratory note",
+      "Longshore drift view with Pause/Loop",
+      "No console errors"
+    ]
+  },
   "merged_maths": "Geometry11\u201315 preserved;60lessons/146skills;Higher15lesson menu verified; no claim to have rerun incoming author browser scripts"
 }
