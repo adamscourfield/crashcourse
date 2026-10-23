@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-23",
+  "lessons": [
+    "geography.a.coasts.deposition",
+    "geography.a.coasts.human-change",
+    "geography.a.coasts.hard-defences",
+    "geography.a.coasts.soft-management",
+    "geography.a.coasts.swanage"
+  ],
+  "automated_full_passed": 636,
+  "final_focused_passed": 9,
+  "browser": [
+    "Five complete lesson journeys at100percent",
+    "Wrong challenge and premature next blocked",
+    "Wrong practice corrected; first check answer locked after reload",
+    "75percent failed;100percent fixed retake passed",
+    "Hard-defence last model view and4of4 observations restored",
+    "Old Harry photo loaded4288px; date/author/license visible; static evidence has no play controls",
+    "Five390px layouts no horizontal overflow",
+    "15of15 retained through noncoastal5of5 and return/reload",
+    "Independent photograph loads without teaching hints;390px source question fits300px photo;100percent retake completed"
+  ],
+  "limits": [
+    "Selected judgement not extended writing",
+    "Authentic OS/BGS/GIS/weather analysis and specialist review open",
+    "No fieldwork completion claim",
+    "First named example not all school alternatives"
+  ],
+  "publication": "pending",
+  "console_errors_observed": []
+}

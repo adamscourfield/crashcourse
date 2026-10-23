@@ -1,0 +1,2 @@
+example_id,requirement,title,kind,selection,sources,source_checked,image,status
+geography.a.example.swanage,1.6a,Swanage Bay and Old Harry Rocks,named_coastal_example_not_one_of_three_human_case_study_roles,first_library_example;school_alternatives_pending,BGS_Ballard_Down;RGS_Swanage;EA_New_Swanage_N1,2026-10-23,Nilfanion_2013_CC_BY_SA4.0,teaching_implemented;map_constructed_evidence_and_specialist_review_open

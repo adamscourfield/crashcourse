@@ -1,3 +1,5 @@
+Geography coastal batch02: five lessons/15practice/20checks; total15Geography lessons. Genuine2013 Old Harry photo with CC BY-SA4.0 attribution, static evidence controls and independent photo stimulus; four looping mechanism explorers.636tests and browser journeys; details BUILD_STATUS.md and geography-coasts02-browser-evidence.json.
+
 Coastal release published23October2026; incoming Maths Geometry11–15 retained;635merged tests. Geography10lessons,Maths60lessons/146skills. Owner-private Site audience unchanged; exact source/deployment/proof in BUILD_STATUS.md.
 
 Geography coastal batch01: five lessons/15practice/20checks,30 model views; looping/manual/reduced-motion controls. Topic/pathway progress and review scoped with hidden-option records retained.627 full tests plus8focused; five full browser journeys and390px fit. Brief/mapping/QA/publication: BUILD_STATUS.md;curriculum/briefs/geography-a-coasts-01.md;geography-coasts-browser-evidence.json.

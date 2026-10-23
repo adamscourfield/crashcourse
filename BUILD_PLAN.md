@@ -1,3 +1,5 @@
+> Coastal batch02: five further lessons bring Geography to15; coastal teaching refs1.3–1.6 mapped, authentic/constructed evidence and specialist review open. Next river processes. Named image policy: genuine2013 Old Harry photo credited at point of use.
+
 > Coastal batch01: five lessons added; Geography10 built, optional topic/progress/recall now pathway scoped. Next coastal deposition/management/named landscape. See BUILD_STATUS.md for actual publication/QA.
 
 > Geography imagery policy23October2026: use photoreal references for recognition; genuine sourced photos for named sites and dated change evidence; retain analytical diagrams/process loops. Audit curriculum/geography-imagery-audit.md.

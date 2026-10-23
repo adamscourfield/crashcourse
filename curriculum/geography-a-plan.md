@@ -7,7 +7,7 @@ https://qualifications.pearson.com/content/dam/pdf/GCSE/Geography-A/2016/specifi
 
 Source PDF SHA256:23a7efbc494586728d805813bbd63622047a23a277e07b8ecad1218c875136b3. The PDF was read locally for layout and reference indexing; it is not redistributed. Pearson’s current Issue5 supersedes the older1h30 Paper1 timing: Paper1 is1h45 from2026,94marks/37.5%; Paper2 is1h30,94marks/37.5%; Paper3 is1h30,64marks/25%. Spelling/grammar/specialist terminology contribute within each paper. The qualification is not separated into the Science/Maths Foundation/Higher pathways.
 
-User decision: cover all options for the platform; students choose their own exam pathway. No school’s choices are silently assumed. The app provides the shared core and the first five coastal lessons, and stores the pathway separately from Science and Maths progress.
+User decision: cover all options for the platform; students choose their own exam pathway. No school’s choices are silently assumed. The app provides the shared core and ten coastal teaching lessons, and stores the pathway separately from Science and Maths progress.
 
 ## Course structure and choices
 
@@ -29,7 +29,7 @@ The specification requires three in-depth case studies (UK city, developing/emer
 
 ## Planning artefacts
 
-- geography-a-lesson-roadmap.csv:86 current authoring units across14 course/option/skills groups;10 built,76 provisional. Grouped units will split when detailed lesson briefs are written. This is not a fixed full-course lesson total or a claim the remaining units are fully designed.
+- geography-a-lesson-roadmap.csv:88 current authoring units across14 course/option/skills groups;15 built,73 provisional. Grouped units will split when detailed lesson briefs are written. This is not a fixed full-course lesson total or a claim the remaining units are fully designed.
 - geography-a-requirements.csv:152 lettered content references indexed for Topics1–6 and8, each linked to a planned authoring group. Beyond the first core, status explicitly remains statement-brief pending. A reference index is not a completed content audit.
 - geography-a-fieldwork-requirements.csv:30 separate rows for required question/method/context/secondary-source evidence and the six enquiry stages.
 - geography-a-skills.csv:30 general/cartographic/graphical/numerical/statistical/enquiry skills and13 grouped exam command entries.
@@ -54,7 +54,9 @@ Issue5 Appendix1 says at least two fieldwork **occasions**, outside classroom an
 
 ## Next concrete batch
 
-First five Coastal lessons implemented against1.3a–c/1.4a; brief next depositional forms, human coastal impacts, hard defences, soft approaches and a named UK coastal landscape. The previous grouped1.3 placeholder split into four concrete lessons;1.4 retains a depositional backlog beside the new erosion unit. Details briefs/geography-a-coasts-01.md and geography-a-coasts01-coverage.csv; retain planning for depositional forms, human management and a named UK coastal landscape. Add authentic licensed/open map resources and constructed evidence as dedicated work, not by implying a schematic has satisfied OS interpretation.
+Coastal teaching refs1.3a–1.6a now built in ten lessons. Second brief/mapping: briefs/geography-a-coasts-02.md; geography-a-coasts02-coverage.csv. Swanage Bay/Old Harry is one named example, with genuine attributed2013 photograph, not a replacement for every school’s case choice. Case library geography-a-case-library.csv. Authentic OS/BGS/GIS and UK weather-data tasks, constructed explanations/calculations, extended management judgements and specialist review remain open.
+
+Next: brief first five river lessons against1.7a–c: subaerial slope processes; river erosion/transport/deposition; channel and valley changes downstream; discharge/velocity/sediment along a named UK river; weather/climate effects. Verify the named river and datasets before implementation. Retain course option separation and use looping process models only where time/movement explains the objective.
 
 ## Publication and QA
 
