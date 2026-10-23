@@ -3,31 +3,31 @@
   "journeys": [
     {
       "id": "geography.a.glaciers.valleys",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.glaciers.roche-moutonnee",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.glaciers.moraines",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.glaciers.streamlined-landforms",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.glaciers.upland-landuse",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     }
   ],
   "premature": "Answer this challenge first.",
   "wrongChallenge": "Look again at the evidence and the process described.",
   "viewsRestored": "Views compared: 4 / 4",
   "independentLockedAfterReload": true,
-  "failedCheck": "75% · Keep building",
-  "retake": "100% · Lesson complete",
+  "failedCheck": "75% \u00b7 Keep building",
+  "retake": "100% \u00b7 Lesson complete",
   "phone": [
     {
       "model": 296,
@@ -38,7 +38,7 @@
     {
       "model": 296,
       "page": 390,
-      "title": "Reading a roche moutonnée",
+      "title": "Reading a roche moutonn\u00e9e",
       "width": 390
     },
     {
@@ -89,5 +89,15 @@
     "Shared reduced-motion code inspected; not separately emulated",
     "No full assistive-device or specialist review",
     "Diagrams are not authentic OS/GIS or constructed/physical fieldwork evidence"
-  ]
+  ],
+  "publication": {
+    "source": "5491449f70e3b1768e140eaa82ab27c6f74134bd",
+    "deployment": "appgdep_6adb80b38ab4819199a87685687afcc1",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_67ca7692b4b88191a69f0970cf4275ba",
+    "status": "succeeded",
+    "time": "2026-10-23T15:44:01Z",
+    "live": "35denominator;roche reversed geometry and flow-relative labels;Pause/Loop;no console errors",
+    "proof": "crash-course-uplands02-live.png"
+  },
+  "automatedTests": 664
 }
