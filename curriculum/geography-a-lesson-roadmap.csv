@@ -4,8 +4,6 @@ geography.a.landscapes.geology-map,Reading the UK’s geology,overview,1.1a,impl
 geography.a.landscapes.geology-relief,Why uplands and lowlands differ,overview,1.1b,implemented
 geography.a.landscapes.physical-landscapes,Physical processes shape landscapes,overview,1.2a,implemented
 geography.a.landscapes.people-landscapes,People change landscapes,overview,1.2b,implemented
-geography.a.rivers.1-8,River landforms,rivers,1.8,provisional_planned_split_after_statement_brief
-geography.a.rivers.1-9,River change flooding and management,rivers,1.9,provisional_planned_split_after_statement_brief
 geography.a.rivers.1-10,Named UK river landscape,rivers,1.10,provisional_planned_split_after_statement_brief
 geography.a.glaciers.1-11,Glacial and current upland processes,glaciers,1.11,provisional_planned_split_after_statement_brief
 geography.a.glaciers.1-12,Glacial landforms,glaciers,1.12,provisional_planned_split_after_statement_brief
@@ -91,3 +89,8 @@ geography.a.rivers.sediment,How rivers erode and carry sediment,rivers,1.7a,impl
 geography.a.rivers.downstream,From upland valleys to lowland channels,rivers,1.7b;Integrated skill 9: introductory,implemented
 geography.a.rivers.tees-flow,"The Tees: discharge, speed and sediment",rivers,1.7b,implemented
 geography.a.rivers.weather,"Rain, drought and river response",rivers,1.7c;Integrated skill 10: introductory,implemented
+geography.a.rivers.erosional-landforms,"Waterfalls, gorges and river cliffs",rivers,1.8a;Integrated skill 11: diagram/photo introduction,implemented
+geography.a.rivers.depositional-landforms,"Flood plains, levees and point bars",rivers,1.8b,implemented
+geography.a.rivers.meanders,Meanders and oxbow lakes,rivers,1.8c,implemented
+geography.a.rivers.flooding,"Land use, runoff and flooding",rivers,1.9a;Integrated skill 12: reading introduction only,implemented
+geography.a.rivers.management,Managing rivers and flood risk,rivers,1.9b;Integrated skill 13: diagram introduction,implemented

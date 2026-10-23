@@ -1,3 +1,5 @@
+> River batch02: Geography25lessons (5shared/10coasts/10rivers);1.8a–c/1.9a–b landforms/flooding/management implemented. Genuine dated High Force image plus17process views/four static comparisons. Next named1.10synthesis, then glaciated-upland briefs; authentic/constructed evidence remains distinct. Actual QA/publication: BUILD_STATUS.md.
+
 > River batch01: Geography20lessons, new rivers topic and five1.7a–c introductions. Stage vs discharge explicitly separated; source evidence and current publication in BUILD_STATUS.md. Next river landforms/flooding/defences.
 
 > Coastal batch02: five further lessons bring Geography to15; coastal teaching refs1.3–1.6 mapped, authentic/constructed evidence and specialist review open. Next river processes. Named image policy: genuine2013 Old Harry photo credited at point of use.

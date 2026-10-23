@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-23",
+  "preview": "http://localhost:4177/",
+  "journeys": [
+    {
+      "lesson": "geography.a.rivers.erosional-landforms",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "lesson": "geography.a.rivers.depositional-landforms",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "lesson": "geography.a.rivers.meanders",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "lesson": "geography.a.rivers.flooding",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "lesson": "geography.a.rivers.management",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "premature": "Answer this challenge first.",
+  "wrongChallenge": "Look again at the evidence and the process described.",
+  "wrongPractice": "Try again. Resistance does not make rock immune to failure when its support is removed.",
+  "observationsRestored": "5 / 5; photo selection retained after reload",
+  "independentFirstAnswer": "disabled answers after reload; later auto-next",
+  "failedCheck": "75% · Keep building",
+  "retake": "100% · Lesson complete",
+  "phone": [
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Waterfalls, gorges and river cliffs",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Flood plains, levees and point bars",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Meanders and oxbow lakes",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Land use, runoff and flooding",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Managing rivers and flood risk",
+      "width": 390
+    }
+  ],
+  "pathways": [
+    {
+      "pair": [
+        "coasts",
+        "glaciers"
+      ],
+      "total": "My progress\n15 / 15"
+    },
+    {
+      "pair": [
+        "rivers",
+        "glaciers"
+      ],
+      "total": "My progress\n15 / 15"
+    },
+    {
+      "pair": [
+        "coasts",
+        "rivers"
+      ],
+      "total": "My progress\n25 / 25"
+    }
+  ],
+  "reloadProgress": "25 / 25",
+  "consoleErrors": [],
+  "limitations": [
+    "Reduced motion uses shared paused-start code; not separately emulated this batch",
+    "No full assistive-device or specialist review",
+    "Reading hydrographs is not drawing; OS/GIS and physical fieldwork remain separate"
+  ]
+}

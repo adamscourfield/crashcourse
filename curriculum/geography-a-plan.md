@@ -65,3 +65,7 @@ Next five: brief1.8a erosional/geology landforms,1.8b depositional forms,1.8c me
 Actual tests, browser evidence, publication status and canonical GitHub handover are in BUILD_STATUS.md and science-app/geography-browser-evidence.json. Geography storage crash-course-geography-a-v1 is independent; all existing Science/Maths lesson/question IDs remain unchanged.
 
 The locator uses a generalised Natural Earth country outline (public domain), with original selected rock markers; it remains distinct from a geological-boundary map. Source/licence: science-app/dist/geography/NATURAL-EARTH.md.
+
+
+## River batch02 —23October2026
+Five further river lessons1.8a–c/1.9a–b bring Geography to25built (5shared/10coasts/10rivers),75practice/100checks. Roadmap95authoring units:25built/70provisional after splitting1.8/1.9; not fixed final course size or student denominator. Coasts+rivers25;coasts+glaciers15;rivers+glaciers15;no-choice25exploratory. Genuine High Force photo and four static views complement17looping process views. Card views follow evidence type. Skill11OS,12drawing and13OS/GIS are not closed by diagrams/selected response. Named1.10synthesis remains next, followed by precise glaciated-upland briefs. See briefs/geography-a-rivers-02.md and geography-a-rivers02-coverage.csv.
