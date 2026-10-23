@@ -1,4 +1,4 @@
-import {gauge,riverCases,discharge} from './river-data.js?v=20261023-rivers01r2';
+import {gauge,riverCases,discharge} from './river-data.js?v=20261023-rivers01r3';
 export const riverViews={
  'river-slopes':[['freeze','Freeze–thaw'],['chemical','Chemical'],['roots','Biological'],['slide','Slide'],['slump','Slump']],
  'river-load':[['hydraulic','Hydraulic action'],['abrasion','Abrasion'],['attrition','Attrition'],['solution','Solution'],['traction','Traction'],['saltation','Saltation'],['suspension','Suspension'],['deposition','Deposition']],

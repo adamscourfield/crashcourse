@@ -7,7 +7,7 @@
     "geography.a.rivers.tees-flow",
     "geography.a.rivers.weather"
   ],
-  "automated_full_passed": 645,
+  "automated_full_passed": 652,
   "focused_passed": 11,
   "browser": [
     "Five complete journeys",
@@ -16,7 +16,11 @@
     "Wrong discharge-unit practice corrected",
     "Independent first answer locked after reload;75percent fail;100percent retake",
     "Static profiles no player; route/EA record hide player; processes start Pause/Loop",
-    "Independent EA source table without teaching analysis"
+    "Independent EA source table without teaching analysis",
+    "Five390px model/table layouts fit with296px model area and no page overflow",
+    "All three landscape pairs show20of20/15of15/10of10 and restored20of20 after reload",
+    "Corrected lower-course cross-section inspected with distinct dry floor/channel",
+    "Merged Maths Higher Statistics menu shows four lessons"
   ],
   "limits": [
     "Stage is not discharge or paired rainfall",
@@ -24,5 +28,6 @@
     "Authentic BGS/OS/weather climate data and constructed evidence open",
     "No full assistive-device/specialist/fieldwork certification"
   ],
-  "publication": "pending"
+  "publication": "pending",
+  "merged_maths": "Statistics from269ba64 preserved;68Maths lessons/160skills. Author walkthroughs retained, not rerun."
 }
