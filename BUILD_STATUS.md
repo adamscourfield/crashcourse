@@ -1,3 +1,30 @@
+## Maths: Edexcel 1MA1 Probability — batch 01 (4 lessons, P1–P9); on GitHub `main`, not published
+
+A fifth Maths topic (`maths.probability`), now on the course map. All four lessons are for both tiers; conditional probability (P9) is a Higher-only skill inside lesson 4.
+
+**Lessons:**
+- probability scale, relative and expected frequency (P1–P5);
+- sample spaces and Venn diagrams with set notation (P6, P7);
+- combined events and tree diagrams with and without replacement (P8);
+- two-way tables, frequency trees and conditional probability (P6, P9).
+
+**Totals:** 8 new skills (154 in all) and 4 investigations: a coin tosser, a dice grid, a tree builder and a conditional filter. Probabilities can be typed as any equivalent fraction. Tables, Venn diagrams and trees are drawn from each question's numbers.
+
+**QA:**
+- 642 automated tests pass (`tests/maths-probability.test.js`: 7 tests). Combined and conditional answers are checked by enumerating every ordered draw from the bag.
+- All fourteen Maths walk-throughs pass: 87, 68, 62, 94, 69, 64, 78, 53, 70, 46, 77, 72, 67 and 59 checks, 966 in total.
+- Flows 4, 9 and 11 now check that the course map lists only built topics, rather than naming Probability as unbuilt.
+- Screenshot review found tree-diagram node words drawn over the branches; fixed.
+- Brief: `curriculum/briefs/maths-probability-batch-01.md`.
+
+**Cache:** maths modules are at `20261023-maths-r11`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication;
+- specialist review.
+
+**Next:** Statistics (S1–S6).
+
 ## Coastal Geography and Maths Geometry batch03 — published and GitHub synced
 
 23 October2026. Published five coastal lessons with30 labelled model views,15practice and20checks. Geography10 built lessons (5shared/5coasts); selected-path totals may be5or10 until other options are built. User’s incoming Maths work merged from194bc69:60Maths lessons/146skills, Geometry15; Higher15-lesson menu verified. Combined authoring inventory431built lessons across361Science/60Maths/10Geography; actual student denominators depend on route/tier/options.635 merged automated checks passed; eight focused Geography tests and five complete browser journeys as recorded below. Caches coasts01r2 and Maths-r11. No incoming Maths browser-script rerun claimed; author evidence retained. Specialist and constructed/physical evidence remain separate.

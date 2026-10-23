@@ -46,7 +46,7 @@ await page.selectOption('#subject', 'maths'); await page.waitForSelector('#mH1')
 await page.click('#mapButton');
 const mapTxt = await page.locator('dialog').innerText();
 ok(/Geometry and measures/.test(mapTxt), 'course map links Geometry');
-ok(!/Probability|Statistics/.test(mapTxt), 'course map: unbuilt Probability and Statistics are not listed');
+ok((await page.locator('dialog .topic-link').count()) >= 1 && (await page.locator('dialog .topic-link').count()) === (await page.locator('dialog .topic-link[data-mtopic]').count()), 'course map lists only built topics, each as a link');
 await page.click('[data-mtopic="maths.geometry"]'); await page.click('#closeModal');
 const GN = Number((await page.locator('#sideProgress').innerText()).split('/ ')[1]);
 ok(GN >= 5 && (await page.locator('#sideProgress').innerText()) === `0 / ${GN}`, `Geometry topic progress starts at 0 of ${GN}`);
