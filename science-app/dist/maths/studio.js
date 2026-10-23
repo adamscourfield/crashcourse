@@ -444,9 +444,8 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     document.getElementById('mmMap').onclick = openMap;
   }
   function openMap() {
-    modal(`<span class="eyebrow">MATHS COURSE MAP</span><h2>Edexcel GCSE Mathematics</h2><p>Specification 1MA1, Foundation and Higher tiers. Paper 1 is non-calculator; papers 2 and 3 allow a calculator.</p><div class="subject-grid">${mathsCourseMap.map(([name, id]) => `<button class="subject-card ${id === s.topicId ? 'selected' : ''}" ${id ? `data-mtopic="${id}"` : 'disabled'}><b>${esc(name)}</b><span>${id ? tierLessons().filter(l => l.topicId === id).length + ' lessons available' : 'Planned'}</span><small>${id ? (id === s.topicId ? 'Current topic' : 'Partly available') : 'Not built yet'}</small></button>`).join('')}</div><button class="secondary" id="mmSubjects">Other subjects →</button>`);
+    modal(`<span class="eyebrow">MATHS</span><h2>Course map</h2><div class="topic-links">${mathsCourseMap.filter(([, id]) => id && tierLessons().some(l => l.topicId === id)).map(([name, id]) => `<button class="topic-link" data-mtopic="${id}" ${id === s.topicId ? 'aria-current="page"' : ''}><span>${esc(name)}</span><span aria-hidden="true">→</span></button>`).join('')}</div>`);
     document.querySelectorAll('[data-mtopic]').forEach(b => (b.onclick = () => setTopic(b.dataset.mtopic)));
-    document.getElementById('mmSubjects').onclick = () => root.dispatchEvent(new CustomEvent('maths:subjects', { bubbles: true }));
   }
   /** Switch topic, returning to the lesson last opened in it. */
   function setTopic(id) {

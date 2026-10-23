@@ -138,3 +138,10 @@ button[data-site][aria-pressed="true"]::before{content:'✓ ';font-weight:700}
    space to the visual rather than a second generic caption below it. */
 .scene-panel:not(.process-view):has(#diagram > :is(.rad1-diagram,.frc1-diagram,.wav1-diagram,.mag1-diagram,.spa1-diagram)) > .scene-title{display:none}
 .scene-panel:not(.process-view) > #diagram:has(> :is(.rad1-diagram,.frc1-diagram,.wav1-diagram,.mag1-diagram,.spa1-diagram)){top:70px;bottom:48px}
+
+/* One navigation link per available topic. */
+.course-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:28px}
+.course-topic-group{min-width:0}.course-topic-group h3{font-size:22px;margin:0 0 12px;color:var(--navy)}
+.topic-links{display:flex;flex-direction:column}.topic-link{display:flex;justify-content:space-between;align-items:center;gap:18px;width:100%;min-height:52px;padding:14px 0;background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;color:var(--navy);text-align:left;font-size:14px;line-height:1.5}
+.topic-link>span:last-child{flex:none;color:var(--subtle)}.topic-link:hover>span:first-child{text-decoration:underline;text-underline-offset:4px}.topic-link:hover>span:last-child{color:var(--coral)}.topic-link[aria-current="page"]>span:first-child{font-weight:600}.topic-link:focus-visible{outline:2px solid var(--coral);outline-offset:4px;border-radius:4px}
+@media(max-width:800px){.course-topics{grid-template-columns:1fr;gap:26px}.topic-link{min-height:48px}}
