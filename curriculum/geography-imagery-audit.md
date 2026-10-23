@@ -18,3 +18,7 @@ Future policy: pair imagery with a defined observation question. Use genuine sou
 
 
 23October2026 uplands03: genuine Thirlmere Reservoir photo by Jorge Franganillo,10August2012,CC BY2.0, original unchanged and credited at teaching/check point of use. Inspectablemetadata/licence in geography/images/ATTRIBUTION.md. Named landscape recognition benefits from actual photo; motion/analytical diagrams retained. Image is not current, a geology survey, erosion-rate or complete history.
+
+
+## Weather03 —23October2026
+Genuine NASA Aqua/MODIS Haiyan image acquired7November2013 before Philippine landfall: science-app/dist/geography/images/haiyan-modis-2013-11-07.jpg,720×540,unchanged. SHA2564cc478f867d52827c748f0016519330cdb2079621f071c5248d8cfe2aab68e35. NASA LANCE/EOSDIS MODIS Rapid Response Team,GSFC; source https://science.nasa.gov/earth/earth-observatory/super-typhoon-haiyan-82341/ and educational media terms linked at point of use,including independent stimuli. No casualty or ground-damage inference from cloud image; no generated named-event photo. Formation/surge/recovery/response-role loops better explain sequences than decorative photography. Real Katrina coordinates and numeric evidence stay static. Captioned source/units/definitions maintained.

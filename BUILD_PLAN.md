@@ -1,3 +1,5 @@
+> Current batch Weather03: five shared tropical-cyclone lessons2.5/2.6 bring Geography to55built. Nextfive: drought2.7/2.8 with named contrasting cases, exact briefs first. Keep process films default looping and genuine source evidence static; GIS/socialmedia/constructed/specialist evidence remain separate. Actual QA/publication in BUILD_STATUS.md.
+
 > Batch size: user requests five lessons at a time. Weather01 adds five shared lessons2.1a_b/2.2a_b;Geography45built across five topics. Nextfive2.3greenhouse_process/sources/effects and2.4UKpast/regionalcontrols. Preserve authentic/constructed/specialist evidence boundaries. ActualQA/publication in BUILD_STATUS.md.
 
 > Uplands03: Geography40built (5shared/10coasts/11rivers/14glaciers);1.13b water/energy/tourism/conservation and1.14Thirlmere–Helvellyn synthesis introduced. Alllandscape teaching groups now introduced, authentic/constructed/specialist evidence still open. NextWeather2.1circulation/heat transfer and2.2pastclimate/causes/evidence, precise briefs first. ActualQA/publication in BUILD_STATUS.md.

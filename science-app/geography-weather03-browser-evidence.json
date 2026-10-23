@@ -1,0 +1,276 @@
+{
+  "date": "2026-10-23",
+  "preview": "http://localhost:4177/",
+  "lessons": [
+    {
+      "lesson": "geography.a.weather.cyclone-formation",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which sequence explains development?\n✓ In the Southern Hemisphere, near-surface cyclone air generally spirals…\n✓ Where are the strongest winds commonly found in a mature cyclone?\n✓ After a cyclone weakens over land…\nTry check again",
+      "wrongChallenge": true,
+      "wrongPractice": true,
+      "checkReloadLocked": true,
+      "failed75Retake100": true
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-patterns",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which hemisphere has a cyclone circulation clockwise near the surface?\n✓ The Atlantic’s typical hurricane season is…\n✓ Why can30 storms in2020 and14 in2022 not establish a climate trend?\n✓ On the dated Katrina map,29August1200UTC is…\nTry check again"
+    },
+    {
+      "lesson": "geography.a.weather.katrina",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which is an economic impact of Katrina?\n✓ A storm-surge height alone can determine Saffir–Simpson wind category…\n✓ Why does the updated1,392 death figure need a definition?\n✓ Which explanation best links impacts?\nTry check again"
+    },
+    {
+      "lesson": "geography.a.weather.haiyan",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which source best tests a claim about7November cloud structure?\n✓ Which is primarily a social impact?\n✓ Which follows from the boat data shown?\n✓ Why compare image date and impact-report date?\nTry check again"
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-responses",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which action is associated with USACE after Katrina?\n✓ FAO support for boats, seeds and farming after Haiyan chiefly aimed to…\n✓ Which comparison is best supported?\n✓ To evaluate a social-media damage claim, first…\nTry check again"
+    }
+  ],
+  "mobile": [
+    {
+      "lesson": "geography.a.weather.cyclone-formation",
+      "view": "ingredients",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-formation",
+      "view": "cycle",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-formation",
+      "view": "section",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-formation",
+      "view": "shear",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-patterns",
+      "view": "basins",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-patterns",
+      "view": "track26",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-patterns",
+      "view": "track28",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-patterns",
+      "view": "track29",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-patterns",
+      "view": "seasons",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "table": 296,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-patterns",
+      "view": "change",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.katrina",
+      "view": "surge",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.katrina",
+      "view": "scale",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "table": 296,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.katrina",
+      "view": "impacts",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "table": 296,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.katrina",
+      "view": "links",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.haiyan",
+      "view": "satellite",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.haiyan",
+      "view": "surge",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.haiyan",
+      "view": "livelihoods",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.haiyan",
+      "view": "evidence",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "table": 296,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-responses",
+      "view": "usa",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-responses",
+      "view": "philippines",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-responses",
+      "view": "compare",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    },
+    {
+      "lesson": "geography.a.weather.cyclone-responses",
+      "view": "hazards",
+      "imageLoaded": true,
+      "model": 296,
+      "overflow": [],
+      "page": 390,
+      "width": 390
+    }
+  ],
+  "phoneQuestions": [
+    {
+      "id": "geo.a.w3.haiyan.c1",
+      "image": 300,
+      "imageLoaded": true,
+      "page": 390,
+      "width": 390
+    },
+    {
+      "id": "geo.a.w3.haiyan.c2",
+      "imageLoaded": true,
+      "page": 390,
+      "width": 390
+    },
+    {
+      "id": "geo.a.w3.haiyan.c3",
+      "imageLoaded": true,
+      "page": 390,
+      "table": 300,
+      "width": 390
+    },
+    {
+      "id": "geo.a.w3.haiyan.c4",
+      "imageLoaded": true,
+      "page": 390,
+      "width": 390
+    }
+  ],
+  "pathways": {
+    "coasts_glaciers": "44/44",
+    "coasts_rivers": "41/41",
+    "rivers_glaciers": "45/45 after reload"
+  },
+  "keyboard": "Native player Space pauses; Enter resumes",
+  "gates": "premature Continue and wrong challenge blocked;correctable practice;4/4views restored;independent first answer locked after reload;75%fail/100%retake",
+  "motion": "process views default Pause/Loop;static track and source image hide player",
+  "dataAudit": "29 unique chronological six-hour Katrina positions;duplicate maximum-wind summary excluded;corrected track reloaded and visually verified",
+  "image": "NASA7November2013 unchanged,loaded,credited;phone300px",
+  "consoleErrors": [],
+  "reducedMotion": "shared paused-start code retained;not separately emulated",
+  "specialistReview": "not performed",
+  "publication": "pending"
+}
