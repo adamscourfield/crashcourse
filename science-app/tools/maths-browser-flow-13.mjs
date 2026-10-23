@@ -49,7 +49,7 @@ await page.click('#mapButton');
 ok(/Geometry and measures/.test(await page.locator('dialog').innerText()), 'course map links Geometry');
 await page.click('[data-mtopic="maths.geometry"]'); await page.click('#closeModal');
 const GN = Number((await page.locator('#sideProgress').innerText()).split('/ ')[1]);
-ok(GN === 13, `Foundation: Geometry has ${GN} lessons (two Higher-only lessons hidden)`);
+ok(GN === 14, `Foundation: Geometry has ${GN} lessons (two Higher-only lessons hidden)`);
 ok((await listed('maths.geometry.circle-theorems')) === 0 && (await listed('maths.geometry.trig-rules')) === 0, 'Foundation: Higher-only circle theorems and trig rules are hidden');
 ok((await listed('maths.geometry.vectors')) === 1, 'Foundation: vectors listed');
 const F = ['maths.geometry.congruence-similarity', 'maths.geometry.solids-plans', 'maths.geometry.vectors'], Hx = ['maths.geometry.circle-theorems', 'maths.geometry.trig-rules'];

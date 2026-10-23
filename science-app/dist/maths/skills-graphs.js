@@ -239,10 +239,28 @@ const transform = {
   id: 'maths.algebra.graph-transform',
   name: 'Translate and reflect graphs',
   higherOnly: true,
-  levels: [{ label: 'Image of a point' }, { label: 'Equation after a transformation' }],
+  levels: [{ label: 'Image of a point' }, { label: 'Equation after a transformation' }, { label: 'Trigonometric graphs' }],
   gen(level, seed) {
     const r = rng(this.id + level + seed);
     const a = nz(r, -4, 4), A = Math.abs(a), sgn = a > 0 ? '+' : '−';
+    if (level === 3) {
+      // A13 with trigonometric graphs, angles in degrees. Shifts of 30°, 45°, 60° or 90° and vertical
+      // shifts of 1 or 2, so no two options draw the same curve (a 180° shift would equal −f).
+      const f = pick(r, ['sin', 'cos']), d = pick(r, [30, 45, 60, 90]), k = pick(r, [1, 2]);
+      const T = { up: [`y = ${f} x + ${k}`, `${f}(x) + ${k}`], down: [`y = ${f} x − ${k}`, `${f}(x) - ${k}`], left: [`y = ${f}(x + ${d}°)`, `${f}(x + ${d})`], right: [`y = ${f}(x − ${d}°)`, `${f}(x - ${d})`], refl: [`y = −${f} x`, `-${f}(x)`] };
+      if (r() < 0.5) {
+        const kind = pick(r, Object.keys(T)), opts = Object.keys(T).filter(x => x !== kind && !(kind === 'up' && x === 'down') && !(kind === 'down' && x === 'up') && !(kind === 'left' && x === 'right') && !(kind === 'right' && x === 'left'));
+        const wrong = [...shuffled(r, opts).slice(0, 2), kind === 'up' ? 'down' : kind === 'down' ? 'up' : kind === 'left' ? 'right' : kind === 'right' ? 'left' : 'up'].slice(0, 3);
+        const why = { up: `${T.up[0]} moves the curve up ${k}.`, down: `${T.down[0]} moves the curve down ${k}.`, left: `${T.left[0]} moves the curve ${d}° left: inside the bracket the shift is the opposite way to the sign.`, right: `${T.right[0]} moves the curve ${d}° right.`, refl: `${T.refl[0]} reflects the curve in the x-axis.` };
+        const c = choiceItem(r, T[kind][0], wrong.map(w => T[w][0]), o => why[Object.keys(T).find(x => T[x][0] === o)] + ' Compare a key point, such as the maximum.');
+        return make(this.id, level, seed, { prompt: `The solid curve is y = ${f} x. The dashed curve is a transformation of it. Which is the equation of the dashed curve?`, graph: grid([0, 360], [-3.5, 3.5], { xstep: 90, ystep: 1, height: 280, fns: [{ expr: `${f}(x)`, label: `y = ${f} x` }, { expr: T[kind][1], dash: true }], alt: `Graph from 0° to 360°: the solid curve y = ${f} x and a dashed curve, its transformation` }), ...c, steps: [`The maximum of y = ${f} x is at (${f === 'sin' ? 90 : 0}°, 1).`, why[kind]] });
+      }
+      // Where does the maximum go? sin x has its maximum at (90°, 1); cos x at (0°, 1) and (360°, 1).
+      const kind = pick(r, ['up', 'down', 'left', 'right']), mx = f === 'sin' ? 90 : kind === 'right' ? 0 : 360, [x, y] = { up: [mx, 1 + k], down: [mx, 1 - k], left: [mx - d, 1], right: [mx + d, 1] }[kind];
+      if (x > 360 || x < 0) return this.gen(level, seed + 'x');
+      const eqn = T[kind][0];
+      return make(this.id, level, seed, { prompt: `The graph of y = ${f} x has a maximum point at (${mx}°, 1). Write down the coordinates of the corresponding maximum point on the graph of ${eqn}.`, answer: pair(x, y), steps: [kind === 'left' || kind === 'right' ? `Inside the bracket: the curve moves ${d}° ${kind}.` : `Outside the function: the curve moves ${k} ${kind}.`, `(${mx}°, 1) → (${x}°, ${y})`], soTraps: kind === 'left' ? [sT([[mx + d, 1]], 'Inside the bracket the shift goes the opposite way to the sign: + moves left.')] : kind === 'right' ? [sT([[mx - d, 1]], 'Inside the bracket the shift goes the opposite way to the sign: − moves right.')] : [sT([[mx + (kind === 'up' ? k : -k), 1]], 'Adding outside the function changes y, not x.')] });
+    }
     if (level === 1) {
       const p = int(r, -5, 5), q = int(r, -5, 5), kind = pick(r, ['f(x)+a', 'f(x+a)', '-f(x)', 'f(-x)']);
       const map = { 'f(x)+a': [p, q + a, `y = f(x) ${sgn} ${A}`, `Adding ${A} outside f moves the graph ${a > 0 ? 'up' : 'down'} ${A}.`], 'f(x+a)': [p - a, q, `y = f(x ${sgn} ${A})`, `Adding ${A} inside f moves the graph ${a > 0 ? 'left' : 'right'} ${A}: the opposite way to the sign.`], '-f(x)': [p, -q, 'y = −f(x)', 'y = −f(x) reflects in the x-axis: the y-coordinate changes sign.'], 'f(-x)': [-p, q, 'y = f(−x)', 'y = f(−x) reflects in the y-axis: the x-coordinate changes sign.'] };

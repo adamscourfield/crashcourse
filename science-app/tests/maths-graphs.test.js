@@ -94,6 +94,24 @@ test('read-offs, curves, transformations and graphical solutions agree with the 
     const want = (m = eqn.match(/^y = f\(x\) ([+−]) (\d+)$/)) ? [p, q + (m[1] === '+' ? 1 : -1) * m[2]] : (m = eqn.match(/^y = f\(x ([+−]) (\d+)\)$/)) ? [p - (m[1] === '+' ? 1 : -1) * m[2], q] : eqn === 'y = −f(x)' ? [p, -q] : [-p, q];
     assert.deepEqual(ans.map(v => v + 0), want.map(v => v + 0), it.prompt);
   }
+  // Trig transformations: each option is turned into a function here; only the right one matches the
+  // dashed curve. For maximum points, the answer must be where the transformed curve is largest.
+  const trig = t => { let m; const D = Math.PI / 180, F = { sin: x => Math.sin(x * D), cos: x => Math.cos(x * D) };
+    if ((m = t.match(/^y = (sin|cos) x ([+−]) (\d+)$/))) return x => F[m[1]](x) + (m[2] === '+' ? 1 : -1) * m[3];
+    if ((m = t.match(/^y = (sin|cos)\(x ([+−]) (\d+)°\)$/))) return x => F[m[1]](x + (m[2] === '+' ? 1 : -1) * m[3]);
+    if ((m = t.match(/^y = −(sin|cos) x$/))) return x => -F[m[1]](x);
+    throw new Error('unparsed ' + t); };
+  const xs = Array.from({ length: 73 }, (_, i) => i * 5);
+  for (let i = 0; i < N; i++) {
+    const it = generate('maths.algebra.graph-transform', 3, 'tt' + i);
+    if (it.answer.kind === 'choice') {
+      const D = Math.PI / 180, dashed = x => Function('x', 'S', 'C', `return ${it.graph.fns[1].expr.replace(/sin\(/g, 'S(').replace(/cos\(/g, 'C(')};`)(x, t => Math.sin(t * D), t => Math.cos(t * D));
+      it.answer.options.forEach((o, k) => { const f = trig(o), same = xs.every(x => close(f(x), dashed(x))); assert.equal(same, k === it.answer.answer, `${o} vs ${it.graph.fns[1].expr}`); });
+    } else {
+      const f = trig(it.prompt.match(/graph of (y = [^.]+?)\.$/)[1]), [x, y] = it.answer.sols[0].map(fv), top = Math.max(...xs.map(f));
+      assert.ok(close(f(x), y) && close(y, top) && x >= 0 && x <= 360, it.prompt);
+    }
+  }
   for (let lv = 1; lv <= 3; lv++) for (let i = 0; i < N; i++) {
     const it = generate('maths.algebra.graph-solve', lv, 'g' + i);
     if (lv === 1) { const [L, R] = it.prompt.match(/solve (.+)\.$/)[1].split(' = '); assert.ok(close(ev(L, { x: it.answer.value }), ev(R, { x: 0 })), it.prompt); }

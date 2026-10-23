@@ -1,3 +1,31 @@
+## Maths: gap-closing batch 01 (G17 lesson, G1 notation, A13 trig transformations); on GitHub `main`, not published
+
+This batch closes the gaps that the Maths requirement files still recorded after all six content areas were built.
+
+**Built:**
+- **G17:** a new Geometry lesson, *Spheres, cones and composite solids* (`maths.geometry.spheres-cones`; both tiers; calculator). Surface areas of spheres, hemispheres and cones (slant height by Pythagoras); composite solids; melting and recasting; frustums (Higher). It has a `solid-builder` investigation.
+- **G1:** three-letter angle notation as a third skill in the angles lesson, with a fourth card.
+- **A13:** a Higher level on graph transformations for sin and cos curves, now in that lesson's check.
+- **N13:** the record said rates of pay and flow were not practised. That was wrong: both already are. The requirement row is corrected; nothing was built.
+
+**Totals:** Geometry now has 16 lessons (14 at Foundation): 69 Maths lessons and 164 skills.
+
+**QA:**
+- 659 automated tests pass (662 after merging the S2 publication; flows 1, 11, 13 and 16 re-run and pass) (`tests/maths-geometry4.test.js`: 6 tests). Angle names are checked against the drawn vertices; areas and volumes are re-solved from the drawn and printed measurements; trig options are evaluated as functions.
+- All sixteen Maths walk-throughs pass: 87, 68, 62, 94, 69, 64, 78, 53, 70, 46, 78, 72, 67, 59, 60 and 46 checks, 1073 in total. Flow 16 covers the new work, including wrong paths, resume, π answers and the tier split.
+- Screenshot review fixed overlapping height labels and a stale hint in the investigation.
+- Brief: `curriculum/briefs/maths-gaps-batch-01.md`.
+
+**Cache:** maths modules are at `20261023-maths-r14`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication;
+- specialist review;
+- drawing-based parts of G1, G2, G13 and G15 are still not marked on screen;
+- units are not marked.
+
+**Next:** the remaining recorded Maths limits are about marking drawings, which is engine work rather than lessons. Specialist review of all six topics is the outstanding quality step.
+
 ## Geography river batch02 and Maths S2 follow-up — published
 
 23October2026. Five new river lessons: waterfalls/gorges/cliffs; floodplains/levees/point bars; meanders/oxbows; flooding; management (1.8a–c/1.9a–b). Geography25built,75practice/100checks.21new views:17processes loop by default; spurs/photo/hydrograph/zoning static. Explanation cards choose matching evidence. Genuine dated High Force photo credited at point of use. Invented hydrographs distinguish rainfall/discharge/lag; reading is not drawing evidence. Named1.10synthesis, authentic OS/BGS/GIS and paired UK weather, constructed and specialist evidence remain open. Roadmap95units25built/70provisional; student totals scoped to pathway.
