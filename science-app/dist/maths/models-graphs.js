@@ -1,9 +1,9 @@
 // Investigations for the graphs lessons. Several reuse the plotting input from graph.js so learners
 // practise the same interaction that practice questions mark.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r9';
-import { num } from './frac.js?v=20261023-maths-r9';
-import { btn, progressDots } from './models-number.js?v=20261023-maths-r9';
-import { graphSVG, graphInputHTML, bindGraphInput, markPoints, markLine, pointsFeedback, lineFeedback, fmtLine } from './graph.js?v=20261023-maths-r9';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r10';
+import { num } from './frac.js?v=20261023-maths-r10';
+import { btn, progressDots } from './models-number.js?v=20261023-maths-r10';
+import { graphSVG, graphInputHTML, bindGraphInput, markPoints, markLine, pointsFeedback, lineFeedback, fmtLine } from './graph.js?v=20261023-maths-r10';
 
 const M = s => mathHTML(s);
 const done = (ctx, panel, text) => { ctx.setTitle('Investigation complete.'); ctx.panel.innerHTML = `<div class="mpanel-k">SUMMARY</div>${panel}`; ctx.body.innerHTML = `<p>${text}</p><p class="mdone">Investigation complete ✓</p>`; ctx.done(); };

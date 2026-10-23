@@ -2,9 +2,9 @@
 // fractions and fractional/negative algebraic indices (A4, A18 Higher), identities and proof (A6;
 // Higher: proof), iteration (A20, Higher) and forming and solving equations in context (A21, A17).
 // Same contract as the other skill modules: generators are pure functions of (level, seed).
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r9';
-import { F, add, sub, mul, div, eq, gcd, num, fracMarkup } from './frac.js?v=20261023-maths-r9';
-import { polyM, makeA, fixMinus, algAns, algTrap, valAns, choiceItem } from './skills-algebra.js?v=20261023-maths-r9';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r10';
+import { F, add, sub, mul, div, eq, gcd, num, fracMarkup } from './frac.js?v=20261023-maths-r10';
+import { polyM, makeA, fixMinus, algAns, algTrap, valAns, choiceItem } from './skills-algebra.js?v=20261023-maths-r10';
 
 const fr = v => { const f = typeof v === 'number' ? F(v) : v; return { n: f.n, d: f.d }; };
 const fv = f => (f.d === 1 ? num(f.n) : fracMarkup(f));

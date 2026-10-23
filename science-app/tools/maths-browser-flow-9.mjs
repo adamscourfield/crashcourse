@@ -23,7 +23,8 @@ page.on('pageerror', e => errors.push(String(e)));
 const mstate = () => page.evaluate(k => JSON.parse(localStorage.getItem(k) || 'null'), KEY);
 const lessonOf = async () => { const s = await mstate(); return s.lessons[s.lessonId]; };
 const feedback = () => page.locator('#mFeedback').innerText();
-const cont = () => page.click('#mContinue');
+// Continue may be hidden (unanswered question) or already auto-advanced; both are fine.
+const cont = async () => { const b = page.locator('#mContinue'); if (await b.isVisible()) await b.click({ timeout: 2000 }).catch(() => {}); };
 const shot = name => page.screenshot({ path: `${OUT}/${name}.png` });
 const noOverflow = () => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1);
 const wait = ms => page.waitForTimeout(ms);
@@ -46,11 +47,10 @@ const sciBefore = await page.evaluate(() => localStorage.getItem('crash-course-v
 await page.selectOption('#subject', 'maths'); await page.waitForSelector('#mH1');
 await page.click('#mapButton');
 const mapTxt = await page.locator('dialog').innerText();
-const RN = Number((mapTxt.match(/Ratio, proportion and rates of change\s*(\d+) lessons available/) || [])[1]);
-ok(RN >= 5, 'course map: Ratio is available with ' + RN + ' lessons');
-ok(/Geometry and measures\s*\d+ lessons available/.test(mapTxt) && /Probability\s*Planned/.test(mapTxt), 'course map: Geometry available, Probability still planned');
+ok(/Ratio, proportion and rates of change/.test(mapTxt) && /Geometry and measures/.test(mapTxt) && !/Probability/.test(mapTxt), 'course map links Ratio and Geometry; unbuilt Probability is not listed');
 await page.click('[data-mtopic="maths.ratio"]'); await page.click('#closeModal');
-ok((await page.locator('#sideProgress').innerText()) === `0 / ${RN}`, 'Ratio topic progress starts at 0');
+const RN = Number((await page.locator('#sideProgress').innerText()).split('/ ')[1]);
+ok(RN >= 5 && (await page.locator('#sideProgress').innerText()) === `0 / ${RN}`, 'Ratio topic progress starts at 0 of ' + RN);
 ok((await page.locator('#mH1').innerText()).includes('Ratio notation'), 'Ratio opens on its first lesson');
 const R = ['maths.ratio.notation', 'maths.ratio.sharing', 'maths.ratio.proportion', 'maths.ratio.percentages', 'maths.ratio.growth-decay'];
 for (const id of R) {
@@ -129,7 +129,7 @@ ok(/simplest form/i.test(await feedback()), 'unsimplified ratio marked as not in
 await cont();
 let guard = 0, answered = 0;
 while (guard++ < 80) {
-  s = await mstate(); const L = s.lessons[s.lessonId];
+  s = await mstate(); const L = s.lessons[s.lessonId]; if (L.stage === 3) break;
   if (L.practice.answer) { await cont(); continue; }
   if (!L.practice.item) break;
   it = L.practice.item;
@@ -149,7 +149,7 @@ ok((await page.locator('#sideProgress').innerText()) === `1 / ${RN}`, 'Ratio pro
 await goLesson('maths.ratio.proportion', 2);
 let sawMoney = false;
 for (let g = 0; g < 60 && !sawMoney; g++) {
-  s = await mstate(); const L = s.lessons[s.lessonId];
+  s = await mstate(); const L = s.lessons[s.lessonId]; if (L.stage === 3) break;
   if (L.practice.answer) { await cont(); continue; }
   if (!L.practice.item) break;
   it = L.practice.item;

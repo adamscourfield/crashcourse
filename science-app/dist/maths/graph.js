@@ -12,7 +12,7 @@
 //   {kind:'points', points:[[x,y],…], grid}     plot exactly these points (any order)
 //   {kind:'line', m:{n,d}, c:{n,d}, grid}       plot at least two points on y = mx + c
 // Raw answers are "x,y;x,y" — the same format as solution pairs.
-import { F, num, fracMarkup, normalise } from './frac.js?v=20261023-maths-r9';
+import { F, num, fracMarkup, normalise } from './frac.js?v=20261023-maths-r10';
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const COL = { ink: '#e4ebf0', muted: '#b7c8d6', grid: '#b7c8d626', axis: '#b7c8d6', a: '#ed8b78', b: '#a8d5b5', c: '#f2d48a', cream: '#f8f6f2', navy: '#182e44' };

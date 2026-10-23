@@ -9,8 +9,8 @@
 // (G7, G8), circle theorems (G10), coordinates (G11), plans and elevations (G12, G13), bearings (G15),
 // Pythagoras and trigonometry (G20–G23), vectors (G24, G25).
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261023-maths-r9';
-import { raysFig, triFig, parallelFig, polygonFig, circleFig, sectorFig, cuboidFig, prismFig, cylFig } from './skills-geometry.js?v=20261023-maths-r9';
+import { skillById } from './skills.js?v=20261023-maths-r10';
+import { raysFig, triFig, parallelFig, polygonFig, circleFig, sectorFig, cuboidFig, prismFig, cylFig } from './skills-geometry.js?v=20261023-maths-r10';
 
 const S = id => skillById[id];
 const geo = (fig, caption) => ({ kind: 'geo', fig, caption });
@@ -22,7 +22,7 @@ const lFig = { h: 320, polys: [{ pts: [[150, 40], [360, 40], [360, 100], [450, 1
 
 export const geometryTopic = {
   id: 'maths.geometry', title: 'Geometry and measures', short: 'Geometry', number: '04', status: 'partial',
-  coverage: 'Five lessons so far: angle facts on lines, at points, in triangles and with parallel lines; angles in polygons and properties of quadrilaterals; area and perimeter of rectangles, triangles, parallelograms, trapezia and compound shapes; circumference and area of circles, arcs and sectors; volume and surface area of prisms, cylinders, spheres, cones and pyramids. Every question has its own diagram. Pythagoras, trigonometry, transformations, constructions, similarity, circle theorems and vectors come next.',
+  coverage: 'Ten lessons so far: angle facts and parallel lines; polygons and quadrilaterals; area and perimeter; circles, arcs and sectors; volume and surface area; Pythagoras; trigonometry and exact values; transformations and column vectors; constructions and loci; bearings, scale drawings and elevation. Every question has its own diagram or grid. Congruence and similarity, circle theorems, plans and elevations, the sine and cosine rules and vectors come next.',
 };
 
 export const geometryLessons = [

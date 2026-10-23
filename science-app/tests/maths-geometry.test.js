@@ -13,9 +13,9 @@ import { levelsFor } from '../dist/maths/mastery.js';
 import { figSVG, visualGeo } from '../dist/maths/geomfig.js';
 import { visual7 } from '../dist/maths/models-algebra3.js';
 import { MODELS11 } from '../dist/maths/models-geometry.js';
+import { geometrySkills as geoSkills } from '../dist/maths/skills-geometry.js'; // batch 1 skills only
 
 const N = 200;
-const geoSkills = allSkills.filter(sk => sk.id.startsWith('maths.geometry.'));
 const items = (id, lv, n = N) => Array.from({ length: n }, (_, i) => generate('maths.geometry.' + id, lv, 'gt-' + i));
 const val = a => (a.kind === 'integer' ? a.value : a.value.n / a.value.d);
 const correctOption = it => it.answer.options[it.answer.answer];

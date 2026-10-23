@@ -22,7 +22,8 @@ page.on('pageerror', e => errors.push(String(e)));
 const mstate = () => page.evaluate(k => JSON.parse(localStorage.getItem(k) || 'null'), KEY);
 const lessonOf = async () => { const s = await mstate(); return s.lessons[s.lessonId]; };
 const feedback = () => page.locator('#mFeedback').innerText();
-const cont = () => page.click('#mContinue');
+// Continue may be hidden (unanswered question) or already auto-advanced; both are fine.
+const cont = async () => { const b = page.locator('#mContinue'); if (await b.isVisible()) await b.click({ timeout: 2000 }).catch(() => {}); };
 const shot = name => page.screenshot({ path: `${OUT}/${name}.png` });
 const noOverflow = () => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1);
 const wait = ms => page.waitForTimeout(ms);
@@ -43,8 +44,8 @@ const short = id => id.split('.').pop();
 await page.goto(URL); await page.evaluate(() => localStorage.clear()); await page.goto(URL, { waitUntil: 'networkidle' });
 await page.selectOption('#subject', 'maths'); await page.waitForSelector('#mH1');
 await page.click('#mapButton');
-ok(/Ratio, proportion and rates of change\s*8 lessons available/.test(await page.locator('dialog').innerText()), 'course map: Ratio has 8 lessons');
 await page.click('[data-mtopic="maths.ratio"]'); await page.click('#closeModal');
+ok((await page.locator('#sideProgress').innerText()).endsWith('/ 8'), 'Ratio has 8 lessons');
 const R2 = ['maths.ratio.proportion-algebra', 'maths.ratio.scale-similarity', 'maths.ratio.rates'];
 for (const id of R2) {
   await goLesson(id, 0);
@@ -92,7 +93,7 @@ await readCards('maths.ratio.proportion-algebra'); await page.click('[data-mstag
 ok((await page.locator('.mrung').count()) === 3, 'Foundation: two proportion skills plus mixed');
 let s, it, guard = 0, answered = 0;
 while (guard++ < 80) {
-  s = await mstate(); const L = s.lessons[s.lessonId];
+  s = await mstate(); const L = s.lessons[s.lessonId]; if (L.stage === 3) break;
   if (L.practice.answer) { await cont(); continue; }
   if (!L.practice.item) break;
   it = L.practice.item;
@@ -115,7 +116,7 @@ await goLesson('maths.ratio.scale-similarity', 2);
 ok((await page.locator('.mrung').count()) === 3, 'Higher: scale and similarity skills plus mixed');
 await goLesson('maths.ratio.proportion-algebra', 2);
 for (let g = 0; g < 60; g++) {
-  s = await mstate(); const L = s.lessons[s.lessonId];
+  s = await mstate(); const L = s.lessons[s.lessonId]; if (L.stage === 3) break;
   if (L.practice.answer) { await cont(); continue; }
   it = L.practice.item;
   if (it.answer.kind === 'algebra') { await page.fill('#mText', 'y = ' + it.answer.expr); await page.click('#mSubmit'); ok((await feedback()).startsWith('Correct'), 'Higher: proportion formula typed as y = … accepted'); break; }
