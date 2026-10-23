@@ -4,7 +4,7 @@
   "built_lessons": 5,
   "practice_items": 15,
   "check_items": 20,
-  "automated_tests_passed": 618,
+  "automated_tests_passed": 625,
   "browser_cases": [
     "Blank pathway rejected; two landscape choices plus resource and physical/human fieldwork restored on reload",
     "Five full lesson journeys completed5/5",
@@ -22,5 +22,15 @@
     "No actual fieldwork participation or specialist-review claim",
     "Topic assessment not yet built"
   ],
-  "console_errors_observed": []
+  "console_errors_observed": [],
+  "publication": {
+    "status": "succeeded",
+    "source": "99171672cab2be7bc864360900b560f081d20441",
+    "deployment": "appgdep_6adb06540e3c81918c1c35c1f21f9999",
+    "live_checks": [
+      "Geography studio, all pathway options and UK locator visible",
+      "Existing Science state retained"
+    ],
+    "proof": "crash-course-geography-live.png"
+  }
 }
