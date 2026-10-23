@@ -4,23 +4,23 @@
   "journeys": [
     {
       "id": "geography.a.rivers.tees-landscape",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.glaciers.ice-processes",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.glaciers.upland-slopes",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.glaciers.climate-weather",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     },
     {
       "id": "geography.a.glaciers.corries-aretes",
-      "result": "100% · Lesson complete"
+      "result": "100% \u00b7 Lesson complete"
     }
   ],
   "wrongChallenge": "Look again at the evidence and the process described.",
@@ -28,8 +28,8 @@
   "practiceCorrection": "Try again. Abrasion wears the bed as ice carries tools across it.",
   "observationsRestored": "5 / 5",
   "independentLockedAfterReload": true,
-  "failedCheck": "75% · Keep building",
-  "retake": "100% · Lesson complete",
+  "failedCheck": "75% \u00b7 Keep building",
+  "retake": "100% \u00b7 Lesson complete",
   "phone": [
     {
       "model": 296,
@@ -58,7 +58,7 @@
     {
       "model": 296,
       "page": 390,
-      "title": "Corries, tarns and arêtes",
+      "title": "Corries, tarns and ar\u00eates",
       "width": 390
     }
   ],
@@ -91,5 +91,16 @@
     "No full assistive-device or specialist review",
     "Shared reduced-motion implementation inspected; not separately emulated",
     "Authentic OS/GIS/UK weather and constructed evidence remain separate"
-  ]
+  ],
+  "publication": {
+    "source": "b7813154d6fafdb10ca4b0a1826ec915f91c6cc4",
+    "deployment": "appgdep_6adb7d5b860081918bc3a8a2abcd4ece",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_18a7c675ace0819190b79e7d581b48d3",
+    "status": "succeeded",
+    "time": "2026-10-23T15:29:57Z",
+    "live": "30denominator;glaciated topic;corrie Pause/Loop;no console errors",
+    "proof": "crash-course-uplands01-live.png"
+  },
+  "mergedTests": 663,
+  "maths": "2b1a597merged;69lessons/164skills;16entrymenu/new lesson inspected;author flows retained not rerun"
 }
