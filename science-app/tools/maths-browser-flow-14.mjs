@@ -44,7 +44,7 @@ await page.goto(URL); await page.evaluate(() => localStorage.clear()); await pag
 await page.selectOption('#subject', 'maths'); await page.waitForSelector('#mH1');
 await page.click('#mapButton');
 const mapTxt = await page.locator('dialog').innerText();
-ok(/Probability/.test(mapTxt) && !/Statistics/.test(mapTxt), 'course map links Probability; Statistics not yet listed');
+ok(/Probability/.test(mapTxt) && /Statistics/.test(mapTxt), 'course map links Probability and Statistics');
 await page.click('[data-mtopic="maths.probability"]'); await page.click('#closeModal');
 ok((await page.locator('#sideProgress').innerText()) === '0 / 4', 'Probability has 4 lessons at Foundation');
 const P = ['maths.probability.basics', 'maths.probability.sample-spaces', 'maths.probability.tree-diagrams', 'maths.probability.conditional'];
