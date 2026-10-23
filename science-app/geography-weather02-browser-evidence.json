@@ -11,20 +11,20 @@
     },
     {
       "lesson": "geography.a.weather.emission-sources",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which pair is correctly matched?\n✓ Industry can emit CO₂ through…\n✓ Which statement about farming is strongest?\n✓ Equal masses of CO₂ and CH₄…\nTry check again"
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 Which pair is correctly matched?\n\u2713 Industry can emit CO\u2082 through\u2026\n\u2713 Which statement about farming is strongest?\n\u2713 Equal masses of CO\u2082 and CH\u2084\u2026\nTry check again"
     },
     {
       "lesson": "geography.a.weather.climate-impacts",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which judgement about crop yields is most defensible?\n✓ Sea-level rise can affect people through…\n✓ A glacier front retreats while ice moves downslope. This is…\n✓ Why can the loop not predict one community’s exact future?\nTry check again"
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 Which judgement about crop yields is most defensible?\n\u2713 Sea-level rise can affect people through\u2026\n\u2713 A glacier front retreats while ice moves downslope. This is\u2026\n\u2713 Why can the loop not predict one community\u2019s exact future?\nTry check again"
     },
     {
       "lesson": "geography.a.weather.uk-climate-history",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Using the two latest displayed bars, the increase is…\n✓ Which year is warmer in this displayed record:2022 or2021?\n✓ Which conclusion is supported by the bar chart?\n✓ To investigate UK conditions around1100CE, also use…\nTry check again",
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 Using the two latest displayed bars, the increase is\u2026\n\u2713 Which year is warmer in this displayed record:2022 or2021?\n\u2713 Which conclusion is supported by the bar chart?\n\u2713 To investigate UK conditions around1100CE, also use\u2026\nTry check again",
       "graphQuestion": true
     },
     {
       "lesson": "geography.a.weather.uk-climate-controls",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which best explains varied UK weather?\n✓ At similar latitude, a high upland site is generally…\n✓ An eastern rain shadow may form when…\n✓ Which qualification improves a regional climate explanation?\nTry check again"
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 Which best explains varied UK weather?\n\u2713 At similar latitude, a high upland site is generally\u2026\n\u2713 An eastern rain shadow may form when\u2026\n\u2713 Which qualification improves a regional climate explanation?\nTry check again"
     }
   ],
   "mobile": [
@@ -71,7 +71,7 @@
   },
   "realGraph": {
     "source": "Met Office HadCET v2.1.1.0",
-    "annual": "1659–2025",
+    "annual": "1659\u20132025",
     "line": true,
     "bars": true,
     "independentStimulus": true,
@@ -88,5 +88,21 @@
   "consoleErrors": [],
   "reducedMotion": "shared paused-start code retained; not separately emulated",
   "specialistReview": "not performed",
-  "publication": "pending"
+  "publication": {
+    "status": "succeeded",
+    "updated_at": "2026-10-23T19:07:45.744660+00:00",
+    "source": "ba506b8308cff8c58ed94dbce058635872a6e568",
+    "deployment": "appgdep_6adbb07456cc8191a1e51f6c7cb2c903",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_e68889bcd0208191b203146ce69770c4",
+    "url": "https://gcse-science-atom-lab.newbuddy32.chatgpt.site/",
+    "liveChecks": [
+      "50built denominator",
+      "ten shared weather menu lessons",
+      "greenhouse Pause/Loop defaults",
+      "measured chart and source",
+      "static player hidden",
+      "no console errors"
+    ],
+    "proof": "crash-course-weather02-live.png"
+  }
 }
