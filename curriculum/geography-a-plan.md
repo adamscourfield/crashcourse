@@ -69,3 +69,7 @@ The locator uses a generalised Natural Earth country outline (public domain), wi
 
 ## River batch02 —23October2026
 Five further river lessons1.8a–c/1.9a–b bring Geography to25built (5shared/10coasts/10rivers),75practice/100checks. Roadmap95authoring units:25built/70provisional after splitting1.8/1.9; not fixed final course size or student denominator. Coasts+rivers25;coasts+glaciers15;rivers+glaciers15;no-choice25exploratory. Genuine High Force photo and four static views complement17looping process views. Card views follow evidence type. Skill11OS,12drawing and13OS/GIS are not closed by diagrams/selected response. Named1.10synthesis remains next, followed by precise glaciated-upland briefs. See briefs/geography-a-rivers-02.md and geography-a-rivers02-coverage.csv.
+
+
+## Uplands01 —23October2026
+NamedTees1.10a plus four glaciers lessons1.11a–c/corrie-tarn-arête subset1.12a. Geography30built (5shared/10coasts/11rivers/4glaciers),90practice/120checks; roadmap98units30built/68provisional, not fixed final size. Built denominators26coasts+rivers,19coasts+glaciers,20rivers+glaciers,30unselected.4topics eligible as options allow; old records retained. Exact coverage and evidence gaps in geography-a-uplands01-coverage.csv and briefs/geography-a-uplands-01.md. Remaining1.12aforms and1.12b_c/1.13/1.14still planned; next five briefs recorded in handover.
