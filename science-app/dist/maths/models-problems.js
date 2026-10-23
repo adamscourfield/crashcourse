@@ -2,10 +2,10 @@
 // is the plan (which quantity to find first, with each wrong plan explained), part B the
 // intermediate value and part C the final answer. Each wrong value has its own feedback naming the
 // stage where it went wrong. Every render checks ctx.isActive.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r15';
-import { progressDots } from './models-number.js?v=20261023-maths-r15';
-import { figSVG } from './geomfig.js?v=20261023-maths-r15';
-import { wallFig, triAlgFig } from './skills-problems.js?v=20261023-maths-r15';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r16';
+import { progressDots } from './models-number.js?v=20261023-maths-r16';
+import { figSVG } from './geomfig.js?v=20261023-maths-r16';
+import { wallFig, triAlgFig } from './skills-problems.js?v=20261023-maths-r16';
 
 const M = s => mathHTML(s);
 const vNum = s => { const t = String(s ?? '').trim().replace(/−/g, '-').replace(/^£/, '').replace(/[°%]$/, ''); return t === '' || Number.isNaN(Number(t)) ? null : Number(t); };

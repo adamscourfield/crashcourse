@@ -1,11 +1,11 @@
 // Investigations for Statistics: how an extreme value moves the mean but not the median, building a
 // pie chart, fitting a line of best fit, and reading histograms, cumulative frequency and box plots.
 // Every render checks ctx.isActive.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r15';
-import { btn, progressDots } from './models-number.js?v=20261023-maths-r15';
-import { figSVG } from './geomfig.js?v=20261023-maths-r15';
-import { graphSVG } from './graph.js?v=20261023-maths-r15';
-import { tableFig, pieFig } from './skills-statistics.js?v=20261023-maths-r15';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r16';
+import { btn, progressDots } from './models-number.js?v=20261023-maths-r16';
+import { figSVG } from './geomfig.js?v=20261023-maths-r16';
+import { graphSVG } from './graph.js?v=20261023-maths-r16';
+import { tableFig, pieFig } from './skills-statistics.js?v=20261023-maths-r16';
 
 const M = s => mathHTML(s);
 const vNum = s => { const t = String(s ?? '').trim().replace(/−/g, '-'); return t === '' || Number.isNaN(Number(t)) ? null : Number(t); };

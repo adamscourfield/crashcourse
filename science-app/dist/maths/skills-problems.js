@@ -2,9 +2,9 @@
 // that join two or more content areas. Every item has one final answer; its traps are the values a
 // student reaches by stopping part-way or by taking one wrong step, so feedback names the stage that
 // went wrong. Diagrams (item.fig, geomfig.js) are drawn from the same numbers as the question.
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r15';
-import { F } from './frac.js?v=20261023-maths-r15';
-import { makeA, choiceItem } from './skills-algebra.js?v=20261023-maths-r15';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r16';
+import { F } from './frac.js?v=20261023-maths-r16';
+import { makeA, choiceItem } from './skills-algebra.js?v=20261023-maths-r16';
 
 const fr = v => { const f = typeof v === 'number' ? F(v) : v; return { n: f.n, d: f.d }; };
 const intAns = v => ({ kind: 'integer', value: v });

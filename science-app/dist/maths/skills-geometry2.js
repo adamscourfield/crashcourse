@@ -2,9 +2,9 @@
 // exact values (G20, G21), transformations and column vectors (G7, G8, G24), constructions and loci
 // (G2), bearings and scale drawings (G15). Items carry JSON-safe figures (item.fig) or coordinate
 // grids (item.graph) built from the same numbers as the question.
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r15';
-import { F } from './frac.js?v=20261023-maths-r15';
-import { makeA, fixMinus, choiceItem } from './skills-algebra.js?v=20261023-maths-r15';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r16';
+import { F } from './frac.js?v=20261023-maths-r16';
+import { makeA, fixMinus, choiceItem } from './skills-algebra.js?v=20261023-maths-r16';
 
 const fr = v => { const f = typeof v === 'number' ? F(v) : v; return { n: f.n, d: f.d }; };
 const intAns = v => ({ kind: 'integer', value: v });

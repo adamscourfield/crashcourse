@@ -1,10 +1,10 @@
 // Investigation for Geometry batch 4: building a hemisphere's surface from its parts, finding a
 // cone's slant height before its curved surface, and adding the volumes of a composite solid.
 // Every render checks ctx.isActive.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r15';
-import { btn, progressDots } from './models-number.js?v=20261023-maths-r15';
-import { figSVG } from './geomfig.js?v=20261023-maths-r15';
-import { sphereFig, coneFig, cylTopFig } from './skills-geometry4.js?v=20261023-maths-r15';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r16';
+import { btn, progressDots } from './models-number.js?v=20261023-maths-r16';
+import { figSVG } from './geomfig.js?v=20261023-maths-r16';
+import { sphereFig, coneFig, cylTopFig } from './skills-geometry4.js?v=20261023-maths-r16';
 
 const M = s => mathHTML(s);
 const vNum = s => { const t = String(s ?? '').trim().replace(/−/g, '-').replace(/\s*(π|pi)\s*$/i, ''); return t === '' || Number.isNaN(Number(t)) ? null : Number(t); };

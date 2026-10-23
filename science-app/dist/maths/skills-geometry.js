@@ -2,9 +2,9 @@
 // and quadrilaterals (G3, G4), area and perimeter of 2D shapes (G14, G16, G17), circles, arcs and
 // sectors (G9, G17, G18), volume and surface area (G16, G17). Each item carries a JSON-safe figure
 // (item.fig, drawn by geomfig.js) built from the same numbers as the question.
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r15';
-import { F, add, sub, mul, div, eq, gcd, num, fracMarkup } from './frac.js?v=20261023-maths-r15';
-import { makeA, fixMinus, choiceItem } from './skills-algebra.js?v=20261023-maths-r15';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r16';
+import { F, add, sub, mul, div, eq, gcd, num, fracMarkup } from './frac.js?v=20261023-maths-r16';
+import { makeA, fixMinus, choiceItem } from './skills-algebra.js?v=20261023-maths-r16';
 
 const fr = v => { const f = typeof v === 'number' ? F(v) : v; return { n: f.n, d: f.d }; };
 const intAns = v => ({ kind: 'integer', value: v });

@@ -1,10 +1,10 @@
 // Investigations for Probability: tossing a coin many times, a dice grid, building a tree diagram,
 // and narrowing the group for conditional probability. Every render checks ctx.isActive.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r15';
-import { btn, progressDots } from './models-number.js?v=20261023-maths-r15';
-import { figSVG } from './geomfig.js?v=20261023-maths-r15';
-import { rng } from './rng.js?v=20261023-maths-r15';
-import { tableFig, vennFig, treeFig } from './skills-probability.js?v=20261023-maths-r15';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r16';
+import { btn, progressDots } from './models-number.js?v=20261023-maths-r16';
+import { figSVG } from './geomfig.js?v=20261023-maths-r16';
+import { rng } from './rng.js?v=20261023-maths-r16';
+import { tableFig, vennFig, treeFig } from './skills-probability.js?v=20261023-maths-r16';
 
 const M = s => mathHTML(s);
 const vNum = s => { const t = String(s ?? '').trim().replace(/−/g, '-').replace(/\s+/g, ''); const m = t.match(/^(-?\d+)\/(\d+)$/); if (m) return Number(m[2]) ? Number(m[1]) / Number(m[2]) : null; return t === '' || Number.isNaN(Number(t)) ? null : Number(t); };

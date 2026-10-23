@@ -3,8 +3,8 @@
 //   solids, volumes of composite solids, equal volumes, and frustums (Higher).
 //   (G1 three-letter angle notation is a skill in the angles lesson, lessons-geometry.js.)
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261023-maths-r15';
-import { sphereFig, coneFig, cylTopFig, frustumFig } from './skills-geometry4.js?v=20261023-maths-r15';
+import { skillById } from './skills.js?v=20261023-maths-r16';
+import { sphereFig, coneFig, cylTopFig, frustumFig } from './skills-geometry4.js?v=20261023-maths-r16';
 
 const S = id => skillById[id];
 const geo = (fig, caption) => ({ kind: 'geo', fig, caption });

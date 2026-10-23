@@ -2,9 +2,9 @@
 // diagrams from written descriptions (G1); surface area of spheres, hemispheres, cones and composite
 // solids, volumes of composite solids, and frustums (Higher) (G16, G17). Every item carries a
 // JSON-safe figure (item.fig, drawn by geomfig.js) built from the same numbers as the question.
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r15';
-import { F } from './frac.js?v=20261023-maths-r15';
-import { makeA, fixMinus, choiceItem } from './skills-algebra.js?v=20261023-maths-r15';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r16';
+import { F } from './frac.js?v=20261023-maths-r16';
+import { makeA, fixMinus, choiceItem } from './skills-algebra.js?v=20261023-maths-r16';
 
 const fr = v => { const f = typeof v === 'number' ? F(v) : v; return { n: f.n, d: f.d }; };
 const intAns = v => ({ kind: 'integer', value: v });

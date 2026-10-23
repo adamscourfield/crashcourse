@@ -4,8 +4,8 @@
 // equations; averages and probability with totals and money. The statement references are the
 // content each problem draws on; the problem-solving demand itself is from the assessment objectives.
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261023-maths-r15';
-import { wallFig, pondFig, tankFig, triAlgFig, rectAlgFig } from './skills-problems.js?v=20261023-maths-r15';
+import { skillById } from './skills.js?v=20261023-maths-r16';
+import { wallFig, pondFig, tankFig, triAlgFig, rectAlgFig } from './skills-problems.js?v=20261023-maths-r16';
 
 const S = id => skillById[id];
 const geo = (fig, caption) => ({ kind: 'geo', fig, caption });

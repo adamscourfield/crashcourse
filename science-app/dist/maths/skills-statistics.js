@@ -1,9 +1,9 @@
 // Edexcel 1MA1 Statistics (S1–S6). Charts are drawn from the same data as the question: bar charts,
 // histograms, cumulative frequency curves and scatter graphs on the graph renderer; pie charts, box
 // plots and tables in geomfig.
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r15';
-import { F } from './frac.js?v=20261023-maths-r15';
-import { makeA, choiceItem } from './skills-algebra.js?v=20261023-maths-r15';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r16';
+import { F } from './frac.js?v=20261023-maths-r16';
+import { makeA, choiceItem } from './skills-algebra.js?v=20261023-maths-r16';
 
 const fr = f => ({ n: f.n, d: f.d });
 const intAns = v => ({ kind: 'integer', value: v });

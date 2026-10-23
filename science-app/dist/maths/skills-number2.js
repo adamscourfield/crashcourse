@@ -4,9 +4,9 @@
 // 22 October 2026): estimating roots (N6), fractional indices (N7), recurring decimals (N10),
 // upper and lower bounds (N16).
 // Same contract as skills-number.js: generators are pure functions of (level, seed).
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r15';
-import { F, add, sub, mul, div, eq, gcd, num, fracMarkup, decText, D } from './frac.js?v=20261023-maths-r15';
-import { make } from './skills-number.js?v=20261023-maths-r15';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r16';
+import { F, add, sub, mul, div, eq, gcd, num, fracMarkup, decText, D } from './frac.js?v=20261023-maths-r16';
+import { make } from './skills-number.js?v=20261023-maths-r16';
 
 const dt = f => { const t = decText(f); if (t === null) throw new Error('non-terminating ' + f.n + '/' + f.d); return t; };
 const dec = (f, extra = {}) => ({ kind: 'decimal', value: { n: f.n, d: f.d }, ...extra });
