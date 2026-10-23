@@ -1,9 +1,9 @@
 // Investigations for Ratio batch 2: proportion tables and graphs, map scales and similar areas,
 // and chords closing in on a tangent. Every render checks ctx.isActive.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r14';
-import { btn, progressDots } from './models-number.js?v=20261023-maths-r14';
-import { graphSVG } from './graph.js?v=20261023-maths-r14';
-import { barsSVG } from './models-ratio.js?v=20261023-maths-r14';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r15';
+import { btn, progressDots } from './models-number.js?v=20261023-maths-r15';
+import { graphSVG } from './graph.js?v=20261023-maths-r15';
+import { barsSVG } from './models-ratio.js?v=20261023-maths-r15';
 
 const M = s => mathHTML(s);
 const vNum = s => { const t = String(s ?? '').trim().replace(/−/g, '-'); return t === '' || Number.isNaN(Number(t)) ? null : Number(t); };

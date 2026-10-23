@@ -4,8 +4,8 @@
 //   figures · G20 3D Pythagoras and trigonometry (Higher) · G22 sine and cosine rules (Higher) ·
 //   G23 area = ½ab sin C (Higher) · G24, G25 vectors (proofs Higher).
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261023-maths-r14';
-import { triABC, aShape, circlePoint } from './skills-geometry3.js?v=20261023-maths-r14';
+import { skillById } from './skills.js?v=20261023-maths-r15';
+import { triABC, aShape, circlePoint } from './skills-geometry3.js?v=20261023-maths-r15';
 
 const S = id => skillById[id];
 const geo = (fig, caption) => ({ kind: 'geo', fig, caption });

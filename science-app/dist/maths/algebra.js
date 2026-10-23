@@ -13,7 +13,7 @@
 // (x + 1)(x − 2)), + − × * · ÷ /, ^ or ² ³ for powers, brackets. "x2" is refused with a hint,
 // and "1/2x" is refused as ambiguous, because the student meant something definite and the
 // marker must not guess.
-import { F, add, sub, mul, div, eq, gcd, normalise } from './frac.js?v=20261023-maths-r14';
+import { F, add, sub, mul, div, eq, gcd, normalise } from './frac.js?v=20261023-maths-r15';
 
 /* ───────── polynomials and rational functions ───────── */
 const mkey = m => Object.keys(m).filter(v => m[v]).sort().map(v => v + m[v]).join('·');

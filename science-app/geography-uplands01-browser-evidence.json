@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-23",
+  "preview": "http://localhost:4177/",
+  "journeys": [
+    {
+      "id": "geography.a.rivers.tees-landscape",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.glaciers.ice-processes",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.glaciers.upland-slopes",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.glaciers.climate-weather",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.glaciers.corries-aretes",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "wrongChallenge": "Look again at the evidence and the process described.",
+  "premature": "Answer this challenge first.",
+  "practiceCorrection": "Try again. Abrasion wears the bed as ice carries tools across it.",
+  "observationsRestored": "5 / 5",
+  "independentLockedAfterReload": true,
+  "failedCheck": "75% · Keep building",
+  "retake": "100% · Lesson complete",
+  "phone": [
+    {
+      "model": 296,
+      "page": 390,
+      "title": "The Tees: a changing river landscape",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "How moving ice changes the land",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Upland slopes after the ice",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Past ice, present weather",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Corries, tarns and arêtes",
+      "width": 390
+    }
+  ],
+  "pathways": [
+    {
+      "pair": [
+        "coasts",
+        "glaciers"
+      ],
+      "progress": "My progress\n19 / 19"
+    },
+    {
+      "pair": [
+        "coasts",
+        "rivers"
+      ],
+      "progress": "My progress\n26 / 26"
+    },
+    {
+      "pair": [
+        "rivers",
+        "glaciers"
+      ],
+      "progress": "My progress\n20 / 20"
+    }
+  ],
+  "reload": "20 / 20",
+  "consoleErrors": [],
+  "limitations": [
+    "No full assistive-device or specialist review",
+    "Shared reduced-motion implementation inspected; not separately emulated",
+    "Authentic OS/GIS/UK weather and constructed evidence remain separate"
+  ]
+}

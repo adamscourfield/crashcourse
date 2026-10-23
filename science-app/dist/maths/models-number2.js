@@ -1,8 +1,8 @@
 // Visual models for Number batch 2: static worked-example diagrams (visual2) and five
 // investigations (MODELS2). SVG/HTML only, keyboard operable, colour never the only cue.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r14';
-import { F, add, sub, mul, div, eq, num, parseNumber, decText } from './frac.js?v=20261023-maths-r14';
-import { C, btn, progressDots } from './models-number.js?v=20261023-maths-r14';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r15';
+import { F, add, sub, mul, div, eq, num, parseNumber, decText } from './frac.js?v=20261023-maths-r15';
+import { C, btn, progressDots } from './models-number.js?v=20261023-maths-r15';
 
 const W = 600;
 const trim = v => String(Math.round(v * 1e6) / 1e6).replace('-', '−');

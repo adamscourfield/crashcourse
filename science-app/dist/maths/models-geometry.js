@@ -1,9 +1,9 @@
 // Investigations for Geometry batch 1: angle facts, polygon triangulation, cut-and-move areas,
 // unrolling circles and stacking prism layers. Every render checks ctx.isActive.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r14';
-import { btn, progressDots } from './models-number.js?v=20261023-maths-r14';
-import { figSVG } from './geomfig.js?v=20261023-maths-r14';
-import { parallelFig, triFig, prismFig, cylFig, sectorFig } from './skills-geometry.js?v=20261023-maths-r14';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r15';
+import { btn, progressDots } from './models-number.js?v=20261023-maths-r15';
+import { figSVG } from './geomfig.js?v=20261023-maths-r15';
+import { parallelFig, triFig, prismFig, cylFig, sectorFig } from './skills-geometry.js?v=20261023-maths-r15';
 
 const M = s => mathHTML(s);
 const vNum = s => { const t = String(s ?? '').trim().replace(/−/g, '-').replace(/°$/, ''); return t === '' || Number.isNaN(Number(t)) ? null : Number(t); };

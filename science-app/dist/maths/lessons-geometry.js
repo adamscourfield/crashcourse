@@ -9,9 +9,9 @@
 // (G7, G8), circle theorems (G10), coordinates (G11), plans and elevations (G12, G13), bearings (G15),
 // Pythagoras and trigonometry (G20–G23), vectors (G24, G25).
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261023-maths-r14';
-import { raysFig, triFig, parallelFig, polygonFig, circleFig, sectorFig, cuboidFig, prismFig, cylFig } from './skills-geometry.js?v=20261023-maths-r14';
-import { letteredFig } from './skills-geometry4.js?v=20261023-maths-r14';
+import { skillById } from './skills.js?v=20261023-maths-r15';
+import { raysFig, triFig, parallelFig, polygonFig, circleFig, sectorFig, cuboidFig, prismFig, cylFig } from './skills-geometry.js?v=20261023-maths-r15';
+import { letteredFig } from './skills-geometry4.js?v=20261023-maths-r15';
 
 const S = id => skillById[id];
 const geo = (fig, caption) => ({ kind: 'geo', fig, caption });

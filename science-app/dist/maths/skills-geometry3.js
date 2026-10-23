@@ -2,9 +2,9 @@
 // theorems (G9, G10 Higher), 3D solids, plans and elevations (G12, G13), sine and cosine rules, area
 // ½ab sin C and 3D trigonometry (G20, G22, G23 Higher), and vectors (G24, G25).
 // Circle-theorem figures are drawn accurately from polar angles so the tests can measure them.
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r14';
-import { F } from './frac.js?v=20261023-maths-r14';
-import { makeA, fixMinus, choiceItem, algAns, algTrap } from './skills-algebra.js?v=20261023-maths-r14';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r15';
+import { F } from './frac.js?v=20261023-maths-r15';
+import { makeA, fixMinus, choiceItem, algAns, algTrap } from './skills-algebra.js?v=20261023-maths-r15';
 
 const fr = v => { const f = typeof v === 'number' ? F(v) : v; return { n: f.n, d: f.d }; };
 const intAns = v => ({ kind: 'integer', value: v });
