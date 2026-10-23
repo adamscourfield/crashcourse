@@ -1,3 +1,4 @@
+import {mathsSummary} from '../progress-summary.js?v=20261023-mastery01';
 import {cancelQuestionAdvance,questionFlow} from '../question-flow.js?v=20261023-flow01';
 // Maths studio: lesson flow, generated practice with mastery ladders, independent checks,
 // spaced interleaved review and topic assessment. Owns its own saved state (MATHS_KEY) so it
@@ -570,5 +571,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     document.getElementById('mConfirmReset').onclick = () => { delete s.lessons[l.id]; lessonSkills(l).forEach(sk => delete s.skills[sk.id]); view = 'lesson'; closeModal(); render(); };
   }
 
-  return { setTopic, topic: () => s.topicId, render, openLessons, openMap, openSources, startReview, startAssessment, setTier, resetLesson, tier: () => s.tier, state: () => s, title: () => (view === 'lesson' ? lesson().title : view === 'review' ? 'Review' : 'Topic assessment'), reviewDue };
+  function openProgressLesson(id, stage = 0) { setLesson(id); lessonState(s, id).stage = Math.max(0, Math.min(3, stage)); render(); }
+  function reviewTopic(id) { if (!mathsTopics.some(t => t.id === id)) return; s.topicId = id; const list = lessons(); if (!list.some(l => l.id === s.lessonId)) s.lessonId = list[0].id; view = 'lesson'; closeModal(); render(); startReview(); }
+  return { getProgress: () => mathsSummary(orderedLessons, mathsTopics, s), openProgressLesson, reviewTopic, setTopic, topic: () => s.topicId, render, openLessons, openMap, openSources, startReview, startAssessment, setTier, resetLesson, tier: () => s.tier, state: () => s, title: () => (view === 'lesson' ? lesson().title : view === 'review' ? 'Review' : 'Topic assessment'), reviewDue };
 }

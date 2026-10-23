@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-23",
+  "feature": "student mastery dashboard",
+  "automated_tests_passed": 612,
+  "browser_cases": [
+    "Science Separate Foundation9/310; Trilogy Foundation7/237; Separate Higher15/361",
+    "Maths Higher0/50; Foundation0/47; subject separation",
+    "Science gap link and Space recall launch; correct recall clears gap without lesson credit",
+    "Maths Angle facts gap and Geometry recall launch",
+    "Reload retains summary and progress",
+    "Expandable Number/Cell biology lesson links",
+    "Four Discover cards update only Discover;1of4 link continues at Investigate",
+    "Phone390x844 no horizontal overflow; five nav buttons in one row",
+    "Unbuilt History hides My progress"
+  ],
+  "console_errors_observed": [],
+  "limits": [
+    "Accuracy uses defined retained/latest answers rather than lifetime/exam grade",
+    "Focused browser sampling; full assistive-device review open",
+    "No accounts or cross-device sync"
+  ],
+  "publication": {
+    "status": "succeeded",
+    "source": "5b1be07709b95e4d31c71d1d0ae505f5c09acd86",
+    "deployment": "appgdep_6adafc9bfcb48191ba18a597716d8731",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_177e17ff1510819185ec525be284f01e",
+    "url": "https://gcse-science-atom-lab.newbuddy32.chatgpt.site/",
+    "audience": "owner-private unchanged",
+    "live_check": "My progress, all-scope counts, unknown check accuracy, gaps and review links visible without errors",
+    "proof": "crash-course-mastery-live.png"
+  }
+}

@@ -1,3 +1,5 @@
+Published student mastery dashboard23October2026: My progress badge and shared overview, milestone counts, accuracy, gaps, recall and topic/lesson actions.612 tests and browser/mobile checks passed; no storage migration. Metrics/limits: curriculum/mastery-dashboard.md. Publication: BUILD_STATUS.md. Cache entry mastery01; shared flow/player/dependency identity retained.
+
 Published course map cleanup23October2026: one link per topic; stale availability flags removed; shared Science topic picker and consistent Maths list.113 focused checks and desktop/mobile QA passed. Cache entry map01; unchanged dependency/player/flow identities retained. Publication: root BUILD_STATUS.md.
 
 Published question-flow update23October2026: automatic correct-practice and independent-check navigation across Science/Maths; Enter submission; wrong-answer feedback retained; optional Stay here.603 automated checks and focused browser QA passed. Publication identifiers in BUILD_STATUS.md; design/limits in curriculum/question-flow.md. App/studio entry cache20261023-flow01; unchanged Science dependency identity physicscomplete01 and Maths dependencies r9 retained.

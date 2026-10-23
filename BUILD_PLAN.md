@@ -1,3 +1,5 @@
+> Student mastery view23October2026: preserve My progress totals and subject/course/tier scoping when adding lessons; new lessons must flow through the shared summary rather than a separate counter. Definitions: curriculum/mastery-dashboard.md.
+
 > Latest interface update23October2026: topic names have no availability flags; course maps use one registry-driven link per topic. Keep internal curriculum/evidence status separate from student navigation. See curriculum/course-map-cleanup.md.
 
 > Latest user priority23October2026: simplify answering questions. Shared automatic practice/check flow implemented; preserve it for future lessons. See curriculum/question-flow.md and BUILD_STATUS.md for QA/publication. No new curriculum units in this change.
