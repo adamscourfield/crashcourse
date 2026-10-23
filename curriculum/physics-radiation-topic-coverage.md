@@ -25,4 +25,4 @@ Technical QA: model/option/geometry/route/tier/completion tests; browser evidenc
 
 Selected-response and constrained prediction evidence does not replace independent written explanations, equation/ray/force-diagram or graph construction, practical handling/measurements/uncertainty, individual school required-practical performance, or specialist subject review. Required-practical preparation is explicitly taught where applicable; no simulation is recorded as physical completion. Technical checks are not specialist review.
 
-Publication: pending until the release identifiers are recorded in BUILD_STATUS.md; retain this map as a teaching/evidence record rather than a deployment claim.
+Publication:23October2026 with Physics completion; exact deployment/source/version identifiers and live verification are in BUILD_STATUS.md. This map remains a teaching/evidence record.

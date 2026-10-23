@@ -1,3 +1,5 @@
+> Implemented, verified and published23October2026.63remaining Physics lessons built;98Physics/361Science total. See BUILD_STATUS.md for599tests, browser evidence and release IDs. Evidence/specialist gaps remain explicitly recorded.
+
 # Remaining Physics completion — 22 October 2026
 
 User instruction: finish all remaining Physics teaching. Continue through this plan without asking after each batch. Preserve concurrent Maths work and sync GitHub main. Publish to the existing private Site after verified implementation. Technical validation does not close specialist review, unrestricted writing/drawing or school practical performance.

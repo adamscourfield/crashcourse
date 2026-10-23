@@ -1,4 +1,4 @@
-## Physics teaching roadmap complete — verified release awaiting publication
+## Science teaching roadmaps complete — published and GitHub synced
 
 23October2026. Finished the remaining63Physics lessons: Atomic Structure10, Forces25, Waves14, Magnetism10 and Space4. Together with existing Energy10/Electricity18/Particle7, Physics has98separate Higher teaching units (84separate Foundation;69Trilogy Higher;65Trilogy Foundation). Science now361lessons:113Chemistry150Biology98Physics;1298practice/2115independent selected checks before filters. Science Separate Higher361/Foundation310; Trilogy Higher259/Foundation237.168films/162bindings overall. Teaching completeness is distinct from assessment/specialist/physical evidence completion.
 
@@ -10,7 +10,7 @@ Model refinements: local wave oscillation distinct from energy travel; correctly
 
 Records: curriculum/physics-completion-coverage.md; five completion briefs, authoring snapshots, concrete teaching/question requirement CSVs and topic maps; subject/topic/lesson/motion registers; science-app/physics-completion-browser-evidence.json. Independent unrestricted writing/equations/ray/force/graph construction, supervised school practical performance/uncertainty, stronger assessment breadth and specialist review remain open across Science. No simulation is recorded as physical completion. No specialist-review claim is made by these technical tests.
 
-Publication/GitHub: release candidate locally verified; existing owner-private Site audience confirmed unchanged. Publication IDs and final canonical GitHub SHA will be recorded after successful deployment. Next action after publication: specialist and constructed-evidence review, rather than more missing Physics teaching units.
+Publication/GitHub: published23October2026 at05:41:39UTC to the existing owner-private Site, audience unchanged: https://gcse-science-atom-lab.newbuddy32.chatgpt.site/. Sites source4d9d22fa8defe7cde98b0c9a0238787973cc152c; deployment appgdep_6adaf38666c48191b87909617317fe1b; version appgprj_6ad1be5897a88191909a03ad57857103~appgver_7959a0040e9081919f5f0502cec158b8. Archive science-app-physics-complete01.tar.gz. Canonical verified release ece32773100536b4076264381722ccf2f0ebc970 pushed to GitHub main; this final documentation commit records publication. Live Science map confirms all eight Physics topics/counts and new Space lesson opens inline with Pause/Loop enabled; no console errors. Proof crash-course-physics-complete-live.png. Latest concurrent Maths Ratio/Geometry included.599combined tests passed after that merge. Next action after publication: specialist and constructed-evidence review, rather than more missing Physics teaching units.
 
 ## Maths Algebra05 — incoming author handover, incorporated in the Physics completion release above
 
