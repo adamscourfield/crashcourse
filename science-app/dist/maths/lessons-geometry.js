@@ -9,8 +9,8 @@
 // (G7, G8), circle theorems (G10), coordinates (G11), plans and elevations (G12, G13), bearings (G15),
 // Pythagoras and trigonometry (G20–G23), vectors (G24, G25).
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261023-maths-r10';
-import { raysFig, triFig, parallelFig, polygonFig, circleFig, sectorFig, cuboidFig, prismFig, cylFig } from './skills-geometry.js?v=20261023-maths-r10';
+import { skillById } from './skills.js?v=20261023-maths-r11';
+import { raysFig, triFig, parallelFig, polygonFig, circleFig, sectorFig, cuboidFig, prismFig, cylFig } from './skills-geometry.js?v=20261023-maths-r11';
 
 const S = id => skillById[id];
 const geo = (fig, caption) => ({ kind: 'geo', fig, caption });
@@ -22,7 +22,7 @@ const lFig = { h: 320, polys: [{ pts: [[150, 40], [360, 40], [360, 100], [450, 1
 
 export const geometryTopic = {
   id: 'maths.geometry', title: 'Geometry and measures', short: 'Geometry', number: '04', status: 'partial',
-  coverage: 'Ten lessons so far: angle facts and parallel lines; polygons and quadrilaterals; area and perimeter; circles, arcs and sectors; volume and surface area; Pythagoras; trigonometry and exact values; transformations and column vectors; constructions and loci; bearings, scale drawings and elevation. Every question has its own diagram or grid. Congruence and similarity, circle theorems, plans and elevations, the sine and cosine rules and vectors come next.',
+  coverage: 'Fifteen lessons covering G1–G25: angles and parallel lines; polygons; area; circles and sectors; volume and surface area; Pythagoras; trigonometry and exact values; transformations; constructions and loci; bearings and elevation; congruence and similarity; circle theorems (Higher); solids, plans and elevations; sine and cosine rules and 3D (Higher); vectors. Every question has its own diagram or grid.',
 };
 
 export const geometryLessons = [

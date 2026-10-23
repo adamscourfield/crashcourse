@@ -1,9 +1,9 @@
 // Visual models and investigations for Ratio batch 1: simplifying, sharing with bar models, best
 // buys and proportion, percentage bars, and compound against simple growth. visual9() draws
 // worked-example bar models; MODELS9 holds the investigations. Every render checks ctx.isActive.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r10';
-import { num } from './frac.js?v=20261023-maths-r10';
-import { C, btn, progressDots } from './models-number.js?v=20261023-maths-r10';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r11';
+import { num } from './frac.js?v=20261023-maths-r11';
+import { C, btn, progressDots } from './models-number.js?v=20261023-maths-r11';
 
 const M = s => mathHTML(s);
 const W = 600;

@@ -2,11 +2,11 @@
 // ratio (A24; Higher: surd ratio), surd expressions in algebra (A4 Higher, with N8), exponential
 // graphs in context (A12/A14 Higher), areas under curves and gradients in money contexts (A15 Higher)
 // and regions with strict inequalities (A22 Higher). Same contract as the other skill modules.
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r10';
-import { F, add, sub, mul, div, eq, gcd, num, fracMarkup } from './frac.js?v=20261023-maths-r10';
-import { squareFree } from './exact.js?v=20261023-maths-r10';
-import { makeA, fixMinus, choiceItem } from './skills-algebra.js?v=20261023-maths-r10';
-import { fmtLine } from './graph.js?v=20261023-maths-r10';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r11';
+import { F, add, sub, mul, div, eq, gcd, num, fracMarkup } from './frac.js?v=20261023-maths-r11';
+import { squareFree } from './exact.js?v=20261023-maths-r11';
+import { makeA, fixMinus, choiceItem } from './skills-algebra.js?v=20261023-maths-r11';
+import { fmtLine } from './graph.js?v=20261023-maths-r11';
 
 const fr = v => { const f = typeof v === 'number' ? F(v) : v; return { n: f.n, d: f.d }; };
 const fv = f => (f.d === 1 ? num(f.n) : fracMarkup(f));

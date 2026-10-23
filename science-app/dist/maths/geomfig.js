@@ -4,7 +4,7 @@
 //     sectors:[{c, r, a1, a2, fill?}], angles:[{v, p, q, label?, right?, r?}], ticks:[{a, b, n}],
 //     par:[{a, b, n}], labels:[{at, t, anchor?, size?, colour?}], dots:[[x, y]], dims:[{a, b, t, off?}] }
 // Points are [x, y] in SVG units (y down). Angles in sectors are degrees anticlockwise from east.
-import { esc, mathHTML } from './render.js?v=20261023-maths-r10';
+import { esc, mathHTML } from './render.js?v=20261023-maths-r11';
 
 const COL = { line: '#e4ebf0', accent: '#ed8b78', muted: '#b7c8d6', fill: '#a8d5b522', green: '#a8d5b5', cream: '#f8f6f2' };
 const W = 600;

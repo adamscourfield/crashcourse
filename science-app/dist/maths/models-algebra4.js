@@ -1,9 +1,9 @@
 // Investigations for Algebra batch 5: Fibonacci-type and surd sequences, and exponential growth,
 // trapezia under a curve and strict-inequality regions. Every render checks ctx.isActive.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r10';
-import { num } from './frac.js?v=20261023-maths-r10';
-import { btn, progressDots } from './models-number.js?v=20261023-maths-r10';
-import { graphSVG } from './graph.js?v=20261023-maths-r10';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r11';
+import { num } from './frac.js?v=20261023-maths-r11';
+import { btn, progressDots } from './models-number.js?v=20261023-maths-r11';
+import { graphSVG } from './graph.js?v=20261023-maths-r11';
 
 const M = s => mathHTML(s);
 const done = (ctx, panel, text) => { ctx.setTitle('Investigation complete.'); ctx.panel.innerHTML = `<div class="mpanel-k">SUMMARY</div>${panel}`; ctx.body.innerHTML = `<p>${text}</p><p class="mdone">Investigation complete ✓</p>`; ctx.done(); };

@@ -10,7 +10,7 @@
 //   Batch 3: N5 listing (Higher: product rule) · N8 exact π (Higher: surds) · N11 fractions in ratio
 //   N13 units and compound measures · N3 reciprocals · N1 inequality symbols.
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261023-maths-r10';
+import { skillById } from './skills.js?v=20261023-maths-r11';
 
 const S = id => skillById[id];
 

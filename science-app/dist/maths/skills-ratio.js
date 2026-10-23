@@ -3,9 +3,9 @@
 // conversions (R1, R7, R10, R11), percentages (R9) and compound growth and decay (R9, R16; Higher:
 // iterative processes). Same contract as the other skill modules: pure functions of (level, seed).
 // Money and percentages are computed in whole pence or exact fractions, never floating point.
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r10';
-import { F, add, sub, mul, div, eq, gcd, lcm, num, fracMarkup } from './frac.js?v=20261023-maths-r10';
-import { makeA, fixMinus, algAns, algTrap, choiceItem } from './skills-algebra.js?v=20261023-maths-r10';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r11';
+import { F, add, sub, mul, div, eq, gcd, lcm, num, fracMarkup } from './frac.js?v=20261023-maths-r11';
+import { makeA, fixMinus, algAns, algTrap, choiceItem } from './skills-algebra.js?v=20261023-maths-r11';
 
 const fr = v => { const f = typeof v === 'number' ? F(v) : v; return { n: f.n, d: f.d }; };
 const fv = f => (f.d === 1 ? num(f.n) : fracMarkup(f));
