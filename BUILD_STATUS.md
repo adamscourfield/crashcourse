@@ -4,6 +4,35 @@
 
 665full tests and17focused Geography tests passed. Five100%journeys;wrong/premature challenge;budget practice correction;4/4views restored;independent firstanswer lock/reload;75%fail/100%retake;five390pxlayouts fit296pxpanels;29/29coasts+glaciers,26/26coasts+rivers,30/30rivers+glaciers/reload preserved. No console errors. Reduced-motion shared code inspected, not separately emulated; specialist/full assistive-device review absent. Roadmap105units40built/65provisional; inventory470across361Science/69Maths/40Geography, not qualification/evidence completion. Next firstfiveWeather2.1/2.2precise briefs. Publication follows.
 
+## Maths: Problem solving batch 01 (4 exam-style lessons, AO2/AO3); on GitHub `main`, not published
+
+A seventh Maths topic, **Problem solving** (`maths.problems`), now on the course map. It covers multi-step problems in context that join content areas; it is not a content area of its own.
+
+**Lessons:**
+- area, volume and cost;
+- money with ratio, percentages, offers, VAT, overtime, interest and depreciation;
+- problems solved with equations (angles, perimeters, ages, tickets, and a Higher quadratic);
+- averages and probability (means through totals, expected profit, counters from a ratio, two events).
+
+**Totals:** all four lessons are at both tiers, with three Higher-only levels. There are 8 new skills (172 in all) and 4 planner investigations (plan, first stage, finish). Wrong answers that match a stopped or mistaken stage get feedback naming that stage.
+
+**QA:**
+- 669 automated tests pass (671 after merging the latest release; flows 1, 15, 16 and 17 re-run and pass) (`tests/maths-problems.test.js`: 7 tests). Every item is re-solved from the drawn dimensions and printed numbers. Equations are formed here from the algebraic labels and solved.
+- All seventeen Maths walk-throughs pass: 87, 68, 62, 94, 69, 64, 78, 53, 70, 46, 78, 72, 67, 59, 60, 46 and 57 checks, 1130 in total.
+- Screenshot review moved two overlapping labels and fixed "£40.5" to "£40.50".
+- Brief: `curriculum/briefs/maths-problems-batch-01.md`. Coverage: `curriculum/maths-problems-coverage.csv`.
+
+**Cache:** maths modules are at `20261023-maths-r15`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication;
+- specialist review;
+- written method and method marks are not assessed;
+- no "show that" or proof items yet;
+- difficulty is not calibrated against real papers.
+
+**Next:** more problem lessons if wanted: trigonometry and Pythagoras in context, graphs and rates in context, and reasoning items.
+
 ## Glaciated uplands02 — published
 
 23October2026. Five lessons add glacial troughs/truncated spurs/hanging valleys/lakes;roche moutonnée;ground/terminal moraines;crag-and-tail/drumlins;farming/forestry/settlement effects. Ref1.12a_remaining/1.12b_c/1.13a. Geography35built (5shared/10coasts/11rivers/9glaciers),105practice/140checks;19views15process/fourstatic. All1.12named landforms introduced, authenticOS/GISrecognition and constructed explanations remain separate.1.13bdevelopment and1.14named landscape still planned. Existing progress/assets preserved, no Science/Maths runtime changes. Roadmap102units35built/67provisional; inventory465across361Science/69Maths/35Geography, not qualification closure.

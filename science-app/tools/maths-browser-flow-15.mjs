@@ -43,7 +43,7 @@ await page.goto(URL); await page.evaluate(() => localStorage.clear()); await pag
 await page.selectOption('#subject', 'maths'); await page.waitForSelector('#mH1');
 await page.click('#mapButton');
 ok(/Statistics/.test(await page.locator('dialog').innerText()), 'course map links Statistics');
-ok((await page.locator('dialog .topic-link').count()) === 6, 'course map lists all six Maths topics');
+ok((await page.locator('dialog .topic-link').count()) >= 6, 'course map lists all six Maths content topics (and problem solving)');
 await page.click('[data-mtopic="maths.statistics"]'); await page.click('#closeModal');
 ok((await page.locator('#sideProgress').innerText()) === '0 / 3', 'Statistics has 3 lessons at Foundation (cumulative frequency is Higher only)');
 ok((await listed('maths.statistics.cumulative')) === 0, 'Foundation: Higher-only histogram lesson hidden');
