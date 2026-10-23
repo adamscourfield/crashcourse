@@ -1,3 +1,5 @@
+Geography coastal batch02 and incoming Maths Probability published23October2026.643merged tests;Geography15lessons,Maths64lessons/154skills. Source/deployment/proof/limits in BUILD_STATUS.md. Cache coasts02r3/Maths-r12; audience unchanged.
+
 Geography coastal batch02: five lessons/15practice/20checks; total15Geography lessons. Genuine2013 Old Harry photo with CC BY-SA4.0 attribution, static evidence controls and independent photo stimulus; four looping mechanism explorers.636tests and browser journeys; details BUILD_STATUS.md and geography-coasts02-browser-evidence.json.
 
 Coastal release published23October2026; incoming Maths Geometry11–15 retained;635merged tests. Geography10lessons,Maths60lessons/146skills. Owner-private Site audience unchanged; exact source/deployment/proof in BUILD_STATUS.md.

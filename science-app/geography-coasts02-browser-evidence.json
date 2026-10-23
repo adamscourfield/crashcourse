@@ -26,7 +26,18 @@
     "No fieldwork completion claim",
     "First named example not all school alternatives"
   ],
-  "publication": "pending",
+  "publication": {
+    "status": "succeeded",
+    "source": "f8ef37faed8ae6968c2bd976521ebd17afca3425",
+    "deployment": "appgdep_6adb63a888c08191bb5b224caa6c034b",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_408af1c72ef48191afa8e23a66702f3c",
+    "proof": "crash-course-swanage-live.png",
+    "live_checks": [
+      "15lesson denominator",
+      "Swanage static photo with attribution/date/license",
+      "Image loaded4288px; no console errors"
+    ]
+  },
   "console_errors_observed": [],
   "merged_maths": "Probability four lessons preserved;64lessons/154skills;four-lesson Higher menu verified. Incoming author browser evidence retained, not rerun."
 }
