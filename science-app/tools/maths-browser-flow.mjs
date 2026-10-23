@@ -25,7 +25,8 @@ page.on('pageerror', e => errors.push(String(e)));
 
 const mstate = () => page.evaluate(k => JSON.parse(localStorage.getItem(k) || 'null'), KEY);
 const feedback = () => page.locator('#mFeedback').innerText();
-const cont = () => page.click('#mContinue');
+// Continue may be hidden (unanswered question) or already auto-advanced; both are fine.
+const cont = async () => { const b = page.locator('#mContinue'); if (await b.isVisible()) await b.click({ timeout: 2000 }).catch(() => {}); };
 const shot = name => page.screenshot({ path: `${OUT}/${name}.png`, fullPage: false });
 
 const g = (x, y) => (y ? g(y, x % y) : Math.abs(x));
@@ -43,6 +44,8 @@ function rawFor(a) {
   if (a.kind === 'standard') return `${decText(a.a.n, a.a.d)}|${a.n}`;
   if (a.kind === 'power') return `${a.base}|${a.exp}`;
   if (a.kind === 'interval') return `${decText(a.lo.n, a.lo.d)}|${a.loIn ? '≤' : '<'}|${a.hiIn ? '≤' : '<'}|${decText(a.hi.n, a.hi.d)}`;
+  if (a.kind === 'ratio') return a.parts.join(':');
+  if (a.kind === 'exact') return `${a.a.n}/${a.a.d}${a.b.n < 0 ? '-' : '+'}${Math.abs(a.b.n)}${a.r === 'pi' ? 'π' : '√' + a.r}/${a.b.d}`;
   if (a.kind === 'primes') return Object.entries(a.value).map(([p, k]) => (k > 1 ? `${p}^${k}` : p)).join(' x ');
   let { n, d } = a.value; const h = g(n, d); n /= h; d /= h;
   if (d === 1) return String(n);
@@ -152,7 +155,7 @@ await page.reload(); await page.waitForSelector('#mH1');
 ok(await page.locator('.msolution').count() === 1, 'answered practice item and solution survive reload');
 let answered = 0, guard = 0, sawTrap = false, sawLevelUp = false;
 while (guard++ < 120) {
-  s = await mstate(); const L = s.lessons[s.lessonId];
+  s = await mstate(); const L = s.lessons[s.lessonId]; if (L.stage === 3) break;
   if (L.stage !== 2) break;
   if (L.practice.answer) { await cont(); continue; }
   if (!L.practice.item) { await cont(); continue; }
@@ -180,7 +183,7 @@ const check1 = s.lessons[s.lessonId].check;
 ok(check1.items.length === 10, 'independent check has 10 generated items');
 for (let i = 0; i < 10; i++) {
   s = await mstate(); const c = s.lessons[s.lessonId].check; const it = c.items[c.index];
-  if (i === 2) { await cont(); ok((await feedback()).includes('Record an answer'), 'check cannot be skipped'); }
+  if (i === 2) ok(!(await page.locator('#mContinue').isVisible()), 'check cannot be skipped: no Continue until an answer is recorded');
   await enter(it, i < 3 ? wrongFor(it) : rawFor(it.answer));
   ok(i > 0 || (await feedback()) === 'Answer recorded.', 'check gives no correctness hint');
   if (i === 0) { await page.reload(); await page.waitForSelector('#mH1'); ok(await page.locator('#mSubmit').count() === 0 && await page.locator('[data-mchoice][disabled], .mtext[disabled], fieldset[disabled]').count() >= 1, 'first check answer locked after reload'); }

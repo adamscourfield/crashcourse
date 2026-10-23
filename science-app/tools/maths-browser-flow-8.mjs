@@ -23,7 +23,8 @@ page.on('pageerror', e => errors.push(String(e)));
 const mstate = () => page.evaluate(k => JSON.parse(localStorage.getItem(k) || 'null'), KEY);
 const lessonOf = async () => { const s = await mstate(); return s.lessons[s.lessonId]; };
 const feedback = () => page.locator('#mFeedback').innerText();
-const cont = () => page.click('#mContinue');
+// Continue may be hidden (unanswered question) or already auto-advanced; both are fine.
+const cont = async () => { const b = page.locator('#mContinue'); if (await b.isVisible()) await b.click({ timeout: 2000 }).catch(() => {}); };
 const shot = name => page.screenshot({ path: `${OUT}/${name}.png` });
 const noOverflow = () => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1);
 const wait = ms => page.waitForTimeout(ms);
@@ -47,8 +48,8 @@ await page.goto(URL); await page.evaluate(() => localStorage.clear()); await pag
 const sciBefore = await page.evaluate(() => localStorage.getItem('crash-course-v2'));
 await page.selectOption('#subject', 'maths'); await page.waitForSelector('#mH1');
 await page.click('#mapButton');
-ok(/Algebra\s*19 lessons available/.test(await page.locator('dialog').innerText()), 'Foundation course map: Algebra has 19 lessons');
 await page.click('[data-mtopic="maths.algebra"]'); await page.click('#closeModal');
+ok((await page.locator('#sideProgress').innerText()).endsWith('/ 19'), 'Foundation: Algebra has 19 lessons');
 await page.click('#lessonNav');
 const listF = (await page.locator('dialog .lesson-row').allInnerTexts()).join(' | ');
 ok(listF.includes('Surds in algebra and further sequences') && !listF.includes('Exponential graphs'), 'Foundation list: sequences lesson shown, Higher-only graphs lesson hidden');
@@ -59,7 +60,7 @@ await readCards('maths.algebra.surds-sequences'); await page.click('[data-mstage
 ok((await page.locator('.mrung').count()) === 1, 'Foundation: one sequence skill (surd skill hidden)');
 let s, it, guard = 0, answered = 0;
 while (guard++ < 60) {
-  s = await mstate(); const L = s.lessons[s.lessonId];
+  s = await mstate(); const L = s.lessons[s.lessonId]; if (L.stage === 3) break;
   if (L.practice.answer) { await cont(); continue; }
   if (!L.practice.item) break;
   it = L.practice.item;
@@ -79,8 +80,8 @@ await page.click('#closeModal');
 
 await page.selectOption('#tier', 'Higher'); await wait(200);
 await page.click('#mapButton');
-ok(/Algebra\s*22 lessons available/.test(await page.locator('dialog').innerText()), 'Higher course map: Algebra has 22 lessons');
 await page.click('[data-mtopic="maths.algebra"]'); await page.click('#closeModal');
+ok((await page.locator('#sideProgress').innerText()).endsWith('/ 22'), 'Higher: Algebra has 22 lessons');
 for (const id of ['maths.algebra.surds-sequences', 'maths.algebra.further-graphs']) {
   await goLesson(id, 0);
   const n = await page.locator('[data-mcard]').count();

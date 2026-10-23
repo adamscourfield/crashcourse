@@ -20,6 +20,8 @@ const POW = { 2: 'squared', 3: 'cubed' };
 export function mathHTML(markup) {
   let s = esc(markup);
   s = s.replace(/\^\{([^{}]+)\}/g, (_, k) => `<sup aria-hidden="true">${k}</sup><span class="sr"> to the power ${k.replace('/', ' over ')}</span>`);
+  // column vectors {vec a;b}
+  s = s.replace(/\{vec ([^;{}]+);([^{}]+)\}/g, (_, a, b) => `<span class="mvec" aria-hidden="true"><span>${a.trim()}</span><span>${b.trim()}</span></span><span class="sr"> column vector ${a.trim()}, ${b.trim()}</span>`);
   s = s.replace(/\{([^{}]+\/[^{}]+)\}/g, (_, inner) => frac(inner));
   // subscripts after fractions, so {3/x_n} still reads as one fraction
   s = s.replace(/_(?:\{([^{}]+)\}|([A-Za-z0-9]))/g, (_, a, b) => `<sub aria-hidden="true">${a ?? b}</sub><span class="sr"> sub ${a ?? b}</span>`);
@@ -29,6 +31,6 @@ export function mathHTML(markup) {
 
 /** Plain-text version for titles, aria-labels and results. */
 export function mathText(markup) {
-  return String(markup).replace(/\{(\d+)\s+(\d+)\/(\d+)\}/g, '$1 $2/$3').replace(/\{([^{}]+)\/([^{}]+)\}/g, '$1/$2').replace(/_\{([^{}]+)\}/g, '_$1').replace(/\^2\b/g, '²').replace(/\^3\b/g, '³');
+  return String(markup).replace(/\{vec ([^;{}]+);([^{}]+)\}/g, '($1, $2)').replace(/\{(\d+)\s+(\d+)\/(\d+)\}/g, '$1 $2/$3').replace(/\{([^{}]+)\/([^{}]+)\}/g, '$1/$2').replace(/_\{([^{}]+)\}/g, '_$1').replace(/\^2\b/g, '²').replace(/\^3\b/g, '³');
 }
 export { esc };

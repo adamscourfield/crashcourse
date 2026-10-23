@@ -1,3 +1,31 @@
+## Maths: Edexcel 1MA1 Geometry and measures — batch 02 (Geometry 6–10); on GitHub `main`, not published
+
+**Batch 02 lessons:**
+- Pythagoras (G20, G6; calculator);
+- trigonometry and exact values (G20, G21; calculator);
+- transformations and column vectors (G7, G8, G24; Higher: negative scale factors, combinations, invariant points);
+- constructions and loci (G2, G1);
+- bearings, scale drawings and elevation (G15, G20; calculator).
+
+**Totals:** Geometry has 10 lessons; the engine has 136 skills. New engine features: stacked column vectors (`{vec a;b}`), transformation images plotted on the object's own grid, and explained wrong images (`ptTraps`).
+
+**QA:**
+- 619 automated tests pass (after merging upstream automatic question navigation, the course-map simplification and the Maths r9 cache) (`tests/maths-geometry2.test.js`: 7 tests; every "describe" option is applied to the drawn vertices).
+- All twelve Maths walk-throughs pass: 87, 68, 62, 94, 69, 64, 78, 53, 69, 46, 77 and 72 checks, 839 in total.
+- QA found and fixed two generator defects where a distractor was also a correct description: a reflection equal to a rotation for symmetric triangles, and "Rotation 360°".
+- Updated for upstream changes to the Maths UI:
+  - Answering now auto-advances: Continue is hidden until a question is answered, and correct answers move on by themselves. The walk-throughs now tolerate this, and walk-through 1 checks that Continue stays hidden during the independent check.
+  - The course map no longer shows lesson counts or "Planned" labels. Eight walk-throughs now read counts from the sidebar progress and check that unbuilt topics are not listed.
+- Brief: `curriculum/briefs/maths-geometry-batch-02.md`.
+
+**Cache:** Geometry 6–10 modules use the current `20261023-maths-r9` versions. **Publishing them needs a global version bump.**
+
+**Not done:**
+- Site publication of Geometry 6–10;
+- specialist review.
+
+**Next:** Geometry batch 3 — congruence and similarity, circle theorems, solids, plans and elevations, sine and cosine rules, vectors.
+
 ## Student mastery dashboard — published and GitHub synced
 
 23October2026. New My progress badge and shared Science/Maths dashboard show completed/remaining/in-progress lessons; four milestones; practice and latest-check accuracy; deduplicated gaps and scheduled recall; expandable topic/lesson progress with next-step/revision/review actions. Uses existing saved data without migration or new storage. Course/tier filters respected; no-data accuracy is unknown rather than0%.612 automated tests and focused browser/reload/mobile journeys passed. Details/metric limits: curriculum/mastery-dashboard.md; science-app/mastery-browser-evidence.json. No new curriculum or specialist certification. Published23October2026 at06:20:23UTC to the existing owner-private Site, audience unchanged: https://gcse-science-atom-lab.newbuddy32.chatgpt.site/. Sites source5b1be07709b95e4d31c71d1d0ae505f5c09acd86; deployment appgdep_6adafc9bfcb48191ba18a597716d8731; version appgprj_6ad1be5897a88191909a03ad57857103~appgver_177e17ff1510819185ec525be284f01e. Archive science-app-mastery01.tar.gz. Live dashboard confirms existing live-origin state:0/310completed,43in progress, practice1/2, no check attempts shown as a dash,1gap and2recall concepts in scoped topic links; no console errors. Local QA counts differ because preview and live have separate browser storage. Proof crash-course-mastery-live.png. Canonical main commit records this release.

@@ -7,7 +7,7 @@ import { mathHTML, mathText, esc } from './render.js?v=20261023-maths-r9';
 import { mark, answerMarkup, givenMarkup, PARTIAL_MESSAGES, answerValue, parseStandard, parsePower, parseInterval } from './answers.js?v=20261023-maths-r9';
 import { algebraMatches, algebraPreview } from './algebra.js?v=20261023-maths-r9';
 import { parseSolutions, solutionsMatch, inequalityMatches } from './sets.js?v=20261023-maths-r9';
-import { graphSVG, graphInputHTML, bindGraphInput, lineFeedback, pointsFeedback } from './graph.js?v=20261023-maths-r9';
+import { graphSVG, graphInputHTML, bindGraphInput, lineFeedback, pointsFeedback, parsePoints } from './graph.js?v=20261023-maths-r9';
 import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261023-maths-r9';
 import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261023-maths-r9';
 import { generate, skillById } from './skills.js?v=20261023-maths-r9';
@@ -24,6 +24,8 @@ import { figSVG, visualGeo } from './geomfig.js?v=20261023-maths-r9';
 import { ratioTopic, orderedRatio } from './lessons-ratio.js?v=20261023-maths-r9';
 import { geometryTopic, orderedGeometry } from './lessons-geometry.js?v=20261023-maths-r9';
 import { MODELS11 } from './models-geometry.js?v=20261023-maths-r9';
+import { orderedGeometry2 } from './lessons-geometry2.js?v=20261023-maths-r9';
+import { MODELS12 } from './models-geometry2.js?v=20261023-maths-r9';
 import { visual, mountModel } from './models-number.js?v=20261023-maths-r9';
 import { visual2, MODELS2 } from './models-number2.js?v=20261023-maths-r9';
 import { visual3, MODELS3 } from './models-number3.js?v=20261023-maths-r9';
@@ -31,7 +33,7 @@ import { newSeed, rng, shuffled } from './rng.js?v=20261023-maths-r9';
 import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261023-maths-r9';
 
 const STAGES = ['Discover', 'Investigate', 'Practise', 'Check'];
-const orderedLessons = [...numberLessons, ...orderedAlgebra, ...orderedRatio, ...orderedGeometry];
+const orderedLessons = [...numberLessons, ...orderedAlgebra, ...orderedRatio, ...orderedGeometry, ...orderedGeometry2];
 const mathsTopics = [...numberTopics, algebraTopic, ratioTopic, geometryTopic];
 const EVENT_TEXT = { up: 'Level up', down: 'Stepping back a level to rebuild', practised: 'Skill secure' };
 
@@ -127,7 +129,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const generation = modelGeneration, panel = $('#mPanel'), body = $('#mBody');
     $('#mTitle').textContent = '';
     $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
-    (MODELS11[l.model] || MODELS10[l.model] || MODELS9[l.model] || MODELS8[l.model] || MODELS7[l.model] || MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
+    (MODELS12[l.model] || MODELS11[l.model] || MODELS10[l.model] || MODELS9[l.model] || MODELS8[l.model] || MODELS7[l.model] || MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
       panel, body, w: p.widget, tier: s.tier,
       isActive: () => generation === modelGeneration && panel.isConnected && body.isConnected && $('#mPanel') === panel && !!$('#mTitle'),
       save, feedback, setTitle: t => ($('#mTitle').textContent = t),
@@ -234,7 +236,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       }
       return '';
     }
-    if (item.answer.kind === 'points') return pointsFeedback(result);
+    if (item.answer.kind === 'points') { const got = parsePoints(raw); const t = got && item.ptTraps?.find(t => t.pts.length === got.length && t.pts.every(p => got.some(g => g[0] === p[0] && g[1] === p[1]))); return t ? t.why : pointsFeedback(result); }
     if (item.answer.kind === 'line') return result.code === 'line' ? lineFeedback(item.answer, result) : '';
     if (item.answer.kind === 'solutions') {
       const t = item.soTraps?.find(t => solutionsMatch(t.sols, raw, item.answer));

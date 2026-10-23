@@ -6,6 +6,7 @@
 .mx-w{font-size:1em}
 .fr{display:inline-flex;flex-direction:column;align-items:center;font-size:.82em;line-height:1.15;vertical-align:middle}
 .fr-n{padding:0 .22em;border-bottom:.09em solid currentColor}
+.mvec{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;line-height:1.15;font-size:.9em;padding:0 .45em;border-left:.09em solid currentColor;border-right:.09em solid currentColor;border-radius:.6em;margin:0 .1em}
 .fr-d{padding:0 .22em}
 sup{font-size:.7em;line-height:0}
 #mTitle .fr,.mexpr .fr{font-size:.72em}

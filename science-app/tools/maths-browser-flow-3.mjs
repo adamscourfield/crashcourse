@@ -23,7 +23,8 @@ page.on('pageerror', e => errors.push(String(e)));
 const mstate = () => page.evaluate(k => JSON.parse(localStorage.getItem(k) || 'null'), KEY);
 const lessonOf = async () => { const s = await mstate(); return s.lessons[s.lessonId]; };
 const feedback = () => page.locator('#mFeedback').innerText();
-const cont = () => page.click('#mContinue');
+// Continue may be hidden (unanswered question) or already auto-advanced; both are fine.
+const cont = async () => { const b = page.locator('#mContinue'); if (await b.isVisible()) await b.click({ timeout: 2000 }).catch(() => {}); };
 const shot = name => page.screenshot({ path: `${OUT}/${name}.png` });
 const noOverflow = () => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1);
 
