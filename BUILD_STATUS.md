@@ -36,10 +36,11 @@ The sixth and last Maths topic (`maths.statistics`), now on the course map. With
 **Not done:**
 - Site publication (Statistics; Probability is published);
 - specialist review;
-- S2 practice for pictograms, vertical line charts and time series (taught in cards only);
 - marking of drawn charts and freehand lines of best fit.
 
-**Next:** teacher review across all six Maths topics; fill the S2 practice gap; publish Statistics.
+**Follow-up (on GitHub `main`, not yet published):** the S2 practice gap is closed: a seventh skill (pictograms with part symbols, vertical line charts, time-series graphs; 161 skills in all) and a fourth card in the charts lesson. 651 tests pass (653 after merging the Statistics publication); flows 1, 14 and 15 re-run and pass (flow 15 now 60 checks, including an S2 trap).
+
+**Next:** close the remaining recorded Maths gaps (G17 surface area of spheres, cones and composite solids; G1 three-letter angle notation; A13 trig-graph transformations; N13 other compound units); teacher review; publish Statistics.
 
 ## Geography coastal teaching batch02 and Maths Probability — published
 

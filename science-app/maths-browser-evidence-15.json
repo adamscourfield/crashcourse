@@ -1,12 +1,12 @@
 {
   "date": "2026-10-23",
-  "scope": "Maths Statistics batch 01 (S1–S6): four lessons, four investigations, tier split",
+  "scope": "Maths Statistics batch 01 (S1–S6) with the S2 follow-up: four lessons, four investigations, tier split, pictogram/line-chart practice",
   "environment": "Headless Chromium (npm @sparticuz/chromium 131) via Playwright; 1280x900 and 390x844; reduced motion; Google Fonts requests aborted (sandbox network blocks them)",
   "harness": "science-app/tools/maths-browser-flow-15.mjs",
-  "automatedSuite": "650 automated tests (tests/maths-statistics.test.js: 7)",
+  "automatedSuite": "651 automated tests (tests/maths-statistics.test.js: 8)",
   "summary": {
-    "checks": 55,
-    "passed": 55,
+    "checks": 60,
+    "passed": 60,
     "failed": 0
   },
   "checks": [
@@ -20,6 +20,7 @@
     "charts-sampling card 1 has a visual",
     "charts-sampling card 2 has a visual",
     "charts-sampling card 3 has a visual",
+    "charts-sampling card 4 has a visual",
     "scatter card 1 has a visual",
     "scatter card 2 has a visual",
     "scatter card 3 has a visual",
@@ -39,6 +40,10 @@
     "scatter-fit investigation complete",
     "practice item shows its chart",
     "charts practice drew a chart",
+    "S2 chart drawn (pictogram)",
+    "S2 trap explained: Divide by the key: each symbol is 10 peo",
+    "S2 item answered from its chart",
+    "charts lesson reaches pictogram / line chart / time-series practice",
     "scatter lesson: one skill, no mixed round",
     "scatter lesson secured after 8 correct answers",
     "scatter lesson completes at 10/10",
@@ -71,7 +76,8 @@
     "s02-extreme",
     "s03-fit",
     "s04-chart-practice",
-    "s05-cf"
+    "s05-cf",
+    "s06-charts2"
   ],
   "notCovered": [
     "Physical devices and real touch screens",

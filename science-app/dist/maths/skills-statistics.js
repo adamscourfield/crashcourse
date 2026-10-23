@@ -97,7 +97,7 @@ const freqAverages = {
 const CATS = [['Bus', 'Car', 'Walk', 'Bike', 'Train'], ['Red', 'Blue', 'Green', 'Yellow', 'Purple'], ['Maths', 'Art', 'PE', 'Music', 'History']];
 const charts = {
   id: 'maths.statistics.charts',
-  name: 'Bar charts, pictograms and pie charts',
+  name: 'Bar charts and pie charts',
   levels: [{ label: 'Read a bar chart' }, { label: 'Pie chart angles' }, { label: 'From a pie chart back to frequencies' }],
   gen(level, seed) {
     const r = rng(this.id + level + seed), cats = pick(r, CATS).slice(0, int(r, 3, 5));
@@ -116,6 +116,64 @@ const charts = {
     if (level === 2) { const k = int(r, 0, cats.length - 1); return make(this.id, level, seed, { prompt: `${total} people chose a favourite: ${cats.map((c, i) => `${c} ${vals[i]}`).join(', ')}. Work out the angle for ${cats[k]} in a pie chart.`, answer: intAns(angles[k]), steps: [`Each person is 360 ÷ ${total} = ${dt(per)}°`, `${vals[k]} × ${dt(per)} = ${angles[k]}°`], traps: [tv(vals[k], 'Convert the frequency to degrees: multiply by 360 ÷ total.'), tv(Math.round(vals[k] * 100 / total), 'That is a percentage. A pie chart needs degrees out of 360.')].filter(t => t.v.n !== angles[k]) }); }
     const k = int(r, 0, cats.length - 1);
     return make(this.id, level, seed, { prompt: `The pie chart shows the choices of ${total} people. The ${cats[k]} sector has an angle of ${angles[k]}°. How many people chose ${cats[k]}?`, fig: pieFig(cats, angles, `Pie chart; ${cats[k]} sector ${angles[k]}°`), answer: intAns(vals[k]), steps: [`${angles[k]} ÷ 360 = the fraction who chose ${cats[k]}`, `{${angles[k]}/360} × ${total} = ${vals[k]}`], traps: [tv(angles[k], 'Convert the angle back to people: {angle/360} × total.'), tv(Math.round(angles[k] * total / 100), 'A full pie chart is 360°, not 100.')].filter(t => t.v.n !== vals[k]) });
+  },
+};
+
+/* ═════════ S2 pictograms, vertical line charts, time series ═════════ */
+// A pictogram symbol is a disc drawn as sectors, so a part symbol (half or quarter) is visible as a
+// fraction of a disc. The key is drawn under the rows.
+function pictoFig(cats, counts, key, unit, alt) {
+  const R = 15, gap = 40, x0 = 150, rh = 44, sectors = [], labels = [];
+  counts.forEach((c, i) => {
+    const y = 30 + i * rh; labels.push({ at: [130, y + 5], t: cats[i], anchor: 'end' });
+    const whole = Math.floor(c + 1e-9), part = c - whole;
+    for (let k = 0; k < whole; k++) { const C = [x0 + k * gap, y]; sectors.push({ c: C, r: R, a1: 90, a2: 270, fill: '#a8d5b5aa' }, { c: C, r: R, a1: 270, a2: 450, fill: '#a8d5b5aa' }); }
+    if (part > 1e-9) sectors.push({ c: [x0 + whole * gap, y], r: R, a1: 90, a2: 90 + 360 * part, fill: '#a8d5b5aa' });
+  });
+  const ky = 30 + counts.length * rh + 6, kc = [x0, ky];
+  sectors.push({ c: kc, r: R, a1: 90, a2: 270, fill: '#ed8b78aa' }, { c: kc, r: R, a1: 270, a2: 450, fill: '#ed8b78aa' });
+  labels.push({ at: [130, ky + 5], t: 'Key:', anchor: 'end' }, { at: [x0 + 24, ky + 5], t: `= ${key} ${unit}`, anchor: 'start' });
+  return { h: ky + 30, sectors, labels, alt };
+}
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const charts2 = {
+  id: 'maths.statistics.charts2',
+  name: 'Pictograms, vertical line charts and time series',
+  levels: [{ label: 'Read a pictogram with a key' }, { label: 'Vertical line charts for discrete data' }, { label: 'Time-series line graphs' }],
+  gen(level, seed) {
+    const r = rng(this.id + level + seed);
+    if (level === 1) {
+      const key = pick(r, [2, 4, 6, 8, 10, 12]), cats = pick(r, CATS).slice(0, int(r, 3, 5)), quarter = key % 4 === 0;
+      const counts = cats.map(() => int(r, 1, 6) + (quarter ? pick(r, [0, 0, 0.25, 0.5, 0.75]) : pick(r, [0, 0, 0.5])));
+      const vals = counts.map(c => c * key), fig = pictoFig(cats, counts, key, 'people', `Pictogram, key one symbol = ${key} people`);
+      const ask = pick(r, ['one', 'diff', 'symbols']), k = int(r, 0, cats.length - 1);
+      if (ask === 'one') return make(this.id, level, seed, { prompt: `The pictogram shows how many people chose each option. How many people chose ${cats[k]}?`, fig, answer: intAns(vals[k]), steps: [`${cats[k]} has ${dt(counts[k])} symbols`, `${dt(counts[k])} × ${key} = ${vals[k]}`], traps: [tv(counts[k], `That is the number of symbols. Each symbol stands for ${key} people.`), tv(Math.ceil(counts[k]) * key, 'A part symbol is only part of the key: a half symbol is half of it.')].filter(t => t.v.n !== vals[k] || t.v.d !== 1) });
+      if (ask === 'diff') { const j = (k + 1 + int(r, 0, cats.length - 2)) % cats.length; if (vals[k] === vals[j]) return this.gen(level, seed + 'd'); const [a, b] = vals[k] > vals[j] ? [k, j] : [j, k]; return make(this.id, level, seed, { prompt: `The pictogram shows how many people chose each option. How many more people chose ${cats[a]} than ${cats[b]}?`, fig, answer: intAns(vals[a] - vals[b]), steps: [`${cats[a]}: ${dt(counts[a])} × ${key} = ${vals[a]}`, `${cats[b]}: ${dt(counts[b])} × ${key} = ${vals[b]}`, `${vals[a]} − ${vals[b]} = ${vals[a] - vals[b]}`], traps: [tv(counts[a] - counts[b], `That is the difference in symbols. Multiply by the key (${key}).`), tv(vals[a] + vals[b], 'Subtract to find how many more.')] }); }
+      const n = key * pick(r, quarter ? [1.25, 1.5, 2.5, 3.75, 4.5, 5.25] : [1.5, 2.5, 3.5, 4.5, 5.5]);
+      return make(this.id, level, seed, { prompt: `The pictogram uses the key shown. ${n} people chose a new option, Other. How many symbols should be drawn for Other?`, fig, answer: valA(F(Math.round(n * 4), key * 4)), steps: [`${n} ÷ ${key} = ${dt(n / key)} symbols`], traps: [tv(n, `Divide by the key: each symbol is ${key} people.`), tv(n * key, 'Divide by the key, do not multiply.')] });
+    }
+    if (level === 2) {
+      const what = pick(r, [['pets', 'Number of pets', 'households', 'how many pets each household has'], ['goals', 'Goals scored', 'matches', 'how many goals were scored in each match'], ['siblings', 'Number of siblings', 'students', 'how many siblings each student has']]);
+      const xs = [0, 1, 2, 3, 4, 5], fs = xs.map(() => int(r, 1, 12)), m = fs.indexOf(Math.max(...fs));
+      if (fs.filter(f => f === fs[m]).length > 1) return this.gen(level, seed + 'm');
+      // Positions are value + 1 so the frequency axis sits clear of the 0 line; the value is the label under it.
+      const graph = { xr: [0, 7], yr: [0, 14], xstep: 1, ystep: 2, xlabel: what[1], ylabel: 'Frequency', xcats: xs.map(x => [x + 1, String(x)]), polys: xs.map((x, i) => ({ pts: [[x + 1, 0], [x + 1, fs[i]]] })), points: xs.map((x, i) => [x + 1, fs[i]]), alt: `Vertical line chart: ${xs.map((x, i) => `${x}: ${fs[i]}`).join(', ')}` };
+      const ask = pick(r, ['mode', 'count', 'total']), N = sum(fs), T = sum(xs.map((x, i) => x * fs[i]));
+      if (ask === 'mode') return make(this.id, level, seed, { prompt: `The vertical line chart shows ${what[3]}. What is the mode?`, graph, answer: intAns(xs[m]), steps: [`The tallest line is at ${xs[m]} (frequency ${fs[m]})`], traps: [tv(fs[m], `That is the frequency of the mode. The mode is the value: ${what[0]}.`)].filter(t => t.v.n !== xs[m]) });
+      if (ask === 'count') return make(this.id, level, seed, { prompt: `The vertical line chart shows ${what[3]}. How many ${what[2]} are there?`, graph, answer: intAns(N), steps: [`Add the frequencies: ${fs.join(' + ')} = ${N}`], traps: [tv(T, `That is the total number of ${what[0]}. Each line counts ${what[2]}: add the frequencies.`), tv(6, 'That is the number of lines. Add their heights.')].filter(t => t.v.n !== N) });
+      return make(this.id, level, seed, { prompt: `The vertical line chart shows ${what[3]}. Work out the total number of ${what[0]}.`, graph, answer: intAns(T), steps: [xs.map((x, i) => `${x} × ${fs[i]}`).join(' + '), `= ${T}`], traps: [tv(N, `That counts the ${what[2]}. Multiply each value by its frequency.`), tv(15, 'Multiply each value by its frequency, then add.')].filter(t => t.v.n !== T) });
+    }
+    const n = int(r, 6, 8), start = int(r, 0, 12 - n), months = MONTHS.slice(start, start + n), what = pick(r, [['ice creams sold', 'Ice creams sold'], ['visitors (hundreds)', 'Visitors (hundreds)'], ['rainfall (mm)', 'Rainfall (mm)']]);
+    const ys = []; let v = int(r, 2, 6) * 5; for (let i = 0; i < n; i++) { ys.push(v); v = Math.max(5, Math.min(60, v + 5 * pick(r, [-3, -2, -1, 1, 2, 3]))); }
+    const graph = { xr: [0, n + 1], yr: [0, 65], xstep: 1, ystep: 5, ylabel: what[1], xcats: months.map((m, i) => [i + 1, m]), polys: [{ pts: ys.map((y, i) => [i + 1, y]) }], points: ys.map((y, i) => [i + 1, y]), alt: `Time-series graph: ${months.map((m, i) => `${m} ${ys[i]}`).join(', ')}` };
+    const ask = pick(r, ['change', 'rise']);
+    if (ask === 'change') { const [i, j] = shuffled(r, [...months.keys()]).slice(0, 2).sort((a, b) => a - b); if (ys[i] === ys[j]) return this.gen(level, seed + 'c'); const up = ys[j] > ys[i]; return make(this.id, level, seed, { prompt: `The graph shows ${what[0]} each month. By how much did it ${up ? 'increase' : 'decrease'} from ${months[i]} to ${months[j]}?`, graph, answer: intAns(Math.abs(ys[j] - ys[i])), steps: [`${months[i]}: ${ys[i]}; ${months[j]}: ${ys[j]}`, `${Math.max(ys[i], ys[j])} − ${Math.min(ys[i], ys[j])} = ${Math.abs(ys[j] - ys[i])}`], traps: [tv(ys[j], `That is the ${months[j]} value. Find the difference from ${months[i]}.`), tv(ys[i] + ys[j], 'Subtract the two readings.')].filter(t => t.v.n !== Math.abs(ys[j] - ys[i])) }); }
+    const rises = ys.slice(1).map((y, i) => y - ys[i]), best = Math.max(...rises);
+    if (best <= 0 || rises.filter(x => x === best).length > 1) return this.gen(level, seed + 'r');
+    const b = rises.indexOf(best), label = i => `${months[i]} to ${months[i + 1]}`;
+    const others = shuffled(r, rises.map((_, i) => i).filter(i => i !== b)).slice(0, 3);
+    const ch = choiceItem(r, label(b), others.map(label), o => { const i = months.indexOf(o.split(' ')[0]); return `${o}: ${ys[i]} → ${ys[i + 1]}, a change of ${rises[i] >= 0 ? '+' : ''}${rises[i]}, less than ${label(b)} (+${best}).`; });
+    return make(this.id, level, seed, { prompt: `The graph shows ${what[0]} each month. Between which two months was the biggest increase?`, graph, ...ch, steps: [`The steepest upward line is ${label(b)}: ${ys[b]} → ${ys[b + 1]}, +${best}`] });
   },
 };
 
@@ -220,5 +278,5 @@ const cumulative = {
   },
 };
 
-export { tableFig, pieFig, bars };
-export const statisticsSkills = [averages, freqAverages, charts, sampling, scatter, cumulative];
+export { tableFig, pieFig, bars, pictoFig };
+export const statisticsSkills = [averages, freqAverages, charts, charts2, sampling, scatter, cumulative];
