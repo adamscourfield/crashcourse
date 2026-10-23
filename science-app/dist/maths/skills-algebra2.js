@@ -2,9 +2,9 @@
 // (A22; Higher: quadratic inequalities), quadratic equations (A18; Higher: rearrangement, completing
 // the square, the formula; A11 turning point by completing the square) and simultaneous equations
 // (A19, A21; Higher: linear/quadratic). Same contract as the other skill modules.
-import { rng, int, pick, shuffled } from './rng.js?v=20261022-maths-r8';
-import { F, add, sub, mul, div, eq, gcd, num, fracMarkup } from './frac.js?v=20261022-maths-r8';
-import { polyM, makeA, fixMinus, algAns, algTrap, valAns, choiceItem } from './skills-algebra.js?v=20261022-maths-r8';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r9';
+import { F, add, sub, mul, div, eq, gcd, num, fracMarkup } from './frac.js?v=20261023-maths-r9';
+import { polyM, makeA, fixMinus, algAns, algTrap, valAns, choiceItem } from './skills-algebra.js?v=20261023-maths-r9';
 
 const fr = v => { const f = typeof v === 'number' ? F(v) : v; return { n: f.n, d: f.d }; };
 const fv = f => (f.d === 1 ? num(f.n) : fracMarkup(f));

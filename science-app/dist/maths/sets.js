@@ -7,7 +7,7 @@
 //   {kind:'inequality', letter:'x', set:[{lo, loIn, hi, hiIn}]}  (lo/hi null = unbounded)
 //       Solution set of an inequality: x > 3, −2 < x ≤ 3, x < −2 or x > 3.
 //   {kind:'list', values:[−1, 0, 1]}  a set of integers, any order.
-import { F, eq, normalise, parseNumber, decText, fracMarkup, num } from './frac.js?v=20261022-maths-r8';
+import { F, eq, normalise, parseNumber, decText, fracMarkup, num } from './frac.js?v=20261023-maths-r9';
 
 const val = f => F(f.n, f.d);
 const fmt = (f, dp) => (dp != null ? decText(val(f), dp) ?? fracMarkup(val(f)) : val(f).d === 1 ? num(val(f).n) : fracMarkup(val(f)));

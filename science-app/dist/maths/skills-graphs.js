@@ -3,10 +3,10 @@
 // transformations (A13, Higher), graphical solutions (A17–A19), regions (A22, Higher), real-life
 // graphs (A14), gradients and areas under graphs (A15, Higher) and circles (A16, Higher).
 // Items may carry `graph` (a graph.js spec drawn above the answer box).
-import { rng, int, pick, shuffled } from './rng.js?v=20261022-maths-r8';
-import { F, num, fracMarkup, gcd } from './frac.js?v=20261022-maths-r8';
-import { fnOf, fmtLine } from './graph.js?v=20261022-maths-r8';
-import { polyM, makeA, fixMinus, algAns, algTrap, valAns, choiceItem } from './skills-algebra.js?v=20261022-maths-r8';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r9';
+import { F, num, fracMarkup, gcd } from './frac.js?v=20261023-maths-r9';
+import { fnOf, fmtLine } from './graph.js?v=20261023-maths-r9';
+import { polyM, makeA, fixMinus, algAns, algTrap, valAns, choiceItem } from './skills-algebra.js?v=20261023-maths-r9';
 
 const fr = v => { const f = typeof v === 'number' ? (Number.isInteger(v) ? F(v) : F(Math.round(v * 1000), 1000)) : v; return { n: f.n, d: f.d }; };
 const nz = (r, lo, hi) => { let v; do v = int(r, lo, hi); while (v === 0); return v; };

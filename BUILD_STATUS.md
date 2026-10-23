@@ -865,3 +865,65 @@ Published21October2026 at11:59:11UTC. Source2c910b9e3775d57dbf8edb687b3a77b9d317
 
 
 Published21October2026 at12:36:36UTC. Source0828b0e4099c7b4f03f1153f22c48e112a4217ff; deployment appgdep_6ad8b1c549f48191858e85cf12588f68; version appgprj_6ad1be5897a88191909a03ad57857103~appgver_90cfe27eb7548191baa90b8d3bd6ff02. Owner-private audience preserved. Live20-lesson list, Higher scope and kidney inline autoplay/Loop verified; console errors empty. Archive science-app-renal.tar.gz; proof crash-course-renal.png.
+
+## Latest incoming Maths additions — original author evidence
+
+## Maths: Edexcel 1MA1 Geometry and measures — batch 01 (5 lessons); on GitHub `main`, not published
+
+A new fourth Maths topic (`maths.geometry`), now available on the course map. Probability and Statistics remain planned.
+
+**Batch 01 lessons (both tiers):**
+- angle facts and parallel lines (G1, G3, G6);
+- polygons and quadrilaterals (G3, G4);
+- area and perimeter (G16, G17, G14);
+- circles, arcs and sectors (G9, G17, G18; calculator);
+- volume and surface area (G16, G17; calculator).
+
+There are 10 new skills (126 in all) and five investigations. Every generated question carries its own diagram, drawn by the new `geomfig.js` from the same numbers as the prompt. Coverage: G3, G4, G16 and G18 covered; G1, G6, G9, G14 and G17 partial; the rest are mapped to batches 2–3 in `curriculum/maths-geometry-requirements.csv`. That file's statement wording is paraphrased and was not re-fetched from Pearson in this batch; re-check it against the PDF at review.
+
+**QA:**
+- 527 automated tests pass (`tests/maths-geometry.test.js`: 9 tests; answers re-solved from printed labels and dimensions, and angles and areas measured from the drawn figures).
+- All eleven Maths browser walk-throughs pass: 86, 68, 62, 94, 69, 64, 78, 53, 70, 46 and 77 checks, 767 in total. Flow 1 varies by one check depending on which random items appear. Flows 4 and 9 were updated because Geometry is no longer "Planned".
+- QA found and fixed a quadrilateral skill whose distractors were also correct answers, a wrong kite statement, duplicate "x" labels and a wrong cut-and-move picture; see the brief.
+- Brief: `curriculum/briefs/maths-geometry-batch-01.md`.
+
+**Cache:** maths modules are at `20261022-maths-r7`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication;
+- specialist review.
+
+**Next:** Geometry batch 2 — Pythagoras, trigonometry and exact values, transformations, constructions and loci, bearings and scale drawings.
+
+## Maths: Edexcel 1MA1 Ratio, proportion and rates of change — batches 01–02 (8 lessons); on GitHub `main`, not published
+
+A new third Maths topic (`maths.ratio`), now available on the course map. Every R1–R16 statement is taught and practised; see `curriculum/maths-ratio-requirements.csv`.
+
+**Batch 01:**
+- ratio notation and fractions (R3, R4, R6, R8);
+- sharing and combining ratios (R5);
+- proportion, best buys and conversions (R7, R10, R11, R1);
+- percentages, change, original value and simple interest (R9);
+- compound interest, growth and decay (R16, calculator; Higher: iterative processes).
+
+**Batch 02:**
+- direct and inverse proportion equations and graphs (R10, R13, R14; Higher: powers, roots and formulae);
+- scale drawings, maps and similar shapes (R2, R12; Higher: area and volume factors);
+- compound units and rates of change (R1, R11, R14; Higher: R15 chords and tangents).
+
+There are 17 new skills (116 in all) and eight investigations. Money answers must show 2 d.p.; unsimplified ratios are marked as partly right.
+
+**QA:**
+- 518 automated tests pass (`tests/maths-ratio.test.js`: 9 tests, including independent re-solves of every printed prompt).
+- A new test renders every Maths worked-example visual through the studio's dispatch chain and fails on name clashes (the defect class behind the `machine` and `bars` console errors found in browser QA).
+- All ten Maths browser walk-throughs pass: 87, 68, 62, 94, 69, 64, 78, 53, 70 and 46 checks, 691 in total.
+- Briefs: `curriculum/briefs/maths-ratio-batch-01.md` and `-02.md`.
+
+**Cache:** maths modules are at `20261022-maths-r7`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication;
+- specialist review.
+
+**Next:** Geometry and measures (G1–G25).
+

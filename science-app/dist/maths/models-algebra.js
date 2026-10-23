@@ -1,9 +1,9 @@
 // Visual models and investigations for Algebra batch 1.
 // visual4() draws worked-example diagrams; MODELS4 holds the six investigations.
-import { mathHTML, esc } from './render.js?v=20261022-maths-r8';
-import { F, add, sub, mul, div, eq, num, parseNumber, fracMarkup } from './frac.js?v=20261022-maths-r8';
-import { C, btn, progressDots } from './models-number.js?v=20261022-maths-r8';
-import { markAlgebra, equivalent, algebraHint } from './algebra.js?v=20261022-maths-r8';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r9';
+import { F, add, sub, mul, div, eq, num, parseNumber, fracMarkup } from './frac.js?v=20261023-maths-r9';
+import { C, btn, progressDots } from './models-number.js?v=20261023-maths-r9';
+import { markAlgebra, equivalent, algebraHint } from './algebra.js?v=20261023-maths-r9';
 
 const W = 600;
 const fm = f => (f.d === 1 ? num(f.n) : fracMarkup(f));
