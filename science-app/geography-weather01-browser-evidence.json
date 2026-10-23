@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-23",
+  "journeys": [
+    {
+      "id": "geography.a.weather.circulation",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.weather.heat-transfer",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.weather.past-climates",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.weather.natural-causes",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.weather.climate-evidence",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "sharedMenu": "GEOGRAPHY A · SHARED CORE",
+  "premature": "Answer this challenge first.",
+  "wrongChallenge": "Look again at the evidence and the process described.",
+  "practiceCorrection": "Try again. Warm moist air rises, cools and can condense; the pattern varies.",
+  "observationsRestored": "Views compared: 4 / 4",
+  "independentLockedAfterReload": true,
+  "failedCheck": "75% · Keep building",
+  "retake": "100% · Lesson complete",
+  "phone": [
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Global atmospheric circulation",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Moving heat around the planet",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Glacials and interglacials",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Natural causes of climate change",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Reading evidence of past climates",
+      "width": 390
+    }
+  ],
+  "pathways": [
+    {
+      "pair": [
+        "coasts",
+        "glaciers"
+      ],
+      "progress": "My progress\n34 / 34"
+    },
+    {
+      "pair": [
+        "coasts",
+        "rivers"
+      ],
+      "progress": "My progress\n31 / 31"
+    },
+    {
+      "pair": [
+        "rivers",
+        "glaciers"
+      ],
+      "progress": "My progress\n35 / 35"
+    }
+  ],
+  "reload": "35 / 35",
+  "consoleErrors": [],
+  "limitations": [
+    "No full assistive-device or specialist review",
+    "Shared reduced-motion code inspected; not separately emulated",
+    "Schematic cells/timelines/orbits/proxies are not measured records or constructed evidence"
+  ]
+}

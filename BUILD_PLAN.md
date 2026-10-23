@@ -1,3 +1,5 @@
+> Batch size: user requests five lessons at a time. Weather01 adds five shared lessons2.1a_b/2.2a_b;Geography45built across five topics. Nextfive2.3greenhouse_process/sources/effects and2.4UKpast/regionalcontrols. Preserve authentic/constructed/specialist evidence boundaries. ActualQA/publication in BUILD_STATUS.md.
+
 > Uplands03: Geography40built (5shared/10coasts/11rivers/14glaciers);1.13b water/energy/tourism/conservation and1.14Thirlmere–Helvellyn synthesis introduced. Alllandscape teaching groups now introduced, authentic/constructed/specialist evidence still open. NextWeather2.1circulation/heat transfer and2.2pastclimate/causes/evidence, precise briefs first. ActualQA/publication in BUILD_STATUS.md.
 
 > Uplands02: Geography35built (5shared/10coasts/11rivers/9glaciers). All1.12named glacial landforms and1.13afarming/forestry/settlement mechanisms introduced; genuineOS/GIS, constructed and specialist evidence remain open. Next five: water supply, energy, tourism, conservation1.13b;named landscape1.14a. Actual QA/publication in BUILD_STATUS.md.

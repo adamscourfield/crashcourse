@@ -81,3 +81,7 @@ Five lessons add remaining1.12a named forms,1.12b_c and1.13a. Geography35built (
 
 ## Uplands03 —23October2026
 Water/energy/tourism/conservation1.13b plus namedThirlmere–Helvellyn1.14a.40built (5shared/10coasts/11rivers/14glaciers),120practice/160checks. Roadmap105units40built/65provisional. Denominators26coasts+rivers/29coasts+glaciers/30rivers+glaciers/40exploratory. Landscape teaching grouped statements introduced across alloptions; authenticOS/GIS/UKweather, independent constructed and specialist/fieldwork evidence still open. New genuine2012photo credited; budgets invented. NextfiveWeathercirculation,heattransfer,pastclimate,naturalcauses,evidence2.1/2.2, brief exact statements first. Coverage geography-a-uplands03-coverage.csv and briefs/geography-a-uplands-03.md.
+
+
+## Weather01 —23October2026
+Five shared untiered lessons2.1a_b/2.2a_b;Geography45built (5landscape_shared/10coasts/11rivers/14glaciers/5weather),135practice/180checks. Roadmap108authoring units45built/63provisional after splitting2.1/2.2. Studentdenominators31coasts+rivers,34coasts+glaciers,35rivers+glaciers,45exploratory. Newweather topic shared atalloptions; oldrecords intact.23views11process/12static; no invented measured climate series. Exactcoverage geography-a-weather01-coverage.csv;briefs/geography-a-weather-01.md. Nextfive2.3greenhouseprocess/sources/effects and2.4UKpast/regionalcontrols; genuine climatechartskill1 and constructed/specialist evidence remain separate. Userrequests batchesoffive.

@@ -4,8 +4,6 @@ geography.a.landscapes.geology-map,Reading the UK’s geology,overview,1.1a,impl
 geography.a.landscapes.geology-relief,Why uplands and lowlands differ,overview,1.1b,implemented
 geography.a.landscapes.physical-landscapes,Physical processes shape landscapes,overview,1.2a,implemented
 geography.a.landscapes.people-landscapes,People change landscapes,overview,1.2b,implemented
-geography.a.weather.2-1,Global circulation and heat transfer,weather,2.1,provisional_planned_split_after_statement_brief
-geography.a.weather.2-2,Natural climate change and evidence,weather,2.2,provisional_planned_split_after_statement_brief
 geography.a.weather.2-3,Human climate change and impacts,weather,2.3,provisional_planned_split_after_statement_brief
 geography.a.weather.2-4,UK climate and controls,weather,2.4,provisional_planned_split_after_statement_brief
 geography.a.weather.2-5,Tropical cyclone formation and pattern,weather,2.5,provisional_planned_split_after_statement_brief
@@ -104,3 +102,8 @@ geography.a.glaciers.renewable-energy,Renewable energy in upland landscapes,glac
 geography.a.glaciers.tourism,"Recreation, tourism and path erosion",glaciers,1.13b: recreation and tourism;Integrated skill 16: diagram introduction,implemented
 geography.a.glaciers.conservation,Conserving an upland landscape,glaciers,1.13b: conservation;Integrated skill 16: diagram introduction,implemented
 geography.a.glaciers.thirlmere-helvellyn,Thirlmere and Helvellyn: a landscape study,glaciers,1.14a,implemented
+geography.a.weather.circulation,Global atmospheric circulation,weather,2.1a,implemented
+geography.a.weather.heat-transfer,Moving heat around the planet,weather,2.1b,implemented
+geography.a.weather.past-climates,Glacials and interglacials,weather,2.2a,implemented
+geography.a.weather.natural-causes,Natural causes of climate change,weather,2.2b: Milankovitch cycles; solar variation; volcanism,implemented
+geography.a.weather.climate-evidence,Reading evidence of past climates,weather,2.2b: ice cores; pollen; tree rings; historical sources,implemented
