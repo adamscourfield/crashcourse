@@ -1,9 +1,9 @@
 // Visual models for Number batch 3: listing, units, compound measures, exact answers, ratio fractions.
 // visual3() draws worked-example diagrams; MODELS3 holds the investigations.
-import { mathHTML, esc } from './render.js?v=20261023-maths-r13';
-import { F, mul, div, eq, num, parseNumber, decText, fracMarkup } from './frac.js?v=20261023-maths-r13';
-import { C, btn, progressDots } from './models-number.js?v=20261023-maths-r13';
-import { parseExact, canonical, squareFree } from './exact.js?v=20261023-maths-r13';
+import { mathHTML, esc } from './render.js?v=20261023-maths-r14';
+import { F, mul, div, eq, num, parseNumber, decText, fracMarkup } from './frac.js?v=20261023-maths-r14';
+import { C, btn, progressDots } from './models-number.js?v=20261023-maths-r14';
+import { parseExact, canonical, squareFree } from './exact.js?v=20261023-maths-r14';
 
 const W = 600;
 const vOf = raw => { const p = parseNumber(raw); return p ? p.value : null; };

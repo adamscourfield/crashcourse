@@ -1,9 +1,9 @@
 // Edexcel 1MA1 Probability (P1–P9). Probabilities are exact fractions; any equivalent fraction is
 // accepted (form 'value'), as in the exam. Venn diagrams, tree diagrams and tables are JSON-safe
 // figures drawn by geomfig.js from the same numbers as the question.
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r13';
-import { F, add, sub, mul } from './frac.js?v=20261023-maths-r13';
-import { makeA, choiceItem } from './skills-algebra.js?v=20261023-maths-r13';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r14';
+import { F, add, sub, mul } from './frac.js?v=20261023-maths-r14';
+import { makeA, choiceItem } from './skills-algebra.js?v=20261023-maths-r14';
 
 const fr = f => ({ n: f.n, d: f.d });
 const pA = f => ({ kind: 'fraction', value: fr(f), form: 'value' });

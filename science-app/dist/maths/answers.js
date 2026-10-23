@@ -19,11 +19,11 @@
 //                 for mastery, as it would lose the final mark in an exam.
 //   'wrong'     - wrong value
 //   'invalid'   - could not be read; nothing is recorded and the student fixes the format
-import { markAlgebra, algebraPreview } from './algebra.js?v=20261023-maths-r13';
-import { markPoints, markLine, pointsMarkup, lineMarkup, parsePoints } from './graph.js?v=20261023-maths-r13';
-import { markSolutions, solutionsMarkup, solutionsGiven, markInequality, inequalityMarkup, markList, listMarkup } from './sets.js?v=20261023-maths-r13';
-import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261023-maths-r13';
-import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261023-maths-r13';
+import { markAlgebra, algebraPreview } from './algebra.js?v=20261023-maths-r14';
+import { markPoints, markLine, pointsMarkup, lineMarkup, parsePoints } from './graph.js?v=20261023-maths-r14';
+import { markSolutions, solutionsMarkup, solutionsGiven, markInequality, inequalityMarkup, markList, listMarkup } from './sets.js?v=20261023-maths-r14';
+import { markExact, exactMarkup, markRatio, ratioMarkup, parseExact, parseRatio } from './exact.js?v=20261023-maths-r14';
+import { F, eq, mul, parseNumber, inSimplestForm, normalise, fracMarkup, num, mixedParts, decText } from './frac.js?v=20261023-maths-r14';
 
 export function isPrime(n) {
   if (!Number.isInteger(n) || n < 2) return false;

@@ -5,8 +5,8 @@
 //   tree diagrams · P7 sample spaces for combined experiments · P8 independent and dependent combined
 //   events, tree diagrams · P9 (Higher) conditional probability from two-way tables, trees and Venn diagrams.
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261023-maths-r13';
-import { tableFig, vennFig, treeFig } from './skills-probability.js?v=20261023-maths-r13';
+import { skillById } from './skills.js?v=20261023-maths-r14';
+import { tableFig, vennFig, treeFig } from './skills-probability.js?v=20261023-maths-r14';
 
 const S = id => skillById[id];
 const geo = (fig, caption) => ({ kind: 'geo', fig, caption });

@@ -9,7 +9,7 @@
 // Later batches add graphs (A8–A22), and batch 4 adds A7 functions, A4/A18 algebraic fractions, A6 proof,
 // A20 iteration and A21 forming equations in context (see skills-algebra3.js).
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261023-maths-r13';
+import { skillById } from './skills.js?v=20261023-maths-r14';
 
 const S = id => skillById[id];
 // Worked iteration for the iteration lesson: x_{n+1} = ∛(5 − 2x_n), x_0 = 1, and its cobweb path.

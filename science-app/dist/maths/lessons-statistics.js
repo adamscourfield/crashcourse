@@ -5,8 +5,8 @@
 //   box plots (Higher) · S5 applying statistics to describe a population · S6 scatter graphs,
 //   correlation and causation, lines of best fit, interpolation and extrapolation.
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261023-maths-r13';
-import { tableFig, pieFig, bars, pictoFig } from './skills-statistics.js?v=20261023-maths-r13';
+import { skillById } from './skills.js?v=20261023-maths-r14';
+import { tableFig, pieFig, bars, pictoFig } from './skills-statistics.js?v=20261023-maths-r14';
 
 const S = id => skillById[id];
 const geo = (fig, caption) => ({ kind: 'geo', fig, caption });
