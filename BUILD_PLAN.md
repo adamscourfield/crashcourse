@@ -1,3 +1,5 @@
+> Geography imagery policy23October2026: use photoreal references for recognition; genuine sourced photos for named sites and dated change evidence; retain analytical diagrams/process loops. Audit curriculum/geography-imagery-audit.md.
+
 > Current subject build23October2026: Edexcel Geography A1GA0, Issue5. User requests all options with student pathway selection. First5 shared landscape lessons implemented; provisional82-unit roadmap and precise next Coastal batch in curriculum/geography-a-plan.md. Keep Science/Maths/Geography state independent and preserve automatic flow, model policy and My progress.
 
 > Student mastery view23October2026: preserve My progress totals and subject/course/tier scoping when adding lessons; new lessons must flow through the shared summary rather than a separate counter. Definitions: curriculum/mastery-dashboard.md.
