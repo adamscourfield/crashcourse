@@ -5,6 +5,33 @@
 EA Barnard Castle F3504 source checked: genuine3.092m on23Dec2013 and0.297m on4Sep2017, historical instantaneous stage, not discharge/live data or an interpolated hydrograph. No event rainfall causation inferred. Named Tees route verified with Museums/Esri; authentic BGS profiles and paired UK weather/climate analysis remain open. NRFA API unavailable; no values invented. Sources/provenance science-app/dist/geography/RIVER-DATA.md. No new photo needed for process/structure goals; earlier genuine/coastal assets preserved.
 
 645full automated tests passed;11focused Geography tests after model refinements. Five full browser journeys completed; wrong/premature challenge blocked, model view observations restored, wrong discharge-unit practice corrected, check first-answer lock survived reload;75%failed/100%retake passed. Gauge stimulus shown independently without teaching analysis; static profile/route/record player controls absent or hidden as appropriate. Phone/pathway/final merged/live checks and publication follow. No specialist or full assistive-device review; no physical fieldwork or constructed method certification. Brief curriculum/briefs/geography-a-rivers-01.md; coverage curriculum/geography-a-rivers01-coverage.csv. Roadmap92units:20built/72provisional, not fixed final course size. Next five river landform/flooding/defence briefs1.8–1.9, then named1.10 synthesis.
+## Maths: Edexcel 1MA1 Statistics — batch 01 (4 lessons, S1–S6); on GitHub `main`, not published
+
+The sixth and last Maths topic (`maths.statistics`), now on the course map. With it, every 1MA1 content area (N, A, R, G, P, S) has lessons. Three lessons are for both tiers; the histograms, cumulative frequency and box plots lesson is Higher only.
+
+**Lessons:**
+- averages and range, including frequency tables and the estimated mean from grouped data (S4, S5; calculator);
+- bar and pie charts, sampling and comparing distributions (S2, S1, S4, S5);
+- scatter graphs, correlation, lines of best fit, causation and extrapolation (S6);
+- Higher: histograms with frequency density, cumulative frequency, quartiles and box plots (S3, S4).
+
+**Totals:** 6 new skills (160 in all) and 4 investigations: an average balancer, a pie maker, a line-of-best-fit chooser and a quartile reader.
+
+**QA:**
+- 650 automated tests pass after merging the Probability publication (649 before) (`tests/maths-statistics.test.js`: 7 tests). Every answer is re-solved from the printed data or the data drawn in its table, chart, graph or box plot.
+- All fifteen Maths walk-throughs pass: 87, 68, 62, 94, 69, 64, 78, 53, 70, 46, 77, 72, 67, 59 and 55 checks, 1021 in total, before the merge; after it, flows 1, 13, 14 and 15 were re-run and pass. Flow 15 (Statistics) covers the four investigations with their wrong paths, resume, mastery and the 10/10 check, the tier split and 390px.
+- Screenshot review found two drawing faults, both fixed: bar charts named their bars in a legend whose colours repeated (now category names under each bar, via a new `xcats` option in `graph.js`), and table labels spilling out of the first column.
+- Brief: `curriculum/briefs/maths-statistics-batch-01.md`.
+
+**Cache:** maths modules are at `20261023-maths-r12`. **Publishing needs a global version bump.**
+
+**Not done:**
+- Site publication (Statistics; Probability is published);
+- specialist review;
+- S2 practice for pictograms, vertical line charts and time series (taught in cards only);
+- marking of drawn charts and freehand lines of best fit.
+
+**Next:** teacher review across all six Maths topics; fill the S2 practice gap; publish Statistics.
 
 ## Geography coastal teaching batch02 and Maths Probability — published
 

@@ -3,9 +3,9 @@
 // graphs and gradients as rates (R14; Higher: average and instantaneous rates, R15), scale drawings
 // and maps (R2), similar shapes and length/area/volume ratios (R12; Higher: areas and volumes), and
 // converting compound units (R1, R11). Same contract as the other skill modules.
-import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r12';
-import { F, add, sub, mul, div, eq, gcd, num, fracMarkup } from './frac.js?v=20261023-maths-r12';
-import { makeA, fixMinus, algAns, algTrap, choiceItem } from './skills-algebra.js?v=20261023-maths-r12';
+import { rng, int, pick, shuffled } from './rng.js?v=20261023-maths-r13';
+import { F, add, sub, mul, div, eq, gcd, num, fracMarkup } from './frac.js?v=20261023-maths-r13';
+import { makeA, fixMinus, algAns, algTrap, choiceItem } from './skills-algebra.js?v=20261023-maths-r13';
 
 const fr = v => { const f = typeof v === 'number' ? F(v) : v; return { n: f.n, d: f.d }; };
 const fv = f => (f.d === 1 ? num(f.n) : fracMarkup(f));

@@ -6,13 +6,14 @@
 //    fns?:[{expr:'x^2 - 3', label?}],         curves y = f(x); expr uses x, numbers, + − × ÷ ^,
 //                                               brackets, sin/cos/tan in degrees
 //    polys?:[{pts:[[x,y],…], label?}],         straight-line segments (real-life graphs)
+//    xcats?:[[x,'name'],…]  category names under the x-axis instead of numbers (bar charts),
 //    points?:[[x,y,label?]], shade?:[[a,b]], region?:[[x,y],…]  (polygon to shade)}
 //
 // Answer kinds:
 //   {kind:'points', points:[[x,y],…], grid}     plot exactly these points (any order)
 //   {kind:'line', m:{n,d}, c:{n,d}, grid}       plot at least two points on y = mx + c
 // Raw answers are "x,y;x,y" — the same format as solution pairs.
-import { F, num, fracMarkup, normalise } from './frac.js?v=20261023-maths-r12';
+import { F, num, fracMarkup, normalise } from './frac.js?v=20261023-maths-r13';
 
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const COL = { ink: '#e4ebf0', muted: '#b7c8d6', grid: '#b7c8d626', axis: '#b7c8d6', a: '#ed8b78', b: '#a8d5b5', c: '#f2d48a', cream: '#f8f6f2', navy: '#182e44' };
@@ -52,7 +53,8 @@ export function graphSVG(g, extra = {}) {
   const y0 = yr[0] <= 0 && yr[1] >= 0 ? Y(0) : GB, x0 = xr[0] <= 0 && xr[1] >= 0 ? X(0) : GL;
   s += `<line x1="${GL}" y1="${y0}" x2="${GR}" y2="${y0}" stroke="${COL.axis}" stroke-width="1.5"/><line x1="${x0}" y1="${GT}" x2="${x0}" y2="${GB}" stroke="${COL.axis}" stroke-width="1.5"/>`;
   let k = 0;
-  for (let x = Math.ceil(xr[0] / xs) * xs; x <= xr[1] + 1e-9; x += xs, k++) if (Math.abs(x) > 1e-9 && k % xEvery === 0) s += `<text x="${X(x)}" y="${y0 + 15}" text-anchor="middle" fill="${COL.muted}" font-size="11">${lab(x, xs)}</text>`;
+  if (g.xcats) for (const [cx, cl] of g.xcats) s += `<text x="${X(cx)}" y="${y0 + 15}" text-anchor="middle" fill="${COL.ink}" font-size="12">${esc(cl)}</text>`;
+  else for (let x = Math.ceil(xr[0] / xs) * xs; x <= xr[1] + 1e-9; x += xs, k++) if (Math.abs(x) > 1e-9 && k % xEvery === 0) s += `<text x="${X(x)}" y="${y0 + 15}" text-anchor="middle" fill="${COL.muted}" font-size="11">${lab(x, xs)}</text>`;
   k = 0;
   for (let y = Math.ceil(yr[0] / ys) * ys; y <= yr[1] + 1e-9; y += ys, k++) if (Math.abs(y) > 1e-9 && k % yEvery === 0) s += `<text x="${x0 - 6}" y="${Y(y) + 4}" text-anchor="end" fill="${COL.muted}" font-size="11">${lab(y, ys)}</text>`;
   if (xr[0] <= 0 && yr[0] <= 0) s += `<text x="${x0 - 6}" y="${y0 + 15}" text-anchor="end" fill="${COL.muted}" font-size="11">0</text>`;

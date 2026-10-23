@@ -9,7 +9,7 @@
 // Batch 2 adds R2 scale, R12 similarity ratios, R10/R13 algebraic proportion and R14/R15 rates of
 // change; speed, density and pressure are taught in Number (N13).
 // All teaching text and questions are original.
-import { skillById } from './skills.js?v=20261023-maths-r12';
+import { skillById } from './skills.js?v=20261023-maths-r13';
 
 const S = id => skillById[id];
 
