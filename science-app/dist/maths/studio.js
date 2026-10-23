@@ -33,6 +33,8 @@ import { MODELS13 } from './models-geometry3.js?v=20261023-maths-r15';
 import { probabilityTopic, orderedProbability } from './lessons-probability.js?v=20261023-maths-r15';
 import { MODELS14 } from './models-probability.js?v=20261023-maths-r15';
 import { statisticsTopic, orderedStatistics } from './lessons-statistics.js?v=20261023-maths-r15';
+import { problemsTopic, orderedProblems } from './lessons-problems.js?v=20261023-maths-r15';
+import { MODELS17 } from './models-problems.js?v=20261023-maths-r15';
 import { MODELS15 } from './models-statistics.js?v=20261023-maths-r15';
 import { visual, mountModel } from './models-number.js?v=20261023-maths-r15';
 import { visual2, MODELS2 } from './models-number2.js?v=20261023-maths-r15';
@@ -41,8 +43,8 @@ import { newSeed, rng, shuffled } from './rng.js?v=20261023-maths-r15';
 import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, recordPractice, levelProgress, mixedMet, gradeRun, scheduleFirstReview, recordRecall, flagForRecall, dueSkills, lessonDone, isPractised, RULES } from './mastery.js?v=20261023-maths-r15';
 
 const STAGES = ['Discover', 'Investigate', 'Practise', 'Check'];
-const orderedLessons = [...numberLessons, ...orderedAlgebra, ...orderedRatio, ...orderedGeometry, ...orderedGeometry2, ...orderedGeometry3, ...orderedGeometry4, ...orderedProbability, ...orderedStatistics];
-const mathsTopics = [...numberTopics, algebraTopic, ratioTopic, geometryTopic, probabilityTopic, statisticsTopic];
+const orderedLessons = [...numberLessons, ...orderedAlgebra, ...orderedRatio, ...orderedGeometry, ...orderedGeometry2, ...orderedGeometry3, ...orderedGeometry4, ...orderedProbability, ...orderedStatistics, ...orderedProblems];
+const mathsTopics = [...numberTopics, algebraTopic, ratioTopic, geometryTopic, probabilityTopic, statisticsTopic, problemsTopic];
 const EVENT_TEXT = { up: 'Level up', down: 'Stepping back a level to rebuild', practised: 'Skill secure' };
 
 export function createMathsStudio({ root, modal, closeModal, onProgress }) {
@@ -137,7 +139,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     const generation = modelGeneration, panel = $('#mPanel'), body = $('#mBody');
     $('#mTitle').textContent = '';
     $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
-    (MODELS16[l.model] || MODELS15[l.model] || MODELS14[l.model] || MODELS13[l.model] || MODELS12[l.model] || MODELS11[l.model] || MODELS10[l.model] || MODELS9[l.model] || MODELS8[l.model] || MODELS7[l.model] || MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
+    (MODELS17[l.model] || MODELS16[l.model] || MODELS15[l.model] || MODELS14[l.model] || MODELS13[l.model] || MODELS12[l.model] || MODELS11[l.model] || MODELS10[l.model] || MODELS9[l.model] || MODELS8[l.model] || MODELS7[l.model] || MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
       panel, body, w: p.widget, tier: s.tier,
       isActive: () => generation === modelGeneration && panel.isConnected && body.isConnected && $('#mPanel') === panel && !!$('#mTitle'),
       save, feedback, setTitle: t => ($('#mTitle').textContent = t),
