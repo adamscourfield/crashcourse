@@ -4,7 +4,7 @@
   "lessons": [
     {
       "lesson": "geography.a.weather.drought-causes",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ A normally wet region can experience drought…\n✓ Low soil moisture that stresses crops is associated with…\n✓ Which human action can worsen downstream water shortage?\n✓ Why avoid saying deforestation always reduces river flow?\nTry check again",
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 A normally wet region can experience drought\u2026\n\u2713 Low soil moisture that stresses crops is associated with\u2026\n\u2713 Which human action can worsen downstream water shortage?\n\u2713 Why avoid saying deforestation always reduces river flow?\nTry check again",
       "wrongChallenge": true,
       "wrongPractice": true,
       "reloadLocked": true,
@@ -12,19 +12,19 @@
     },
     {
       "lesson": "geography.a.weather.drought-patterns",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ An abnormal shift in a rain belt can increase drought risk by…\n✓ Using the displayed rounded values,2010 exceeds2006 by…\n✓ What can this one-point annual graph establish by itself?\n✓ Which statement about changing drought risk is strongest?\nTry check again"
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 An abnormal shift in a rain belt can increase drought risk by\u2026\n\u2713 Using the displayed rounded values,2010 exceeds2006 by\u2026\n\u2713 What can this one-point annual graph establish by itself?\n\u2713 Which statement about changing drought risk is strongest?\nTry check again"
     },
     {
       "lesson": "geography.a.weather.australia-drought",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ The storage decline shown is…\n✓ Why did low Murray flows have more than one explanation?\n✓ Which connects the drought to people’s livelihoods?\n✓ Why is a national rainfall average insufficient here?\nTry check again"
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 The storage decline shown is\u2026\n\u2713 Why did low Murray flows have more than one explanation?\n\u2713 Which connects the drought to people\u2019s livelihoods?\n\u2713 Why is a national rainfall average insufficient here?\nTry check again"
     },
     {
       "lesson": "geography.a.weather.somalia-drought",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which explanation avoids a weather-only account?\n✓ The estimated excess deaths aged5or older are…\n✓ What distinguishes this excess-mortality figure?\n✓ A loss of pasture can affect…\nTry check again"
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 Which explanation avoids a weather-only account?\n\u2713 The estimated excess deaths aged5or older are\u2026\n\u2713 What distinguishes this excess-mortality figure?\n\u2713 A loss of pasture can affect\u2026\nTry check again"
     },
     {
       "lesson": "geography.a.weather.drought-responses",
-      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which chronology is supported?\n✓ What did cash-for-work combine in the Somalia response?\n✓ Using the UN snapshot, the approximate number not yet reached was…\n✓ Which comparison is most defensible?\nTry check again"
+      "result": "100% \u00b7 Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n\u2713 Which chronology is supported?\n\u2713 What did cash-for-work combine in the Somalia response?\n\u2713 Using the UN snapshot, the approximate number not yet reached was\u2026\n\u2713 Which comparison is most defensible?\nTry check again"
     }
   ],
   "mobile": [
@@ -250,10 +250,30 @@
   "keyboard": "Native player Space pauses; Enter resumes",
   "gates": "premature Continue/wrong challenge blocked;correctable practice;5/5views restored;independent first answer locked after reload;75%fail/100%retake",
   "motion": "process views default Pause/Loop;static source evidence hides player",
-  "dataAudit": "NASA POWER monthly mm/day multiplied by actual Gregorian month lengths;26annual estimates1990–2015;annual13excluded;storage percentagepoints,mortality subsets and20%coverage validated",
+  "dataAudit": "NASA POWER monthly mm/day multiplied by actual Gregorian month lengths;26annual estimates1990\u20132015;annual13excluded;storage percentagepoints,mortality subsets and20%coverage validated",
   "accessibleValues": "native chart table296px in390pxpage;independent source tables300px",
   "consoleErrors": [],
   "reducedMotion": "shared paused-start code retained;not separately emulated",
   "specialistReview": "not performed",
-  "publication": "pending"
+  "publication": {
+    "status": "succeeded",
+    "updated_at": "2026-10-23T20:11:36.524342+00:00",
+    "source": "eb5afcb029cae307074387b36c22e7b04b6d1763",
+    "deployment": "appgdep_6adbbf63b46c81919a25b4c2c5fde950",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_5b8a62e32ff08191b932342b495b1691",
+    "url": "https://gcse-science-atom-lab.newbuddy32.chatgpt.site/",
+    "liveChecks": [
+      "60built denominator",
+      "20shared weather menu lessons",
+      "subtropical descent Pause/Loop default",
+      "static NASA gridded graph and source caption",
+      "no console errors"
+    ],
+    "proof": "crash-course-weather04-live.png"
+  },
+  "automatedTests": {
+    "full": 681,
+    "focusedGeography": 26,
+    "passed": true
+  }
 }
