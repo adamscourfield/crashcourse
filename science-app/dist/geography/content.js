@@ -1,10 +1,11 @@
-import {glacierLessons2} from './content-glaciers2.js?v=20261023-uplands02';
-import {teesLessons} from './content-tees.js?v=20261023-uplands02';
-import {glacierTopic,glacierLessons} from './content-glaciers.js?v=20261023-uplands02';
-import {riverLessons2} from './content-rivers2.js?v=20261023-uplands02';
-import {riverLessons,riverTopic} from './content-rivers.js?v=20261023-uplands02';
-import {coastalLessons2} from './content-coasts2.js?v=20261023-uplands02';
-import {coastalLessons,coastTopic} from './content-coasts.js?v=20261023-uplands02';
+import {glacierLessons3} from './content-glaciers3.js?v=20261023-uplands03';
+import {glacierLessons2} from './content-glaciers2.js?v=20261023-uplands03';
+import {teesLessons} from './content-tees.js?v=20261023-uplands03';
+import {glacierTopic,glacierLessons} from './content-glaciers.js?v=20261023-uplands03';
+import {riverLessons2} from './content-rivers2.js?v=20261023-uplands03';
+import {riverLessons,riverTopic} from './content-rivers.js?v=20261023-uplands03';
+import {coastalLessons2} from './content-coasts2.js?v=20261023-uplands03';
+import {coastalLessons,coastTopic} from './content-coasts.js?v=20261023-uplands03';
 export const source='https://qualifications.pearson.com/content/dam/pdf/GCSE/Geography-A/2016/specification-and-sample-assessments/gcse-2016-l12-geography-a-spec.pdf';
 export const topic={id:'geography.a.uk-landscape-overview',title:'The UK’s landscapes',discipline:'Physical geography'};
 const Q=(id,prompt,options,answer,why,concept)=>({id:'geo.a.'+id,prompt,options,answer,why,concept:'geo.a.'+concept});
@@ -53,4 +54,4 @@ make('people-landscapes','People change landscapes',['1.2b','Integrated skill 4'
 ];
 
 export const topics=[topic,coastTopic,riverTopic,glacierTopic];
-export const lessons=[...coreLessons,...coastalLessons,...coastalLessons2,...riverLessons,...riverLessons2,...teesLessons,...glacierLessons,...glacierLessons2];
+export const lessons=[...coreLessons,...coastalLessons,...coastalLessons2,...riverLessons,...riverLessons2,...teesLessons,...glacierLessons,...glacierLessons2,...glacierLessons3];

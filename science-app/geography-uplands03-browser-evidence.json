@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-23",
+  "journeys": [
+    {
+      "id": "geography.a.glaciers.water-supply",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.glaciers.renewable-energy",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.glaciers.tourism",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.glaciers.conservation",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.glaciers.thirlmere-helvellyn",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "premature": "Answer this challenge first.",
+  "wrongChallenge": "Look again at the evidence and the process described.",
+  "practiceCorrection": "Try again. 600+150−100−20=630m³. Account for each input and output once.",
+  "observationsRestored": "Views compared: 4 / 4",
+  "independentLockedAfterReload": true,
+  "failedCheck": "75% · Keep building",
+  "retake": "100% · Lesson complete",
+  "phone": [
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Upland water storage and supply",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Renewable energy in upland landscapes",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Recreation, tourism and path erosion",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Conserving an upland landscape",
+      "width": 390
+    },
+    {
+      "model": 296,
+      "page": 390,
+      "title": "Thirlmere and Helvellyn: a landscape study",
+      "width": 390
+    }
+  ],
+  "pathways": [
+    {
+      "pair": [
+        "coasts",
+        "glaciers"
+      ],
+      "progress": "My progress\n29 / 29"
+    },
+    {
+      "pair": [
+        "coasts",
+        "rivers"
+      ],
+      "progress": "My progress\n26 / 26"
+    },
+    {
+      "pair": [
+        "rivers",
+        "glaciers"
+      ],
+      "progress": "My progress\n30 / 30"
+    }
+  ],
+  "reload": "30 / 30",
+  "consoleErrors": [],
+  "limitations": [
+    "No full assistive-device or specialist review",
+    "Shared reduced-motion implementation inspected; not separately emulated",
+    "Original diagrams and photograph do not replace authentic OS/GIS or constructed/physical fieldwork evidence"
+  ]
+}

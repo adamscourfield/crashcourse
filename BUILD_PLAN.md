@@ -1,3 +1,5 @@
+> Uplands03: Geography40built (5shared/10coasts/11rivers/14glaciers);1.13b water/energy/tourism/conservation and1.14Thirlmere–Helvellyn synthesis introduced. Alllandscape teaching groups now introduced, authentic/constructed/specialist evidence still open. NextWeather2.1circulation/heat transfer and2.2pastclimate/causes/evidence, precise briefs first. ActualQA/publication in BUILD_STATUS.md.
+
 > Uplands02: Geography35built (5shared/10coasts/11rivers/9glaciers). All1.12named glacial landforms and1.13afarming/forestry/settlement mechanisms introduced; genuineOS/GIS, constructed and specialist evidence remain open. Next five: water supply, energy, tourism, conservation1.13b;named landscape1.14a. Actual QA/publication in BUILD_STATUS.md.
 
 > Uplands01: Geography30built (5shared/10coasts/11rivers/4glaciers); namedTees1.10a and1.11a–c plus corrie/tarn/arête subset1.12a. Next remaining glacial landforms and human effects. Authentic OS/weather/GIS and constructed/specialist evidence remain separate. BUILD_STATUS.md has actual QA/publication.
