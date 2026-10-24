@@ -263,5 +263,18 @@
     }
   ],
   "pathwayResume": "My progress\n60 / 60",
-  "console": []
+  "console": [],
+  "publication": {
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "status": "succeeded",
+    "source": "1cda1325e5423b19a7592b8db1dc65151bf1de57",
+    "deployment": "appgdep_6adc5ea8369c8191844f560ecff87e1c",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_0683eed24a8c8191aad4eaaa563ced2a",
+    "timeUTC": "2026-10-24T07:31:02Z",
+    "liveBrowser": [
+      "Log in to access"
+    ],
+    "authenticatedLessonDOM": "not verified: private ChatGPT sign-in gate",
+    "proof": "crash-course-ecosystems02-preview.png"
+  }
 }
