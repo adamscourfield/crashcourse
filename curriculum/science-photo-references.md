@@ -1,3 +1,5 @@
+> Layout update24October2026: automatic full-width evidence row below independent model/explanation cards. See lesson-layout-navigation.md. Image mappings and source boundaries unchanged.
+
 # Science real-image references and lesson navigation
 
 24October2026. Latest product direction: photos belong automatically in relevant explanation screens,not behind a separate link or gallery. Lessons navigation must visibly look like a button. This is an enhancement to existing teaching,not a new lesson batch or specification expansion.

@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-24",
+  "scope": "evidence layout and topic lesson navigation",
+  "local_url": "http://localhost:4177/",
+  "checks": {
+    "desktop": {
+      "model_height": 540,
+      "explanation_height": 589.945,
+      "evidence_height": 222,
+      "photo_in_explanation_column": false
+    },
+    "phone": {
+      "viewport": 390,
+      "document_width": 390,
+      "image_width": 308,
+      "model_height": 550
+    },
+    "navigation": {
+      "science_separate_higher": "2 of 19",
+      "science_combined_foundation": "2 of 16",
+      "maths_problem_solving": "1 of 4",
+      "geography_ecosystems": "8 of 10",
+      "current_row_highlight_and_position_in_all_three_modals": true
+    },
+    "practice_image_count": 0,
+    "resumed_explanation": 3,
+    "resumed_photo": "elodea",
+    "science_progress_preserved": "15 / 361",
+    "geography_progress_preserved": "60 / 60",
+    "console_errors": []
+  },
+  "automated": {
+    "full_tests_passed": 691,
+    "final_focused_tests_passed": 8
+  },
+  "proof": "crash-course-evidence-layout.png",
+  "limits": [
+    "Local browser verification only; live authenticated content not verified.",
+    "No specialist review or new curriculum coverage."
+  ]
+}

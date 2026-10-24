@@ -1,0 +1,9 @@
+# Lesson layout and topic navigation
+
+24 October 2026. Genuine photographs still follow the same47Discover cards automatically, with source credits and limitations. They now occupy a full-width evidence row directly beneath separate model and explanation cards. The model does not stretch to the explanation height. Mobile stacks the cards; no gallery/link or extra navigation. Evidence is hidden outside Discover and cleared for assessment/review runs.
+
+Lessons buttons show current position and total in the selected topic across Science, Maths and Geography. Lists retain numbered completed rows, show current position/count, and highlight “You are here” with aria-current. Totals use existing route/tier/pathway filtering; no new state, completion rules, lesson IDs or curriculum coverage.
+
+QA:691full tests passed; final assessment-isolation guard followed by8reference/question-flow tests passed. Browser:Science2/19,CombinedFoundation2/16,Maths1/4,Geography8/10; current row/count in each modal. Desktop model540px versus590px explanation, separate222px evidence row. Phone390px:document390px,image308px,model550px; no overflow. Practice photo absent; explanation3/photo resume after reload. SyntheticScience15/361 andGeography60/60 retained; no console errors. Proof crash-course-evidence-layout.png. Technical QA is not specialist review. Local preview retained for active user review.
+
+Published24October2026 at08:24:38UTC; native succeeded, existing owner-private audience preserved. URL https://gcse-science-atom-lab.anaxied.chatgpt.site/. Sourcee838df953627b3b216d8d83a40ec862953629554; deploymentappgdep_6adc6b37c7c08191a87ce59b9f8dbdbb; versionappgprj_6ad1be5897a88191909a03ad57857103~appgver_46384584a20c8191aa07d39824acd3a6. Live authenticated DOM unverified. Evidence science-app/lesson-layout-browser-evidence.json. Next curriculum batch remains Geography3.5c/d and3.6a/b/c.

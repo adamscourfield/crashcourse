@@ -1,3 +1,7 @@
+## Evidence layout and lesson position — published
+
+24Oct2026 automatic photo evidence strip below independent model/explanation cards; topic-scoped lesson count/position and highlighted current row across subjects. No curriculum/progress changes. See curriculum/lesson-layout-navigation.md. 691full/8finalfocused tests passed; browser desktop/390px andsubject/tier checks passed. Published24October2026 at08:24:38UTC to https://gcse-science-atom-lab.anaxied.chatgpt.site/; existing owner-private audience unchanged. Sites sourcee838df953627b3b216d8d83a40ec862953629554; deploymentappgdep_6adc6b37c7c08191a87ce59b9f8dbdbb; versionappgprj_6ad1be5897a88191909a03ad57857103~appgver_46384584a20c8191aa07d39824acd3a6; native succeeded. Live authenticated content remains unverified; local user preview updated. QA science-app/lesson-layout-browser-evidence.json. Proof crash-course-evidence-layout.png. No new curriculum claims; next Geography batch unchanged.
+
 ## Science inline photographs and Lessons buttons — published
 
 

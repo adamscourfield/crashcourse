@@ -1,3 +1,5 @@
+> Latest UI24October2026: 24Oct2026 automatic photo evidence strip below independent model/explanation cards; topic-scoped lesson count/position and highlighted current row across subjects. No curriculum/progress changes. See curriculum/lesson-layout-navigation.md.
+
 > Latest UI priority24October2026:science photos appear automatically in their matching Discover explanation alongside models/processes;no separate gallery/link.19genuineimages/47cards/30lessons. Lessons buttons are prominent acrosssubjects. Preserve assessment isolation,authentic-source credits and progress;no new curriculum counts. QA/publication in BUILD_STATUS.md.
 
 > Current Ecosystems02:70Geographylessons,10ecosystems.3.4a/b/c,3.5a/b rainforest teaching introduced,20views9causal loops plusstatic evidence. Nextfive3.5c/d and3.6a/b/c exactbriefs/casefirst. Constructed/GIS/specialist evidence remains open. ActualQA/publication in BUILD_STATUS.md.

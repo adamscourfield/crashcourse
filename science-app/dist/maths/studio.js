@@ -99,6 +99,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     $('#mH1').textContent = l.title;
     $('#mMeta').innerHTML = `<div>◷ ${l.minutes} min · ${l.higherOnly ? 'Higher only' : 'Foundation and Higher'}</div>`;
     $('#mCalc').textContent = l.calculator ? 'Calculator' : 'Non-calculator';
+    $('#mLessons').textContent = `Lessons · ${idx + 1} of ${list.length} ▾`;
     $('#mStatus').textContent = p.complete ? `Complete · best check ${p.best}%` : '';
     $('#mBig').textContent = l.big;
     $('#mSpec').textContent = 'Edexcel 1MA1 · ' + l.refs.join(', ');
@@ -450,7 +451,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
   }
   function openLessons() {
     const t = topic();
-    modal(`<span class="eyebrow">MATHS · TOPIC ${t.number}</span><h2>${esc(t.title)}</h2><p>Edexcel GCSE Mathematics (1MA1) · ${s.tier}. ${esc(t.coverage)}</p><div class="lesson-list">${lessons().map((l, i) => { const p = lessonState(s, l.id); const started = p.seen.length || p.widgetDone || p.history.length || lessonSkills(l).some(sk => skillState(s, sk.id).log.length); return `<button class="lesson-row" data-mlesson="${l.id}"><span class="lesson-row-number">${p.complete ? '✓' : String(i + 1).padStart(2, '0')}</span><span><b>${esc(l.title)}</b><small>${l.minutes} min · ${l.refs.join(', ')} · ${p.complete ? 'Complete' : started ? 'In progress' : 'Ready'}</small></span><span>→</span></button>`; }).join('')}</div><div class="modal-actions"><button class="primary" id="mmAssess">Available-lesson assessment →</button><button class="secondary" id="mmReview">Review & recall</button><button class="secondary" id="mmMap">Course map</button></div>`);
+    modal(`<span class="eyebrow">MATHS · TOPIC ${t.number}</span><h2>${esc(t.title)}</h2><p class="lesson-list-position">Lesson ${lessons().findIndex(l => l.id === s.lessonId) + 1} of ${lessons().length}</p><p>Edexcel GCSE Mathematics (1MA1) · ${s.tier}. ${esc(t.coverage)}</p><div class="lesson-list">${lessons().map((l, i) => { const p = lessonState(s, l.id); const started = p.seen.length || p.widgetDone || p.history.length || lessonSkills(l).some(sk => skillState(s, sk.id).log.length); return `<button class="lesson-row" data-mlesson="${l.id}" ${l.id === s.lessonId ? 'aria-current="page"' : ''}><span class="lesson-row-number">${String(i + 1).padStart(2, '0')}</span><span><b>${esc(l.title)}</b><small>${l.minutes} min · ${l.refs.join(', ')} · ${l.id === s.lessonId ? 'You are here · ' : ''}${p.complete ? 'Complete' : started ? 'In progress' : 'Ready'}</small></span><span>→</span></button>`; }).join('')}</div><div class="modal-actions"><button class="primary" id="mmAssess">Available-lesson assessment →</button><button class="secondary" id="mmReview">Review & recall</button><button class="secondary" id="mmMap">Course map</button></div>`);
     document.querySelectorAll('[data-mlesson]').forEach(b => (b.onclick = () => setLesson(b.dataset.mlesson)));
     document.getElementById('mmAssess').onclick = startAssessment;
     document.getElementById('mmReview').onclick = startReview;
