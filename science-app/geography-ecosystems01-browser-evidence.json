@@ -262,5 +262,13 @@
     }
   ],
   "pathwayResume": "My progress\n55 / 55",
-  "console": []
+  "console": [],
+  "publication": {
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "status": "succeeded",
+    "deployment": "appgdep_6adc5a28c93481919ad89e3d1061c18e",
+    "source": "306a121e57a7e27c340ea4f8b50e275af17e0b87",
+    "liveBrowser": "Private site redirects to ChatGPT sign-in; authenticated lesson DOM not verified. Preview source fully tested; published native deployment succeeded.",
+    "proof": "crash-course-ecosystems01-preview.png"
+  }
 }
