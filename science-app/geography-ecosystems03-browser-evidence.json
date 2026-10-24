@@ -1,0 +1,208 @@
+{
+  "journeys": [
+    {
+      "id": "geography.a.ecosystems.rainforest-deforestation",
+      "result": "75% · Keep building"
+    },
+    {
+      "id": "geography.a.ecosystems.rainforest-management",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.ecosystems.woodland-system",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.ecosystems.woodland-cycles",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.ecosystems.woodland-adaptations",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "geography.a.ecosystems.rainforest-deforestation",
+      "view": "conversion",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-deforestation",
+      "view": "access",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-deforestation",
+      "view": "demand",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-deforestation",
+      "view": "choices",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-management",
+      "view": "governance",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-management",
+      "view": "locator",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-management",
+      "view": "value",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-management",
+      "view": "tourism",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-system",
+      "view": "seasons",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-system",
+      "view": "structure",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-system",
+      "view": "water",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-system",
+      "view": "people",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-cycles",
+      "view": "cycle",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-cycles",
+      "view": "autumn",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-cycles",
+      "view": "spring",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-cycles",
+      "view": "web",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-adaptations",
+      "view": "leaves",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-adaptations",
+      "view": "light",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-adaptations",
+      "view": "migration",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-adaptations",
+      "view": "winter",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    }
+  ],
+  "resume": "4/4 views, challenge2, selected drivers retained",
+  "wrongChallenge": true,
+  "wrongPractice": "Try again. The forest is replaced by a different land use; the income or food incentive helps explain the decision.",
+  "independentLocked": true,
+  "retake": "100% · Lesson complete",
+  "neutralQuestion": {
+    "bodyWidth": 300,
+    "svgCount": 1,
+    "width": 300,
+    "words": "NUTRIENT TRANSFERS · LABELLED MODELBiomassLitterSoilABCDArrows show direction; sizes are schematic"
+  },
+  "loopDefault": {
+    "loop": true,
+    "play": "Pause"
+  },
+  "keyboardPaused": "Play",
+  "keyboardResumed": "Pause",
+  "pathways": [
+    {
+      "pair": [
+        "coasts",
+        "rivers"
+      ],
+      "progress": "61 / 61"
+    },
+    {
+      "pair": [
+        "coasts",
+        "glaciers"
+      ],
+      "progress": "64 / 64"
+    },
+    {
+      "pair": [
+        "rivers",
+        "glaciers"
+      ],
+      "progress": "65 / 65"
+    }
+  ],
+  "pathwayResume": "65 / 65",
+  "consoleErrors": []
+}

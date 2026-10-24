@@ -122,3 +122,11 @@ Publication pending. Nextfive: ecosystems/biodiversity3.x;read exact3.1/3.2/3.3s
 
 ## Publication
 Published23October2026 at20:11:36UTC to existing owner-private Site,audience unchanged: https://gcse-science-atom-lab.newbuddy32.chatgpt.site/. Sites sourceeb5afcb029cae307074387b36c22e7b04b6d1763;deploymentappgdep_6adbbf63b46c81919a25b4c2c5fde950;versionappgprj_6ad1be5897a88191909a03ad57857103~appgver_5b8a62e32ff08191b932342b495b1691;succeeded;archive science-app-weather04.tar.gz. Live60denominator/20shared-weather lessons,descent Pause/Loop default and static NASA26-year graph/source/caption verified;no console errors. Proof crash-course-weather04-live.png. Canonical implementation42ca981;publication handover follows on main.
+
+## Ecosystems03 —24October2026
+
+Five lessons implement3.5c/d and3.6a/b/c;75built225practice300checks. Roadmap126units75implemented51provisional after splitting3.6. Alllandscapepathways share them.20views13process7static;Petén/Uaxactún primary case;conserving invented woodland nutrient example.694full35focusedtests,five100%journeys,20phoneviews,wrong/retry/resume/retake/keyboard/pathways verified. QA is not specialist or qualification completion. Next five: woodland goods3.7a;climate threats3.7b;clearance3.7c;named-region management3.7d;authentic global population projection-range evidence skill5. Brief precise statements and primary case/data first;GIS skill6 and extended constructed/specialist evidence remain open. Publication in BUILD_STATUS.md.
+
+## Publication result
+
+Published24October2026 at08:45:17UTC to https://gcse-science-atom-lab.anaxied.chatgpt.site/;existing owner-private Site,audience unchanged. Sites source826edd925b32199cacd5db3541b02d8c01a551f8;deploymentappgdep_6adc700f062881919e285e00f7b9906f;versionappgprj_6ad1be5897a88191909a03ad57857103~appgver_96b01ccd38208191a1d1aab4cc6cd507;native succeeded;archive science-app-ecosystems03.tar.gz. Authenticated live lesson DOM not verified;matching local preview passed recorded checks. Proof crash-course-ecosystems03-preview.png. Canonical main sync follows this record.

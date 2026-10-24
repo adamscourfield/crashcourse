@@ -1,3 +1,5 @@
+> Current Ecosystems03:75Geography/15ecosystems lessons;3.5c/d and3.6a/b/c introduced.20views13loops,7static;shared options and progress preserved. Next five: woodland goods3.7a;climate threats3.7b;clearance3.7c;named-region management3.7d;authentic global population projection-range evidence skill5. Brief precise statements and primary case/data first;GIS skill6 and extended constructed/specialist evidence remain open. ActualQA/publication in BUILD_STATUS.md.
+
 > Latest UI24October2026: 24Oct2026 automatic photo evidence strip below independent model/explanation cards; topic-scoped lesson count/position and highlighted current row across subjects. No curriculum/progress changes. See curriculum/lesson-layout-navigation.md.
 
 > Latest UI priority24October2026:science photos appear automatically in their matching Discover explanation alongside models/processes;no separate gallery/link.19genuineimages/47cards/30lessons. Lessons buttons are prominent acrosssubjects. Preserve assessment isolation,authentic-source credits and progress;no new curriculum counts. QA/publication in BUILD_STATUS.md.

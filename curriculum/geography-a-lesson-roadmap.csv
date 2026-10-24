@@ -14,9 +14,8 @@ geography.a.ecosystems.rainforest-cycles,"Nutrients: stores, transfers and losse
 geography.a.ecosystems.rainforest-adaptations,"Layers, biodiversity and adaptations",ecosystems,3.4c,implemented
 geography.a.ecosystems.rainforest-benefits,Rainforest goods and services,ecosystems,3.5a,implemented
 geography.a.ecosystems.rainforest-climate,Climate threats to rainforest life,ecosystems,3.5b,implemented
-geography.a.ecosystems.rainforest-deforestation,Why rainforest is cleared,ecosystems,3.5c,provisional_planned_precise_brief_and_named_case_pending
-geography.a.ecosystems.rainforest-management,Managing a named rainforest region,ecosystems,3.5d,provisional_planned_precise_brief_and_named_case_pending
-geography.a.ecosystems.3-6,Deciduous woodland characteristics,ecosystems,3.6,provisional_planned_split_after_statement_brief
+geography.a.ecosystems.rainforest-deforestation,Why rainforest is cleared,ecosystems,3.5c,implemented
+geography.a.ecosystems.rainforest-management,"Community forestry in Petén, Guatemala",ecosystems,3.5d,implemented
 geography.a.ecosystems.3-7,Woodland value threats and management,ecosystems,3.7,provisional_planned_split_after_statement_brief
 geography.a.cities.4-1,Urbanisation patterns and causes,cities,4.1,provisional_planned_split_after_statement_brief
 geography.a.cities.4-2,Urban economic change,cities,4.2,provisional_planned_split_after_statement_brief
@@ -123,3 +122,6 @@ geography.a.weather.drought-patterns,Why drought risk changes across places and 
 geography.a.weather.australia-drought,Australia: the Millennium Drought,weather,2.8a;2.8b: developed-country example;Integrated skill6: storage evidence,implemented
 geography.a.weather.somalia-drought,"Somalia: drought and food insecurity,2010–12",weather,2.8a;2.8b: developing-country example;Integrated skill6: socioeconomic evidence,implemented
 geography.a.weather.drought-responses,Responding to drought: Australia and Somalia,weather,2.8c;2.8a: risk and trade-offs;Integrated skill6: assistance snapshot,implemented
+geography.a.ecosystems.woodland-system,Inside a deciduous woodland,ecosystems,3.6a,implemented
+geography.a.ecosystems.woodland-cycles,A woodland’s seasonal nutrient cycle,ecosystems,3.6b,implemented
+geography.a.ecosystems.woodland-adaptations,Surviving the woodland seasons,ecosystems,3.6c,implemented
