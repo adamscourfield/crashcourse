@@ -1,0 +1,216 @@
+{
+  "journeys": [
+    {
+      "id": "geography.a.ecosystems.forest-loss-gis",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.urban-trends",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.urban-causes",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.uk-distribution",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.uk-regional-change",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "geography.a.ecosystems.forest-loss-gis",
+      "view": "year23",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.forest-loss-gis",
+      "view": "year24",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.forest-loss-gis",
+      "view": "change",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.forest-loss-gis",
+      "view": "join",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.urban-trends",
+      "view": "compare",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.urban-trends",
+      "view": "uk",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.urban-trends",
+      "view": "definitions",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.urban-trends",
+      "view": "measure",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.urban-causes",
+      "view": "migration",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.urban-causes",
+      "view": "balance",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.urban-causes",
+      "view": "capacity",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.urban-causes",
+      "view": "components",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.uk-distribution",
+      "view": "england",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.uk-distribution",
+      "view": "nations",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.uk-distribution",
+      "view": "share",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.uk-distribution",
+      "view": "boundaries",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.uk-regional-change",
+      "view": "industry",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.uk-regional-change",
+      "view": "connections",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.uk-regional-change",
+      "view": "mobility",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.cities.uk-regional-change",
+      "view": "measure",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    }
+  ],
+  "premature": "Answer this challenge first.",
+  "wrongChallenge": "Look again at the evidence and the process described.",
+  "resume": "Views compared: 4 / 4",
+  "wrongPractice": "Try again. A common identifier connects the geometry and attribute layers.",
+  "failedCheck": "75% · Keep building",
+  "independentLocked": true,
+  "neutralMap": {
+    "body": 300,
+    "page": 390,
+    "width": 300
+  },
+  "neutralChart": {
+    "page": 390,
+    "width": 300
+  },
+  "table": {
+    "page": 390,
+    "width": 296
+  },
+  "pathways": [
+    {
+      "pair": [
+        "coasts",
+        "rivers"
+      ],
+      "progress": "71 / 71"
+    },
+    {
+      "pair": [
+        "coasts",
+        "glaciers"
+      ],
+      "progress": "74 / 74"
+    },
+    {
+      "pair": [
+        "rivers",
+        "glaciers"
+      ],
+      "progress": "75 / 75"
+    }
+  ],
+  "pathwayResume": "75 / 75",
+  "loopDefault": {
+    "loop": true,
+    "play": "Pause"
+  },
+  "keyboardPaused": "Play",
+  "keyboardResumed": "Pause",
+  "consoleErrors": []
+}

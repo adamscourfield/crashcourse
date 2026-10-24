@@ -138,3 +138,13 @@ Published24October2026 at08:45:17UTC to https://gcse-science-atom-lab.anaxied.ch
 ## Publication result
 
 Published24October2026 at09:04:03UTC to https://gcse-science-atom-lab.anaxied.chatgpt.site/;existing owner-private audience unchanged. Sites source1745d859b073ce312b3b90ec7a3d1f190a417874;deploymentappgdep_6adc7476da648191b0119c6d4f92546c;versionappgprj_6ad1be5897a88191909a03ad57857103~appgver_0550c2d9cedc8191af7a669ffb9013a5;native succeeded;archive science-app-ecosystems04.tar.gz. Authenticated live lesson DOM not verified;matching local source passed recorded checks. Proofcrash-course-ecosystems04-preview.png. Canonical GitHub main sync follows this record.
+
+## Cities01 —24October2026
+
+85built255practice340checks,sevenbuilt topics;newCities4,Ecosystems21. Roadmap133units85implemented48provisional aftersplitting4.1/4.2 andaddingGISintroduction.701full42focusedtests,five100%journeys,20phoneviews,neutralmap/chart,wrong/retry/resume/retake/keyboard/threepathways. SourceandpublicationinBUILD_STATUS.md. Next five:initial UK city London context4.3a,structure4.3b,movement sequence4.4a,migration impacts4.4b,and census demographics4.5a. Verify primary London/ONS/GLA sources and precise briefs first;alternate school case library remains future. Student GISoperation,extended spatial and constructed/specialist evidence remain open.
+
+GISscope clarification:the authentic PRODEScase is a rainforest-region foundation/transfer exercise;direct deciduous-woodland forest-loss GISapplication for3.7c remains open,alongside student GISsoftwareoperation. No fullskill6completion claim.
+
+## Publication result
+
+Published24October2026 at13:45:42UTC to https://gcse-science-atom-lab.anaxied.chatgpt.site/;existing owner-private audience unchanged. Sites source834342325d9710908ad31e3b2c38efb54cbef3af;deploymentappgdep_6adcb6783a5081918e0f4f2760cc6cb3;versionappgprj_6ad1be5897a88191909a03ad57857103~appgver_6e753076b0e08191bc355978ea6c9e1f;native succeeded;archive science-app-cities01.tar.gz. Authenticated live lesson DOM not verified;matching local source passed recorded checks. Proofcrash-course-geography-cities01-preview.png. Canonical main sync follows this record.

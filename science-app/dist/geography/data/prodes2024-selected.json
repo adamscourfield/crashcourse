@@ -1,0 +1,38 @@
+{
+  "source": "https://data.inpe.br/biomasbr/wp-content/uploads/sites/3/2025/07/Nota_tecnica_PRODES_2024_consolidada.pdf",
+  "pdf_sha256": "04161b3d9ca3d0ad14d7b01d7d5711e8c9c00ea86e96dba308b3160d3d28844b",
+  "release": "July2025 consolidated PRODES2024 technical note",
+  "table": "Table2 printedp3;Table1 p2 visuallychecked",
+  "period2024": "1August2023–31July2024",
+  "unit": "km²annualclearance",
+  "legalAmazonTotals": {
+    "2023": 9064,
+    "2024": 6518
+  },
+  "states": [
+    {
+      "code": "BR-PA",
+      "name": "Pará",
+      "old": 3299,
+      "new": 2395
+    },
+    {
+      "code": "BR-AM",
+      "name": "Amazonas",
+      "old": 1610,
+      "new": 1223
+    },
+    {
+      "code": "BR-MT",
+      "name": "Mato Grosso",
+      "old": 2048,
+      "new": 1257
+    },
+    {
+      "code": "BR-RO",
+      "name": "Rondônia",
+      "old": 867,
+      "new": 360
+    }
+  ]
+}
