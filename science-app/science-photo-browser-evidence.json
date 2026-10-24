@@ -1,0 +1,662 @@
+{
+  "date": "2026-10-24",
+  "design": "Automatic card-mapped photographs within Discover; no separate gallery link",
+  "desktop": [
+    {
+      "lesson": "separation",
+      "card": 0,
+      "image": "filtration",
+      "loaded": true,
+      "src": "./science-images/filtration.jpg",
+      "width": 141
+    },
+    {
+      "lesson": "separation",
+      "card": 2,
+      "image": "chromatography",
+      "loaded": true,
+      "src": "./science-images/chromatography.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.chemistry.changes.soluble-salts",
+      "card": 1,
+      "image": "filtration",
+      "loaded": true,
+      "src": "./science-images/filtration.jpg",
+      "width": 141
+    },
+    {
+      "lesson": "science.chemistry.changes.titrations",
+      "card": 0,
+      "image": "titration",
+      "loaded": true,
+      "src": "./science-images/titration.jpg",
+      "width": 141
+    },
+    {
+      "lesson": "science.chemistry.changes.titrations",
+      "card": 2,
+      "image": "titration",
+      "loaded": true,
+      "src": "./science-images/titration.jpg",
+      "width": 141
+    },
+    {
+      "lesson": "science.chemistry.analysis.chromatography-rf",
+      "card": 0,
+      "image": "chromatography",
+      "loaded": true,
+      "src": "./science-images/chromatography.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.chemistry.analysis.chromatography-rf",
+      "card": 3,
+      "image": "chromatography",
+      "loaded": true,
+      "src": "./science-images/chromatography.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.chemistry.analysis.chromatography-practical",
+      "card": 0,
+      "image": "chromatography",
+      "loaded": true,
+      "src": "./science-images/chromatography.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.chemistry.analysis.chromatography-practical",
+      "card": 2,
+      "image": "chromatography",
+      "loaded": true,
+      "src": "./science-images/chromatography.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.chemistry.resources.water-practical",
+      "card": 0,
+      "image": "cylinder",
+      "loaded": true,
+      "src": "./science-images/cylinder.jpg",
+      "width": 115
+    },
+    {
+      "lesson": "science.biology.cells.cell-types",
+      "card": 0,
+      "image": "cheek",
+      "loaded": true,
+      "src": "./science-images/cheek.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.cells.cell-types",
+      "card": 1,
+      "image": "bacteria",
+      "loaded": true,
+      "src": "./science-images/bacteria.jpg",
+      "width": 297
+    },
+    {
+      "lesson": "science.biology.cells.cell-types",
+      "card": 3,
+      "image": "bacteria",
+      "loaded": true,
+      "src": "./science-images/bacteria.jpg",
+      "width": 297
+    },
+    {
+      "lesson": "science.biology.cells.cell-structures",
+      "card": 0,
+      "image": "cheek",
+      "loaded": true,
+      "src": "./science-images/cheek.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.cells.cell-structures",
+      "card": 2,
+      "image": "elodea",
+      "loaded": true,
+      "src": "./science-images/elodea.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.cells.microscopy",
+      "card": 0,
+      "image": "microscope",
+      "loaded": true,
+      "src": "./science-images/microscope.jpg",
+      "width": 183
+    },
+    {
+      "lesson": "science.biology.cells.microscopy",
+      "card": 2,
+      "image": "onion",
+      "loaded": true,
+      "src": "./science-images/onion.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.cells.microscopy",
+      "card": 3,
+      "image": "cheek",
+      "loaded": true,
+      "src": "./science-images/cheek.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.cells.culturing",
+      "card": 0,
+      "image": "bacteria",
+      "loaded": true,
+      "src": "./science-images/bacteria.jpg",
+      "width": 297
+    },
+    {
+      "lesson": "science.biology.cells.bacterial-growth",
+      "card": 0,
+      "image": "bacteria",
+      "loaded": true,
+      "src": "./science-images/bacteria.jpg",
+      "width": 297
+    },
+    {
+      "lesson": "science.biology.cells.inhibition-zones",
+      "card": 0,
+      "image": "culture",
+      "loaded": true,
+      "src": "./science-images/culture.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.cells.inhibition-zones",
+      "card": 4,
+      "image": "culture",
+      "loaded": true,
+      "src": "./science-images/culture.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.organisation.food-tests",
+      "card": 1,
+      "image": "benedict",
+      "loaded": true,
+      "src": "./science-images/benedict.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.organisation.food-tests",
+      "card": 2,
+      "image": "iodine",
+      "loaded": true,
+      "src": "./science-images/iodine.jpg",
+      "width": 187
+    },
+    {
+      "lesson": "science.biology.organisation.amylase-practical",
+      "card": 2,
+      "image": "iodine",
+      "loaded": true,
+      "src": "./science-images/iodine.jpg",
+      "width": 187
+    },
+    {
+      "lesson": "science.biology.organisation.heart",
+      "card": 0,
+      "image": "heart",
+      "loaded": true,
+      "src": "./science-images/heart.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.organisation.heart",
+      "card": 3,
+      "image": "heart_prepared",
+      "loaded": true,
+      "src": "./science-images/heart_prepared.jpg",
+      "width": 167
+    },
+    {
+      "lesson": "science.biology.organisation.double-circulation",
+      "card": 3,
+      "image": "heart",
+      "loaded": true,
+      "src": "./science-images/heart.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.organisation.blood",
+      "card": 0,
+      "image": "blood",
+      "loaded": true,
+      "src": "./science-images/blood.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.organisation.plant-tissues",
+      "card": 0,
+      "image": "elodea",
+      "loaded": true,
+      "src": "./science-images/elodea.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.organisation.plant-tissues",
+      "card": 1,
+      "image": "stomata",
+      "loaded": true,
+      "src": "./science-images/stomata.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.organisation.stomata-environment",
+      "card": 0,
+      "image": "stomata",
+      "loaded": true,
+      "src": "./science-images/stomata.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.organisation.stomata-environment",
+      "card": 2,
+      "image": "stomata",
+      "loaded": true,
+      "src": "./science-images/stomata.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.bioenergetics.photosynthesis",
+      "card": 1,
+      "image": "elodea",
+      "loaded": true,
+      "src": "./science-images/elodea.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.biology.bioenergetics.photosynthesis-factors",
+      "card": 3,
+      "image": "elodea",
+      "loaded": true,
+      "src": "./science-images/elodea.jpg",
+      "width": 304
+    },
+    {
+      "lesson": "science.physics.electricity.symbols",
+      "card": 2,
+      "image": "meter",
+      "loaded": true,
+      "src": "./science-images/meter.jpg",
+      "width": 167
+    },
+    {
+      "lesson": "science.physics.electricity.symbols",
+      "card": 3,
+      "image": "meter",
+      "loaded": true,
+      "src": "./science-images/meter.jpg",
+      "width": 167
+    },
+    {
+      "lesson": "science.physics.electricity.current",
+      "card": 1,
+      "image": "meter",
+      "loaded": true,
+      "src": "./science-images/meter.jpg",
+      "width": 167
+    },
+    {
+      "lesson": "science.physics.electricity.ohm",
+      "card": 2,
+      "image": "meter",
+      "loaded": true,
+      "src": "./science-images/meter.jpg",
+      "width": 167
+    },
+    {
+      "lesson": "science.physics.electricity.wire",
+      "card": 2,
+      "image": "meter",
+      "loaded": true,
+      "src": "./science-images/meter.jpg",
+      "width": 167
+    },
+    {
+      "lesson": "science.physics.electricity.iv",
+      "card": 4,
+      "image": "meter",
+      "loaded": true,
+      "src": "./science-images/meter.jpg",
+      "width": 167
+    },
+    {
+      "lesson": "science.physics.electricity.combinations",
+      "card": 1,
+      "image": "meter",
+      "loaded": true,
+      "src": "./science-images/meter.jpg",
+      "width": 167
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.density",
+      "card": 1,
+      "image": "cylinder",
+      "loaded": true,
+      "src": "./science-images/cylinder.jpg",
+      "width": 115
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.density",
+      "card": 2,
+      "image": "cylinder",
+      "loaded": true,
+      "src": "./science-images/cylinder.jpg",
+      "width": 115
+    },
+    {
+      "lesson": "science.physics.forces.springs",
+      "card": 0,
+      "image": "spring",
+      "loaded": true,
+      "src": "./science-images/spring.jpg",
+      "width": 187
+    },
+    {
+      "lesson": "science.physics.waves.lenses",
+      "card": 0,
+      "image": "lens",
+      "loaded": true,
+      "src": "./science-images/lens.jpg",
+      "width": 187
+    },
+    {
+      "lesson": "science.physics.waves.lenses",
+      "card": 2,
+      "image": "lens",
+      "loaded": true,
+      "src": "./science-images/lens.jpg",
+      "width": 187
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "science.chemistry.changes.soluble-salts",
+      "card": 1,
+      "image": "filtration",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 158,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.chemistry.analysis.chromatography-practical",
+      "card": 2,
+      "image": "chromatography",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 300,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.chemistry.changes.titrations",
+      "card": 2,
+      "image": "titration",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 158,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.physics.particle-model-of-matter.density",
+      "card": 2,
+      "image": "cylinder",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 129,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.biology.cells.microscopy",
+      "card": 3,
+      "image": "cheek",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 300,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.biology.cells.microscopy",
+      "card": 0,
+      "image": "microscope",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 205,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.biology.cells.microscopy",
+      "card": 2,
+      "image": "onion",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 300,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.biology.cells.bacterial-growth",
+      "card": 0,
+      "image": "bacteria",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 300,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.biology.bioenergetics.photosynthesis-factors",
+      "card": 3,
+      "image": "elodea",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 300,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.biology.cells.inhibition-zones",
+      "card": 4,
+      "image": "culture",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 300,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.biology.organisation.food-tests",
+      "card": 1,
+      "image": "benedict",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 300,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.biology.organisation.amylase-practical",
+      "card": 2,
+      "image": "iodine",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 210,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.biology.organisation.double-circulation",
+      "card": 3,
+      "image": "heart",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 300,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.biology.organisation.heart",
+      "card": 3,
+      "image": "heart_prepared",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 187,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.biology.organisation.blood",
+      "card": 0,
+      "image": "blood",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 300,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.biology.organisation.stomata-environment",
+      "card": 2,
+      "image": "stomata",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 300,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.physics.electricity.combinations",
+      "card": 1,
+      "image": "meter",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 187,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.physics.forces.springs",
+      "card": 0,
+      "image": "spring",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 210,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    },
+    {
+      "lesson": "science.physics.waves.lenses",
+      "card": 2,
+      "image": "lens",
+      "bodyWidth": 300,
+      "fits": true,
+      "imageWidth": 210,
+      "lessonsButtonHeight": 44,
+      "loaded": true,
+      "page": 390,
+      "viewport": 390
+    }
+  ],
+  "checks": {
+    "processWithPhoto": {
+      "photo": 1,
+      "playLabel": "Pause",
+      "loop": true
+    },
+    "noPhotoStage1": true,
+    "noPhotoStage2": true,
+    "noPhotoStage3": true,
+    "wrongFeedback": "Use the presence of a nucleus as evidence. A membrane does not distinguish the two groups.",
+    "photoResume": "./science-images/bacteria.jpg",
+    "widgetResume": {
+      "genetics": "nucleus",
+      "group": "prok"
+    },
+    "correctedFeedback": "Plant and animal cells are eukaryotic: their main genetic material is enclosed in a nucleus.",
+    "noCompletionFromPhotos": true,
+    "lessonsKeyboardOpens": true,
+    "lessonsFocus": "lessonsButton",
+    "trilogyFoundationPhoto": "./science-images/bacteria.jpg",
+    "separateCultureExcluded": true,
+    "noPhotoAssessment": true,
+    "noVisiblePhoto_maths": true,
+    "noVisiblePhoto_geography": true,
+    "geographyProgress": "My progress\n60 / 60"
+  },
+  "buttons": [
+    {
+      "subject": "science",
+      "background": "rgb(24, 46, 68)",
+      "color": "rgb(255, 255, 255)",
+      "height": 44,
+      "role": "BUTTON"
+    },
+    {
+      "subject": "maths",
+      "background": "rgb(24, 46, 68)",
+      "color": "rgb(255, 255, 255)",
+      "height": 44,
+      "role": "BUTTON"
+    },
+    {
+      "subject": "geography",
+      "background": "rgb(24, 46, 68)",
+      "color": "rgb(255, 255, 255)",
+      "height": 44,
+      "role": "BUTTON"
+    }
+  ],
+  "console": []
+}

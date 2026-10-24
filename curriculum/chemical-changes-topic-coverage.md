@@ -134,3 +134,7 @@ Changes batch08 publication: succeeded18 October2026 at20:18:46 UTC. Source1762c
 
 
 Energy batch01 / Chemical changes audit publication: succeeded18 October2026 at20:31:33 UTC. Source0506ad12c50c16edb51252b08604c4eceb85cd4b; deployment appgdep_6ad52c969940819186bfb0385d16699e; version appgprj_6ad1be5897a88191909a03ad57857103~appgver_76a358964020819182ca019d21f9561d. Existing owner-private audience preserved. Live fifth topic and both lessons verified; profile builder opened; console clean. Screenshot crash-course-energy-preview.png. Next required temperature-change practical preparation and Higher bond-energy calculations. Specialist review and school practical fulfilment outstanding.
+
+## Automatic real-image references —24October2026
+
+3existing Discover explanations now contain genuine credited specimen/equipment images automatically,alongside the original models/processes. Exact card/source mapping: science-photo-reference-coverage.csv. Source/author/licence and important preparation or measurement limits appear at point of use. No separate photo gallery/link;photos absent from investigation,practice,independent check and assessment. Stable lesson/question/progress IDs unchanged.691automated checks;47mapped cards and19phoneimages verified across the feature. These are supporting representations,not new curriculum completion,measured experiment results,hands-on competence or specialist review. Publication pending in BUILD_STATUS.md.

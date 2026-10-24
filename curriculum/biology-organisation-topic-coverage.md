@@ -107,3 +107,7 @@ Evidence limits: constrained labels and coordinates are preparation, not unrestr
 ## Organisation batch06 publication
 
 Published20October2026 at07:29:00 UTC. Source `461d9f4aa416dcc7ed94595b3976c5459dbfbcea`; deployment `appgdep_6ad7182b53cc81919e49fd6c69791b92`; version `appgprj_6ad1be5897a88191909a03ad57857103~appgver_f6b6df2f5b8c819196b19c7b53622e93`. Existing owner-private audience preserved. Live phone390px confirms23 available lessons, leaf-layer slider and tissue recording, all five new lesson models, phloem2D/3D and correct source refs/date/limitations.23-question available-lesson scope verified without starting a run. Console errors empty; viewport restored. Proof `crash-course-plants.png`.
+
+## Automatic real-image references —24October2026
+
+11existing Discover explanations now contain genuine credited specimen/equipment images automatically,alongside the original models/processes. Exact card/source mapping: science-photo-reference-coverage.csv. Source/author/licence and important preparation or measurement limits appear at point of use. No separate photo gallery/link;photos absent from investigation,practice,independent check and assessment. Stable lesson/question/progress IDs unchanged.691automated checks;47mapped cards and19phoneimages verified across the feature. These are supporting representations,not new curriculum completion,measured experiment results,hands-on competence or specialist review. Publication pending in BUILD_STATUS.md.

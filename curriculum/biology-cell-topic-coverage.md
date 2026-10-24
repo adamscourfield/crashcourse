@@ -120,3 +120,7 @@ Actual QA:165 automated tests pass; all4culture+3growth+3zone tasks complete. Wr
 
 
 Published19 October2026 at18:56:39 UTC. Source `a0259fa7f97b978b9605723905387548fc97d0cf`; deployment `appgdep_6ad667d6e4b48191a7476813d9222fb4`; version `appgprj_6ad1be5897a88191909a03ad57857103~appgver_ff2a8e1c50f88191bc91615ebeb2b83e`. Existing owner-private audience preserved. Live19-lesson Separate Biology list and all10 investigation tasks verified at390px: document width390, diagram caption/title clearance24px.3D/2D media switching, readable native controls, both supplied growth comparisons, keyboard20/22mm ruler measurements and area/control tasks passed. Console errors empty; viewport reset. Screenshot `crash-course-culturing.png`.
+
+## Automatic real-image references —24October2026
+
+12existing Discover explanations now contain genuine credited specimen/equipment images automatically,alongside the original models/processes. Exact card/source mapping: science-photo-reference-coverage.csv. Source/author/licence and important preparation or measurement limits appear at point of use. No separate photo gallery/link;photos absent from investigation,practice,independent check and assessment. Stable lesson/question/progress IDs unchanged.691automated checks;47mapped cards and19phoneimages verified across the feature. These are supporting representations,not new curriculum completion,measured experiment results,hands-on competence or specialist review. Publication pending in BUILD_STATUS.md.

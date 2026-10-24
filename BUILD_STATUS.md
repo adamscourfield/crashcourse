@@ -1,3 +1,11 @@
+## Science inline photographs and Lessons buttons — implemented, publication pending
+
+24October2026.19genuine locally stored/credited images automatically appear in47mapped Discover explanations across30existingScience lessons/11topics. Micrographs,cells,leaf surfaces,blood,sheep heart specimens,food-test observations and real Chemistry/Physics apparatus. Photos sit in the main explanation alongside models/processes;no separate reference link/gallery. Source author/licence/limitations visible;source metadata/hashes in science-app/dist/science-images/sources.json. Atomic/molecular mechanisms remain models;unrelated drawings/simulations and ambiguous licences excluded. Lessons is now a clear navy44px button across Science/Maths/Geography. Existing lesson/question/concept IDs,stores,route/tier scope,completion and process defaults retained. No new lessons or assessments;504inventory361Science/73Maths/70Geography.
+
+691full automated tests passed.47automatic mappings and19phoneimages verified;390pxpages,no image overflow. Native keyboard Lessons/escape/focus;all3subjects44pxnavybuttons. Shared process films stillPause/Loop by default with photo alongside. No inline images in Investigate,Practise,Check or actual topic assessment. Wrong/correct investigation paths and saved choices/photo-card resume across reload verified;photo views earn no completion. CombinedFoundation/separate culture filtering and subject separation verified;no console errors. All19assets visually checked;not specialist review or comprehensive practical photo coverage. Photo/source coverage record curriculum/science-photo-reference-coverage.csv;feature record curriculum/science-photo-references.md;QA science-app/science-photo-browser-evidence.json;proof crash-course-science-inline-photos.png.
+
+Publication pending;preserve existing owner-private Site audience. User reviewing local preview. Next curriculum batch remains Geography rainforest deforestation/management3.5c/d anddeciduous3.6a/b/c;precise briefs and primary case sources first. Future photo choices should follow the explanation automatically,retain meaningful processes,and use genuine specimens/results for observation.
+
 ## Ecosystems02 — published, five-lesson batch
 
 

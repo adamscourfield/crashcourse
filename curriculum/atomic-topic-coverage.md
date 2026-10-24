@@ -37,3 +37,7 @@ Family design adaptation (16 October2026): shared presentation and adaptive capt
 Science palette update: symbolic family colours and labels applied; scientific scope/evidence unchanged. QA and publication recorded in science-palette-update.md.
 
 Interface copy cleanup: teaching/evidence scope unchanged; model/source notes remain accessible. See interface-copy-cleanup.md for actual UI verification and publication.
+
+## Automatic real-image references —24October2026
+
+2existing Discover explanations now contain genuine credited specimen/equipment images automatically,alongside the original models/processes. Exact card/source mapping: science-photo-reference-coverage.csv. Source/author/licence and important preparation or measurement limits appear at point of use. No separate photo gallery/link;photos absent from investigation,practice,independent check and assessment. Stable lesson/question/progress IDs unchanged.691automated checks;47mapped cards and19phoneimages verified across the feature. These are supporting representations,not new curriculum completion,measured experiment results,hands-on competence or specialist review. Publication pending in BUILD_STATUS.md.

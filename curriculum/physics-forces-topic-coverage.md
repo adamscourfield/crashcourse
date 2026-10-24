@@ -41,3 +41,7 @@ Technical QA: model/option/geometry/route/tier/completion tests; browser evidenc
 Selected-response and constrained prediction evidence does not replace independent written explanations, equation/ray/force-diagram or graph construction, practical handling/measurements/uncertainty, individual school required-practical performance, or specialist subject review. Required-practical preparation is explicitly taught where applicable; no simulation is recorded as physical completion. Technical checks are not specialist review.
 
 Publication:23October2026 with Physics completion; exact deployment/source/version identifiers and live verification are in BUILD_STATUS.md. This map remains a teaching/evidence record.
+
+## Automatic real-image references —24October2026
+
+1existing Discover explanations now contain genuine credited specimen/equipment images automatically,alongside the original models/processes. Exact card/source mapping: science-photo-reference-coverage.csv. Source/author/licence and important preparation or measurement limits appear at point of use. No separate photo gallery/link;photos absent from investigation,practice,independent check and assessment. Stable lesson/question/progress IDs unchanged.691automated checks;47mapped cards and19phoneimages verified across the feature. These are supporting representations,not new curriculum completion,measured experiment results,hands-on competence or specialist review. Publication pending in BUILD_STATUS.md.

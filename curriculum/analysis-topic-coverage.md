@@ -18,3 +18,7 @@ Implementation is complete for the mapped teaching sequence; technical QA and pu
 
 
 Full Chemistry release: Published19 October2026 at12:03:37 UTC. Source commit `404048a74261944f289f092305ba10d34faad393`; deployment `appgdep_6ad607077b5c8191b62bda71282cdfdb`; saved version `appgprj_6ad1be5897a88191909a03ad57857103~appgver_7592b8d33d748191b6102f560c089f8a`. Existing owner-private audience preserved. Live topic map verified all ten topics and113 Separate Higher lessons; final NPK lesson mounted and correct investigation feedback verified. Proof: `crash-course-chemistry-complete.png`.
+
+## Automatic real-image references —24October2026
+
+4existing Discover explanations now contain genuine credited specimen/equipment images automatically,alongside the original models/processes. Exact card/source mapping: science-photo-reference-coverage.csv. Source/author/licence and important preparation or measurement limits appear at point of use. No separate photo gallery/link;photos absent from investigation,practice,independent check and assessment. Stable lesson/question/progress IDs unchanged.691automated checks;47mapped cards and19phoneimages verified across the feature. These are supporting representations,not new curriculum completion,measured experiment results,hands-on competence or specialist review. Publication pending in BUILD_STATUS.md.
