@@ -658,5 +658,17 @@
       "role": "BUTTON"
     }
   ],
-  "console": []
+  "console": [],
+  "publication": {
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "status": "succeeded",
+    "source": "ac234e097aa5d2cc9ca5b5f228c5dcfb421a2bcb",
+    "deployment": "appgdep_6adc68bcb2308191a19a442e30247197",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_ea6d8c8aedd88191a75e8191dcc0e5c0",
+    "timeUTC": "2026-10-24T08:14:01Z",
+    "liveHeadings": [
+      "Log in to access"
+    ],
+    "proof": "crash-course-science-inline-photos.png"
+  }
 }

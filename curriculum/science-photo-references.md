@@ -23,3 +23,7 @@ Exact lesson/card mapping is `science-photo-reference-coverage.csv`;runtime cata
 ## Publication and handover
 
 Publication pending;preserve owner-private Site identity/audience and push canonical GitHub main. Proof: `crash-course-science-inline-photos.png`. Exact version/source/deployment/live access verification must be recorded in BUILD_STATUS.md. Local preview is being used for the user’s UI review. Next requested curriculum build remains Geography3.5c/d and3.6a/b/c;retain this seamless photo policy for future lessons and source additional genuine practical images where they serve a specific explanation.
+
+## Publication result
+
+Published24October2026 at08:14:01UTC to https://gcse-science-atom-lab.anaxied.chatgpt.site/ using existing owner-private Site,audience unchanged. Sites sourceac234e097aa5d2cc9ca5b5f228c5dcfb421a2bcb;deploymentappgdep_6adc68bcb2308191a19a442e30247197;versionappgprj_6ad1be5897a88191909a03ad57857103~appgver_ea6d8c8aedd88191a75e8191dcc0e5c0;succeeded;archive science-app-inline-photos01.tar.gz. Native deployment confirms publication. Live browser remains at ChatGPT sign-in,so authenticated lesson DOM is not verified;matching local source passed all recorded UI checks. Proof crash-course-science-inline-photos.png. Canonical implementation6531551;publication handover follows on main. Local preview remains available for the user’s active UI review.
