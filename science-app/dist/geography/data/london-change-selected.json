@@ -1,0 +1,8 @@
+{
+ "checked":"2026-10-24",
+ "poverty":{"period":"Three-year averages to 2023/24","threshold":60,"before":15,"after":26},
+ "travel":{"unit":"% of all trips in London","observations":[{"year":2019,"value":63.6},{"year":2024,"value":63.4}],"target":{"year":2041,"value":80}},
+ "carbon":{"unit":"invented carbon units","years":5,"retrofit":{"embodied":60,"annual":20},"replacement":{"embodied":90,"annual":10}},
+ "sources":{"poverty":"https://trustforlondon.org.uk/data/poverty-before-and-after-housing-costs/","povertyOfficialCorroboration":"https://www.london.gov.uk/media/110897/download","travel":"https://apps.london.gov.uk/state-of-london/report/transport","target":"https://tfl.gov.uk/corporate/about-tfl/the-mayors-transport-strategy"},
+ "limits":["Poverty compares two defined regional estimates at 60% of median income,not the alternative50% measure or causal tracking of individual people","Travel counts all trips by all people travelling in London,not journey stages or only residents","2041is a target,not an observation or forecast","Only two selected observed travel years;no fabricated annual series","2023provisional64.2was superseded by consolidated63.2;not used here","Carbon,money,worker andmaterial examples invented,not measured London projects or an ecological footprint"]
+}

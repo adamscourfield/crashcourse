@@ -1,0 +1,242 @@
+{
+  "journeys": [
+    {
+      "id": "geography.a.cities.deindustrialisation",
+      "result": "100% · Lesson complete",
+      "retake": true
+    },
+    {
+      "id": "geography.a.cities.inequality",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.retail",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.sustainable-neighbourhoods",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.sustainable-housing",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "geography.a.cities.deindustrialisation",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.deindustrialisation",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.deindustrialisation",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.deindustrialisation",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.inequality",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.inequality",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.inequality",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.inequality",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.retail",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.retail",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.retail",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.retail",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.sustainable-neighbourhoods",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.sustainable-neighbourhoods",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.sustainable-neighbourhoods",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.sustainable-neighbourhoods",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.sustainable-housing",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.sustainable-housing",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.sustainable-housing",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.sustainable-housing",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    }
+  ],
+  "checks": [
+    {
+      "autoplay": "Pause",
+      "loop": ""
+    },
+    {
+      "keyboardPause": "Play"
+    },
+    {
+      "premature": "Answer this challenge first."
+    },
+    {
+      "wrongChallenge": "Look again at the evidence and the process described."
+    },
+    {
+      "viewsReload": "Views compared: 4 / 4"
+    },
+    {
+      "practiceReload": "Try again. Output per worker rises from10to20units; employment falls without output falling."
+    },
+    {
+      "independentLockedAfterReload": true
+    },
+    {
+      "failedResult": "75% · Keep building"
+    }
+  ],
+  "pathways": [
+    {
+      "pair": [
+        "Coasts",
+        "Rivers"
+      ],
+      "progress": "My progress: 81 of 81 lessons completed"
+    },
+    {
+      "pair": [
+        "Coasts",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 84 of 84 lessons completed"
+    },
+    {
+      "pair": [
+        "Rivers",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 85 of 85 lessons completed"
+    }
+  ],
+  "neutral": [
+    {
+      "lesson": "geography.a.cities.inequality",
+      "body": 300,
+      "page": 390,
+      "svg": 300,
+      "table": 300
+    },
+    {
+      "lesson": "geography.a.cities.sustainable-neighbourhoods",
+      "body": 300,
+      "page": 390,
+      "svg": 300,
+      "table": 300
+    },
+    {
+      "lesson": "geography.a.cities.sustainable-housing",
+      "body": 300,
+      "page": 390,
+      "svg": 300,
+      "table": 300
+    }
+  ],
+  "pathwayResume": "My progress: 85 of 85 lessons completed",
+  "consoleErrors": []
+}
