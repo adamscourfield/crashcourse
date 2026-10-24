@@ -1,3 +1,5 @@
+> Cities02:90 Geography lessons;9 Changing cities. London4.3a/b,4.4a/b,4.5a introduced.20views8loops12static;dated primary census evidence. QA/publication in BUILD_STATUS.md. Next five: London deindustrialisation4.5b;inequality4.5c;retail4.5d;sustainable strategies4.5e split by need. Verify exact briefs and primary London sources. Alternate city cases;GIS/satellite/population-pyramid/output-area2011;constructed and specialist evidence remain open.
+
 > Ecosystems02 update24October2026:70lessons,210practice280checks;124roadmapunits70built54provisional.10shared ecosystems lessons. Nextfive rainforest3.5c/d then deciduous3.6a/b/c;exactstatements/primarycasefirst. QA/publication separate in BUILD_STATUS.md.
 
 > Ecosystems01 update24October2026:65lessons,195practice260checks;119roadmapunits65built54provisional. Sixavailabletopics;5newshareduntieredecosystems. Nextfive rainforest3.4a/b/c,3.5a/b,exactstatementbriefsfirst. AuthenticGIS,constructedand specialist evidence remain open. Publication/QA in BUILD_STATUS.md.

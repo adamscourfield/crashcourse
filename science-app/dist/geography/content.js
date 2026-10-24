@@ -1,3 +1,4 @@
+import {londonLessons} from './content-cities2.js?v=20261024-cities02';
 import {citiesTopic,citiesLessons,gisLessons} from './content-cities.js?v=20261024-cities01';
 import {ecosystemsLessons4} from './content-ecosystems4.js?v=20261024-ecosystems04';
 import {ecosystemsLessons3} from './content-ecosystems3.js?v=20261024-ecosystems03';
@@ -63,4 +64,4 @@ make('people-landscapes','People change landscapes',['1.2b','Integrated skill 4'
 ];
 
 export const topics=[topic,coastTopic,riverTopic,glacierTopic,weatherTopic,ecosystemsTopic,citiesTopic];
-export const lessons=[...coreLessons,...coastalLessons,...coastalLessons2,...riverLessons,...riverLessons2,...teesLessons,...glacierLessons,...glacierLessons2,...glacierLessons3,...weatherLessons,...weatherLessons2,...weatherLessons3,...weatherLessons4,...ecosystemsLessons,...ecosystemsLessons2,...ecosystemsLessons3,...ecosystemsLessons4,...gisLessons,...citiesLessons];
+export const lessons=[...coreLessons,...coastalLessons,...coastalLessons2,...riverLessons,...riverLessons2,...teesLessons,...glacierLessons,...glacierLessons2,...glacierLessons3,...weatherLessons,...weatherLessons2,...weatherLessons3,...weatherLessons4,...ecosystemsLessons,...ecosystemsLessons2,...ecosystemsLessons3,...ecosystemsLessons4,...gisLessons,...citiesLessons,...londonLessons];

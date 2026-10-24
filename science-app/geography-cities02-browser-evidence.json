@@ -1,0 +1,233 @@
+{
+  "journeys": [
+    {
+      "id": "geography.a.cities.context",
+      "result": "100% · Lesson complete",
+      "retake": true
+    },
+    {
+      "id": "geography.a.cities.structure",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.movements",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.migration",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.census",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "geography.a.cities.context",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.context",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.context",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.context",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.structure",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.structure",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.structure",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.structure",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.movements",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.movements",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.movements",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.movements",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.migration",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.migration",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.migration",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.migration",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.census",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.census",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.census",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.census",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    }
+  ],
+  "checks": [
+    {
+      "autoplay": "Pause",
+      "loop": ""
+    },
+    {
+      "premature": "Answer this challenge first.",
+      "keyboardPause": true
+    },
+    {
+      "wrongChallenge": "Look again at the evidence and the process described."
+    },
+    {
+      "viewResume": "Views compared: 4 / 4"
+    },
+    {
+      "practiceResume": "Try again. Navigability helped exchange; modern functions have additional causes."
+    },
+    {
+      "failedResult": "75% · Keep building",
+      "independentReloadLocked": true
+    },
+    {
+      "table": {
+        "page": 390,
+        "table": 296
+      }
+    },
+    {
+      "neutralCensusPhone": {
+        "body": 300,
+        "page": 390,
+        "svg": 300
+      }
+    }
+  ],
+  "pathways": [
+    {
+      "pair": [
+        "Coasts",
+        "Rivers"
+      ],
+      "progress": "My progress: 76 of 76 lessons completed"
+    },
+    {
+      "pair": [
+        "Coasts",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 79 of 79 lessons completed"
+    },
+    {
+      "pair": [
+        "Rivers",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 80 of 80 lessons completed"
+    }
+  ],
+  "pathwayResume": "My progress: 80 of 80 lessons completed",
+  "refinedCentresPhone": {
+    "overflow": [],
+    "page": 390,
+    "panel": 344
+  },
+  "consoleErrors": []
+}
