@@ -1,0 +1,14 @@
+{
+  "page": "https://science.nasa.gov/earth/earth-observatory/bombay-india-2638/",
+  "asset": "https://assets.science.nasa.gov/dynamicimage/assets/science/esd/eo/images/imagerecords/2000/2638/bombay_L7_lrg.jpg",
+  "credit": "Ron Beck, USGS EROS Data Center Satellite Systems Branch / NASA Earth Observatory",
+  "published": "2002-07-23",
+  "acquired": null,
+  "licence": "USGS-produced public-domain image;NASA educational media terms;no endorsement",
+  "licenceURL": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+  "width": 1000,
+  "height": 1000,
+  "sha256": "c1b06e4a7bba52f4ac38bd4a082ab243a0a15f154e6abbf623b7ab64b9bbc2ef",
+  "modified": false,
+  "limits": "False colour,not true-colour photograph;acquisition date not stated on source page;not current conditions or a time series;blue-grey urban/dark-green vegetation/light-brown sparse vegetation."
+}

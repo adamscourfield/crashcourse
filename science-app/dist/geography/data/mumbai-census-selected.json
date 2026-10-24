@@ -1,0 +1,7 @@
+{
+ "checked":"2026-10-24","geography":"Greater Mumbai (Municipal Corporation)",
+ "population":[{"year":1991,"value":9925891},{"year":2001,"value":11978450},{"year":2011,"value":12442373}],
+ "housing":{"year":2011,"total":12442373,"classified":5206473,"reportedPercent":41.8},"suburban2011":9356962,
+ "sources":{"earlier":"https://www.mmrda.maharashtra.gov.in/sites/default/files/2021-09/Environmental%20Status%20Report_0.pdf","final2001and2011":"https://sansad.in/getFile/loksabhaquestions/annex/6/AU4082.pdf?source=pqals","suburban":"https://censusindia.gov.in/nada/index.php/catalog/807/download/2878/DH_2011_2722_PART_B_DCHB_MUMBAI_SUBURBAN.pdf"},
+ "limits":["MMRDA's provisional2011value12478447excluded;use final12442373","Municipality not urban agglomeration or MMR;historical not current","1991from earlier series,2001/2011finalofficialtable","2015answer openingprose typo repeats2011;table correctly labels2011and2001","Slum official housing category not income poverty,employment or land area","No direct interyear slum trend claim because definitions/coverage vary across otherreports","Suburban2011plusMumbaiCitydistrict3085411equalsmunicipaltotal;area/density not compared"]
+}

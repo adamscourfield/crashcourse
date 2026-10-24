@@ -1,0 +1,249 @@
+{
+  "journeys": [
+    {
+      "id": "geography.a.cities.mumbai-context",
+      "result": "100% · Lesson complete",
+      "retake": true
+    },
+    {
+      "id": "geography.a.cities.mumbai-structure",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.mumbai-growth",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.mumbai-migration",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.mumbai-inequality",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "checks": [
+    {
+      "autoplay": "Pause",
+      "loop": ""
+    },
+    {
+      "keyboardPause": "Play"
+    },
+    {
+      "premature": "Answer this challenge first."
+    },
+    {
+      "wrongChallenge": "Look again at the evidence and the process described."
+    },
+    {
+      "viewsReload": "Views compared: 4 / 4"
+    },
+    {
+      "practiceReload": "Try again. A physical advantage supports activity without determining every outcome."
+    },
+    {
+      "independentLockedAfterReload": true
+    },
+    {
+      "failedResult": "75% · Keep building"
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "geography.a.cities.mumbai-context",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-context",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-context",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-context",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-structure",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-structure",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-structure",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-structure",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-growth",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-growth",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-growth",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-growth",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-migration",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-migration",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-migration",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-migration",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-inequality",
+      "view": 0,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-inequality",
+      "view": 1,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-inequality",
+      "view": 2,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-inequality",
+      "view": 3,
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    }
+  ],
+  "pathways": [
+    {
+      "pair": [
+        "Coasts",
+        "Rivers"
+      ],
+      "progress": "My progress: 86 of 86 lessons completed"
+    },
+    {
+      "pair": [
+        "Coasts",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 89 of 89 lessons completed"
+    },
+    {
+      "pair": [
+        "Rivers",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 90 of 90 lessons completed"
+    }
+  ],
+  "neutral": [
+    {
+      "lesson": "geography.a.cities.mumbai-growth",
+      "body": 300,
+      "figure": 300,
+      "height": 245.1796875,
+      "page": 390,
+      "table": 300
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-inequality",
+      "body": 300,
+      "figure": 300,
+      "height": 245.1796875,
+      "page": 390,
+      "table": 300
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-structure",
+      "body": 300,
+      "figure": 300,
+      "height": 300,
+      "page": 390
+    }
+  ],
+  "photoPhone": {
+    "height": 296,
+    "src": "./geography/images/mumbai-landsat7-usgs.jpg",
+    "width": 296
+  },
+  "pathwayResume": "My progress: 90 of 90 lessons completed",
+  "consoleErrors": []
+}
