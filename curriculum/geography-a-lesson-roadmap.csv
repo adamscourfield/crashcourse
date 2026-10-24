@@ -16,7 +16,6 @@ geography.a.ecosystems.rainforest-benefits,Rainforest goods and services,ecosyst
 geography.a.ecosystems.rainforest-climate,Climate threats to rainforest life,ecosystems,3.5b,implemented
 geography.a.ecosystems.rainforest-deforestation,Why rainforest is cleared,ecosystems,3.5c,implemented
 geography.a.ecosystems.rainforest-management,"Community forestry in Petén, Guatemala",ecosystems,3.5d,implemented
-geography.a.ecosystems.3-7,Woodland value threats and management,ecosystems,3.7,provisional_planned_split_after_statement_brief
 geography.a.cities.4-1,Urbanisation patterns and causes,cities,4.1,provisional_planned_split_after_statement_brief
 geography.a.cities.4-2,Urban economic change,cities,4.2,provisional_planned_split_after_statement_brief
 geography.a.cities.4-3,UK city location and structure,cities,4.3,provisional_planned_split_after_statement_brief
@@ -125,3 +124,8 @@ geography.a.weather.drought-responses,Responding to drought: Australia and Somal
 geography.a.ecosystems.woodland-system,Inside a deciduous woodland,ecosystems,3.6a,implemented
 geography.a.ecosystems.woodland-cycles,A woodland’s seasonal nutrient cycle,ecosystems,3.6b,implemented
 geography.a.ecosystems.woodland-adaptations,Surviving the woodland seasons,ecosystems,3.6c,implemented
+geography.a.ecosystems.woodland-benefits,What woodlands provide,ecosystems,3.7a,implemented
+geography.a.ecosystems.woodland-climate,Climate threats to woodlands,ecosystems,3.7b,implemented
+geography.a.ecosystems.woodland-clearance,Why woodland is cleared,ecosystems,3.7c,implemented
+geography.a.ecosystems.epping-management,Managing Epping Forest,ecosystems,3.7d,implemented
+geography.a.ecosystems.population-projections,Population futures and resource demand,ecosystems,Integrated skill5;3.5c,implemented

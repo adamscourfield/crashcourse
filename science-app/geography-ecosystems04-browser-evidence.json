@@ -1,0 +1,239 @@
+{
+  "journeys": [
+    {
+      "id": "geography.a.ecosystems.woodland-benefits",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "geography.a.ecosystems.woodland-benefits",
+      "view": "renewal",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-benefits",
+      "view": "goods",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-benefits",
+      "view": "habitat",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-benefits",
+      "view": "visitors",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-climate",
+      "view": "stress",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-climate",
+      "view": "timing",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-climate",
+      "view": "categories",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-climate",
+      "view": "resilience",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-clearance",
+      "view": "urban",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-clearance",
+      "view": "harvest",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-clearance",
+      "view": "farming",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.woodland-clearance",
+      "view": "compare",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.epping-management",
+      "view": "trees",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.epping-management",
+      "view": "locator",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.epping-management",
+      "view": "grazing",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.epping-management",
+      "view": "access",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.population-projections",
+      "view": "projection",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.population-projections",
+      "view": "interval",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.population-projections",
+      "view": "efficient",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.population-projections",
+      "view": "intensive",
+      "overflowText": [],
+      "page": 390,
+      "panel": 296
+    }
+  ],
+  "premature": "Answer this challenge first.",
+  "wrongChallenge": "Look again at the evidence and the process described.",
+  "viewResume": "Views compared: 4 / 4",
+  "wrongPractice": "Try again. These include material products and services, not four interchangeable commodities.",
+  "failedCheck": "75% · Keep building",
+  "completedRows": [
+    "16What woodlands provideCompleted→",
+    "17Climate threats to woodlandsCompleted→",
+    "18Why woodland is clearedCompleted→",
+    "19Managing Epping ForestCompleted→",
+    "20Population futures and resource demandYou are here · Completed→"
+  ],
+  "neutralQuestion": {
+    "bodyWidth": 300,
+    "width": 300,
+    "words": "UN2024 ·2100GLOBAL POPULATIONBillion people ·95%prediction interval8910111211.49.010.2 medium2100"
+  },
+  "independentLocked": true,
+  "tableWidth": 296,
+  "expandedTablePageWidth": 390,
+  "pathways": [
+    {
+      "pair": [
+        "coasts",
+        "rivers"
+      ],
+      "progress": "66 / 66"
+    },
+    {
+      "pair": [
+        "coasts",
+        "glaciers"
+      ],
+      "progress": "69 / 69"
+    },
+    {
+      "pair": [
+        "rivers",
+        "glaciers"
+      ],
+      "progress": "70 / 70"
+    }
+  ],
+  "pathwayResume": "70 / 70",
+  "loopDefault": {
+    "loop": true,
+    "play": "Pause"
+  },
+  "keyboardPaused": "Play",
+  "keyboardResumed": "Pause",
+  "consoleErrors": [],
+  "finalVisualRefinement": [
+    {
+      "view": "trees",
+      "step": "0",
+      "page": 390,
+      "svg": 296
+    },
+    {
+      "view": "trees",
+      "step": "0.5",
+      "page": 390,
+      "svg": 296
+    },
+    {
+      "view": "trees",
+      "step": "1",
+      "page": 390,
+      "svg": 296
+    },
+    {
+      "view": "harvest",
+      "step": "0",
+      "page": 390,
+      "svg": 296
+    },
+    {
+      "view": "harvest",
+      "step": "0.5",
+      "page": 390,
+      "svg": 296
+    },
+    {
+      "view": "harvest",
+      "step": "1",
+      "page": 390,
+      "svg": 296
+    }
+  ]
+}

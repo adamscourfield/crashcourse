@@ -130,3 +130,11 @@ Five lessons implement3.5c/d and3.6a/b/c;75built225practice300checks. Roadmap126
 ## Publication result
 
 Published24October2026 at08:45:17UTC to https://gcse-science-atom-lab.anaxied.chatgpt.site/;existing owner-private Site,audience unchanged. Sites source826edd925b32199cacd5db3541b02d8c01a551f8;deploymentappgdep_6adc700f062881919e285e00f7b9906f;versionappgprj_6ad1be5897a88191909a03ad57857103~appgver_96b01ccd38208191a1d1aab4cc6cd507;native succeeded;archive science-app-ecosystems03.tar.gz. Authenticated live lesson DOM not verified;matching local preview passed recorded checks. Proof crash-course-ecosystems03-preview.png. Canonical main sync follows this record.
+
+## Ecosystems04 —24October2026
+
+80Geography240practice320checks;130roadmapunits80implemented50provisional after replacing3.7withfourlessons andaddingpopulationevidencelesson. Topic3teachinggroups3.1–3.7introduced,notfullcompetence. SelectedUN2024points/2100interval retainedwithvintage/rounding;toyresourceunitsseparate. Eppingprimarymanagementcase.697full38focusedtests;fivejourneys,20phoneviews,wrong/retry/resume/retake/keyboard/options. Next five: authentic forest-loss GIS interpretation (ecosystems skill6,linked3.7c);urbanisation trends4.1a;urbanisation causes/effects4.1b;UK urban distribution4.2a;UK regional variation4.2b. Exact briefs and primary geospatial/census sources first. Constructed evidence and specialist review remain open. Publication inBUILD_STATUS.md.
+
+## Publication result
+
+Published24October2026 at09:04:03UTC to https://gcse-science-atom-lab.anaxied.chatgpt.site/;existing owner-private audience unchanged. Sites source1745d859b073ce312b3b90ec7a3d1f190a417874;deploymentappgdep_6adc7476da648191b0119c6d4f92546c;versionappgprj_6ad1be5897a88191909a03ad57857103~appgver_0550c2d9cedc8191af7a669ffb9013a5;native succeeded;archive science-app-ecosystems04.tar.gz. Authenticated live lesson DOM not verified;matching local source passed recorded checks. Proofcrash-course-ecosystems04-preview.png. Canonical GitHub main sync follows this record.
