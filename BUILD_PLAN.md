@@ -1,3 +1,5 @@
+> Current Ecosystems01:65Geography lessons across6topics.3.1a/b,3.2a,3.3a/b introduced with7biome comparisons,real matching-axis climate graphs and8causal loops. Nextfive3.4a/b/c,3.5a/b exactrainforestbriefs;GIS/constructed/specialist gaps remain. ActualQA/publication in BUILD_STATUS.md.
+
 > Current Weather04: five drought lessons bring Geography to60built;all2.1–2.8weather teaching groups introduced. Nextfive ecosystems/biodiversity3.x,exact statements/briefs first. Process films default looping;dated/estimated source evidence static. Extended skills,constructed evidence and specialist review remain separate. ActualQA/publication in BUILD_STATUS.md.
 
 > Current batch Weather03: five shared tropical-cyclone lessons2.5/2.6 bring Geography to55built. Nextfive: drought2.7/2.8 with named contrasting cases, exact briefs first. Keep process films default looping and genuine source evidence static; GIS/socialmedia/constructed/specialist evidence remain separate. Actual QA/publication in BUILD_STATUS.md.

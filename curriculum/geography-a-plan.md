@@ -1,3 +1,5 @@
+> Ecosystems01 update24October2026:65lessons,195practice260checks;119roadmapunits65built54provisional. Sixavailabletopics;5newshareduntieredecosystems. Nextfive rainforest3.4a/b/c,3.5a/b,exactstatementbriefsfirst. AuthenticGIS,constructedand specialist evidence remain open. Publication/QA in BUILD_STATUS.md.
+
 # Geography A build plan
 
 ## Qualification and scope

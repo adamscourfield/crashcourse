@@ -1,0 +1,266 @@
+{
+  "date": "2026-10-24",
+  "journeys": [
+    {
+      "lesson": "geography.a.ecosystems.biomes",
+      "result": "100% complete"
+    },
+    {
+      "lesson": "geography.a.ecosystems.controls",
+      "result": "100% complete"
+    },
+    {
+      "lesson": "geography.a.ecosystems.resources",
+      "result": "100% complete"
+    },
+    {
+      "lesson": "geography.a.ecosystems.uk-land",
+      "result": "100% complete"
+    },
+    {
+      "lesson": "geography.a.ecosystems.uk-marine",
+      "result": "100% complete"
+    }
+  ],
+  "wrongChallenge": true,
+  "prematureChallengeBlocked": true,
+  "practiceCorrection": true,
+  "comparedViewsResume": "7/7",
+  "independentLockedOnReload": true,
+  "failedCheck": "75% incomplete",
+  "retake": "100% complete",
+  "views": [
+    {
+      "lesson": "geography.a.ecosystems.biomes",
+      "view": "tropical",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.biomes",
+      "view": "temperate",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.biomes",
+      "view": "boreal",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.biomes",
+      "view": "grass-tropical",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.biomes",
+      "view": "grass-temperate",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.biomes",
+      "view": "desert",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.biomes",
+      "view": "tundra",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.controls",
+      "view": "climate",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.controls",
+      "view": "soil",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.controls",
+      "view": "climb",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.resources",
+      "view": "supply",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.resources",
+      "view": "mine",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.resources",
+      "view": "water",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.resources",
+      "view": "balance",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.uk-land",
+      "view": "moor",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.uk-land",
+      "view": "heath",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.uk-land",
+      "view": "woodland",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.uk-land",
+      "view": "wetland",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.uk-marine",
+      "view": "nursery",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.uk-marine",
+      "view": "nutrients",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.uk-marine",
+      "view": "abrasion",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "scene": 296,
+      "viewport": 390
+    },
+    {
+      "lesson": "geography.a.ecosystems.uk-marine",
+      "view": "protect",
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "scene": 296,
+      "viewport": 390
+    }
+  ],
+  "keyboard": "Space pauses; Enter resumes",
+  "expandedTable": {
+    "page": 390,
+    "table": 296
+  },
+  "climateQuestionPhone": {
+    "graph": 300,
+    "page": 390
+  },
+  "pathways": [
+    {
+      "pair": [
+        "Coasts",
+        "Rivers"
+      ],
+      "progress": "My progress\n51 / 51"
+    },
+    {
+      "pair": [
+        "Coasts",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress\n54 / 54"
+    },
+    {
+      "pair": [
+        "Rivers",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress\n55 / 55"
+    }
+  ],
+  "pathwayResume": "My progress\n55 / 55",
+  "console": []
+}

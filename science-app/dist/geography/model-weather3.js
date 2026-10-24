@@ -1,5 +1,5 @@
-import {katrinaTrack,atlanticSeasons,windBands} from './cyclone-data.js?v=20261023-weather04';
-import {worldPath,gulfPath} from './cyclone-map.js?v=20261023-weather04';
+import {katrinaTrack,atlanticSeasons,windBands} from './cyclone-data.js?v=20261023-ecosystems01';
+import {worldPath,gulfPath} from './cyclone-map.js?v=20261023-ecosystems01';
 export const weatherViews3={
  'weather-cyclone-form':[['ingredients','Warm ocean & conditions'],['cycle','Developing circulation'],['section','Eye & eyewall'],['shear','Disrupting wind shear']],
  'weather-cyclone-patterns':[['basins','Global source areas'],['track26','26 August 00UTC'],['track28','28 August 18UTC'],['track29','29 August 12UTC'],['seasons','Compare seasons'],['change','Change & uncertainty']],

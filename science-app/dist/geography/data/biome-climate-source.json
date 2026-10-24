@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Manaus, Brazil",
+    "url": "https://science.nasa.gov/kids/earth/mission-biomes/biorainforest/",
+    "period": "1970–2000",
+    "retrieved": "2026-10-24",
+    "definition": "NASA Mission Biomes published rounded monthly precipitation mm and temperature °C; not current observations",
+    "rows": [
+      [
+        "January",
+        288,
+        27
+      ],
+      [
+        "February",
+        289,
+        27
+      ],
+      [
+        "March",
+        308,
+        27
+      ],
+      [
+        "April",
+        310,
+        27
+      ],
+      [
+        "May",
+        245,
+        27
+      ],
+      [
+        "June",
+        122,
+        27
+      ],
+      [
+        "July",
+        92,
+        27
+      ],
+      [
+        "August",
+        68,
+        28
+      ],
+      [
+        "September",
+        88,
+        28
+      ],
+      [
+        "October",
+        122,
+        28
+      ],
+      [
+        "November",
+        174,
+        28
+      ],
+      [
+        "December",
+        217,
+        27
+      ]
+    ]
+  },
+  {
+    "name": "Aklavik, Canada",
+    "url": "https://science.nasa.gov/kids/earth/mission-biomes/biotundra/",
+    "period": "1970–2000",
+    "retrieved": "2026-10-24",
+    "definition": "NASA Mission Biomes published rounded monthly precipitation mm and temperature °C; not current observations",
+    "rows": [
+      [
+        "January",
+        15,
+        -27
+      ],
+      [
+        "February",
+        12,
+        -26
+      ],
+      [
+        "March",
+        14,
+        -22
+      ],
+      [
+        "April",
+        8,
+        -12
+      ],
+      [
+        "May",
+        15,
+        0
+      ],
+      [
+        "June",
+        19,
+        10
+      ],
+      [
+        "July",
+        40,
+        14
+      ],
+      [
+        "August",
+        42,
+        11
+      ],
+      [
+        "September",
+        30,
+        4
+      ],
+      [
+        "October",
+        33,
+        -7
+      ],
+      [
+        "November",
+        22,
+        -20
+      ],
+      [
+        "December",
+        16,
+        -25
+      ]
+    ]
+  }
+]

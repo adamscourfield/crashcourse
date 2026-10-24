@@ -4,9 +4,11 @@ geography.a.landscapes.geology-map,Reading the UK’s geology,overview,1.1a,impl
 geography.a.landscapes.geology-relief,Why uplands and lowlands differ,overview,1.1b,implemented
 geography.a.landscapes.physical-landscapes,Physical processes shape landscapes,overview,1.2a,implemented
 geography.a.landscapes.people-landscapes,People change landscapes,overview,1.2b,implemented
-geography.a.ecosystems.3-1,Global ecosystems and controls,ecosystems,3.1,provisional_planned_split_after_statement_brief
-geography.a.ecosystems.3-2,Biosphere resources,ecosystems,3.2,provisional_planned_split_after_statement_brief
-geography.a.ecosystems.3-3,UK ecosystems and pressures,ecosystems,3.3,provisional_planned_split_after_statement_brief
+geography.a.ecosystems.biomes,The world’s biomes,ecosystems,3.1a,implemented
+geography.a.ecosystems.controls,Why ecosystems grow where they do,ecosystems,3.1b,implemented
+geography.a.ecosystems.resources,What the biosphere provides,ecosystems,3.2a,implemented
+geography.a.ecosystems.uk-land,The UK’s terrestrial ecosystems,ecosystems,3.3a,implemented
+geography.a.ecosystems.uk-marine,The UK’s marine ecosystems,ecosystems,3.3b,implemented
 geography.a.ecosystems.3-4,Rainforest structure and adaptations,ecosystems,3.4,provisional_planned_split_after_statement_brief
 geography.a.ecosystems.3-5,Rainforest value threats and management,ecosystems,3.5,provisional_planned_split_after_statement_brief
 geography.a.ecosystems.3-6,Deciduous woodland characteristics,ecosystems,3.6,provisional_planned_split_after_statement_brief

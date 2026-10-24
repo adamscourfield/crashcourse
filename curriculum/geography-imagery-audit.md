@@ -1,3 +1,7 @@
+## Ecosystems01 —24October2026
+
+Seven biome region locators, two authentic matching-scale climate graphs, UK habitat locators and eight causal loops added. No new raster: location/data/causal transfer are the assessed aims. Photographs would be useful for later habitat recognition but cannot stand in for geographic boundaries or climate values. No recognition-photo skill or GIS completion claimed. Existing licensed/generated imagery preserved. NASA monthly data sources are archived and linked; these graphs are static. UK markers use the existing Natural Earth locator projection x=222+23×longitude,y=1672−28×latitude; Norfolk Broads marker is in East Anglia, not central England. Locators are representative sites, not extent maps.
+
 # Geography imagery review — 23 October 2026
 
 Scope: all five built Geography lessons. No new curriculum or assessment coverage claimed.
