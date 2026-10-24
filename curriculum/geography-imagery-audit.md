@@ -1,3 +1,7 @@
+## Ecosystems02 —24October2026
+
+Added one photorealistic AI-generated buttress-root structural reference to adaptations. Native1536×1024 opaque PNG, generic and visibly labelled,with alt text. Reviewed for broad woody above-ground flanges and believable forest floor. Not authenticated species or location evidence. File `science-app/dist/geography/images/rainforest-buttress-v1.png`;full final prompt and built-in mode in `curriculum/rainforest-image-prompt.md`. Image supports recognition; SVG support/leaf/canopy/process models explain function. Other new views remain code-native causal/structure/evidence representations; no fabricated dated change evidence.
+
 ## Ecosystems01 —24October2026
 
 Seven biome region locators, two authentic matching-scale climate graphs, UK habitat locators and eight causal loops added. No new raster: location/data/causal transfer are the assessed aims. Photographs would be useful for later habitat recognition but cannot stand in for geographic boundaries or climate values. No recognition-photo skill or GIS completion claimed. Existing licensed/generated imagery preserved. NASA monthly data sources are archived and linked; these graphs are static. UK markers use the existing Natural Earth locator projection x=222+23×longitude,y=1672−28×latitude; Norfolk Broads marker is in East Anglia, not central England. Locators are representative sites, not extent maps.

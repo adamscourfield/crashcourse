@@ -1,4 +1,4 @@
-import {cet} from './climate-data.js?v=20261023-ecosystems01';
+import {cet} from './climate-data.js?v=20261024-ecosystems02';
 export const weatherViews2={
  'weather-greenhouse':[['natural','Natural greenhouse'],['enhanced','Enhanced greenhouse'],['compare','Energy balance']],
  'weather-sources':[['fuel','Fuel & industry'],['farming','Farming & methane'],['leaks','Fossil-fuel leaks'],['system','Whole system']],

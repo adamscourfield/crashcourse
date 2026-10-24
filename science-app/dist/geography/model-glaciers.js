@@ -1,4 +1,4 @@
-import {highForcePhoto} from './model-rivers2.js?v=20261023-ecosystems01';
+import {highForcePhoto} from './model-rivers2.js?v=20261024-ecosystems02';
 export const uplandViews={
  'river-tees-study':[['route','Locate the landscape'],['highforce','High Force evidence'],['cuts','Navigation cuts'],['storage','Cow Green regulation']],
  'glacier-ice':[['flow','Flow & margin'],['abrasion','Abrasion'],['plucking','Plucking'],['transport','On / within / beneath'],['deposit','Deposition']],

@@ -1,3 +1,11 @@
+## Ecosystems02 — implemented, publication pending
+
+24October2026. Five shared untiered rainforest lessons3.4a/b/c,3.5a/b:system components and water links;Gersmehl nutrients/interdependence;high biodiversity/all named adaptations;food/medicine/timber/recreation;climate threats to structure,functioning,biodiversity. Geography70built,210practice280checks;inventory504including361Science/73Maths.20newviews9process11static. Processes default inline Loop/Pause,static evidence stays still. Invented nutrient budgets start80/5/15 with intact100andremoval65endtotal;internal transfers cancel,external inputs/leaching/harvest change total. Neutral A–D nutrient diagrams in original questions;food-web arrows food→consumer,energy distinct from nutrient cycling. AI-generated1536×1024 buttress recognition image visibly labelled generic illustrative,not authenticated site/species;prompt/mode/path/review recorded curriculum/rainforest-image-prompt.md. Cinchona montane origin,tested medicine and varied local/Indigenous roles explicit. Climate mechanisms not deterministic collapse forecasts.
+
+687full automated tests/32focused Geography tests passed. Five100%UIjourneys,wrong/premature challenge,editable practice,3/3view reload,independent lock/reload,75%fail/100%retake.20phoneviews390pxpage/296pxpanel without SVGtextoverflow;image loaded;neutral independent diagram300px. Threepathpairs56/56coasts+rivers,59/59coasts+glaciers,60/60rivers+glaciers/reload preserve oldrecords. Spacepause/Enterresume verified;no console errors. Reduced-motion shared paused-start retained,not separately emulated. Full assistive-device/specialist review not performed. Roadmap124units70built54provisional;counts are authoring units,not qualification mastery. Exact3.5c/d deferred;extended constructed/source/GIS evidence remains open.
+
+Publication pending;preserve existing owner-private Site/audience. Nextfive:3.5c deforestation;3.5d named-region governance/commodity/ecotourism;3.6a/b/c deciduous components/nutrient cycle/adaptations. Verify precise case and primary sources before briefs. Registers/coverage separate implementation,publication and specialist statuses.
+
 ## Ecosystems01 — published, five-lesson batch
 
 

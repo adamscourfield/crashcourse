@@ -1,3 +1,5 @@
+> Ecosystems02 update24October2026:70lessons,210practice280checks;124roadmapunits70built54provisional.10shared ecosystems lessons. Nextfive rainforest3.5c/d then deciduous3.6a/b/c;exactstatements/primarycasefirst. QA/publication separate in BUILD_STATUS.md.
+
 > Ecosystems01 update24October2026:65lessons,195practice260checks;119roadmapunits65built54provisional. Sixavailabletopics;5newshareduntieredecosystems. Nextfive rainforest3.4a/b/c,3.5a/b,exactstatementbriefsfirst. AuthenticGIS,constructedand specialist evidence remain open. Publication/QA in BUILD_STATUS.md.
 
 # Geography A build plan

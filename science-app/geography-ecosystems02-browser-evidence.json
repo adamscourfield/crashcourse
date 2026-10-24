@@ -1,0 +1,267 @@
+{
+  "date": "2026-10-24",
+  "journeys": [
+    {
+      "lesson": "geography.a.ecosystems.rainforest-system",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which pair links a biotic component with an abiotic condition?\n✓ Rain caught on leaves and evaporated before reaching soil is…\n✓ Why can a productive rainforest grow on nutrient-poor mineral soil?\n✓ Which statement best includes humans in a rainforest system?\nTry check again"
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-cycles",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which labelled arrow transfers nutrients from litter to soil?\n✓ Why is a small litter store compatible with heavy litterfall?\n✓ An invented system starts with70 nutrient units. It gains1, loses2 by leaching and5 by harvest. What remains?\n✓ Which correctly distinguishes nutrients and energy?\nTry check again"
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-adaptations",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Why is rainforest biodiversity not explained by rainfall alone?\n✓ Which sequence orders the simplified forest layers from top to bottom?\n✓ Which pair links rainforest animal features to functions?\n✓ A leaf-like insect is less visible against leaves. This illustrates…\nTry check again"
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-benefits",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Which set matches all four specification examples?\n✓ Which statement about rainforest medicines is accurate?\n✓ A visitor project raises income but disturbs nesting birds. What should be considered?\n✓ Timber removal exceeds regrowth over a period. What is the likely effect on wood stock, other things equal?\nTry check again"
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-climate",
+      "result": "100% · Lesson complete\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n✓ Longer dry conditions cause tree deaths, opening gaps. Which direct structural change is described?\n✓ Which chain best explains a possible biodiversity threat?\n✓ Why does higherCO2 not guarantee rainforest protection?\n✓ Which conclusion is justified by a conceptual stress animation?\nTry check again"
+    }
+  ],
+  "views": [
+    {
+      "lesson": "geography.a.ecosystems.rainforest-system",
+      "view": "structure",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-system",
+      "view": "water",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-system",
+      "view": "links",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-cycles",
+      "view": "cycle",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-cycles",
+      "view": "intact",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-cycles",
+      "view": "harvest",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-cycles",
+      "view": "inputs",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-cycles",
+      "view": "web",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-adaptations",
+      "view": "layers",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-adaptations",
+      "view": "roots",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-adaptations",
+      "view": "photo",
+      "imageLoaded": true,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-adaptations",
+      "view": "drip",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-adaptations",
+      "view": "animals",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-benefits",
+      "view": "products",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-benefits",
+      "view": "harvest",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-benefits",
+      "view": "visitors",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-climate",
+      "view": "stress",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-climate",
+      "view": "impacts",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-climate",
+      "view": "feedback",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": true,
+      "viewport": 390,
+      "width": 296
+    },
+    {
+      "lesson": "geography.a.ecosystems.rainforest-climate",
+      "view": "limits",
+      "imageLoaded": null,
+      "overflowText": [],
+      "page": 390,
+      "playerVisible": false,
+      "viewport": 390,
+      "width": 296
+    }
+  ],
+  "prematureChallengeBlocked": true,
+  "wrongChallengeFeedback": true,
+  "viewResume": "Views compared: 3 / 3",
+  "practiceCorrection": true,
+  "checkLockedOnReload": true,
+  "failedCheck": "75% · Keep building\n\nCompletion needs all four stages and at least80% on Check. Review the explanations below.\n\n↻ Which pair links a biotic component with an abiotic condition?\n✓ Rain caught on leaves and evaporated before reaching soil is…\n✓ Why can a productive rainforest grow on nutrient-poor mineral soil?\n✓ Which statement best includes humans in a rainforest system?\nTry check again",
+  "keyboard": {
+    "afterSpace": "Play",
+    "afterEnter": "Pause"
+  },
+  "phoneIndependent": {
+    "graph": 300,
+    "page": 390,
+    "text": "NUTRIENT TRANSFERS · LABELLED MODEL\nBiomass\nLitter\nSoil\nA\nB\nC\nD\nArrows show direction; sizes are schematic\n\nA–D nutrient-flow diagram. Three stores and one outward arrow. Schematic relative sizes,not measured quantities or a food-web energy diagram.\n\nB\nD\nC"
+  },
+  "pathways": [
+    {
+      "pair": [
+        "Coasts",
+        "Rivers"
+      ],
+      "progress": "My progress\n56 / 56"
+    },
+    {
+      "pair": [
+        "Coasts",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress\n59 / 59"
+    },
+    {
+      "pair": [
+        "Rivers",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress\n60 / 60"
+    }
+  ],
+  "pathwayResume": "My progress\n60 / 60",
+  "console": []
+}

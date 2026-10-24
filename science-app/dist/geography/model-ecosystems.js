@@ -1,4 +1,4 @@
-import {worldPath} from './cyclone-map.js?v=20261023-ecosystems01';
+import {worldPath} from './cyclone-map.js?v=20261024-ecosystems02';
 const worldPoint=(lon,lat)=>({x:20+(lon+180)/360*400,y:65+(90-lat)/180*200});
 import {UK_PATH} from './uk-outline.js?v=20261023-geography01';
 export const ecoViews={

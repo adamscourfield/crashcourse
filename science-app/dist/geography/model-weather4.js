@@ -1,4 +1,4 @@
-import {rainfall,waterCases,endStorage} from './drought-data.js?v=20261023-ecosystems01';
+import {rainfall,waterCases,endStorage} from './drought-data.js?v=20261024-ecosystems02';
 export const weatherViews4={
  'weather-drought-causes':[['aridity','Aridity vs drought'],['lag','Rain to stored water'],['agriculture','Soil & crop demand'],['human','Dams & abstraction'],['forest','Vegetation pathways']],
  'weather-drought-patterns':[['descent','Subtropical descent'],['season','Moving rain belts'],['variability','Changing risk'],['rain','1990–2015 graph'],['table','Estimated annual values']],

@@ -9,8 +9,13 @@ geography.a.ecosystems.controls,Why ecosystems grow where they do,ecosystems,3.1
 geography.a.ecosystems.resources,What the biosphere provides,ecosystems,3.2a,implemented
 geography.a.ecosystems.uk-land,The UK’s terrestrial ecosystems,ecosystems,3.3a,implemented
 geography.a.ecosystems.uk-marine,The UK’s marine ecosystems,ecosystems,3.3b,implemented
-geography.a.ecosystems.3-4,Rainforest structure and adaptations,ecosystems,3.4,provisional_planned_split_after_statement_brief
-geography.a.ecosystems.3-5,Rainforest value threats and management,ecosystems,3.5,provisional_planned_split_after_statement_brief
+geography.a.ecosystems.rainforest-system,Inside the rainforest system,ecosystems,3.4a,implemented
+geography.a.ecosystems.rainforest-cycles,"Nutrients: stores, transfers and losses",ecosystems,3.4b,implemented
+geography.a.ecosystems.rainforest-adaptations,"Layers, biodiversity and adaptations",ecosystems,3.4c,implemented
+geography.a.ecosystems.rainforest-benefits,Rainforest goods and services,ecosystems,3.5a,implemented
+geography.a.ecosystems.rainforest-climate,Climate threats to rainforest life,ecosystems,3.5b,implemented
+geography.a.ecosystems.rainforest-deforestation,Why rainforest is cleared,ecosystems,3.5c,provisional_planned_precise_brief_and_named_case_pending
+geography.a.ecosystems.rainforest-management,Managing a named rainforest region,ecosystems,3.5d,provisional_planned_precise_brief_and_named_case_pending
 geography.a.ecosystems.3-6,Deciduous woodland characteristics,ecosystems,3.6,provisional_planned_split_after_statement_brief
 geography.a.ecosystems.3-7,Woodland value threats and management,ecosystems,3.7,provisional_planned_split_after_statement_brief
 geography.a.cities.4-1,Urbanisation patterns and causes,cities,4.1,provisional_planned_split_after_statement_brief
