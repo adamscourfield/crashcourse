@@ -1,0 +1,1634 @@
+{
+  "checked": "2026-10-26",
+  "hdi": {
+    "year": 2023,
+    "release": "Human Development Report 2025",
+    "source": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Composite_indices_complete_time_series.csv",
+    "sha256": "61ed82e5b66c88dfca8ff9fac775c63981ecab6a254862af97acacc41c143117",
+    "licence": "CC BY 3.0 IGO",
+    "countries": [
+      {
+        "code": "AFG",
+        "name": "Afghanistan",
+        "hdi": 0.496,
+        "rank": 181,
+        "group": "Low"
+      },
+      {
+        "code": "ALB",
+        "name": "Albania",
+        "hdi": 0.81,
+        "rank": 71,
+        "group": "Very High"
+      },
+      {
+        "code": "DZA",
+        "name": "Algeria",
+        "hdi": 0.763,
+        "rank": 96,
+        "group": "High"
+      },
+      {
+        "code": "AND",
+        "name": "Andorra",
+        "hdi": 0.913,
+        "rank": 32,
+        "group": "Very High"
+      },
+      {
+        "code": "AGO",
+        "name": "Angola",
+        "hdi": 0.616,
+        "rank": 148,
+        "group": "Medium"
+      },
+      {
+        "code": "ATG",
+        "name": "Antigua and Barbuda",
+        "hdi": 0.851,
+        "rank": 53,
+        "group": "Very High"
+      },
+      {
+        "code": "ARG",
+        "name": "Argentina",
+        "hdi": 0.865,
+        "rank": 47,
+        "group": "Very High"
+      },
+      {
+        "code": "ARM",
+        "name": "Armenia",
+        "hdi": 0.811,
+        "rank": 69,
+        "group": "Very High"
+      },
+      {
+        "code": "AUS",
+        "name": "Australia",
+        "hdi": 0.958,
+        "rank": 7,
+        "group": "Very High"
+      },
+      {
+        "code": "AUT",
+        "name": "Austria",
+        "hdi": 0.93,
+        "rank": 22,
+        "group": "Very High"
+      },
+      {
+        "code": "AZE",
+        "name": "Azerbaijan",
+        "hdi": 0.789,
+        "rank": 81,
+        "group": "High"
+      },
+      {
+        "code": "BHS",
+        "name": "Bahamas",
+        "hdi": 0.82,
+        "rank": 66,
+        "group": "Very High"
+      },
+      {
+        "code": "BHR",
+        "name": "Bahrain",
+        "hdi": 0.899,
+        "rank": 38,
+        "group": "Very High"
+      },
+      {
+        "code": "BGD",
+        "name": "Bangladesh",
+        "hdi": 0.685,
+        "rank": 130,
+        "group": "Medium"
+      },
+      {
+        "code": "BRB",
+        "name": "Barbados",
+        "hdi": 0.811,
+        "rank": 69,
+        "group": "Very High"
+      },
+      {
+        "code": "BLR",
+        "name": "Belarus",
+        "hdi": 0.824,
+        "rank": 65,
+        "group": "Very High"
+      },
+      {
+        "code": "BEL",
+        "name": "Belgium",
+        "hdi": 0.951,
+        "rank": 10,
+        "group": "Very High"
+      },
+      {
+        "code": "BLZ",
+        "name": "Belize",
+        "hdi": 0.721,
+        "rank": 115,
+        "group": "High"
+      },
+      {
+        "code": "BEN",
+        "name": "Benin",
+        "hdi": 0.515,
+        "rank": 173,
+        "group": "Low"
+      },
+      {
+        "code": "BTN",
+        "name": "Bhutan",
+        "hdi": 0.698,
+        "rank": 125,
+        "group": "Medium"
+      },
+      {
+        "code": "BOL",
+        "name": "Bolivia (Plurinational State of)",
+        "hdi": 0.733,
+        "rank": 108,
+        "group": "High"
+      },
+      {
+        "code": "BIH",
+        "name": "Bosnia and Herzegovina",
+        "hdi": 0.804,
+        "rank": 74,
+        "group": "Very High"
+      },
+      {
+        "code": "BWA",
+        "name": "Botswana",
+        "hdi": 0.731,
+        "rank": 111,
+        "group": "High"
+      },
+      {
+        "code": "BRA",
+        "name": "Brazil",
+        "hdi": 0.786,
+        "rank": 84,
+        "group": "High"
+      },
+      {
+        "code": "BRN",
+        "name": "Brunei Darussalam",
+        "hdi": 0.837,
+        "rank": 60,
+        "group": "Very High"
+      },
+      {
+        "code": "BGR",
+        "name": "Bulgaria",
+        "hdi": 0.845,
+        "rank": 55,
+        "group": "Very High"
+      },
+      {
+        "code": "BFA",
+        "name": "Burkina Faso",
+        "hdi": 0.459,
+        "rank": 186,
+        "group": "Low"
+      },
+      {
+        "code": "BDI",
+        "name": "Burundi",
+        "hdi": 0.439,
+        "rank": 187,
+        "group": "Low"
+      },
+      {
+        "code": "CPV",
+        "name": "Cabo Verde",
+        "hdi": 0.668,
+        "rank": 135,
+        "group": "Medium"
+      },
+      {
+        "code": "KHM",
+        "name": "Cambodia",
+        "hdi": 0.606,
+        "rank": 151,
+        "group": "Medium"
+      },
+      {
+        "code": "CMR",
+        "name": "Cameroon",
+        "hdi": 0.588,
+        "rank": 155,
+        "group": "Medium"
+      },
+      {
+        "code": "CAN",
+        "name": "Canada",
+        "hdi": 0.939,
+        "rank": 16,
+        "group": "Very High"
+      },
+      {
+        "code": "CAF",
+        "name": "Central African Republic",
+        "hdi": 0.414,
+        "rank": 191,
+        "group": "Low"
+      },
+      {
+        "code": "TCD",
+        "name": "Chad",
+        "hdi": 0.416,
+        "rank": 190,
+        "group": "Low"
+      },
+      {
+        "code": "CHL",
+        "name": "Chile",
+        "hdi": 0.878,
+        "rank": 45,
+        "group": "Very High"
+      },
+      {
+        "code": "CHN",
+        "name": "China",
+        "hdi": 0.797,
+        "rank": 78,
+        "group": "High"
+      },
+      {
+        "code": "COL",
+        "name": "Colombia",
+        "hdi": 0.788,
+        "rank": 83,
+        "group": "High"
+      },
+      {
+        "code": "COM",
+        "name": "Comoros",
+        "hdi": 0.603,
+        "rank": 152,
+        "group": "Medium"
+      },
+      {
+        "code": "COG",
+        "name": "Congo",
+        "hdi": 0.649,
+        "rank": 138,
+        "group": "Medium"
+      },
+      {
+        "code": "COD",
+        "name": "Congo (Democratic Republic of the)",
+        "hdi": 0.522,
+        "rank": 171,
+        "group": "Low"
+      },
+      {
+        "code": "CRI",
+        "name": "Costa Rica",
+        "hdi": 0.833,
+        "rank": 62,
+        "group": "Very High"
+      },
+      {
+        "code": "HRV",
+        "name": "Croatia",
+        "hdi": 0.889,
+        "rank": 41,
+        "group": "Very High"
+      },
+      {
+        "code": "CUB",
+        "name": "Cuba",
+        "hdi": 0.762,
+        "rank": 97,
+        "group": "High"
+      },
+      {
+        "code": "CYP",
+        "name": "Cyprus",
+        "hdi": 0.913,
+        "rank": 32,
+        "group": "Very High"
+      },
+      {
+        "code": "CZE",
+        "name": "Czechia",
+        "hdi": 0.915,
+        "rank": 29,
+        "group": "Very High"
+      },
+      {
+        "code": "CIV",
+        "name": "Côte d'Ivoire",
+        "hdi": 0.582,
+        "rank": 157,
+        "group": "Medium"
+      },
+      {
+        "code": "DNK",
+        "name": "Denmark",
+        "hdi": 0.962,
+        "rank": 4,
+        "group": "Very High"
+      },
+      {
+        "code": "DJI",
+        "name": "Djibouti",
+        "hdi": 0.513,
+        "rank": 175,
+        "group": "Low"
+      },
+      {
+        "code": "DMA",
+        "name": "Dominica",
+        "hdi": 0.761,
+        "rank": 98,
+        "group": "High"
+      },
+      {
+        "code": "DOM",
+        "name": "Dominican Republic",
+        "hdi": 0.776,
+        "rank": 89,
+        "group": "High"
+      },
+      {
+        "code": "ECU",
+        "name": "Ecuador",
+        "hdi": 0.777,
+        "rank": 88,
+        "group": "High"
+      },
+      {
+        "code": "EGY",
+        "name": "Egypt",
+        "hdi": 0.754,
+        "rank": 100,
+        "group": "High"
+      },
+      {
+        "code": "SLV",
+        "name": "El Salvador",
+        "hdi": 0.678,
+        "rank": 132,
+        "group": "Medium"
+      },
+      {
+        "code": "GNQ",
+        "name": "Equatorial Guinea",
+        "hdi": 0.674,
+        "rank": 133,
+        "group": "Medium"
+      },
+      {
+        "code": "ERI",
+        "name": "Eritrea",
+        "hdi": 0.503,
+        "rank": 178,
+        "group": "Low"
+      },
+      {
+        "code": "EST",
+        "name": "Estonia",
+        "hdi": 0.905,
+        "rank": 36,
+        "group": "Very High"
+      },
+      {
+        "code": "SWZ",
+        "name": "Eswatini (Kingdom of)",
+        "hdi": 0.695,
+        "rank": 126,
+        "group": "Medium"
+      },
+      {
+        "code": "ETH",
+        "name": "Ethiopia",
+        "hdi": 0.497,
+        "rank": 180,
+        "group": "Low"
+      },
+      {
+        "code": "FJI",
+        "name": "Fiji",
+        "hdi": 0.731,
+        "rank": 111,
+        "group": "High"
+      },
+      {
+        "code": "FIN",
+        "name": "Finland",
+        "hdi": 0.948,
+        "rank": 12,
+        "group": "Very High"
+      },
+      {
+        "code": "FRA",
+        "name": "France",
+        "hdi": 0.92,
+        "rank": 26,
+        "group": "Very High"
+      },
+      {
+        "code": "GAB",
+        "name": "Gabon",
+        "hdi": 0.733,
+        "rank": 108,
+        "group": "High"
+      },
+      {
+        "code": "GMB",
+        "name": "Gambia",
+        "hdi": 0.524,
+        "rank": 170,
+        "group": "Low"
+      },
+      {
+        "code": "GEO",
+        "name": "Georgia",
+        "hdi": 0.844,
+        "rank": 57,
+        "group": "Very High"
+      },
+      {
+        "code": "DEU",
+        "name": "Germany",
+        "hdi": 0.959,
+        "rank": 5,
+        "group": "Very High"
+      },
+      {
+        "code": "GHA",
+        "name": "Ghana",
+        "hdi": 0.628,
+        "rank": 143,
+        "group": "Medium"
+      },
+      {
+        "code": "GRC",
+        "name": "Greece",
+        "hdi": 0.908,
+        "rank": 34,
+        "group": "Very High"
+      },
+      {
+        "code": "GRD",
+        "name": "Grenada",
+        "hdi": 0.791,
+        "rank": 80,
+        "group": "High"
+      },
+      {
+        "code": "GTM",
+        "name": "Guatemala",
+        "hdi": 0.662,
+        "rank": 137,
+        "group": "Medium"
+      },
+      {
+        "code": "GIN",
+        "name": "Guinea",
+        "hdi": 0.5,
+        "rank": 179,
+        "group": "Low"
+      },
+      {
+        "code": "GNB",
+        "name": "Guinea-Bissau",
+        "hdi": 0.514,
+        "rank": 174,
+        "group": "Low"
+      },
+      {
+        "code": "GUY",
+        "name": "Guyana",
+        "hdi": 0.776,
+        "rank": 89,
+        "group": "High"
+      },
+      {
+        "code": "HTI",
+        "name": "Haiti",
+        "hdi": 0.554,
+        "rank": 166,
+        "group": "Medium"
+      },
+      {
+        "code": "HND",
+        "name": "Honduras",
+        "hdi": 0.645,
+        "rank": 139,
+        "group": "Medium"
+      },
+      {
+        "code": "HKG",
+        "name": "Hong Kong, China (SAR)",
+        "hdi": 0.955,
+        "rank": 8,
+        "group": "Very High"
+      },
+      {
+        "code": "HUN",
+        "name": "Hungary",
+        "hdi": 0.87,
+        "rank": 46,
+        "group": "Very High"
+      },
+      {
+        "code": "ISL",
+        "name": "Iceland",
+        "hdi": 0.972,
+        "rank": 1,
+        "group": "Very High"
+      },
+      {
+        "code": "IND",
+        "name": "India",
+        "hdi": 0.685,
+        "rank": 130,
+        "group": "Medium"
+      },
+      {
+        "code": "IDN",
+        "name": "Indonesia",
+        "hdi": 0.728,
+        "rank": 113,
+        "group": "High"
+      },
+      {
+        "code": "IRN",
+        "name": "Iran (Islamic Republic of)",
+        "hdi": 0.799,
+        "rank": 75,
+        "group": "High"
+      },
+      {
+        "code": "IRQ",
+        "name": "Iraq",
+        "hdi": 0.695,
+        "rank": 126,
+        "group": "Medium"
+      },
+      {
+        "code": "IRL",
+        "name": "Ireland",
+        "hdi": 0.949,
+        "rank": 11,
+        "group": "Very High"
+      },
+      {
+        "code": "ISR",
+        "name": "Israel",
+        "hdi": 0.919,
+        "rank": 27,
+        "group": "Very High"
+      },
+      {
+        "code": "ITA",
+        "name": "Italy",
+        "hdi": 0.915,
+        "rank": 29,
+        "group": "Very High"
+      },
+      {
+        "code": "JAM",
+        "name": "Jamaica",
+        "hdi": 0.72,
+        "rank": 117,
+        "group": "High"
+      },
+      {
+        "code": "JPN",
+        "name": "Japan",
+        "hdi": 0.925,
+        "rank": 23,
+        "group": "Very High"
+      },
+      {
+        "code": "JOR",
+        "name": "Jordan",
+        "hdi": 0.754,
+        "rank": 100,
+        "group": "High"
+      },
+      {
+        "code": "KAZ",
+        "name": "Kazakhstan",
+        "hdi": 0.837,
+        "rank": 60,
+        "group": "Very High"
+      },
+      {
+        "code": "KEN",
+        "name": "Kenya",
+        "hdi": 0.628,
+        "rank": 143,
+        "group": "Medium"
+      },
+      {
+        "code": "KIR",
+        "name": "Kiribati",
+        "hdi": 0.644,
+        "rank": 140,
+        "group": "Medium"
+      },
+      {
+        "code": "KOR",
+        "name": "Korea (Republic of)",
+        "hdi": 0.937,
+        "rank": 20,
+        "group": "Very High"
+      },
+      {
+        "code": "KWT",
+        "name": "Kuwait",
+        "hdi": 0.852,
+        "rank": 52,
+        "group": "Very High"
+      },
+      {
+        "code": "KGZ",
+        "name": "Kyrgyzstan",
+        "hdi": 0.72,
+        "rank": 117,
+        "group": "High"
+      },
+      {
+        "code": "LAO",
+        "name": "Lao People's Democratic Republic",
+        "hdi": 0.617,
+        "rank": 147,
+        "group": "Medium"
+      },
+      {
+        "code": "LVA",
+        "name": "Latvia",
+        "hdi": 0.889,
+        "rank": 41,
+        "group": "Very High"
+      },
+      {
+        "code": "LBN",
+        "name": "Lebanon",
+        "hdi": 0.752,
+        "rank": 102,
+        "group": "High"
+      },
+      {
+        "code": "LSO",
+        "name": "Lesotho",
+        "hdi": 0.55,
+        "rank": 167,
+        "group": "Medium"
+      },
+      {
+        "code": "LBR",
+        "name": "Liberia",
+        "hdi": 0.51,
+        "rank": 177,
+        "group": "Low"
+      },
+      {
+        "code": "LBY",
+        "name": "Libya",
+        "hdi": 0.721,
+        "rank": 115,
+        "group": "High"
+      },
+      {
+        "code": "LIE",
+        "name": "Liechtenstein",
+        "hdi": 0.938,
+        "rank": 17,
+        "group": "Very High"
+      },
+      {
+        "code": "LTU",
+        "name": "Lithuania",
+        "hdi": 0.895,
+        "rank": 39,
+        "group": "Very High"
+      },
+      {
+        "code": "LUX",
+        "name": "Luxembourg",
+        "hdi": 0.922,
+        "rank": 25,
+        "group": "Very High"
+      },
+      {
+        "code": "MDG",
+        "name": "Madagascar",
+        "hdi": 0.487,
+        "rank": 183,
+        "group": "Low"
+      },
+      {
+        "code": "MWI",
+        "name": "Malawi",
+        "hdi": 0.517,
+        "rank": 172,
+        "group": "Low"
+      },
+      {
+        "code": "MYS",
+        "name": "Malaysia",
+        "hdi": 0.819,
+        "rank": 67,
+        "group": "Very High"
+      },
+      {
+        "code": "MDV",
+        "name": "Maldives",
+        "hdi": 0.766,
+        "rank": 93,
+        "group": "High"
+      },
+      {
+        "code": "MLI",
+        "name": "Mali",
+        "hdi": 0.419,
+        "rank": 188,
+        "group": "Low"
+      },
+      {
+        "code": "MLT",
+        "name": "Malta",
+        "hdi": 0.924,
+        "rank": 24,
+        "group": "Very High"
+      },
+      {
+        "code": "MHL",
+        "name": "Marshall Islands",
+        "hdi": 0.733,
+        "rank": 108,
+        "group": "High"
+      },
+      {
+        "code": "MRT",
+        "name": "Mauritania",
+        "hdi": 0.563,
+        "rank": 163,
+        "group": "Medium"
+      },
+      {
+        "code": "MUS",
+        "name": "Mauritius",
+        "hdi": 0.806,
+        "rank": 73,
+        "group": "Very High"
+      },
+      {
+        "code": "MEX",
+        "name": "Mexico",
+        "hdi": 0.789,
+        "rank": 81,
+        "group": "High"
+      },
+      {
+        "code": "FSM",
+        "name": "Micronesia (Federated States of)",
+        "hdi": 0.615,
+        "rank": 149,
+        "group": "Medium"
+      },
+      {
+        "code": "MDA",
+        "name": "Moldova (Republic of)",
+        "hdi": 0.785,
+        "rank": 86,
+        "group": "High"
+      },
+      {
+        "code": "MNG",
+        "name": "Mongolia",
+        "hdi": 0.747,
+        "rank": 104,
+        "group": "High"
+      },
+      {
+        "code": "MNE",
+        "name": "Montenegro",
+        "hdi": 0.862,
+        "rank": 48,
+        "group": "Very High"
+      },
+      {
+        "code": "MAR",
+        "name": "Morocco",
+        "hdi": 0.71,
+        "rank": 120,
+        "group": "High"
+      },
+      {
+        "code": "MOZ",
+        "name": "Mozambique",
+        "hdi": 0.493,
+        "rank": 182,
+        "group": "Low"
+      },
+      {
+        "code": "MMR",
+        "name": "Myanmar",
+        "hdi": 0.609,
+        "rank": 150,
+        "group": "Medium"
+      },
+      {
+        "code": "NAM",
+        "name": "Namibia",
+        "hdi": 0.665,
+        "rank": 136,
+        "group": "Medium"
+      },
+      {
+        "code": "NRU",
+        "name": "Nauru",
+        "hdi": 0.703,
+        "rank": 124,
+        "group": "High"
+      },
+      {
+        "code": "NPL",
+        "name": "Nepal",
+        "hdi": 0.622,
+        "rank": 145,
+        "group": "Medium"
+      },
+      {
+        "code": "NLD",
+        "name": "Netherlands",
+        "hdi": 0.955,
+        "rank": 8,
+        "group": "Very High"
+      },
+      {
+        "code": "NZL",
+        "name": "New Zealand",
+        "hdi": 0.938,
+        "rank": 17,
+        "group": "Very High"
+      },
+      {
+        "code": "NIC",
+        "name": "Nicaragua",
+        "hdi": 0.706,
+        "rank": 123,
+        "group": "High"
+      },
+      {
+        "code": "NER",
+        "name": "Niger",
+        "hdi": 0.419,
+        "rank": 188,
+        "group": "Low"
+      },
+      {
+        "code": "NGA",
+        "name": "Nigeria",
+        "hdi": 0.56,
+        "rank": 164,
+        "group": "Medium"
+      },
+      {
+        "code": "MKD",
+        "name": "North Macedonia",
+        "hdi": 0.815,
+        "rank": 68,
+        "group": "Very High"
+      },
+      {
+        "code": "NOR",
+        "name": "Norway",
+        "hdi": 0.97,
+        "rank": 2,
+        "group": "Very High"
+      },
+      {
+        "code": "OMN",
+        "name": "Oman",
+        "hdi": 0.858,
+        "rank": 50,
+        "group": "Very High"
+      },
+      {
+        "code": "PAK",
+        "name": "Pakistan",
+        "hdi": 0.544,
+        "rank": 168,
+        "group": "Low"
+      },
+      {
+        "code": "PLW",
+        "name": "Palau",
+        "hdi": 0.786,
+        "rank": 84,
+        "group": "High"
+      },
+      {
+        "code": "PSE",
+        "name": "Palestine, State of",
+        "hdi": 0.674,
+        "rank": 133,
+        "group": "Medium"
+      },
+      {
+        "code": "PAN",
+        "name": "Panama",
+        "hdi": 0.839,
+        "rank": 59,
+        "group": "Very High"
+      },
+      {
+        "code": "PNG",
+        "name": "Papua New Guinea",
+        "hdi": 0.576,
+        "rank": 160,
+        "group": "Medium"
+      },
+      {
+        "code": "PRY",
+        "name": "Paraguay",
+        "hdi": 0.756,
+        "rank": 99,
+        "group": "High"
+      },
+      {
+        "code": "PER",
+        "name": "Peru",
+        "hdi": 0.794,
+        "rank": 79,
+        "group": "High"
+      },
+      {
+        "code": "PHL",
+        "name": "Philippines",
+        "hdi": 0.72,
+        "rank": 117,
+        "group": "High"
+      },
+      {
+        "code": "POL",
+        "name": "Poland",
+        "hdi": 0.906,
+        "rank": 35,
+        "group": "Very High"
+      },
+      {
+        "code": "PRT",
+        "name": "Portugal",
+        "hdi": 0.89,
+        "rank": 40,
+        "group": "Very High"
+      },
+      {
+        "code": "QAT",
+        "name": "Qatar",
+        "hdi": 0.886,
+        "rank": 43,
+        "group": "Very High"
+      },
+      {
+        "code": "ROU",
+        "name": "Romania",
+        "hdi": 0.845,
+        "rank": 55,
+        "group": "Very High"
+      },
+      {
+        "code": "RUS",
+        "name": "Russian Federation",
+        "hdi": 0.832,
+        "rank": 64,
+        "group": "Very High"
+      },
+      {
+        "code": "RWA",
+        "name": "Rwanda",
+        "hdi": 0.578,
+        "rank": 159,
+        "group": "Medium"
+      },
+      {
+        "code": "KNA",
+        "name": "Saint Kitts and Nevis",
+        "hdi": 0.84,
+        "rank": 58,
+        "group": "Very High"
+      },
+      {
+        "code": "LCA",
+        "name": "Saint Lucia",
+        "hdi": 0.748,
+        "rank": 103,
+        "group": "High"
+      },
+      {
+        "code": "VCT",
+        "name": "Saint Vincent and the Grenadines",
+        "hdi": 0.798,
+        "rank": 76,
+        "group": "High"
+      },
+      {
+        "code": "WSM",
+        "name": "Samoa",
+        "hdi": 0.708,
+        "rank": 122,
+        "group": "High"
+      },
+      {
+        "code": "SMR",
+        "name": "San Marino",
+        "hdi": 0.915,
+        "rank": 29,
+        "group": "Very High"
+      },
+      {
+        "code": "STP",
+        "name": "Sao Tome and Principe",
+        "hdi": 0.637,
+        "rank": 141,
+        "group": "Medium"
+      },
+      {
+        "code": "SAU",
+        "name": "Saudi Arabia",
+        "hdi": 0.9,
+        "rank": 37,
+        "group": "Very High"
+      },
+      {
+        "code": "SEN",
+        "name": "Senegal",
+        "hdi": 0.53,
+        "rank": 169,
+        "group": "Low"
+      },
+      {
+        "code": "SRB",
+        "name": "Serbia",
+        "hdi": 0.833,
+        "rank": 62,
+        "group": "Very High"
+      },
+      {
+        "code": "SYC",
+        "name": "Seychelles",
+        "hdi": 0.848,
+        "rank": 54,
+        "group": "Very High"
+      },
+      {
+        "code": "SLE",
+        "name": "Sierra Leone",
+        "hdi": 0.467,
+        "rank": 185,
+        "group": "Low"
+      },
+      {
+        "code": "SGP",
+        "name": "Singapore",
+        "hdi": 0.946,
+        "rank": 13,
+        "group": "Very High"
+      },
+      {
+        "code": "SVK",
+        "name": "Slovakia",
+        "hdi": 0.88,
+        "rank": 44,
+        "group": "Very High"
+      },
+      {
+        "code": "SVN",
+        "name": "Slovenia",
+        "hdi": 0.931,
+        "rank": 21,
+        "group": "Very High"
+      },
+      {
+        "code": "SLB",
+        "name": "Solomon Islands",
+        "hdi": 0.584,
+        "rank": 156,
+        "group": "Medium"
+      },
+      {
+        "code": "SOM",
+        "name": "Somalia",
+        "hdi": 0.404,
+        "rank": 192,
+        "group": "Low"
+      },
+      {
+        "code": "ZAF",
+        "name": "South Africa",
+        "hdi": 0.741,
+        "rank": 106,
+        "group": "High"
+      },
+      {
+        "code": "SSD",
+        "name": "South Sudan",
+        "hdi": 0.388,
+        "rank": 193,
+        "group": "Low"
+      },
+      {
+        "code": "ESP",
+        "name": "Spain",
+        "hdi": 0.918,
+        "rank": 28,
+        "group": "Very High"
+      },
+      {
+        "code": "LKA",
+        "name": "Sri Lanka",
+        "hdi": 0.776,
+        "rank": 89,
+        "group": "High"
+      },
+      {
+        "code": "SDN",
+        "name": "Sudan",
+        "hdi": 0.511,
+        "rank": 176,
+        "group": "Low"
+      },
+      {
+        "code": "SUR",
+        "name": "Suriname",
+        "hdi": 0.722,
+        "rank": 114,
+        "group": "High"
+      },
+      {
+        "code": "SWE",
+        "name": "Sweden",
+        "hdi": 0.959,
+        "rank": 5,
+        "group": "Very High"
+      },
+      {
+        "code": "CHE",
+        "name": "Switzerland",
+        "hdi": 0.97,
+        "rank": 2,
+        "group": "Very High"
+      },
+      {
+        "code": "SYR",
+        "name": "Syrian Arab Republic",
+        "hdi": 0.564,
+        "rank": 162,
+        "group": "Medium"
+      },
+      {
+        "code": "TJK",
+        "name": "Tajikistan",
+        "hdi": 0.691,
+        "rank": 128,
+        "group": "Medium"
+      },
+      {
+        "code": "TZA",
+        "name": "Tanzania (United Republic of)",
+        "hdi": 0.555,
+        "rank": 165,
+        "group": "Medium"
+      },
+      {
+        "code": "THA",
+        "name": "Thailand",
+        "hdi": 0.798,
+        "rank": 76,
+        "group": "High"
+      },
+      {
+        "code": "TLS",
+        "name": "Timor-Leste",
+        "hdi": 0.634,
+        "rank": 142,
+        "group": "Medium"
+      },
+      {
+        "code": "TGO",
+        "name": "Togo",
+        "hdi": 0.571,
+        "rank": 161,
+        "group": "Medium"
+      },
+      {
+        "code": "TON",
+        "name": "Tonga",
+        "hdi": 0.769,
+        "rank": 92,
+        "group": "High"
+      },
+      {
+        "code": "TTO",
+        "name": "Trinidad and Tobago",
+        "hdi": 0.807,
+        "rank": 72,
+        "group": "Very High"
+      },
+      {
+        "code": "TUN",
+        "name": "Tunisia",
+        "hdi": 0.746,
+        "rank": 105,
+        "group": "High"
+      },
+      {
+        "code": "TKM",
+        "name": "Turkmenistan",
+        "hdi": 0.764,
+        "rank": 95,
+        "group": "High"
+      },
+      {
+        "code": "TUV",
+        "name": "Tuvalu",
+        "hdi": 0.689,
+        "rank": 129,
+        "group": "Medium"
+      },
+      {
+        "code": "TUR",
+        "name": "Türkiye",
+        "hdi": 0.853,
+        "rank": 51,
+        "group": "Very High"
+      },
+      {
+        "code": "UGA",
+        "name": "Uganda",
+        "hdi": 0.582,
+        "rank": 157,
+        "group": "Medium"
+      },
+      {
+        "code": "UKR",
+        "name": "Ukraine",
+        "hdi": 0.779,
+        "rank": 87,
+        "group": "High"
+      },
+      {
+        "code": "ARE",
+        "name": "United Arab Emirates",
+        "hdi": 0.94,
+        "rank": 15,
+        "group": "Very High"
+      },
+      {
+        "code": "GBR",
+        "name": "United Kingdom",
+        "hdi": 0.946,
+        "rank": 13,
+        "group": "Very High"
+      },
+      {
+        "code": "USA",
+        "name": "United States",
+        "hdi": 0.938,
+        "rank": 17,
+        "group": "Very High"
+      },
+      {
+        "code": "URY",
+        "name": "Uruguay",
+        "hdi": 0.862,
+        "rank": 48,
+        "group": "Very High"
+      },
+      {
+        "code": "UZB",
+        "name": "Uzbekistan",
+        "hdi": 0.74,
+        "rank": 107,
+        "group": "High"
+      },
+      {
+        "code": "VUT",
+        "name": "Vanuatu",
+        "hdi": 0.621,
+        "rank": 146,
+        "group": "Medium"
+      },
+      {
+        "code": "VEN",
+        "name": "Venezuela (Bolivarian Republic of)",
+        "hdi": 0.709,
+        "rank": 121,
+        "group": "High"
+      },
+      {
+        "code": "VNM",
+        "name": "Viet Nam",
+        "hdi": 0.766,
+        "rank": 93,
+        "group": "High"
+      },
+      {
+        "code": "YEM",
+        "name": "Yemen",
+        "hdi": 0.47,
+        "rank": 184,
+        "group": "Low"
+      },
+      {
+        "code": "ZMB",
+        "name": "Zambia",
+        "hdi": 0.595,
+        "rank": 154,
+        "group": "Medium"
+      },
+      {
+        "code": "ZWE",
+        "name": "Zimbabwe",
+        "hdi": 0.598,
+        "rank": 153,
+        "group": "Medium"
+      }
+    ]
+  },
+  "gdp": {
+    "year": 2023,
+    "indicator": "NY.GDP.PCAP.PP.CD",
+    "unit": "current international dollars per person (PPP)",
+    "source": "https://api.worldbank.org/v2/country/NOR;QAT;GBR;IND;BRA;NER/indicator/NY.GDP.PCAP.PP.CD?date=2023&format=json&per_page=100",
+    "response": [
+      {
+        "page": 1,
+        "pages": 1,
+        "per_page": 100,
+        "total": 6,
+        "sourceid": "2",
+        "lastupdated": "2026-10-08"
+      },
+      [
+        {
+          "indicator": {
+            "id": "NY.GDP.PCAP.PP.CD",
+            "value": "GDP per capita, PPP (current international $)"
+          },
+          "country": {
+            "id": "BR",
+            "value": "Brazil"
+          },
+          "countryiso3code": "BRA",
+          "date": "2023",
+          "value": 21193.0721417478,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 1
+        },
+        {
+          "indicator": {
+            "id": "NY.GDP.PCAP.PP.CD",
+            "value": "GDP per capita, PPP (current international $)"
+          },
+          "country": {
+            "id": "GB",
+            "value": "United Kingdom"
+          },
+          "countryiso3code": "GBR",
+          "date": "2023",
+          "value": 60786.7193353069,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 1
+        },
+        {
+          "indicator": {
+            "id": "NY.GDP.PCAP.PP.CD",
+            "value": "GDP per capita, PPP (current international $)"
+          },
+          "country": {
+            "id": "IN",
+            "value": "India"
+          },
+          "countryiso3code": "IND",
+          "date": "2023",
+          "value": 9853.04309264591,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 1
+        },
+        {
+          "indicator": {
+            "id": "NY.GDP.PCAP.PP.CD",
+            "value": "GDP per capita, PPP (current international $)"
+          },
+          "country": {
+            "id": "NE",
+            "value": "Niger"
+          },
+          "countryiso3code": "NER",
+          "date": "2023",
+          "value": 1902.69710752042,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 1
+        },
+        {
+          "indicator": {
+            "id": "NY.GDP.PCAP.PP.CD",
+            "value": "GDP per capita, PPP (current international $)"
+          },
+          "country": {
+            "id": "NO",
+            "value": "Norway"
+          },
+          "countryiso3code": "NOR",
+          "date": "2023",
+          "value": 107767.977198972,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 1
+        },
+        {
+          "indicator": {
+            "id": "NY.GDP.PCAP.PP.CD",
+            "value": "GDP per capita, PPP (current international $)"
+          },
+          "country": {
+            "id": "QA",
+            "value": "Qatar"
+          },
+          "countryiso3code": "QAT",
+          "date": "2023",
+          "value": 129024.806992334,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 1
+        }
+      ]
+    ],
+    "metadata": [
+      {
+        "page": 1,
+        "pages": 1,
+        "per_page": "50",
+        "total": 1
+      },
+      [
+        {
+          "id": "NY.GDP.PCAP.PP.CD",
+          "name": "GDP per capita, PPP (current international $)",
+          "unit": "",
+          "source": {
+            "id": "2",
+            "value": "World Development Indicators"
+          },
+          "sourceNote": "This indicator provides values for gross domestic product (GDP) per person expressed in current international dollars, converted by purchasing power parities (PPPs). PPPs account for the different price levels across countries and thus PPP-based comparisons of economic output are more appropriate for comparing the output of economies and the average material well-being of their inhabitants than exchange-rate based comparisons.  \n\nGross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This series has been linked to produce a consistent time series to counteract breaks in series over time due to changes in base years, source data and methodologies. Thus, it may not be comparable with other national accounts series in the database for historical years. The core indicator has been divided by the general population to achieve a per capita estimate. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. The PPP conversion factor is a currency conversion factor and a spatial price deflator. PPPs convert different currencies to a common currency and, in the process of conversion, equalize their purchasing power by eliminating the differences in price levels between countries, thereby allowing volume or output comparisons of GDP and its expenditure components.",
+          "sourceOrganization": "International Comparison Program (ICP), World Bank (WB), uri: https://www.worldbank.org/en/programs/icp/data, note: This information is for ICP’s PPPs utilized in WDI, publisher: International Comparison Program (ICP), date accessed: May 30, 2024, date published: May 30, 2024;\nThe Eurostat PPP Programme, Eurostat (ESTAT), uri: https://ec.europa.eu/eurostat/databrowser/explore/all/all_themes, publisher: Eurostat;\nThe OECD PPP Programme, Organisation for Economic Co-operation and Development (OECD), uri: https://data-explorer.oecd.org/, publisher: OECD;\nStaff estimates, World Bank (WB);\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nWorld Economic Outlook database, International Monetary Fund (IMF)",
+          "topics": [
+            {
+              "id": "3",
+              "value": "Economy & Growth"
+            }
+          ]
+        }
+      ]
+    ],
+    "selected": [
+      {
+        "code": "BRA",
+        "name": "Brazil",
+        "gdp": 21193.0721417478,
+        "hdi": 0.786
+      },
+      {
+        "code": "GBR",
+        "name": "United Kingdom",
+        "gdp": 60786.7193353069,
+        "hdi": 0.946
+      },
+      {
+        "code": "IND",
+        "name": "India",
+        "gdp": 9853.04309264591,
+        "hdi": 0.685
+      },
+      {
+        "code": "NER",
+        "name": "Niger",
+        "gdp": 1902.69710752042,
+        "hdi": 0.419
+      },
+      {
+        "code": "NOR",
+        "name": "Norway",
+        "gdp": 107767.977198972,
+        "hdi": 0.97
+      },
+      {
+        "code": "QAT",
+        "name": "Qatar",
+        "gdp": 129024.806992334,
+        "hdi": 0.886
+      }
+    ],
+    "licence": "CC BY 4.0"
+  },
+  "uk": {
+    "year": 2024,
+    "released": "2026-08-19",
+    "provisional": true,
+    "measure": "Gross disposable household income per head at current market prices",
+    "unit": "GBP per person",
+    "source": "https://www.ons.gov.uk/economy/regionalaccounts/grossdisposablehouseholdincome/bulletins/regionalgrossdisposablehouseholdincomegdhi/1997to2024",
+    "regions": [
+      {
+        "name": "United Kingdom",
+        "value": 25965
+      },
+      {
+        "name": "North East",
+        "value": 20562
+      },
+      {
+        "name": "North West",
+        "value": 22523
+      },
+      {
+        "name": "Yorkshire and The Humber",
+        "value": 21913
+      },
+      {
+        "name": "East Midlands",
+        "value": 22761
+      },
+      {
+        "name": "West Midlands",
+        "value": 22064
+      },
+      {
+        "name": "East of England",
+        "value": 26795
+      },
+      {
+        "name": "London",
+        "value": 36487
+      },
+      {
+        "name": "South East",
+        "value": 29577
+      },
+      {
+        "name": "South West",
+        "value": 25924
+      },
+      {
+        "name": "Wales",
+        "value": 21469
+      },
+      {
+        "name": "Scotland",
+        "value": 24283
+      },
+      {
+        "name": "Northern Ireland",
+        "value": 22258
+      }
+    ],
+    "licence": "Open Government Licence v3.0"
+  },
+  "cpi": {
+    "year": 2025,
+    "released": "2026-02-10",
+    "source": "https://www.transparency.org/en/cpi/2025",
+    "measure": "Perceived public-sector corruption;0 highly corrupt,100 very clean;not percentage of corrupt residents",
+    "countries": [
+      {
+        "code": "NOR",
+        "name": "Norway",
+        "score": 81
+      },
+      {
+        "code": "GBR",
+        "name": "UK",
+        "score": 70
+      },
+      {
+        "code": "QAT",
+        "name": "Qatar",
+        "score": 58
+      },
+      {
+        "code": "IND",
+        "name": "India",
+        "score": 39
+      }
+    ]
+  }
+}

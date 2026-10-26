@@ -1,0 +1,218 @@
+{
+  "date": "2026-10-26",
+  "journeys": [
+    {
+      "id": "geography.a.development.definitions",
+      "result": "100% · Lesson complete",
+      "wrongPaths": "premature challenge; wrong challenge; wrong practice/reload; independent lock/reload;75%→100%retake",
+      "viewsReload": "4/4retained",
+      "keyboard": "Space pause;Enter resume;Loop default checked"
+    },
+    {
+      "id": "geography.a.development.factors",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.development.measures",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.development.patterns",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.development.causes",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "geography.a.development.definitions",
+      "view": "output",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.definitions",
+      "view": "capabilities",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.definitions",
+      "view": "voice",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.definitions",
+      "view": "bridge",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.factors",
+      "view": "security",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.factors",
+      "view": "technology",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.factors",
+      "view": "inclusion",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.factors",
+      "view": "opportunity",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.measures",
+      "view": "gdp",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.measures",
+      "view": "hdi",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.measures",
+      "view": "inequality",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.measures",
+      "view": "cpi",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.patterns",
+      "view": "world",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.patterns",
+      "view": "countries",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.patterns",
+      "view": "within",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.patterns",
+      "view": "uk",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.causes",
+      "view": "physical",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.causes",
+      "view": "history",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.causes",
+      "view": "economy",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.causes",
+      "view": "compare",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    }
+  ],
+  "pathways": [
+    {
+      "pair": "coasts+rivers",
+      "progress": "My progress: 96 of 96 lessons completed"
+    },
+    {
+      "pair": "coasts+glaciers",
+      "progress": "My progress: 99 of 99 lessons completed"
+    },
+    {
+      "pair": "rivers+glaciers",
+      "progress": "My progress: 100 of 100 lessons completed"
+    }
+  ],
+  "notes": [
+    {
+      "independentPairTable": {
+        "body": 300,
+        "page": 390,
+        "table": 300
+      },
+      "cpiChart": {
+        "body": 300,
+        "page": 390,
+        "svg": 299.9921875
+      },
+      "finalCpiRetake": "100% · Lesson complete"
+    },
+    {
+      "worldBounds": {
+        "body": 300,
+        "page": 390,
+        "svg": 299.9921875
+      },
+      "ukBounds": {
+        "body": 300,
+        "page": 390,
+        "svg": 299.9921875
+      },
+      "ukTable": {
+        "page": 390,
+        "table": 300
+      },
+      "retake": "100%"
+    },
+    "Seven eligible course-map links on a two-landscape pathway (eight authoring topics); five Global development lesson rows with topic-scoped position. All three pathways preserve prior synthetic progress; original rivers+glaciers restored. Reduced-motion paused start retained in shared code, not separately emulated."
+  ],
+  "console": []
+}
