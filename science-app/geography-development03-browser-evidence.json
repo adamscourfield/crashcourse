@@ -1,0 +1,254 @@
+{
+  "batch": "development03",
+  "journeys": [
+    {
+      "lesson": "geography.a.development.india-context",
+      "result": "100% \u00b7 Lesson complete"
+    },
+    {
+      "lesson": "geography.a.development.india-regions",
+      "result": "100% \u00b7 Lesson complete"
+    },
+    {
+      "lesson": "geography.a.development.india-sectors",
+      "result": "100% \u00b7 Lesson complete"
+    },
+    {
+      "lesson": "geography.a.development.india-trade-aid",
+      "result": "100% \u00b7 Lesson complete"
+    },
+    {
+      "lesson": "geography.a.development.india-investment",
+      "result": "100% \u00b7 Lesson complete"
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "geography.a.development.india-context",
+      "view": "Institutions and diversity",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-context",
+      "view": "Access to opportunity",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-context",
+      "view": "Seasonal water",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-context",
+      "view": "Regional and global links",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-regions",
+      "view": "Concentrated advantage",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-regions",
+      "view": "Compare state evidence",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-regions",
+      "view": "Spread and backwash",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-regions",
+      "view": "Look within regions",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-sectors",
+      "view": "Four connected sectors",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-sectors",
+      "view": "Compare output shares",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-sectors",
+      "view": "Follow the supply chain",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-sectors",
+      "view": "Weigh gains and costs",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-trade-aid",
+      "view": "Trade in both directions",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-trade-aid",
+      "view": "Proportional export flows",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-trade-aid",
+      "view": "Goods and services",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-trade-aid",
+      "view": "Development partnerships",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-investment",
+      "view": "Changing roles",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-investment",
+      "view": "Public spending plans",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-investment",
+      "view": "Networks and firms",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-investment",
+      "view": "Follow local spending",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    }
+  ],
+  "errors": [],
+  "gate": "premature Continue blocked",
+  "wrongChallenge": "retry feedback visible",
+  "defaultMotion": "Pause visible and Loop checked",
+  "viewResume": "4/4 after reload",
+  "keyboard": "Space pause, Enter play",
+  "practiceResume": "wrong feedback retained",
+  "independentResume": "first answer disabled after reload",
+  "remediation": "75% Keep building",
+  "neutralEvidence": [
+    {
+      "kind": "states",
+      "body": 300,
+      "page": 390,
+      "table": "expanded and readable"
+    },
+    {
+      "kind": "sectors",
+      "body": 300,
+      "page": 390,
+      "table": "expanded; chart contrast improved on white question panel"
+    },
+    {
+      "kind": "flows",
+      "body": 300,
+      "page": 390,
+      "table": "expanded; proportional values verified"
+    },
+    {
+      "kind": "exports",
+      "body": 300,
+      "page": 390
+    },
+    {
+      "kind": "capex",
+      "body": 300,
+      "page": 390,
+      "table": "expanded"
+    }
+  ],
+  "pathways": [
+    {
+      "landscapes": [
+        "Coasts",
+        "Rivers"
+      ],
+      "progress": "My progress: 106 of 106 lessons completed"
+    },
+    {
+      "landscapes": [
+        "Coasts",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 109 of 109 lessons completed"
+    },
+    {
+      "landscapes": [
+        "Rivers",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 110 of 110 lessons completed"
+    }
+  ],
+  "lessonList": "15 Global development lessons; current position verified",
+  "consoleErrors": [],
+  "checks": {
+    "fullTests": 728,
+    "focusedTests": 69,
+    "fullDurationSeconds": 37.81,
+    "fullBeforeFinalCopyLayoutRefinements": true,
+    "focusedRerunAfterRefinements": true,
+    "specialistReview": "not performed",
+    "reducedMotion": "shared paused-start retained; not separately emulated",
+    "syntheticDataOnly": true
+  },
+  "publication": {
+    "status": "succeeded",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "source": "fb824d824b23b2e237522cc7a739b96bf47baa3a",
+    "deployment": "appgdep_6adfb1e14280819193b3f44586f5ba6d",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_9c78562a5bdc8191ad0dbb5bde2d0549",
+    "at": "2026-10-26T20:02:56Z",
+    "audience": "existing_owner_private_unchanged",
+    "distFilesMatched": 567,
+    "authenticatedLiveDOM": "not verified",
+    "localPreview": "passed recorded checks"
+  }
+}
