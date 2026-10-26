@@ -1,0 +1,198 @@
+{
+  "date": "2026-10-26",
+  "journeys": [
+    {
+      "id": "geography.a.cities.mumbai-services",
+      "result": "100% · Lesson complete",
+      "wrongPaths": "premature challenge, incorrect challenge, wrong practice/reload, locked independent/reload, 75% → retake 100%",
+      "viewsReload": "4/4 retained",
+      "keyboard": "Space pause / Enter resume; Loop default checked"
+    },
+    {
+      "id": "geography.a.cities.mumbai-work-pollution",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.mumbai-management",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.mumbai-policy",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.cities.mumbai-spatial-evidence",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "geography.a.cities.mumbai-services",
+      "view": "demand",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-services",
+      "view": "water",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-services",
+      "view": "access",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-services",
+      "view": "outcomes",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-work-pollution",
+      "view": "work",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-work-pollution",
+      "view": "air",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-work-pollution",
+      "view": "water",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-work-pollution",
+      "view": "interventions",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-management",
+      "view": "community",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-management",
+      "view": "citywide",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-management",
+      "view": "partnership",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-management",
+      "view": "tradeoffs",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-policy",
+      "view": "entitlement",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-policy",
+      "view": "relocation",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-policy",
+      "view": "reach",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-policy",
+      "view": "audit",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-spatial-evidence",
+      "view": "early",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-spatial-evidence",
+      "view": "late",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-spatial-evidence",
+      "view": "compare",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.cities.mumbai-spatial-evidence",
+      "view": "sample",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    }
+  ],
+  "notes": [
+    "Independent cell evidence and expanded source table fit 300px question body on 390px phone; retake completed 100%.",
+    "All three pathway totals verified after reload; original rivers + glaciated uplands restored. No console errors. Shared reduced-motion paused-start retained, not separately emulated."
+  ],
+  "pathways": [
+    {
+      "pair": [
+        "Coasts",
+        "Rivers"
+      ],
+      "progress": "My progress: 91 of 91 lessons completed"
+    },
+    {
+      "pair": [
+        "Coasts",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 94 of 94 lessons completed"
+    },
+    {
+      "pair": [
+        "Rivers",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 95 of 95 lessons completed"
+    }
+  ],
+  "console": []
+}
