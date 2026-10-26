@@ -1,0 +1,239 @@
+{
+  "date": "2026-10-26",
+  "journeys": [
+    {
+      "id": "geography.a.development.quality-of-life",
+      "result": "100% · Lesson complete",
+      "wrongPaths": "premature/wrong challenge; wrong practice/reload; independent lock/reload;75%fail→100%retake",
+      "viewReload": "4/4 retained",
+      "keyboard": "Space pause;Enter resume;defaultLoopchecked"
+    },
+    {
+      "id": "geography.a.development.international-aid",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.development.international-agreements",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.development.development-approaches",
+      "result": "100% · Lesson complete"
+    },
+    {
+      "id": "geography.a.development.india-location",
+      "result": "100% · Lesson complete"
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "geography.a.development.quality-of-life",
+      "view": "water",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.quality-of-life",
+      "view": "cascade",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.quality-of-life",
+      "view": "digital",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.quality-of-life",
+      "view": "evidence",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.international-aid",
+      "view": "channels",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.international-aid",
+      "view": "delivery",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.international-aid",
+      "view": "coverage",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.international-aid",
+      "view": "budget",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.international-agreements",
+      "view": "trade",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.international-agreements",
+      "view": "dates",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.international-agreements",
+      "view": "climate",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.international-agreements",
+      "view": "limits",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.development-approaches",
+      "view": "power",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.development-approaches",
+      "view": "topdown",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.development-approaches",
+      "view": "bottomup",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.development-approaches",
+      "view": "hybrid",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-location",
+      "view": "global",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-location",
+      "view": "regional",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-location",
+      "view": "connections",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-location",
+      "view": "scale",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    }
+  ],
+  "pathways": [
+    {
+      "pair": [
+        "Coasts",
+        "Rivers"
+      ],
+      "progress": "My progress: 101 of 101 lessons completed"
+    },
+    {
+      "pair": [
+        "Coasts",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 104 of 104 lessons completed"
+    },
+    {
+      "pair": [
+        "Rivers",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 105 of 105 lessons completed"
+    }
+  ],
+  "notes": [
+    {
+      "independentEvidence": "water",
+      "bounds": {
+        "body": 300,
+        "page": 390,
+        "svg": 299.9921875,
+        "table": 300
+      }
+    },
+    {
+      "independentEvidence": "coverage",
+      "bounds": {
+        "body": 300,
+        "page": 390,
+        "svg": 299.9921875,
+        "table": 300
+      }
+    },
+    {
+      "independentEvidence": "dates",
+      "bounds": {
+        "body": 300,
+        "page": 390,
+        "svg": 299.9921875
+      }
+    },
+    {
+      "independentEvidence": "regional",
+      "bounds": {
+        "body": 300,
+        "page": 390,
+        "svg": 299.9921875
+      }
+    },
+    "All four neutral evidence retakes completed100%; all three pathway totals verified after reload. Ten Global development lesson rows with topic-scoped position. Original rivers+glaciers path restored; no console errors. Shared reduced-motion paused-start retained, not separately emulated.",
+    {
+      "finalMyanmarLeader": "Explicit leader to actual Myanmar location; source context preserved",
+      "finalIndiaBounds": {
+        "overflow": [],
+        "page": 390,
+        "panel": 344
+      }
+    }
+  ],
+  "console": []
+}

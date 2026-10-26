@@ -1,0 +1,116 @@
+{
+  "checked": "2026-10-26",
+  "water": {
+    "year": 2024,
+    "release": 2025,
+    "unit": "billion people",
+    "withoutSafelyManaged": 2.1,
+    "basicWithinWithout": 1.4,
+    "rounded": true,
+    "source": "https://cdn.who.int/media/docs/default-source/wash-documents/wash-coverage/jmp/jmp-2025-wash-households-lowres-launch.pdf",
+    "definitionSource": "https://www.who.int/data/gho/indicator-metadata-registry/imr-details/4819"
+  },
+  "covax": {
+    "statement": "2023-12-19",
+    "closed": "2023-12-31",
+    "unit": "percent with two-dose coverage",
+    "groups": [
+      {
+        "name": "AMC lower-income participants",
+        "value": 57
+      },
+      {
+        "name": "Global average",
+        "value": 67
+      }
+    ],
+    "doses": "nearly 2 billion",
+    "economies": 146,
+    "source": "https://www.unicef.org/press-releases/covid-19-vaccinations-shift-regular-immunisation-covax-draws-close"
+  },
+  "tfa": {
+    "concluded": 2013,
+    "indiaRatified": "2016-04-21",
+    "enteredForce": "2017-02-22",
+    "source": "https://www.wto.org/english/news_e/news16_e/fac_21apr16_e.htm",
+    "forceSource": "https://www.wto.org/english/res_e/publications_e/ai17_e/tfa_general_oth.pdf"
+  },
+  "paris": {
+    "adopted": "2015-12-12",
+    "enteredForce": "2016-11-04",
+    "source": "https://unfccc.int/process-and-meetings/the-paris-agreement"
+  },
+  "india": {
+    "source": "https://ncert.nic.in/textbook/pdf/iess101.pdf",
+    "edition": "2025–26",
+    "projection": {
+      "type": "equirectangular",
+      "extent": [
+        55,
+        0,
+        110,
+        42
+      ],
+      "display": [
+        20,
+        60,
+        400,
+        240
+      ]
+    },
+    "geometrySource": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson",
+    "licence": "Natural Earth public domain",
+    "selectedCodes": [
+      "IND",
+      "PAK",
+      "CHN",
+      "NPL",
+      "BTN",
+      "BGD",
+      "MMR",
+      "LKA"
+    ],
+    "contextCodes": [
+      "KAZ",
+      "UZB",
+      "IDN",
+      "RUS",
+      "ARE",
+      "OMN",
+      "KHM",
+      "THA",
+      "LAO",
+      "MMR",
+      "VNM",
+      "MNG",
+      "IND",
+      "BGD",
+      "BTN",
+      "NPL",
+      "PAK",
+      "AFG",
+      "TJK",
+      "KGZ",
+      "TKM",
+      "IRN",
+      "LKA",
+      "CHN",
+      "MYS",
+      "SAU"
+    ],
+    "capital": {
+      "name": "New Delhi",
+      "lat": 28.6,
+      "lon": 77.2,
+      "approximate": true
+    },
+    "limitations": "Generalised orientation only;selected neighbours;small islands/detail not fully represented;not a boundary survey."
+  },
+  "toyBudget": {
+    "total": 100,
+    "delivery": 60,
+    "training": 25,
+    "maintenance": 15,
+    "invented": true
+  }
+}
