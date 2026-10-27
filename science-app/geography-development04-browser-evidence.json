@@ -1,0 +1,257 @@
+{
+  "batch": "development04",
+  "journeys": [
+    {
+      "lesson": "geography.a.development.india-population",
+      "result": "100% \u00b7 Lesson complete"
+    },
+    {
+      "lesson": "geography.a.development.india-social-change",
+      "result": "100% \u00b7 Lesson complete"
+    },
+    {
+      "lesson": "geography.a.development.india-geopolitics",
+      "result": "100% \u00b7 Lesson complete"
+    },
+    {
+      "lesson": "geography.a.development.india-connectivity",
+      "result": "100% \u00b7 Lesson complete"
+    },
+    {
+      "lesson": "geography.a.development.india-rapid-impacts",
+      "result": "100% \u00b7 Lesson complete"
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "geography.a.development.india-population",
+      "view": "Population in 1994",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-population",
+      "view": "Population in 2024",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-population",
+      "view": "Longer lives",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-population",
+      "view": "Potential and opportunity",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-social-change",
+      "view": "Education evidence",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-social-change",
+      "view": "Defined middle class",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-social-change",
+      "view": "Income distribution",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-social-change",
+      "view": "From access to learning",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-geopolitics",
+      "view": "Different partnerships",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-geopolitics",
+      "view": "Read agreement terms",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-geopolitics",
+      "view": "Dialogue and de-escalation",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-geopolitics",
+      "view": "Development trade-offs",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-connectivity",
+      "view": "Complete a digital task",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-connectivity",
+      "view": "Urban and rural evidence",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-connectivity",
+      "view": "Who can participate?",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-connectivity",
+      "view": "Deliver physical goods",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-rapid-impacts",
+      "view": "Economic links",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-rapid-impacts",
+      "view": "People and pressures",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-rapid-impacts",
+      "view": "Trace pollution pathways",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    },
+    {
+      "lesson": "geography.a.development.india-rapid-impacts",
+      "view": "Compare stakeholders",
+      "overflow": [],
+      "page": 390,
+      "panel": 344
+    }
+  ],
+  "neutralEvidence": [
+    {
+      "kind": "paired pyramids",
+      "body": 300,
+      "page": 390,
+      "charts": 2,
+      "table": "expanded seventeen actual age rows; five columns"
+    },
+    {
+      "kind": "life",
+      "body": 300,
+      "page": 390
+    },
+    {
+      "kind": "income",
+      "body": 300,
+      "page": 390,
+      "table": "expanded"
+    },
+    {
+      "kind": "agreement terms",
+      "body": 300,
+      "page": 390
+    },
+    {
+      "kind": "subscriptions",
+      "body": 300,
+      "page": 390,
+      "table": "expanded"
+    }
+  ],
+  "gate": "Answer this challenge first.",
+  "wrongChallenge": "Look again at the evidence and the process described.",
+  "motion": {
+    "pause": true,
+    "loop": true
+  },
+  "keyboardPause": true,
+  "viewResume": "Views compared: 4 / 4\n\nWhat does one pyramid bar measure?\n\nThe number of employed people\nOne age-and-sex group as a share of total population\nA share of only that sex after conversion",
+  "practiceResume": "Try again. 72.2\u221260.2=12.0 years. Both are rounded period estimates at birth.",
+  "lockAfterReload": true,
+  "failedAttempt": "75% \u00b7 Keep building",
+  "pathways": [
+    {
+      "landscapes": [
+        "Coasts",
+        "Rivers"
+      ],
+      "progress": "My progress: 111 of 111 lessons completed"
+    },
+    {
+      "landscapes": [
+        "Coasts",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 114 of 114 lessons completed"
+    },
+    {
+      "landscapes": [
+        "Rivers",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 115 of 115 lessons completed"
+    }
+  ],
+  "keyboardResume": true,
+  "lessonList": "20 Global development rows and current position verified",
+  "consoleErrors": [],
+  "checks": {
+    "fullTests": 732,
+    "focusedTests": 73,
+    "fullDurationSeconds": 40.92,
+    "fullBeforeFinalVisualRefinements": true,
+    "focusedRerunAfterRefinements": true,
+    "specialistReview": "not performed",
+    "reducedMotion": "shared paused-start retained; not separately emulated",
+    "syntheticDataOnly": true
+  },
+  "publication": {
+    "status": "succeeded",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "source": "c6c834779a55c2021769e9bdb7bfa9c720d81428",
+    "deployment": "appgdep_6ae05cf47ca481918c16f1d31ae4a453",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_bae6ad47b9188191a50b951cda36afc8",
+    "at": "2026-10-27T08:12:49Z",
+    "audience": "existing_owner_private_unchanged",
+    "distFilesMatched": 572,
+    "authenticatedLiveDOM": "not verified",
+    "localPreview": "passed recorded checks"
+  }
+}
