@@ -1,0 +1,112 @@
+{
+  "url": "https://api.worldbank.org/v2/country/RUS;BRA;CAN;GBR;SAU;EGY/indicator/AG.LND.FRST.ZS?source=2&format=json&date=2023&per_page=100",
+  "sha256": "557eee2f21c661c6674d8f38d04da95a8a289008e05f339f4b270212a46583c3",
+  "response": [
+    {
+      "page": 1,
+      "pages": 1,
+      "per_page": 100,
+      "total": 6,
+      "sourceid": "2",
+      "lastupdated": "2026-10-08"
+    },
+    [
+      {
+        "indicator": {
+          "id": "AG.LND.FRST.ZS",
+          "value": "Forest area (% of land area)"
+        },
+        "country": {
+          "id": "BR",
+          "value": "Brazil"
+        },
+        "countryiso3code": "BRA",
+        "date": "2023",
+        "value": 58.9364069039284,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "AG.LND.FRST.ZS",
+          "value": "Forest area (% of land area)"
+        },
+        "country": {
+          "id": "CA",
+          "value": "Canada"
+        },
+        "countryiso3code": "CAN",
+        "date": "2023",
+        "value": 41.9673535335146,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "AG.LND.FRST.ZS",
+          "value": "Forest area (% of land area)"
+        },
+        "country": {
+          "id": "EG",
+          "value": "Egypt, Arab Rep."
+        },
+        "countryiso3code": "EGY",
+        "date": "2023",
+        "value": 0.0041187402682204,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "AG.LND.FRST.ZS",
+          "value": "Forest area (% of land area)"
+        },
+        "country": {
+          "id": "GB",
+          "value": "United Kingdom"
+        },
+        "countryiso3code": "GBR",
+        "date": "2023",
+        "value": 13.4452114247923,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "AG.LND.FRST.ZS",
+          "value": "Forest area (% of land area)"
+        },
+        "country": {
+          "id": "RU",
+          "value": "Russian Federation"
+        },
+        "countryiso3code": "RUS",
+        "date": "2023",
+        "value": 50.7392951156112,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      },
+      {
+        "indicator": {
+          "id": "AG.LND.FRST.ZS",
+          "value": "Forest area (% of land area)"
+        },
+        "country": {
+          "id": "SA",
+          "value": "Saudi Arabia"
+        },
+        "countryiso3code": "SAU",
+        "date": "2023",
+        "value": 1.28974410263805,
+        "unit": "",
+        "obs_status": "",
+        "decimal": 1
+      }
+    ]
+  ]
+}

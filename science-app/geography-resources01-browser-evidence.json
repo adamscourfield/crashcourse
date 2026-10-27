@@ -1,0 +1,265 @@
+{
+  "batch": "resources01",
+  "journeys": [
+    {
+      "lesson": "geography.a.development.india-management",
+      "result": "100% \u00b7 Lesson complete"
+    },
+    {
+      "lesson": "geography.a.resources.types",
+      "result": "100% \u00b7 Lesson complete"
+    },
+    {
+      "lesson": "geography.a.resources.exploitation",
+      "result": "100% \u00b7 Lesson complete"
+    },
+    {
+      "lesson": "geography.a.resources.impacts",
+      "result": "100% \u00b7 Lesson complete"
+    },
+    {
+      "lesson": "geography.a.resources.distribution",
+      "result": "100% \u00b7 Lesson complete"
+    }
+  ],
+  "phone": [
+    {
+      "lesson": "geography.a.development.india-management",
+      "view": "Operate the whole service",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.development.india-management",
+      "view": "Dated project evidence",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.development.india-management",
+      "view": "Local groups and support",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.development.india-management",
+      "view": "Judge lasting outcomes",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.types",
+      "view": "Two classification questions",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.types",
+      "view": "Renewal matches use",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.types",
+      "view": "Use exceeds renewal",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.types",
+      "view": "A finite stock",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.exploitation",
+      "view": "Abstract water",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.exploitation",
+      "view": "Extract fossil fuel",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.exploitation",
+      "view": "Harvest fish",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.exploitation",
+      "view": "Produce food",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.exploitation",
+      "view": "Convert forest land",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.impacts",
+      "view": "Habitat connections",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.impacts",
+      "view": "Exposed soil and runoff",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.impacts",
+      "view": "Water-quality pathways",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.impacts",
+      "view": "Dust, combustion and climate",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.distribution",
+      "view": "World forest evidence",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.distribution",
+      "view": "Selected world examples",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.distribution",
+      "view": "UK resource examples",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "geography.a.resources.distribution",
+      "view": "From presence to access",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    }
+  ],
+  "neutralEvidence": [
+    {
+      "kind": "forest choropleth",
+      "body": 300,
+      "page": 390,
+      "table": "expanded six dated values, including tiny non-zero Egypt value"
+    },
+    {
+      "kind": "UK locator",
+      "body": 300,
+      "page": 390
+    },
+    {
+      "kind": "project counts",
+      "body": 300,
+      "page": 390,
+      "table": "expanded"
+    }
+  ],
+  "gate": "Answer this challenge first.",
+  "wrongChallenge": "Look again at the evidence and the process described.",
+  "viewResume": "Views compared: 4 / 4\n\nWhat turns treatment capacity into a useful service?\n\nOnly announcing a building\nReliable collection, operation and maintenance\nAssuming all water becomes safe automatically",
+  "practiceResume": "Try again. 524\u2212355=169. Not yet completed does not prove failure or measure river quality.",
+  "lockAfterReload": true,
+  "failedAttempt": "75% \u00b7 Keep building",
+  "motion": {
+    "pause": true,
+    "loop": true
+  },
+  "keyboardPause": true,
+  "keyboardResume": true,
+  "extractionViewResume": "Views compared: 5 / 5\n\nPumping from an aquifer is\u2026\n\nCreation of new water molecules\nWater abstraction\nA guarantee of unlimited recharge",
+  "finalUkPhone": {
+    "overflow": [],
+    "page": 390,
+    "panel": 295.9921875
+  },
+  "pathways": [
+    {
+      "landscapes": [
+        "Coasts",
+        "Rivers"
+      ],
+      "progress": "My progress: 116 of 116 lessons completed"
+    },
+    {
+      "landscapes": [
+        "Coasts",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 119 of 119 lessons completed"
+    },
+    {
+      "landscapes": [
+        "Rivers",
+        "Glaciated uplands"
+      ],
+      "progress": "My progress: 120 of 120 lessons completed"
+    }
+  ],
+  "waterPathShared": "Lessons \u00b7 1 of 4 \u25be",
+  "energyPathShared": "Lessons \u00b7 1 of 4 \u25be",
+  "finalWorldPhone": {
+    "overflow": [],
+    "page": 390,
+    "panel": 295.9921875
+  },
+  "consoleErrors": [],
+  "courseMap": "8 eligible links from9built topics; new shared topic opens four lessons; future optional units absent",
+  "checks": {
+    "fullTests": 736,
+    "focusedTests": 77,
+    "fullDurationSeconds": 39.03,
+    "fullBeforeFinalLabelRefinements": true,
+    "focusedRerunAfterRefinements": true,
+    "specialistReview": "not performed",
+    "reducedMotion": "shared paused-start retained; not separately emulated",
+    "syntheticDataOnly": true
+  },
+  "publication": {
+    "status": "succeeded",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "source": "cacef39913e0c543d4c6b5c8a8f2fa647f144b9e",
+    "deployment": "appgdep_6ae06296ac2881919483870e84fac0b8",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_62b3226b715c8191aa9619aa19c0a892",
+    "at": "2026-10-27T08:36:50Z",
+    "audience": "existing_owner_private_unchanged",
+    "distFilesMatched": 577,
+    "authenticatedLiveDOM": "not verified",
+    "localPreview": "passed recorded checks"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "checked": "2026-10-27",
+  "gange": {
+    "source": "https://www.jalshakti-dowr.gov.in/static/uploads/2026/03/289fbaa98e7a84dd201df1158834cfe5.pdf",
+    "publication": "Ministry of Jal Shakti,23 March 2026",
+    "asOf": "February 2026",
+    "sanctioned": 524,
+    "completed": 355,
+    "limitation": "Counts of programme projects, not river area cleaned, treatment-plant counts or every household outcome."
+  },
+  "forest": {
+    "source": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/AG.LND.FRST.ZS",
+    "year": 2023,
+    "lastUpdated": "2026-10-08",
+    "unit": "Forest area as % of land area",
+    "countries": [
+      {
+        "code": "BRA",
+        "name": "Brazil",
+        "value": 58.9364069039284
+      },
+      {
+        "code": "CAN",
+        "name": "Canada",
+        "value": 41.9673535335146
+      },
+      {
+        "code": "EGY",
+        "name": "Egypt, Arab Rep.",
+        "value": 0.0041187402682204
+      },
+      {
+        "code": "GBR",
+        "name": "United Kingdom",
+        "value": 13.4452114247923
+      },
+      {
+        "code": "RUS",
+        "name": "Russian Federation",
+        "value": 50.7392951156112
+      },
+      {
+        "code": "SAU",
+        "name": "Saudi Arabia",
+        "value": 1.28974410263805
+      }
+    ],
+    "license": "CC BY4.0",
+    "limitation": "Natural/planted forest under source definition; not timber output, logging rights, forest condition or absolute area. Grey means not selected."
+  },
+  "ukProjection": {
+    "extent": [
+      -13,
+      49,
+      9,
+      61
+    ],
+    "formula": "x=20+(lon+13)/22*250; y=65+(61-lat)/12*235",
+    "clip": [
+      20,
+      65,
+      250,
+      235
+    ],
+    "geometry": "Natural Earth110m, public domain; existing world-natural-earth.geojson",
+    "markers": [
+      [
+        "Scottish forestry",
+        -4,
+        57
+      ],
+      [
+        "Wetter west",
+        -4.5,
+        54.5
+      ],
+      [
+        "North Sea oil/gas",
+        2,
+        57
+      ],
+      [
+        "Eastern arable",
+        0.5,
+        52.3
+      ],
+      [
+        "Cornwall clay",
+        -4.8,
+        50.4
+      ]
+    ]
+  },
+  "toy": {
+    "stock": 100,
+    "renewal": 20,
+    "balancedHarvest": 20,
+    "heavyHarvest": 35,
+    "fossilTake": 20
+  }
+}
