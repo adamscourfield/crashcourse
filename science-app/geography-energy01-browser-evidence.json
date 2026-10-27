@@ -1,0 +1,195 @@
+{
+  "journeys": [
+    "consumption:75% initial check → 100% retake",
+    "types:100%",
+    "natural-gas:100%",
+    "wind:100%",
+    "uk-mix:100%"
+  ],
+  "mobile": [
+    {
+      "lesson": "types",
+      "view": "classify",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "types",
+      "view": "finite",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "types",
+      "view": "wind",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "types",
+      "view": "carrier",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "natural-gas",
+      "view": "supply",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "natural-gas",
+      "view": "dispatch",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "natural-gas",
+      "view": "emissions",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "natural-gas",
+      "view": "evaluate",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "wind",
+      "view": "rotor",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "wind",
+      "view": "low",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "wind",
+      "view": "balance",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "wind",
+      "view": "siting",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "uk-mix",
+      "view": "mix",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "uk-mix",
+      "view": "groups",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "uk-mix",
+      "view": "history",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "uk-mix",
+      "view": "basis",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "consumption",
+      "view": "totals",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "consumption",
+      "view": "map",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "consumption",
+      "view": "food",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "consumption",
+      "view": "water",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    }
+  ],
+  "scope": [
+    {
+      "resource": "water",
+      "energyAbsent": 0,
+      "topicLinks": 8
+    },
+    {
+      "resource": "water",
+      "sharedConsumptionVisible": 1,
+      "retainedSharedCompletion": "5\nWho uses the world’s resources?\nCompleted\n→"
+    },
+    {
+      "resource": "energy",
+      "retainedEnergyCompletion": "1\nRenewable and non-renewable energy\nCompleted\n→\n2\nNatural gas: benefits and costs\nCompleted\n→\n3\nWind power: benefits and costs\nCompleted\n→\n4\nReading the UK energy mix\nCompleted\n→"
+    }
+  ],
+  "limits": [
+    "No specialist review",
+    "Reduced-motion retained, not separately emulated"
+  ],
+  "independent": {
+    "body": 300,
+    "overflow": [],
+    "page": 390,
+    "svg": 299.9921875
+  },
+  "table": {
+    "scroll": 300,
+    "width": 300
+  },
+  "negativePaths": [
+    "premature challenge rejected",
+    "wrong challenge feedback and correction",
+    "all four views retained after reload",
+    "wrong practice retained after reload",
+    "independent answer locked, resumed next question after reload",
+    "75% failed completion; retake100%"
+  ],
+  "playback": {
+    "default": "Pause + checked Loop",
+    "Space": "Play",
+    "Enter": "Pause"
+  },
+  "console": []
+}

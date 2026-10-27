@@ -1,0 +1,82 @@
+[
+  {
+    "url": "https://api.worldbank.org/v2/country/USA;IND;GBR;BRA/indicator/EG.USE.PCAP.KG.OE?date=2022&format=json&per_page=100",
+    "sha256": "b5e9717341fc08f377de828b3f87af6e0dc5ec48903c7d6dc325ceb5c833dd7b",
+    "response": [
+      {
+        "page": 1,
+        "pages": 1,
+        "per_page": 100,
+        "total": 4,
+        "sourceid": "2",
+        "lastupdated": "2026-10-08"
+      },
+      [
+        {
+          "indicator": {
+            "id": "EG.USE.PCAP.KG.OE",
+            "value": "Energy use (kg of oil equivalent per capita)"
+          },
+          "country": {
+            "id": "BR",
+            "value": "Brazil"
+          },
+          "countryiso3code": "BRA",
+          "date": "2022",
+          "value": 1440.53287973747,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "EG.USE.PCAP.KG.OE",
+            "value": "Energy use (kg of oil equivalent per capita)"
+          },
+          "country": {
+            "id": "GB",
+            "value": "United Kingdom"
+          },
+          "countryiso3code": "GBR",
+          "date": "2022",
+          "value": 2249.64929952883,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "EG.USE.PCAP.KG.OE",
+            "value": "Energy use (kg of oil equivalent per capita)"
+          },
+          "country": {
+            "id": "IN",
+            "value": "India"
+          },
+          "countryiso3code": "IND",
+          "date": "2022",
+          "value": 725.855571748119,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "EG.USE.PCAP.KG.OE",
+            "value": "Energy use (kg of oil equivalent per capita)"
+          },
+          "country": {
+            "id": "US",
+            "value": "United States"
+          },
+          "countryiso3code": "USA",
+          "date": "2022",
+          "value": 6512.21129870243,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        }
+      ]
+    ]
+  }
+]
