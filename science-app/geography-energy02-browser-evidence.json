@@ -1,0 +1,219 @@
+{
+  "journeys": [
+    "global-mix:75%→100%",
+    "demand-change:100%",
+    "nonrenewable-development:100%",
+    "renewable-development:100%",
+    "fracking:100%"
+  ],
+  "mobile": [
+    {
+      "lesson": "global-mix",
+      "view": "factors",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "global-mix",
+      "view": "map",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "global-mix",
+      "view": "india",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "global-mix",
+      "view": "us",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "demand-change",
+      "view": "history",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "demand-change",
+      "view": "drivers",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "demand-change",
+      "view": "recent",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "demand-change",
+      "view": "future",
+      "overflow": [],
+      "page": 390,
+      "panel": 296
+    },
+    {
+      "lesson": "nonrenewable-development",
+      "view": "coal",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "nonrenewable-development",
+      "view": "oil",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "nonrenewable-development",
+      "view": "gas",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "nonrenewable-development",
+      "view": "uranium",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "nonrenewable-development",
+      "view": "tradeoffs",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "renewable-development",
+      "view": "hep",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "renewable-development",
+      "view": "solar",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "renewable-development",
+      "view": "wind",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "renewable-development",
+      "view": "compare",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "fracking",
+      "view": "drill",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "fracking",
+      "view": "fracture",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "fracking",
+      "view": "produce",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    },
+    {
+      "lesson": "fracking",
+      "view": "risks",
+      "overflow": [],
+      "page": 390,
+      "panel": 295.9921875
+    }
+  ],
+  "scope": [
+    {
+      "resource": "water",
+      "energyAbsent": 0
+    },
+    {
+      "resource": "energy",
+      "retained": "1\nRenewable and non-renewable energy\nCompleted\n→\n2\nNatural gas: benefits and costs\nCompleted\n→\n3\nWind power: benefits and costs\nCompleted\n→\n4\nReading the UK energy mix\nCompleted\n→\n5\nWhy energy mixes differ\nCompleted\n→\n6\nA century of changing energy demand\nCompleted\n→\n7\nDeveloping coal, oil, gas and uranium\nCompleted\n→\n8\nDeveloping HEP, wind and solar power\nCompleted\n→\n9\nFracking: increasing recoverable supply\nCompleted\n→"
+    }
+  ],
+  "limits": [
+    "Specialist and full assistive-device review not performed",
+    "Reduced-motion retained, not separately emulated"
+  ],
+  "locked": true,
+  "independentProfiles": {
+    "india": {
+      "body": 300,
+      "overflow": [],
+      "page": 390,
+      "svg": 299.9921875
+    },
+    "us": {
+      "body": 300,
+      "overflow": [],
+      "page": 390,
+      "svg": 299.9921875
+    },
+    "growth": {
+      "body": 300,
+      "overflow": [],
+      "page": 390,
+      "svg": 299.9921875
+    },
+    "projection": {
+      "body": 300,
+      "overflow": [],
+      "page": 390,
+      "svg": 300
+    }
+  },
+  "profileTable": {
+    "scroll": 300,
+    "width": 300
+  },
+  "playback": {
+    "default": "Pause",
+    "loop": "",
+    "paused": "Play",
+    "resumed": "Pause"
+  },
+  "negativePaths": [
+    "Premature challenge Continue rejected",
+    "Wrong prediction feedback then correct retry",
+    "Four observed views persisted reload",
+    "Five observed nonrenewable views persisted reload",
+    "Wrong practice retained on reload",
+    "Independent answer locked; reload resumed next question",
+    "75% failed then100% retake"
+  ],
+  "console": []
+}

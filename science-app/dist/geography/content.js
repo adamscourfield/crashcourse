@@ -1,3 +1,4 @@
+import {energy02Lessons} from './content-energy02.js?v=20261027-energy02';
 import {energyTopic,energy01Lessons} from './content-energy01.js?v=20261027-energy01';
 import {resourceTopic,resourceOverviewLessons} from './content-resources.js?v=20261027-resources01';
 import {indiaChangeLessons} from './content-development4.js?v=20261027-development04';
@@ -73,4 +74,4 @@ make('people-landscapes','People change landscapes',['1.2b','Integrated skill 4'
 ];
 
 export const topics=[topic,coastTopic,riverTopic,glacierTopic,weatherTopic,ecosystemsTopic,citiesTopic,globalDevelopmentTopic,resourceTopic,energyTopic];
-export const lessons=[...coreLessons,...coastalLessons,...coastalLessons2,...riverLessons,...riverLessons2,...teesLessons,...glacierLessons,...glacierLessons2,...glacierLessons3,...weatherLessons,...weatherLessons2,...weatherLessons3,...weatherLessons4,...ecosystemsLessons,...ecosystemsLessons2,...ecosystemsLessons3,...ecosystemsLessons4,...gisLessons,...citiesLessons,...londonLessons,...londonChangeLessons,...mumbaiLessons,...mumbaiManagementLessons,...globalDevelopmentLessons,...developmentStrategyLessons,...indiaEconomyLessons,...indiaChangeLessons,...resourceOverviewLessons,...energy01Lessons];
+export const lessons=[...coreLessons,...coastalLessons,...coastalLessons2,...riverLessons,...riverLessons2,...teesLessons,...glacierLessons,...glacierLessons2,...glacierLessons3,...weatherLessons,...weatherLessons2,...weatherLessons3,...weatherLessons4,...ecosystemsLessons,...ecosystemsLessons2,...ecosystemsLessons3,...ecosystemsLessons4,...gisLessons,...citiesLessons,...londonLessons,...londonChangeLessons,...mumbaiLessons,...mumbaiManagementLessons,...globalDevelopmentLessons,...developmentStrategyLessons,...indiaEconomyLessons,...indiaChangeLessons,...resourceOverviewLessons,...energy01Lessons,...energy02Lessons];

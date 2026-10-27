@@ -1,0 +1,1033 @@
+<style>
+.cab-image.l-border-remove {
+border: none !important;
+}
+</style>
+
+<div class="upd-date">
+		<strong>Last Updated:</strong> February 6, 2025
+	&nbsp; | &nbsp;
+		<a href="content/analysis/countries_long/India/pdf/India.pdf"><span class="ico pdf"></span>PDF</a>
+	&nbsp; | &nbsp;
+	<a href="#endnotes">Notes</a>		
+		&nbsp; | &nbsp;
+        <ul class="archive">
+			<li>Previous years <span class="ico arrow-down"></span>
+				<div class="archive-dropdown-list">
+					<ul>
+						<!--<li class="ico pdf"><a href="content/analysis/countries_long/Canada/archive/pdf/background.pdf">Background</a></li>-->
+						<li class="ico pdf"><a href="content/analysis/countries_long/India/archive/pdf/india_2022.pdf">2022</a></li>
+						<li class="ico pdf"><a href="content/analysis/countries_long/India/archive/pdf/india_2020.pdf">2020</a></li>
+						<li class="ico pdf"><a href="content/analysis/countries_long/India/archive/pdf/india_2016.pdf">2016</a></li>
+						<li class="ico pdf"><a href="content/analysis/countries_long/India/archive/pdf/india_2015.pdf">2015</a></li>
+						<li class="ico pdf"><a href="content/analysis/countries_long/India/archive/pdf/india_2014.pdf">2014</a></li>
+						<li class="ico pdf"><a href="content/analysis/countries_long/India/archive/pdf/india_2013.pdf">2013</a></li>
+						<li class="ico pdf"><a href="content/analysis/countries_long/India/archive/pdf/india_2004.pdf">2004</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+
+		
+
+			
+			<!--
+				&nbsp;&nbsp;|&nbsp;&nbsp;
+				<strong>Revised:</strong> November 25, 2020 (<a href="#revision-notice" class="enlarge-content">revision</a>)
+				<div id="revision-notice" class="revision-notice" style="display: none;">
+				<h2>Revision to the Venezuela Country Analysis Brief</h2>
+				<p><strong>November 25, 2020</strong></p>
+				<p>Text updated to reflect most recent data on U.S. imports of crude oil from Venezuela.</p>
+			</div>  -->
+	</div>
+<a id="top"></a>
+<h1>Overview</h1>
+<!-- start: hide first three bullets so the summary will display them -->
+<ul style="display: none;">
+	<li>India was the third highest energy consumer in the world in 2023 behind China and the United States.<sup>1</sup>  In 2023, India passed China to become the world&#8217;s most populous country in the world, with 1.44 billion people. Its gross domestic product (GDP) grew 7.8% in 2023 from the previous year. India has one of the fastest-growing economies and the fourth-largest economy in the world.<sup>2</sup> </li>
+	<li>In 2023, India was the third-highest consumer of petroleum and other liquids, behind the United States and China. The country was ranked 12<sub>th</sub> as a consumer of natural gas, consuming 2.2 trillion cubic feet (Tcf) in 2023, and was the 4th largest importer of liquefied natural gas (LNG).<sup>3</sup> </li>
+	<li>India&#8217;s National Electricity Plan (NEP) 2023 focuses on expanding India&#8217;s transmission network to accommodate an estimated peak demand of 458 gigawatts (GW) by 2032. The country&#8217;s Central Electricity Authority assessed that India&#8217;s installed renewable energy capacity will reach approximately 55% of total installed generation capacity by fiscal year (FY) 2026 and 66% by FY 2031, from 36% in 2023.  The fiscal year starts on April 1 and ends on March 31. </li>	
+</ul>
+
+
+
+<!--  end: hide first three bullets so the summary will display them  -->
+
+<div class="l-row l-two-col-right">
+	<div class="l-col">
+		<div class="basic-table">
+			<table class="basic-table full-width align-right-col-2 align-right-col-3 align-right-col-4 align-right-col-5 align-right-col-6 align-right-col-7 align-right-col-8">
+				<caption style="padding: 1em;">
+					Table 1. India energy indicators, 2023
+				</caption>
+				<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>Petroleum and other liquids</th>
+						<th>Natural gas</th>
+						<th>Coal</th>
+						<th>Nuclear</th>
+						<th>Hydro</th>
+						<th>Other renewables</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					  <td>Primary energy production (quads)</td>
+					  <td>1.4</td>
+					  <td>1.3</td>
+					  <td>16.6</td>
+					  <td>0.6</td>
+					  <td colspan="1" style="text-align: right; background-color: #e0e0e0">&nbsp;</td>
+					  <td colspan="1" style="text-align: right; background-color: #e0e0e0">1.5</td>
+					  <td>21.5</td>
+				  </tr>
+					<tr>
+					  <td>Primary energy production (percentage)</td>
+					  <td>7%</td>
+					  <td>6%</td>
+					  <td>78%</td>
+					  <td>2%</td>
+					  <td colspan="1" style="text-align: right; background-color: #e0e0e0">&nbsp;</td>
+					  <td colspan="1" style="text-align: right; background-color: #e0e0e0">7%</td>
+					  <td>100%</td>
+				  </tr>
+					<tr class="section">
+					  <td>Primary energy consumption (quads)</td>
+					  <td>10.5</td>
+					  <td>2.3</td>
+					  <td>21.2</td>
+					  <td>0.6</td>
+					  <td colspan="1" style="text-align: right; background-color: #e0e0e0">&nbsp;</td>
+					  <td colspan="1" style="text-align: right; background-color: #e0e0e0">1.6</td>
+					  <td>36.2</td>
+				  </tr>
+					<tr>
+					  <td>Primary energy consumption (percentage)</td>
+					  <td>29%</td>
+					  <td>6%</td>
+					  <td>59%</td>
+					  <td>2%</td>
+					  <td>0%</td>
+					  <td>4%</td>
+					  <td>100%</td>
+				  </tr>
+					<tr class="section">
+					  <td>Generation (billion kWh)</td>
+					  <td>6.4</td>
+					  <td>67.6</td>
+					  <td>1,285.8</td>
+					  <td>48.2</td>
+					  <td>147.9</td>
+					  <td>246.3</td>
+					  <td>1,802.2</td>
+				  </tr>
+					<tr>
+					  <td>Generation (percentage)</td>
+					  <td>&#8249;1%</td>
+					  <td>4%</td>
+					  <td>71%</td>
+					  <td>3%</td>
+					  <td>8%</td>
+					  <td>14%</td>
+					  <td>100%</td>
+				  </tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="8" scope="colgroup" class="footnotes">
+							<p>Data source: U.S. Energy Information Administration, International Energy Statistics and estimates <br>
+							Note: Total may not equal 100% due to independent rounding. Quads=quadrillion British thermal units. kWh=kilowatthours</p>
+						 </td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+	
+  <div class="l-col">
+	<h4>Related links</h4>
+	  <br>
+		<ul class="basic-list">			
+		    <li><a href="https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eia.gov%2Ftodayinenergy%2Fdetail.php%3Fid%3D64084&data=05%7C02%7CVivien.Lau%40eia.gov%7Cb9e3efff2fbe4e3888fe08dd4470c3aa%7C545f0b0be44040549c17d250cf3556b2%7C0%7C0%7C638741973476609182%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=i97lTi6d3q1oqIpO8fPINUaKB7TxrGpkOm518lrpg%2Bo%3D&reserved=0">India to surpass China as the top source of global       oil consumption growth in 2024 and 2025</a></li>
+		</ul>
+		<ul class="basic-list">
+          <li><a href="https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eia.gov%2Ftodayinenergy%2Fdetail.php%3Fid%3D63644&data=05%7C02%7CVivien.Lau%40eia.gov%7Cb9e3efff2fbe4e3888fe08dd4470c3aa%7C545f0b0be44040549c17d250cf3556b2%7C0%7C0%7C638741973476628623%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=FwRc20BmU6trfwOEOdGhu%2Fmbu9FFRtbIZvFn1hHomV8%3D&reserved=0">U.S. fuel ethanol exports rise on strong       international demand and low U.S. prices</a></li>
+		</ul>
+		<ul class="basic-list">
+          <li><a href="https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eia.gov%2Ftodayinenergy%2Fdetail.php%3Fid%3D63224&data=05%7C02%7CVivien.Lau%40eia.gov%7Cb9e3efff2fbe4e3888fe08dd4470c3aa%7C545f0b0be44040549c17d250cf3556b2%7C0%7C0%7C638741973476644154%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=oNYv5lLpvmfqmhOtmZuB9UhE1i9%2Bro9xMos7EEZbOBA%3D&reserved=0">The United States is the world's largest gasoline       exporter</a></li>
+		</ul>
+		<ul class="basic-list">
+          <li><a href="https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.eia.gov%2Ftodayinenergy%2Fdetail.php%3Fid%3D61423&data=05%7C02%7CVivien.Lau%40eia.gov%7Cb9e3efff2fbe4e3888fe08dd4470c3aa%7C545f0b0be44040549c17d250cf3556b2%7C0%7C0%7C638741973476801710%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=TcAeeS88bNhZtAwUAKZaXvueILP6bTQRaX5sWQuIRiY%3D&reserved=0">Industry to drive tripling of natural gas       consumption in India by 2050</a></li>
+		</ul>
+	</div>
+	</div>
+
+
+	<div class="article" style="border-top: none;">
+	<ul class="basic-list">
+	<li>India was the third highest energy consumer in the world in 2023 behind China and the United States.<sup>1</sup>  In 2023, India passed China to become the world&#8217;s most populous country in the world, with 1.44 billion people. Its gross domestic product (GDP) grew 7.8% in 2023 from the previous year. India has one of the fastest-growing economies and the fourth-largest economy in the world.<sup>2</sup> </li>
+	<li>In 2023, India was the third-highest consumer of petroleum and other liquids, behind the United States and China. The country was ranked 12<sup>th</sup> as a consumer of natural gas, consuming 2.2 trillion cubic feet (Tcf) in 2023, and was the 4<sup>th</sup> largest importer of liquefied natural gas (LNG).<sup>3</sup> </li>
+	<li>India&#8217;s National Electricity Plan (NEP) 2023 focuses on expanding India&#8217;s transmission network to accommodate an estimated peak demand of 458 gigawatts (GW) by 2032. The country&#8217;s Central Electricity Authority assessed that India&#8217;s installed renewable energy capacity will reach approximately 55% of total installed generation capacity by fiscal year (FY) 2026 and 66% by FY 2031, from 36% in 2023.<sup>4</sup>  The fiscal year starts on April 1 and ends on March 31. </li>    
+	</ul>
+	</div>
+	
+	<!--<div class="l-row l-two-col-right">
+	<div class="l-col">
+		<div class="basic-table">
+			<table class="basic-table full-width align-left-col-2 align-left-col-3 align-left-col-4 align-left-col-5 align-left-col-6 align-left-col-7 align-left-col-8">
+				<caption style="padding: 1em;">
+					Table 2. South Sudan&#8217;s energy overview, 2021</caption>
+				<thead>
+					<tr>
+						<th>&nbsp;</th>
+						<th>Crude oil and other petroleum liquids</th>
+						<th>Natural gas</th>
+						<th>Coal</th>
+						<th>Nuclear</th>
+						<th>Hydro</th>
+						<th>Renewables and other</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					  <td>Primary energy consumption (quad)</td>
+					  <td style="vertical-align: bottom">0.03</td>
+					  <td style="vertical-align: bottom">0.00</td>
+					  <td style="vertical-align: bottom">0.00</td>
+					  <td style="vertical-align: bottom">0.00</td>
+					  <td colspan="2" style="text-align: center; background-color: #e0e0e0; vertical-align: bottom">0.00</td>
+					  <td style="vertical-align: bottom">0.03</td>
+				  </tr>
+					<tr>
+					  <td>Primary energy consumption (%)</td>
+					  <td style="vertical-align: bottom">100%</td>
+					  <td style="vertical-align: bottom">0%</td>
+					  <td style="vertical-align: bottom">0%</td>
+					  <td style="vertical-align: bottom">0%</td>
+					  <td colspan="2" style="text-align: center; background-color: #e0e0e0; vertical-align: bottom">0%</td>
+					  <td style="vertical-align: bottom">100.0%</td>
+				  </tr>
+					<tr class="section">
+					  <td>Primary energy production (quad)</td>
+					  <td style="vertical-align: bottom">0.29</td>
+					  <td style="vertical-align: bottom">0.00</td>
+					  <td style="vertical-align: bottom">0.00</td>
+					  <td style="vertical-align: bottom">0.00</td>
+					  <td colspan="2" style="text-align: center; background-color: #e0e0e0; vertical-align: bottom">0.00</td>
+					  <td style="vertical-align: bottom" 	>0.29</td>
+				  </tr>
+					<tr>
+					  <td>Primary energy production (%)</td>
+					  <td style="vertical-align: bottom">100%</td>
+					  <td style="vertical-align: bottom">0%</td>
+					  <td style="vertical-align: bottom">0%</td>
+					  <td style="vertical-align: bottom">0%</td>
+					  <td colspan="2" style="text-align: center; background-color: #e0e0e0; vertical-align: bottom">0%</td>
+					  <td style="vertical-align: bottom">100%</td>
+				  </tr>
+					<tr class="section">
+					  <td style="vertical-align: bottom">Electricity generation (THw)</td>
+					  <td colspan="2" style="text-align: center; background-color: #e0e0e0; vertical-align: bottom">0.56</td>
+					  <td style="vertical-align: bottom">0.00</td>
+					  <td style="vertical-align: bottom">0.00</td>
+					  <td style="vertical-align: bottom">0.00</td>
+					  <td style="vertical-align: bottom">0.01</td>
+					  <td style="vertical-align: bottom">0.57</td>
+				  </tr>
+					<tr>
+					  <td>Electricity generation (%)</td>
+					  <td colspan="2" style="text-align: center; background-color: #e0e0e0; vertical-align: bottom">98%</td>
+					  <td style="vertical-align: bottom">0%</td>
+					  <td style="vertical-align: bottom">0%</td>
+					  <td style="vertical-align: bottom">0%</td>
+					  <td style="vertical-align: bottom">2%</td>
+					  <td style="vertical-align: bottom">100.0%</td>
+				  </tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="8" scope="colgroup" class="footnotes">
+							Data source: U.S. Energy Information Administration, International Energy Statistics database <br>
+							Note: EIA aggregates hydroelectricity and renewables as <em>renewables</em> and other for primary energy production and consumption, and it aggregates crude oil and other petroleum liquids and natural gas as <em>fossil fuels</em> for electricity generation. Quad=quadrillion British thermal units, TWh=terawatthours
+						 </td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>	-->
+
+	
+	<!-- Map of India -->
+	<div class="left-col">
+	<div style="width: 100%">
+	  <p style="font-size: 80%"><strong>Map 1. India</strong></p>
+	  <img src="content/analysis/countries_long/India/images/map1.jpg" alt="Map 1. India"/>
+	  <p style="font-size: 80%;">Data source: U.S. Energy Information Administration and World Bank
+		  </p>
+	</div>
+	</div>
+
+	<!--<div class="cab-image l-border-remove">
+	<p style="font: 80%;"><strong>Figure 1. Map of Congo Brazzaville, as of 2024</strong></p>	
+	 <img class="responsive" style="max-width: 550px" src="content/analysis/countries_long/Congo-Brazzaville/images/CF-map.jpg" alt="Figure 1. Map of Congo Brazzaville" /> 
+	 <p style="font-size: 80%">Data source: U.S. Central Intelligence Agency,  <a href="https://www.cia.gov/the-world-factbook/countries/congo-republic-of-the/map"><em>CIA World Factbook</em></a>–<a href="/international/analysis/country/COG">Republic of the Congo</a></p>
+		</div>-->
+		
+	<!-- Figure 2-->    
+	<!--<div class="cab-image l-border-remove">
+	  <img class="responsive" style="max-width: 550px" src="content/analysis/countries_long/Canada/images/fig2.png" alt="Figure 2. Canada's total energy consumption by fuel type, 2022" />
+	</div>
+	<div>
+		<span><a href="content/analysis/countries_long/Canada/excel/figure2_data.xlsx" title="Figure 2. Canada's total energy consumption by fuel type, 2022" class="ico xls" style="font-size: 80%;"><span>figure data</span></a></span>
+	</div>-->
+	
+	
+	
+	<h1>Petroleum and Other Liquids</h1>
+<br>
+	<!--<div class="article">--> 
+	
+	<!-- Map of India -->	
+	<div class="left-col">
+		<br>
+	<div style="width: 100%">
+	  <p style="font-size: 80%"><strong>Map 2. India's onshore oil production by state, 2023</strong></p>
+	  <img src="content/analysis/countries_long/India/images/map2.jpg" alt="Map 2. India"/>
+	  <p style="font-size: 80%;">Data source: U.S. Energy Information Administration, International Energy Statistics, World Bank, and National Energy Technology Laboratory, Global Oil &amp; Gas Infrastructure Database
+Note: b/d=barrels per day
+		  </p>
+	</div>
+</div>
+	
+		<ul class="basic-list">
+		<li>India&#8217;s petroleum and other liquids production remained flat at 939,000 barrels per day (b/d), in 2023 (Figure 1). However, crude oil and condensate production dropped to 604,000 b/d that year, the lowest since 1993.<sup>5</sup>  The decline in production is mainly attributed to weather-related disruptions and maturing fields.<sup>6</sup> </li>
+		<li>In 2023, India produced 294,000 b/d of crude oil from onshore fields (Map 2) and another 298,000 b/d from offshore fields.<sup>7</sup>  National oil companies (NOC) produced most of the oil (78%) in 2023. Joint venture and private companies are responsible for the other 22% of India’s production.<sup>8</sup>  </li>
+		<li>Consumption of petroleum and other liquids has grown every year since 2020 to 5.3 million b/d in 2023 (Figure 1). It grew to a high of 5.5 million b/d in 2024 and we expect consumption to grow by 6% in 2025.<sup>9</sup> </li>
+		<li>As of 2023, India had 20,873 miles of petroleum product pipelines. During FY 2022–2023, the pipeline utilization rate was about 63%.<sup>10</sup> </li>
+		<li>India&#8217;s recoverable oil reserves in 2023 were 4.9 billion barrels. India&#8217;s reserves were primarily onshore (61.3% onshore and 38.7% offshore).<sup>11</sup> </li>		
+		</ul>
+	
+
+
+<!--Figure 1-->
+<div class="left-col">
+	<div style="margin-bottom: 10px; padding: 6px; border: none; width: 600px">
+  <img class="responsive" style="max-width: 600px" src="content/analysis/countries_long/India/images/Fig1.png" alt="Figure 1. India's petroleum and other liquids production, consumption, and imports, 2014–2023"  />
+</div>
+	
+	<div align="left">
+		<span><a href="content/analysis/countries_long/India/excel/figure1_data 2025.xlsx" title="Figure 1. India's petroleum and other liquids production, consumption, and imports, 2014–2023" class="ico xls" style="font-size: 80%"><span>figure data</span></a></span>
+	</div>
+	</div>
+
+
+	
+	
+	<ul class="basic-list">	
+		<br>
+      <li>India&#8217;s refined petroleum product production increased 4.8% to 266.5 million metric tons in FY 2022 from the previous fiscal year. Diesel (42.9%) and gasoline (16.1%) accounted for almost half of the petroleum products produced.<sup>12</sup> </li>   
+	    <li>In 2023, India&#8217;s petroleum and other liquids consumption grew by 4.4%. Rising demand for gasoline, diesel, and jet fuel, all of which have been growing since 2020, were the primary drivers behind this growth (Figure 2).<sup>13</sup> </li>   
+	</ul>
+	
+	
+	
+
+<!--Figure 2-->
+<div class="left-col">
+	<div style="margin-bottom: 10px; padding: 6px; border: none; width: 600px">
+  <img class="responsive" style="max-width: 600px" src="content/analysis/countries_long/India/images/Fig2.png" alt="Figure 2. India's refined petroleum product consumption, 2013–2022
+"  />
+</div>
+	
+	<div align="left">
+		<span><a href="content/analysis/countries_long/India/excel/figure2_data 2025.xlsx" title="Figure 2. India's refined petroleum product consumption, 2013–2022
+" class="ico xls" style="font-size: 80%"><span>figure data</span></a></span>
+	</div>
+</div>	
+	
+	
+	<ul class="basic-list">	
+		<br>
+      <li>India has the second-most refining capacity in Asia, with a total nameplate refining capacity of just under 5.2 million b/d in 2024 (Table 2).<sup>14</sup>  By 2028, we estimate another 0.5 million b/d to 2.4 million b/d of capacity could be online.<sup>15</sup> </li>   
+	    <li>During FY 2022, India&#8217;s crude oil processing increased 5.6% to 5.1 million b/d from the previous year&#8217;s 4.9 million b/d. During that same period, production of refined petroleum products increased 4.8%.<sup>16</sup> </li>
+		<li>India has several refinery projects slated to come online by 2030 that will add 808,000 b/d of capacity. The largest is in Panipat (200,000 b/d), followed by Nagapattinam (182,000 b/d) and Barmer (181,000 b/d).<sup>17</sup> </li>	    
+	</ul>
+	
+	<p>&nbsp;</p>
+
+	<div class="basic-table">
+		<table class="basic-table full-width align-left-col-2 align-right-col-3 align-left-col-4">
+					<caption>Table 2. Refineries in India</caption>
+				<thead>
+					<tr>
+						<th>Refinery location</th>
+						<th>Name of company</th>
+						<th>Crude oil refining capacity <br> (thousand barrels per day)</th>						
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					  <td>Jamnagar SEZ</td>
+					  <td>Reliance Industries</td>
+					  <td>771</td>					  
+				  </tr>
+					<tr>
+					  <td>Jamnagar DTA</td>
+					  <td>Reliance Industries</td>
+					  <td>666</td>					  
+					</tr>
+					<tr>
+					  <td>Vadinar</td>
+					  <td>Nayara Energy </td>
+					  <td>404</td>					  
+				  </tr>
+					<tr>
+					  <td>Kochi (Cochin)</td>
+					  <td>Bharat Petroleum Corp.</td>
+					  <td>312</td>					  
+				  </tr>
+					<tr>
+					  <td>Mangalore</td>
+					  <td>Mangalore Refinery and Petrochemicals Ltd.</td>
+					  <td>303</td>					  
+				  </tr>
+					<tr>
+					  <td>Panipat</td>
+					  <td>Indian Oil Corporation Ltd.</td>
+					  <td>301</td>					  
+				  </tr>
+					<tr>
+					  <td>Visakhapatnam</td>
+					  <td>Hindustan Petroleum Corp.</td>
+					  <td>300</td>					  
+				  </tr>
+					<tr>
+					  <td>Paradip</td>
+					  <td>Indian Oil Corporation Ltd.</td>
+					  <td>300</td>					  
+				  </tr>
+					<tr>
+					  <td>Koyali, Gujarat</td>
+					  <td>Indian Oil Corporation Ltd.</td>
+					  <td>277</td>					  
+				  </tr>
+					<tr>
+					  <td>Mumbai</td>
+					  <td>Bharat Petroleum Corp.</td>
+					  <td>241</td>					  
+				  </tr>
+					<tr>
+					  <td>Bhatinda</td>
+					  <td>Hindustan Mittal Energy Ltd.</td>
+					  <td>225</td>					  
+				  </tr>
+					<tr>
+					  <td>Manali</td>
+					  <td>Chennai Petroleum Corp.</td>
+					  <td>212</td>					  
+				  </tr>
+					<tr>
+					  <td>Mumbai</td>
+					  <td>Hindustan Petroleum Corp.</td>
+					  <td>190</td>					  
+				  </tr>
+					<tr>
+					  <td>Haldia</td>
+					  <td>Indian Oil Corporation Ltd.</td>
+					  <td>162</td>					  
+				  </tr>
+					<tr>
+					  <td>Mathura</td>
+					  <td>Indian Oil Corporation Ltd.</td>
+					  <td>160</td>					  
+				  </tr>
+					<tr>
+					  <td>Bina</td>
+					  <td>Bharat Petroleum Corp.</td>
+					  <td>160</td>					  
+				  </tr>
+					<tr>
+					  <td>Barauni</td>
+					  <td>Indian Oil Corporation Ltd.</td>
+					  <td>121</td>					  
+				  </tr>
+					<tr>
+					  <td>Numaligarh</td>
+					  <td>Numaligarh Refinery Ltd.</td>
+					  <td>60</td>					  
+				  </tr>
+					<tr>
+					  <td>Bongaigaon</td>
+					  <td>Indian Oil Corporation Ltd.</td>
+					  <td>54</td>					  
+				  </tr>
+					<tr>
+					  <td>Guwahati</td>
+					  <td>Indian Oil Corporation Ltd.</td>
+					  <td>24</td>					  
+				  </tr>
+					<tr>
+					  <td>Digboi</td>
+					  <td>Indian Oil Corporation Ltd.</td>
+					  <td>13</td>					  
+				  </tr>
+					<tr>
+					  <td  style="border-bottom: solid 1px #0096d7">Tatipake</td>
+					  <td  style="border-bottom: solid 1px #0096d7">Oil and Natural Gas Corp.</td>
+					  <td  style="border-bottom: solid 1px #0096d7">2</td>					  
+				  </tr>
+					<tr>
+					  <td><strong>Total</strong></td>
+					  <td>&nbsp;</td>
+					  <td><strong>5,198</strong></td>
+				  </tr>
+					
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3" scope="colgroup" class="footnotes">
+							Data source: FACTS Global Energy, <em>Asia Pacific Databook 2: Refinery Configuration</em>, Fall 2024 
+						 </td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	
+	
+	<ul class="basic-list">	
+	    <li>India&#8217;s government has focused on increasing total petroleum storage capacity to the minimum 90 days of net imports recommended by the International Energy Agency. Total capacity, which includes strategic petroleum reserves (SPR) and refinery inventories, was at 74 days at the end of 2023. India&#8217;s current plans to increase capacity include adding three SPR locations with a combined capacity of 39 million barrels and expanding two SPR locations that will add another 48 million barrels of capacity. <sup>18</sup> </li>   
+	    <li style="no">As of 2023, India had 6,475 miles of crude oil pipelines. The pipeline network had a capacity utilization of about 73% (3 million b/d).<sup>19</sup>  Several crude oil pipelines are under construction to help facilitate the expansion of refinery capacity, such as the: </li>
+		<ul>
+			<li>Paradip Numaligarh Crude Pipeline—a 1,013-mile pipeline that will connect the states of Assam and Odisha.<sup>20</sup></li>
+		<li>New Mundra Panaipat Pipeline Project—a 742-mile pipeline that will run from Gujarat to Haryana.<sup>21</sup></li>
+			</ul>
+	</ul>
+	
+	
+	<h1>Natural Gas</h1>	
+<!--<div class="article" style="border-top: 4px solid #0096d7;">-->
+	
+	<!-- Map of India -->	
+	<div class="left-col">
+		<br>
+	<div style="width: 100%">
+	  <p style="font-size: 80%"><strong>Map 3. India's onshore natural gas production by state, 2023</strong></p>
+	  <img src="content/analysis/countries_long/India/images/map3.jpg" alt="Map 3. India's onshore natural gas production by state, 2023"/>
+	  <p style="font-size: 80%;">Data source: U.S. Energy Information Administration, India&#8217;s Ministry of Petroleum and Natural Gas, Indian Petroleum and Natural Gas Statistics 2022–2023, World Bank, and the National Energy Technology Laboratory, Global Oil &amp; Gas Infrastructure Database
+		  </p>
+	</div>
+	</div>
+	
+
+	<ul class="basic-list">
+        <li>Natural gas production in India increased 5.1% in 2023 from the previous year, marking the third straight year of continuous growth (Figure 3). Production reached over 1.2 Tcf in 2023, the highest since 2012.<sup>22</sup> </li>
+		<li>In India&#8217;s FY 2022–2023, most natural gas production came from offshore fields (68% offshore and 32% onshore). Assam was the highest-producing state for onshore natural gas, accounting for almost one-third of total onshore natural gas production, followed by Rajasthan (Map 3).<sup>23</sup> </li>	
+	    <li>India had 40.3 Tcf of recoverable natural gas reserves in 2023. The reserves are split nearly evenly between offshore (53.4%) and onshore (46.6%) fields.<sup>24</sup> </li>
+	    
+  </ul>	
+	
+
+<!--Figure 3-->	
+<div class="left-col">
+	<div style="margin-bottom: 10px; padding: 6px; border: none; width: 600px">
+  <img class="responsive" style="max-width: 600px" src="content/analysis/countries_long/India/images/Fig3.png" alt="Figure 3. India's natural gas production, consumption, and imports, 2014–2023
+"  />
+</div>	
+	<div align="left">
+		<span><a href="content/analysis/countries_long/India/excel/figure3_data 2025.xlsx" title="Figure 3. India's natural gas production, consumption, and imports, 2014–2023
+" class="ico xls" style="font-size: 80%"><span>figure data</span></a></span>
+	</div>
+</div>
+<ul class="basic-list">
+	<br>
+        <li>India adjusted the pricing policy on natural gas from conventional fields operated by state-owned entities (SOE) in early 2023. The natural gas from these fields are priced at 10% of the monthly weighted average of sweet and sour crude oil prices, with a floor price of $4 per million British thermal units (MMBtu) and a ceiling price of $6.50/MMBtu. The policy’s goal is to lower domestic natural gas prices, which reached $9.16/MMBtu in April 2023, a more than 50% increase from the prior year.<sup>25</sup> </li>	
+	    <li>India is investing in coal gasification, which has been described as a potentially cleaner way to utilize its large domestic coal deposits. Currently, the two approved coal gasification projects are a coal-to-synthetic-natural-gas project and a coal-to-ammonium-nitrate project. A pilot project for underground coal gasification was also started in June 2024.<sup>26</sup> </li>
+		<li>The industrial sector has consistently been the top natural gas consumer, accounting for 67% of total consumption in 2023 (Figure 4).<sup>27</sup>  This large share is mainly due to India’s fertilizer industry, which grew by almost 10% from the previous fiscal year and accounted for 33% of all-natural gas consumption in FY 2022.<sup>28</sup>  </li>
+	    
+  </ul>	
+
+		
+
+
+<!--Figure 4-->
+<div class="left-col">
+	<div style="margin-bottom: 10px; padding: 6px; border: none; width: 600px">
+  <img class="responsive" style="max-width: 600px" src="content/analysis/countries_long/India/images/Fig4.png" alt="Figure 4. India's natural gas consumption by sector, 2014–2023"  />
+</div>	
+	<div align="left">
+		<span><a href="content/analysis/countries_long/India/excel/figure4_data 2025.xlsx" title="Figure 4. India's natural gas consumption by sector, 2014–2023" class="ico xls" style="font-size: 80%"><span>figure data</span></a></span>
+	</div>
+	</div>
+
+		
+	
+	<ul class="basic-list">		
+		<br>
+      <li>In 2023, India had 14,400 miles of operational natural gas pipelines, with an additional 7,585 miles of pipeline in various stages of development.  Some of the larger natural gas pipeline projects under development are the:</li>
+		<p>&nbsp; &#8211; Urja Ganga pipeline—a 2,054-mile pipeline with a completion date of March 2025.<sup>30</sup> <br>
+		&nbsp; &#8211; Jagdishpur-Haldia Phase II—a 1,181-mile pipeline with a completion data of 2028.<sup>31</sup></p>
+		<li>India&#8217;s regasification capacity of 2.1 Tcf (Table 3) was the fifth highest globally in 2023. The terminals had a regasification utilization rate of 49% for that year. With nine projects under development, India’s regasification capacity rate could reach close to 4.0 Tcf by the end of 2026.<sup>32</sup> </li>
+	</ul>
+<p>&nbsp;</p>
+		
+	<div class="basic-table">
+		  <table class="basic-table full-width align-left-col-2 align-right-col-3 align-right-col-4">		
+					<caption>Table 3. India&#8217;s existing and planned regasification terminals</caption>
+				<thead>
+					<tr>
+						<th width="119">Project name</th>
+						<th width="494">Owners</th>
+						<th width="178">Peak output <br>
+					    (billion cubic feet per year)</th>
+						<th width="94">Target start year</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					  <td colspan="4" style="border-bottom: solid 1px #d6d6d6"><strong>Existing LNG terminals</strong></td>
+					  <td width="7">&nbsp;</td>
+					  </tr>
+					  <tr>
+					  <td>Dahej</td>
+					  <td>Petronet (100%)</td>	
+					  <td>840</td>
+					  <td>Operational</td>
+				  </tr>
+					<tr>
+					  <td>Hazira</td>
+					  <td>Shell</td>
+					  <td>240</td>
+					  <td>Operational</td>
+					</tr>
+					<tr>
+					  <td>Kochi</td>
+					  <td>Petronet</td>
+					  <td>240</td>
+					  <td>Operational</td>					  
+				  </tr>
+					<tr>
+					  <td>Ennore</td>
+					  <td>Indian Oil Company (95%), Tamil Nadu Industrial Development Corporation</td>
+					  <td>240</td>
+					  <td>Operational</td>					  
+				  </tr>
+					<tr>
+					  <td>Mundra</td>
+					  <td>Gujarat State Petroleum Corporation (50%), Adani Group (50%)</td>
+					  <td>240</td>
+					  <td>Operational</td>					  
+				  </tr>
+					<tr>
+					  <td>Dharma</td>
+					  <td>Adani Group (50%), Total (50%)</td>
+					  <td>240</td>
+					  <td>Operational</td>					  
+				  </tr>
+					<tr>
+					  <td>Ratnagiri (Dabhol)</td>
+					  <td>GAIL (31.52%), NTPC (31.52%), MSEB Holding (16.68%), other smaller companies (20.28%)</td>
+					  <td>96</td>
+					  <td>Operational</td>					  
+				  </tr>
+					<tr class="section">
+					  <td><strong>Total </strong></td>
+					  <td>&nbsp;</td>
+					  <td><strong>2,136</strong></td>
+					  <td>&nbsp;</td>
+				  </tr>
+					<tr>
+					  <td colspan="4" style="border-bottom: solid 1px #d6d6d6"><strong>Projects under construction</strong></td>
+				  </tr>	
+					<tr>
+					  <td>Dabhol LNG 2</td>
+					  <td>GAIL (32%), NTPC (32%), MSEB Holding (17%), Indian Financial Institutions (20%)</td>
+					  <td>240</td>
+					  <td>2025</td>					  
+				  </tr>
+					<tr>
+					  <td>Dabhol LNG Breakwater</td>
+					  <td>GAIL (32%), NTPC (32%), MSEB Holding (17%), Indian Financial Institutions (20%)</td>
+					  <td>144</td>
+					  <td>2025</td>					  
+				  </tr>
+                   <tr>
+					  <td>Dahej - Phase I expansion</td>
+					  <td>Petronet (100%)</td>
+					  <td>120</td>
+					  <td>2025</td>					  
+				  </tr>
+					 <tr>
+					  <td>Jaigarh<sup>1</sup></td>
+					  <td>Hiranandani Group (100%)</td>
+					  <td>288</td>
+					  <td>2025</td>					  
+				  </tr>
+					 <tr>
+					  <td>Karaikal Port</td>
+					  <td>AG&amp;P (100%)</td>
+					  <td>240</td>
+					  <td>2025</td>					  
+				  </tr>
+					 <tr>
+					  <td>Chhara</td>
+					  <td>Hindustan Petroleum Corp Ltd (50%), Shapoorji Pallonji (50%)</td>
+					  <td>240</td>
+					  <td>2026</td>					  
+				  </tr>
+					<tr>
+					  <td>Jafrabad LNG<sup>1</sup></td>
+					  <td>Swan Energy (32%), Indian Farmers Fertiliser Cooperative Limited (31%), Mitsui Group (11%), Gujarat Maritime Board (15%), Gujarat State Petronet (11%)</td>
+					  <td>240</td>
+					  <td>2026</td>					  
+				  </tr>
+					<tr>
+					  <td>Dahej - Phase II expansion</td>
+					  <td>Petronet (100%)</td>
+					  <td>120</td>
+					  <td>2026</td>					  
+				  </tr>
+					<tr>
+					  <td style="border-bottom: solid 1px #0096d7">Andhra Pradesh</td>
+					  <td style="border-bottom: solid 1px #0096d7">H-Energy (100%)</td>
+					  <td style="border-bottom: solid 1px #0096d7">192</td>
+					  <td style="border-bottom: solid 1px #0096d7">2026</td>					  
+				  </tr>
+				  <tr>
+					  <td><strong>Total</strong></td>
+					  <td>&nbsp;</td>
+					  <td><strong>1,824</strong></td>
+					  <td>&nbsp;</td>
+				  </tr>					
+					
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="4" scope="colgroup" class="footnotes">
+						 Data source: International Gas Union, <em>2024 World LNG Report</em> <br>
+                         Note: LNG=liquefied natural gas <br>                                                                       
+                         <sup>1</sup>Floating storage regasification unit that receives and converts the LNG offshore
+                         </td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+<h1>Coal</h1>	
+<!--<div class="article" style="border-top: 4px solid #0096d7;">-->
+<ul class="basic-list">        	
+        <li>India&#8217;s coal production has been increasing since 2021 and reached 1.1 billion short tons in 2023, a 12.2% increase from 2022.<sup>33</sup>  India&#8217;s Ministry of Coal attributes the production increase to sustained investment in the industry and using more modern technology.<sup>34</sup> </li>
+	    <li>SOE Coal India Limited contributed 79% of coal production in FY 2022–2023. SOE Singareni Collieries Company Limited, the top coal supplier for India’s southern region, accounted for 8% of production during the same period.<sup>35</sup> </li>
+	    </ul>	
+
+<!--Figure 5-->
+<div class="left-col">
+	<div style="margin-bottom: 10px; padding: 6px; border: none; width: 600px">
+  <img class="responsive" style="max-width: 600px" src="content/analysis/countries_long/India/images/Fig5.png" alt="Figure 5. India's coal production, consumption, and imports, 2014–2023
+"  />
+</div>	
+  <div align="left">
+		<span><a href="content/analysis/countries_long/India/excel/figure5_data 2025.xlsx" title="Figure 5. India's coal production, consumption, and imports, 2014–2023
+" class="ico xls" style="font-size: 80%"><span>figure data</span></a></span>
+	</div>
+	</div>
+
+<ul class="basic-list">  
+	<br>
+  <li>Coal consumption in India increased 12.6% to almost 1.3 billion short tons in 2023.<sup>36</sup>  Strong economic growth led to increased electricity demand, which is primarily served by coal-fired generation. Higher electricity demand, increased cement and steel production for infrastructure projects, warmer temperatures, and decreased hydropower generation were some of the main drivers in India&#8217;s increased coal consumption in 2023.<sup>37</sup> </li>
+	    <li>Coal consumption in India is primarily for power generation, accounting for 74.0% of all coal demand. The remaining shares are for nonpower uses, such as the steel, iron, and cement industries.<sup>38</sup> </li>
+	    </ul>
+
+<h1>Electricity</h1>	
+<!--<div class="article" style="border-top: 4px solid #0096d7;">-->
+<ul class="basic-list">        	
+        <li>Both its federal and state governments oversee India&#8217;s electric power sector. The Ministry of Power is responsible for developing national power policies for electricity generation, transmission, and distribution and for supervising the Central Electricity Regulatory Commission and the interregional grid system operator. State governments are responsible for policies that address the specific needs and challenges of their state in terms of how the electric power sector is managed. Each state has its own State Electricity Regulatory Commission that governs the power industry within its borders, including setting rates and ensuring system reliability.<sup>39</sup></li>
+	    <li>India&#8217;s electricity generation increased 2.4% in 2023, reaching a new high of 1,805 tera watthours (TWh). More than three-quarters of total electricity generation was from fossil fuels, and coal was the largest fuel source for generation overall (71.3%) (Figure 6). However, coal&#8217;s share of generation has decreased for the past two years despite coal&#8217;s absolute TWh of generation increasing in both years.<sup>40</sup></li>
+	    <li>Non-hydroelectric renewables share of total generation has been growing. Solar (6.6% in 2023) and wind (5.2%) have been offsetting the coal and hydroelectricity declines.<sup>41</sup> </li>
+	    </ul>	
+
+    <!--Figure 6-->
+<div class="left-col">
+	<div style="margin-bottom: 10px; padding: 6px; border: none; width: 600px">
+  <img class="responsive" style="max-width: 600px" src="content/analysis/countries_long/India/images/Fig6.png" alt="Figure 6. India's electricity generation by source, 2014–2023
+"  />
+</div>	
+	<div align="left">
+		<span><a href="content/analysis/countries_long/India/excel/figure6_data 2025.xlsx" title="Figure 6. India's electricity generation by source, 2014–2023
+" class="ico xls" style="font-size: 80%"><span>figure data</span></a></span>
+	</div>
+</div>
+
+
+<!-- Map of India -->	
+	<div class="left-col">
+		<br>
+	<div style="width: 100%">
+	  <p style="font-size: 80%"><strong>Map 4. India's total installed generation capacity by state, fiscal years 2022–2023</strong></p>
+	  <img src="content/analysis/countries_long/India/images/map4.jpg" alt="Map 4. India's total installed generation capacity by state, fiscal years 2022–2023"/>
+	  <p style="font-size: 80%;">Data source: U.S. Energy Information Administration, India&#8217;s Ministry of Power—Central Electricity Authority, and World Bank <br>
+      Note: States that were too small due to the resolution of the map were excluded. GW=gigawatts
+		  </p>
+	</div>
+	</div>
+
+<ul class="basic-list">
+	<br>
+  <li>India&#8217;s installed generation capacity in 2023 was 500 GW, a 2.6% increase from the previous year. Virtually all of that increase was renewable energy, with 10 GW of solar and 3 GW of wind capacity added that year.<sup>42</sup></li>
+	    <li>In 2023, close to half of all installed generation capacity was located on the western part of the country (Map 4). Gujarat, Maharashtra, Rajasthan, and Karnataka accounted for more than 40% of total installed generation capacity. <sup>43</sup></li>
+	    <li>Maharashtra, Gujarat, and Uttar Pradesh had the most installed fossil fuel-fired generation capacity (Map 5) in 2023. Most of the capacity (85%) was coal-fired, and the remainder was mostly natural gas-fired.<sup>44</sup> </li>
+	    <li>In 2023, Rajasthan, Karnataka, Gujarat, and Tamil Nadu had the most installed renewable energy generation capacity (Map 6) of all India’s states. Combined, they had over 20 GW of capacity and accounted for one-half of India’s total installed capacity from renewable sources.<sup>45</sup>  Rajasthan has the highest potential (20.3%) for renewable energy of any state in India.<sup>46</sup>  Karnataka, Gujarat, and Tamil Nadu all have favorable renewable energy resources and have state policies that have helped capacity growth.<sup>47</sup> </li>
+	    </ul>
+
+<!-- Map of India -->	
+	<div class="left-col">
+		<br>
+	<div style="width: 100%">
+	  <p style="font-size: 80%"><strong>Map 5. India's fossil fuel-fired generation capacity by state, 2023</strong></p>
+	  <img src="content/analysis/countries_long/India/images/map5.jpg" alt="Map 5. India's fossil fuel-fired generation capacity by state, 2023"/>
+	  <p style="font-size: 80%;">Data source: U.S. Energy Information Administration, India&#8217;s Ministry of Power—Central Electricity Authority, and World Bank <br>
+      Note: States that were too small due to the resolution of the map were excluded. Fossil fuel capacity consists of coal, oil, and natural gas.GW=gigawatts
+		  </p>
+	</div>
+	</div>
+
+<!-- Map of India -->	
+	<div class="left-col">
+	<div style="width: 100%">
+	  <p style="font-size: 80%"><strong>Map 6. India's installed renewable energy generation capacity by state, 2023</strong></p>
+	  <img src="content/analysis/countries_long/India/images/map6.jpg" alt="Map 6. India's installed renewable energy generation capacity by state, 2023"/>
+	  <p style="font-size: 80%;">Data source: U.S. Energy Information Administration, India&#8217;s Ministry of Power—Central Electricity Authority, and World Bank <br>
+      Note: States that were too small due to the resolution of the map were excluded. Renewable capacity consists of hydroelectric, biomass and waste, wind, and solar. GW=gigawatts
+		  </p>
+	</div>
+	</div>
+
+<ul class="basic-list">  
+	<br>
+  <li>Seven nuclear reactors are under development in India that will add just under 6 GW of nuclear capacity (Table 4). All the reactors, other than Prototype Fast Breeder Reactor, are planned to be operational by 2027.<sup>48</sup>  However, Kudankulam 3 and 4 were originally slated to come online in 2023, but as of January 2025, are still not fully operational.<sup>49</sup>  The four Kudankulam are Russian-designed reactors, and the other three are domestic designs. The drivers of India’s growth in nuclear generation capacity include strong expected growth in electricity demand, net zero ambitions by 2070, and a desire to capitalize on indigenous uranium reserves. Recoverable uranium resources were estimated at 220,900 metric tons in 2021.<sup>50</sup></li>
+	    <li>As of 2024, India has 27 hydroelectric power projects under construction that are slated to come online by 2032. The 27 projects will add an additional 17.5 GW of installed capacity once completed.<sup>51</sup></li>
+	    </ul>
+
+ <!--Figure 7-->
+	<div class="left-col">
+	<div style="width: 100%">
+	  <img class="responsive" style="max-width: 600px" src="content/analysis/countries_long/India/images/Fig7.png" alt="Figure 7. India's installed generation capacity by source, 2023" />
+	</div>	
+
+	<div align="left">		
+		<span><a href="content/analysis/countries_long/India/excel/figure7_data 2025.xlsx" title="Figure 7. India's installed generation capacity by source, 2023" class="ico xls" style="font-size: 80%"><span>figure data</span></a></span>
+	</div>
+	</div>
+
+<div class="basic-table">
+	<br>
+		<table class="basic-table full-width align-left-col-2 align-left-col-3">
+					<caption>Table 4. Nuclear reactors under construction</caption>
+				<thead>
+					<tr>
+						<th>Reactor name</th>
+						<th>Reactor type</th>
+						<th>Capacity (megawatts)</th>						
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					  <td>Kudankulam 3</td>
+					  <td>Pressurized water reactor</td>
+					  <td>1,000</td>					  
+				  </tr>
+					<tr>
+					  <td>Kudankulam 4</td>
+					  <td>Pressurized water reactor</td>
+					  <td>1,000</td>					  
+					</tr>
+					<tr>
+					  <td>Kudankulam 5</td>
+					  <td>Pressurized water reactor</td>
+					  <td>1,000</td>					  
+				  </tr>
+					<tr>
+					  <td>Kudankulam 6</td>
+					  <td>Pressurized water reactor</td>
+					  <td>1,000</td>					  
+				  </tr>
+					<tr>
+					  <td>Rajasthan 7</td>
+					  <td>Pressurized heavy water reactor</td>
+					  <td>700</td>					  
+				  </tr>
+					<tr>
+					  <td>Rajasthan 8</td>
+					  <td>Pressurized heavy water reactor</td>
+					  <td>700</td>					  
+				  </tr>
+					<tr>
+					  <td style="border-bottom: solid 1px #0096d7">PFBR</td>
+					  <td style="border-bottom: solid 1px #0096d7">Fast reactor</td>
+					  <td style="border-bottom: solid 1px #0096d7">500</td>					  
+				  </tr>
+				  <tr>
+					  <td><strong>Total</strong></td>
+					  <td>&nbsp;</td>
+					  <td><strong>5,900</strong></td>					  
+				  </tr>		
+					
+					
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3" scope="colgroup" class="footnotes">
+							Data source: World Nuclear Association 
+						 </td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+<h1>Energy Trade</h1>
+<h2>Petroleum and other liquids</h2>
+<!--<div class="article" style="border-top: 4px solid #0096d7;">-->
+<ul class="basic-list">        	
+        <li>India imported 4.5 million b/d of crude oil and condensate in 2023, reaching a new high and making the country the second-highest net crude oil and condensate importer in the world. India&#8217;s crude oil and condensate imports have been increasing since 2021 and grew by 2.4% in 2023.<sup>52</sup></li>
+	    <li>Russia was the primary source of India&#8217;s crude oil and condensate imports in 2023, accounting for about 39% of the total (Figure 8). In 2021 (before Russia’&#8217;s full-scale invasion of Ukraine), Russia was exporting just under 100,000 b/d to India, for a 2.5% share of total imports. In 2022, after the United States and EU imposed sanctions on Russia, India began purchasing Russia&#8217;s crude oil at a discount, increasing its imports more than six-fold to 740,000 b/d.<sup>53</sup>   In 2023, crude oil imports from Russia increased more than doubled to almost 1.8 million b/d.<sup>54</sup>  Increases in imports from Russia displaced crude oil imports from other trading partners.</li>
+	    <li>Most of the rest of crude oil imports came from countries in the Middle East, which accounted for about 45% of total imports in 2023, or 2 million b/d. However, the total amount India imported from the Middle East decreased by almost 600,000 b/d from the previous year. Imports from the United States also decreased by 95,000 b/d (-32.7%) from 2022.<sup>55</sup> </li>
+	    </ul>
+
+<!--Figure 8-->
+<div class="left-col">
+	<div style="margin-bottom: 10px; padding: 6px; border: none; width: 600px">
+  <img class="responsive" style="max-width: 600px" src="content/analysis/countries_long/India/images/Fig8.png" alt="Figure 8. India's crude oil and condensate imports by origin, 2023"  />
+</div>	
+  <div align="left">
+	<span><a href="content/analysis/countries_long/India/excel/figure8_data 2025.xlsx" title="Figure 8. India's crude oil and condensate imports by origin, 2023" class="ico xls" style="font-size: 80%"><span>figure data</span></a></span>
+	</div>
+	</div>
+
+<ul class="basic-list"> 
+	<br>
+  <li>India&#8217;s petroleum product imports grew 8% in 2023 from the previous year to 1.1 million b/d. Liquefied petroleum gas (69%), fuel oil (17%), and naphtha (6%) accounted for most petroleum product imports.<sup>56</sup></li>
+	    <li>Unlike crude oil and condensate imports, petroleum product import sources were more diverse. The United Arab Emirates had the highest share, at 23%, in 2023, and the Middle East as a region accounted for 68% of all petroleum product imports.<sup>57</sup> </li>
+	    <li>Transportation fuels accounted for most (84%) of India&#8217;s petroleum product exports (Figure 9). The largest share of exports by destination region was Asia Pacific, which received 28% of exports in 2023. However, the largest share of exports by destination country was the United Arab Emirates at 10%.<sup>58</sup> </li>
+	    </ul>
+
+<!--Figure 9-->
+<div class="left-col">
+	<div style="margin-bottom: 10px; padding: 6px; border: none; width: 600px">
+  <img class="responsive" style="max-width: 600px" src="content/analysis/countries_long/India/images/Fig9.png" alt="Figure 9. India's petroleum product exports by type, 2023"  />
+</div>	
+  <div align="left">
+	<span><a href="content/analysis/countries_long/India/excel/figure9_data 2025.xlsx" title="Figure 9. India's petroleum product exports by type, 2023" class="ico xls" style="font-size: 80%"><span>figure data</span></a></span>
+	</div>
+	</div>
+
+<h2>Natural gas</h2>
+<!--<div class="article" style="border-top: 4px solid #0096d7;">-->
+<ul class="basic-list">        	
+        <li>India imported the fourth most LNG volumes in the world in 2023 (5%), behind China (18%), Japan (16%), and South Korea (11%).  India imported 1.1 Tcf of LNG in 2023, a 9.2% increase from 2020.<sup>60</sup></li>
+	    <li>The Middle East was the source of 66.3% of India&#8217;s LNG imports (0.7 Tcf) in 2023 (Figure 10). LNG imports from Qatar in 2023 increased by 3.8% year on year. Meanwhile, the United States’ LNG exports to India grew by more than 42 billion cubic feet (Bcf) in 2023 to 164 Bcf.<sup>61</sup></li>
+	    </ul>
+
+<!--Figure 10-->
+<div class="left-col">
+	<div style="margin-bottom: 10px; padding: 6px; border: none; width: 600px">
+  <img class="responsive" style="max-width: 600px" src="content/analysis/countries_long/India/images/Fig10.png" alt="Figure 10. India's LNG imports by source, 2023
+"  />
+</div>	
+  <div align="left">
+	<span><a href="content/analysis/countries_long/India/excel/figure10_data 2025.xlsx" title="Figure 10. India's LNG imports by source, 2023" class="ico xls" style="font-size: 80%"><span>figure data</span></a></span>
+	</div>
+	</div>
+
+<h2>Coal</h2>
+<ul class="basic-list"> 
+  <li>India&#8217;s coal imports grew by 14.2% in 2023 from the previous year to 264 million short tons. The Asia Pacific region was the source of 64.5% of all coal imports, with Indonesia (41.8%) and Australia (18.4%) supplying most coal in 2023 (Figure 11).<sup>62</sup></li>
+	    <li>Despite an increase in overall coal imports, imports from India’s two top source countries—Indonesia (-2.0%) and Australia (-5.0%)—declined year over year. The largest increases of coal imports by weight in 2023 came from the United States (increase of 7.7 million short tons), South Africa (7.5 million short tons), and Russia (5.8 million short tons). <sup>63</sup></li>
+	    </ul>
+
+<!--Figure 11-->
+	<div class="left-col">	
+<div class="left-col">
+	<div style="margin-bottom: 10px; padding: 6px; border: none; width: 600px">
+  <img class="responsive" style="max-width: 600px" src="content/analysis/countries_long/India/images/Fig11.png" alt="Figure 11. India's coal imports by source, 2023"  />
+</div>	
+  <div align="left">
+	<span><a href="content/analysis/countries_long/India/excel/figure11_data 2025.xlsx" title="Figure 11. India's coal imports by source, 2023" class="ico xls" style="font-size: 80%"><span>figure data</span></a></span>
+	</div>
+	</div>
+</div>
+ 
+<h1>Endnotes</h1>
+<ol class="footnotes sup"><a id="endnotes"></a>
+	<li>Energy Institute, 2024 Statistical Review of World Energy, page 12.</li>
+	<li>U.S. Energy Information Administration, International Energy Statistics.</li>
+	<li>U.S. Energy Information Administration, <em>Short-Term Energy Outlook</em>, October 2024, and International Energy Statistics and estimates.</li>
+	<li>&ldquo;<a href="https://www.ibef.org/news/india-sets-a-us-109-50-billion-rs-9-15-lakh-crore-blueprint-for-power-sector-to-meet-458-gw-demand-by-2032">India Sets a US$ 109.50 Billion (Rs.  9.15 Lakh Crore) Blueprint for Power Sector to Meet 458 GW Demand by 2032: IBEF</a>.&rdquo; India Brand Equity Foundation, September 26,  2024; Pandey, Kundan. &ldquo;<a href="https://india.mongabay.com/2023/06/national-electricity-policy-2023/">India&rsquo;s Renewable Capacity Estimated  to Increase, While Reliance on Coal to Continue, Indicates National Electricity  Plan</a>.&rdquo; Mongabay, June 20,  2023. </li>
+	<li>U.S. Energy  Information Administration, International Energy Statistics.</li>
+	<li>FACTS Global  Energy,&nbsp;<em>Asia Pacific Petroleum Databook 1: Supply and Demand</em>,  Spring 2024, page 36.</li>
+	<li>U.S. Energy  Information Administration, International Energy Statistics.</li>
+	<li>India Ministry of  Petroleum and Natural Gas Economic &amp; Statistics Division, <em>Indian  Petroleum &amp; Natural Gas Statistics 2022-23</em>, page 18.</li>	
+	<li>U.S.  Energy Information Administration, <em>Short-Term Energy Outlook</em>, January 2025.	</li>
+	<li>India Ministry of  Petroleum and Natural Gas Economic &amp; Statistics Division, <em>Indian  Petroleum &amp; Natural Gas Statistics 2022-23</em>, page 40.</li>
+	<li>India Ministry of Petroleum and Natural Gas Economic &amp; Statistics  Division, <em>Indian Petroleum &amp; Natural Gas Statistics 2022-23</em>, page  18.</a></li>
+	<li>India Ministry of  Petroleum and Natural Gas Economic &amp; Statistics Division, <em>Indian  Petroleum &amp; Natural Gas Statistics 2022-23</em>, page 40.</li>
+	<li>FACTS Global  Energy,&nbsp;<em>Asia Pacific Petroleum Databook 1: Supply and Demand</em>,  Spring 2024, page 20.</li>
+	<li>FACTS Global  Energy,&nbsp;<em>Asia Pacific Petroleum Databook 2: Refinery Configuration and  Construction</em>, Spring 2024, page 24; India Ministry of Petroleum and Natural  Gas Economic &amp; Statistics Division, <em>Indian Petroleum &amp; Natural Gas  Statistics 2022-23</em>, page 5.</li>
+	<li>U.S.  Energy Information Administration, <em>Outlook on global refining to 2028</em>,  page 14.	</li>
+	<li>India Ministry of  Petroleum and Natural Gas Economic &amp; Statistics Division, <em>Indian  Petroleum &amp; Natural Gas Statistics 2022-23</em>, page 40.</li>
+	<li>FACTS Global  Energy,&nbsp;<em>Asia Pacific Petroleum Databook 2: Refinery Configuration</em>,  Fall 2024</li>
+	<li>&ldquo;<a href="https://timesofindia.indiatimes.com/business/india-business/india-to-prioritize-expansion-of-oil-storage-capacity/articleshow/106544723.cms">India to Prioritize Expansion of Oil  Storage Capacity - Times of India</a>.&rdquo; The Times of India, January 4, 2024. </li>
+	<li>India Ministry of  Petroleum and Natural Gas Economic &amp; Statistics Division, <em>Indian  Petroleum &amp; Natural Gas Statistics 2022-23</em>, page 40.</li>
+	<li>&ldquo;<a href="https://vajiramias.com/current-affairs/paradip-numaligarh-crude-pipeline-pncpl/6176310e1d5def4324006efe/">Paradip Numaligarh Crude Pipeline  (PNCPL)</a>.&rdquo; Vajiram &amp; Ravi  - IAS Study Center, October 25, 2021.</li>
+	<!-- 21 thru 30-->
+	<li>&ldquo;<a href="https://theprint.in/india/land-acquisition-process-begins-to-lay-crude-oil-pipeline-under-mundra-panipat-project/1126752/">Land Acquisition Process Begins to Lay  Crude Oil Pipeline under Mundra-Panipat Project</a>.&rdquo; ThePrint, September 13, 2022; &ldquo;<a href="https://www.gem.wiki/New_Mundra%E2%80%93Panipat_Oil_Pipeline#:~:text=Operator:,Retrieved%202024%2D01%2D09">New Mundra–Panipat Oil Pipeline</a>.&rdquo; Global Energy Monitor, January 9, 2024. </li>
+	<li>U.S.  Energy Information Administration, International Energy Statistics and  estimates.	</li>
+	<li>India Ministry of  Petroleum and Natural Gas Economic &amp; Statistics Division, <em>Indian  Petroleum &amp; Natural Gas Statistics 2022-23</em>, page 33.</li>
+	<li>India Ministry of  Petroleum and Natural Gas Economic &amp; Statistics Division, <em>Indian  Petroleum &amp; Natural Gas Statistics 2022-23</em>, page 18.</li>
+	<li>FACTS Global  Energy,&nbsp;<em>India Natural Gas Outlook</em>, September 2024, page 8; India  Ministry of Petroleum and Natural Gas Economic &amp; Statistics Division, <em>Indian  Petroleum &amp; Natural Gas Statistics 2022-23</em>, page 77.</li>
+	<li>FACTS Global  Energy,&nbsp;<em>India Natural Gas Outlook</em>, September 2024, page 8 and 10.</li>
+	<li>U.S.  Energy Information Administration, International Energy Statistics; FACTS  Global Energy,&nbsp;<em>India Natural Gas Outlook</em>, September 2024, page 8.	</li>
+	<li>Madhumitha  Jaganmohan, &ldquo;<a href="https://www.statista.com/topics/7488/fertilizer-industry-in-india/#topicOverview">Topic: Fertilizer Industry in India</a>,&rdquo; Statista, January 2, 2024; India Ministry of  Petroleum and Natural Gas Economic &amp; Statistics Division, <em>Indian  Petroleum &amp; Natural Gas Statistics 2022-23</em>, page 102.</li>
+	<li>India Ministry of  Petroleum and Natural Gas Economic &amp; Statistics Division, <em>Indian  Petroleum &amp; Natural Gas Statistics 2022-23</em>, page 40.</li>
+	<li>&ldquo;<a href="https://www.business-standard.com/companies/news/gail-s-urja-ganga-gas-pipeline-project-completion-delayed-until-march-2025-124063000132_1.html">Gail&rsquo;s Urja Ganga Gas Pipeline Project  Completion Delayed until March 2025</a>.&rdquo; Business Standard, June 30, 2024.</li>
+	<!-- 31 thru 40-->
+	<li>Stagg, Isabel. &ldquo;<a href="https://www.worldpipelines.com/project-news/16052024/globaldata-india-to-lead-asias-pipeline-transmission-projects-count/#:~:text=The%20Jagdishpur%E2%80%93Haldia%20Phase%20II,environmentally%20friendly%20delivery%20of%20energy">GlobalData: India to Lead Asia&rsquo;s  Pipeline Transmission Projects Count</a>.&rdquo; World Pipelines, May 16, 2024. </li>
+	<li>International  Gas Union, <em>2024 World LNG Report</em>, page 38.	</li>
+	<li>U.S. Energy  Information Administration, International Energy Statistics and estimates.</li>
+	<li>Ministry of Coal,  Government of India, <a href="https://coal.gov.in/en/major-statistics/production-and-supplies#:~:text=Through%20sustained%20programme%20of%20investment,a%20positive%20growth%20of%2011.71%25">Coal Production</a>. Accessed October 9, 2024. </li>
+	<li>Ministry of Coal,  Government of India, <a href="https://coal.gov.in/en/major-statistics/production-and-supplies#:~:text=Through%20sustained%20programme%20of%20investment,a%20positive%20growth%20of%2011.71%25">Coal Production</a>. Accessed October 9, 2024. </li>
+	<li>U.S.  Energy Information Administration, International Energy Statistics and  estimates.	</li>
+	<li>&ldquo;<a href="https://yearbook.enerdata.net/coal-lignite/coal-world-consumption-data.html">Consumption of Coal and Lignite: World  Coal Consumption</a>.&rdquo;  Enerdata. Accessed October 9, 2024; IEA. &ldquo;<a href="https://www.iea.org/reports/coal-mid-year-update-july-2024/demand">Demand – Coal Mid-Year Update - July  2024 – Analysis</a>.&rdquo;  IEA. Accessed October 9, 2024.	</li>
+	<li>IEA. &ldquo;<a href="https://www.iea.org/reports/coal-2023/">Coal 2023 – Analysis</a>.&rdquo; IEA, December 2023, page 26. </li>
+	<li>1. B.V. Surya Vardhan  et al., &ldquo;<a href="https://doi.org/10.1016/j.ref.2024.100597">An  Overview of Indian Power Sector and Its Energy Management</a>,&rdquo; <em>Renewable Energy Focus</em> 50 (September  2024): 100597.</li>
+	<li>U.S. Energy  Information Administration, International Energy Statistics and estimates.</li>
+	<!-- 41 thru 54-->
+	<li>U.S. Energy  Information Administration, International Energy Statistics and estimates.</li>
+	<li>U.S. Energy  Information Administration, International Energy Statistics and estimates.</li>
+	<li>India Ministry of  Power Central Electricity Authority, <em>CEA Annual Report 2022-2023</em>, pages  279–288.</li>
+	<li>India Ministry of  Power Central Electricity Authority, <em>CEA Annual Report 2022-2023</em>, pages  279–288.</li>
+	<li>India Ministry of  Power Central Electricity Authority, <em>CEA Annual Report 2022-2023</em>, pages  279–288.</li>
+	<li>&ldquo;<a href="https://ieefa.org/resources/cementing-rajasthans-and-gujarats-renewable-energy-leadership">Cementing Rajasthan&rsquo;s and Gujarat&rsquo;s  Renewable Energy Leadership</a>.&rdquo; IEEFA. Accessed November 18, 2024. </li>
+	<li>&ldquo;<a href="https://www.fourthpartner.co/why-karnataka-leader-energy.html#:~:text=Geographical%20Factors%3A%20Karnataka%20boasts%20favourable,annually%20and%20excellent%20solar%20radiation">Why Is Karnataka India&rsquo;s Leader in  Renewable Energy Generation as Well as Adoption? A Look at Key Industries  Paving the Way for Energy Transition in the State</a>.&rdquo; Fourth Partner Energy, June 2024; &ldquo;<a href="https://ieefa.org/resources/cementing-rajasthans-and-gujarats-renewable-energy-leadership">Cementing Rajasthan&rsquo;s and Gujarat&rsquo;s  Renewable Energy Leadership</a>.&rdquo; IEEFA. Accessed November 18, 2024; Vijayakumar, Sanjay, and R.  Srikanth. &ldquo;<a href="https://www.thehindu.com/news/national/tamil-nadu/a-different-shade-of-green-tns-renewable-energy-initiatives/article67858657.ece#:~:text=Tamil%20Nadu’s%20prescience%20led%20it,50%25%20of%20the%20energy%20mix">A Different Shade of Green: T.N.&rsquo;s  Renewable Energy Initiatives</a>.&rdquo; The Hindu, February 18, 2024.</li>
+	<li>&ldquo;<a href="https://world-nuclear.org/information-library/country-profiles/countries-g-n/india">Nuclear Power in India</a>.&rdquo; World Nuclear Association. Accessed October  9, 2024. </li>
+	<li>International Atomic  Energy Agency, Power Reactor Information System. Accessed January 28, 2025.</li>
+	<li>&ldquo;<a href="https://www.oecd-nea.org/jcms/pl_79960/uranium-2022-resources-production-and-demand?details=true">Nuclear Energy Agency (NEA) - Uranium  2022: Resources, Production and Demand</a>,&rdquo; Nuclear Energy Agency, 2023; &ldquo;<a href="https://world-nuclear.org/information-library/country-profiles/countries-g-n/india">Nuclear Power in India</a>.&rdquo; World Nuclear Association. Accessed November  18, 2024:  Ashley J Tellis, &ldquo;<a href="https://carnegieendowment.org/research/2024/10/nuclear-power-india-promise?lang=en">Reclaiming the Promise of Nuclear  Power in India - Carnegie Endowment for International Peace | Carnegie  Endowment for International Peace</a>,&rdquo; Carnegie Endowment of International Peace, October 7, 2024.</li>
+	<li>FitchSolutions  Company, Key Infrastructure Projects (accessed October 2024).	</li>
+	<li>Vortexa (accessed  September 2024)</li>
+    <li>Williams, Curtis. &ldquo;<a href="https://www.reuters.com/world/india/indian-plans-keep-buying-cheap-russian-oil-oil-minister-says-2024-09-18/">India Plans to Keep Buying Cheap  Russian Oil, Oil Minister Says | Reuters</a>.&rdquo; Reuters, September 14, 2024; Vortexa  (accessed September 2024)</li>
+    <li>Vortexa (accessed  September 2024)</li>
+	<li>Vickery Jr.,  Raymond&nbsp;E., and Tom Cutler. &ldquo;<a href="https://www.nbr.org/publication/oil-for-india/">Oil for India</a>.&rdquo; Oil for India | The National Bureau of Asian  Research (NBR), September 3, 2024; Vortexa (accessed September 2024)</li>
+	<li>Vortexa (accessed  September 2024)</li>
+	<li>Vortexa (accessed  September 2024)</li>
+	<li>Vortexa (accessed  September 2024)</li>
+	<li>International Gas  Union, <em>2024 World LNG Report</em>, page 27.</li>
+	<li>Vortexa  (accessed October 2024)	</li>
+	<li>&ldquo;<a href="https://www.energy.gov/sites/default/files/2024-10/Natural%20Gas%20Imports%20and%20Exports%20Monthly%20August%202024_0.pdf">U.S. Natural Gas Imports and Exports  Monthly August 2024</a>.&rdquo;  U.S. Department of Energy, August 2024, page 10; Vortexa  (accessed October 2024)</li>
+	<li>U.S. Energy  Information Administration, International Energy Statistics and estimates,  Global Trade Tracker (September 2024)</li>
+	<li>Global Trade Tracker  (accessed September 2024)</li>
+</ol>
+	  
+	  <div class="top-container">
+		<a href="#top" class="top">Top</a>
+	</div>
