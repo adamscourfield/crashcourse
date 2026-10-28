@@ -1,3 +1,28 @@
+## History: Medicine key topics 1–2 (7 lessons, Option 11 1.1–2.3); on GitHub `main`, not published
+
+**Lessons:**
+- medieval ideas about disease;
+- medieval prevention, treatment and care;
+- the Black Death, 1348–49;
+- Renaissance ideas: Sydenham, printing and the Royal Society;
+- treatment, care and training, c1500–c1700, including Vesalius;
+- William Harvey;
+- the Great Plague, 1665.
+
+**Totals:** History now has 31 lessons: all of B4 and P4, and Medicine key topics 1–2.
+
+**QA:**
+- 768 automated tests pass.
+- The History flow runs all 31 lessons: 517 checks pass.
+- Briefs: `curriculum/briefs/history-medicine-batch-01.md`, `-02.md`.
+
+**Not done:**
+- Site publication;
+- teacher review;
+- re-checking the paraphrased Option 11 wording against the specification PDF.
+
+**Next:** Medicine key topics 3–4 and the Western Front. The Paper 3 option is still to be chosen.
+
 ## Water02 — five Water-option lessons published
 
 28 October 2026. Added6.9b use differences;6.10a UK supply;6.10b emerging/developing supply;6.11a stakeholders;6.11b desalination. Geography155 across11topics,465practice620checks;Water10. Eligible Water127coasts+rivers/130coasts+glaciers/131rivers+glaciers;Energy131/134/135unchanged. Five planned IDs converted in place;version1storage and question/concept IDs retained. Remaining34planned=4Water11UKchallenges9fieldwork10skills. Current app613=361Science+73Maths+155Geography+24History after origin/main00844d2 integration.
