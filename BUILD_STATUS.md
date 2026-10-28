@@ -1,3 +1,25 @@
+## History: Medicine key topic 4 (5 lessons, Option 11 4.1–4.3). The thematic study is complete; on GitHub `main`, not published
+
+**Lessons:**
+- genetics, lifestyle and diagnosis;
+- magic bullets, the NHS and high-tech medicine;
+- modern prevention;
+- penicillin;
+- lung cancer.
+
+**Totals:** History now has 41 lessons: B4, P4 and the Option 11 thematic study.
+
+**QA:**
+- 768 automated tests pass.
+- The History flow runs all 41 lessons: 677 checks pass.
+- Brief: `curriculum/briefs/history-medicine-batch-04.md`.
+
+**Not done:**
+- Site publication (Medicine key topics 1–4);
+- teacher review.
+
+**Next:** the Western Front historic environment (HE1–HE5). The Paper 3 option is still to be chosen.
+
 ## History: Medicine key topic 3 (5 lessons, Option 11 3.1–3.3); on GitHub `main`, not published
 
 **Lessons:**
