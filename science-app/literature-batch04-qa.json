@@ -35,5 +35,14 @@
   "specialist_review": "not_performed",
   "writing": "saved_unmarked",
   "inspector_source_limit": "Publisher synopsis and ERA catalogue opened; school teaching-guide search extract checked for opening details; publisher public preview perusal metadata accessed but image-only pages not read as text; no protected passage reproduced",
-  "hosting": "pending_native_publication_receipt"
+  "hosting": {
+    "status": "succeeded",
+    "at": "2026-10-28T16:04:43.003824+00:00",
+    "canonical_app_commit": "1a7bc540e1e3610a64eae0d8a6c7281ae127e8bf",
+    "source": "c1bc94a381efaeddd75cdbcf1dafa2230fb2bf07",
+    "deployment_id": "appgdep_6ae21d0b39c081919bfb740c174e6ff2",
+    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_d6e80681d83c8191ad63021f08b3ce94",
+    "runtime_hash_match_files": 692,
+    "audience": "owner-private unchanged"
+  }
 }

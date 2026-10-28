@@ -1,3 +1,16 @@
+## Literature batch 4 publication receipt — 28 October 2026
+
+**Published successfully16:04:43UTC:**nine Carol core units and Inspector opening.35builtLiterature (Macbeth20/Carol14/Inspector1),140planned of175working allocation. Shared350English budget/provisional175+175split unchanged;Language remains175reserved/unmapped slots. Carol14original core is built;its expanded28session allocation remains incomplete.
+
+- Canonical app commit `1a7bc540e1e3610a64eae0d8a6c7281ae127e8bf` pushed and verified equal to origin/main with clean status before packaging.
+- Site source `c1bc94a381efaeddd75cdbcf1dafa2230fb2bf07`;692runtime files exactly hash-match canonical source.
+- Deployment `appgdep_6ae21d0b39c081919bfb740c174e6ff2`, native status`succeeded`.
+- Saved version `appgprj_6ad1be5897a88191909a03ad57857103~appgver_d6e80681d83c8191ad63021f08b3ce94`.
+- URL https://gcse-science-atom-lab.anaxied.chatgpt.site ; owner-private audience unchanged (one owner/no groups/no external visitors).
+-811fulltests37.22s before final Inspector context clarification,43finalfocused afterward;old25records unchanged.9Dickensquotes+independent extract matched;Inspector uses original scene-summary lenses, not reproduced protected text. Offline handlers exercise all10newlessons, writing/resume/revision and three-topic recall/paper/rights. Browser visual/mobile/keyboard and specialist review remain outstanding; writing unmarked.
+
+Other subject content and root repository preserved. Receipt-only root commit/push follows. Next10:Inspector02–11. Full written assessment/extended workshops, Language specification mapping and detailed briefs remain separate from this implementation/publication.
+
 ## Literature batch 4 — Carol06–14 and Inspector01, 28 October 2026
 
 **Ten lessons implemented:**Carol Ignorance/Want (including laterPresent visits/Fred); future consequences; changed life; transformation; poverty/responsibility; family/generosity; narrator/structure; extract argument; independent essay/revision; Inspector opening celebration/certainty.35built (Macbeth20,Carol14,Inspector1);140planned of175Literature working allocation. Shared350English timetable/provisional175Literature+175reservedLanguage unchanged. OriginalCarol14core built, expanded28allocation still incomplete; no specialist or complete written-evidence claim.
