@@ -12,8 +12,8 @@
     "full": {
       "passed": 763,
       "failed": 0,
-      "duration_ms": 38939.837833,
-      "log": "/private/tmp/water01-combined-full.log"
+      "duration_ms": 39392.263792,
+      "log": "/private/tmp/water01-coldwar-combined.log"
     },
     "focused_final": {
       "passed": 99,
@@ -69,20 +69,25 @@
     "status": "succeeded",
     "audience": "owner_private_unchanged",
     "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
-    "source_commit": "7d317b4d65b44bae0a08daacca027f630e57ed1f",
-    "deployment_id": "appgdep_6ae1a51eae448191a2ae113236652680",
-    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_b9451cc39098819194a6c743194230ed",
-    "updated_at": "2026-10-28T07:32:58.686524+00:00",
-    "dist_hash_matches": 615,
-    "archive": "science-app-water01.tar.gz",
-    "live_dom": "AuthenticatedliveDOM verified:app.js?v=20261028-water01;150exploretotal;Watercoursemap5lessonlist;surplus-deficit opensPause+Loopchecked",
-    "live_proof": "crash-course-geography-water01-live.png"
+    "source_commit": "5f1aca5774053828a6b1718749a786fce0933690",
+    "deployment_id": "appgdep_6ae1a6563ae88191af28081a4d963f1f",
+    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_e597b235ef6c8191b8f107306a27e8fa",
+    "updated_at": "2026-10-28T07:38:11.031807+00:00",
+    "dist_hash_matches": 616,
+    "archive": "science-app-water01-sync.tar.gz",
+    "live_dom": "Authenticatedfinalcachewater01-sync;WaterlessonopensPause+Loopchecked;History16lessonsrenders;Water5lessonlistvisible",
+    "live_proof": "crash-course-geography-water01-live.png",
+    "initial_release": {
+      "source_commit": "7d317b4d65b44bae0a08daacca027f630e57ed1f",
+      "deployment_id": "appgdep_6ae1a51eae448191a2ae113236652680",
+      "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_b9451cc39098819194a6c743194230ed"
+    }
   },
   "integration": {
-    "upstream": "f993be5",
-    "preserved": "FournewHistorycommits;12Historylessons;3topics",
+    "upstream": "85e7aa2",
+    "preserved": "Five newerHistorycommits;16Historylessons;4topics",
     "cache": "Sharedprogressimports20261028-subjects01",
-    "browser": "History12lessonstudio renders;switchbackGeography all5WaterCompleted retained;no consoleerrors",
+    "browser": "Local and live History16lessonstudio;Water5Completed retained locally;liveWaterlessonPause+Loopchecked",
     "limitations": "ExistingHistoryauthoringQA retained;notnewHistoryspecialistreview"
   }
 }

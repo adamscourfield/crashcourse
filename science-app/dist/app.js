@@ -1,5 +1,5 @@
 import {explanationPhoto} from './science-references.js?v=20261024-lessonlayout03';
-import {createGeographyStudio} from './geography/studio.js?v=20261028-water01';import {createHistoryStudio} from './history/studio.js?v=20261023-history01';
+import {createGeographyStudio} from './geography/studio.js?v=20261028-water01';import {createHistoryStudio} from './history/studio.js?v=20261028-history04';
 import {scienceSummary} from './progress-summary.js?v=20261023-mastery01';
 import {dashboardHTML} from './mastery-dashboard.js?v=20261023-mastery01';
 import {cancelQuestionAdvance,questionFlow} from './question-flow.js?v=20261023-flow01';
