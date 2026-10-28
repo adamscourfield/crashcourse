@@ -1,3 +1,15 @@
+## English Literature batch 1 — 28 October 2026
+
+Five untiered AQA 8702 Macbeth lessons implemented (1.1–2.2): A world turned upside down; Prophecy is not a command; Public loyalty, private ambition; The decision to kill; A mind that cannot rest. New Literature studio, selectable language readings, character knowledge and scene sequence views, 5 investigation challenges, 15 practice and 20 independent knowledge questions; saved analytical drafts with readable version snapshots; concept recall and shared progress/navigation. Existing subject IDs/storage remain unchanged. Knowledge completion and writing attainment are explicitly separate.
+
+Plan: 98 lessons across six topics; 5 implemented, 93 planned. AQA selected texts and current exam structure verified; whole-text teaching still to build. See curriculum/english-literature-plan.md, roadmap, requirements, coverage and briefs/literature-macbeth-01.md. Context/extended writing/evidence breadth and specialist review remain open. Protected texts require appropriate quotation/rights decisions in each brief.
+
+QA: 794 full automated tests passed in 38.24s before the readable draft-version addition. Following that addition and save-status correction, 23 focused Literature/progress tests passed (including six Literature tests), syntax checks and diff whitespace checks passed. Roadmap/register IDs unique; 98 rows, five built; 15 requirements and 15 representative coverage rows. Local Literature module returns HTTP200. Browser visual/mobile/keyboard/wrong-answer/resume journeys were **not exercised**: local preview acquisition was blocked by the browser tool security policy. No alternate browser-control method used. These are technical checks, not specialist content review.
+
+GitHub publication: pending canonical commit/push. Hosting: not yet published in this section; receipt will be appended after native deployment. Existing owner-private Site identity/audience retained. Latest main f649a00 History208 preserved; the app-only publication will include that source, with no new History authorship claim.
+
+Next action: resolve browser QA when available, then Macbeth 2.3–4.3 batch; preserve independent writing evidence limitations.
+
 ## History exam-skill lessons checked against the June 2025 mark schemes; on GitHub `main`, not published
 
 **What was done:** the 15 skill lessons and all History practice questions were checked against Pearson's June 2025 mark schemes for Option 11, P4, B4 and Option 31. Details are in `curriculum/briefs/history-markscheme-check.md`.

@@ -1,0 +1,99 @@
+lesson_id,runtime_id,topic_id,title,text_scope,refs,build
+english-literature.macbeth.opening,lit.macbeth.opening,english-literature.macbeth,A world turned upside down,"Act 1, scenes 1–2",3.1.1;3.3,implemented
+english-literature.macbeth.prophecy,lit.macbeth.prophecy,english-literature.macbeth,Prophecy is not a command,"Act 1, scene 3",3.1.1;3.3,implemented
+english-literature.macbeth.hidden-desires,lit.macbeth.hidden-desires,english-literature.macbeth,"Public loyalty, private ambition","Act 1, scenes 4–5",3.1.1;3.3,implemented
+english-literature.macbeth.decision,lit.macbeth.decision,english-literature.macbeth,The decision to kill,"Act 1, scenes 6–7",3.1.1;3.3,implemented
+english-literature.macbeth.murder,lit.macbeth.murder,english-literature.macbeth,A mind that cannot rest,"Act 2, scenes 1–2",3.1.1;3.3,implemented
+english-literature.macbeth.discovery,,english-literature.macbeth,Discovery and suspicion,2.3–2.4,3.1.1;3.3,planned
+english-literature.macbeth.crown,,english-literature.macbeth,An insecure crown,3.1–3.2,3.1.1;3.3,planned
+english-literature.macbeth.banquet,,english-literature.macbeth,Murder and the banquet,3.3–3.6,3.1.1;3.3,planned
+english-literature.macbeth.apparitions,,english-literature.macbeth,The apparitions and equivocation,4.1,3.1.1;3.3,planned
+english-literature.macbeth.resistance,,english-literature.macbeth,Tyranny and resistance,4.2–4.3,3.1.1;3.3,planned
+english-literature.macbeth.unravelling,,english-literature.macbeth,Power begins to unravel,5.1–5.4,3.1.1;3.3,planned
+english-literature.macbeth.ending,,english-literature.macbeth,The fall of Macbeth,5.5–5.9,3.1.1;3.3,planned
+english-literature.macbeth.macbeth-character,,english-literature.macbeth,Macbeth across the whole play,Whole play,3.1.1;3.3,planned
+english-literature.macbeth.lady-macbeth,,english-literature.macbeth,Lady Macbeth across the whole play,Whole play,3.1.1;3.3,planned
+english-literature.macbeth.kingship,,english-literature.macbeth,Kingship and tyranny,Whole play,3.1.1;3.3,planned
+english-literature.macbeth.supernatural,,english-literature.macbeth,Fate and the supernatural,Whole play,3.1.1;3.3,planned
+english-literature.macbeth.guilt,,english-literature.macbeth,Guilt and moral disorder,Whole play,3.1.1;3.3,planned
+english-literature.macbeth.dramatic-method,,english-literature.macbeth,Tragedy and dramatic methods,Whole play,3.1.1;3.3,planned
+english-literature.macbeth.extract-essay,,english-literature.macbeth,From extract to whole-play argument,Paper 1,3.1.1;3.3,planned
+english-literature.macbeth.independent-essay,,english-literature.macbeth,Independent Macbeth essay and revision,Paper 1,3.1.1;3.3,planned
+english-literature.christmas-carol.lesson-01,,english-literature.christmas-carol,Scrooge and the narrator,Stave 1 opening,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-02,,english-literature.christmas-carol,Marley’s warning,Stave 1 ending,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-03,,english-literature.christmas-carol,Childhood and isolation,Stave 2 first half,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-04,,english-literature.christmas-carol,Love and loss,Stave 2 second half,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-05,,english-literature.christmas-carol,Abundance and deprivation,Stave 3 first half,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-06,,english-literature.christmas-carol,Ignorance and Want,Stave 3 ending,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-07,,english-literature.christmas-carol,Death and consequences,Stave 4,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-08,,english-literature.christmas-carol,A changed life,Stave 5,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-09,,english-literature.christmas-carol,Scrooge’s transformation,Whole novel,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-10,,english-literature.christmas-carol,Poverty and responsibility,Whole novel,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-11,,english-literature.christmas-carol,Family and generosity,Whole novel,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-12,,english-literature.christmas-carol,Narrative voice and structure,Whole novel,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-13,,english-literature.christmas-carol,Extract-to-whole argument,Paper 1,3.1.2;3.3,planned
+english-literature.christmas-carol.lesson-14,,english-literature.christmas-carol,Independent Carol essay and revision,Paper 1,3.1.2;3.3,planned
+english-literature.inspector-calls.lesson-01,,english-literature.inspector-calls,The celebration and Birling’s certainty,Act 1 opening,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-02,,english-literature.inspector-calls,The Inspector and Sheila,Act 1 ending,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-03,,english-literature.inspector-calls,Gerald’s account,Act 2 first half,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-04,,english-literature.inspector-calls,Mrs Birling and responsibility,Act 2 ending,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-05,,english-literature.inspector-calls,Eric’s account,Act 3 opening,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-06,,english-literature.inspector-calls,The final telephone call,Act 3 ending,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-07,,english-literature.inspector-calls,The Inspector’s dramatic role,Whole play,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-08,,english-literature.inspector-calls,Eva and the chain of responsibility,Whole play,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-09,,english-literature.inspector-calls,Class and power,Whole play,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-10,,english-literature.inspector-calls,Gender and exploitation,Whole play,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-11,,english-literature.inspector-calls,Generations and change,Whole play,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-12,,english-literature.inspector-calls,Stagecraft and dramatic structure,Whole play,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-13,,english-literature.inspector-calls,Planning a text-wide argument,Paper 2,3.2.1;3.3,planned
+english-literature.inspector-calls.lesson-14,,english-literature.inspector-calls,Independent Inspector essay and revision,Paper 2,3.2.1;3.3,planned
+english-literature.power-conflict.poem-01-1,,english-literature.power-conflict,"Ozymandias · Meaning, voice and movement",Ozymandias,3.2.2;3.3,planned
+english-literature.power-conflict.poem-01-2,,english-literature.power-conflict,"Ozymandias · Language, form, structure and comparison",Ozymandias,3.2.2;3.3,planned
+english-literature.power-conflict.poem-02-1,,english-literature.power-conflict,"London · Meaning, voice and movement",London,3.2.2;3.3,planned
+english-literature.power-conflict.poem-02-2,,english-literature.power-conflict,"London · Language, form, structure and comparison",London,3.2.2;3.3,planned
+english-literature.power-conflict.poem-03-1,,english-literature.power-conflict,"Extract from The Prelude · Meaning, voice and movement",Extract from The Prelude,3.2.2;3.3,planned
+english-literature.power-conflict.poem-03-2,,english-literature.power-conflict,"Extract from The Prelude · Language, form, structure and comparison",Extract from The Prelude,3.2.2;3.3,planned
+english-literature.power-conflict.poem-04-1,,english-literature.power-conflict,"My Last Duchess · Meaning, voice and movement",My Last Duchess,3.2.2;3.3,planned
+english-literature.power-conflict.poem-04-2,,english-literature.power-conflict,"My Last Duchess · Language, form, structure and comparison",My Last Duchess,3.2.2;3.3,planned
+english-literature.power-conflict.poem-05-1,,english-literature.power-conflict,"The Charge of the Light Brigade · Meaning, voice and movement",The Charge of the Light Brigade,3.2.2;3.3,planned
+english-literature.power-conflict.poem-05-2,,english-literature.power-conflict,"The Charge of the Light Brigade · Language, form, structure and comparison",The Charge of the Light Brigade,3.2.2;3.3,planned
+english-literature.power-conflict.poem-06-1,,english-literature.power-conflict,"Exposure · Meaning, voice and movement",Exposure,3.2.2;3.3,planned
+english-literature.power-conflict.poem-06-2,,english-literature.power-conflict,"Exposure · Language, form, structure and comparison",Exposure,3.2.2;3.3,planned
+english-literature.power-conflict.poem-07-1,,english-literature.power-conflict,"Storm on the Island · Meaning, voice and movement",Storm on the Island,3.2.2;3.3,planned
+english-literature.power-conflict.poem-07-2,,english-literature.power-conflict,"Storm on the Island · Language, form, structure and comparison",Storm on the Island,3.2.2;3.3,planned
+english-literature.power-conflict.poem-08-1,,english-literature.power-conflict,"Bayonet Charge · Meaning, voice and movement",Bayonet Charge,3.2.2;3.3,planned
+english-literature.power-conflict.poem-08-2,,english-literature.power-conflict,"Bayonet Charge · Language, form, structure and comparison",Bayonet Charge,3.2.2;3.3,planned
+english-literature.power-conflict.poem-09-1,,english-literature.power-conflict,"Remains · Meaning, voice and movement",Remains,3.2.2;3.3,planned
+english-literature.power-conflict.poem-09-2,,english-literature.power-conflict,"Remains · Language, form, structure and comparison",Remains,3.2.2;3.3,planned
+english-literature.power-conflict.poem-10-1,,english-literature.power-conflict,"Poppies · Meaning, voice and movement",Poppies,3.2.2;3.3,planned
+english-literature.power-conflict.poem-10-2,,english-literature.power-conflict,"Poppies · Language, form, structure and comparison",Poppies,3.2.2;3.3,planned
+english-literature.power-conflict.poem-11-1,,english-literature.power-conflict,"War Photographer · Meaning, voice and movement",War Photographer,3.2.2;3.3,planned
+english-literature.power-conflict.poem-11-2,,english-literature.power-conflict,"War Photographer · Language, form, structure and comparison",War Photographer,3.2.2;3.3,planned
+english-literature.power-conflict.poem-12-1,,english-literature.power-conflict,"Tissue · Meaning, voice and movement",Tissue,3.2.2;3.3,planned
+english-literature.power-conflict.poem-12-2,,english-literature.power-conflict,"Tissue · Language, form, structure and comparison",Tissue,3.2.2;3.3,planned
+english-literature.power-conflict.poem-13-1,,english-literature.power-conflict,"The Emigrée · Meaning, voice and movement",The Emigrée,3.2.2;3.3,planned
+english-literature.power-conflict.poem-13-2,,english-literature.power-conflict,"The Emigrée · Language, form, structure and comparison",The Emigrée,3.2.2;3.3,planned
+english-literature.power-conflict.poem-14-1,,english-literature.power-conflict,"Checking Out Me History · Meaning, voice and movement",Checking Out Me History,3.2.2;3.3,planned
+english-literature.power-conflict.poem-14-2,,english-literature.power-conflict,"Checking Out Me History · Language, form, structure and comparison",Checking Out Me History,3.2.2;3.3,planned
+english-literature.power-conflict.poem-15-1,,english-literature.power-conflict,"Kamikaze · Meaning, voice and movement",Kamikaze,3.2.2;3.3,planned
+english-literature.power-conflict.poem-15-2,,english-literature.power-conflict,"Kamikaze · Language, form, structure and comparison",Kamikaze,3.2.2;3.3,planned
+english-literature.power-conflict.comparison-01,,english-literature.power-conflict,Power and authority,All 15 poems; flexible pairings,3.2.2;3.3,planned
+english-literature.power-conflict.comparison-02,,english-literature.power-conflict,Power of nature,All 15 poems; flexible pairings,3.2.2;3.3,planned
+english-literature.power-conflict.comparison-03,,english-literature.power-conflict,Experiences of conflict,All 15 poems; flexible pairings,3.2.2;3.3,planned
+english-literature.power-conflict.comparison-04,,english-literature.power-conflict,Memory and consequences,All 15 poems; flexible pairings,3.2.2;3.3,planned
+english-literature.power-conflict.comparison-05,,english-literature.power-conflict,Identity and belonging,All 15 poems; flexible pairings,3.2.2;3.3,planned
+english-literature.power-conflict.comparison-06,,english-literature.power-conflict,Independent anthology comparison and revision,All 15 poems; flexible pairings,3.2.2;3.3,planned
+english-literature.unseen.lesson-01,,english-literature.unseen,First reading and literal meaning,Varied unfamiliar poetry; exact lawful texts selected in briefs,3.2.3;3.3,planned
+english-literature.unseen.lesson-02,,english-literature.unseen,"Voice, tone and shifts",Varied unfamiliar poetry; exact lawful texts selected in briefs,3.2.3;3.3,planned
+english-literature.unseen.lesson-03,,english-literature.unseen,"Language, form and structure",Varied unfamiliar poetry; exact lawful texts selected in briefs,3.2.3;3.3,planned
+english-literature.unseen.lesson-04,,english-literature.unseen,Independent unseen analysis,Varied unfamiliar poetry; exact lawful texts selected in briefs,3.2.3;3.3,planned
+english-literature.unseen.lesson-05,,english-literature.unseen,Comparing unseen poems,Varied unfamiliar poetry; exact lawful texts selected in briefs,3.2.3;3.3,planned
+english-literature.unseen.lesson-06,,english-literature.unseen,Timed unseen pair and revision,Varied unfamiliar poetry; exact lawful texts selected in briefs,3.2.3;3.3,planned
+english-literature.reading-writing.lesson-01,,english-literature.reading-writing,Literal meaning and inference,Interleave throughout set texts,3.3,planned
+english-literature.reading-writing.lesson-02,,english-literature.reading-writing,Selecting and integrating evidence,Interleave throughout set texts,3.3,planned
+english-literature.reading-writing.lesson-03,,english-literature.reading-writing,Methods and effects,Interleave throughout set texts,3.3,planned
+english-literature.reading-writing.lesson-04,,english-literature.reading-writing,Context and alternative interpretations,Interleave throughout set texts,3.3,planned
+english-literature.reading-writing.lesson-05,,english-literature.reading-writing,An analytical paragraph,Interleave throughout set texts,3.3,planned
+english-literature.reading-writing.lesson-06,,english-literature.reading-writing,A sustained whole-text argument,Interleave throughout set texts,3.3,planned
+english-literature.reading-writing.lesson-07,,english-literature.reading-writing,A critical comparison,Interleave throughout set texts,3.3,planned
+english-literature.reading-writing.lesson-08,,english-literature.reading-writing,"Closed-book retrieval, timing and editing",Interleave throughout set texts,3.3,planned
