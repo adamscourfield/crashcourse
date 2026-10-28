@@ -1,0 +1,100 @@
+{
+  "checked": "2026-10-27",
+  "sources": [
+    {
+      "id": "germany",
+      "url": "https://www.umweltbundesamt.de/en/topics/climate-energy/renewable-energies/renewable-energies-in-figures",
+      "sha256": "0acf3df9a08115bdbd6bdf5e668c996b40f4133bdaf0f88a6eaa72c29927dbea",
+      "retrieved": "2026-10-27"
+    },
+    {
+      "id": "india-capacity",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2144627&lang=1&reg=3",
+      "sha256": "2562146e277f63dff7d40bfb727c4ed3b30bcbb372ac96201d763c9548831b09",
+      "retrieved": "2026-10-27"
+    },
+    {
+      "id": "india-rooftop",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2245159&lang=2&reg=48",
+      "sha256": "62ad9568031c36874767605323645d73253b4a818f62dfb5ecf5728b5a199e46",
+      "retrieved": "2026-10-27"
+    },
+    {
+      "id": "attitudes",
+      "url": "https://www.gov.uk/government/statistics/desnz-public-attitudes-tracker-spring-2026/desnz-public-attitudes-tracker-energy-bills-and-tariffs-spring-2026-uk",
+      "sha256": "7954beae5399078b22e0d8fede675b60c88bfbd0feedac973b127a2764a24ef0",
+      "retrieved": "2026-10-27"
+    }
+  ],
+  "germany": {
+    "source": "https://www.umweltbundesamt.de/en/topics/climate-energy/renewable-energies/renewable-energies-in-figures",
+    "updated": "19 October 2026",
+    "year": 2025,
+    "unit": "percent renewable share of the named consumption denominator",
+    "rows": [
+      [
+        "Gross final energy (RED)",
+        23.9
+      ],
+      [
+        "Gross electricity consumption",
+        55.1
+      ],
+      [
+        "Heating and cooling",
+        19.2
+      ],
+      [
+        "Transport final energy",
+        8.0
+      ]
+    ],
+    "note": "Distinct denominators; do not add these percentages. October2026 webpage vintage, not February2026 provisional23.8/19.0 values."
+  },
+  "india": {
+    "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2144627&lang=1&reg=3",
+    "date": "30 June 2025",
+    "unit": "GW installed electricity capacity",
+    "rows": [
+      [
+        "Thermal",
+        242.04
+      ],
+      [
+        "Nuclear",
+        8.78
+      ],
+      [
+        "Renewables including large hydro",
+        234.0
+      ]
+    ],
+    "nonFossil": 242.78,
+    "total": 484.82,
+    "reportedNonFossilPercent": 50.08,
+    "note": "Installed capacity not generation or all-energy consumption; non-fossil includes nuclear. Reported rounded cells retained."
+  },
+  "rooftop": {
+    "source": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2245159&lang=2&reg=48",
+    "date": "20 March 2026",
+    "published": "25 March 2026",
+    "addedMW": 9566.89,
+    "note": "Reported cumulative rooftop capacity added under programme since February2024; not a household count or measured annual output. Projected jobs/avoidedemissions not treated as observed outcomes."
+  },
+  "attitudes": {
+    "source": "https://www.gov.uk/government/statistics/desnz-public-attitudes-tracker-spring-2026/desnz-public-attitudes-tracker-energy-bills-and-tariffs-spring-2026-uk",
+    "wave": "Spring 2026",
+    "published": "2 July 2026",
+    "rows": [
+      [
+        "Expect bills up:1\u20132 years",
+        49
+      ],
+      [
+        "Expect bills down:10+ years",
+        47
+      ]
+    ],
+    "note": "Different response categories and horizons from weighted UK adult survey, not complementary shares or actual future bill outcomes."
+  }
+}

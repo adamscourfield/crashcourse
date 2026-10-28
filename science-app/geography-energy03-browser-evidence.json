@@ -1,0 +1,77 @@
+{
+  "batch": "Energy03",
+  "implementedLessonIds": [
+    "geography.a.energy.developed-case",
+    "geography.a.energy.emerging-case",
+    "geography.a.energy.management-views",
+    "geography.a.energy.stakeholders",
+    "geography.a.energy.sustainable-use"
+  ],
+  "checks": {
+    "full": {
+      "date": "2026-10-27",
+      "passed": 753,
+      "durationSeconds": 37.8325
+    },
+    "focused": {
+      "date": "2026-10-28",
+      "passed": 94
+    }
+  },
+  "browser": {
+    "date": "2026-10-27",
+    "journeys": [
+      "stakeholders75percent_then100percent_retake",
+      "sustainable-use100percent",
+      "management-views100percent",
+      "developed-case100percent",
+      "emerging-case100percent"
+    ],
+    "negativePaths": [
+      "prematureContinue_rejected",
+      "wrongprediction_feedback_thenretry",
+      "fourobservedviews_reload",
+      "wrongpractice_reload",
+      "independentanswer_locked_reload",
+      "75percent_failed_gate_then100percent_retake"
+    ],
+    "phone": {
+      "pageWidth": 390,
+      "modelViews": 20,
+      "modelContentWidthApprox": 296,
+      "svgTextOverflow": [],
+      "independentFigures": {
+        "germany": {
+          "body": 300,
+          "svg": 299.9921875,
+          "page": 390,
+          "overflow": []
+        },
+        "india": {
+          "body": 300,
+          "svg": 299.9921875,
+          "page": 390,
+          "overflow": []
+        },
+        "rooftop": {
+          "body": 300,
+          "svg": 299.9921875,
+          "page": 390,
+          "overflow": []
+        }
+      },
+      "indiaTableExpanded": true,
+      "indiaTableExactBounds": "Read during prior runtime; value not preserved before restart"
+    },
+    "keyboard": "Space/Enter process controls exercised; observed label values not retained before restart",
+    "scope": "Energy\u2192Water saved/reloaded and course map omitted Energy. Final switchback not verified after restart."
+  },
+  "verificationLimits": [
+    "No specialist or full assistive-device review",
+    "Reduced-motion behavior retained but not separately emulated",
+    "28October restarted browser could not reach localhost4177; additional final visual/pathway return check unavailable",
+    "No console error summary retained across restart",
+    "No Energy03 proof screenshot retained across restart",
+    "Existing source passed recorded UI journeys before interruption; authenticated live DOM not verified"
+  ]
+}
