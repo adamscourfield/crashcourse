@@ -1,3 +1,27 @@
+## History depth batch 09: Medicine key topic 3 (7 lessons, 11 3.1–3.3); on GitHub `main`, not published
+
+**Lessons:**
+- spontaneous generation and miasma;
+- Pasteur;
+- Koch;
+- anaesthetics;
+- antiseptics and asepsis;
+- Snow and Broad Street;
+- the 1875 Public Health Act.
+
+**Totals:** History has 138 lessons; 75 are left on the 213-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 7 new lessons plus the whole-app checks: 133 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-09.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** Medicine key topic 4 (6 lessons) and the Western Front (13 lessons).
+
 ## History depth batch 08: Medicine key topic 2 (7 lessons, 11 2.1–2.3), and History checked against the Issue 6 specification; on GitHub `main`, not published
 
 **Lessons:**

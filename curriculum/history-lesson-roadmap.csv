@@ -101,17 +101,17 @@ order,lesson_id,title,topic_id,role,spec_ref,status
 100,history.medicine.great-plague,"Case study: the Great Plague in London, 1665",history.medicine.kt2,overview,11 2.3,implemented
 101,history.medicine.plague-compare,Plague in 1348 and 1665 compared,history.medicine.kt2,depth,11 2.3,implemented
 102,history.medicine.germ-theory,From spontaneous generation to germ theory,history.medicine.kt3,overview,11 3.1,implemented
-103,history.medicine.spontaneous,Spontaneous generation and miasma,history.medicine.kt3,depth,11 3.1,planned
-104,history.medicine.pasteur,Pasteur's germ theory,history.medicine.kt3,depth,11 3.1,planned
-105,history.medicine.koch,Koch and the identification of microbes,history.medicine.kt3,depth,11 3.1,planned
+103,history.medicine.spontaneous,Spontaneous generation and miasma,history.medicine.kt3,depth,11 3.1,implemented
+104,history.medicine.pasteur,Pasteur's germ theory,history.medicine.kt3,depth,11 3.1,implemented
+105,history.medicine.koch,Koch and the identification of microbes,history.medicine.kt3,depth,11 3.1,implemented
 106,history.medicine.nightingale,Florence Nightingale and hospital care,history.medicine.kt3,overview,11 3.2,implemented
 107,history.medicine.surgery,Surgery: anaesthetics and antiseptics,history.medicine.kt3,overview,11 3.2,implemented
-108,history.medicine.anaesthetics,Anaesthetics,history.medicine.kt3,depth,11 3.2,planned
-109,history.medicine.antiseptics,Antiseptics and aseptic surgery,history.medicine.kt3,depth,11 3.2,planned
+108,history.medicine.anaesthetics,Anaesthetics,history.medicine.kt3,depth,11 3.2,implemented
+109,history.medicine.antiseptics,Antiseptics and aseptic surgery,history.medicine.kt3,depth,11 3.2,implemented
 110,history.medicine.jenner,Case study: Edward Jenner and smallpox vaccination,history.medicine.kt3,overview,11 3.3;11 3.2,implemented
 111,history.medicine.cholera,"Case study: cholera, John Snow and public health",history.medicine.kt3,overview,11 3.3;11 3.2,implemented
-112,history.medicine.broad-street,John Snow and the Broad Street pump,history.medicine.kt3,depth,11 3.3,planned
-113,history.medicine.public-health-1875,The Public Health Act of 1875,history.medicine.kt3,depth,11 3.3,planned
+112,history.medicine.broad-street,John Snow and the Broad Street pump,history.medicine.kt3,depth,11 3.3,implemented
+113,history.medicine.public-health-1875,The Public Health Act of 1875,history.medicine.kt3,depth,11 3.2,implemented
 114,history.medicine.modern-ideas,"Modern ideas: genetics, lifestyle and diagnosis",history.medicine.kt4,overview,11 4.1,implemented
 115,history.medicine.genetics,Genetic and lifestyle causes,history.medicine.kt4,depth,11 4.1,planned
 116,history.medicine.diagnosis,Modern diagnosis,history.medicine.kt4,depth,11 4.1,planned
