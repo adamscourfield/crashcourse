@@ -1,3 +1,4 @@
+import {batch09} from './content-batch09.js?v=20261028-lit09';
 import {batch08} from './content-batch08.js?v=20261028-lit08';
 import {batch07} from './content-batch07.js?v=20261028-lit07';
 import {batch06} from './content-batch06.js?v=20261028-lit06';
@@ -7,7 +8,9 @@ import {batch03} from './content-batch03.js?v=20261028-lit03';
 import {batch02} from './content-batch02.js?v=20261028-lit02';
 export const source="https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification";
 export const topics=[{id:"english-literature.macbeth",title:"Macbeth",unit:"8702"},{id:"english-literature.christmas-carol",title:"A Christmas Carol",unit:"8702"},{id:"english-literature.inspector-calls",title:"An Inspector Calls",unit:"8702-modern"},{id:"english-literature.power-conflict",title:"Power and Conflict",unit:"8702-poetry"}];
+topics.push({id:"english-literature.unseen",title:"Unseen poetry",unit:"8702-unseen"},{id:"english-literature.reading-writing",title:"Reading and analytical writing",unit:"8702-skills"});
 export const units=[{id:"8702",title:"AQA GCSE English Literature",paper:"Paper 1 · Shakespeare and the 19th-century novel"},{id:"8702-modern",title:"AQA GCSE English Literature",paper:"Paper 2 · Modern text"},{id:"8702-poetry",title:"AQA GCSE English Literature",paper:"Paper 2 · Anthology poetry"}];
+units.push({id:"8702-unseen",title:"AQA GCSE English Literature",paper:"Paper 2 · Unseen poetry"},{id:"8702-skills",title:"AQA GCSE English Literature",paper:"Skills across Papers 1 and 2"});
 export const specIssue="checked 28 October 2026";
 export const lessons=[
   {
@@ -973,3 +976,5 @@ lessons.push(...batch06);
 lessons.push(...batch07);
 
 lessons.push(...batch08);
+
+lessons.push(...batch09);

@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-28",
+  "batch": "Literature09",
+  "new_lessons": 20,
+  "total_built": 95,
+  "remaining_planned_literature": 80,
+  "working_literature_allocation": 175,
+  "shared_english_programme": "350sessions70weeks;provisional175Literature175reserved_unmappedLanguage",
+  "topics_built": 6,
+  "anthology_core_units": 36,
+  "poems_introduced": 15,
+  "paired_poems": 15,
+  "anthology_extended_workshops_remaining": 13,
+  "unseen_units": 6,
+  "unseen_public_domain_poems": 9,
+  "unseen_writers": 6,
+  "skills_units": 5,
+  "new_practice": 60,
+  "new_checks": 80,
+  "total_practice": 285,
+  "total_checks": 380,
+  "question_ids": 665,
+  "full_suite": {
+    "tests": 850,
+    "passed": 849,
+    "skipped": 1,
+    "failed": 0,
+    "duration_ms": 38212.238583,
+    "skip": "Postgres RLS test requires CC_TEST_PG; unchanged SQL not rerun here",
+    "scope": "After all lesson/runtime/reading changes; before final header deduplication and task-label spacing"
+  },
+  "final_focused": {
+    "passed": 60,
+    "duration_ms": 800.025458,
+    "scope": "Literature content/handlers, classroom catalogue and mocked AI regression after final copy refinements"
+  },
+  "old75_normalised_sha256": "d5a03a6fda631b045776894e4dd2b2f586915c389e92655913a2b273cbc1c06f",
+  "rights": "Protected anthology poems original commentary only; complete PD unfamiliar stimuli by Thomas/Rossetti/Hardy/Teasdale/Dickinson/Dunbar. Dickinson early1891editedtext explicitly identified, no modern reconstructed edition. Independent Ozymandias follows AQA anthology public-domain wording. No copied protected passage/audio/photo/editorialanalysis.",
+  "reading_sources_module": "science-app/dist/literature/reading-texts09.js",
+  "official_sources": [
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/modern-texts-and-poetry",
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/skills",
+    "https://filestore.aqa.org.uk/resources/english/AQA-8702-TG-POEMS.PDF"
+  ],
+  "offline": "All20actualhandler journeys wrong/retry/gates/lockedanswers/firsttries/draftversion/resume;all3newindependentworkspaces firstresponse-hiddencriteria/revisions;newtopicpaper/source/recallisolation;old75unchanged",
+  "browser": "Six-topicmap and6unseenlessonlist;Adlestropfulltext keyboardPageDown scrollTop498/scrollHeight1043/clientHeight518;all3details/3views;wrongretry challenge/practice;automaticQ2;draftversionandreloadresume;independentSympathy/Hope paircomplete andguidancehidden beforefirstsubmit, draftreload, criteriaafter, originalfirstresponsevisibleafterseparaterevision;phone390x844 documentwidth390/nohorizontaloverflow,poemfont17/prewrap;viewportreset;no sampledconsoleerrors",
+  "preview": "crash-course-literature-batch09-preview.jpg",
+  "specialist_review": "not_performed",
+  "writing": "Saved unmarked; independentknowledgecompletion not earned by writing. Suggested35+10min budget advisory not enforced. No liveAIkey/provider activation; userdeferredsetup.",
+  "limitations": [
+    "Not all20fullbrowserjourneys",
+    "No comprehensive assistive-technology or specialist review",
+    "Wider unfamiliar-poetry range and extended workshops remain planned",
+    "Human written-response review outstanding"
+  ],
+  "curriculum_validation": "175unique roadmapIDs95built80planned;285coverage rows;350sharedEnglishslots;926teacherassignmentcatalogue",
+  "publication": {
+    "status": "pending",
+    "mode": "static lessons;existingowner-privateaudience;unconfiguredclassroomdemo andinactiveAI retained"
+  }
+}
