@@ -63,7 +63,16 @@
     "WHOprimarywebverified;directsnapshot403notretained"
   ],
   "publication": {
-    "status": "pending",
-    "audience": "owner_private_unchanged"
+    "status": "succeeded",
+    "audience": "owner_private_unchanged",
+    "source_commit": "49b63329cf5bb74607c58a6a2e2d8604af3fa17f",
+    "deployment_id": "appgdep_6ae1ac88425c819192e0e470cb46962d",
+    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_ce5e120f6c2c8191a092e114ad7e6404",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "updated_at": "2026-10-28T08:04:38.199251+00:00",
+    "runtime_hash_matches": 627,
+    "archive": "science-app-water02.tar.gz",
+    "live": "Authenticatedappwater02cache;tenWaterlessonlist;ROdefaultPause+Loopchecked;History24renders;consoleerrorsnone",
+    "proof": "crash-course-geography-water02-live.png"
   }
 }
