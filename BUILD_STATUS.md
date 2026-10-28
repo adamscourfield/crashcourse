@@ -1,3 +1,29 @@
+## History: Weimar and Nazi Germany key topics 1–2 (8 lessons, Paper 3 option 31, 1.1–2.4); on GitHub `main`, not published
+
+**Lessons:**
+- the origins of the Republic;
+- early challenges;
+- recovery under Stresemann;
+- changes in society;
+- the early Nazi Party;
+- the Munich Putsch and the lean years;
+- the growth in Nazi support;
+- how Hitler became Chancellor.
+
+**Totals:** History now has 54 lessons and covers all three papers in part. Option 31 key topics 3–4 are planned rows.
+
+**QA:**
+- 780 automated tests pass.
+- The History flow runs all 54 lessons: 885 checks pass.
+- Brief: `curriculum/briefs/history-germany-batch-01.md`.
+
+**Not done:**
+- Site publication;
+- teacher review;
+- printed interpretations and sources for Paper 3 Question 3.
+
+**Next:** Option 31 key topics 3–4.
+
 ## UK Challenges02 + Fieldwork01 — ten lessons published
 
 28 October 2026. Added five shared UK Challenges lessons (8.3a/b;8.4a/b/c) and five shared fieldwork-preparation lessons covering all six enquiry stages. Geography now has175lessons across13topics,525practice and700independent selected-response checks. UK Challenges11;fieldwork5. Four option-specific fieldwork investigations and ten skills lessons remain planned (14total). Stable IDs and version1progress retained; generic preparation is shared across all24pathways. Water/Energy eligible totals147coasts+rivers,150coasts+glaciers,151rivers+glaciers. App655=361Science+73Maths+175Geography+46History after preserving origin/main812b3d7 WesternFront work. History cache refreshed coherently; content-review status unchanged.
