@@ -1,0 +1,1806 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head id="Head1"><title>
+	Press Release Page | Press Information Bureau
+</title><link href="css/style.css?v=1" rel="stylesheet" type="text/css" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link rel="alternate stylesheet" href="css/change.css?v=1" media="screen" title="change" /><link rel="alternate stylesheet" href="css/green.css?v=1" media="screen" title="green" /><link rel="alternate stylesheet" href="css/yellow.css" media="screen" title="yellow" /><link rel="stylesheet" type="text/css" href="css/prtint.css" media="print" /><link rel="stylesheet" href="css/style3.1.css" type="text/css" /><link id="pibA11yCss" rel="stylesheet" href="/css/accessibility.css?v=7" type="text/css" />
+    <script type="text/javascript">
+        (function (d) {
+            var t = "";
+            try {
+                t = window.localStorage.getItem("pibStyle") || "";
+            } catch (e) {
+                t = "";
+            }
+            if (t === "orange") {
+                t = "yellow";
+            }
+            var c = t === "change" ? " pib-hc"
+                : t === "green" ? " pib-theme-green"
+                : t === "yellow" ? " pib-theme-yellow" : "";
+            d.documentElement.className += c + " pib-a11y-content";
+        }(document));
+    </script>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/accessibility.js?v=7"></script>
+
+    <script type="text/javascript">
+            $(document).ready(function () {
+                  function getParameterByName(name) {
+                        var url = window.location.href;
+                        name = name.replace(/[\[\]]/g, '\\$&');
+                        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                              results = regex.exec(url);
+                        if (!results) return null;
+                        if (!results[2]) return '';
+                        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+                  }
+                  let prid = parseInt(getParameterByName('PRID'), 10);
+
+                  if (!isNaN(prid) && prid > 0) {
+                        $.ajax({
+                              type: "POST",
+                              url: "AjaxMethod.aspx/UpdatePRHitCount",
+                              async: false,
+                              data: JSON.stringify({ 'PermId': prid }),
+                              contentType: "application/json; charset=utf-8",
+                              dataType: "json",
+                              success: function (response) {
+                                    console.log(response);
+                              },
+                              error: function (error) {
+                                    console.log("Error in AJAX request", error);
+                              }
+                        });
+                  } else {
+                        console.log("Invalid parameters:", prid);
+                  }
+            });
+    </script>
+    <style type="text/css">
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+        }
+
+        full-width {
+            width: 100%;
+        }
+
+        .logo-left, .logo-center, .countdown {
+            display: flex;
+            align-items: center;
+        }
+
+            .logo-left img, .logo-center img {
+                height: 70px;
+            }
+
+        .countdown {
+            text-align: center;
+            background-color: var(--dbim-text, #150202);
+            border-radius: 10px;
+            padding: 10px;
+            border: 2px solid grey;
+        }
+
+        .firstnumber {
+            color: #000000;
+            position: absolute;
+            top: 50px;
+            right: 90px;
+            font-size: 30px;
+        }
+
+        .secondnumber {
+            position: absolute;
+            color: #000000;
+            right: 45px;
+            top: 50px;
+            font-size: 30px;
+        }
+
+        .countdown .days {
+            font-size: 35px;
+            color: gold;
+        }
+
+        .countdown p {
+            margin: 0;
+        }
+
+        .countdown .text {
+            font-size: 16px;
+        }
+
+        a {
+            word-break: break-all;
+        }
+
+        iframe, img {
+            max-width: 100%;
+        }
+
+        /* === DBIM 3.0 Option 4 Separator Line & Reading Meta Styling === */
+        .pr-share--footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            border-top: 1px solid var(--dbim-border, #d1d5db);
+            padding-top: 16px;
+            margin-top: 24px;
+        }
+
+        .pr-share__left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .pr-reading-meta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.95rem;
+            color: var(--dbim-text-secondary, #475569);
+            font-weight: 500;
+            white-space: nowrap;
+            margin-left: auto;
+        }
+
+        .pr-reading-meta__item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pr-reading-meta__divider {
+            color: var(--dbim-border, #cbd5e1);
+            font-weight: 300;
+        }
+
+        .pib-hc .pr-reading-meta,
+        .pib-hc .pr-reading-meta svg {
+            color: currentColor !important;
+        }
+
+        @media (max-width: 680px) {
+            .pr-share--footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .pr-reading-meta {
+                margin-left: 0;
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+
+        @media(max-width:1199px) {
+            .firstnumber {
+                top: 40px;
+                right: 72px;
+                font-size: 30px;
+            }
+
+            .secondnumber {
+                right: 35px;
+                top: 40px;
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width:990px) {
+            .firstnumber {
+                top: 25px;
+                right: 54px;
+                font-size: 30px;
+            }
+
+            .secondnumber {
+                right: 25px;
+                top: 25px;
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width:768px) {
+            .countdown, .days {
+                font-size: 12px !important;
+            }
+
+            .firstnumber {
+                top: 25%;
+                right: 8%;
+                font-size: 30px;
+            }
+
+            .secondnumber {
+                right: 4.5%;
+                top: 25%;
+                font-size: 30px;
+            }
+        }
+
+        @media(max-width:475px) {
+            .countdown, .days {
+                font-size: 10px !important;
+                top: 20%;
+            }
+
+            .bannerimgdiv {
+                padding: 0 !important;
+            }
+
+            .bannerimg {
+                width: 108% !important;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+            $(function () {
+                  $("[id*=printPDF]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+            $(function () {
+                  $("[id*=printPDFEvent]").click(function () {
+                        $("[id*=hfGridHtml]").val($("#PdfDiv").html());
+                  });
+            });
+    </script>
+
+    <link id="pibConsentCss" href="/css/consent.css?v=8" rel="stylesheet" type="text/css" /><link id="pibFontsCss" href="/css/fonts-noto.css?v=6" rel="stylesheet" type="text/css" /><link id="pibDbimCss" href="/css/dbim.css?v=1120" rel="stylesheet" type="text/css" /><meta property="og:title" content="IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA" /><meta property="og:url" content="www.pib.gov.in/Pressreleaseshare.aspx?PRID=2153573" /><meta property="og:description" content="Atal Bhujal Yojana, is a community led participatory ground water management scheme focusing on dema" /><meta property="og:image" content="https:/pib.gov.in/images/indian-emblem.png" />
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="C4E7H-KSCMC-422L4-W3EM5-U36MF",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"C4E7H-KSCMC-422L4-W3EM5-U36MF";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="j2kuoticcp6m22xbvzpa-f-22bdbd6ff-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1825201","ak.ai":parseInt("1215205",10),"ak.ol":"0","ak.cr":11,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"1f5d5994","ak.r":49224,"ak.a2":n,"ak.m":"dscb","ak.n":"ff","ak.cport":64428,"ak.gh":"2.19.249.222","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1793175134","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==ImGMAvNq9IulwjlfpC5/W52J65wvH1CG8YW3fFHco8TaFtmft3Aca4LDl7qS+xF90CsicGeF2QQvz4xEBG8nZ1Ez/3cGoAhhmfe/c0OMr3+gUpgdqlLN4aRd2dZNti69tS9srHe1hlzxAMOp4WcxQguZUyhwxNMRMX9QN757Cd8kMj3ixAGf/X8yvROFaQNZh0jmQ9Uz6uEwXrY9ENFXFQayOiyAD6hI4cnfxYx4NdKjph2G6IBZh+N0WdWm1wwiWSGXQ1STiEoyFk1WFPMKrOxtlHscDAjD/xLknllIC/MthoEqy7mlvlUV0swo2fw+tb89cmZWWME2kao2ad4XuCwfCPJ7fatAa0gLJCkwopfuhyq6PfotOsu7KRjtUgBL6JDQBLn0qfUi6QvG4vz+fRgwCurRpf/jz+PF0gchMyk=","ak.pv":"9","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"
+     style="position:absolute;width:0;height:0;overflow:hidden" id="dbim-icon-sprite">
+    <defs>
+        <symbol id="icon-angle-double-left" viewBox="0 0 24 24"><path d="M11.6 4.6 4.2 12l7.4 7.4 2.2-2.2L8.6 12l5.2-5.2z"/><path d="M19 4.6 11.6 12 19 19.4l2.2-2.2L16 12l5.2-5.2z"/></symbol>
+        <symbol id="icon-angle-double-right" viewBox="0 0 24 24"><path d="M12.4 4.6 10.2 6.8 15.4 12l-5.2 5.2 2.2 2.2L19.8 12z"/><path d="M5 4.6 2.8 6.8 8 12l-5.2 5.2L5 19.4 12.4 12z"/></symbol>
+        <symbol id="icon-arrow-left" viewBox="0 0 24 24"><path d="M20.8 10.6H9.6v2.8h11.2z"/><path d="M10.8 5.6 3.2 12l7.6 6.4z"/></symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M3.2 10.6h11.2v2.8H3.2z"/><path d="M13.2 5.6 20.8 12l-7.6 6.4z"/></symbol>
+        <symbol id="icon-blogger" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M6.4 2.4h11.2a4 4 0 0 1 4 4v11.2a4 4 0 0 1-4 4H6.4a4 4 0 0 1-4-4V6.4a4 4 0 0 1 4-4zm2.8 5.2a2 2 0 0 0 0 4h2.4a2 2 0 0 0 0-4zm0 5.6a2 2 0 0 0 0 4h5.6a2 2 0 0 0 0-4z"/></symbol>
+        <symbol id="icon-calendar" viewBox="0 0 24 24"><path d="M7.6 2.4H10v2.4H7.6z"/><path d="M14 2.4h2.4v2.4H14z"/><path fill-rule="evenodd" d="M4 4.8h16a1.6 1.6 0 0 1 1.6 1.6v13.2a1.6 1.6 0 0 1-1.6 1.6H4a1.6 1.6 0 0 1-1.6-1.6V6.4A1.6 1.6 0 0 1 4 4.8zm.4 5.6v8.4h15.2v-8.4z"/><path d="M6.4 12.4h3.2v3.2H6.4z"/></symbol>
+        <symbol id="icon-chevron-left" viewBox="0 0 24 24"><path d="M15.4 4.6 8 12l7.4 7.4 2.2-2.2L12.4 12l5.2-5.2z"/></symbol>
+        <symbol id="icon-chevron-right" viewBox="0 0 24 24"><path d="M8.6 4.6 6.4 6.8 11.6 12l-5.2 5.2 2.2 2.2L16 12z"/></symbol>
+        <symbol id="icon-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/></symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24"><path d="M10.8 3h2.4v7.6h3.4L12 16.6l-4.6-6h3.4z"/><path d="M4 17.2h2.4v2.4h11.2v-2.4H20v3.2a1.4 1.4 0 0 1-1.4 1.4H5.4A1.4 1.4 0 0 1 4 20.4z"/></symbol>
+        <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M13.6 21.6v-8.4h2.8l.42-3.3h-3.22V7.8c0-.95.27-1.6 1.64-1.6h1.74V3.26a23 23 0 0 0-2.54-.13c-2.5 0-4.22 1.53-4.22 4.34v2.43H7.4v3.3h2.82v8.4z"/></symbol>
+        <symbol id="icon-fact-check" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.4 3.6 5.6v6.2c0 4.6 3.4 8.6 8.4 9.8 5-1.2 8.4-5.2 8.4-9.8V5.6zm-1 13.2-3.6-3.6 1.7-1.7 1.9 1.9 4.5-4.5 1.7 1.7z"/></symbol>
+        <symbol id="icon-hashtag" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M8.8 3h2.4l-1 6h3.2l1-6h2.4l-1 6h3.4v2.4h-3.8l-.6 3.2h3.6V17h-4l-1 5h-2.4l1-5h-3.2l-1 5H5.4l1-5H3V14.6h3.8l.6-3.2H3.8V9h4zm.6 8.4-.6 3.2h3.2l.6-3.2z"/></symbol>
+        <symbol id="icon-home" viewBox="0 0 24 24"><path d="M12 3.4 2.8 11.6h2.4v8.4a1 1 0 0 0 1 1h3.3v-5.4h5v5.4h3.3a1 1 0 0 0 1-1v-8.4h2.4z"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7.6 2.4h8.8a5.2 5.2 0 0 1 5.2 5.2v8.8a5.2 5.2 0 0 1-5.2 5.2H7.6a5.2 5.2 0 0 1-5.2-5.2V7.6a5.2 5.2 0 0 1 5.2-5.2zm0 2.4a2.8 2.8 0 0 0-2.8 2.8v8.8a2.8 2.8 0 0 0 2.8 2.8h8.8a2.8 2.8 0 0 0 2.8-2.8V7.6a2.8 2.8 0 0 0-2.8-2.8z"/><path fill-rule="evenodd" d="M12 6.8a5.2 5.2 0 1 0 0 10.4 5.2 5.2 0 0 0 0-10.4zm0 2.4a2.8 2.8 0 1 1 0 5.6 2.8 2.8 0 0 1 0-5.6z"/><circle cx="17.3" cy="6.7" r="1.3"/></symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M4.8 8.8h3.6v12H4.8z"/><circle cx="6.6" cy="5.4" r="2.1"/><path d="M10.8 8.8h3.45v1.65h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.35 4.3 5.4v6.6h-3.6v-5.85c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1v5.95h-3.6z"/></symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M2.4 7.6v9.2a1.6 1.6 0 0 0 1.6 1.6h16a1.6 1.6 0 0 0 1.6-1.6V7.6L12 14z"/><path d="M21.2 5.4H2.8L12 11.8z"/></symbol>
+        <symbol id="icon-mail-open" viewBox="0 0 24 24"><path d="M2.4 9.8h19.2v9.6A1.6 1.6 0 0 1 20 21H4a1.6 1.6 0 0 1-1.6-1.6z"/><path d="M12 2.6 21.6 9.2h-3.8L12 5.3 6.2 9.2H2.4z"/><path d="m3.9 11.2 8.1 5.4 8.1-5.4 1.5 1.3-9.6 6.4-9.6-6.4z"/></symbol>
+        <symbol id="icon-map-marker" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.4a7 7 0 0 0-7 7c0 5.2 7 12.2 7 12.2s7-7 7-12.2a7 7 0 0 0-7-7zm0 9.6a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2z"/></symbol>
+        <symbol id="icon-newspaper" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M2.8 4.4h14.8v15.2H2.8zm2 2v11.2h10.8V6.4z"/><path d="M6 7.6h8.4v1.6H6z"/><path d="M6 10.8h8.4v1.6H6z"/><path d="M6 14h5.2v1.6H6z"/><path d="M18.4 8.4h2.8v9.6a1.4 1.4 0 0 1-2.8 0z"/></symbol>
+        <symbol id="icon-pause" viewBox="0 0 24 24"><rect x="7.4" y="4" width="3.6" height="16" rx="0.9"/><rect x="13" y="4" width="3.6" height="16" rx="0.9"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="M8 4.5v15l12-7.5z"/></symbol>
+        <symbol id="icon-picture" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M2.4 5.2h19.2v13.6H2.4zm2 2v9.6h15.2V7.2z"/><path d="M5.6 16.4 10 11l2.6 3 2-2.2 4 4.6z"/><circle cx="8" cy="10.4" r="1.5"/></symbol>
+        <symbol id="icon-press-conference" viewBox="0 0 24 24"><circle cx="12" cy="5.2" r="2.6"/><path d="M7.6 12.2a4.4 4.4 0 0 1 8.8 0z"/><circle cx="4.9" cy="9.6" r="2.2"/><path d="M1.8 15.2a3.1 3.1 0 0 1 6.2 0z"/><circle cx="19.1" cy="9.6" r="2.2"/><path d="M16 15.2a3.1 3.1 0 0 1 6.2 0z"/><path d="M6.6 13.6h10.8l2.2 7.8H4.4z"/></symbol>
+        <symbol id="icon-print" viewBox="0 0 24 24"><path d="M6.4 2.8h11.2v4.4H6.4z"/><path d="M4 8.4h16a1.6 1.6 0 0 1 1.6 1.6v5.6a1.6 1.6 0 0 1-1.6 1.6h-1.6v-2.8H6v2.8H4a1.6 1.6 0 0 1-1.6-1.6V10A1.6 1.6 0 0 1 4 8.4z"/><path d="M7.2 15.6h9.6v5.6H7.2z"/></symbol>
+        <symbol id="icon-rss" viewBox="0 0 24 24"><circle cx="4.8" cy="19.2" r="2.4"/><path d="M2.4 11.2v3.2a6.4 6.4 0 0 1 6.4 6.4H12A9.6 9.6 0 0 0 2.4 11.2z"/><path d="M2.4 4.8V8A13.6 13.6 0 0 1 16 21.6h3.2A16.8 16.8 0 0 0 2.4 4.8z"/></symbol>
+        <symbol id="icon-search-plus" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M10 2.8a7.2 7.2 0 1 0 0 14.4 7.2 7.2 0 0 0 0-14.4zm0 2.4a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6z"/><path d="M15.3 14.6 21.2 20.5l-1.5 1.5-5.9-5.9z"/><path d="M9.2 6.8h1.6v2.4h2.4v1.6h-2.4v2.4H9.2v-2.4H6.8V9.2h2.4z"/></symbol>
+        <symbol id="icon-share" viewBox="0 0 24 24"><circle cx="18" cy="5.6" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="18.4" r="3"/><path d="M8.3 10.9 15.7 7.2l.9 1.8-7.4 3.7z"/><path d="M9.2 13.1 16.6 16.8l-.9 1.8-7.4-3.7z"/></symbol>
+        <symbol id="icon-twitter" viewBox="0 0 24 24"><path d="M4.2 3h4.3l11.3 18h-4.3z"/><path d="M19.3 3h-2.6L4.2 21h2.6z"/></symbol>
+        <symbol id="icon-university" viewBox="0 0 24 24"><path d="M12 2.4 21.6 7.2v1.6H2.4V7.2z"/><path d="M4.8 10.4h2.4v8H4.8z"/><path d="M9.2 10.4h2.4v8H9.2z"/><path d="M13.4 10.4h2.4v8h-2.4z"/><path d="M17.6 10.4H20v8h-2.4z"/><path d="M3.2 19.8h17.6v1.8H3.2z"/></symbol>
+        <symbol id="icon-volume-up" viewBox="0 0 24 24"><path d="M3.2 9.2h3.3l5-4.2v14l-5-4.2H3.2z"/><path d="M14.6 8.4a5 5 0 0 1 0 7.2l1.6 1.6a7.2 7.2 0 0 0 0-10.4z"/><path d="M17.4 5.6a8.8 8.8 0 0 1 0 12.8l1.5 1.5a10.9 10.9 0 0 0 0-15.8z"/></symbol>
+        <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.4a9.5 9.5 0 0 0-8.1 14.5L2.4 21.6l4.8-1.4A9.5 9.5 0 1 0 12 2.4zm0 2.2a7.3 7.3 0 1 1-3.8 13.5l-.4-.2-2.6.7.7-2.5-.3-.4A7.3 7.3 0 0 1 12 4.6z"/><path d="M9.4 7.8c-.2-.5-.4-.5-.6-.5h-.5a1 1 0 0 0-.7.3c-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.8 4.3 3.8 2.1.8 2.6.7 3 .6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3-1.6-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6 6 0 0 1-1.8-1.1 6.6 6.6 0 0 1-1.2-1.6c-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.5z"/></symbol>
+        <symbol id="icon-youtube" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8zM10.2 15.1V8.9l5.1 3.1z"/></symbol>
+    </defs>
+</svg>
+
+    <form method="post" action="./PressReleasePage.aspx?PRID=2153573&amp;reg=48&amp;lang=2" id="form1">
+<input type="hidden" name="sc_HiddenField" id="sc_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="/ScriptResource.axd?d=x6wALODbMJK5e0eRC_p1LdIxBJXt0U_WW5GWfJqHAqo6frgCmGRfEywglicTersO2OKrFhK1gAIp0Wk2al2YrpdR3uWqH6f4nfjBsCyRUfTUUVmb0&amp;t=ffffffffecf8d3f2" type="text/javascript"></script>
+<script src="/PressReleasePage.aspx?_TSM_HiddenField_=sc_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.7.123%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a5a4df314-b4a2-4da2-a207-9284f1b1e96c%3ade1feab2%3af2c8e708%3a8613aea7%3af9cec9bc%3a3202a5a2%3aab09e3fe%3a87104b7c%3a720a52bf%3a589eaa30%3aa67c2700%3abe6fb298" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="59B53027" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="MccOXdcYFSvjXOb/VBkAykj+VlgCvHnCBBpqiwWBOrycAPA0x8gNdGHo0pe5ZOLqtav1s38mQwak7tXy7JaQiWdDa94W2pron/ZCaT5/uG54uQ87I0tGgImdMPu0iWgm+3T07ZijfU4UrWN54YQqSJsNkW3dZu0gq6/xoybJforZH+bmx+rdCUIU3CIeYd+B9hacQkMUasKrs8IO4sglWrhHb6PV4jURJtos/j7QNHqgfWVjAodR4t/zQF4so5fCOH+QfXYeSfFvYW1GVcDxCWFDIZk=" />
+        
+        <div id="templateCss"></div>
+        
+        <input type="hidden" name="hfGridHtml" id="hfGridHtml" />
+        <div class="container" style='margin-bottom: 50px;'>
+            <div id="accessories">
+                
+                <div class="pull-right" style="display: flex">
+                    <div id="voll"></div>
+                    <div id="vollDT"></div>
+                    
+
+<span class="print-icons">
+<input type="image" name="Print1$print" id="Print1_print" aria-label="Print" src="images/printer_icon.png" alt="print page button" style="padding: 5px 10px 5px 10px;" />
+</span>
+                </div>
+            </div>
+            <input type="hidden" name="hydpermid" id="hydpermid" value="2153573" />
+            
+
+            <div class="innner-page-main-about-us-content-right-part">
+                <div id="MinistryName" class="MinistryNameSubhead text-center">
+                    Ministry of Jal Shakti
+                </div>
+                <div id="lg_g"><div class='log_oo'>  <img src='https://static.pib.gov.in/WriteReadData/specificdocs/photo/2026/sep/ph_9768_20260902_10000501.png' alt='azadi ka amrit mahotsav' /> </div></div>
+
+                <div class="text-center event-heading-background">
+                    
+                    <h1 id="Titleh2">
+                        IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA
+                    </h1>
+                    <h3 id="Subtitleh3">
+                        <span id="ltrSubtitle"></span>
+                    </h3>
+                </div>
+
+                <div id="PrDateTime" class="ReleaseDateSubHeaddateTime text-center pt20">
+                    Posted On:
+                              07 AUG 2025 3:56PM by PIB Delhi
+                </div>
+                
+                <div class='pt20'>
+                </div>
+                <input type="hidden" name="hydphotoUrl" id="hydphotoUrl" />
+                
+
+                <!-- Release content wrapper for client-side zero-reflow word count -->
+                <div id="pibReleaseBody">
+                    <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Atal Bhujal Yojana, is a community led participatory ground water management scheme focusing on demand side management of ground water, being implemented in 80 water stressed districts in 7 States.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Major activities/works undertaken under the Scheme are mentioned below:</span></span></p>
+
+<ul style="margin-left:40px">
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Measurement and public disclosure of groundwater data has been made across all 8,203 Atal Jal Gram Panchayats (GPs) of all 7 states through physical as well as electronic means.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Community-led Water Budgets (WBs) and Water Security Plans (WSPs) have been prepared by all GPs of all 7 states and updated annually.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">More than 1.25 lakh GP-level trainings have been conducted, alongside Block, District and State-level capacity-building trainings.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Piezometers along with Digital Water Level Recorders (DWLRs) and Rain Gauges have been installed in almost all GPs under the Yojana.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Around 81,700 supply-side structures like check dams, ponds, recharge shafts/pits etc. have been constructed/renovated for water conservation and groundwater recharge across 7 states.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Around 9 lakh hectares have been brought under efficient water-use practices (drip/sprinkler irrigation, mulching, crop diversification, etc.) across 7 states.</span></span></li>
+</ul>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">&nbsp; Atal Bhujal Yojana is a Program for Results scheme and allocation of funds is based on the performance of the participating States under various indicators. Further, the funds are fungible and allocation can be moved from under-performing to better performing states. The total amount of funds released and utilised, state-wise, as on 31.03.2025 under Atal Bhujal Yojana is provided below</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Arresting the decline of ground water levels is one of the important performance indicators under Atal Bhujal Yojana. The scheme is being implemented in 229 Blocks of 7 States and as per the assessment conducted, out of 229 Blocks, totally 83 Blocks have shown improvement in ground water levels as detailed is given below.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Under the Atal Bhujal Yojana, due importance is given to various local water conservation structures/ practises, as they represent traditional knowledge and are also best suited for local terrain and climatic conditions. The practice of constructing traditional structures like Gokatte, Bawdi, Johad, Tanka, Kalyani, Diggi, etc. has been revived and further strengthened.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>&nbsp; </strong> Under Atal Bhujal Yojana, the participating states have adopted some innovative models which have proven to be quite impactful in terms of awareness creation, capacity building and efficient utilization of water. Some of the best practices, which have been identified, documented and publicized for replication and scaling up in other parts of the country are given below: </span></span></p>
+
+<ul style="margin-left:40px">
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Gujarat: Use of mobile van for groundwater quality training at Panchayat, Taluka, and District levels. Farmers bring borewell samples for on-the-spot testing, enabling immediate, informed decisions.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Karnataka: Use of IoT-based &lsquo;FASAL &amp; Phyllo&rsquo; systems in Chikkaballapura&amp; Bengaluru Rural for cultivation of grapes, pomegranates, and roses. These use soil sensors, weather data, and pest prediction to optimize irrigation, saving 20-40% water through precision farming.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Maharashtra: Creation of Groundwater Information Dissemination Centre (GIDC), which is a Panchayat-level community-centric knowledge hub providing groundwater data, water budgets, and scheme updates, helping communities make informed water management decisions.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Rajasthan: A holistic Water-Saving poly-house Model has been developed which integrates several key water conservation elements like poly-house, farm pond, solar pump and micro-irrigation. Apart from enabling efficient water use, this model supports year-round high-value crop cultivation, helping the farmers by way of increased yields, reduced input costs, and improved incomes.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Madhya Pradesh: Jal Saksharta Rath campaign covered 670 Gram Panchayats across 6 districts, simplifying technical knowledge on piezometers, rain gauges, and water flow meters for communities and students. By blending technical literacy with transparency in digital data, the initiative strengthened local leadership and set a model for community participation in water governance.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Haryana: the state has deployed the innovative system called IISIF (Irrigation Intelligence Software for Irrigation Forecasting), which optimizes water use by leveraging satellite, weather, soil, and crop data. It provides personalized irrigation and pest advisories via a mobile/web app, enhancing productivity and sustainability. </span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Uttar Pradesh: &quot;Know Your GP&quot; initiative, which assigns QR codes to Panchayats, offering real-time groundwater data, water budgets, existing water conservation structures, and real-time updates on ongoing interventions, thus, promoting transparency and community involvement.</span></span></li>
+</ul>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">&nbsp; Atal Bhujal Yojana is a pilot project for participatory ground water management with a fixed duration &amp; outlay. Currently, the project is under impact assessment stage.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#333333">This information was provided by THE </span><span style="color:black">MINISTER OF STATE FOR </span><span style="color:#231f20">JAL SHAKTI </span><strong>SHRI RAJ BHUSHAN CHOUDHARY</strong><span style="color:#333333"> in a written reply to a question in Lok Sabha today. </span></span></span></p>
+
+<p style="margin-left:0in; margin-right:0in; text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">******</span></span></p>
+
+<p style="margin-left:0in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong><span style="color:#333333">MAM/SMP</span></strong></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">(Lok Sabha US Q3191)</span></span></p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA</strong></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;(amount in Rs. Crores)</span></span></p>
+
+<div>
+<table border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+	<tbody>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>State</strong></span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Released</strong></span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Utilised</strong></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Gujarat</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">595.57</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">470.61</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Haryana</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">753.00</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">620.48</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Karnataka</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">903.21</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">831.71</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Madhya Pradesh</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">211.75</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">193.89</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Maharashtra</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">643.82</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">609.59</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Rajasthan</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">489.50</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">484.79</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Uttar Pradesh</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">264.83</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">207.13</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Total</strong></span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>3861.68</strong></span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>3418.20</strong></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA</strong></span></span></p>
+
+<div>
+<table border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+	<tbody>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>States</strong></span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Total Blocks</strong></span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Number of Blocks in which Ground Water Level has shown improvement </strong></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Gujarat</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">36</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">13</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Haryana</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">36</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">14</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Karnataka</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">41</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">20</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Madhya Pradesh</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">9</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">4</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Maharashtra</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">43</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">14</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Rajasthan</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">38</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">13</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Uttar Pradesh</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">26</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">5</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Grand Total</strong></span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>229</strong></span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>83</strong></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">*****</span></span></p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+                </div>
+
+                <div id="reel_pic">
+                </div>
+
+                <br />
+                <span id="ReleaseId">(Release ID: 2153573)</span>
+                <span id="lblViews">Visitor Counter : 1554</span>
+                <div>
+                    
+                </div>
+                
+
+                <span id="lblRefPhoto"></span>
+
+                <div class="BackgroundRelease">
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div class="ReleaseLang">Read this release in: 
+                
+                        <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2153909' target="_blank">
+                            Urdu </a>
+                    
+                        ,
+                    
+                        <a href='https://pib.gov.in/PressReleasePage.aspx?PRID=2153732' target="_blank">
+                            हिन्दी </a>
+                    
+                </div>
+
+                <div class="RelTag">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <div class="clear">
+                </div>
+
+                <!-- DBIM 3.0 Option 4: Separator Line with Left Share Rail & Right Reading Metrics -->
+                <div class="pr-share pr-share--footer" role="region" aria-label="Share and reading details">
+                    <div class="pr-share__left">
+                        <span class="pr-share__label" aria-hidden="true">Share</span>
+                        <ul class="pr-share__list">
+                            <li><a class="pr-share__btn pr-share__btn--facebook"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d2153573"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Share on Facebook">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-facebook" xlink:href="#icon-facebook"></use>
+                                </svg>
+                            </a></li>
+                            <li><a class="pr-share__btn pr-share__btn--twitter"
+                                href="https://twitter.com/intent/tweet?url=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d2153573"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Share on X">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-twitter" xlink:href="#icon-twitter"></use>
+                                </svg>
+                            </a></li>
+                            <li><a class="pr-share__btn pr-share__btn--whatsapp"
+                                href="https://api.whatsapp.com/send?text=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d2153573"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Share on WhatsApp">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-whatsapp" xlink:href="#icon-whatsapp"></use>
+                                </svg>
+                            </a></li>
+                            <li><a class="pr-share__btn pr-share__btn--linkedin"
+                                href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d2153573"
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Share on LinkedIn">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-linkedin" xlink:href="#icon-linkedin"></use>
+                                </svg>
+                            </a></li>
+                            <li><a class="pr-share__btn pr-share__btn--mail"
+                                href="mailto:?subject=Press+release+from+PIB&amp;body=https%3a%2f%2fpib.gov.in%2fPressReleasePage.aspx%3fPRID%3d2153573"
+                                aria-label="Share by email">
+                                <svg class="dbim-icon dbim-icon-24" width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+                                    <use href="#icon-mail" xlink:href="#icon-mail"></use>
+                                </svg>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="pr-reading-meta" id="prReadingMeta" aria-label="Reading statistics">
+                        <span class="pr-reading-meta__item">
+                            <!-- Modern Document / Word Count Icon -->
+                            <svg class="pr-reading-meta__icon" width="18" height="18" viewbox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+                                <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z" />
+                            </svg>
+                            <span id="prWordCount">-- words</span>
+                        </span>
+
+                        <span class="pr-reading-meta__divider" aria-hidden="true">|</span>
+
+                        <span class="pr-reading-meta__item">
+                            <!-- Modern Precision Clock / Read Time Icon -->
+                            <svg class="pr-reading-meta__icon" width="18" height="18" viewbox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                            </svg>
+                            <span id="prReadTime">-- min read</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div id="RelLink" class="RelLink">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <center>
+                    
+                </center>
+            </div>
+
+            <div id="update12">
+	
+                    
+                    <input type="hidden" name="Hidden" id="Hidden" />
+                    <div id="P_CategoryManagement" class="ModalWindow" style="display: none">
+		
+                        <div>
+                            <input type="image" name="btnClose" id="btnClose" src="images/close_flat_icon.png" />
+                        </div>
+                        <div id="description">
+                        </div>
+                        <div class="text-center">
+                            <h2>
+                                
+                                <br>
+                                
+                            </h2>
+                        </div>
+                        <br />
+                        <div class="clear">
+                        </div>
+                        
+                    
+	</div>
+                
+</div>
+        </div>
+
+        <div id="PdfDiv" style="display: none;">
+            <table width="100%">
+                <tr>
+                    <td style="font-weight: 200; text-align: center">
+                        Ministry of Jal Shakti
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                            IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="font-weight: 200; text-align: center; font-size: 30px;">
+                            
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="text-align: center; font-size: 14px;">
+                            Posted On:
+                                          07 AUG 2025 3:56PM by PIB Delhi
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="font-weight: 200; text-align: left; font-size: 16px;">
+                            <p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Atal Bhujal Yojana, is a community led participatory ground water management scheme focusing on demand side management of ground water, being implemented in 80 water stressed districts in 7 States.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Major activities/works undertaken under the Scheme are mentioned below:</span></span></p>
+
+<ul style="margin-left:40px">
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Measurement and public disclosure of groundwater data has been made across all 8,203 Atal Jal Gram Panchayats (GPs) of all 7 states through physical as well as electronic means.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Community-led Water Budgets (WBs) and Water Security Plans (WSPs) have been prepared by all GPs of all 7 states and updated annually.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">More than 1.25 lakh GP-level trainings have been conducted, alongside Block, District and State-level capacity-building trainings.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Piezometers along with Digital Water Level Recorders (DWLRs) and Rain Gauges have been installed in almost all GPs under the Yojana.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Around 81,700 supply-side structures like check dams, ponds, recharge shafts/pits etc. have been constructed/renovated for water conservation and groundwater recharge across 7 states.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Around 9 lakh hectares have been brought under efficient water-use practices (drip/sprinkler irrigation, mulching, crop diversification, etc.) across 7 states.</span></span></li>
+</ul>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">&nbsp; Atal Bhujal Yojana is a Program for Results scheme and allocation of funds is based on the performance of the participating States under various indicators. Further, the funds are fungible and allocation can be moved from under-performing to better performing states. The total amount of funds released and utilised, state-wise, as on 31.03.2025 under Atal Bhujal Yojana is provided below</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Arresting the decline of ground water levels is one of the important performance indicators under Atal Bhujal Yojana. The scheme is being implemented in 229 Blocks of 7 States and as per the assessment conducted, out of 229 Blocks, totally 83 Blocks have shown improvement in ground water levels as detailed is given below.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Under the Atal Bhujal Yojana, due importance is given to various local water conservation structures/ practises, as they represent traditional knowledge and are also best suited for local terrain and climatic conditions. The practice of constructing traditional structures like Gokatte, Bawdi, Johad, Tanka, Kalyani, Diggi, etc. has been revived and further strengthened.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>&nbsp; </strong> Under Atal Bhujal Yojana, the participating states have adopted some innovative models which have proven to be quite impactful in terms of awareness creation, capacity building and efficient utilization of water. Some of the best practices, which have been identified, documented and publicized for replication and scaling up in other parts of the country are given below: </span></span></p>
+
+<ul style="margin-left:40px">
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Gujarat: Use of mobile van for groundwater quality training at Panchayat, Taluka, and District levels. Farmers bring borewell samples for on-the-spot testing, enabling immediate, informed decisions.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Karnataka: Use of IoT-based &lsquo;FASAL &amp; Phyllo&rsquo; systems in Chikkaballapura&amp; Bengaluru Rural for cultivation of grapes, pomegranates, and roses. These use soil sensors, weather data, and pest prediction to optimize irrigation, saving 20-40% water through precision farming.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Maharashtra: Creation of Groundwater Information Dissemination Centre (GIDC), which is a Panchayat-level community-centric knowledge hub providing groundwater data, water budgets, and scheme updates, helping communities make informed water management decisions.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Rajasthan: A holistic Water-Saving poly-house Model has been developed which integrates several key water conservation elements like poly-house, farm pond, solar pump and micro-irrigation. Apart from enabling efficient water use, this model supports year-round high-value crop cultivation, helping the farmers by way of increased yields, reduced input costs, and improved incomes.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Madhya Pradesh: Jal Saksharta Rath campaign covered 670 Gram Panchayats across 6 districts, simplifying technical knowledge on piezometers, rain gauges, and water flow meters for communities and students. By blending technical literacy with transparency in digital data, the initiative strengthened local leadership and set a model for community participation in water governance.</span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Haryana: the state has deployed the innovative system called IISIF (Irrigation Intelligence Software for Irrigation Forecasting), which optimizes water use by leveraging satellite, weather, soil, and crop data. It provides personalized irrigation and pest advisories via a mobile/web app, enhancing productivity and sustainability. </span></span></li>
+	<li style="text-align: justify;"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Uttar Pradesh: &quot;Know Your GP&quot; initiative, which assigns QR codes to Panchayats, offering real-time groundwater data, water budgets, existing water conservation structures, and real-time updates on ongoing interventions, thus, promoting transparency and community involvement.</span></span></li>
+</ul>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">&nbsp; Atal Bhujal Yojana is a pilot project for participatory ground water management with a fixed duration &amp; outlay. Currently, the project is under impact assessment stage.</span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="color:#333333">This information was provided by THE </span><span style="color:black">MINISTER OF STATE FOR </span><span style="color:#231f20">JAL SHAKTI </span><strong>SHRI RAJ BHUSHAN CHOUDHARY</strong><span style="color:#333333"> in a written reply to a question in Lok Sabha today. </span></span></span></p>
+
+<p style="margin-left:0in; margin-right:0in; text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">******</span></span></p>
+
+<p style="margin-left:0in; margin-right:0in; text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><span style="background-color:white"><strong><span style="color:#333333">MAM/SMP</span></strong></span></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">(Lok Sabha US Q3191)</span></span></p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA</strong></span></span></p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;(amount in Rs. Crores)</span></span></p>
+
+<div>
+<table border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+	<tbody>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>State</strong></span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Released</strong></span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Utilised</strong></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Gujarat</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">595.57</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">470.61</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Haryana</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">753.00</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">620.48</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Karnataka</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">903.21</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">831.71</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Madhya Pradesh</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">211.75</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">193.89</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Maharashtra</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">643.82</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">609.59</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Rajasthan</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">489.50</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">484.79</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Uttar Pradesh</span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">264.83</span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">207.13</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:98.0pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Total</strong></span></span></p>
+			</td>
+			<td style="width:77.1pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>3861.68</strong></span></span></p>
+			</td>
+			<td style="width:94.2pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>3418.20</strong></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA</strong></span></span></p>
+
+<div>
+<table border="1" bordercolor="#ccc" cellpadding="5" cellspacing="0" class="Table" style="border-collapse:collapse">
+	<tbody>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>States</strong></span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Total Blocks</strong></span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Number of Blocks in which Ground Water Level has shown improvement </strong></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Gujarat</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">36</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">13</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Haryana</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">36</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">14</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Karnataka</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">41</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">20</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Madhya Pradesh</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">9</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">4</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Maharashtra</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">43</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">14</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Rajasthan</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">38</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">13</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">Uttar Pradesh</span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">26</span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">5</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>Grand Total</strong></span></span></p>
+			</td>
+			<td>
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>229</strong></span></span></p>
+			</td>
+			<td style="width:196.95pt">
+			<p style="text-align:justify"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px"><strong>83</strong></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p style="text-align:center"><span style="font-family:Times New Roman,Times,serif"><span style="font-size:16px">*****</span></span></p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+<p style="text-align:justify">&nbsp;</p>
+
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                        <div style="font-weight: 100; text-align: left; font-size: 16px;">
+                            (Release ID: 2153573)
+                        </div>
+                        <div style="height: 30px; width: 100%;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 200; text-align: center; font-size: 24px;"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="clearfix">
+        </div>
+
+        <div class="section1">
+            <div id="frst_t">
+                <div id="arr_rm"><div class='sticky-social_mb'><ul class='social_mb'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=2153573' target='_blank'><li class='fb_b'   ></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=2153573&text=IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA' target='_blank'><li class='twitter_r'  > </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=2153573' target='_blank'><li class='whatsapp_r'  ></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA&body=https://pib.gov.in/PressReleasePage.aspx?PRID=2153573&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=2153573&title=IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ></li></a></ul></div></div>
+            </div>
+            <div id="second_t">
+                <div id="sndr_rm"><div class='sticky-social'><ul class='social'><a href='http://www.facebook.com/share.php?u=https://pib.gov.in/PressReleasePage.aspx?PRID=2153573' target='_blank'><li class='fb_b'   ></li></a><a href='https://twitter.com/intent/tweet?url=https://pib.gov.in/PressReleasePage.aspx?PRID=2153573&text=IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA' target='_blank'><li class='twitter_r'  > </li></a><a href='https://api.whatsapp.com/send?text=https://pib.gov.in/PressReleasePage.aspx?PRID=2153573' target='_blank'><li class='whatsapp_r'  ></li></a><a href='https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA&body=https://pib.gov.in/PressReleasePage.aspx?PRID=2153573&ui=2&tf=1&pli=1' title='Share by Email' target='_blank'><li class='fa-envelope_r' ></li></a><a href='https://www.linkedin.com/shareArticle?mini=true&url=https://pib.gov.in/PressReleasePage.aspx?PRID=2153573&title=IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA&summary=My%20favorite%20developer%20program&source=LinkedIn' target='_blank'><li class='fa-linkedin_r'  ></li></a></ul></div></div>
+            </div>
+        </div>
+        <input type="hidden" name="ltrTitlee" id="ltrTitlee" value="IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA" />
+        <input type="hidden" name="ltrSubtitlee" id="ltrSubtitlee" />
+        <input type="hidden" name="ltrDescriptionn" id="ltrDescriptionn" value="&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Atal Bhujal Yojana, is a community led participatory ground water management scheme focusing on demand side management of ground water, being implemented in 80 water stressed districts in 7 States.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Major activities/works undertaken under the Scheme are mentioned below:&lt;/span>&lt;/span>&lt;/p>
+
+&lt;ul style=&quot;margin-left:40px&quot;>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Measurement and public disclosure of groundwater data has been made across all 8,203 Atal Jal Gram Panchayats (GPs) of all 7 states through physical as well as electronic means.&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Community-led Water Budgets (WBs) and Water Security Plans (WSPs) have been prepared by all GPs of all 7 states and updated annually.&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>More than 1.25 lakh GP-level trainings have been conducted, alongside Block, District and State-level capacity-building trainings.&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Piezometers along with Digital Water Level Recorders (DWLRs) and Rain Gauges have been installed in almost all GPs under the Yojana.&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Around 81,700 supply-side structures like check dams, ponds, recharge shafts/pits etc. have been constructed/renovated for water conservation and groundwater recharge across 7 states.&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Around 9 lakh hectares have been brought under efficient water-use practices (drip/sprinkler irrigation, mulching, crop diversification, etc.) across 7 states.&lt;/span>&lt;/span>&lt;/li>
+&lt;/ul>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&amp;nbsp; Atal Bhujal Yojana is a Program for Results scheme and allocation of funds is based on the performance of the participating States under various indicators. Further, the funds are fungible and allocation can be moved from under-performing to better performing states. The total amount of funds released and utilised, state-wise, as on 31.03.2025 under Atal Bhujal Yojana is provided below&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Arresting the decline of ground water levels is one of the important performance indicators under Atal Bhujal Yojana. The scheme is being implemented in 229 Blocks of 7 States and as per the assessment conducted, out of 229 Blocks, totally 83 Blocks have shown improvement in ground water levels as detailed is given below.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Under the Atal Bhujal Yojana, due importance is given to various local water conservation structures/ practises, as they represent traditional knowledge and are also best suited for local terrain and climatic conditions. The practice of constructing traditional structures like Gokatte, Bawdi, Johad, Tanka, Kalyani, Diggi, etc. has been revived and further strengthened.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>&amp;nbsp; &lt;/strong> Under Atal Bhujal Yojana, the participating states have adopted some innovative models which have proven to be quite impactful in terms of awareness creation, capacity building and efficient utilization of water. Some of the best practices, which have been identified, documented and publicized for replication and scaling up in other parts of the country are given below: &lt;/span>&lt;/span>&lt;/p>
+
+&lt;ul style=&quot;margin-left:40px&quot;>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Gujarat: Use of mobile van for groundwater quality training at Panchayat, Taluka, and District levels. Farmers bring borewell samples for on-the-spot testing, enabling immediate, informed decisions.&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Karnataka: Use of IoT-based &amp;lsquo;FASAL &amp;amp; Phyllo&amp;rsquo; systems in Chikkaballapura&amp;amp; Bengaluru Rural for cultivation of grapes, pomegranates, and roses. These use soil sensors, weather data, and pest prediction to optimize irrigation, saving 20-40% water through precision farming.&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Maharashtra: Creation of Groundwater Information Dissemination Centre (GIDC), which is a Panchayat-level community-centric knowledge hub providing groundwater data, water budgets, and scheme updates, helping communities make informed water management decisions.&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Rajasthan: A holistic Water-Saving poly-house Model has been developed which integrates several key water conservation elements like poly-house, farm pond, solar pump and micro-irrigation. Apart from enabling efficient water use, this model supports year-round high-value crop cultivation, helping the farmers by way of increased yields, reduced input costs, and improved incomes.&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Madhya Pradesh: Jal Saksharta Rath campaign covered 670 Gram Panchayats across 6 districts, simplifying technical knowledge on piezometers, rain gauges, and water flow meters for communities and students. By blending technical literacy with transparency in digital data, the initiative strengthened local leadership and set a model for community participation in water governance.&lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Haryana: the state has deployed the innovative system called IISIF (Irrigation Intelligence Software for Irrigation Forecasting), which optimizes water use by leveraging satellite, weather, soil, and crop data. It provides personalized irrigation and pest advisories via a mobile/web app, enhancing productivity and sustainability. &lt;/span>&lt;/span>&lt;/li>
+	&lt;li style=&quot;text-align: justify;&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Uttar Pradesh: &amp;quot;Know Your GP&amp;quot; initiative, which assigns QR codes to Panchayats, offering real-time groundwater data, water budgets, existing water conservation structures, and real-time updates on ongoing interventions, thus, promoting transparency and community involvement.&lt;/span>&lt;/span>&lt;/li>
+&lt;/ul>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&amp;nbsp; Atal Bhujal Yojana is a pilot project for participatory ground water management with a fixed duration &amp;amp; outlay. Currently, the project is under impact assessment stage.&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;color:#333333&quot;>This information was provided by THE &lt;/span>&lt;span style=&quot;color:black&quot;>MINISTER OF STATE FOR &lt;/span>&lt;span style=&quot;color:#231f20&quot;>JAL SHAKTI &lt;/span>&lt;strong>SHRI RAJ BHUSHAN CHOUDHARY&lt;/strong>&lt;span style=&quot;color:#333333&quot;> in a written reply to a question in Lok Sabha today. &lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-left:0in; margin-right:0in; text-align:center&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>******&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;margin-left:0in; margin-right:0in; text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;span style=&quot;background-color:white&quot;>&lt;strong>&lt;span style=&quot;color:#333333&quot;>MAM/SMP&lt;/span>&lt;/strong>&lt;/span>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>(Lok Sabha US Q3191)&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;(amount in Rs. Crores)&lt;/span>&lt;/span>&lt;/p>
+
+&lt;div>
+&lt;table border=&quot;1&quot; bordercolor=&quot;#ccc&quot; cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; class=&quot;Table&quot; style=&quot;border-collapse:collapse&quot;>
+	&lt;tbody>
+		&lt;tr>
+			&lt;td style=&quot;width:98.0pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>State&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:77.1pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>Released&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:94.2pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>Utilised&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:98.0pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Gujarat&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:77.1pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>595.57&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:94.2pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>470.61&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:98.0pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Haryana&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:77.1pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>753.00&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:94.2pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>620.48&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:98.0pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Karnataka&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:77.1pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>903.21&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:94.2pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>831.71&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:98.0pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Madhya Pradesh&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:77.1pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>211.75&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:94.2pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>193.89&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:98.0pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Maharashtra&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:77.1pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>643.82&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:94.2pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>609.59&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:98.0pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Rajasthan&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:77.1pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>489.50&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:94.2pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>484.79&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:98.0pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Uttar Pradesh&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:77.1pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>264.83&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:94.2pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>207.13&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td style=&quot;width:98.0pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>Total&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:77.1pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>3861.68&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:94.2pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>3418.20&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+	&lt;/tbody>
+&lt;/table>
+&lt;/div>
+
+&lt;p style=&quot;text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>IMPLEMENTATION AND EXPANSION OF ATAL BHUJAL YOJANA&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+
+&lt;div>
+&lt;table border=&quot;1&quot; bordercolor=&quot;#ccc&quot; cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; class=&quot;Table&quot; style=&quot;border-collapse:collapse&quot;>
+	&lt;tbody>
+		&lt;tr>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>States&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>Total Blocks&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:196.95pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>Number of Blocks in which Ground Water Level has shown improvement &lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Gujarat&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>36&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:196.95pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>13&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Haryana&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>36&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:196.95pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>14&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Karnataka&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>41&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:196.95pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>20&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Madhya Pradesh&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>9&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:196.95pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>4&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Maharashtra&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>43&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:196.95pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>14&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Rajasthan&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>38&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:196.95pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>13&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>Uttar Pradesh&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>26&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:196.95pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>5&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+		&lt;tr>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>Grand Total&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>229&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+			&lt;td style=&quot;width:196.95pt&quot;>
+			&lt;p style=&quot;text-align:justify&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>&lt;strong>83&lt;/strong>&lt;/span>&lt;/span>&lt;/p>
+			&lt;/td>
+		&lt;/tr>
+	&lt;/tbody>
+&lt;/table>
+&lt;/div>
+
+&lt;p style=&quot;text-align:center&quot;>&lt;span style=&quot;font-family:Times New Roman,Times,serif&quot;>&lt;span style=&quot;font-size:16px&quot;>*****&lt;/span>&lt;/span>&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&amp;nbsp;&lt;/p>
+
+&lt;p style=&quot;text-align:justify&quot;>&amp;nbsp;&lt;/p>
+" />
+        <script type="text/javascript">
+                  var mPlayer = document.getElementById("background_music");
+                  var mPlayAction = document.getElementById("playbutton");
+                  var isPlaying = false;
+
+                  function playAudio() {
+                        mPlayer.play();
+                        isPlaying = true;
+                        document.getElementById('stopA').style.display = "block";
+                        document.getElementById('playA').style.display = "none";
+                  }
+
+                  function pauseAudio() {
+                        mPlayer.pause();
+                        isPlaying = false;
+                        document.getElementById('playA').style.display = "block";
+                        document.getElementById('stopA').style.display = "none";
+                  }
+        </script>
+        <script type="text/javascript">
+                  var synth = window.speechSynthesis;
+
+                  function CleanHtml(html) {
+                        html = html.replace(/<script[\s\S]*?<\/script>/gi, '');
+                        return html;
+                  }
+                  function stripHtml(html) {
+                        let tmp = document.createElement("DIV");
+                        tmp.innerHTML = CleanHtml(html);
+                        return tmp.textContent || tmp.innerText || "";
+                  }
+        </script>
+        <script type="text/javascript">
+                  $(document).ready(function () {
+                        $("table").each(function () {
+                              if (!$(this).closest(".table-responsive").length) {
+                                    $(this).wrap("<div class='table-responsive'></div>");
+                              }
+                        });
+
+                        var width = $(window).width();
+                        if (width < 768) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                        } else if (width < 991) {
+                              document.getElementById('frst_t').style.display = "block";
+                              document.getElementById('second_t').style.display = "none";
+                        } else if (width < 1199) {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                        } else {
+                              document.getElementById('frst_t').style.display = "none";
+                              document.getElementById('second_t').style.display = "block";
+                        }
+                  });
+        </script>
+        <style type="text/css">
+            @media print {
+                .sticky-social, .sticky-social_mb, .pull-right, #printPDF {
+                    display: none !important;
+                }
+            }
+
+            .f_vl {
+                padding-right: 30px;
+                font-size: 17px;
+                cursor: pointer;
+            }
+
+            .log_oo {
+                display: flex;
+                justify-content: space-between;
+            }
+
+                .log_oo img {
+                    width: 150px;
+                }
+
+            .sticky-social_mb {
+                position: fixed;
+                bottom: 0px;
+                padding: 0px;
+                margin: 0px;
+                width: 100%;
+            }
+
+            .social_mb {
+                list-style: none;
+                display: flex;
+                width: 100%;
+                margin-bottom: -8px;
+            }
+
+                .social_mb a {
+                    padding: 8px 0px;
+                    font-size: 30px;
+                    transition: all 0.8s ease-in-out;
+                    width: 20% !important;
+                    text-align: center;
+                }
+        </style>
+        <style type="text/css">
+            .section1 {
+                position: relative;
+                padding: 10px 0px;
+                width: 100%;
+            }
+
+            .sticky-social {
+                position: fixed;
+                top: 20px;
+                left: 0px;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .social {
+                list-style: none;
+            }
+
+                .social a li {
+                    padding: 8px 12px;
+                    font-size: 25px;
+                    transition: all 0.8s ease-in-out;
+                }
+
+                    .social a li:hover {
+                        margin-right: -30px;
+                        box-shadow: 2px 5px 10px grey;
+                    }
+
+                        .social a li:hover .fa {
+                            margin-left: 20px;
+                        }
+
+            .fb_b {
+                background-color: var(--dbim-key, #0F5757);
+            }
+
+            .twitter_r {
+                background-color: var(--dbim-key, #0F5757);
+            }
+
+            .whatsapp_r {
+                background-color: var(--dbim-key, #0F5757);
+            }
+
+            .fa-envelope_r {
+                background-color: var(--dbim-key, #0F5757);
+            }
+
+            .fa-linkedin_r {
+                background-color: var(--dbim-key, #0F5757);
+            }
+        </style>
+        <style type="text/css">
+            @media only screen and (max-device-width: 767px) {
+                p span img {
+                    max-width: 90% !important;
+                    height: auto !important;
+                }
+
+                p img {
+                    max-width: 90% !important;
+                    height: auto !important;
+                }
+
+                h2 {
+                    font-size: var(--dbim-h2, 20px);
+                    font-weight: 600 !important;
+                }
+
+                h3 {
+                    font-size: var(--dbim-h3, 16px);
+                    font-weight: 600 !important;
+                }
+            }
+        </style>
+        <style type="text/css">
+            .film-roll-badge {
+                position: absolute;
+                top: 82%;
+                right: 20px;
+                width: 230px;
+                height: 70px;
+                background: repeating-linear-gradient( to right, var(--dbim-green-key, #0F5757) 0px, var(--dbim-green-key, #0F5757) 18px, var(--dbim-text, #150202) 18px, var(--dbim-text, #150202) 36px );
+                border-top: 8px solid var(--dbim-green-key, #0F5757);
+                border-bottom: 8px solid var(--dbim-green-key, #0F5757);
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+                animation: moveFilm 8s linear infinite;
+                z-index: 10;
+            }
+
+                .film-roll-badge::before,
+                .film-roll-badge::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 10px;
+                    background: repeating-linear-gradient( to right, var(--dbim-green-key, #0F5757) 0px, var(--dbim-green-key, #0F5757) 10px, #fff 10px, #fff 20px );
+                    left: 0;
+                    z-index: 2;
+                }
+
+                .film-roll-badge::before {
+                    top: -4px;
+                }
+
+                .film-roll-badge::after {
+                    bottom: -4px;
+                }
+
+            .film-roll-inner {
+                position: relative;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                animation: flicker 2s infinite ease-in-out;
+            }
+
+            .countdown-text {
+                font-size: 1.3rem;
+                font-weight: 700;
+                color: #fff;
+                text-shadow: 0 0 6px rgba(255, 255, 255, 0.4), 0 0 10px #000;
+                white-space: nowrap;
+            }
+
+            @keyframes moveFilm {
+                0% {
+                    background-position: 0 0;
+                }
+
+                100% {
+                    background-position: 120px 0;
+                }
+            }
+
+            @keyframes flicker {
+                0%, 100% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0.9;
+                }
+
+                25% {
+                    opacity: 0.95;
+                }
+
+                75% {
+                    opacity: 0.85;
+                }
+            }
+
+            @media (max-width: 1500px) {
+                .film-roll-badge {
+                    top: 68%;
+                    right: 18px;
+                    height: 65px;
+                    font-size: 0.85rem;
+                }
+
+                .press-section {
+                    margin-top: 35px;
+                }
+            }
+
+            @media (max-width: 992px) {
+                .film-roll-badge {
+                    top: 52%;
+                    right: 10px;
+                    width: 200px;
+                    height: 60px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .film-roll-badge {
+                    top: 56%;
+                    right: 10px;
+                    width: 124px;
+                    height: 55px;
+                }
+
+                .countdown-text {
+                    font-size: 0.9rem;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .film-roll-badge {
+                    top: 59%;
+                    right: 5px;
+                    height: 50px;
+                }
+
+                .countdown-text {
+                    font-size: 0.85rem;
+                }
+            }
+        </style>
+        <script type="text/javascript">
+                  const festivalStart = new Date("2025-11-20T00:00:00").getTime();
+                  const festivalEnd = new Date("2025-11-28T23:59:59").getTime();
+                  const countdownElement = document.getElementById("countdown");
+
+                  if (countdownElement) {
+                        const interval = setInterval(() => {
+                              const now = new Date().getTime();
+
+                              if (now < festivalStart) {
+                                    const diff = festivalStart - now;
+                                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                                    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+                                    countdownElement.innerHTML = `${days} Day${days !== 1 ? 's' : ''} ${hours} Hour${hours !== 1 ? 's' : ''} to go`;
+                              } else if (now >= festivalStart && now <= festivalEnd) {
+                                    const dayNumber = Math.floor((now - festivalStart) / (1000 * 60 * 60 * 24)) + 1;
+                                    countdownElement.innerHTML = `56th IFFI - Day ${dayNumber}`;
+                              } else {
+                                    countdownElement.innerHTML = `✨ IFFI closes but never ends…`;
+                                    const elements = document.querySelectorAll('.film-roll-badge');
+                                    elements.forEach(el => el.style.width = "350px");
+                                    clearInterval(interval);
+                              }
+                        }, 1000);
+                  }
+        </script>
+        <script type="text/javascript">
+                  const miffStart = new Date("2026-06-15T00:00:00").getTime();
+                  const miffEnd = new Date("2026-06-15T23:59:59").getTime();
+                  const miffElement = document.getElementById("miff");
+
+                  if (miffElement) {
+                        const miffInterval = setInterval(() => {
+                              const now = new Date().getTime();
+
+                              if (now < miffStart) {
+                                    const diff = miffStart - now;
+                                    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                                    miffElement.innerHTML = `${days} Day${days === 1 ? '' : 's'} to MIFF ...`;
+                              } else if (now >= miffStart && now <= miffEnd) {
+                                    const dayNumber = Math.floor((now - miffStart) / (1000 * 60 * 60 * 24)) + 1;
+                                    miffElement.innerHTML = `19th MIFF - Day ${dayNumber}`;
+                              } else {
+                                    miffElement.innerHTML = `✨ MIFF concludes, cinema lives on...`;
+                                    document.querySelectorAll('.film-roll-badge').forEach(el => el.style.width = "350px");
+                                    clearInterval(miffInterval);
+                              }
+                        }, 1000);
+                  }
+        </script>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("sc_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"P_CategoryManagement","dynamicServicePath":"/PressReleasePage.aspx","id":"mpe"}, null, null, $get("Hidden"));
+});
+//]]>
+</script>
+<input type="hidden" name="__ncforminfo" value="hNNZ8plPXlydeA7RaMmjyQ1IrnvqL5pRJF6_KA9_qN_CRBaFdSBnCba2-6DWfTMnNIZcCn58VQIgAFFA5qQf4CS6in1rmfHf"/></form>
+    
+
+<script type="application/json" id="pibConsentConfig">{"ga4Id":"G-Q414Y0X6EE,G-QJJ6LZ8LHV","policyUrl":"/CookiePolicy.aspx","text":{"bannerLabel":"Cookie consent","title":"Cookies on this website","body":"We use essential cookies to make this website work. We also set analytics cookies when you arrive, so we can see how the site is used and improve it - you can switch these off below or at any time from the Cookie Policy page. Cookies from embedded social media content are set only if you allow them.","policyLink":"Read our Cookie Policy","accept":"Accept all","reject":"Reject optional","customize":"Customise","prefsTitle":"Cookie preferences","prefsIntro":"Choose which cookies this website may set. Essential cookies cannot be switched off because the site does not work without them. Analytics cookies are on unless you turn them off. Social media cookies stay off until you allow them. You can change these choices at any time from the Cookie Policy page.","essentialName":"Essential cookies","essentialDesc":"Needed for the site to function. These remember your session, your language and region, your text size and colour theme, and verify the security check on forms. They are always on.","analyticsName":"Analytics cookies","analyticsDesc":"Help us understand how visitors use the site - which pages are read and how long people stay - so it can be improved. The information is collected in a form that does not directly identify you. These are on when you arrive; switching them off here stops them and deletes the ones already set.","socialName":"Social media cookies","socialDesc":"Set by content embedded from X, Facebook and YouTube, such as timelines and videos. These platforms may use them to track you across websites. They stay off until you allow them.","save":"Save preferences","cancel":"Cancel"}}</script>
+<script type="text/javascript" src='/js/consent.js?v=10'></script>
+
+<script type="text/javascript" src='/js/consent-embeds.js?v=10'></script>
+
+
+    <!-- Minimal O(N) Time and O(1) Auxiliary Space Word Count & Read Time Calculation -->
+    <script type="text/javascript">
+            (function () {
+                  function calculateReadingStats() {
+                        var bodyEl = document.getElementById("pibReleaseBody");
+                        if (!bodyEl) return;
+
+                        // textContent extracts text without triggering expensive layout/reflow computations
+                        var text = bodyEl.textContent || "";
+                        var words = 0;
+                        var inWord = false;
+
+                        // O(N) single pass character code scan: achieves O(1) space with zero array allocations
+                        for (var i = 0, len = text.length; i < len; i++) {
+                              var code = text.charCodeAt(i);
+                              // Delimits on ASCII whitespace, control characters, tabs, newlines, and non-breaking spaces (160)
+                              if (code <= 32 || code === 160) {
+                                    inWord = false;
+                              } else if (!inWord) {
+                                    inWord = true;
+                                    words++;
+                              }
+                        }
+
+                        // Standard 250 WPM reading speed (e.g., 612 words yields 2 min read)
+                        var minutes = Math.max(1, Math.round(words / 250));
+
+                        var elWords = document.getElementById("prWordCount");
+                        var elTime = document.getElementById("prReadTime");
+
+                        if (elWords) elWords.textContent = words + (words === 1 ? " word" : " words");
+                        if (elTime) elTime.textContent = minutes + " min read";
+                  }
+
+                  if (document.readyState === "loading") {
+                        document.addEventListener("DOMContentLoaded", calculateReadingStats);
+                  } else {
+                        calculateReadingStats();
+                  }
+            })();
+    </script>
+
+    <script type="text/javascript">
+            (function () {
+                  try {
+                        if (window.self === window.top) { return; }
+                  } catch (e) { return; }
+                  var s = document.createElement("style");
+                  s.textContent = ".sticky-social, .sticky-social_mb { display: none !important; }";
+                  (document.head || document.documentElement).appendChild(s);
+            }());
+    </script>
+</body>
+</html>

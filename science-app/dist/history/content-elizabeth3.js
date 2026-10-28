@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Option B4: Early Elizabethan England, 1558–88.
 // Key topic 3: Elizabethan society in the Age of Exploration, 1558–88 (specification 3.1–3.4).
 // All teaching text and questions are original; documents are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history05';
+import {Q, lesson, view} from './build.js?v=20261028-history08';
 
 export const elizabethTopic3 = {id: 'history.elizabeth.kt3', unit: 'B4', title: 'Elizabethan society in the Age of Exploration, 1558–88', paper: 'Paper 2 · British depth study'};
 const T = elizabethTopic3.id;

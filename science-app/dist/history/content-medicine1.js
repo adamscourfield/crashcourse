@@ -3,7 +3,7 @@
 // The thematic study asks how far ideas, prevention, treatment and care changed, and which factors
 // (individuals, institutions such as the Church and government, science and technology, attitudes
 // in society) caused change or continuity. All teaching text and questions are original.
-import {Q, lesson, view} from './build.js?v=20261028-history05';
+import {Q, lesson, view} from './build.js?v=20261028-history08';
 
 export const medicineTopic1 = {id: 'history.medicine.kt1', unit: '11', title: 'c1250–c1500: Medicine in medieval England', paper: 'Paper 1 · Thematic study'};
 const T = medicineTopic1.id;

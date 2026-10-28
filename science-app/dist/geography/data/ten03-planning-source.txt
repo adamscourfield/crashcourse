@@ -1,0 +1,2426 @@
+<!doctype html>
+
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+<script data-publicationdate="13/02/2023" src="/webfiles/1792577945413/assets/scripts/datalayer.js" data-datecreated="08/02/2023" data-uuid="edab253e-3dfb-4275-8569-dc92af344b46" data-lastupdated="13/02/2023" id="gtm-datalayer" data-directorate="Local Government and Housing Directorate" data-topics="Building, planning and design">
+    </script>
+<script data-containerId="GTM-5S47S9Z" data-siteid="publications/strategy-plan/2023/02/national-planning-framework-4/pages/3" src="/webfiles/1792577945413/assets/scripts/gtm.js" id="gtm-script" data-format="publicationpage" data-usertype="external"></script>
+
+<script defer data-api="https://plausible.io/api/event" data-domain="www.gov.scot" src="/assets/scripts/vendor/plausible/script.file-downloads.outbound-links.js"></script>
+
+<title>Part 2 – National Planning Policy - National Planning Framework 4 - gov.scot</title>
+<meta property="og:url" content="https://www.gov.scot/publications/national-planning-framework-4/pages/3/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="National Planning Framework 4"/>
+<meta property="og:description" content="National Planning Framework 4 (NPF4) is our national spatial strategy for Scotland. It sets out our spatial principles, regional priorities, national developments and national planning policy. It should be read as a whole and replaces NPF3 and Scottish Planning Policy."/>
+<meta property="og:image" content="https://www.gov.scot/assets/images/logos/SGLogo1200x630.png"/>
+<script type="application/ld+json" nonce="gSu8h9RGdFhJ7Uo65Vmt6A">
+{
+  "@context" : "https://schema.org",
+  "@type" : "WebSite",
+  "name" : "The Scottish Government",
+  "url" : "https://www.gov.scot/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.gov.scot/search?q={search_term_string}&cat=googlesearch"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json" nonce="gSu8h9RGdFhJ7Uo65Vmt6A">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+
+    "image": "https://www.gov.scot/assets/images/logos/SGLogo1200x630.png",
+
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.gov.scot/publications/national-planning-framework-4/pages/3/"
+    },
+
+    "author": {
+        "@type": "Organization",
+
+        "name": "The Scottish Government",
+        "url": "https://www.gov.scot",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.gov.scot/assets/images/logos/SGLogo1200x630.png"
+        }
+    },
+
+    "headline": "National Planning Framework 4",
+    "dateModified": "2023-02-13T09:00:00Z",
+    "datePublished": "2023-02-13T09:00:00Z",
+    "description": "National Planning Framework 4 (NPF4) is our national spatial strategy for Scotland. It sets out our spatial principles, regional priorities, national developments and national planning policy. It should be read as a whole and replaces NPF3 and Scottish Planning Policy.",
+    "publisher": {
+        "@type": "Organization",
+        "name": "The Scottish Government",
+        "url": "https://www.gov.scot",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.gov.scot/assets/images/logos/SGLogo1200x630.png"
+        }
+    }
+}
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="/webfiles/1792577945413/assets/css/main.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href='/favicon.ico' type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href='/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/favicon-16x16.png'>
+    <link rel="mask-icon" href='/safari-pinned-tab.svg' color="#0065bd">
+    <meta name="msapplication-TileColor" content="#0065bd">
+    <meta name="theme-color" content="#ffffff">
+
+<meta name="msvalidate.01" content="352137EE152878E1A8E4767A7FFC6202"/>
+<meta name="google-site-verification" content="rdQR0o_zTsnU5zso-MTY2h0YgUB8roLhzVc8Ls7601o"/>
+<meta name="dc.title" content="Part 2 – National Planning Policy"/>
+<meta name="dc.title.series" content="National Planning Framework 4"/>
+<meta name="dc.title.series.link" content="/publications/national-planning-framework-4/"/>
+<meta name="dc.description" content="National Planning Framework 4 (NPF4) is our national spatial strategy for Scotland. It sets out our spatial principles, regional priorities, national developments and national planning policy. It should be read as a whole and replaces NPF3 and Scottish Planning Policy."/>
+<meta name="dc.subject" content="planning, planning framework, national planning framework, planning policy, NPF4, national planning framework, planning frameworks, npf4, 4th planning framework, "/>
+<meta name="dc.date.modified" content="2023-02-13 09:00"/>
+<meta name="dc.format" content="Publication"/>
+<meta name="description" content="National Planning Framework 4 (NPF4) is our national spatial strategy for Scotland. It sets out our spatial principles, regional priorities, national developments and national planning policy. It should be read as a whole and replaces NPF3 and Scottish Planning Policy."/>
+<link rel="canonical" href="https://www.gov.scot/publications/national-planning-framework-4/pages/3/"/>
+
+    <script src='/webfiles/1792577945413/assets/scripts/js-enabled.js'></script>
+</head>
+<body>
+    <input type="hidden" id="site-root-path" value="/" />
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript id="gtm-noscript"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S47S9Z"
+                                    height="0" width="0" class="fully-hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!--noindex-->
+<div class="ds_skip-links">
+    <ul class="ds_skip-links__list">
+        <li class="ds_skip-links__item"><a class="ds_skip-links__link" href="#main-content">Skip to main content</a></li>
+        <li class="ds_skip-links__item"><a class="ds_skip-links__link" href="/accessibility/">Accessibility help</a></li>
+    </ul>
+</div>
+<!--endnoindex-->
+
+    <span id="page-top"></span>
+
+
+
+
+    <div class="ds_page">
+        <div class="ds_page__top">
+<!--noindex-->
+<div class="notification-wrapper">
+
+
+
+
+
+
+<div id="cookie-notice" class="ds_notification  ds_notification--large  ds_notification--cookie  js-initial-cookie-content  fully-hidden" data-module="ds-cookie-notification">
+    <div class="ds_wrapper">
+        <div class="ds_notification__content">
+            <h2 class="visually-hidden">Information</h2>
+
+            <div class="ds_notification__text">
+                <p>We use <a href="/cookies/">cookies</a> to collect anonymous data to help us improve your site browsing experience.</p>
+                <p>Click 'Accept all cookies' to agree to all cookies that collect anonymous data. To only allow the cookies that make the site work, click 'Use essential cookies only.' Visit 'Set cookie preferences' to control specific cookies.</p>
+                <div class="ds_button-group">
+                    <button class="ds_button  ds_button--small  ds_button--secondary  js-accept-all-cookies">Accept all cookies</button>
+                    <button class="ds_button  ds_button--small  ds_button--secondary  js-accept-essential-cookies">Use essential cookies only</button>
+                        <a href="/cookies/">Set cookie preferences</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="cookie-confirm" data-customcondition="true" class="ds_notification  ds_notification--cookie-success  ds_reversed  js-confirm-cookie-content  fully-hidden" data-module="ds-notification">
+    <div class="ds_wrapper">
+        <div class="ds_notification__content">
+            <div class="ds_notification__text">
+                <p>
+                    Your cookie preferences have been saved.
+
+                        You can <a href="/cookies/">change your cookie settings</a> at any time.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+<!--endnoindex-->
+
+<!--noindex-->
+<header class="ds_site-header" role="banner">
+    <div class="ds_wrapper">
+        <div class="ds_site-header__content">
+            <div class="ds_site-branding">
+                <a data-header="header-logo" class="ds_site-branding__logo  ds_site-branding__link" href="/">
+                    <img width="269" height="40" class="ds_site-branding__logo-image" alt="Scottish Government" src="/assets/images/logos/scotgovlogo.svg"/>
+                </a>
+            </div>
+
+            <div class="ds_site-header__controls">
+                <label aria-controls="mobile-navigation" class="ds_site-header__control  js-toggle-menu" for="menu">
+                    <span class="ds_site-header__control-text">Menu</span>
+                    <svg class="ds_icon  ds_site-header__control-icon" aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#menu"></use></svg>
+                    <svg class="ds_icon  ds_site-header__control-icon  ds_site-header__control-icon--active-icon" aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#close"></use></svg>
+                </label>
+            </div>
+
+                    <input class="ds_site-navigation__toggle" id="menu" type="checkbox"/>
+                    <nav id="mobile-navigation" class="ds_site-navigation  ds_site-navigation--mobile" data-module="ds-mobile-navigation-menu">
+                        <ul class="ds_site-navigation__list">
+                                    <li class="ds_site-navigation__item">
+                                        <a class="ds_site-navigation__link" href="/about/">About</a>
+                                    </li>
+                                    <li class="ds_site-navigation__item">
+                                        <a class="ds_site-navigation__link" href="/topics/">Topics</a>
+                                    </li>
+                                    <li class="ds_site-navigation__item">
+                                        <a class="ds_site-navigation__link" href="/news/">News</a>
+                                    </li>
+                                    <li class="ds_site-navigation__item">
+                                        <a class="ds_site-navigation__link  ds_current" href="/publications/" aria-current="true">Publications</a>
+                                    </li>
+                                    <li class="ds_site-navigation__item">
+                                        <a class="ds_site-navigation__link" href="/statistics-and-research/">Statistics and research</a>
+                                    </li>
+                                    <li class="ds_site-navigation__item">
+                                        <a class="ds_site-navigation__link" href="https://consult.scotland.gov.uk/">Consultations</a>
+                                    </li>
+                                    <li class="ds_site-navigation__item">
+                                        <a class="ds_site-navigation__link" href="https://blogs.gov.scot/">Blogs</a>
+                                    </li>
+                        </ul>
+                    </nav>
+
+                <div class="ds_site-header__search">
+
+
+
+
+
+<div class="ds_site-search  ds_autocomplete" data-module="ds-autocomplete">
+    <form action="/search/" role="search" class="ds_site-search__form" method="GET">
+        <label class="ds_label  visually-hidden" for="site-search" id="site-search-label">Search</label>
+        <div id="autocomplete-status" class="visually-hidden"></div>
+        <div class="ds_input__wrapper  ds_input__wrapper--has-icon">
+
+        <input type="hidden" name="cat" value="sitesearch">
+
+            <input
+                    aria-autocomplete="list"
+                    aria-haspopup="listbox"
+                    aria-owns="autocomplete-suggestions-large"
+                    autocomplete="off"
+                    class="ds_input  ds_site-search__input  js-autocomplete-input"
+                    id="site-search"
+                    name="q"
+                    placeholder="Search"
+                    required=""
+                    spellcheck="false"
+                    type="search"
+                    
+            />
+
+            <button type="submit" class="ds_button  ds_button--icon-only  js-site-search-button">
+                <span class="visually-hidden">Search</span>
+                <svg class="ds_icon" aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#search"></use></svg>
+            </button>
+
+            <div id="autocomplete-suggestions-large" class="ds_autocomplete__suggestions">
+                <ol class="ds_autocomplete__suggestions-list" role="listbox" aria-labelledby="site-search-label"></ol>
+            </div>
+
+        </div>
+    </form>
+</div>
+                </div>
+        </div>
+    </div>
+
+            <div class="ds_site-header__navigation">
+                <div class="ds_wrapper">
+                    <nav role="navigation" class="ds_site-navigation">
+                        <ul class="ds_site-navigation__list">
+                                        <li class="ds_site-navigation__item">
+                                            <a class="ds_site-navigation__link" href="/about/">About</a>
+                                        </li>
+                                        <li class="ds_site-navigation__item">
+                                            <a class="ds_site-navigation__link" href="/topics/">Topics</a>
+                                        </li>
+                                        <li class="ds_site-navigation__item">
+                                            <a class="ds_site-navigation__link" href="/news/">News</a>
+                                        </li>
+                                        <li class="ds_site-navigation__item">
+                                            <a class="ds_site-navigation__link  ds_current" href="/publications/" aria-current="true">Publications</a>
+                                        </li>
+                                        <li class="ds_site-navigation__item">
+                                            <a class="ds_site-navigation__link" href="/statistics-and-research/">Statistics and research</a>
+                                        </li>
+                                        <li class="ds_site-navigation__item">
+                                            <a class="ds_site-navigation__link" href="https://consult.scotland.gov.uk/">Consultations</a>
+                                        </li>
+                                        <li class="ds_site-navigation__item">
+                                            <a class="ds_site-navigation__link" href="https://blogs.gov.scot/">Blogs</a>
+                                        </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+</header>
+<!--endnoindex-->
+
+        </div>
+
+        <div class="ds_page__middle">
+                <div class="ds_wrapper">
+
+<!--noindex-->
+<nav aria-label="Breadcrumb">
+    <ol class="ds_breadcrumbs">
+        <li class="ds_breadcrumbs__item">
+            <a class="ds_breadcrumbs__link" href="/">
+                Home
+            </a>
+        </li>
+                <li class="ds_breadcrumbs__item">
+                    <a class="ds_breadcrumbs__link" href="/publications/">
+                        Publications
+                    </a>
+                </li>
+    </ol>
+</nav>
+<!--endnoindex-->
+
+                </div>
+
+
+
+
+
+<!-- this outer div allows us to break the sticky header out of the layout grid -->
+<div>
+
+    <div class="ds_wrapper">
+        <main  id="main-content">
+            <header class="ds_page-header  gov_sublayout  gov_sublayout--publication-header">
+                <div class="gov_sublayout__title">
+                    <span  class="ds_page-header__label  ds_content-label">Publication - <span id="sg-meta__publication-type">Strategy/plan</span></span>
+                    <h1 class="ds_page-header__title">National Planning Framework 4</h1>
+                </div>
+
+                <div class="gov_sublayout__metadata">
+
+<dl  class="ds_page-header__metadata  ds_metadata">
+        <div class="ds_metadata__item">
+            <dt class="ds_metadata__key">Published</dt>
+            <dd class="ds_metadata__value"><strong id="sg-meta__publication-date">13 February 2023</strong></dd>
+        </div>
+
+
+
+
+
+
+        <div class="ds_metadata__item">
+            <dt class="ds_metadata__key">Directorate</dt>
+            <dd class="ds_metadata__value">
+                <a data-navigation="directorates-1" href="/about/how-government-is-run/directorates/local-government-and-housing-directorate/" class="sg-meta__directorate">Local Government and Housing Directorate</a><!--
+                -->            </dd>
+        </div>
+        <div class="ds_metadata__item">
+            <dt class="ds_metadata__key">Topic</dt>
+            <dd class="ds_metadata__value">
+                        <a data-navigation="topics-1"href="/building-planning-and-design/" class="sg-meta__topic">Building, planning and design</a>
+                    <!--
+            --><!--
+            -->            </dd>
+        </div>
+        <div class="ds_metadata__item">
+            <dt class="ds_metadata__key">ISBN</dt>
+            <dd class="ds_metadata__value" id="sg-meta__isbn">9781805254829</dd>
+        </div>
+
+</dl>
+                </div>
+
+                <div class="gov_sublayout__content">
+                            <p class="ds_leader  ds_no-margin--bottom">National Planning Framework 4 (NPF4) is our national spatial strategy for Scotland. It sets out our spatial principles, regional priorities, national developments and national planning policy. It should be read as a whole and replaces NPF3 and Scottish Planning Policy.</p>
+
+
+
+
+                </div>
+
+                    <div class="gov_sublayout__document">
+                        <div  class="gov_supporting-documents">
+
+
+
+
+
+                            <!--noindex-->
+                                <a class="gov_supporting-documents__thumbnail-link" href="/publications/national-planning-framework-4/documents/">
+                                    <img
+                                        alt="View supporting documents"
+                                        class="gov_supporting-documents__thumbnail"
+                                        src="/binaries/content/documents/govscot/publications/strategy-plan/2023/02/national-planning-framework-4/documents/national-planning-framework-4-revised-draft/national-planning-framework-4-revised-draft/govscot%3Athumbnails"
+                                        srcset="
+                                                /binaries/content/documents/govscot/publications/strategy-plan/2023/02/national-planning-framework-4/documents/national-planning-framework-4-revised-draft/national-planning-framework-4-revised-draft/govscot%3Athumbnails 72w, 
+                                                                                            /binaries/content/documents/govscot/publications/strategy-plan/2023/02/national-planning-framework-4/documents/national-planning-framework-4-revised-draft/national-planning-framework-4-revised-draft/govscot%3Athumbnails%5B2%5D 128w, 
+                                                                                            /binaries/content/documents/govscot/publications/strategy-plan/2023/02/national-planning-framework-4/documents/national-planning-framework-4-revised-draft/national-planning-framework-4-revised-draft/govscot%3Athumbnails%5B3%5D 144w, 
+                                                                                            /binaries/content/documents/govscot/publications/strategy-plan/2023/02/national-planning-framework-4/documents/national-planning-framework-4-revised-draft/national-planning-framework-4-revised-draft/govscot%3Athumbnails%5B4%5D 160w, 
+                                                                                            /binaries/content/documents/govscot/publications/strategy-plan/2023/02/national-planning-framework-4/documents/national-planning-framework-4-revised-draft/national-planning-framework-4-revised-draft/govscot%3Athumbnails%5B5%5D 256w, 
+                                                                                            /binaries/content/documents/govscot/publications/strategy-plan/2023/02/national-planning-framework-4/documents/national-planning-framework-4-revised-draft/national-planning-framework-4-revised-draft/govscot%3Athumbnails%5B6%5D 320w
+                                            "
+                                        sizes="(min-width: 768px) 104px, 72px" />
+                                </a>
+
+                            <a href="/publications/national-planning-framework-4/documents/" class="ds_button  ds_button--secondary  ds_no-margin--top  gov_supporting-documents__button">
+                                <span class="gov_supporting-documents__button-icon">
+                                    <svg aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#expand_more"></use></svg>
+                                </span>
+                                <span class="gov_supporting-documents__button-text">Supporting documents</span>
+                            </a>
+                            <!--endnoindex-->
+                        </div>
+                    </div>
+            </header>
+
+            <hr />
+
+            <div class="ds_layout  gov_layout--publication">
+                    <!--noindex-->
+                    <div class="ds_layout__sidebar">
+<nav class="ds_side-navigation  ds_no-margin--top" data-module="ds-side-navigation">
+    <input type="checkbox" class="visually-hidden  js-toggle-side-navigation" id="show-side-navigation" aria-controls="side-navigation-root" />
+    <label class="ds_side-navigation__expand  ds_link" for="show-side-navigation">Choose section <span class="ds_side-navigation__expand-indicator"></span></label>
+
+    <ul class="ds_side-navigation__list" id="side-navigation-root">
+                    <li class="ds_side-navigation__item">
+                <a  class="ds_side-navigation__link    js-publication-navigation" href="/publications/national-planning-framework-4/pages/1/" data-page-index="0" >
+                    Ministerial Foreword
+                </a>
+            </li>
+            <li class="ds_side-navigation__item">
+                <a  class="ds_side-navigation__link    js-publication-navigation" href="/publications/national-planning-framework-4/pages/2/" data-page-index="1" >
+                    Part 1 – A National Spatial Strategy for Scotland 2045
+                </a>
+            </li>
+            <li class="ds_side-navigation__item">
+                <a  class="ds_side-navigation__link  ds_current  js-publication-navigation" href="/publications/national-planning-framework-4/pages/3/" data-page-index="2" aria-current="page">
+                    Part 2 – National Planning Policy
+                </a>
+            </li>
+            <li class="ds_side-navigation__item">
+                <a  class="ds_side-navigation__link    js-publication-navigation" href="/publications/national-planning-framework-4/pages/4/" data-page-index="3" >
+                    Annex A – How to use this document
+                </a>
+            </li>
+            <li class="ds_side-navigation__item">
+                <a  class="ds_side-navigation__link    js-publication-navigation" href="/publications/national-planning-framework-4/pages/5/" data-page-index="4" >
+                    Annex B – National Developments Statements of Need
+                </a>
+            </li>
+            <li class="ds_side-navigation__item">
+                <a  class="ds_side-navigation__link    js-publication-navigation" href="/publications/national-planning-framework-4/pages/6/" data-page-index="5" >
+                    Annex C – Spatial Planning Priorities
+                </a>
+            </li>
+            <li class="ds_side-navigation__item">
+                <a  class="ds_side-navigation__link    js-publication-navigation" href="/publications/national-planning-framework-4/pages/7/" data-page-index="6" >
+                    Annex D – Six Qualities of Successful Places
+                </a>
+            </li>
+            <li class="ds_side-navigation__item">
+                <a  class="ds_side-navigation__link    js-publication-navigation" href="/publications/national-planning-framework-4/pages/8/" data-page-index="7" >
+                    Annex E – Minimum All-Tenure Housing Land Requirement
+                </a>
+            </li>
+            <li class="ds_side-navigation__item">
+                <a  class="ds_side-navigation__link    js-publication-navigation" href="/publications/national-planning-framework-4/pages/9/" data-page-index="8" >
+                    Annex F – Glossary of definitions
+                </a>
+            </li>
+            <li class="ds_side-navigation__item">
+                <a  class="ds_side-navigation__link    js-publication-navigation" href="/publications/national-planning-framework-4/pages/10/" data-page-index="9" >
+                    Annex G – Acronyms
+                </a>
+            </li>
+            <li class="ds_side-navigation__item">
+                <a  class="ds_side-navigation__link    js-publication-navigation" href="/publications/national-planning-framework-4/pages/11/" data-page-index="10" >
+                    Footnotes
+                </a>
+            </li>
+    </ul>
+</nav>
+                    </div>
+                    <!--endnoindex-->
+
+                <div class="ds_layout__content">
+
+                        <div  class="body-content  publication-content  js-content-wrapper">
+                            <div >
+<h2>Part 2 – National Planning Policy</h2> 
+<h3>Sustainable Places</h3> 
+<h3>Tackling the climate and nature crises</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate development that addresses the global climate emergency and nature crisis.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<p>Zero carbon, nature positive places.</p> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s must address the global climate emergency and nature crisis by ensuring the spatial strategy will reduce emissions and adapt to current and future risks of climate change by promoting nature recovery and restoration in the area.</p> 
+<h4>Policy 1</h4> 
+<p>When considering all development proposals significant weight will be given to the global climate and nature crises.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<p>All other policies.</p> 
+<h3>Climate mitigation and adaptation</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate development that minimises emissions and adapts to the current and future impacts of climate change.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Emissions from development are minimised; and</li> 
+ <li>Our places are more resilient to climate change impacts.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p>The <abbr title="Local Development Plan">LDP</abbr> spatial strategy should be designed to reduce, minimise or avoid greenhouse gas emissions. The six spatial principles should form the basis of the spatial strategy, helping to guide development to, and create, sustainable locations. The strategy should be informed by an understanding of the impacts of the proposals on greenhouse gas emissions.</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should support adaptation to the current and future impacts of climate change by taking into account climate risks, guiding development away from vulnerable areas, and enabling places to adapt to those risks. </p> 
+<h4>Policy 2</h4> 
+<p>a) Development proposals will be sited and designed to minimise lifecycle greenhouse gas emissions as far as possible.</p> 
+<p>b) Development proposals will be sited and designed to adapt to current and future risks from climate change.</p> 
+<p>c) Development proposals to retrofit measures to existing developments that reduce emissions or support adaptation to climate change will be supported. </p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<p>All other policies.</p> 
+<h3>Biodiversity</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To protect biodiversity, reverse biodiversity loss, deliver positive effects from development and strengthen nature networks.</p> 
+<p>Policy Outcomes: Biodiversity is enhanced and better connected including through strengthened nature networks and nature-based solutions.</p> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should protect, conserve, restore and enhance biodiversity in line with the mitigation hierarchy. They should also promote nature recovery and nature restoration across the development plan area, including by: facilitating the creation of nature networks and strengthening connections between them to support improved ecological connectivity; restoring degraded habitats or creating new habitats; and incorporating measures to increase biodiversity, including populations of priority species.</p> 
+<h4>Policy 3</h4> 
+<p>a) Development proposals will contribute to the enhancement of biodiversity, including where relevant, restoring degraded habitats and building and strengthening nature networks and the connections between them. Proposals should also integrate nature-based solutions, where possible.</p> 
+<p>b) Development proposals for national or major development, or for development that requires an Environmental Impact Assessment will only be supported where it can be demonstrated that the proposal will conserve, restore and enhance biodiversity, including nature networks so they are in a demonstrably better state than without intervention. This will include future management. To inform this, best practice assessment methods should be used. Proposals within these categories will demonstrate how they have met all of the following criteria:</p> 
+<p>i. the proposal is based on an understanding of the existing characteristics of the site and its local, regional and national ecological context prior to development, including the presence of any irreplaceable habitats;</p> 
+<p>ii. wherever feasible, nature-based solutions have been integrated and made best use of;</p> 
+<p>iii. an assessment of potential negative effects which should be fully mitigated in line with the mitigation hierarchy prior to identifying enhancements;</p> 
+<p>iv. significant biodiversity enhancements are provided, in addition to any proposed mitigation. This should include nature networks, linking to and strengthening habitat connectivity within and beyond the development, secured within a reasonable timescale and with reasonable certainty. Management arrangements for their long-term retention and monitoring should be included, wherever appropriate; and</p> 
+<p>v. local community benefits of the biodiversity and/or nature networks have been considered.</p> 
+<p>c) Proposals for local development will include appropriate measures to conserve, restore and enhance biodiversity, in accordance with national and local guidance. Measures should be proportionate to the nature and scale of development. Applications for individual householder development, or which fall within scope of (b) above, are excluded from this requirement.</p> 
+<p>d) Any potential adverse impacts, including cumulative impacts, of development proposals on biodiversity, nature networks and the natural environment will be minimised through careful planning and design. This will take into account the need to reverse biodiversity loss, safeguard the ecosystem services that the natural environment provides, and build resilience by enhancing nature networks and maximising the potential for restoration.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Natural places</li> 
+ <li>Soils</li> 
+ <li>Forestry, woodland and trees</li> 
+ <li>Green belts</li> 
+ <li>Coastal development</li> 
+ <li>Energy</li> 
+ <li>Design, quality and place</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Flood risk and water management</li> 
+</ul> 
+<h3>Natural places</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To protect, restore and enhance natural assets making best use of nature-based solutions.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Natural places are protected and restored.</li> 
+ <li>Natural assets are managed in a sustainable way that maintains and grows their essential benefits and services.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s will identify and protect locally, regionally, nationally and internationally important natural assets, on land and along coasts. The spatial strategy should safeguard them and take into account the objectives and level of their protected status in allocating land for development. Spatial strategies should also better connect nature rich areas by establishing and growing nature networks to help protect and restore the biodiversity, ecosystems and natural processes in their area.</p> 
+<h4>Policy 4</h4> 
+<p>a) Development proposals which by virtue of type, location or scale will have an unacceptable impact on the natural environment, will not be supported.</p> 
+<p>b) Development proposals that are likely to have a significant effect on an existing or proposed European site (Special Area of Conservation or Special Protection Areas) and are not directly connected with or necessary to their conservation management are required to be subject to an “appropriate assessment” of the implications for the conservation objectives.</p> 
+<p>c) Development proposals that will affect a National Park, National Scenic Area, Site of Special Scientific Interest or a National Nature Reserve will only be supported where:</p> 
+<p>i. The objectives of designation and the overall integrity of the areas will not be compromised; or</p> 
+<p>ii. Any significant adverse effects on the qualities for which the area has been designated are clearly outweighed by social, environmental or economic benefits of national importance.</p> 
+<p>All Ramsar sites are also European sites and/or Sites of Special Scientific Interest and are extended protection under the relevant statutory regimes.</p> 
+<p>d) Development proposals that affect a site designated as a local nature conservation site or landscape area in the <abbr title="Local Development Plan">LDP</abbr> will only be supported where:</p> 
+<p>i. Development will not have significant adverse effects on the integrity of the area or the qualities for which it has been identified; or</p> 
+<p>ii. Any significant adverse effects on the integrity of the area are clearly outweighed by social, environmental or economic benefits of at least local importance.</p> 
+<p>e) The precautionary principle will be applied in accordance with relevant legislation and Scottish Government guidance.</p> 
+<p>f) Development proposals that are likely to have an adverse effect on species protected by legislation will only be supported where the proposal meets the relevant statutory tests. If there is reasonable evidence to suggest that a protected species is present on a site or may be affected by a proposed development, steps must be taken to establish its presence. The level of protection required by legislation must be factored into the planning and design of development, and potential impacts must be fully considered prior to the determination of any application.</p> 
+<p>g) Development proposals in areas identified as wild land in the Nature Scot Wild Land Areas map will only be supported where the proposal:</p> 
+<p>i. will support meeting renewable energy targets; or,</p> 
+<p>ii. is for small scale development directly linked to a rural business or croft, or is required to support a fragile community in a rural area.</p> 
+<p>All such proposals must be accompanied by a wild land impact assessment which sets out how design, siting, or other mitigation measures have been and will be used to minimise significant impacts on the qualities of the wild land, as well as any management and monitoring arrangements where appropriate. Buffer zones around wild land will not be applied, and effects of development outwith wild land areas will not be a significant consideration.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Biodiversity</li> 
+ <li>Soils</li> 
+ <li>Forestry, woodland and trees</li> 
+ <li>Historic assets and places</li> 
+ <li>Green belts</li> 
+ <li>Coastal development</li> 
+ <li>Energy</li> 
+ <li>Design, quality and place</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Play, recreation and sport</li> 
+ <li>Flood risk and water management</li> 
+ <li>Rural development</li> 
+ <li>Tourism</li> 
+</ul> 
+<h3>Soils</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To protect carbon-rich soils, restore peatlands and minimise disturbance to soils from development. </p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Valued soils are protected and restored.</li> 
+ <li>Soils, including carbon-rich soils, are sequestering and storing carbon.</li> 
+ <li>Soils are healthy and provide essential ecosystem services for nature, people and our economy.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should protect locally, regionally, nationally and internationally valued soils, including land of lesser quality that is culturally or locally important for primary use.</p> 
+<h4>Policy 5</h4> 
+<p>a) Development proposals will only be supported if they are designed and constructed:</p> 
+<p>i. In accordance with the mitigation hierarchy by first avoiding and then minimising the amount of disturbance to soils on undeveloped land; and</p> 
+<p>ii. In a manner that protects soil from damage including from compaction and erosion, and that minimises soil sealing.</p> 
+<p>b) Development proposals on prime agricultural land, or land of lesser quality that is culturally or locally important for primary use, as identified by the <abbr title="Local Development Plan">LDP</abbr>, will only be supported where it is for:</p> 
+<p>i. Essential infrastructure and there is a specific locational need and no other suitable site;</p> 
+<p>ii. Small-scale development directly linked to a rural business, farm or croft or for essential workers for the rural business to be able to live onsite;</p> 
+<p>iii. The development of production and processing facilities associated with the land produce where no other local site is suitable;</p> 
+<p>iv. The generation of energy from renewable sources or the extraction of minerals and there is secure provision for restoration; and</p> 
+<p>In all of the above exceptions, the layout and design of the proposal minimises the amount of protected land that is required.</p> 
+<p>c) Development proposals on peatland, carbon-rich soils and priority peatland habitat will only be supported for:</p> 
+<p>i. Essential infrastructure and there is a specific locational need and no other suitable site;</p> 
+<p>ii. The generation of energy from renewable sources that optimises the contribution of the area to greenhouse gas emissions reductions targets;</p> 
+<p>iii. Small-scale development directly linked to a rural business, farm or croft;</p> 
+<p>iv. Supporting a fragile community in a rural or island area; or</p> 
+<p>v. Restoration of peatland habitats.</p> 
+<p>d) Where development on peatland, carbon-rich soils or priority peatland habitat is proposed, a detailed site specific assessment will be required to identify:</p> 
+<p>i. the baseline depth, habitat condition, quality and stability of carbon rich soils;</p> 
+<p>ii. the likely effects of the development on peatland, including on soil disturbance; and</p> 
+<p>iii. the likely net effects of the development on climate emissions and loss of carbon.</p> 
+<p>This assessment should inform careful project design and ensure, in accordance with relevant guidance and the mitigation hierarchy, that adverse impacts are first avoided and then minimised through best practice. A peat management plan will be required to demonstrate that this approach has been followed, alongside other appropriate plans required for restoring and/ or enhancing the site into a functioning peatland system capable of achieving carbon sequestration.</p> 
+<p>e) Development proposals for new commercial peat extraction, including extensions to existing sites, will only be supported where:</p> 
+<p>i. the extracted peat is supporting the Scottish whisky industry;</p> 
+<p>ii. there is no reasonable substitute;</p> 
+<p>iii. the area of extraction is the minimum necessary and the proposal retains an in-situ residual depth of peat of at least 1 metre across the whole site, including drainage features;</p> 
+<p>iv. the time period for extraction is the minimum necessary; and</p> 
+<p>v. there is an agreed comprehensive site restoration plan which will progressively restore, over a reasonable timescale, the area of extraction to a functioning peatland system capable of achieving carbon sequestration.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Biodiversity</li> 
+ <li>Natural places</li> 
+ <li>Forestry, woodland and trees</li> 
+ <li>Historic assets and places</li> 
+ <li>Energy</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Rural development</li> 
+</ul> 
+<h3>Forestry, woodland and trees</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To protect and expand forests, woodland and trees. </p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Existing woodlands and trees are protected, and cover is expanded.</li> 
+ <li>Woodland and trees on development sites are sustainably managed.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should identify and protect existing woodland and the potential for its enhancement or expansion to avoid habitat fragmentation and improve ecological connectivity, helping to support and expand nature networks. The spatial strategy should identify and set out proposals for forestry, woodlands and trees in the area, including their development, protection and enhancement, resilience to climate change, and the expansion of a range of types to provide multiple benefits. This will be supported and informed by an up to date Forestry and Woodland Strategy.</p> 
+<h4>Policy 6</h4> 
+<p>a) Development proposals that enhance, expand and improve woodland and tree cover will be supported.</p> 
+<p>b) Development proposals will not be supported where they will result in:</p> 
+<p>i. Any loss of ancient woodlands, ancient and veteran trees, or adverse impact on their ecological condition;</p> 
+<p>ii. Adverse impacts on native woodlands, hedgerows and individual trees of high biodiversity value, or identified for protection in the Forestry and Woodland Strategy;</p> 
+<p>iii. Fragmenting or severing woodland habitats, unless appropriate mitigation measures are identified and implemented in line with the mitigation hierarchy;</p> 
+<p>iv. Conflict with Restocking Direction, Remedial Notice or Registered Notice to Comply issued by Scottish Forestry.</p> 
+<p>c) Development proposals involving woodland removal will only be supported where they will achieve significant and clearly defined additional public benefits in accordance with relevant Scottish Government policy on woodland removal. Where woodland is removed, compensatory planting will most likely be expected to be delivered.</p> 
+<p>d) Development proposals on sites which include an area of existing woodland or land identified in the Forestry and Woodland Strategy as being suitable for woodland creation will only be supported where the enhancement and improvement of woodlands and the planting of new trees on the site (in accordance with the Forestry and Woodland Strategy) are integrated into the design.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Biodiversity</li> 
+ <li>Natural places</li> 
+ <li>Soils</li> 
+ <li>Historic assets and places</li> 
+ <li>Green belts</li> 
+ <li>Energy</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Heat and cooling</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Play, recreation and sport</li> 
+ <li>Flood risk and water management</li> 
+ <li>Health and safety</li> 
+ <li>Tourism</li> 
+</ul> 
+<h3>Historic assets and places</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To protect and enhance historic environment assets and places, and to enable positive change as a catalyst for the regeneration of places.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>The historic environment is valued, protected, and enhanced, supporting the transition to net zero and ensuring assets are resilient to current and future impacts of climate change.</li> 
+ <li>Redundant or neglected historic buildings are brought back into sustainable and productive uses.</li> 
+ <li>Recognise the social, environmental and economic value of the historic environment, to our economy and cultural identity.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s, including through their spatial strategies, should support the sustainable management of the historic environment. They should identify, protect and enhance valued historic assets and places.</p> 
+<h4>Policy 7</h4> 
+<p>a) Development proposals with a potentially significant impact on historic assets or places will be accompanied by an assessment which is based on an understanding of the cultural significance of the historic asset and/or place. The assessment should identify the likely visual or physical impact of any proposals for change, including cumulative effects and provide a sound basis for managing the impacts of change.</p> 
+<p> Proposals should also be informed by national policy and guidance on managing change in the historic environment, and information held within Historic Environment Records.</p> 
+<p>b) Development proposals for the demolition of listed buildings will not be supported unless it has been demonstrated that there are exceptional circumstances and that all reasonable efforts have been made to retain, reuse and/or adapt the listed building. Considerations include whether the:</p> 
+<p>i. building is no longer of special interest;</p> 
+<p>ii. building is incapable of physical repair and re-use as verified through a detailed structural condition survey report;</p> 
+<p>iii. repair of the building is not economically viable and there has been adequate marketing for existing and/or new uses at a price reflecting its location and condition for a reasonable period to attract interest from potential restoring purchasers; or</p> 
+<p>iv. demolition of the building is essential to delivering significant benefits to economic growth or the wider community.</p> 
+<p>c) Development proposals for the reuse, alteration or extension of a listed building will only be supported where they will preserve its character, special architectural or historic interest and setting. Development proposals affecting the setting of a listed building should preserve its character, and its special architectural or historic interest.</p> 
+<p>d) Development proposals in or affecting conservation areas will only be supported where the character and appearance of the conservation area and its setting is preserved or enhanced. Relevant considerations include the:</p> 
+<p>i. architectural and historic character of the area;</p> 
+<p>ii. existing density, built form and layout; and</p> 
+<p>iii. context and siting, quality of design and suitable materials.</p> 
+<p>e) Development proposals in conservation areas will ensure that existing natural and built features which contribute to the character of the conservation area and its setting, including structures, boundary walls, railings, trees and hedges, are retained.</p> 
+<p>f) Demolition of buildings in a conservation area which make a positive contribution to its character will only be supported where it has been demonstrated that:</p> 
+<p>i. reasonable efforts have been made to retain, repair and reuse the building;</p> 
+<p>ii. the building is of little townscape value;</p> 
+<p>iii. the structural condition of the building prevents its retention at a reasonable cost; or</p> 
+<p>iv. the form or location of the building makes its reuse extremely difficult.</p> 
+<p>g) Where demolition within a conservation area is to be followed by redevelopment, consent to demolish will only be supported when an acceptable design, layout and materials are being used for the replacement development.</p> 
+<p>h) Development proposals affecting scheduled monuments will only be supported where:</p> 
+<p>i. direct impacts on the scheduled monument are avoided;</p> 
+<p>ii. significant adverse impacts on the integrity of the setting of a scheduled monument are avoided; or</p> 
+<p>iii. exceptional circumstances have been demonstrated to justify the impact on a scheduled monument and its setting and impacts on the monument or its setting have been minimised.</p> 
+<p>i) Development proposals affecting nationally important Gardens and Designed Landscapes will be supported where they protect, preserve or enhance their cultural significance, character and integrity and where proposals will not significantly impact on important views to, from and within the site, or its setting.</p> 
+<p>j) Development proposals affecting nationally important Historic Battlefields will only be supported where they protect and, where appropriate, enhance their cultural significance, key landscape characteristics, physical remains and special qualities.</p> 
+<p>k) Development proposals at the coast edge or that extend offshore will only be supported where proposals do not significantly hinder the preservation objectives of Historic Marine Protected Areas.</p> 
+<p>l) Development proposals affecting a World Heritage Site or its setting will only be supported where their Outstanding Universal Value is protected and preserved.</p> 
+<p>m) Development proposals which sensitively repair, enhance and bring historic buildings, as identified as being at risk locally or on the national Buildings at Risk Register, back into beneficial use will be supported.</p> 
+<p>n) Enabling development for historic environment assets or places that would otherwise be unacceptable in planning terms, will only be supported when it has been demonstrated that the enabling development proposed is:</p> 
+<p>i. essential to secure the future of an historic environment asset or place which is at risk of serious deterioration or loss; and</p> 
+<p>ii. the minimum necessary to secure the restoration, adaptation and long-term future of the historic environment asset or place.</p> 
+<p> The beneficial outcomes for the historic environment asset or place should be secured early in the phasing of the development, and will be ensured through the use of conditions and/or legal agreements.</p> 
+<p>o) Non-designated historic environment assets, places and their setting should be protected and preserved in situ wherever feasible. Where there is potential for non-designated buried archaeological remains to exist below a site, developers will provide an evaluation of the archaeological resource at an early stage so that planning authorities can assess impacts. Historic buildings may also have archaeological significance which is not understood and may require assessment.</p> 
+<p>Where impacts cannot be avoided they should be minimised. Where it has been demonstrated that avoidance or retention is not possible, excavation, recording, analysis, archiving, publication and activities to provide public benefit may be required through the use of conditions or legal/planning obligations.</p> 
+<p>When new archaeological discoveries are made during the course of development works, they must be reported to the planning authority to enable agreement on appropriate inspection, recording and mitigation measures.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Natural places</li> 
+ <li>Forestry, woodland and trees</li> 
+ <li>Green belts</li> 
+ <li>Brownfield, vacant and derelict land and empty buildings</li> 
+ <li>Coastal development</li> 
+ <li>Energy</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Quality homes</li> 
+ <li>Rural homes</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Flood risk and water management</li> 
+ <li>Digital infrastructure</li> 
+ <li>Community wealth building</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Rural development</li> 
+ <li>Tourism</li> 
+ <li>Culture and creativity</li> 
+</ul> 
+<h3>Green belts</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate compact urban growth and use the land around our towns and cities sustainably.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Development is directed to the right locations, urban density is increased and unsustainable growth is prevented.</li> 
+ <li>The character, landscape, natural setting and identity of settlements is protected and enhanced.</li> 
+ <li>Nature networks are supported and land is managed to help tackle climate change.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should consider using green belts, to support their spatial strategy as a settlement management tool to restrict development around towns and cities.</p> 
+<p>Green belts will not be necessary for most settlements but may be zoned around settlements where there is a significant danger of unsustainable growth in car-based commuting or suburbanisation of the countryside.</p> 
+<p>Green belts should be identified or reviewed as part of the preparation of <abbr title="Local Development Plan">LDP</abbr>s. Boundary changes may be made to accommodate planned growth, or to extend, or alter the area covered as green belt. Detailed green belt boundaries should be based on evidence and should be clearly identified in plans.</p> 
+<h4>Policy 8</h4> 
+<p>a) Development proposals within a green belt designated within the <abbr title="Local Development Plan">LDP</abbr> will only be supported if:</p> 
+<p>i) they are for:</p> 
+<ul> 
+ <li>development associated with agriculture, woodland creation, forestry and existing woodland (including community woodlands);</li> 
+ <li>residential accommodation required and designed for a key worker in a primary industry within the immediate vicinity of their place of employment where the presence of a worker is essential to the operation of the enterprise, or retired workers where there is no suitable alternative accommodation available;</li> 
+ <li>horticulture, including market gardening and directly connected retailing, as well as community growing;</li> 
+ <li>outdoor recreation, play and sport or leisure and tourism uses; and developments that provide opportunities for access to the open countryside (including routes for active travel and core paths);</li> 
+ <li>flood risk management (such as development of blue and green infrastructure within a “drainage catchment” to manage/mitigate flood risk and/or drainage issues);</li> 
+ <li>essential infrastructure or new cemetery provision;</li> 
+ <li>minerals operations and renewable energy developments;</li> 
+ <li>intensification of established uses, including extensions to an existing building where that is ancillary to the main use;</li> 
+ <li>the reuse, rehabilitation and conversion of historic environment assets; or</li> 
+ <li>one-for-one replacements of existing permanent homes.</li> 
+</ul> 
+<p>and</p> 
+<p>ii) the following requirements are met:</p> 
+<ul> 
+ <li>reasons are provided as to why a green belt location is essential and why it cannot be located on an alternative site outwith the green belt;</li> 
+ <li>the purpose of the green belt at that location is not undermined;</li> 
+ <li>the proposal is compatible with the surrounding established countryside and landscape character;</li> 
+ <li>the proposal has been designed to ensure it is of an appropriate scale, massing and external appearance, and uses materials that minimise visual impact on the green belt as far as possible; and</li> 
+ <li>there will be no significant long-term impacts on the environmental quality of the green belt.</li> 
+</ul> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Biodiversity</li> 
+ <li>Natural places</li> 
+ <li>Forestry, woodland and trees</li> 
+ <li>Historic assets and places</li> 
+ <li>Brownfield, vacant and derelict land and empty buildings</li> 
+ <li>Energy</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Quality homes</li> 
+ <li>Rural homes</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Play, recreation and sport</li> 
+ <li>Flood risk and water management</li> 
+ <li>Digital infrastructure</li> 
+ <li>Business and industry</li> 
+ <li>Rural development</li> 
+ <li>Retail</li> 
+ <li>Tourism</li> 
+ <li>Minerals</li> 
+</ul> 
+<h3>Brownfield, vacant and derelict land and empty buildings</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate the reuse of brownfield, vacant and derelict land and empty buildings, and to help reduce the need for greenfield development. </p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Development is directed to the right locations, maximising the use of existing assets and minimising additional land take.</li> 
+ <li>The contribution of brownfield land to nature recovery is recognised and opportunities for use as productive greenspace are realised where appropriate.</li> 
+ <li>Derelict buildings and spaces are regenerated to improve wellbeing and transform our places.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should set out opportunities for the sustainable reuse of brownfield land including vacant and derelict land and empty buildings.</p> 
+<h4>Policy 9</h4> 
+<p>a) Development proposals that will result in the sustainable reuse of brownfield land including vacant and derelict land and buildings, whether permanent or temporary, will be supported. In determining whether the reuse is sustainable, the biodiversity value of brownfield land which has naturalised should be taken into account.</p> 
+<p>b) Proposals on greenfield sites will not be supported unless the site has been allocated for development or the proposal is explicitly supported by policies in the <abbr title="Local Development Plan">LDP</abbr>.</p> 
+<p>c) Where land is known or suspected to be unstable or contaminated, development proposals will demonstrate that the land is, or can be made, safe and suitable for the proposed new use.</p> 
+<p>d) Development proposals for the reuse of existing buildings will be supported, taking into account their suitability for conversion to other uses. Given the need to conserve embodied energy, demolition will be regarded as the least preferred option.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Historic assets and places</li> 
+ <li>Zero waste</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Quality homes</li> 
+ <li>Rural homes</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Play, recreation and sport</li> 
+ <li>Health and safety</li> 
+ <li>Business and industry</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Rural development</li> 
+ <li>Culture and creativity</li> 
+</ul> 
+<h3>Coastal development</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To protect coastal communities and assets and support resilience to the impacts of climate change.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<p>Coastal areas develop sustainably and adapt to climate change.</p> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr> spatial strategies should consider how to adapt coastlines to the impacts of climate change. This should recognise that rising sea levels and more extreme weather events resulting from climate change will potentially have a significant impact on coastal and islands areas, and take a precautionary approach to flood risk including by inundation. Spatial strategies should reflect the diversity of coastal areas and opportunities to use nature-based solutions to improve the resilience of coastal communities and assets. <abbr title="Local Development Plan">LDP</abbr> spatial strategies should identify areas of developed and undeveloped coast and should align with national, sectoral and regional marine plans.</p> 
+<h4>Policy 10</h4> 
+<p>a) Development proposals in developed coastal areas will only be supported where the proposal:</p> 
+<p>i. does not result in the need for further coastal protection measures taking into account future sea level change; or increase the risk to people of coastal flooding or coastal erosion, including through the loss of natural coastal defences including dune systems; and</p> 
+<p>ii. is anticipated to be supportable in the long-term, taking into account projected climate change.</p> 
+<p>b) Development proposals in undeveloped coastal areas will only be supported where they:</p> 
+<p>i. are necessary to support the blue economy, net zero emissions or to contribute to the economy or wellbeing of communities whose livelihood depend on marine or coastal activities, or is for essential infrastructure, where there is a specific locational need and no other suitable site;</p> 
+<p>ii. do not result in the need for further coastal protection measures taking into account future sea level change; or increase the risk to people of coastal flooding or coastal erosion, including through the loss of natural coastal defences including dune systems; and</p> 
+<p>iii. are anticipated to be supportable in the long-term, taking into account projected climate change; or</p> 
+<p>iv. are designed to have a very short lifespan.</p> 
+<p>c) Development proposals for coastal defence measures will be supported if:</p> 
+<p>i. they are consistent with relevant coastal or marine plans;</p> 
+<p>ii. nature-based solutions are utilised and allow for managed future coastal change wherever practical; and</p> 
+<p>iii. any in-perpetuity hard defense measures can be demonstrated to be necessary to protect essential assets.</p> 
+<p>d) Where a design statement is submitted with any planning application that may impact on the coast it will take into account, as appropriate, long-term coastal vulnerability and resilience.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Biodiversity</li> 
+ <li>Natural places</li> 
+ <li>Energy</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Play, recreation and sport</li> 
+ <li>Flood risk and water management</li> 
+ <li>Rural development</li> 
+ <li>Tourism</li> 
+ <li>Aquaculture</li> 
+</ul> 
+<h3>Energy</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate all forms of renewable energy development onshore and offshore. This includes energy generation, storage, new and replacement transmission and distribution infrastructure and emerging low-carbon and zero emissions technologies including hydrogen and carbon capture utilisation and storage (<abbr title="Carbon Capture Utilisation and Storage">CCUS</abbr>).</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<p>Expansion of renewable, low-carbon and zero emissions technologies.</p> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should seek to realise their area’s full potential for electricity and heat from renewable, low carbon and zero emission sources by identifying a range of opportunities for energy development.</p> 
+<h4>Policy 11</h4> 
+<p>a) Development proposals for all forms of renewable, low-carbon and zero emissions technologies will be supported. These include:</p> 
+<p>i. wind farms including repowering, extending, expanding and extending the life of existing wind farms;</p> 
+<p>ii. enabling works, such as grid transmission and distribution infrastructure;</p> 
+<p>iii. energy storage, such as battery storage and pumped storage hydro;</p> 
+<p>iv. small scale renewable energy generation technology;</p> 
+<p>v. solar arrays;</p> 
+<p>vi. proposals associated with negative emissions technologies and carbon capture; and</p> 
+<p>vii. proposals including co-location of these technologies.</p> 
+<p>b) Development proposals for wind farms in National Parks and National Scenic Areas will not be supported.</p> 
+<p>c) Development proposals will only be supported where they maximise net economic impact, including local and community socio-economic benefits such as employment, associated business and supply chain opportunities.</p> 
+<p>d) Development proposals that impact on international or national designations will be assessed in relation to Policy 4.</p> 
+<p>e) In addition, project design and mitigation will demonstrate how the following impacts are addressed:</p> 
+<p>i. impacts on communities and individual dwellings, including, residential amenity, visual impact, noise and shadow flicker;</p> 
+<p>ii. significant landscape and visual impacts, recognising that such impacts are to be expected for some forms of renewable energy. Where impacts are localised and/or appropriate design mitigation has been applied, they will generally be considered to be acceptable;</p> 
+<p>iii. public access, including impact on long distance walking and cycling routes and scenic routes;</p> 
+<p>iv. impacts on aviation and defence interests including seismological recording;</p> 
+<p>v. impacts on telecommunications and broadcasting installations, particularly ensuring that transmission links are not compromised;</p> 
+<p>vi. impacts on road traffic and on adjacent trunk roads, including during construction;</p> 
+<p>vii. impacts on historic environment;</p> 
+<p>viii. effects on hydrology, the water environment and flood risk;</p> 
+<p>ix. biodiversity including impacts on birds;</p> 
+<p>x. impacts on trees, woods and forests;</p> 
+<p>xi. proposals for the decommissioning of developments, including ancillary infrastructure, and site restoration; </p> 
+<p>xii. the quality of site restoration plans including the measures in place to safeguard or guarantee availability of finances to effectively implement those plans; and</p> 
+<p>xiii. cumulative impacts.</p> 
+<p>In considering these impacts, significant weight will be placed on the contribution of the proposal to renewable energy generation targets and on greenhouse gas emissions reduction targets.</p> 
+<p>Grid capacity should not constrain renewable energy development. It is for developers to agree connections to the grid with the relevant network operator. In the case of proposals for grid infrastructure, consideration should be given to underground connections where possible.</p> 
+<p>f) Consents for development proposals may be time-limited. Areas identified for wind farms are, however, expected to be suitable for use in perpetuity.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Rebalanced development</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Biodiversity</li> 
+ <li>Natural places</li> 
+ <li>Forestry, woodland and trees</li> 
+ <li>Soils</li> 
+ <li>Historic assets and places</li> 
+ <li>Green belts</li> 
+ <li>Infrastructure first</li> 
+ <li>Heat and cooling</li> 
+ <li>Community wealth building</li> 
+</ul> 
+<h3>Zero waste</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate development that is consistent with the waste hierarchy.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>The reduction and reuse of materials in construction is prioritised. </li> 
+ <li>Infrastructure for zero waste and to develop Scotland’s circular economy is delivered in appropriate locations.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should identify appropriate locations for new waste management infrastructure to support the circular economy and meet identified needs in a way that moves waste as high up the waste hierarchy as possible.</p> 
+<h4>Policy 12</h4> 
+<p>a) Development proposals will seek to reduce, reuse, or recycle materials in line with the waste hierarchy.</p> 
+<p>b) Development proposals will be supported where they:</p> 
+<p>i. reuse existing buildings and infrastructure;</p> 
+<p>ii. minimise demolition and salvage materials for reuse;</p> 
+<p>iii. minimise waste, reduce pressure on virgin resources and enable building materials, components and products to be disassembled, and reused at the end of their useful life;</p> 
+<p>iv. use materials with the lowest forms of embodied emissions, such as recycled and natural construction materials;</p> 
+<p>v. use materials that are suitable for reuse with minimal reprocessing.</p> 
+<p>c) Development proposals that are likely to generate waste when operational, including residential, commercial, and industrial properties, will set out how much waste the proposal is expected to generate and how it will be managed including: </p> 
+<p>i. provision to maximise waste reduction and waste separation at source, and</p> 
+<p>ii. measures to minimise the cross-contamination of materials, through appropriate segregation and storage of waste; convenient access for the collection of waste; and recycling and localised waste management facilities.</p> 
+<p>d) Development proposals for waste infrastructure and facilities (except landfill and energy from waste facilities) will be only supported where:</p> 
+<p>i. there are no unacceptable impacts (including cumulative) on the residential amenity of nearby dwellings, local communities; the transport network; and natural and historic environment assets;</p> 
+<p>ii. environmental (including cumulative) impacts relating to noise, dust, smells, pest control and pollution of land, air and water are acceptable;</p> 
+<p>iii. any greenhouse gas emissions resulting from the processing and transportation of waste to and from the facility are minimised;</p> 
+<p>iv. an adequate buffer zone between sites and sensitive uses such as homes is provided taking account of the various environmental effects likely to arise;</p> 
+<p>v. a restoration and aftercare scheme (including appropriate financial mechanisms) is provided and agreed to ensure the site is restored;</p> 
+<p>vi. consideration has been given to co-location with end users of outputs.</p> 
+<p>e) Development proposals for new or extended landfill sites will only be supported if:</p> 
+<p>i. there is demonstrable need for additional landfill capacity taking into account Scottish Government objectives on waste management; and</p> 
+<p>ii. waste heat and/or electricity generation is included. Where this is considered impractical, evidence and justification will require to be provided.</p> 
+<p>f) Proposals for the capture, distribution or use of gases captured from landfill sites or waste water treatment plant will be supported.</p> 
+<p>g) Development proposals for energy-from-waste facilities will not be supported except under limited circumstances where a national or local need has been sufficiently demonstrated (e.g. in terms of capacity need or carbon benefits) as part of a strategic approach to residual waste management and where the proposal:</p> 
+<p>i. is consistent with climate change mitigation targets and in line with circular economy principles;</p> 
+<p>ii. can demonstrate that a functional heat network can be created and provided within the site for appropriate infrastructure to allow a heat network to be developed and potential local consumers have been identified;</p> 
+<p>iii. is supported by a heat and power plan, which demonstrates how energy recovered from the development would be used to provide electricity and heat and where consideration is given to methods to reduce carbon emissions of the facility (for example through carbon capture and storage)</p> 
+<p>iv. complies with relevant guidelines published by Scottish Environment Protection Agency (<abbr title="Scottish Environment Protection Agency">SEPA</abbr>); and</p> 
+<p>v. has supplied an acceptable decarbonisation strategy aligned with Scottish Government decarbonisation goals.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Compact urban growth</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Brownfield, vacant and derelict land and empty buildings</li> 
+ <li>Energy</li> 
+ <li>Infrastructure first</li> 
+ <li>Heat and cooling</li> 
+ <li>Community wealth building</li> 
+ <li>Minerals</li> 
+</ul> 
+<h3>Sustainable transport</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate developments that prioritise walking, wheeling, cycling and public transport for everyday travel and reduce the need to travel unsustainably. </p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Investment in transport infrastructure supports connectivity and reflects place-based approaches and local living.</li> 
+ <li>More, better, safer and more inclusive active and sustainable travel opportunities.</li> 
+ <li>Developments are in locations which support sustainable travel.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should prioritise locations for future development that can be accessed by sustainable modes. The spatial strategy should reflect the sustainable travel hierarchy and sustainable investment hierarchy by making best use of existing infrastructure and services.</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should promote a place-based approach to consider how to reduce car-dominance. This could include low traffic schemes, shared transport options, designing–in speed controls, bus/cycle priority, pedestrianisation and minimising space dedicated to car parking. Consideration should be given to the type, mix and use of development; local living and 20 minute neighbourhoods; car ownership levels; the accessibility of proposals and allocations by sustainable modes; and the accessibility for users of all abilities.</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should be informed by an appropriate and effective transport appraisal undertaken in line with relevant transport appraisal guidance. Plans should be informed by evidence of the area’s transport infrastructure capacity, and an appraisal of the spatial strategy on the transport network. This should identify any potential cumulative transport impacts and deliverable mitigation proposed to inform the plan’s infrastructure first approach. Where there is likely to be an impact on the trunk road or rail network, early engagement with Transport Scotland is required.</p> 
+<h4>Policy 13</h4> 
+<p>a) Proposals to improve, enhance or provide active travel infrastructure, public transport infrastructure or multi-modal hubs will be supported. This includes proposals:</p> 
+<p>i. for electric vehicle charging infrastructure and electric vehicle forecourts, especially where fuelled by renewable energy.</p> 
+<p>ii. which support a mode shift of freight from road to more sustainable modes, including last-mile delivery.</p> 
+<p>iii. that build in resilience to the effects of climate change and where appropriate incorporate blue and green infrastructure and nature rich habitats (such as natural planting or water systems).</p> 
+<p>b) Development proposals will be supported where it can be demonstrated that the transport requirements generated have been considered in line with the sustainable travel and investment hierarchies and where appropriate they:</p> 
+<p>i. Provide direct, easy, segregated and safe links to local facilities via walking, wheeling and cycling networks before occupation;</p> 
+<p>ii. Will be accessible by public transport, ideally supporting the use of existing services;</p> 
+<p>iii. Integrate transport modes;</p> 
+<p>iv. Provide low or zero-emission vehicle and cycle charging points in safe and convenient locations, in alignment with building standards;</p> 
+<p>v. Supply safe, secure and convenient cycle parking to meet the needs of users and which is more conveniently located than car parking;</p> 
+<p>vi. Are designed to incorporate safety measures including safe crossings for walking and wheeling and reducing the number and speed of vehicles;</p> 
+<p>vii. Have taken into account, at the earliest stage of design, the transport needs of diverse groups including users with protected characteristics to ensure the safety, ease and needs of all users; and</p> 
+<p>viii. Adequately mitigate any impact on local public access routes.</p> 
+<p>c) Where a development proposal will generate a significant increase in the number of person trips, a transport assessment will be required to be undertaken in accordance with the relevant guidance.</p> 
+<p>d) Development proposals for significant travel generating uses will not be supported in locations which would increase reliance on the private car, taking into account the specific characteristics of the area.</p> 
+<p>e) Development proposals which are ambitious in terms of low/no car parking will be supported, particularly in urban locations that are well-served by sustainable transport modes and where they do not create barriers to access by disabled people.</p> 
+<p>f) Development proposals for significant travel generating uses, or smaller-scale developments where it is important to monitor travel patterns resulting from the development, will only be supported if they are accompanied by a Travel Plan with supporting planning conditions/obligations. Travel plans should set out clear arrangements for delivering against targets, as well as monitoring and evaluation.</p> 
+<p>g) Development proposals that have the potential to affect the operation and safety of the Strategic Transport Network will be fully assessed to determine their impact. Where it has been demonstrated that existing infrastructure does not have the capacity to accommodate a development without adverse impacts on safety or unacceptable impacts on operational performance, the cost of the mitigation measures required to ensure the continued safe and effective operation of the network should be met by the developer.</p> 
+<p>While new junctions on trunk roads are not normally acceptable, the case for a new junction will be considered by Transport Scotland where significant economic or regeneration benefits can be demonstrated. New junctions will only be considered if they are designed in accordance with relevant guidance and where there will be no adverse impact on road safety or operational performance.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Quality homes</li> 
+ <li>Rural homes</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Business and industry</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Retail</li> 
+ <li>Rural development</li> 
+ <li>Tourism</li> 
+</ul> 
+<h2>Liveable Places</h2> 
+<h3>Design, quality and place</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate well designed development that makes successful places by taking a design-led approach and applying the Place Principle. </p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Quality places, spaces and environments.</li> 
+ <li>Places that consistently deliver healthy, pleasant, distinctive, connected, sustainable and adaptable qualities.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should be place-based and created in line with the Place Principle<strong>.</strong> The spatial strategy should be underpinned by the six qualities of successful places. <abbr title="Local Development Plan">LDP</abbr>s should provide clear expectations for design, quality and place taking account of the local context, characteristics and connectivity of the area. They should also identify where more detailed design guidance is expected, for example, by way of design frameworks, briefs, masterplans and design codes.</p> 
+<p>Planning authorities should use the Place Standard tool in the preparation of <abbr title="Local Development Plan">LDP</abbr>s and design guidance to engage with communities and other stakeholders. They should also where relevant promote its use in early design discussions on planning applications.</p> 
+<h4>Policy 14</h4> 
+<p>a) Development proposals will be designed to improve the quality of an area whether in urban or rural locations and regardless of scale.</p> 
+<p>b) Development proposals will be supported where they are consistent with the six qualities of successful places:</p> 
+<p><strong>Healthy</strong>: Supporting the prioritisation of women’s safety and improving physical and mental health.</p> 
+<p><strong>Pleasant</strong>: Supporting attractive natural and built spaces.</p> 
+<p><strong>Connected</strong>: Supporting well connected networks that make moving around easy and reduce car dependency</p> 
+<p><strong>Distinctive</strong>: Supporting attention to detail of local architectural styles and natural landscapes to be interpreted, literally or creatively, into designs to reinforce identity.</p> 
+<p><strong>Sustainable</strong>: Supporting the efficient use of resources that will allow people to live, play, work and stay in their area, ensuring climate resilience, and integrating nature positive, biodiversity solutions.</p> 
+<p><strong>Adaptable</strong>: Supporting commitment to investing in the long-term value of buildings, streets and spaces by allowing for flexibility so that they can be changed quickly to accommodate different uses as well as maintained over time.</p> 
+<p>Further details on delivering the six qualities of successful places are set out in <a href="/publications/national-planning-framework-4/pages/7/">Annex D</a>.</p> 
+<p>c) Development proposals that are poorly designed, detrimental to the amenity of the surrounding area or inconsistent with the six qualities of successful places, will not be supported.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>All other policies.</li> 
+</ul> 
+<h3>Local Living and 20 minute neighbourhoods</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate the application of the Place Principle and create connected and compact neighbourhoods where people can meet the majority of their daily needs within a reasonable distance of their home, preferably by walking, wheeling or cycling or using sustainable transport options.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Places are planned to improve local living in a way that reflects local circumstances.</li> 
+ <li>A network of high-quality, accessible, mixed-use neighbourhoods which support health and wellbeing, reduce inequalities and are resilient to the effects of climate change. </li> 
+ <li>New and existing communities are planned together with homes and the key local infrastructure including schools, community centres, local shops, greenspaces, health and social care, digital and sustainable transport links. </li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should support local living, including 20 minute neighbourhoods within settlements, through the spatial strategy, associated site briefs and masterplans. The approach should take into account the local context, consider the varying settlement patterns and reflect the particular characteristics and challenges faced by each place. Communities and businesses will have an important role to play in informing this, helping to strengthen local living through their engagement with the planning system.</p> 
+<h4>Policy 15</h4> 
+<p>a) Development proposals will contribute to local living including, where relevant, 20 minute neighbourhoods. To establish this, consideration will be given to existing settlement pattern, and the level and quality of interconnectivity of the proposed development with the surrounding area, including local access to:</p> 
+<ul> 
+ <li>sustainable modes of transport including local public transport and safe, high quality walking, wheeling and cycling networks;</li> 
+ <li>employment;</li> 
+ <li>shopping;</li> 
+ <li>health and social care facilities;</li> 
+ <li>childcare, schools and lifelong learning opportunities;</li> 
+ <li>playgrounds and informal play opportunities, parks, green streets and spaces, community gardens, opportunities for food growth and allotments, sport and recreation facilities;</li> 
+ <li>publicly accessible toilets;</li> 
+ <li>affordable and accessible housing options, ability to age in place and housing diversity.</li> 
+</ul> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Infrastructure first</li> 
+ <li>Quality homes</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Play, recreation and sport</li> 
+ <li>Community wealth building</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Retail</li> 
+</ul> 
+<h3>Quality homes</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate the delivery of more high quality, affordable and sustainable homes, in the right locations, providing choice across tenures that meet the diverse housing needs of people and communities across Scotland.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Good quality homes are at the heart of great places and contribute to strengthening the health and wellbeing of communities.</li> 
+ <li>Provision of land in the right locations to accommodate future need and demand for new homes, supported by the appropriate infrastructure.</li> 
+ <li>More energy efficient, net zero emissions homes, supporting a greener, fairer and more inclusive wellbeing economy and community wealth building, tackling both fuel and child poverty.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s are expected to identify a Local Housing Land Requirement for the area they cover. This is to meet the duty for a housing target and to represent how much land is required. To promote an ambitious and plan-led approach, the Local Housing Land Requirement is expected to exceed the 10 year Minimum All-Tenure Housing Land Requirement (<abbr title="Minimum All-Tenure Housing Land Requirement">MATHLR</abbr>) set out in <a href="/publications/national-planning-framework-4/pages/8/">Annex E</a>.</p> 
+<p>Deliverable land should be allocated to meet the 10 year Local Housing Land Requirement in locations that create quality places for people to live. Areas that may be suitable for new homes beyond 10 years are also to be identified. The location of where new homes are allocated should be consistent with local living including, where relevant, 20 minute neighbourhoods and an infrastructure first approach. In rural and island areas, authorities are encouraged to set out tailored approaches to housing which reflect locally specific market circumstances and delivery approaches. Diverse needs and delivery models should be taken into account across all areas, as well as allocating land to ensure provision of accommodation for Gypsy/Travellers and Travelling Showpeople where need is identified.</p> 
+<p>The <abbr title="Local Development Plan">LDP</abbr> delivery programme is expected to establish a deliverable housing land pipeline for the Local Housing Land Requirement. The purpose of the pipeline is to provide a transparent view of the phasing of housing allocations so that interventions, including infrastructure, that enable delivery can be planned: it is not to stage permissions. Representing when land will be brought forward, phasing is expected across the short (1-3 years), medium (4-6 years) and long-term (7-10 years). Where sites earlier in the deliverable housing land pipeline are not delivering as programmed, and alternative delivery mechanisms identified in the delivery programme are not practical, measures should be considered to enable earlier delivery of long-term deliverable sites (7-10 years) or areas identified for new homes beyond 10 years. De-allocations should be considered where sites are no longer deliverable. The annual Housing Land Audit will monitor the delivery of housing land to inform the pipeline and the actions to be taken in the delivery programme.</p> 
+<h4>Policy 16</h4> 
+<p>a) Development proposals for new homes on land allocated for housing in <abbr title="Local Development Plan">LDP</abbr>s will be supported.</p> 
+<p>b) Development proposals that include 50 or more homes, and smaller developments if required by local policy or guidance, should be accompanied by a Statement of Community Benefit. The statement will explain the contribution of the proposed development to:</p> 
+<p>i. meeting local housing requirements, including affordable homes;</p> 
+<p>ii. providing or enhancing local infrastructure, facilities and services; and</p> 
+<p>iii. improving the residential amenity of the surrounding area.</p> 
+<p>c) Development proposals for new homes that improve affordability and choice by being adaptable to changing and diverse needs, and which address identified gaps in provision, will be supported. This could include:</p> 
+<p>i. self-provided homes;</p> 
+<p>ii. accessible, adaptable and wheelchair accessible homes;</p> 
+<p>iii. build to rent;</p> 
+<p>iv. affordable homes;</p> 
+<p>v. a range of size of homes such as those for larger families;</p> 
+<p>vi. homes for older people, including supported accommodation, care homes and sheltered housing;</p> 
+<p>vii. homes for people undertaking further and higher education; and</p> 
+<p>viii. homes for other specialist groups such as service personnel.</p> 
+<p>d) Development proposals for public or private, permanent or temporary, Gypsy/Travellers sites and family yards and Travelling Showpeople yards, including on land not specifically allocated for this use in the <abbr title="Local Development Plan">LDP</abbr>, should be supported where a need is identified and the proposal is otherwise consistent with the plan spatial strategy and other relevant policies, including human rights and equality.</p> 
+<p>e) Development proposals for new homes will be supported where they make provision for affordable homes to meet an identified need. Proposals for market homes will only be supported where the contribution to the provision of affordable homes on a site will be at least 25% of the total number of homes, unless the <abbr title="Local Development Plan">LDP</abbr> sets out locations or circumstances where:</p> 
+<p>i. a higher contribution is justified by evidence of need, or</p> 
+<p>ii. a lower contribution is justified, for example, by evidence of impact on viability, where proposals are small in scale, or to incentivise particular types of homes that are needed to diversify the supply, such as self-build or wheelchair accessible homes.</p> 
+<p>The contribution is to be provided in accordance with local policy or guidance.</p> 
+<p>f) Development proposals for new homes on land not allocated for housing in the <abbr title="Local Development Plan">LDP</abbr> will only be supported in limited circumstances where:</p> 
+<p>i. the proposal is supported by an agreed timescale for build-out; and</p> 
+<p>ii. the proposal is otherwise consistent with the plan spatial strategy and other relevant policies including local living and 20 minute neighbourhoods;</p> 
+<p>iii. and either:</p> 
+<ul> 
+ <li>delivery of sites is happening earlier than identified in the deliverable housing land pipeline. This will be determined by reference to two consecutive years of the Housing Land Audit evidencing substantial delivery earlier than pipeline timescales and that general trend being sustained; or</li> 
+ <li>the proposal is consistent with policy on rural homes; or</li> 
+ <li>the proposal is for smaller scale opportunities within an existing settlement boundary; or</li> 
+ <li>the proposal is for the delivery of less than 50 affordable homes as part of a local authority supported affordable housing plan.</li> 
+</ul> 
+<p>g) Householder development proposals will be supported where they:</p> 
+<p>i. do not have a detrimental impact on the character or environmental quality of the home and the surrounding area in terms of size, design and materials; and</p> 
+<p>ii. do not have a detrimental effect on the neighbouring properties in terms of physical impact, overshadowing or overlooking.</p> 
+<p>h) Householder development proposals that provide adaptations in response to risks from a changing climate, or relating to people with health conditions that lead to particular accommodation needs will be supported.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Green belts</li> 
+ <li>Brownfield, vacant and derelict land and empty buildings</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Heat and cooling</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Play, recreation and sport</li> 
+ <li>Rural homes</li> 
+ <li>Health and safety</li> 
+ <li>City, town, local and commercial centres</li> 
+</ul> 
+<h3>Rural homes</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate the delivery of more high quality, affordable and sustainable rural homes in the right locations.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Improved choice of homes across tenures so that identified local needs of people and communities in rural and island areas are met.</li> 
+ <li>Homes are provided that support sustainable rural communities and are linked with service provision.</li> 
+ <li>The distinctive character, sense of place and natural and cultural assets of rural areas are safeguarded and enhanced.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should be informed by an understanding of population change over time, locally specific needs and market circumstances in rural and island areas.</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should set out tailored approaches to rural housing and where relevant include proposals for future population growth – including provision for small-scale housing such as crofts and woodland crofts and the appropriate resettlement of previously inhabited areas. The Scottish Government’s 6 fold Urban Rural Classification 2020 should be used to identify remote rural areas. Plans should reflect locally appropriate delivery approaches. Previously inhabited areas that are suitable for resettlement should be identified in the spatial strategy.</p> 
+<h4>Policy 17</h4> 
+<p>a) Development proposals for new homes in rural areas will be supported where the development is suitably scaled, sited and designed to be in keeping with the character of the area and the development:</p> 
+<p>i. is on a site allocated for housing within the <abbr title="Local Development Plan">LDP</abbr>;</p> 
+<p>ii. reuses brownfield land where a return to a natural state has not or will not happen without intervention;</p> 
+<p>iii. reuses a redundant or unused building;</p> 
+<p>iv. is an appropriate use of a historic environment asset or is appropriate enabling development to secure the future of historic environment assets;</p> 
+<p>v. is demonstrated to be necessary to support the sustainable management of a viable rural business or croft, and there is an essential need for a worker (including those taking majority control of a farm business) to live permanently at or near their place of work;</p> 
+<p>vi. is for a single home for the retirement succession of a viable farm holding;</p> 
+<p>vii. is for the subdivision of an existing residential dwelling; the scale of which is in keeping with the character and infrastructure provision in the area; or</p> 
+<p>viii. reinstates a former dwelling house or is a one-for-one replacement of an existing permanent house.</p> 
+<p>b) Development proposals for new homes in rural areas will consider how the development will contribute towards local living and take into account identified local housing needs (including affordable housing), economic considerations and the transport needs of the development as appropriate for the rural location.</p> 
+<p>c) Development proposals for new homes in remote rural areas will be supported where the proposal:</p> 
+<p>i. supports and sustains existing fragile communities;</p> 
+<p>ii. supports identified local housing outcomes; and</p> 
+<p>iii. is suitable in terms of location, access, and environmental impact.</p> 
+<p>d) Development proposals for new homes that support the resettlement of previously inhabited areas will be supported where the proposal:</p> 
+<p>i. is in an area identified in the <abbr title="Local Development Plan">LDP</abbr> as suitable for resettlement;</p> 
+<p>ii. is designed to a high standard;</p> 
+<p>iii. responds to its rural location; and</p> 
+<p>iv. is designed to minimise greenhouse gas emissions as far as possible.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Natural places</li> 
+ <li>Historic assets and places</li> 
+ <li>Green belts</li> 
+ <li>Brownfield, vacant and derelict land and empty buildings</li> 
+ <li>Coastal development</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Quality homes</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Rural development</li> 
+ <li>Tourism</li> 
+</ul> 
+<h3>Infrastructure first</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate an infrastructure first approach to land use planning, which puts infrastructure considerations at the heart of placemaking.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Infrastructure considerations are integral to development planning and decision making and potential impacts on infrastructure and infrastructure needs are understood early in the development planning process as part of an evidenced based approach.</li> 
+ <li>Existing infrastructure assets are used sustainably, prioritising low-carbon solutions.</li> 
+ <li>Infrastructure requirements, and their planned delivery to meet the needs of communities, are clear.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s and delivery programmes should be based on an integrated infrastructure first approach. Plans should:</p> 
+<ul> 
+ <li>be informed by evidence on infrastructure capacity, condition, needs and deliverability within the plan area, including cross boundary infrastructure;</li> 
+ <li>set out the infrastructure requirements to deliver the spatial strategy, informed by the evidence base, identifying the infrastructure priorities, and where, how, when and by whom they will be delivered; and</li> 
+ <li>indicate the type, level (or method of calculation) and location of the financial or in-kind contributions, and the types of development from which they will be required.</li> 
+</ul> 
+<p>Plans should align with relevant national, regional and local infrastructure plans and policies and take account of the Scottish Government infrastructure investment hierarchy and sustainable travel and investment hierarchies in developing the spatial strategy. Consistent early engagement and collaboration between relevant stakeholders will better inform decisions on land use and investment.</p> 
+<h4>Policy 18</h4> 
+<p>a) Development proposals which provide (or contribute to) infrastructure in line with that identified as necessary in <abbr title="Local Development Plan">LDP</abbr>s and their delivery programmes will be supported.</p> 
+<p>b) The impacts of development proposals on infrastructure should be mitigated. Development proposals will only be supported where it can be demonstrated that provision is made to address the impacts on infrastructure. Where planning conditions, planning obligations, or other legal agreements are to be used, the relevant tests will apply.</p> 
+<p>Where planning obligations are entered into, they should meet the following tests:</p> 
+<ul> 
+ <li>be necessary to make the proposed development acceptable in planning terms</li> 
+ <li>serve a planning purpose</li> 
+ <li>relate to the impacts of the proposed development</li> 
+ <li>fairly and reasonably relate in scale and kind to the proposed development</li> 
+ <li>be reasonable in all other respects</li> 
+</ul> 
+<p>Planning conditions should only be imposed where they meet all of the following tests. They should be:</p> 
+<ul> 
+ <li>necessary</li> 
+ <li>relevant to planning</li> 
+ <li>relevant to the development to be permitted</li> 
+ <li>enforceable</li> 
+ <li>precise</li> 
+ <li>reasonable in all other respects</li> 
+</ul> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Biodiversity</li> 
+ <li>Brownfield, vacant and derelict land and empty buildings</li> 
+ <li>Energy</li> 
+ <li>Zero waste</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Heat and cooling</li> 
+ <li>Quality homes</li> 
+ <li>Rural homes</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Play, recreation and sport</li> 
+ <li>Flood risk and water management</li> 
+ <li>Health and safety</li> 
+ <li>Digital infrastructure</li> 
+ <li>Business and industry</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Rural development</li> 
+</ul> 
+<h3>Heat and cooling</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate development that supports decarbonised solutions to heat and cooling demand and ensure adaptation to more extreme temperatures. </p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Development is connected to expanded heat networks which use and store heat from low or zero emission sources.</li> 
+ <li>Buildings and places are adapted to more extreme temperatures.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should take into account the area’s Local Heat &amp; Energy Efficiency Strategy (<abbr title="Local Heat and Energy Efficiency Strategies">LHEES</abbr>). The spatial strategy should take into account areas of heat network potential and any designated Heat Network Zones (<abbr title="Heat Network Zones">HNZ</abbr>).</p> 
+<h4>Policy 19</h4> 
+<p>a) Development proposals within or adjacent to a Heat Network Zone identified in a <abbr title="Local Development Plan">LDP</abbr> will only be supported where they are designed and constructed to connect to the existing heat network.</p> 
+<p>b) Proposals for retrofitting a connection to a heat network will be supported.</p> 
+<p>c) Where a heat network is planned but not yet in place, development proposals will only be supported where they are designed and constructed to allow for cost-effective connection at a later date.</p> 
+<p>d) National and major developments that will generate waste or surplus heat and which are located in areas of heat demand, will be supported providing wider considerations, including residential amenity, are not adversely impacted. A Heat and Power Plan should demonstrate how energy recovered from the development will be used to produce electricity and heat.</p> 
+<p>e) Development proposals for energy infrastructure will be supported where they:</p> 
+<p>i. repurpose former fossil fuel infrastructure for the production or handling of low carbon energy;</p> 
+<p>ii. are within or adjacent to a Heat Network Zone; and</p> 
+<p>iii. can be cost-effectively linked to an existing or planned heat network.</p> 
+<p>f) Development proposals for buildings that will be occupied by people will be supported where they are designed to promote sustainable temperature management, for example by prioritising natural or passive solutions such as siting, orientation, and materials.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Rebalanced development</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Energy</li> 
+ <li>Zero waste</li> 
+ <li>Infrastructure first</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Business and industry</li> 
+</ul> 
+<h3>Blue and green infrastructure</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To protect and enhance blue and green infrastructure and their networks.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Blue and green infrastructure are an integral part of early design and development processes; are designed to deliver multiple functions including climate mitigation, nature restoration, biodiversity enhancement, flood prevention and water management.</li> 
+ <li>Communities benefit from accessible, high quality blue, green and civic spaces.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should be informed by relevant, up-to-date audits and/or strategies, covering the multiple functions and benefits of blue and green infrastructure. The spatial strategy should identify and protect blue and green infrastructure assets and networks; enhance and expand existing provision including new blue and/or green infrastructure. This may include retrofitting. Priorities for connectivity to other blue and/or green infrastructure assets, including to address cross-boundary needs and opportunities, should also be identified.</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should encourage the permanent or temporary use of unused or under-used land as green infrastructure. Where this is temporary, this should not prevent future development potential from being realised.</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should safeguard access rights and core paths, including active travel routes, and encourage new and enhanced opportunities for access linked to wider networks.</p> 
+<h4>Policy 20</h4> 
+<p>a) Development proposals that result in fragmentation or net loss of existing blue and green infrastructure will only be supported where it can be demonstrated that the proposal would not result in or exacerbate a deficit in blue or green infrastructure provision, and the overall integrity of the network will be maintained. The planning authority’s Open Space Strategy should inform this.</p> 
+<p>b) Development proposals for or incorporating new or enhanced blue and/or green infrastructure will be supported. Where appropriate, this will be an integral element of the design that responds to local circumstances.</p> 
+<p> Design will take account of existing provision, new requirements and network connections (identified in relevant strategies such as the Open Space Strategies) to ensure the proposed blue and/or green infrastructure is of an appropriate type(s), quantity, quality and accessibility and is designed to be multi-functional and well integrated into the overall proposals.</p> 
+<p>c) Development proposals in regional and country parks will only be supported where they are compatible with the uses, natural habitats, and character of the park.</p> 
+<p>d) Development proposals for temporary open space or green space on unused or under-used land will be supported.</p> 
+<p>e) Development proposals that include new or enhanced blue and/or green infrastructure will provide effective management and maintenance plans covering the funding arrangements for their long-term delivery and upkeep, and the party or parties responsible for these.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Biodiversity</li> 
+ <li>Natural places</li> 
+ <li>Soils</li> 
+ <li>Forestry, woodland and trees</li> 
+ <li>Historic assets and places</li> 
+ <li>Green belts</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Heat and cooling</li> 
+ <li>Quality homes</li> 
+ <li>Play, recreation and sport</li> 
+ <li>Flood risk and water management</li> 
+ <li>Health and safety</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Rural development</li> 
+</ul> 
+<h3>Play, recreation and sport</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>: To encourage, promote and facilitate spaces and opportunities for play, recreation and sport.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Natural and built environments are improved, with more equitable access to opportunities for play and recreation.</li> 
+ <li>Physical and mental health are improved through provision of, and access to, outdoor recreation, play and sport facilities.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should identify sites for sports, play and outdoor recreation for people of all ages. This should be based on an understanding of the needs and demand in the community and informed by the planning authority’s Play Sufficiency Assessment and Open Space Strategy. These spaces can be incorporated as part of enhancing and expanding blue and green infrastructure, taking account of relevant agencies’ plans or policy frameworks, such as flood risk and/or water management plans. New provisions should be well-designed, high quality, accessible and inclusive.</p> 
+<h4>Policy 21</h4> 
+<p>a) Development proposals which result in the loss of outdoor sports facilities will only be supported where the proposal:</p> 
+<p>i. is ancillary to the principal use of the site as an outdoor sports facility; or</p> 
+<p>ii. involves only a minor part of the facility and would not affect its use; or</p> 
+<p>iii. meets a requirement to replace the facility which would be lost, either by a new facility or by upgrading an existing facility to provide a better quality facility. The location will be convenient for users and the overall playing capacity of the area will be maintained; or</p> 
+<p>iv. can demonstrate that there is a clear excess of provision to meet current and anticipated demand in the area, and that the site would be developed without detriment to the overall quality of provision.</p> 
+<p> This should be informed by the local authority’s Open Space Strategy and/or Play Sufficiency Assessment and in consultation with sportscotland where appropriate.</p> 
+<p>b) Development proposals that result in the quantitative and/or qualitative loss of children’s outdoor play provision, will only be supported where it can be demonstrated that there is no ongoing or future demand or the existing play provision will be replaced by a newly created, or improved existing asset, that is better quality or more appropriate.</p> 
+<p> This should be informed by the planning authority’s Play Sufficiency Assessment.</p> 
+<p>c) Development proposals for temporary or informal play space on unused or underused land will be supported.</p> 
+<p>d) Development proposals likely to be occupied or used by children and young people will be supported where they incorporate well-designed, good quality provision for play, recreation, and relaxation that is proportionate to the scale and nature of the development and existing provision in the area.</p> 
+<p>e) Development proposals that include new streets and public realm should be inclusive and enable children and young people to play and move around safely and independently, maximising opportunities for informal and incidental play in the neighbourhood.</p> 
+<p>f) New, replacement or improved play provision will, as far as possible and as appropriate:</p> 
+<p>i. provide stimulating environments;</p> 
+<p>ii. provide a range of play experiences including opportunities to connect with nature;</p> 
+<p>iii. be inclusive;</p> 
+<p>iv. be suitable for different ages of children and young people;</p> 
+<p>v. be easily and safely accessible by children and young people independently, including those with a disability;</p> 
+<p>vi. incorporate trees and/or other forms of greenery;</p> 
+<p>vii. form an integral part of the surrounding neighbourhood;</p> 
+<p>viii. be well overlooked for passive surveillance;</p> 
+<p>ix. be linked directly to other open spaces and play areas.</p> 
+<p>g) Development proposals that include new or enhanced play or sport facilities will provide effective management and maintenance plans covering the funding arrangements for their long-term delivery and upkeep, and the party or parties responsible for these.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Compact urban growth</li> 
+ <li>Local living</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Biodiversity</li> 
+ <li>Natural places</li> 
+ <li>Forestry, woodland and trees</li> 
+ <li>Historic assets and places</li> 
+ <li>Green belts</li> 
+ <li>Brownfield, vacant and derelict land and empty buildings</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Quality homes</li> 
+ <li>Rural homes</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Flood risk and water management</li> 
+ <li>Health and safety</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Culture and creativity</li> 
+</ul> 
+<h3>Flood risk and water management</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To strengthen resilience to flood risk by promoting avoidance as a first principle and reducing the vulnerability of existing and future development to flooding.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Places are resilient to current and future flood risk.</li> 
+ <li>Water resources are used efficiently and sustainably.</li> 
+ <li>Wider use of natural flood risk management benefits people and nature.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should strengthen community resilience to the current and future impacts of climate change, by avoiding development in areas at flood risk as a first principle. Resilience should also be supported by managing the need to bring previously used sites in built up areas into positive use; planning for adaptation measures; and identifying opportunities to implement improvements to the water environment through natural flood risk management and blue green infrastructure.</p> 
+<p>Plans should take into account the probability of flooding from all sources and make use of relevant flood risk and river basin management plans for the area. A precautionary approach should be taken, regarding the calculated probability of flooding as a best estimate, not a precise forecast. For areas where climate change is likely to result in increased flood exposure that becomes unmanageable, consideration should be given to alternative sustainable land use.</p> 
+<h4>Policy 22</h4> 
+<p>a) Development proposals at risk of flooding or in a flood risk area will only be supported if they are for:</p> 
+<p>i. essential infrastructure where the location is required for operational reasons;</p> 
+<p>ii. water compatible uses;</p> 
+<p>iii. redevelopment of an existing building or site for an equal or less vulnerable use; or.</p> 
+<p>iv. redevelopment of previously used sites in built up areas where the <abbr title="Local Development Plan">LDP</abbr> has identified a need to bring these into positive use and where proposals demonstrate that long-term safety and resilience can be secured in accordance with relevant <abbr title="Scottish Environment Protection Agency">SEPA</abbr> advice.</p> 
+<p>The protection offered by an existing formal flood protection scheme or one under construction can be taken into account when determining flood risk.</p> 
+<p>In such cases, it will be demonstrated by the applicant that:</p> 
+<ul> 
+ <li>all risks of flooding are understood and addressed;</li> 
+ <li>there is no reduction in floodplain capacity, increased risk for others, or a need for future flood protection schemes;</li> 
+ <li>the development remains safe and operational during floods;</li> 
+ <li>flood resistant and resilient materials and construction methods are used; and</li> 
+ <li>future adaptations can be made to accommodate the effects of climate change.</li> 
+</ul> 
+<p>Additionally, for development proposals meeting criteria part iv), where flood risk is managed at the site rather than avoided these will also require:</p> 
+<ul> 
+ <li>the first occupied/utilised floor, and the underside of the development if relevant, to be above the flood risk level and have an additional allowance for freeboard; and</li> 
+ <li>that the proposal does not create an island of development and that safe access/egress can be achieved.</li> 
+</ul> 
+<p>b) Small scale extensions and alterations to existing buildings will only be supported where they will not significantly increase flood risk.</p> 
+<p>c) Development proposals will:</p> 
+<p>i. not increase the risk of surface water flooding to others, or itself be at risk.</p> 
+<p>ii. manage all rain and surface water through sustainable urban drainage systems (<abbr title="Sustainable Urban Drainage System">SUDS</abbr>), which should form part of and integrate with proposed and existing blue-green infrastructure. All proposals should presume no surface water connection to the combined sewer;</p> 
+<p>iii. seek to minimise the area of impermeable surface.</p> 
+<p>d) Development proposals will be supported if they can be connected to the public water mains. If connection is not feasible, the applicant will need to demonstrate that water for drinking water purposes will be sourced from a sustainable water source that is resilient to periods of water scarcity.</p> 
+<p>e) Development proposals which create, expand or enhance opportunities for natural flood risk management, including blue and green infrastructure, will be supported.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Biodiversity</li> 
+ <li>Green belts</li> 
+ <li>Coastal development</li> 
+ <li>Design, quality and place</li> 
+ <li>Infrastructure first</li> 
+ <li>Quality homes</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Health and safety</li> 
+ <li>Business and industry</li> 
+</ul> 
+<h3>Health and safety</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To protect people and places from environmental harm, mitigate risks arising from safety hazards and encourage, promote and facilitate development that improves health and wellbeing.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Health is improved and health inequalities are reduced.</li> 
+ <li>Safe places protect human health and the environment.</li> 
+ <li>A planned approach supports health infrastructure delivery.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr> spatial strategies should seek to tackle health inequalities particularly in places which are experiencing the most disadvantage. They should identify the health and social care services and infrastructure needed in the area, including potential for co-location of complementary services, in partnership with Health Boards and Health and Social Care Partnerships.</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should create healthier places for example through opportunities for exercise, healthier lifestyles, land for community food growing and allotments, and awareness of locations of concern for suicide.</p> 
+<p>Spatial strategies should maintain appropriate distances between sites with hazardous substances and areas where the public are likely to be present and areas of particular natural sensitivity or interest.</p> 
+<h4>Policy 23</h4> 
+<p>a) Development proposals that will have positive effects on health will be supported. This could include, for example, proposals that incorporate opportunities for exercise, community food growing or allotments.</p> 
+<p>b) Development proposals which are likely to have a significant adverse effect on health will not be supported. A Health Impact Assessment may be required.</p> 
+<p>c) Development proposals for health and social care facilities and infrastructure will be supported.</p> 
+<p>d) Development proposals that are likely to have significant adverse effects on air quality will not be supported. Development proposals will consider opportunities to improve air quality and reduce exposure to poor air quality. An air quality assessment may be required where the nature of the proposal or the air quality in the location suggest significant effects are likely.</p> 
+<p>e) Development proposals that are likely to raise unacceptable noise issues will not be supported. The agent of change principle applies to noise sensitive development. A Noise Impact Assessment may be required where the nature of the proposal or its location suggests that significant effects are likely.</p> 
+<p>f) Development proposals will be designed to take into account suicide risk.</p> 
+<p>g) Development proposals within the vicinity of a major accident hazard site or major accident hazard pipeline (because of the presence of toxic, highly reactive, explosive or inflammable substances) will consider the associated risks and potential impacts of the proposal and the major accident hazard site/pipeline of being located in proximity to one another.</p> 
+<p>h) Applications for hazardous substances consent will consider the likely potential impacts on surrounding populations and the environment.</p> 
+<p>i) Any advice from Health and Safety Executive, the Office of Nuclear Regulation or the Scottish Environment Protection Agency that planning permission or hazardous substances consent should be refused, or conditions to be attached to a grant of consent, should not be overridden by the decision maker without the most careful consideration.</p> 
+<p>j) Similar considerations apply in respect of development proposals either for or near licensed explosive sites (including military explosive storage sites).</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Forestry, woodland and trees</li> 
+ <li>Energy</li> 
+ <li>Zero waste</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Heat and cooling</li> 
+ <li>Quality homes</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Play, recreation and sport</li> 
+ <li>Flood risk and water management</li> 
+ <li>Digital infrastructure</li> 
+ <li>Business and industry</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Retail</li> 
+ <li>Culture and creativity</li> 
+ <li>Aquaculture</li> 
+ <li>Minerals</li> 
+</ul> 
+<h3>Digital infrastructure</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate the roll-out of digital infrastructure across Scotland to unlock the potential of all our places and the economy.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Appropriate, universal and future proofed digital infrastructure across the country.</li> 
+ <li>Local living is supported and the need to travel is reduced.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should support the delivery of digital infrastructure, including fixed line and mobile connectivity, particularly in areas with gaps in connectivity and barriers to digital access.</p> 
+<h4>Policy 24</h4> 
+<p>a) Development proposals that incorporate appropriate, universal, and future-proofed digital infrastructure will be supported.</p> 
+<p>b) Development proposals that deliver new digital services or provide technological improvements, particularly in areas with no or low connectivity capacity, will be supported.</p> 
+<p>c) Development proposals that are aligned with and support the delivery of local or national programmes for the roll-out of digital infrastructure will be supported.</p> 
+<p>d) Development proposals that deliver new connectivity will be supported where there are benefits of this connectivity for communities and the local economy.</p> 
+<p>e) Development proposals for digital infrastructure will only be supported where:</p> 
+<p>i. the visual and amenity impacts of the proposed development have been minimised through careful siting, design, height, materials and, landscaping, taking into account cumulative impacts and relevant technical constraints;</p> 
+<p>ii. it has been demonstrated that, before erecting a new ground based mast, the possibility of erecting antennas on an existing building, mast or other structure, replacing an existing mast and/or site sharing has been explored; and</p> 
+<p>iii. there is no physical obstruction to aerodrome operations, technical sites, or existing transmitter/receiver facilities.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Natural places</li> 
+ <li>Green belts</li> 
+ <li>Zero waste</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Health and safety</li> 
+ <li>Community wealth building</li> 
+ <li>Business and industry</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Rural development</li> 
+</ul> 
+<h2>Productive Places</h2> 
+<h3>Community wealth building</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate a new strategic approach to economic development that also provides a practical model for building a wellbeing economy at local, regional and national levels.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>local economic development that focuses on community and place benefits as a central and primary consideration – to support local employment and supply chains.</li> 
+ <li>support community ownership and management of buildings and land.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should be aligned with any strategy for community wealth building for the area. Spatial strategies should address community wealth building priorities; identify community assets; set out opportunities to tackle economic disadvantage and inequality; and seek to provide benefits for local communities.</p> 
+<h4>Policy 25</h4> 
+<p>a) Development proposals which contribute to local or regional community wealth building strategies and are consistent with local economic priorities will be supported. This could include for example improving community resilience and reducing inequalities; increasing spending within communities; ensuring the use of local supply chains and services; local job creation; supporting community led proposals, including creation of new local firms and enabling community led ownership of buildings and assets.</p> 
+<p>b) Development proposals linked to community ownership and management of land will be supported.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Brownfield, vacant and derelict land and empty buildings</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Business and industry</li> 
+</ul> 
+<h3>Business and industry</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate business and industry uses and to enable alternative ways of working such as home working, live-work units and micro-businesses.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Recovery within the business and industry sector is sustainable and inclusive.</li> 
+ <li>Investment in the business and industrial sector contributes to community wealth building.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should allocate sufficient land for business and industry, taking into account business and industry land audits, in particular ensuring that there is a suitable range of sites that meet current market demand, location, size and quality in terms of accessibility and services. This allocation should take account of local economic strategies and support broader objectives of delivering a low carbon and net zero economic recovery, and a fairer and more inclusive wellbeing economy.</p> 
+<h4>Policy 26</h4> 
+<p>a) Development proposals for business and industry uses on sites allocated for those uses in the <abbr title="Local Development Plan">LDP</abbr> will be supported.</p> 
+<p>b) Development proposals for home working, live-work units and micro-businesses will be supported where it is demonstrated that the scale and nature of the proposed business and building will be compatible with the surrounding area and there will be no unacceptable impacts on amenity or neighbouring uses.</p> 
+<p>c) Development proposals for business and industry uses will be supported where they are compatible with the primary business function of the area. Other employment uses will be supported where they will not prejudice the primary function of the area and are compatible with the business/industrial character of the area.</p> 
+<p>d) Development proposals for business, general industrial and storage and distribution uses outwith areas identified for those uses in the <abbr title="Local Development Plan">LDP</abbr> will only be supported where:</p> 
+<p>i. It is demonstrated that there are no suitable alternatives allocated in the <abbr title="Local Development Plan">LDP</abbr> or identified in the employment land audit; and</p> 
+<p>ii. The nature and scale of the activity will be compatible with the surrounding area.</p> 
+<p>e) Development proposals for business and industry will take into account:</p> 
+<p>i. Impact on surrounding residential amenity; sensitive uses and the natural and historic environment;</p> 
+<p>ii. The need for appropriate site restoration at the end of a period of commercial use.</p> 
+<p>f) Major developments for manufacturing or industry will be accompanied by a decarbonisation strategy to demonstrate how greenhouse gas emissions from the process are appropriately abated. The strategy may include carbon capture and storage.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Health and safety</li> 
+ <li>Digital infrastructure</li> 
+ <li>Community wealth building</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Rural development</li> 
+</ul> 
+<h3>City, town, local and commercial centres</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate development in our city and town centres, recognising they are a national asset. This will be achieved by applying the Town Centre First approach to help centres adapt positively to long-term economic, environmental and societal changes, and by encouraging town centre living.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Centres are vibrant, healthy, creative, enterprising, accessible and resilient places for people to live, learn, work, enjoy and visit.</li> 
+ <li>Development is directed to the most sustainable locations that are accessible by a range of sustainable transport modes and provide communities with easy access to the goods, services and recreational opportunities they need.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should support sustainable futures for city, town and local centres, in particular opportunities to enhance city and town centres. They should, where relevant, also support proposals for improving the sustainability of existing commercial centres where appropriate.</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should identify a network of centres that reflect the principles of 20 minute neighbourhoods and the town centre vision.</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should be informed by evidence on where clustering of non-retail uses may be adversely impacting on the wellbeing of communities. They should also consider, and if appropriate, identify any areas where drive-through facilities may be acceptable where they would not negatively impact on the principles of local living or sustainable travel.</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should provide a proportion of their Local Housing Land Requirements in city and town centres and be proactive in identifying opportunities to support residential development.</p> 
+<h4>Policy 27</h4> 
+<p>a) Development proposals that enhance and improve the vitality and viability of city, town and local centres, including proposals that increase the mix of uses, will be supported.</p> 
+<p>b) Development proposals will be consistent with the town centre first approach. Proposals for uses which will generate significant footfall, including commercial, leisure, offices, community, sport and cultural facilities, public buildings such as libraries, education and healthcare facilities, and public spaces:</p> 
+<p>i. will be supported in existing city, town and local centres, and</p> 
+<p>ii. will not be supported outwith those centres unless a town centre first assessment demonstrates that:</p> 
+<ul> 
+ <li>all centre and edge of centre options have been sequentially assessed and discounted as unsuitable or unavailable;</li> 
+ <li>the scale of development cannot reasonably be altered or reduced in scale to allow it to be accommodated in a centre; and</li> 
+ <li>the impacts on existing centres have been thoroughly assessed and there will be no significant adverse effect on the vitality and viability of the centres.</li> 
+</ul> 
+<p><strong>Town Centre First Assessment</strong></p> 
+<p>For development proposals which are out of city/town centre and which will generate significant footfall a Town Centre First Assessment will be provided. Applicants should agree the data required with the planning authority before undertaking the assessment, and should present information on areas of dispute in a succinct and comparable form.</p> 
+<p>The town centre first assessment should:</p> 
+<ul> 
+ <li>identify the potential relationship of the proposed development with the network of centres identified in the <abbr title="Local Development Plan">LDP</abbr>;</li> 
+ <li>demonstrate the potential economic impact of the development and any possible displacement effects, including the net impact on jobs; and</li> 
+ <li>consider supply chains and whether local suppliers and workers will be a viable option; and</li> 
+ <li>the environmental impact of transporting goods and of staff and visitors travelling to the location.</li> 
+</ul> 
+<p>The town centre first assessment should be applied flexibly and realistically for community, education, health and social care and sport and leisure facilities so that they are easily accessible to the communities they are intended to serve.</p> 
+<p>c) Development proposals for non-retail uses will not be supported if further provision of these services will undermine the character and amenity of the area or the health and wellbeing of communities, particularly in disadvantaged areas. These uses include:</p> 
+<p>i. Hot food takeaways, including permanently sited vans;</p> 
+<p>ii. Betting offices; and</p> 
+<p>iii. High interest money lending premises.</p> 
+<p>d) Drive-through developments will only be supported where they are specifically supported in the <abbr title="Local Development Plan">LDP</abbr>.</p> 
+<p><strong>Town centre living</strong></p> 
+<p>e) Development proposals for residential development within city/town centres will be supported, including:</p> 
+<p>i. New build residential development.</p> 
+<p>ii. The re-use of a vacant building within city/town centres where it can be demonstrated that the existing use is no longer viable and the proposed change of use adds to viability and vitality of the area.</p> 
+<p>iii. The conversion, or reuse of vacant upper floors of properties within city/town centres for residential.</p> 
+<p>f) Development proposals for residential use at ground floor level within city/town centres will only be supported where the proposal will:</p> 
+<p>i. retain an attractive and appropriate frontage;</p> 
+<p>ii. not adversely affect the vitality and viability of a shopping area or the wider centre; and</p> 
+<p>iii. not result in an undesirable concentration of uses, or ‘dead frontages’.</p> 
+<p>g) Development proposals for city or town centre living will take into account the residential amenity of the proposal. This must be clearly demonstrated where the proposed development is in the same built structure as:</p> 
+<p>i. a hot food premises, live music venue, amusement arcade/centre, casino or licensed premises (with the exception of hotels, restaurants, cafés or off licences); and/or</p> 
+<p>ii. there is a common or shared access with licenced premises or other use likely to be detrimental to residential amenity.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Historic assets and places</li> 
+ <li>Brownfield, vacant and derelict land and empty buildings</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Quality homes</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Play, recreation and sport</li> 
+ <li>Health and safety</li> 
+ <li>Community wealth building</li> 
+ <li>Business and industry</li> 
+ <li>Retail</li> 
+ <li>Rural development</li> 
+ <li>Tourism</li> 
+ <li>Culture and creativity</li> 
+</ul> 
+<h3>Retail</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate retail investment to the most sustainable locations that are most accessible by a range of sustainable transport modes.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Retail development and the location of shops support vibrant city, town and local centres.</li> 
+ <li>Communities can access the shops and goods they need by a range of sustainable transport modes including on foot, by bike, and by public transport, as part of local living.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should consider where there may be a need for further retail provision, this may be:</p> 
+<ul> 
+ <li>where a retail study identifies deficiencies in retail provision in terms of quality and quantity in an area; or</li> 
+ <li>when allocating sites for housing or the creation of new communities, in terms of the need for neighbourhood shopping, and supporting local living.</li> 
+</ul> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should identify areas where proposals for healthy food and drink outlets can be supported.</p> 
+<h4>Policy 28</h4> 
+<p>a) Development proposals for retail (including expansions and changes of use) will be consistent with the town centre first principle. This means that new retail proposals:</p> 
+<p>i. will be supported in existing city, town and local centres, and</p> 
+<p>ii. will be supported in edge-of-centre areas or in commercial centres if they are allocated as sites suitable for new retail development in the <abbr title="Local Development Plan">LDP</abbr>.</p> 
+<p>iii. will not be supported in out of centre locations (other than those meeting policy 28(c) or 28(d)).</p> 
+<p>b) Development proposals for retail that are consistent with the sequential approach (set out in a) and click-and-collect locker pick up points, will be supported where the proposed development:</p> 
+<p>i. is of an appropriate scale for the location;</p> 
+<p>ii. will have an acceptable impact on the character and amenity of the area; and</p> 
+<p>iii. is located to best channel footfall and activity, to benefit the place as a whole.</p> 
+<p>c) Proposals for new small scale neighbourhood retail development will be supported where the proposed development:</p> 
+<p>i. contributes to local living, including where relevant 20 minute neighbourhoods and/or</p> 
+<p>ii. can be demonstrated to contribute to the health and wellbeing of the local community.</p> 
+<p>d) In island and rural areas, development proposals for shops ancillary to other uses such as farm shops, craft shops and shops linked to petrol/service/charging stations will be supported where:</p> 
+<p>i. it will serve local needs, support local living and local jobs;</p> 
+<p>ii. the potential impact on nearby town and commercial centres or village/local shops is acceptable;</p> 
+<p>iii. it will provide a service throughout the year; and</p> 
+<p>iv. the likely impacts of traffic generation and access and parking arrangements are acceptable.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Health and safety</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Rural development</li> 
+</ul> 
+<h3>Rural development</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage rural economic activity, innovation and diversification whilst ensuring that the distinctive character of the rural area and the service function of small towns, natural assets and cultural heritage are safeguarded and enhanced.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Rural places are vibrant and sustainable and rural communities and businesses are supported.</li> 
+ <li>A balanced and sustainable rural population.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should identify the characteristics of rural areas within the plan area, including the existing pattern of development, pressures, environmental assets, community priorities and economic needs of each area. The spatial strategy should set out an appropriate approach to development in rural areas which reflects the identified characteristics. The Scottish Government’s 6 fold Urban Rural Classification 2020 should be used to identify remote rural areas. Spatial strategies should support the sustainability and prosperity of rural communities and economies. Previously inhabited areas which are suitable for resettlement should be identified in the spatial strategy.</p> 
+<h4>Policy 29</h4> 
+<p>a) Development proposals that contribute to the viability, sustainability and diversity of rural communities and local rural economy will be supported, including:</p> 
+<p>i. farms, crofts, woodland crofts or other land use businesses, where use of good quality land for development is minimised and business viability is not adversely affected;</p> 
+<p>ii. diversification of existing businesses;</p> 
+<p>iii. production and processing facilities for local produce and materials, for example sawmills, or local food production;</p> 
+<p>iv. essential community services;</p> 
+<p>v. essential infrastructure;</p> 
+<p>vi. reuse of a redundant or unused building;</p> 
+<p>vii. appropriate use of a historic environment asset or is appropriate enabling development to secure the future of historic environment assets;</p> 
+<p>viii. reuse of brownfield land where a return to a natural state has not or will not happen without intervention;</p> 
+<p>ix. small scale developments that support new ways of working such as remote working, homeworking and community hubs; or</p> 
+<p>x. improvement or restoration of the natural environment.</p> 
+<p>b) Development proposals in rural areas should be suitably scaled, sited and designed to be in keeping with the character of the area. They should also consider how the development will contribute towards local living and take into account the transport needs of the development as appropriate for the rural location.</p> 
+<p>c) Development proposals in remote rural areas, where new development can often help to sustain fragile communities, will be supported where the proposal:</p> 
+<p>i. will support local employment;</p> 
+<p>ii. supports and sustains existing communities, for example through provision of digital infrastructure; and</p> 
+<p>iii. is suitable in terms of location, access, siting, design and environmental impact.</p> 
+<p>d) Development proposals that support the resettlement of previously inhabited areas will be supported where the proposal:</p> 
+<p>i. is in an area identified in the <abbr title="Local Development Plan">LDP</abbr> as suitable for resettlement;</p> 
+<p>ii. is designed to a high standard;</p> 
+<p>iii. responds to their rural location; and</p> 
+<p>iv. is designed to minimise greenhouse gas emissions as far as possible.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Compact urban growth</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Natural places</li> 
+ <li>Soils</li> 
+ <li>Historic assets and places</li> 
+ <li>Green belts</li> 
+ <li>Brownfield, vacant and derelict land and empty buildings</li> 
+ <li>Coastal development</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Infrastructure first</li> 
+ <li>Rural homes</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Flood risk and water management</li> 
+ <li>Business and industry</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Retail</li> 
+ <li>Tourism</li> 
+ <li>Culture and creativity</li> 
+ <li>Aquaculture</li> 
+ <li>Minerals</li> 
+</ul> 
+<h3>Tourism</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate sustainable tourism development which benefits local people, is consistent with our net zero and nature commitments, and inspires people to visit Scotland.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<p>Communities and places enjoy economic, social and cultural benefits from tourism, supporting resilience and stimulating job creation.</p> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should support the recovery, growth and long-term resilience of the tourism sector. The spatial strategy should identify suitable locations which reflect opportunities for tourism development by taking full account of the needs of communities, visitors, the industry and the environment. Relevant national and local sector driven tourism strategies should also be taken into account.</p> 
+<p>The spatial strategy should also identify areas of pressure where existing tourism provision is having adverse impacts on the environment or the quality of life and health and wellbeing of local communities, and where further development is not appropriate.</p> 
+<h4>Policy 30</h4> 
+<p>a) Development proposals for new or extended tourist facilities or accommodation, including caravan and camping sites, in locations identified in the <abbr title="Local Development Plan">LDP</abbr>, will be supported.</p> 
+<p>b) Proposals for tourism related development will take into account:</p> 
+<p>i. The contribution made to the local economy;</p> 
+<p>ii. Compatibility with the surrounding area in terms of the nature and scale of the activity and impacts of increased visitors;</p> 
+<p>iii. Impacts on communities, for example by hindering the provision of homes and services for local people;</p> 
+<p>iv. Opportunities for sustainable travel and appropriate management of parking and traffic generation and scope for sustaining public transport services particularly in rural areas;</p> 
+<p>v. Accessibility for disabled people;</p> 
+<p>vi. Measures taken to minimise carbon emissions;</p> 
+<p>vii. Opportunities to provide access to the natural environment.</p> 
+<p>c) Development proposals that involve the change of use of a tourism-related facility will only be supported where it is demonstrated that the existing use is no longer viable and that there is no requirement for alternative tourism-related facilities in the area.</p> 
+<p>d) Proposals for huts will be supported where the nature and scale of the development is compatible with the surrounding area and the proposal complies with relevant good practice guidance.</p> 
+<p>e) Development proposals for the reuse of existing buildings for short term holiday letting will not be supported where the proposal will result in:</p> 
+<p>i. An unacceptable impact on local amenity or the character of a neighbourhood or area; or</p> 
+<p>ii. The loss of residential accommodation where such loss is not outweighed by demonstrable local economic benefits.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Natural places</li> 
+ <li>Historic assets and places</li> 
+ <li>Coastal development</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Quality homes</li> 
+ <li>Rural homes</li> 
+ <li>Health and safety</li> 
+ <li>Community wealth building</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Retail</li> 
+ <li>Rural development</li> 
+ <li>Culture and creativity</li> 
+</ul> 
+<h3>Culture and creativity</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate development which reflects our diverse culture and creativity, and to support our culture and creative industries.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Locally distinctive places reflect the diversity of communities and support regeneration and town centre vibrancy.</li> 
+ <li>Cultural and creative industries are expanded, providing jobs and investment.</li> 
+ <li>Communities have access to cultural and creative activities.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should recognise and support opportunities for jobs and investment in the creative sector, culture, heritage and the arts.</p> 
+<h4>Policy 31</h4> 
+<p>a) Development proposals that involve a significant change to existing, or the creation of new, public open spaces will make provision for public art. Public art proposals which reflect diversity, culture and creativity will be supported.</p> 
+<p>b) Development proposals for creative workspaces or other cultural uses that involve the temporary use of vacant spaces or property will be supported.</p> 
+<p>c) Development proposals that would result in the loss of an arts or cultural venue will only supported where:</p> 
+<p>i. there is no longer a sustainable demand for the venue and after marketing the site at a reasonable rate for at least 12 months, through relevant local and national agents and online platforms, there has been no viable interest from potential operators; or</p> 
+<p>ii. the venue, as evidenced by consultation, no longer meets the needs of users and cannot be adapted; or</p> 
+<p>iii. alternative provision of equal or greater standard is made available at a suitable location within the local area; and</p> 
+<p>iv. the loss of the venue does not result in loss or damage to assets or objects of significant cultural value.</p> 
+<p>d) Development proposals within the vicinity of existing arts venues will fully reflect the agent of change principle and will only be supported where they can demonstrate that measures can be put in place to ensure that existing noise and disturbance impacts on the proposed development would be acceptable and that existing venues and facilities can continue without additional restrictions being placed on them as a result of the proposed new development.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Conserving and recycling assets</li> 
+ <li>Local living</li> 
+ <li>Rebalanced development</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Climate mitigation and adaptation</li> 
+ <li>Historic assets and places</li> 
+ <li>Brownfield, vacant and derelict land and empty buildings</li> 
+ <li>Zero waste</li> 
+ <li>Sustainable transport</li> 
+ <li>Design, quality and place</li> 
+ <li>Local Living and 20 minute neighbourhoods</li> 
+ <li>Blue and green infrastructure</li> 
+ <li>Play, recreation and sport</li> 
+ <li>Health and safety</li> 
+ <li>Digital infrastructure</li> 
+ <li>Community wealth building</li> 
+ <li>City, town, local and commercial centres</li> 
+ <li>Rural development</li> 
+ <li>Tourism</li> 
+</ul> 
+<h3>Aquaculture</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To encourage, promote and facilitate aquaculture development and minimise any adverse effects on the environment, including cumulative impacts.</p> 
+<p>Planning should support an aquaculture industry that is sustainable, diverse, competitive, economically viable and which contributes to food security, whilst operating with social licence, within environmental limits and which ensures there is a thriving marine ecosystem for future generations.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>New aquaculture development is in locations that reflect industry needs and considers environmental impacts.</li> 
+ <li>Producers will contribute to communities and local economies.</li> 
+ <li>Prosperous finfish, shellfish and seaweed sectors.</li> 
+ <li>Migratory fish species are safeguarded.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should guide new aquaculture development in line with National and Regional Marine Planning, and will minimise adverse environmental impacts, including cumulative impacts, that arise from other existing and planned aquaculture developments in the area while also reflecting industry needs.</p> 
+<h4>Policy 32</h4> 
+<p>a) To safeguard migratory fish species, further salmon and trout open pen fish farm developments on the north and east coasts of mainland Scotland will not be supported.</p> 
+<p>b) Development proposals for aquaculture will be supported where they comply with the <abbr title="Local Development Plan">LDP</abbr>, the National Marine Plan and, where relevant, the appropriate Regional Marine Plan.</p> 
+<p>c) Development proposals for fish farms will demonstrate that operational impacts (including from noise, acoustic deterrent devices (where applicable) light, access, navigation, containment, deposition, waste emissions and sea lice, impacts on wild salmonids, aquaculture litter (and odour and impacts on other marine users)) are acceptable and comply with the relevant regulatory framework.</p> 
+<p>d) Development proposals for fish farm developments will only be supported where the following impacts have been assessed and mitigated:</p> 
+<p>i. landscape and visual impact of the proposal including the siting and design of cages, lines and associated facilities taking into account the character of the location;</p> 
+<p>ii. the impact of any land based facilities, ensuring that the siting and design are appropriate for the location;</p> 
+<p>iii. impacts on natural heritage, designated sites and priority marine features; and</p> 
+<p>iv. impacts on historic marine protected areas.</p> 
+<p>e) Applications for open water farmed finfish or shellfish development are excluded from the requirements of policy 3b) and 3c) and will instead apply all relevant provisions from National and Regional Marine Plans.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Just Transition</li> 
+ <li>Rebalanced development</li> 
+ <li>Rural revitalisation</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Historic assets and places</li> 
+ <li>Natural places</li> 
+ <li>Biodiversity</li> 
+ <li>Coastal development</li> 
+ <li>Design, quality and place</li> 
+ <li>Health and safety</li> 
+ <li>Community wealth building</li> 
+ <li>Business and industry</li> 
+ <li>Rural development</li> 
+</ul> 
+<h3>Minerals</h3> 
+<h4>Policy Principles</h4> 
+<p><strong>Policy Intent</strong>:</p> 
+<p>To support the sustainable management of resources and minimise the impacts of the extraction of minerals on communities and the environment.</p> 
+<p><strong>Policy Outcomes</strong>:</p> 
+<ul> 
+ <li>Sufficient resources are available to meet industry demands, making an essential contribution to the Scottish economy.</li> 
+ <li>Important raw materials for manufacturing, construction, agriculture, and other industries are available.</li> 
+ <li>Important workable mineral resources are protected from sterilisation by other developments.</li> 
+ <li>Communities and the environment are protected from the impacts of mineral extraction.</li> 
+</ul> 
+<p><strong>Local Development Plans</strong>:</p> 
+<p><abbr title="Local Development Plan">LDP</abbr>s should support a landbank of construction aggregates of at least 10-years at all times in the relevant market areas, whilst promoting sustainable resource management, safeguarding important workable mineral resources, which are of economic or conservation value, and take steps to ensure these are not sterilised by other types of development.</p> 
+<h4>Policy 33</h4> 
+<p>a) Development proposals that seek to explore, develop, and produce fossil fuels (excluding unconventional oil and gas) will not be supported other than in exceptional circumstances. Any such exceptions will be required to demonstrate that the proposal is consistent with national policy on energy and targets for reducing greenhouse gas emissions.</p> 
+<p>b) The Scottish Government does not support the development of unconventional oil and gas in Scotland. This means development connected to the onshore exploration, appraisal or production of coal bed methane or shale oil or shale gas, using unconventional oil and gas extraction techniques, including hydraulic fracturing and dewatering for coal bed methane.</p> 
+<p>c) Development proposals that would sterilise mineral deposits of economic value will only be supported where:</p> 
+<p>i. there is an overriding need for the development and prior extraction of the mineral cannot reasonably be undertaken; or</p> 
+<p>ii. extraction of the mineral is impracticable or unlikely to be environmentally acceptable.</p> 
+<p>d) Development proposals for the sustainable extraction of minerals will only be supported where they:</p> 
+<p>i. will not result in significant adverse impacts on biodiversity, geodiversity and the natural environment, sensitive habitats and the historic environment, as well as landscape and visual impacts;</p> 
+<p>ii. provide an adequate buffer zone between sites and settlements taking account of the specific circumstances of individual proposals, including size, duration, location, method of working, topography, and the characteristics of the various environmental effects likely to arise;</p> 
+<p>iii. can demonstrate that there are no significant adverse impacts (including cumulative impact) on any nearby homes, local communities and known sensitive receptors and designations;</p> 
+<p>iv. demonstrate acceptable levels (including cumulative impact) of noise, dust, vibration and potential pollution of land, air and water;</p> 
+<p>v. minimise transport impacts through the number and length of lorry trips and by using rail or water transport wherever practical;</p> 
+<p>vi. have appropriate mitigation plans in place for any adverse impacts;</p> 
+<p>vii. include schemes for a high standard of restoration and aftercare and commitment that such work is undertaken at the earliest opportunity. As a further safeguard a range of financial guarantee options are available, and the most effective solution should be considered and agreed on a site-by-site basis. Solutions should provide assurance and clarity over the amount and period of the guarantee and in particular, where it is a bond, the risks covered (including operator failure) and the triggers for calling in a bond, including payment terms.</p> 
+<p>e) Development proposals for borrow pits will only be supported where:</p> 
+<p>i. the proposal is tied to a specific project and is time-limited;</p> 
+<p>ii. the proposal complies with the above mineral extraction criteria taking into account the temporary nature of the development; and</p> 
+<p>iii. appropriate restoration proposals are enforceable.</p> 
+<p><strong>Policy impact</strong>:</p> 
+<ul> 
+ <li>Conserving and recycling assets</li> 
+</ul> 
+<p><strong>Key policy connections</strong>:</p> 
+<ul> 
+ <li>Tackling the climate and nature crises</li> 
+ <li>Biodiversity</li> 
+ <li>Natural places</li> 
+ <li>Historic assets and places</li> 
+ <li>Zero waste</li> 
+ <li>Infrastructure first</li> 
+ <li>Health and safety</li> 
+</ul>                            </div>
+                        </div>
+
+                        <!--noindex-->
+                        <nav class="ds_sequential-nav" aria-label="Article navigation">
+                                <div class="ds_sequential-nav__item  ds_sequential-nav__item--prev">
+                                    <a  href="/publications/national-planning-framework-4/pages/2/" class="ds_sequential-nav__button  ds_sequential-nav__button--left  js-publication-navigation">
+                                        <span class="ds_sequential-nav__text" data-label="previous">
+                                            Part 1 – A National Spatial Strategy for Scotland 2045
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="ds_sequential-nav__item  ds_sequential-nav__item--next">
+                                    <a  href="/publications/national-planning-framework-4/pages/4/" class="ds_sequential-nav__button  ds_sequential-nav__button--right  js-publication-navigation">
+                                        <span class="ds_sequential-nav__text" data-label="next">
+                                            Annex A – How to use this document
+                                        </span>
+                                    </a>
+                                </div>
+                        </nav>
+                        <!--endnoindex-->
+
+                            <section  class="gov_content-block">
+                                <h3 class="gov_content-block__title">Contact</h3>
+                                <p>Email:&nbsp;<span><span><a href="mailto:Chief.Planner@gov.scot">Chief.Planner@gov.scot</a></span></span></p>
+                            </section>
+
+                </div>
+
+                <div  class="ds_layout__feedback">
+<!--noindex-->
+<input id="documentUuid" type="hidden" name="uuid" value="ccfe4ed0-7244-4ef2-852d-6bc3f8eb046f"/>
+
+
+
+<div class="gov_feedback">
+    <section id="feedback">
+        <div class="js-error-summary-container  form-errors" role="alert"></div>
+
+        <div class="ds_notification-message  ds_notification-message--success  js-confirmation-message  fully-hidden" aria-live="polite">
+            <svg class="ds_notification-message__icon  ds_icon  ds_icon--24" aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#check_circle"></use></svg>
+            <div class="ds_notification-message__title  ds_h3  ds_no-margin">
+                Thanks for your feedback
+            </div>
+        </div>
+
+        <input id="page-category" type="hidden" value="publicationpage" form=feedbackForm">
+
+        <form id="feedbackForm">
+
+        </form>
+    </section>
+</div>
+<!--endnoindex-->
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- DC Meta Tags -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+<!--noindex-->
+<div class="ds_back-to-top" data-module="ds-back-to-top">
+    <a href="#page-top" class="ds_back-to-top__button">Back to top <svg class="ds_icon  ds_back-to-top__icon" aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#arrow_upward"></use></svg></a>
+</div>
+<!--endnoindex-->
+
+        <div class="ds_page__bottom">
+
+
+<!--noindex-->
+<footer class="ds_site-footer">
+    <aside class="gov_secondary-footer">
+        <div class="ds_wrapper">
+            <h2 class="visually-hidden">
+                Follow The Scottish Government
+            </h2>
+            <ul class="gov_social-links">
+                <li class="gov_social-links__item">
+                    <a title="Facebook" class="gov_social-links__link" href="https://www.facebook.com/TheScottishGovernment/timeline/" data-footer="social-1">
+                        <div class="gov_social-links__link-inner">
+                            <span class="gov_social-links__icon"><svg class="ds_icon" aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#facebook"></use></svg></span>
+                            <span>Facebook</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="gov_social-links__item">
+                    <a title="X" class="gov_social-links__link" href="https://x.com/scotgov" data-footer="social-2">
+                        <div class="gov_social-links__link-inner">
+                            <span class="gov_social-links__icon"><svg class="ds_icon" aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#x"></use></svg></span>
+                            <span>X</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="gov_social-links__item">
+                    <a title="Flickr" class="gov_social-links__link" href="https://www.flickr.com/photos/26320652@N02" data-footer="social-3">
+                        <div class="gov_social-links__link-inner">
+                            <span class="gov_social-links__icon"><svg class="ds_icon" aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#flickr"></use></svg></span>
+                            <span>Flickr</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="gov_social-links__item">
+                    <a title="YouTube" class="gov_social-links__link" href="https://www.youtube.com/user/scottishgovernment" data-footer="social-4">
+                        <div class="gov_social-links__link-inner">
+                            <span class="gov_social-links__icon"><svg class="ds_icon" aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#youtube"></use></svg></span>
+                            <span>YouTube</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="gov_social-links__item">
+                    <a title="Instagram" class="gov_social-links__link" href="https://www.instagram.com/scotgov/" data-footer="social-5">
+                        <div class="gov_social-links__link-inner">
+                            <span class="gov_social-links__icon"><svg class="ds_icon" aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#instagram"></use></svg></span>
+                            <span>Instagram</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="gov_social-links__item">
+                    <a title="LinkedIn" class="gov_social-links__link" href="https://www.linkedin.com/company/thescottishgovernment/" data-footer="social-6">
+                        <div class="gov_social-links__link-inner">
+                            <span class="gov_social-links__icon"><svg class="ds_icon" aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#linkedin"></use></svg></span>
+                            <span>LinkedIn</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="gov_social-links__item">
+                    <a title="Tiktok" class="gov_social-links__link" href="https://www.tiktok.com/@scotgov" data-footer="social-7">
+                        <div class="gov_social-links__link-inner">
+                            <span class="gov_social-links__icon"><svg class="ds_icon" aria-hidden="true" role="img"><use href="/webfiles/1792577945413/assets/images/icons/icons.stack.svg#tiktok"></use></svg></span>
+                            <span>TikTok</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="ds_wrapper">
+        <div class="ds_site-footer__content">
+            <ul class="ds_site-footer__site-items">
+                    <li class="ds_site-items__item">
+
+                        <a href="/accessibility/">Accessibility</a>
+                    </li>
+                    <li class="ds_site-items__item">
+
+                        <a href="/archive/">Archive</a>
+                    </li>
+                    <li class="ds_site-items__item">
+
+                        <a href="/about/contact-information/">Contact</a>
+                    </li>
+                    <li class="ds_site-items__item">
+
+                        <a href="/cookies/">Cookies</a>
+                    </li>
+                    <li class="ds_site-items__item">
+
+                        <a href="/crown-copyright/">Crown Copyright</a>
+                    </li>
+                    <li class="ds_site-items__item">
+
+                        <a href="/about/contact-information/jobs-vacancies">Jobs and vacancies</a>
+                    </li>
+                    <li class="ds_site-items__item">
+
+                        <a href="/privacy/">Privacy</a>
+                    </li>
+            </ul>
+
+            <div class="ds_site-footer__copyright">
+                <span class="ds_site-footer__copyright-logo">
+                    <img width="41" height="17" src="/assets/images/logos/ogl.svg" alt="Open Government License" loading="lazy" />
+                </span>
+                <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>, except for graphic assets and where otherwise stated</p>
+                <p>&copy; Crown Copyright</p>
+            </div>
+
+            <div class="ds_site-footer__org">
+                <img width="300" height="57" class="ds_site-footer__org-logo" src="/assets/images/logos/scottish-government--min.svg" alt="gov.scot" loading="lazy" />
+            </div>
+        </div>
+    </div>
+</footer>
+<!--endnoindex-->
+        </div>
+    </div>
+
+    <script type="module" src="/webfiles/1792577945413/assets/scripts/global.js"></script>
+    <script nomodule="true" src="/webfiles/1792577945413/assets/scripts/global.es5.js"></script>
+
+    <script defer src="/assets/scripts/vendor/svgxuse.min.js"></script>
+<script src="/webfiles/1792577945413/assets/scripts/publication.js" type="module"></script>
+<script src="/webfiles/1792577945413/assets/scripts/publication.es5.js" nomodule="true"></script>
+
+</body>
+</html>

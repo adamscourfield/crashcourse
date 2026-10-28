@@ -1,0 +1,77 @@
+{
+  "batch": "Water03_UKChallenges01",
+  "date": "2026-10-28",
+  "lesson_ids": [
+    "geography.a.water.sustainable-use",
+    "geography.a.water.management-views",
+    "geography.a.water.developed-case",
+    "geography.a.water.emerging-case",
+    "geography.a.uk-challenges.population-resources",
+    "geography.a.uk-challenges.ecosystem-pressure",
+    "geography.a.uk-challenges.transport",
+    "geography.a.uk-challenges.regional-economy",
+    "geography.a.uk-challenges.development-sites",
+    "geography.a.uk-challenges.migration"
+  ],
+  "technical": {
+    "full": {
+      "passed": 774,
+      "failed": 0,
+      "duration_ms": 38102.054917,
+      "log": "/private/tmp/ten03-final-combined.log",
+      "note": "Latest41Historyintegrationrunpending"
+    },
+    "focused": {
+      "passed": 110,
+      "failed": 0,
+      "duration_ms": 374.217209
+    }
+  },
+  "browser": {
+    "environment": "LocalHTTP4177 syntheticexistingQAprofile",
+    "journeys": "All10newlessons100%;populationdeliberate75%failure\u2192100%retake",
+    "wrong_and_resume": "Prematurecontinue/wrongchallengeblocked;4viewreloadpersisted;wrongpractice/reload/retry;independentfirstanswerlocked/reloadadvanced",
+    "mobile": {
+      "viewport": [
+        390,
+        844
+      ],
+      "views": 40,
+      "page_width": 390,
+      "model_svg_width": 295.99,
+      "text_overflow": [],
+      "neutral_independent_figures": [
+        "singapore",
+        "india",
+        "variants",
+        "transport",
+        "income",
+        "migration"
+      ],
+      "question_body": 300,
+      "question_svg": 299.99,
+      "expanded_tables": 300
+    },
+    "motion": "MigrationDiscoverdefaultPause+Loopchecked;Spacepause\u2192Play;Enterresume\u2192Pause;16process40views;reducedmotionimplementationretainednotbrowseremulated",
+    "pathways": "Water\u2192EnergyhidesWatertopic;UK6Completedremain;switchbackreloadWater14Completedretained;3landscapepairtotalsautomated",
+    "console_errors": [],
+    "proof": "crash-course-geography-ten03-preview.png"
+  },
+  "integration": {
+    "upstream": "3ce71dd",
+    "preserved": "Medicinebatches1\u20134;41Historylessons",
+    "review": "ExistingHistoryreviewstatusretained;nonewcontentreview",
+    "browser": "LocalHistory36renders;UK6CompletedandWater14Completedretained;consoleerrorsnone"
+  },
+  "limitations": [
+    "Specialistnotreviewed",
+    "No extendedargument/GISconstruction/physicalfieldwork/fullassistivedeviceverification",
+    "ONS/PUBdirectdownloads403;primarywebvaluesverified;noinventedsnapshots",
+    "Exact50yearUKnumericseriesnotretrieved;longerhorizondirectionqualitativeandscenariosconditional",
+    "Country/stateindicatorsnotcomparableuniversalsustainabilityscores"
+  ],
+  "publication": {
+    "status": "pending",
+    "audience": "owner_private_unchanged"
+  }
+}

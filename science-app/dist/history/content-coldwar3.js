@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Option P4: Superpower relations and the Cold War,
 // 1941–91. Key topic 3: The end of the Cold War, 1970–91 (specification 3.1–3.3). All teaching text
 // and questions are original; documents are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history05';
+import {Q, lesson, view} from './build.js?v=20261028-history08';
 
 export const coldwarTopic3 = {id: 'history.coldwar.kt3', unit: 'P4', title: 'The end of the Cold War, 1970–91', paper: 'Paper 2 · Period study'};
 const T = coldwarTopic3.id;

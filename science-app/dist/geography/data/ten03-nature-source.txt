@@ -1,0 +1,495 @@
+<!doctype html>
+<html 
+lang="en-GB" dir="ltr">
+<head>
+    <!-- #{Octopus.Action[deploy-website-to-iis].Package.PackageVersion} -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Biodiversity Indicators | Advisor to Government on Nature Conservation | JNCC</title>
+
+    <link rel="stylesheet" href="/css/app.css?v1.4">
+    <link rel="stylesheet" href="/css/foundation-icons.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    
+    <script defer src="/js/lib/foundation-6.5.0.min.js"></script>
+    <script src="/js/lib/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+    <!-- Google Tag Manager -->
+<script nonce="nvZlA/yXTph29Xuh7t/1MxDz" id="gtmScript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WSQKVSG');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+    <noscript><div>Javascript must be enabled for the correct page display</div></noscript>
+    <div id="wrapper">
+        <a class="accessibility" href="#main" accesskey="S">Skip to Content</a>
+        <header id="header">
+            
+            
+    <div class="container">
+        <strong class="logo">
+            <a href="/" accesskey="1"><img src="/images/logo.png" alt="JNCC"></a>
+        </strong>
+        <div>
+            <div class="is-display-inline-block show-for-small-only">
+                <div class="title-bar" data-responsive-toggle="search-form" data-hide-for="medium">
+                    <button type="button" class="search-opener" data-toggle="search-form" aria-label="search-opener"><i class="icon-search"></i></button>
+                </div>
+            </div>
+            <div class="is-display-inline-block">
+                <form action="https://search.jncc.gov.uk/" role="search" method="GET" class="top-bar search-form input-group" id="search-form" data-animate="hinge-in-from-top spin-out">
+    <label class="show-for-sr">Search</label>
+    <input type="text" name="q" class="input-group-field" id="search-field" placeholder="" value="" aria-label="Search"/>
+    <div class="input-group-button">
+        <button aria-label="search-button"><i class="icon-search"></i></button>
+    </div>
+</form>
+            </div>
+            <div class="is-display-inline-block show-for-small-only">
+                <div class="title-bar" data-responsive-toggle="menu" data-hide-for="medium">
+                    <button type="button" class="nav-opener" data-toggle="menu" data-responsive-toggle="menu" aria-label="navigation-opener"><span></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="global-alert-row ">
+    <nav class="top-bar nav " id="menu" data-animate="hinge-in-from-top spin-out" aria-label="main-navigation" role="navigation">
+        <div class="container mobileNavContainer">
+            <ul class="vertical medium-horizontal dropdown menu" data-dropdown-menu data-click-open data-alignment="left">
+                    <li class=" is-dropdown-submenu-parent">
+                        <a href="/our-role/" target="">Our role</a>
+                            <ul class="vertical menu nested">
+                                    <li class="">
+                                        <a href="/our-role/the-uk/" target="">The UK</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/our-role/the-offshore-marine-environment/" target="">The offshore marine environment</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/our-role/the-uk-overseas-territories/" target="">The UK Overseas Territories</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/our-role/international/" target="">International</a>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class=" is-dropdown-submenu-parent">
+                        <a href="/monitoring/" target="">Monitoring</a>
+                            <ul class="vertical menu nested">
+                                    <li class="">
+                                        <a href="/monitoring/terrestrial-biodiversity-monitoring/" target="">Terrestrial biodiversity monitoring</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/monitoring/earth-observation/" target="">Earth observation</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/monitoring/marine-monitoring-mapping/" target="">Marine monitoring &amp; mapping</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/monitoring/analyses-trends/" target="">Analyses &amp; trends</a>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class=" is-dropdown-submenu-parent">
+                        <a href="/evaluating/" target="">Evaluating</a>
+                            <ul class="vertical menu nested">
+                                    <li class="">
+                                        <a href="/evaluating/sustainable-global-supply-chains/" target="">Sustainable global supply chains</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/evaluating/land-use/" target="">Land use</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/evaluating/climate-change/" target="">Climate change</a>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class=" is-dropdown-submenu-parent">
+                        <a href="/advice/" target="">Advice</a>
+                            <ul class="vertical menu nested">
+                                    <li class="">
+                                        <a href="/advice/improving-global-co-ordination-action/" target="">Improving global co-ordination &amp; action</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/advice/offshore-industries/" target="">Offshore Industries</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/advice/marine-protected-areas/" target="">Marine Protected Areas</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/advice/sustainable-development-overseas/" target="">Sustainable development overseas</a>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="active is-dropdown-submenu-parent">
+                        <a href="/our-work/" target="">Our Work</a>
+                            <ul class="vertical menu nested">
+                                    <li class="">
+                                        <a href="/our-work/our-work-a-z/" target="">Our work A&#x2013;Z</a>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class=" ">
+                        <a href="/resources/" target="">Resources</a>
+                    </li>
+                    <li class=" is-dropdown-submenu-parent">
+                        <a href="/about-jncc/" target="">About JNCC</a>
+                            <ul class="vertical menu nested">
+                                    <li class="">
+                                        <a href="/about-jncc/our-strategy/" target="">Our Strategy</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/about-jncc/who-we-are/" target="">Who we are</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/about-jncc/how-we-work/" target="">How we work</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/about-jncc/corporate-information/" target="">Corporate information</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/about-jncc/our-performance/" target="">Our performance</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="/about-jncc/careers/" target="">Careers</a>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class=" ">
+                        <a href="/news/" target="">News</a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+
+
+        </header>
+        <main id="main">
+        <style nonce="lNvY6ltZvtrJB8Hxg9CD85uY">
+        #page-hero {
+            background-image: url(/media/9216/wildflower-chalk-grassland-south-downs-matthew-j-thomas-istock.jpg?v=1db4ae66bdada80);
+        }
+    </style>
+    <div class="visual-section" id="page-hero">
+        <div class="container">
+            <h1>UK Biodiversity Indicators</h1>
+        </div>
+            <div class="copyright-statement">
+                <div class="text-left">
+                    Image courtesy of iStock (credit: Matthew J. Thomas)
+                </div>
+            </div>
+    </div>
+
+    <div class="container">
+            <nav aria-label="breadcrumbs">
+        <ul class="breadcrumbs">
+                <li><a href="/">Home</a></li>
+                <li><a href="/our-work/">Our Work</a></li>
+                <li><span class="show-for-sr">Current: </span>UK Biodiversity Indicators</li>
+        </ul>
+    </nav>
+
+        <div class="two-columns">
+            <div id="content">
+                
+                
+
+                <p>Data last updated: December 2025</p>
+<p>The UK Biodiversity Indicators give a snapshot of the current status of biodiversity in the UK and how it’s changing.</p>
+<p>As an accredited official statistics compendium, their development and production is underpinned by the standards of trustworthiness, quality and value set out in the Code of Practice for Statistics.</p>
+<p>The indicator suite is updated on an annual basis with the latest release being published on 2 December 2025. This includes the addition of several new indicators designed to demonstrate progress against the goals and targets agreed in the Kunming-Montreal Global Biodiversity Framework.</p>
+<p>This webpage contains information on contact details, the background and development of the UK and England Biodiversity Indicators, and further information on official statistics. Webpages for each individual indicator and an overview of the latest results are available in the menu of pages in this section.</p>
+
+                
+
+                
+    <div class="row">
+        <div class="columns small-12 medium-12 callout toc">
+            <h2 id="toc">Contents</h2>
+            <ol>
+                        <li>
+                            <a href="#contact-details">Contact details</a>
+                        </li>
+                        <li>
+                            <a href="#introduction">Introduction</a>
+                                <ol>
+                                            <li>
+	                                            <a href="#introduction-use-of-indicators-in-international-reporting">Use of indicators in international reporting</a>
+                                            </li>
+                                            <li>
+	                                            <a href="#introduction-use-of-indicators-in-domestic-reporting">Use of indicators in domestic reporting</a>
+                                            </li>
+                                </ol>
+                        </li>
+                        <li>
+                            <a href="#official-statistics">Official statistics</a>
+                                <ol>
+                                            <li>
+	                                            <a href="#official-statistics-official-statistics-in-development">Official statistics in development</a>
+                                            </li>
+                                </ol>
+                        </li>
+                        <li>
+                            <a href="#user-engagement-statement">User engagement statement</a>
+                        </li>
+            </ol>
+        </div>
+    </div>
+            <h2 id="contact-details">Contact details</h2>
+
+<p>Responsible Statistician: Clare Betts</p>
+<p>Any enquiries regarding this publication should be sent to us at:</p>
+<p><a rel="noopener" href="mailto:biodiversity@defra.gov.uk" target="_blank" title="Contact email" class="email">biodiversity@defra.gov.uk</a></p>
+<p>or by post to:</p>
+<div class="application-notice info-notice" aria-label="Information">
+<p>Environmental Statistics and Reporting team<br />Department for Environment, Food and Rural Affairs<br />Seacole Building<br />2 Marsham St<br />London<br />SW1P 4DF</p>
+</div>            <p class="text-right"><a href="#toc" class="return-to-top">Top <i class="step fi-arrow-up"></i></a></p>
+            <h2 id="introduction">Introduction</h2>
+
+<p>Biodiversity is the variety of all life on Earth. It includes all species, such as animals, plants, fungi and microorganisms, and the natural systems that support them. Biodiversity matters because it supports the vital benefits we get from the natural environment. It contributes to our economy, our health and wellbeing, and it enriches our lives.</p>
+<p>The UK and England Biodiversity Indicators give a snapshot of the current status of biodiversity in the UK and England and track trends over time, showing whether aspects of biodiversity are improving, declining, or remaining stable. The two suites are closely related and produced by the same team of government statisticians at the same time. The latest results of the UK Biodiversity Indicators are available in the menu. Results from <a href="#" title="Previous versions of the UK Biodiversity Indicators">previous updates</a> have been retained for information on The National Archives.</p>
+<p>The Biodiversity Indicators are dependent on a wide variety of data, provided by government, research bodies, and the voluntary sector. As Official Statistics, the presentation of, and method by which an assessment of change is made, for each of the indicators has been verified by the data providers, and the production and editing of the indicators has been overseen by government statisticians in Defra.</p>
+<p>The UK and <a rel="noopener" href="https://www.gov.uk/government/statistics/england-biodiversity-indicators" target="_blank" title="External link (opens in new window): England indicators">England</a> Biodiversity Indicators are accredited official statistics compendiums (previously known as National Statistics). These accredited official statistics were <a rel="noopener" href="https://osr.statisticsauthority.gov.uk/publication/statistics-on-sustainability-and-the-environment-in-england-and-the-uk/" target="_blank" title="External link (opens in new window): Statistics on Sustainability and the Environment in England and the UK">independently reviewed</a> by the Office for Statistics Regulation in February 2012. They comply with the standards of trustworthiness, quality and value in the Code of Practice for Statistics set out by the Office for Statistics Regulation (OSR) and should be labelled ‘accredited official statistics’. The accreditation does not mean that all the individual statistics presented are accredited official statistics in their own right. It means that the compendium has been assessed by the UK Statistics Authority as compliant with the Code of Practice.</p>
+<p>Our statistical practice is regulated by the <a rel="noopener" href="https://osr.statisticsauthority.gov.uk/" target="_blank" title="External link (opens in new window): Office for Statistics Regulation">Office for Statistics Regulation</a>. You are welcome to contact us directly with any comments about how we meet these standards. Alternatively, you can contact OSR by emailing <a rel="noopener" href="mailto:regulation@statistics.gov.uk" target="_blank" title="Contact email">regulation@statistics.gov.uk</a> or via the <a rel="noopener" href="https://osr.statisticsauthority.gov.uk/" target="_blank" title="External link (opens in new window): OSR website">OSR website</a>.</p>
+<p>See <a href="/our-work/uk-biodiversity-indicators/#official-statistics" title="UK Biodiversity Indicators" data-anchor="#official-statistics">Official statistics</a> for further details.</p>            <div class="science-subsection">
+                        <h3 id="introduction-use-of-indicators-in-international-reporting">Use of indicators in international reporting</h3>
+
+<p>The UK biodiversity indicators are used in reporting the UK’s progress against goals and targets agreed under the <a rel="noopener" href="https://www.cbd.int/" target="_blank" title="External link (opens in new window): CBD website">Convention on Biological Diversity (CBD)</a>. The indicators were previously used as a principal source of evidence in relation to the Aichi Targets for the UK’s 6th national report to CBD in 2019. Since then the indicator suite has been updated to reflect more recent commitments. In 2022 the UK signed up to the CBD’s <a rel="noopener" href="https://www.cbd.int/gbf" target="_blank" title="External link (opens in new window): Kunming-Montreal Global Biodiversity Framework">Kunming-Montreal Global Biodiversity Framework</a>, consisting of a set of global goals and targets, indicators to measure progress against these, and a monitoring framework. The key elements of this are 4 goals to be achieved by 2050 and 23 targets to be achieved by 2030. All Parties to the CBD will be expected to report on their progress towards these goals and targets in the 2026 and 2029 national reports.</p>
+<p>In the 2025 publication, the suite of UK Biodiversity Indicators has been revised and updated to increase alignment with the <a rel="noopener" href="https://www.cbd.int/gbf" target="_blank" title="External link (opens in new window): Kunming-Montreal Global Biodiversity Framework">Kunming-Montreal Global Biodiversity Framework</a>. The revised set of UKBIs is based on the recommendations from <a href="/news/new-global-biodiversity-framework-adopted/" title="New Global Biodiversity Framework adopted">the review</a> and guidance published on <a rel="noopener" href="https://www.gbf-indicators.org/" target="_blank" title="External link (opens in new window): Indicators for the Kunming – Montreal Global Biodiversity Framework">indicator methodologies for GBF reporting</a>, with advice on indicator development also provided by the Biodiversity Indicators Steering Group. Some UKBIs will be used for UK national reports to <a rel="noopener" href="https://www.cbd.int/" target="_blank" title="External link (opens in new window): CBD website">CBD</a>.</p>                        <h3 id="introduction-use-of-indicators-in-domestic-reporting">Use of indicators in domestic reporting</h3>
+
+<p>A variety of indicators across the UK countries are used for domestic reporting. In some cases, these relate closely to particular UK Biodiversity Indicators.</p>
+<p>The England Biodiversity Indicators (EBI) were previously used to assess progress with delivery of <a rel="noopener" href="https://www.gov.uk/government/publications/biodiversity-2020-a-strategy-for-england-s-wildlife-and-ecosystem-services" target="_blank" title="External link (opens in new window): Biodiversity 2020: A strategy for England’s wildlife and ecosystem services">Biodiversity 2020: A strategy for England’s wildlife and ecosystem services</a>.</p>
+<p>The development of Environment Act targets and associated indicators began in 2021 and were laid in parliament in December 2022. Later, the <a rel="noopener" href="https://www.gov.uk/government/collections/environmental-improvement-plan" target="_blank" title="External link (opens in new window): Environmental Improvement Plan">Environmental Improvement Plan</a>, which lays out the government’s plan for improving the state of the environment, was published. The England Biodiversity Indicators are continually adapted to better align with the EIP. Some of the England Biodiversity indicators feed into the <a rel="noopener" href="https://www.gov.uk/government/collections/environmental-indicator-framework" target="_blank" title="External link (opens in new window): Environmental Indicator Framework">Environmental Indicator Framework</a> (previously known as the Outcome Indicator Framework) - a set of indicators describing environmental change related to the ten goals within the <a rel="noopener" href="https://www.gov.uk/government/publications/environmental-improvement-plan-2025" target="_blank" title="External link (opens in new window): Environmental Improvement Plan">Environmental Improvement Plan</a>. As part of the Environmental Indicator Framework, this data contributes towards the evidence base used to prepare the annual progress report for the <a rel="noopener" href="https://www.gov.uk/government/collections/environmental-improvement-plan" target="_blank" title="External link (opens in new window): Environmental Improvement Plan">Environmental Improvement Plan</a>.</p>            </div>
+            <p class="text-right"><a href="#toc" class="return-to-top">Top <i class="step fi-arrow-up"></i></a></p>
+            <h2 id="official-statistics">Official statistics</h2>
+
+            <div class="science-subsection">
+
+<div class="row collapse">
+    <div class="columns small-12">
+        <div class="row collapse display-end">
+            <div class="columns small-12">
+                <p>
+                    <img src="/media/9212/accredited-off-stats-logo-320-393.png" alt="accredited-off-stats-logo-320-393.png" title="" />
+                </p>
+            </div>
+        </div>
+        <div class="row collapse">
+                <div class="columns small-12 text-block">
+                <p>Accredited official statistics are called National Statistics in the Statistics and Registration Service Act 2007. An explanation can be found on the <a rel="noopener" href="https://osr.statisticsauthority.gov.uk/accredited-official-statistics/" target="_blank" title="External link (opens in new window): OSR website">Office for Statistics Regulation website</a>.</p>
+<p>Our statistical practice is regulated by the <a rel="noopener" href="https://osr.statisticsauthority.gov.uk/" target="_blank" title="External link (opens in new window): OSR website">Office for Statistics Regulation</a> (OSR). OSR sets the standards of trustworthiness, quality and value in the <a rel="noopener" href="https://code.statisticsauthority.gov.uk/" target="_blank" title="External link (opens in new window): Code of Practice for Statistics">Code of Practice for Statistics</a> that all producers of official statistics should adhere to. You can read about how Official Statistics in Defra comply with these standards on the <a rel="noopener" href="https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs/about/statistics#our-standards" target="_blank" title="External link (opens in new window): Defra Statistics website" data-anchor="#our-standards">Defra Statistics website</a>.</p>
+<p>The UK and England Biodiversity Indicators are accredited official statistics compendiums. They comply with the standards of trustworthiness, quality and value in the Code of Practice for Statistics and should be labelled ‘accredited official statistics’. The accreditation does not mean that all the individual statistics presented are accredited official statistics in their own right. It means that the compendium has been assessed by the UK Statistics Authority as compliant with the Code of Practice.</p>
+<p>These statistics were independently reviewed by the OSR in February 2012. See <a rel="noopener" href="https://uksa.statisticsauthority.gov.uk/publication/statistics-on-sustainability-and-the-environment-in-england-and-the-uk-letter-of-confirmation-as-national-statistics/" target="_blank" title="External link (opens in new window): Assessment Report 173 Statistics on Sustainability and the Environment in England and the UK">Assessment Report 173 Statistics on Sustainability and the Environment in England and the UK</a>. Since this review by the OSR, we have continued to comply with the Code of Practice for Statistics.</p>
+<p>The following individual statistics presented in the publication are accredited official statistics, previously known as National Statistics:</p>
+<ul>
+<li>Birds of the wider countryside and at sea - <a rel="noopener" href="https://osr.statisticsauthority.gov.uk/publication/statistics-on-sustainability-and-the-environment-in-england-and-the-uk/" target="_blank" title="External link (opens in new window): Birds of the wider countryside and at sea">Assessed February 2012, with an additional compliance check in August 2024</a></li>
+<li>Percentage of woodland certified as sustainably managed – <a rel="noopener" href="https://osr.statisticsauthority.gov.uk/publication/forestry-statistics/" target="_blank" title="External link (opens in new window): Percentage of woodland certified as sustainably managed">Assessed March 2012</a></li>
+<li>Insects of the wider countryside (butterflies) - <a rel="noopener" href="https://osr.statisticsauthority.gov.uk/correspondence/ed-humpherson-to-ian-lonsdale-statistics-about-butterflies-england-and-uk-confirmation-of-accredited-official-statistics/" target="_blank" title="External link (opens in new window): Insects of the wider countryside (butterflies)">Assessed August 2024</a></li>
+</ul>
+<p>Although all other statistics in this compendium are not individually accredited official statistics, they are official statistics or official statistics in development, and as such have been produced in line with the Code of Practice. They are subject to rigorous quality assurance by the data providers and general quality assurance by Defra and the Joint Nature Conservation Committee.</p>
+<p>The presentation of the statistics, the commentary, and the assessments have been overseen and quality assured by Defra Statisticians.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+                        <h3 id="official-statistics-official-statistics-in-development">Official statistics in development</h3>
+
+<p>Official statistics in development (previously termed ‘Experimental statistics’) are a subset of newly developed or innovative official statistics undergoing evaluation. They are developed under the guidance of the Head of Profession for Statistics and are published in order to involve users and stakeholders in the assessment of their suitability and quality at an early stage. Further information can be found in the <a rel="noopener" href="https://osr.statisticsauthority.gov.uk/publication/experimental-statistics-official-statistics-in-development/" target="_blank" title="External link (opens in new window): Guide to official statistics in development">Guide to official statistics in development</a>.</p>
+<p>If you have feedback on any of the official statistics in development in this publication, please email us at <a rel="noopener" href="mailto:biodiversity@defra.gov.uk" target="_blank" title="Contact email">biodiversity@defra.gov.uk</a></p>
+<p>The “in development” label is used for statistics which are undergoing development, or are new and not yet fully developed. We aim to always have a time-bound development plan, which includes a period of collecting feedback from users, for finalising the indicator and removing the “in development” label. There are several reasons for publishing official statistics as “in development”:</p>
+<ul>
+<li>some new statistics may have considerable immediate value to users, when users are aware of the statistics’ quality and limitations they may be able to make qualified use of them before operational testing has been completed.</li>
+<li>where statistics remain subject to testing of quality, volatility and ability to meet user needs</li>
+<li>where new methods are being tested and are still subject to modification or further evaluation</li>
+<li>where there is only partial coverage (for example, of subgroups or regions), and further work is needed before full coverage can be published</li>
+</ul>
+<p>When we introduce new indicators into our publications as official statistics in development, we do this in full compliance with the Code of Practice for Statistics. This means we will clearly explain what the statistics are and how they might be useful, explain their limitations, how they might be developed and reviewed, as well as seeking and acting on feedback from users.</p>
+<p>The ‘official statistic in development’ label is temporary. We will decide when it is appropriate to remove the label from one of our indicators, usually this will be when no further methodological development is needed and the indicator is judged to be of high quality and useful for users. Before making the final decision, we will consult with all parties involved in the production of the specific indicator (for example, key stakeholders and data providers) and put forward a recommendation to Defra’s Head of Profession for Statistics.</p>
+<p>We have the option to withdraw a set of statistics in development from one of our publications if they do not meet users’ needs or are otherwise not fit for purpose. If statistics are to be withdrawn, this decision will be made in conjunction with the Defra Head of Profession for Statistics.</p>
+<p>The guidance on <a rel="noopener" href="https://gss.civilservice.gov.uk/policy-store/cessations-and-changes-to-scope-of-official-statistics-guidance-for-heads-of-profession/" target="_blank" title="External link (opens in new window): Guidance">changing or ceasing to publish official statistics</a> provides further details.</p>            </div>
+            <p class="text-right"><a href="#toc" class="return-to-top">Top <i class="step fi-arrow-up"></i></a></p>
+            <h2 id="user-engagement-statement">User engagement statement</h2>
+
+<p>In line with <a href="https://www.gov.uk/government/publications/defra-user-engagement-policy-statement/defra-user-engagement-policy-statement#:~:text=Collaborate with our users to,gain value from our products.">Defra’s User Engagement for Statistics Policy Statement</a> and the <a href="https://code.statisticsauthority.gov.uk/">Code of Practice for Statistics</a>, we are committed to ensuring that our statistics are of value and meet user needs and welcome any feedback or suggestions regarding this publication.</p>
+<p>To provide feedback, you can email us at: <a href="mailto:biodiversity@defra.gov.uk">biodiversity@defra.gov.uk</a></p>
+<p>You can also <a href="https://forms.office.com/e/AWT9s6VNjK">register as a user</a> of the biodiversity and wildlife statistics publications. Registering as a user means we will be able to contact you regarding any user engagement activities that we may run, such as seeking feedback on proposed changes.</p>
+<p>Alternatively, you can engage with us via the <a href="https://www.statsusernetwork.ons.gov.uk/">StatsUserNetwork</a> forum Environment, Climate and Nature group. The <a href="https://www.statsusernetwork.ons.gov.uk/">StatsUserNetwork</a> is a forum for users and producers of statistics to share knowledge, ask questions, and discuss all things data.</p>            <p class="text-right"><a href="#toc" class="return-to-top">Top <i class="step fi-arrow-up"></i></a></p>
+
+                <div id="meta" class="callout secondary">
+    <div class="row collapse">
+        <div class="column small-12 medium-8">
+            <p><span data-tooltip title="The date when the page was last published.">Published</span>: <time datetime="2025-12-02">Tuesday, December 2, 2025</time>. </p>
+        </div>
+        <!-- <div class="column small-12 medium-6">
+             <p><span data-tooltip title="The date the content was last updated">Last Updated</span>: Html.DisplayFor(model => model.ReviewedDate.Value).</p>
+         </div>-->
+    </div>
+</div>
+
+            </div>
+            <aside id="sidebar">
+			<nav class="holder" aria-label="aside-navigation">
+				<h2><a href="/our-work/uk-biodiversity-indicators/">UK Biodiversity Indicators</a></h2>
+				
+			        <span>
+                        Pages in UK Biodiversity Indicators:
+			        </span>
+			        <ul class="aside-nav no-bullet">
+						        <li><a href="/our-work/assessing-indicators/">Assessing Indicators</a></li>
+						        <li><a href="/our-work/indicator-development-plan/">Indicator development plan</a></li>
+						        <li><a href="/our-work/ukbi-awareness-and-support-for-conservation/">UKBI - Awareness and support for conservation</a></li>
+						        <li><a href="/our-work/ukbi-conservation-volunteering/">UKBI - Conservation Volunteering</a></li>
+						        <li><a href="/our-work/ukbi-global-biodiversity-impact/">UKBI - Global biodiversity impact</a></li>
+						        <li><a href="/our-work/ukbi-biodiversity-and-business/">UKBI - Biodiversity and business</a></li>
+						        <li><a href="/our-work/ukbi-agri-environment-schemes/">UKBI - Agri-environment schemes</a></li>
+						        <li><a href="/our-work/ukbi-sustainable-forestry/">UKBI - Sustainable forestry</a></li>
+						        <li><a href="/our-work/ukbi-sustainable-fisheries/">UKBI - Sustainable fisheries</a></li>
+						        <li><a href="/our-work/ukbi-spring-index/">UKBI - Spring Index</a></li>
+						        <li><a href="/our-work/ukbi-air-pollution/">UKBI - Air pollution</a></li>
+						        <li><a href="/our-work/ukbi-marine-pollution/">UKBI - Marine pollution</a></li>
+						        <li><a href="/our-work/ukbi-invasive-species/">UKBI - Invasive species</a></li>
+						        <li><a href="/our-work/ukbi-surface-water-status/">UKBI - Surface water status</a></li>
+						        <li><a href="/our-work/ukbi-protected-areas/">UKBI - Protected areas</a></li>
+						        <li><a href="/our-work/ukbi-habitat-connectivity/">UKBI - Habitat connectivity</a></li>
+						        <li><a href="/our-work/ukbi-european-habitats/">UKBI - European habitats</a></li>
+						        <li><a href="/our-work/ukbi-european-species/">UKBI - European species</a></li>
+						        <li><a href="/our-work/ukbi-priority-species-abundance/">UKBI - Priority species abundance</a></li>
+						        <li><a href="/our-work/ukbi-priority-species-distribution/">UKBI - Priority species distribution</a></li>
+						        <li><a href="/our-work/ukbi-birds-of-the-wider-countryside-and-at-sea/">UKBI - Birds of the wider countryside and at sea</a></li>
+						        <li><a href="/our-work/ukbi-insects-of-the-wider-countryside-butterflies/">UKBI - Insects of the wider countryside (butterflies)</a></li>
+						        <li><a href="/our-work/ukbi-plants-of-the-wider-countryside/">UKBI - Plants of the wider countryside</a></li>
+						        <li><a href="/our-work/ukbi-mammals-of-the-wider-countryside-bats/">UKBI - Mammals of the wider countryside (bats)</a></li>
+						        <li><a href="/our-work/ukbi-animal-genetic-resources/">UKBI - Animal genetic resources</a></li>
+						        <li><a href="/our-work/ukbi-plant-genetic-resources/">UKBI - Plant genetic resources</a></li>
+						        <li><a href="/our-work/ukbi-fish-size-classes/">UKBI - Fish size classes</a></li>
+						        <li><a href="/our-work/ukbi-greenhouse-gas-removal/">UKBI - Greenhouse gas removal</a></li>
+						        <li><a href="/our-work/ukbi-pollinating-insects/">UKBI - Pollinating insects</a></li>
+						        <li><a href="/our-work/ukbi-biodiversity-data/">UKBI - Biodiversity data</a></li>
+						        <li><a href="/our-work/ukbi-biodiversity-expenditure/">UKBI - Biodiversity expenditure</a></li>
+						        <li><a href="/our-work/ukbi-red-list-of-ecosystems/">UKBI - Red List of Ecosystems</a></li>
+						        <li><a href="/our-work/ukbi-extent-of-natural-ecosystems/">UKBI - Extent of natural ecosystems</a></li>
+						        <li><a href="/our-work/ukbi-genetic-diversity-of-wild-species/">UKBI - Genetic diversity of wild species</a></li>
+						        <li><a href="/our-work/ukbi-services-provided-by-ecosystems/">UKBI - Services Provided by Ecosystems</a></li>
+						        <li><a href="/our-work/ukbi-area-under-restoration/">UKBI - Area under restoration</a></li>
+						        <li><a href="/our-work/ukbi-aggregated-total-applied-toxicity/">UKBI - Aggregated Total Applied Toxicity</a></li>
+						        <li><a href="/our-work/ukbi-green-and-blue-space-in-built-up-areas/">UKBI - Green and blue space in built-up areas</a></li>
+						        <li><a href="/our-work/ukbi-biodiversity-disclosures/">UKBI - Biodiversity disclosures</a></li>
+						        <li><a href="/our-work/ukbi-positive-incentives/">UKBI - Positive incentives</a></li>
+						        <li><a href="/our-work/ukbi-harmful-incentives/">UKBI - Harmful incentives</a></li>
+						        <li><a href="/our-work/ukbi-index-of-coastal-eutrophication-potential/">UKBI - Index of coastal eutrophication potential</a></li>
+			        </ul>
+	        </nav>
+
+    
+
+
+
+        <nav class="holder" aria-label="aside-navigation">
+            <span>See also:</span>
+            <ul class="aside-nav no-bullet">
+                    <li><a href="/our-work/ukbi-red-list-index/" target="">Red List Index</a></li>
+                    <li><a href="/our-work/ukbi-sustainable-agriculture/" target="">Sustainable agriculture</a></li>
+                    <li><a href="/our-work/previous-versions-of-the-indicators/" target="">Previous versions of the Indicators</a></li>
+                    <li><a href="/about-jncc/corporate-information/jncc-official-statistics-list-and-release-dates/" target="_blank">JNCC Official Statistics &#x2013; List &amp; release dates</a></li>
+            </ul>
+        </nav>
+</aside>
+        </div>
+    </div>
+    
+    
+</main>
+
+        
+    <footer id="footer" class="text-center medium-text-left">
+        <div class="container">
+                <div class="row" id="footer-nav">
+            <div class="columns small-12 medium-4">
+                <nav class="holder" aria-label="footer-navigation">
+                    <h2>About us</h2>
+                    <ul class="footer-nav no-bullet">
+                            <li><a href="/about-jncc/" target="">About JNCC</a></li>
+                            <li><a href="/about-jncc/careers/" target="">Careers</a></li>
+                            <li><a href="/about-jncc/corporate-information/procurement/" target="">Procurement</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="columns small-12 medium-4">
+                <nav class="holder" aria-label="footer-navigation">
+                    <h2>Our work</h2>
+                    <ul class="footer-nav no-bullet">
+                            <li><a href="/our-work/our-work-a-z/" target="">Our work A&#x2013;Z</a></li>
+                            <li><a href="/resources" target="">Resources</a></li>
+                            <li><a href="/news/" target="">News</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="columns small-12 medium-4">
+                <nav class="holder" aria-label="footer-navigation">
+                    <h2>Our services</h2>
+                    <ul class="footer-nav no-bullet">
+                            <li><a href="/our-role/" target="">Our role</a></li>
+                            <li><a href="/monitoring/" target="">Monitoring</a></li>
+                            <li><a href="/evaluating/" target="">Evaluating</a></li>
+                            <li><a href="/advice/" target="">Advice</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+ 
+                <ul class="social-media no-bullet">
+            <li><a href="https://x.com/JNCC_UK" target="_blank"><span class="show-for-sr">X</span><i class="icon-x"></i></a></li>
+            <li><a href="https://www.facebook.com/JNCCUK" target="_blank"><span class="show-for-sr">facebook</span><i class="icon-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/jncc" target="_blank"><span class="show-for-sr">linkedin</span><i class="icon-linkedin"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UC14QLVv3QA1Xu6Fjdn7GJnw" target="_blank"><span class="show-for-sr">youtube</span><i class="icon-youtube"></i></a></li>
+    </ul>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© Joint Nature Conservation Committee, Quay House, 2 East Station Road, Fletton Quays, Peterborough, PE2 8YY<br>Tel: 01733 562626 Fax: 01733 555948. Contact us:&nbsp;<a href="/contact/?ref=footer" title="contact" data-anchor="?ref=footer">Enquiry form</a><br><a rel="noopener" href="https://jncc.us1.list-manage.com/subscribe?u=205a2a3660eb825f6170957cf&amp;id=e9d88dfd11" target="_blank" title="External link (opens in new window): Sign up to Nature News, our monthly e-newsletter" data-anchor="?u=205a2a3660eb825f6170957cf&amp;id=e9d88dfd11">Sign up to Nature News, our monthly e-newsletter</a><br>JNCC SUPPORT CO. Registered in England and Wales. Company no. 05380206. Registered office as above</p>
+                
+    <ul class="footer-bottom-list no-bullet info">
+            <li><a href="/about-jncc/corporate-information/data-protection/" target="">Data Protection</a></li>
+            <li><a href="/about-jncc/corporate-information/accessibility-statement/" target="">Accessibility statement</a></li>
+            <li><a href="/about-jncc/corporate-information/cookie-policy/" target="">Cookie policy</a></li>
+    </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    </div>
+    <a class="accessibility" href="#wrapper">Back to top</a>
+    
+    <div class="reveal large" id="table-modal" data-reveal>
+        <div id="table-modal-body"></div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="reveal large" id="image-modal" data-reveal>
+        <div id="image-modal-body"></div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <script src="/js/app.js?v=1.4"></script>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WSQKVSG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>

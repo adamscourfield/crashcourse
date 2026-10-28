@@ -2,7 +2,7 @@
 // Discover (cards), Investigate (open every view of the evidence explorer and answer the challenges,
 // including exam-skill challenges), Practise (retry until correct, with explanations) and Check
 // (first answers count; 80% completes the lesson). Missed concepts return in recall review.
-import {lessons, topics, units, source, specIssue} from './content.js?v=20261028-history05';
+import {lessons, topics, units, source, specIssue} from './content.js?v=20261028-history08';
 import {questionFlow, cancelQuestionAdvance} from '../question-flow.js?v=20261023-flow01';
 import {recordConcept, dueConcepts} from '../progress.js?v=20261028-subjects01';
 import {summarise} from '../progress-summary.js?v=20261023-mastery01';

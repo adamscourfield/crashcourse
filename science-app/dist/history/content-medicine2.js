@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Option 11: Medicine in Britain, c1250–present.
 // Key topic 2: c1500–c1700, the Medical Renaissance in England (specification 2.1–2.3).
 // All teaching text and questions are original; documents are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history05';
+import {Q, lesson, view} from './build.js?v=20261028-history08';
 
 export const medicineTopic2 = {id: 'history.medicine.kt2', unit: '11', title: 'c1500–c1700: The Medical Renaissance in England', paper: 'Paper 1 · Thematic study'};
 const T = medicineTopic2.id;
