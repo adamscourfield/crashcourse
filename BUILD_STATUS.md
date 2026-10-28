@@ -1,3 +1,26 @@
+## History: the Western Front historic environment (5 lessons, Option 11 HE1–HE5). Papers 1 and 2 complete; on GitHub `main`, not published
+
+**Lessons:**
+- battles, trenches and terrain;
+- illness and injury;
+- the RAMC, the FANY and the chain of evacuation;
+- surgery and medicine;
+- using sources.
+
+**Totals:** History now has 46 lessons. All 38 mapped rows for B4, P4 and Option 11 are built.
+
+**QA:**
+- 774 automated tests pass.
+- The History flow runs all 46 lessons: 757 checks pass (about 5 minutes).
+- Brief: `curriculum/briefs/history-westernfront-batch-01.md`.
+
+**Not done:**
+- Site publication (the 5 Western Front lessons; Medicine has been published by the publishing session);
+- teacher review;
+- practice with real printed sources for Paper 1 Q2 and Paper 2.
+
+**Next:** Paper 3, option 31: Weimar and Nazi Germany, 1918–39 (chosen by the user on 28 October 2026).
+
 ## Water03 + UK Challenges01 — ten lessons published
 
 28 October2026. Added4Water lessons (6.12a/b and two6.12ccases) and6sharedUKChallenges lessons (8.1a/b/c,8.2a/b/c). Geography165 across12topics;495practice660checks. Water14,UK6. Water/Energy eligible totals now both137coasts+rivers/140coasts+glaciers/141rivers+glaciers because newWater4plussharedUK6. Stableplannedrowsconverted;version1storage/IDs unchanged. Remaining24plannednewlessons=5UKchallenges9fieldwork10skills. Introductoryteaching/evidence status remains separate;not qualification/specialistcompletion. App640=361Science+73Maths+165Geography+41History after3ce71ddmainintegration.
@@ -22,7 +45,7 @@ Briefcurriculum/briefs/geography-a-water03-uk01.md;coveragecurriculum/geography-
 **Totals:** History now has 41 lessons: B4, P4 and the Option 11 thematic study.
 
 **QA:**
-- 768 automated tests pass.
+- 774 automated tests pass.
 - The History flow runs all 41 lessons: 677 checks pass.
 - Brief: `curriculum/briefs/history-medicine-batch-04.md`.
 
@@ -44,7 +67,7 @@ Briefcurriculum/briefs/geography-a-water03-uk01.md;coveragecurriculum/geography-
 **Totals:** History now has 36 lessons.
 
 **QA:**
-- 768 automated tests pass.
+- 774 automated tests pass.
 - The History flow runs all 36 lessons: 597 checks pass.
 - Brief: `curriculum/briefs/history-medicine-batch-03.md`.
 
@@ -68,7 +91,7 @@ Briefcurriculum/briefs/geography-a-water03-uk01.md;coveragecurriculum/geography-
 **Totals:** History now has 31 lessons: all of B4 and P4, and Medicine key topics 1–2.
 
 **QA:**
-- 768 automated tests pass.
+- 774 automated tests pass.
 - The History flow runs all 31 lessons: 517 checks pass.
 - Briefs: `curriculum/briefs/history-medicine-batch-01.md`, `-02.md`.
 
