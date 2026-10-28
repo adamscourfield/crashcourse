@@ -1,3 +1,24 @@
+## History: Cold War key topic 3 (4 lessons, P4 3.1–3.3). P4 complete; on GitHub `main`, not published
+
+**Lessons:**
+- détente;
+- Afghanistan and the Second Cold War;
+- Reagan, Gorbachev and the thaw;
+- the collapse of Soviet control.
+
+**Totals:** History now has 24 lessons: all of B4 and P4.
+
+**QA:**
+- 763 automated tests pass.
+- The History flow runs all 24 lessons: 405 checks pass.
+- Brief: `curriculum/briefs/history-coldwar-batch-03.md`.
+
+**Not done:**
+- Site publication (Cold War key topics 2–3);
+- teacher review.
+
+**Next:** Option 11 Medicine with the Western Front. The Paper 3 option is still to be chosen.
+
 ## History: Cold War key topic 2 (4 lessons, P4 2.1–2.3); on GitHub `main`, not published
 
 **Lessons:**
