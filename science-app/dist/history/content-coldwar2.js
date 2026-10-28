@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Option P4: Superpower relations and the Cold War,
 // 1941–91. Key topic 2: Cold War crises, 1958–70 (specification 2.1–2.3). All teaching text and
 // questions are original; documents are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history08';
+import {Q, lesson, view} from './build.js?v=20261028-history09';
 
 export const coldwarTopic2 = {id: 'history.coldwar.kt2', unit: 'P4', title: 'Cold War crises, 1958–70', paper: 'Paper 2 · Period study'};
 const T = coldwarTopic2.id;

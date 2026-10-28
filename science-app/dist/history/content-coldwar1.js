@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Paper 2 period study, Option P4: Superpower relations
 // and the Cold War, 1941–91. Key topic 1: The origins of the Cold War, 1941–58 (specification
 // 1.1–1.3). All teaching text and questions are original; documents are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history08';
+import {Q, lesson, view} from './build.js?v=20261028-history09';
 
 export const coldwarTopic1 = {id: 'history.coldwar.kt1', unit: 'P4', title: 'The origins of the Cold War, 1941–58', paper: 'Paper 2 · Period study'};
 const T = coldwarTopic1.id;

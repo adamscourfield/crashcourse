@@ -1,0 +1,446 @@
+{
+  "date": "2026-10-28",
+  "journeys": [
+    {
+      "id": "geography.a.uk-challenges.national-parks",
+      "result": 100,
+      "failedFirstCheck": 75,
+      "wrongTask": true,
+      "practiceRetryReload": true,
+      "lockedCheckReload": true,
+      "savedViews": true
+    },
+    {
+      "id": "geography.a.uk-challenges.flood-risk",
+      "result": 100
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-uncertainty",
+      "result": 100
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-impacts",
+      "result": 100
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-responses",
+      "result": 100
+    },
+    {
+      "id": "geography.a.fieldwork.1",
+      "result": 100
+    },
+    {
+      "id": "geography.a.fieldwork.2",
+      "result": 100
+    },
+    {
+      "id": "geography.a.fieldwork.3",
+      "result": 100
+    },
+    {
+      "id": "geography.a.fieldwork.4",
+      "result": 100
+    },
+    {
+      "id": "geography.a.fieldwork.5",
+      "result": 100
+    }
+  ],
+  "phoneViews": [
+    {
+      "id": "geography.a.uk-challenges.flood-risk",
+      "view": "river",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.flood-risk",
+      "view": "storage",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.flood-risk",
+      "view": "coast",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.flood-risk",
+      "view": "evidence",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-uncertainty",
+      "view": "drivers",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-uncertainty",
+      "view": "range",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-uncertainty",
+      "view": "variability",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-uncertainty",
+      "view": "planning",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-impacts",
+      "view": "heat",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-impacts",
+      "view": "runoff",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-impacts",
+      "view": "coast",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-impacts",
+      "view": "opportunities",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-responses",
+      "view": "mitigation",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-responses",
+      "view": "adaptation",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-responses",
+      "view": "scales",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.climate-responses",
+      "view": "monitor",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.1",
+      "view": "chain",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.1",
+      "view": "variables",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.1",
+      "view": "context",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.1",
+      "view": "evidence",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.2",
+      "view": "convenience",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.2",
+      "view": "systematic",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.2",
+      "view": "stratified",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.2",
+      "view": "repeats",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.3",
+      "view": "map",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.3",
+      "view": "scatter",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.3",
+      "view": "bars",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.3",
+      "view": "scale",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.4",
+      "view": "pattern",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.4",
+      "view": "summary",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.4",
+      "view": "explain",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.4",
+      "view": "conclude",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.5",
+      "view": "coverage",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.5",
+      "view": "sensitivity",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.5",
+      "view": "triangulate",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.fieldwork.5",
+      "view": "judgement",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.national-parks",
+      "view": "purposes",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.national-parks",
+      "view": "erosion",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.national-parks",
+      "view": "repair",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    },
+    {
+      "id": "geography.a.uk-challenges.national-parks",
+      "view": "tradeoffs",
+      "overflow": [],
+      "pageWidth": 390,
+      "viewport": 390,
+      "width": 295.9921875
+    }
+  ],
+  "independentStimuli": [
+    {
+      "id": "geo.a.ten04.presenting-data.c1",
+      "body": 300,
+      "pageWidth": 390,
+      "svg": 299.9921875,
+      "table": 300
+    },
+    {
+      "id": "geo.a.ten04.presenting-data.c3",
+      "body": 300,
+      "pageWidth": 390,
+      "svg": 299.9921875,
+      "table": 300
+    },
+    {
+      "id": "geo.a.ten04.analysing-data.c1",
+      "body": 300,
+      "pageWidth": 390,
+      "svg": 299.9921875,
+      "table": 300
+    },
+    {
+      "id": "geo.a.ten04.analysing-data.c2",
+      "body": 300,
+      "pageWidth": 390,
+      "svg": 299.9921875,
+      "table": 300
+    },
+    {
+      "id": "geo.a.ten04.analysing-data.c3",
+      "body": 300,
+      "pageWidth": 390,
+      "svg": 299.9921875,
+      "table": 300
+    }
+  ],
+  "checks": {
+    "prematureContinueBlocked": true,
+    "defaultLoopAutoplay": true,
+    "SpacePauseEnterResume": true,
+    "sharedFieldworkRetainedOnEnergy": true,
+    "WaterHiddenOnEnergy": true,
+    "switchBackAndReloadRetainsProgress": "151/151 Water rivers+glaciers",
+    "HistoryRenders46": true,
+    "finalDiscoverCardViewMapping": true
+  },
+  "consoleErrors": [],
+  "limits": [
+    "Reduced motion not emulated in browser",
+    "Full assistive-device review not performed",
+    "No school fieldwork participation claimed",
+    "Selected-response only; independent GIS/graph construction/extended writing remains open"
+  ],
+  "hosting": {
+    "status": "not_published"
+  },
+  "technical": {
+    "full": {
+      "passed": 780,
+      "failed": 0,
+      "durationMs": 37444.938167,
+      "log": "/private/tmp/ten04-release.log"
+    },
+    "focused": {
+      "passed": 116,
+      "failed": 0,
+      "durationMs": 366.226208
+    },
+    "primarySnapshots": 7,
+    "processViews": 10,
+    "staticViews": 30,
+    "finalEditorialPolishReloadChecked": true
+  }
+}

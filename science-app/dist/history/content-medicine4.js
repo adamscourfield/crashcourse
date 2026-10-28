@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Option 11: Medicine in Britain, c1250–present.
 // Key topic 4: c1900–present, medicine in modern Britain (specification 4.1–4.3).
 // All teaching text and questions are original; documents are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history08';
+import {Q, lesson, view} from './build.js?v=20261028-history09';
 
 export const medicineTopic4 = {id: 'history.medicine.kt4', unit: '11', title: 'c1900–present: Medicine in modern Britain', paper: 'Paper 1 · Thematic study'};
 const T = medicineTopic4.id;

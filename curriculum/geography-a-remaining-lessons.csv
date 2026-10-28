@@ -1,14 +1,14 @@
 lesson_id,group,title,spec_refs,option,planning,build
-geography.a.uk-challenges.national-parks,uk-challenges,National Parks: conservation and development,8.3a,shared,statement_scoped_brief_pending,not_started
-geography.a.uk-challenges.flood-risk,uk-challenges,UK river and coastal flood-risk choices,8.3b,shared,statement_scoped_brief_pending,not_started
-geography.a.uk-challenges.climate-uncertainty,uk-challenges,Uncertainty in UK climate projections,8.4a,shared,statement_scoped_brief_pending,not_started
-geography.a.uk-challenges.climate-impacts,uk-challenges,UK climate impacts on people and landscapes,8.4b,shared,statement_scoped_brief_pending,not_started
-geography.a.uk-challenges.climate-responses,uk-challenges,UK local and national climate responses,8.4c,shared,statement_scoped_brief_pending,not_started
-geography.a.fieldwork.1,fieldwork,Enquiry questions and hypotheses,7A;7B;enquiry1,school_pathway,statement_scoped_brief_pending,not_started
-geography.a.fieldwork.2,fieldwork,Sampling risk and reliable methods,7A;7B;enquiry2,school_pathway,statement_scoped_brief_pending,not_started
-geography.a.fieldwork.3,fieldwork,Processing maps GIS graphs and diagrams,7A;7B;enquiry3,school_pathway,statement_scoped_brief_pending,not_started
-geography.a.fieldwork.4,fieldwork,Analysing data and reaching conclusions,7A;7B;enquiry4,school_pathway,statement_scoped_brief_pending,not_started
-geography.a.fieldwork.5,fieldwork,Evaluating methods uncertainty and conclusions,7A;7B;enquiry5,school_pathway,statement_scoped_brief_pending,not_started
+geography.a.uk-challenges.national-parks,uk-challenges,National Parks: conservation and development,8.3a,shared,statement_briefed,implemented
+geography.a.uk-challenges.flood-risk,uk-challenges,UK river and coastal flood-risk choices,8.3b,shared,statement_briefed,implemented
+geography.a.uk-challenges.climate-uncertainty,uk-challenges,Uncertainty in UK climate projections,8.4a,shared,statement_briefed,implemented
+geography.a.uk-challenges.climate-impacts,uk-challenges,UK climate impacts on people and landscapes,8.4b,shared,statement_briefed,implemented
+geography.a.uk-challenges.climate-responses,uk-challenges,UK local and national climate responses,8.4c,shared,statement_briefed,implemented
+geography.a.fieldwork.1,fieldwork,Enquiry questions and hypotheses,7A;7B;enquiry1,shared,statement_briefed,implemented
+geography.a.fieldwork.2,fieldwork,Sampling risk and reliable methods,7A;7B;enquiry2,shared,statement_briefed,implemented
+geography.a.fieldwork.3,fieldwork,Processing maps GIS graphs and diagrams,7A;7B;enquiry3,shared,statement_briefed,implemented
+geography.a.fieldwork.4,fieldwork,Analysing data and reaching conclusions,7A;7B;enquiry4;enquiry5,shared,statement_briefed,implemented
+geography.a.fieldwork.5,fieldwork,Evaluating methods uncertainty and conclusions,7A;7B;enquiry6,shared,statement_briefed,implemented
 geography.a.fieldwork.6,fieldwork,River channel investigation,7A;7B;enquiry6,school_pathway,statement_scoped_brief_pending,not_started
 geography.a.fieldwork.7,fieldwork,Coastal landscape investigation,7A;7B;enquiry6,school_pathway,statement_scoped_brief_pending,not_started
 geography.a.fieldwork.8,fieldwork,Central and inner urban change investigation,7A;7B;enquiry6,school_pathway,statement_scoped_brief_pending,not_started

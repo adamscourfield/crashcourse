@@ -23,9 +23,9 @@ geography.a.fieldwork.rural.3,rural,Record people’s environmental-quality view
 geography.a.fieldwork.rural.4,rural,Relate physical landscape to settlement and visitors,7B p28,planned;physical_participation_separate
 geography.a.fieldwork.rural.5,rural,Use census data,7B p28,planned;physical_participation_separate
 geography.a.fieldwork.rural.6,rural,Use another secondary source,7B p28,planned;physical_participation_separate
-geography.a.enquiry.1,all_fieldwork,Questions and hypotheses,p30 enquiry stage1,planned;physical_participation_separate
-geography.a.enquiry.2,all_fieldwork,Methods and measurements,p30 enquiry stage2,planned;physical_participation_separate
-geography.a.enquiry.3,all_fieldwork,Processing and presenting,p30 enquiry stage3,planned;physical_participation_separate
-geography.a.enquiry.4,all_fieldwork,Analysing and explaining,p30 enquiry stage4,planned;physical_participation_separate
-geography.a.enquiry.5,all_fieldwork,Evidenced conclusions,p30 enquiry stage5,planned;physical_participation_separate
-geography.a.enquiry.6,all_fieldwork,Critical evaluation,p30 enquiry stage6,planned;physical_participation_separate
+geography.a.enquiry.1,all_fieldwork,Questions and hypotheses,p30 enquiry stage1,online_preparation_implemented_selected_response;constructed_and_physical_participation_separate
+geography.a.enquiry.2,all_fieldwork,Methods and measurements,p30 enquiry stage2,online_preparation_implemented_selected_response;constructed_and_physical_participation_separate
+geography.a.enquiry.3,all_fieldwork,Processing and presenting,p30 enquiry stage3,online_preparation_implemented_selected_response;constructed_and_physical_participation_separate
+geography.a.enquiry.4,all_fieldwork,Analysing and explaining,p30 enquiry stage4,online_preparation_implemented_selected_response;constructed_and_physical_participation_separate
+geography.a.enquiry.5,all_fieldwork,Evidenced conclusions,p30 enquiry stage5,online_preparation_implemented_selected_response;constructed_and_physical_participation_separate
+geography.a.enquiry.6,all_fieldwork,Critical evaluation,p30 enquiry stage6,online_preparation_implemented_selected_response;constructed_and_physical_participation_separate

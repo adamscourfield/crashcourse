@@ -1,16 +1,16 @@
 // Pearson Edexcel GCSE (9–1) History (1HI0). Built units are listed here; the course map shows only
 // topics that have lessons.
-import {elizabethTopic1, elizabethLessons1} from './content-elizabeth1.js?v=20261028-history08';
-import {elizabethTopic2, elizabethLessons2} from './content-elizabeth2.js?v=20261028-history08';
-import {elizabethTopic3, elizabethLessons3} from './content-elizabeth3.js?v=20261028-history08';
-import {coldwarTopic1, coldwarLessons1} from './content-coldwar1.js?v=20261028-history08';
-import {coldwarTopic2, coldwarLessons2} from './content-coldwar2.js?v=20261028-history08';
-import {coldwarTopic3, coldwarLessons3} from './content-coldwar3.js?v=20261028-history08';
-import {medicineTopic1, medicineLessons1} from './content-medicine1.js?v=20261028-history08';
-import {medicineTopic2, medicineLessons2} from './content-medicine2.js?v=20261028-history08';
-import {medicineTopic3, medicineLessons3} from './content-medicine3.js?v=20261028-history08';
-import {medicineTopic4, medicineLessons4} from './content-medicine4.js?v=20261028-history08';
-import {westernFrontTopic, westernFrontLessons} from './content-westernfront.js?v=20261028-history08';
+import {elizabethTopic1, elizabethLessons1} from './content-elizabeth1.js?v=20261028-history09';
+import {elizabethTopic2, elizabethLessons2} from './content-elizabeth2.js?v=20261028-history09';
+import {elizabethTopic3, elizabethLessons3} from './content-elizabeth3.js?v=20261028-history09';
+import {coldwarTopic1, coldwarLessons1} from './content-coldwar1.js?v=20261028-history09';
+import {coldwarTopic2, coldwarLessons2} from './content-coldwar2.js?v=20261028-history09';
+import {coldwarTopic3, coldwarLessons3} from './content-coldwar3.js?v=20261028-history09';
+import {medicineTopic1, medicineLessons1} from './content-medicine1.js?v=20261028-history09';
+import {medicineTopic2, medicineLessons2} from './content-medicine2.js?v=20261028-history09';
+import {medicineTopic3, medicineLessons3} from './content-medicine3.js?v=20261028-history09';
+import {medicineTopic4, medicineLessons4} from './content-medicine4.js?v=20261028-history09';
+import {westernFrontTopic, westernFrontLessons} from './content-westernfront.js?v=20261028-history09';
 export const source = 'https://qualifications.pearson.com/content/dam/pdf/GCSE/History/2016/specification-and-sample-assessments/gcse-9-1-history-specification.pdf';
 export const specIssue = 'Issue 6, June 2024';
 export const units = [
