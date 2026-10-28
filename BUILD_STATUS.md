@@ -1,3 +1,31 @@
+## History batch 16: Cold War leaders' attitudes and 8 exam-skill lessons (Paper 1, Western Front, Cold War); on GitHub `main`, not published
+
+**Lessons:**
+- the attitudes of Stalin, Truman and Churchill (P4 1.1);
+- skill lessons for Paper 1: similarity or difference (4), explain why (12), how far (16);
+- skill lessons for the Western Front: describe features (4), source utility (8) and follow-up (4);
+- skill lessons for the Cold War: two consequences (8), narrative account (8), importance (8).
+
+**Totals:** History has 201 lessons; 7 are left on the 208-lesson roadmap (two B4 and five Paper 3 skill lessons).
+
+**Records:**
+- Five requirement rows were added for the skill refs.
+- The planned B4 judgement lesson was retitled, because interpretations are assessed only in Paper 3.
+- Topic publication now reads "partly published" wherever a topic mixes Site-published and GitHub-only lessons.
+
+**QA:**
+- 789 automated tests pass.
+- The History flow walked the 9 new lessons plus the whole-app checks: 165 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-16.md`.
+
+**Caveat:** the per-question marks and level descriptions follow Pearson's published mark schemes as I know them. The specification gives only section totals, and these details have not been checked against the current mark schemes.
+
+**Not done:**
+- Site publication of batches 12–16;
+- teacher review.
+
+**Next:** the B4 and Paper 3 skill lessons (7).
+
 ## History depth batch 15: Life in Nazi Germany, key topic 4 (9 lessons, 31 4.1–4.4); on GitHub `main`, not published
 
 **Lessons:**
