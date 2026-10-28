@@ -6,6 +6,10 @@ import {lessons, topics, units, source, specIssue} from './content.js?v=20261028
 import {questionFlow, cancelQuestionAdvance} from '../question-flow.js?v=20261023-flow01';
 import {recordConcept, dueConcepts} from '../progress.js?v=20261028-subjects01';
 import {summarise} from '../progress-summary.js?v=20261023-mastery01';
+import {track, plain} from '../classroom/track.js?v=20261028-classroom01';
+// Classroom: every answer is offered to the teacher-sharing hook (ignored unless a student is signed in).
+const sendAttempt = (lessonId, q, stage, v) => track({subject: 'history', lessonId, questionId: q.id, stage, prompt: plain(q.prompt), answer: plain(q.options[v]), correctAnswer: plain(q.options[q.answer]), correct: v === q.answer});
+const lessonOfQuestion = id => lessons.find(l => [...l.practice, ...l.check].some(q => q.id === id))?.id;
 
 export const KEY = 'crash-course-history-v1';
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
@@ -116,6 +120,7 @@ export function createHistoryStudio({root, modal, closeModal, onProgress}) {
       $('#hBody').innerHTML = `<p id="hObserved">Views explored: ${p.observed.length} / ${l.views.length}</p><p>${esc(tk[0].replace(/^Exam skill · /, ''))}</p><div class="choices">${choiceIndices(tk[0], tk[1].length).map(j => `<button class="choice ${passed && j === tk[2] ? 'selected' : ''}" data-htask="${j}" ${passed ? 'disabled' : ''}>${esc(tk[1][j])}</button>`).join('')}</div>`;
       $$('[data-htask]').forEach(b => (b.onclick = () => {
         if (p.passed.includes(i)) return;
+        track({subject: 'history', lessonId: l.id, questionId: `${l.id}#task${i + 1}`, stage: 'challenge', prompt: plain(tk[0]), answer: plain(tk[1][Number(b.dataset.htask)]), correctAnswer: plain(tk[1][tk[2]]), correct: Number(b.dataset.htask) === tk[2]});
         if (Number(b.dataset.htask) !== tk[2]) return feedback('Not quite. Use the evidence explorer and think about why the other choice is stronger.', true);
         p.passed.push(i); $$('[data-htask]').forEach(x => (x.disabled = true)); save(); feedback('Correct. ' + tk[3]);
       }));
@@ -132,7 +137,7 @@ export function createHistoryStudio({root, modal, closeModal, onProgress}) {
     } else if (p.stage === 2) {
       p.pi = Math.min(p.pi, l.practice.length - 1);
       const q = l.practice[p.pi], a = p.practice[q.id];
-      question(q, a?.choice, v => { if (a?.correct) return; const old = p.practice[q.id]; p.practice[q.id] = {choice: v, first: old?.first ?? v, correct: v === q.answer}; recordConcept(s, q.concept, v === q.answer); save(); render(); }, !!a?.correct, p);
+      question(q, a?.choice, v => { if (a?.correct) return; sendAttempt(l.id, q, 'practice', v); const old = p.practice[q.id]; p.practice[q.id] = {choice: v, first: old?.first ?? v, correct: v === q.answer}; recordConcept(s, q.concept, v === q.answer); save(); render(); }, !!a?.correct, p);
       if (a) feedback((a.correct ? 'Correct. ' : 'Try again. ') + (a.correct ? q.why : 'Re-read the question and rule out each wrong option.'), !a.correct);
       $('#hHint').textContent = `Practice ${p.pi + 1} / ${l.practice.length}`;
       $('#hContinue').onclick = () => { if (!p.practice[q.id]?.correct) return; if (p.pi < l.practice.length - 1) p.pi++; else p.stage = 3; render(); };
@@ -140,7 +145,7 @@ export function createHistoryStudio({root, modal, closeModal, onProgress}) {
     } else {
       p.ci = Math.min(p.ci, l.check.length - 1);
       const q = l.check[p.ci], a = p.checks[q.id];
-      question(q, a, v => { if (a !== undefined) return; p.checks[q.id] = v; recordConcept(s, q.concept, v === q.answer); save(); render(); }, a !== undefined, p);
+      question(q, a, v => { if (a !== undefined) return; sendAttempt(l.id, q, 'check', v); p.checks[q.id] = v; recordConcept(s, q.concept, v === q.answer); save(); render(); }, a !== undefined, p);
       if (a !== undefined) feedback('Answer recorded.');
       $('#hHint').textContent = `Independent check ${p.ci + 1} / ${l.check.length}`;
       $('#hContinue').textContent = p.ci === l.check.length - 1 ? 'See results →' : 'Next question →';
@@ -152,7 +157,7 @@ export function createHistoryStudio({root, modal, closeModal, onProgress}) {
   function renderReview() {
     root.querySelector('.steps').hidden = true;
     const q = run.questions[run.index], a = run.answers[q.id];
-    question(q, a, v => { if (run.answers[q.id] !== undefined) return; run.answers[q.id] = v; recordConcept(s, q.concept, v === q.answer, Date.now(), true); save(); render(); }, a !== undefined, {history: []});
+    question(q, a, v => { if (run.answers[q.id] !== undefined) return; sendAttempt(lessonOfQuestion(q.id), q, 'review', v); run.answers[q.id] = v; recordConcept(s, q.concept, v === q.answer, Date.now(), true); save(); render(); }, a !== undefined, {history: []});
     if (a !== undefined) feedback((a === q.answer ? 'Correct. ' : 'Revisit this. ') + q.why, a !== q.answer);
     $('#hHint').textContent = `Recall ${run.index + 1} / ${run.questions.length}`;
     $('#hContinue').onclick = () => { if (run.answers[q.id] === undefined) return; if (++run.index >= run.questions.length) { mode = 'lesson'; run = null; render(); modal('<h2>Review recorded</h2><p>Correct recall schedules the next visit. Missed concepts stay on your review list.</p>'); } else render(); };

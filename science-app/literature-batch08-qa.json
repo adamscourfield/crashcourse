@@ -49,5 +49,15 @@
   "publication": {
     "status": "pending",
     "mode": "static lessons; prepared API runtime retained but activation deferred; owner-private audience preserved"
-  }
+  },
+  "merged_full_suite": {
+    "tests": 844,
+    "passed": 843,
+    "skipped": 1,
+    "failed": 0,
+    "duration_ms": 39383.57125,
+    "scope": "After merging origin/main classroom9c8f403 and regenerating teacher catalogue",
+    "skip": "Postgres RLS suite requires CC_TEST_PG; unchanged upstream SQL not rerun here"
+  },
+  "integration": "Preserved teacher classroom commit9c8f403; resolved status/index conflicts; regenerated catalogue906lessons including new75Literature; browserJoinYourClass,existingdraftandprogress intact; demo config unchanged"
 }

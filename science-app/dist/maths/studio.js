@@ -11,6 +11,7 @@ import { graphSVG, graphInputHTML, bindGraphInput, lineFeedback, pointsFeedback,
 import { exactMatches, parseRatio, ratioProportional } from './exact.js?v=20261023-maths-r16';
 import { parseNumber, F, eq, normalise, decText } from './frac.js?v=20261023-maths-r16';
 import { generate, skillById } from './skills.js?v=20261023-maths-r16';
+import { track, plain } from '../classroom/track.js?v=20261028-classroom01';
 import { orderedLessons as numberLessons, mathsTopics as numberTopics, mathsCourseMap, mathsSource } from './lessons-number.js?v=20261023-maths-r16';
 import { algebraTopic, orderedAlgebra } from './lessons-algebra.js?v=20261023-maths-r16';
 import { visual4, MODELS4 } from './models-algebra.js?v=20261023-maths-r16';
@@ -44,6 +45,10 @@ import { MATHS_KEY, restoreMaths, lessonState, skillState, levelsFor, topLevel, 
 
 const STAGES = ['Discover', 'Investigate', 'Practise', 'Check'];
 const orderedLessons = [...numberLessons, ...orderedAlgebra, ...orderedRatio, ...orderedGeometry, ...orderedGeometry2, ...orderedGeometry3, ...orderedGeometry4, ...orderedProbability, ...orderedStatistics, ...orderedProblems];
+// Classroom: every marked answer is offered to the teacher-sharing hook (ignored unless a student is signed in).
+const mAnswerText = (item, v) => item.answer?.kind === 'choice' && Number.isInteger(Number(v)) ? plain(item.answer.options[Number(v)]) : plain(v);
+const sendMaths = (lessonId, item, stage, value, res) => track({ subject: 'maths', lessonId, questionId: item.id, stage, prompt: plain(item.prompt), answer: mAnswerText(item, value), correctAnswer: plain(answerMarkup(item.answer)), correct: res.status === 'correct' });
+const lessonOfSkill = skill => orderedLessons.find(l => (l.skills || []).some(k => k.id === skill))?.id;
 const mathsTopics = [...numberTopics, algebraTopic, ratioTopic, geometryTopic, probabilityTopic, statisticsTopic, problemsTopic];
 const EVENT_TEXT = { up: 'Level up', down: 'Stepping back a level to rebuild', practised: 'Skill secure' };
 
@@ -326,6 +331,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       if (pr.answer) return;
       const res = mark(item.answer, value);
       if (res.status === 'invalid') { feedback(invalidText(item, res), true); return; }
+      sendMaths(l.id, item, 'practice', value, res);
       const correct = res.status === 'correct';
       let event = null;
       if ((pr.mode || target.mode) === 'skill') event = recordPractice(skillState(s, item.skill), skillById[item.skill], s.tier, { correct, assisted: pr.assisted }).event;
@@ -369,6 +375,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       if (c.answers[item.id] !== undefined) return;
       const res = mark(item.answer, value);
       if (res.status === 'invalid') { feedback(invalidText(item, res), true); return; }
+      sendMaths(l.id, item, 'check', value, res);
       c.answers[item.id] = value;
       save(); render(); feedback('Answer recorded.');
 
@@ -544,6 +551,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       if (run.answers[item.id] !== undefined) return;
       const res = mark(item.answer, value);
       if (res.status === 'invalid') { feedback(invalidText(item, res), true); return; }
+      sendMaths(lessonOfSkill(item.skill), item, assessing ? 'assessment' : 'review', value, res);
       run.answers[item.id] = value;
       const k = skillState(s, item.skill), ok = res.status === 'correct';
       if (assessing) { if (!ok) flagForRecall(k); }

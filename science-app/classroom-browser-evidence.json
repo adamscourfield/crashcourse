@@ -1,0 +1,157 @@
+{
+ "date": "2026-10-28T18:01:01.595Z",
+ "mode": "demo",
+ "base": "http://localhost:4173/",
+ "passed": 37,
+ "total": 37,
+ "checks": [
+  {
+   "label": "demo mode is clearly labelled",
+   "pass": true
+  },
+  {
+   "label": "wrong teacher password is refused",
+   "pass": true
+  },
+  {
+   "label": "seeded demo class listed",
+   "pass": true
+  },
+  {
+   "label": "class code generated (GCJEDV)",
+   "pass": true
+  },
+  {
+   "label": "two logins created with generated usernames and passwords",
+   "pass": true
+  },
+  {
+   "label": "lesson picker counts chosen lessons",
+   "pass": true
+  },
+  {
+   "label": "progress grid shows both students",
+   "pass": true
+  },
+  {
+   "label": "every cell starts as not started",
+   "pass": true
+  },
+  {
+   "label": "Join your class appears in the lessons sidebar",
+   "pass": true
+  },
+  {
+   "label": "wrong student password is refused",
+   "pass": true
+  },
+  {
+   "label": "student sees two pieces of set work outstanding",
+   "pass": true
+  },
+  {
+   "label": "set work lists the assignment",
+   "pass": true
+  },
+  {
+   "label": "a separate-only lesson explains the pathway change instead of failing silently",
+   "pass": true
+  },
+  {
+   "label": "Open goes straight to the set History lesson",
+   "pass": true
+  },
+  {
+   "label": "answers are queued on the device first",
+   "pass": true
+  },
+  {
+   "label": "student stays signed in after reload",
+   "pass": true
+  },
+  {
+   "label": "queue flushed after reload (\"Shared with your teacher\")",
+   "pass": true
+  },
+  {
+   "label": "only answers given while signed in are shared (4 history, 0 science)",
+   "pass": true
+  },
+  {
+   "label": "teacher grid shows the student in progress",
+   "pass": true
+  },
+  {
+   "label": "student detail shows Practise and Check answers",
+   "pass": true
+  },
+  {
+   "label": "wrong and right answers both recorded",
+   "pass": true
+  },
+  {
+   "label": "wrong answers show the correct answer",
+   "pass": true
+  },
+  {
+   "label": "whole-class view gives first-attempt percentages per question",
+   "pass": true
+  },
+  {
+   "label": "whole-class view lists common wrong answers",
+   "pass": true
+  },
+  {
+   "label": "student view summarises each set lesson",
+   "pass": true
+  },
+  {
+   "label": "progress downloads as CSV",
+   "pass": true
+  },
+  {
+   "label": "old password stops working after a reset",
+   "pass": true
+  },
+  {
+   "label": "new password works",
+   "pass": true
+  },
+  {
+   "label": "answers arrive from all five subjects (english-literature, geography, history, maths, science)",
+   "pass": true
+  },
+  {
+   "label": "a second student on the same browser is asked to clear the first student's saved lessons",
+   "pass": true
+  },
+  {
+   "label": "closing the shared-computer prompt signs the second student out",
+   "pass": true
+  },
+  {
+   "label": "second student is signed in after clearing",
+   "pass": true
+  },
+  {
+   "label": "the first student's lesson progress is no longer in this browser",
+   "pass": true
+  },
+  {
+   "label": "the first student's shared answers are kept for the teacher",
+   "pass": true
+  },
+  {
+   "label": "lessons page has no sideways scroll at 390px",
+   "pass": true
+  },
+  {
+   "label": "teacher dashboard has no sideways page scroll at 390px (grid scrolls inside its box)",
+   "pass": true
+  },
+  {
+   "label": "no page errors",
+   "pass": true
+  }
+ ]
+}

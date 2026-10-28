@@ -1,0 +1,22 @@
+/* Classroom: student sign-in and set work, in the lessons app sidebar and dialog. */
+.classroom-side{margin:6px 0 18px;padding-top:12px;border-top:1px solid var(--line,#e1e2e5)}
+.classroom-note{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;margin:6px 13px 0;font-size:11px;color:var(--muted,#64676c)}
+.classroom-note>span:first-child{color:var(--ink,#202124);font-weight:500}
+.classroom-form{display:grid;gap:14px;max-width:360px;margin-top:18px}
+.classroom-form label{display:grid;gap:6px;font-size:12px;font-weight:500;color:var(--ink,#202124)}
+.classroom-form input,.classroom-form select,.classroom-form textarea{font:inherit;font-size:14px;padding:10px 12px;border:1px solid var(--line,#e1e2e5);border-radius:6px;background:#fff;color:var(--ink,#202124)}
+.classroom-form input:focus-visible,.classroom-form select:focus-visible,.classroom-form textarea:focus-visible{outline:2px solid var(--ink,#202124);outline-offset:1px}
+.classroom-error{min-height:1em;margin:0;font-size:12px;color:#a3261f}
+.classroom-demo{padding:10px 12px;border-radius:6px;background:var(--outer,#eff0f2);font-size:12px}
+.classroom-assignment{margin:22px 0;padding-top:18px;border-top:1px solid var(--line,#e1e2e5)}
+.classroom-assignment header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.classroom-assignment .eyebrow{text-transform:uppercase}
+.classroom-side{width:100%}
+.classroom-assignment h3{margin:4px 0 0;font-size:20px}
+.classroom-due{font-size:12px;color:var(--muted,#64676c);white-space:nowrap}
+.classroom-due.late{color:#a3261f;font-weight:500}
+.classroom-lesson{width:100%;margin-top:8px}
+.classroom-tick{width:22px;text-align:center;color:var(--muted,#64676c)}
+.classroom-tick.done{color:#1d6b3a;font-weight:600}
+.classroom-tick.part{color:#8a5a00}
+.classroom-teacher-link{margin-top:18px;font-size:12px;color:var(--muted,#64676c)}
