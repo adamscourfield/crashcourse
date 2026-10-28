@@ -1,3 +1,33 @@
+## History depth batch 12: Weimar Germany key topic 1 (11 lessons, 31 1.1–1.4); on GitHub `main`, not published
+
+**Publication state:** the Geography final publication included the 152 History lessons on `main` at c77556f, up to and including depth batch 11 (per its record above and `publication` in the lesson register). This batch's 11 lessons are on GitHub only. `history.germany.kt1` is marked partly published.
+
+**Lessons:**
+- the legacy of the war;
+- abdication, armistice and revolution;
+- the constitution;
+- Versailles;
+- Spartacists, Freikorps and Kapp;
+- the Ruhr and hyperinflation;
+- Stresemann and recovery;
+- Locarno, the League and Kellogg-Briand;
+- living standards;
+- women;
+- culture.
+
+**Totals:** History has 163 lessons; 45 are left on the 208-lesson roadmap.
+
+**QA:**
+- After rebasing onto the Geography final commit, 789 automated tests pass.
+- The History flow walked the 11 new lessons plus the whole-app checks: 197 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-12.md`. It records one correction: 37 women were elected in 1919, not the often-quoted 41.
+
+**Not done:**
+- Site publication of this batch;
+- teacher review.
+
+**Next:** Germany key topic 2 (9 lessons).
+
 ## Final Geography authoring batch — all189lessons published
 
 28 October 2026. The remaining four fieldwork investigations and ten dedicated skills lessons are implemented. Geography has **189 lessons across14topics**,567practice and756independent selected-response checks. **Zero planned new lesson units remain** in the authoring register (24previously remaining rows now all implemented). This is lesson-inventory completion, not a claim of specialist approval or full independent assessment coverage.
@@ -15,6 +45,33 @@ Concurrent History work frommainc77556f preserved:152History lessons rendered. A
 Brief:curriculum/briefs/geography-a-final.md. Coverage:curriculum/geography-a-final-coverage.csv. QA:science-app/geography-final-browser-evidence.json. Preview:crash-course-geography-final-preview.png. Published28October2026 at12:41:19UTC to https://gcse-science-atom-lab.anaxied.chatgpt.site ,owner-private audience unchanged. Source547d8621938969ddf287989afefbe1e48095908e;deploymentappgdep_6ae1ed5fd4588191bb3a43f09659be41;versionappgprj_6ad1be5897a88191909a03ad57857103~appgver_052f079ebf20819195446ff2d500a70b;native succeeded. All679packagedruntimehashesmatchcanonicalsource;archiveignored;helperseparateapp-onlycheckout. Live verified189total/fieldwork9/skills10/sixgraphactivityfields/riverdefaultPause+Loop/History152/geofinalcache;consoleerrorsnone. Proofcrash-course-geography-final-live.png. Canonicalapp6c64831pushed;publicationreceiptpush and exactremoteSHA/clean verification follow. History hosting metadata updated only for152included implemented lessons without upgrading their content-review status. Next work: specialist/content review and the explicitly recorded independent-evidence/constructed/physical-fieldwork quality work, rather than another unbuilt Geography roadmap lesson.
 
 Final integration: another8History lessons frommainc77556f preserved;137History+Geography regression checks passed388.79ms;History152renders. The full789suite above passed before this content-only History integration; no unrelated repeated Maths checks. Canonical app commit6c64831pushed. Final source547d8621published successfully; source/runtime/publication receipt above.
+
+## History depth batch 11: the Western Front (8 lessons, 11 HE1–HE5); roadmap cut from 213 to 208; on GitHub `main`. Section restored after a concurrent merge dropped it. These 8 lessons were later published with the Geography final publication (see above).
+
+**Lessons:**
+- Ypres, the Somme, Arras and Cambrai;
+- illnesses from trench conditions;
+- wounds, head injuries and gas;
+- the RAMC and nurses;
+- the underground hospital at Arras;
+- treating wounds, infection and fractures;
+- X-rays, transfusion and the Cambrai blood bank;
+- national and local sources.
+
+**Scope change:** five planned Western Front depth lessons were dropped because they would have repeated their overviews or the planned source-skills lesson. Reasons are in `curriculum/history-remaining-plan.md`.
+
+**Totals:** History has 152 lessons; 56 are left on the 208-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 8 new lessons plus the whole-app checks: 149 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-11.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** Germany depth (40 lessons), checked for overlap in the same way.
 
 ## History depth batch 10: Medicine key topic 4 (6 lessons, 11 4.1–4.2); on GitHub `main`, not published
 

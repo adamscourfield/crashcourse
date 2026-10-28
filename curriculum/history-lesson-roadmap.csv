@@ -137,20 +137,20 @@ order,lesson_id,title,topic_id,role,spec_ref,status
 136,history.medicine.wf-sources,Using sources: the Western Front enquiry,history.medicine.wf,overview,11 HE5,implemented
 137,history.medicine.wf-national-local,National and local sources,history.medicine.wf,depth,11 HE5,implemented
 138,history.germany.origins,"The origins of the Weimar Republic, 1918–19",history.germany.kt1,overview,31 1.1,implemented
-139,history.germany.war-legacy,The legacy of the First World War,history.germany.kt1,depth,31 1.1,planned
-140,history.germany.revolution-1918,"Abdication, armistice and revolution",history.germany.kt1,depth,31 1.1,planned
-141,history.germany.constitution,The Weimar Constitution,history.germany.kt1,depth,31 1.1,planned
+139,history.germany.war-legacy,The legacy of the First World War,history.germany.kt1,depth,31 1.1,implemented
+140,history.germany.revolution-1918,"Abdication, armistice and revolution",history.germany.kt1,depth,31 1.1,implemented
+141,history.germany.constitution,The Weimar Constitution,history.germany.kt1,depth,31 1.1,implemented
 142,history.germany.early-challenges,"Early challenges: Versailles, uprisings and 1923",history.germany.kt1,overview,31 1.2,implemented
-143,history.germany.versailles,The Treaty of Versailles,history.germany.kt1,depth,31 1.2,planned
-144,history.germany.left-right,"Spartacists, Freikorps and the Kapp Putsch",history.germany.kt1,depth,31 1.2,planned
-145,history.germany.hyperinflation,1923: the Ruhr and hyperinflation,history.germany.kt1,depth,31 1.2,planned
+143,history.germany.versailles,The Treaty of Versailles,history.germany.kt1,depth,31 1.2,implemented
+144,history.germany.left-right,"Spartacists, Freikorps and the Kapp Putsch",history.germany.kt1,depth,31 1.2,implemented
+145,history.germany.hyperinflation,1923: the Ruhr and hyperinflation,history.germany.kt1,depth,31 1.2,implemented
 146,history.germany.recovery,"Recovery under Stresemann, 1924–29",history.germany.kt1,overview,31 1.3,implemented
-147,history.germany.dawes-young,Stresemann and economic recovery,history.germany.kt1,depth,31 1.3,planned
-148,history.germany.locarno,"Locarno, the League and Kellogg-Briand",history.germany.kt1,depth,31 1.3,planned
+147,history.germany.dawes-young,Stresemann and economic recovery,history.germany.kt1,depth,31 1.3,implemented
+148,history.germany.locarno,"Locarno, the League and Kellogg-Briand",history.germany.kt1,depth,31 1.3,implemented
 149,history.germany.weimar-society,"Changes in society, 1924–29",history.germany.kt1,overview,31 1.4,implemented
-150,history.germany.living-1920s,The standard of living in the 1920s,history.germany.kt1,depth,31 1.4,planned
-151,history.germany.weimar-women,Women in Weimar Germany,history.germany.kt1,depth,31 1.4,planned
-152,history.germany.weimar-culture,Weimar culture,history.germany.kt1,depth,31 1.4,planned
+150,history.germany.living-1920s,The standard of living in the 1920s,history.germany.kt1,depth,31 1.4,implemented
+151,history.germany.weimar-women,Women in Weimar Germany,history.germany.kt1,depth,31 1.4,implemented
+152,history.germany.weimar-culture,Weimar culture,history.germany.kt1,depth,31 1.4,implemented
 153,history.germany.early-nazis,"The early Nazi Party, 1920–22",history.germany.kt2,overview,31 2.1,implemented
 154,history.germany.hitler-early,Hitler's early career,history.germany.kt2,depth,31 2.1,planned
 155,history.germany.twenty-five-points,The Twenty-Five Points and the SA,history.germany.kt2,depth,31 2.1,planned
