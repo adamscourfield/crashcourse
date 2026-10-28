@@ -4,10 +4,10 @@ import {readFileSync} from 'node:fs';
 import {lessons,topics} from '../dist/literature/content.js';
 import {restore,literatureGates,choiceIndices,viewHTML,draftVersionsHTML} from '../dist/literature/studio.js';
 import {subjects} from '../dist/progress.js';
-test('Literature has 15 scene-scoped lessons and 105 stable question IDs',()=>{
- assert.equal(lessons.length,15);assert.equal(new Set(lessons.map(l=>l.id)).size,15);
+test('Literature has 25 text-scoped lessons and 175 stable question IDs',()=>{
+ assert.equal(lessons.length,25);assert.equal(new Set(lessons.map(l=>l.id)).size,25);
  const ids=new Set();for(const l of lessons){assert(topics.some(t=>t.id===l.topicId));assert.equal(l.cards.length,3);assert.equal(l.practice.length,3);assert.equal(l.check.length,4);assert.equal(l.views[0].kind,'language');assert.equal(l.views[0].words.length,3);assert(l.writing&&l.rubric.length===3);for(const q of [...l.practice,...l.check]){assert(!ids.has(q.id));ids.add(q.id);assert(q.options[q.answer]);assert(q.why);}}
- assert.equal(ids.size,105);assert.equal(subjects.find(s=>s.id==='english-literature').status,'available');
+ assert.equal(ids.size,175);assert.equal(subjects.find(s=>s.id==='english-literature').status,'available');
 });
 test('Knowledge gates require all language details, practice and independent answers; writing is separate',()=>{
  const l=lessons[0],p={seen:[0,1,2],passed:[0],observed:[0,1,2],wordSeen:[0,1],practice:Object.fromEntries(l.practice.map(q=>[q.id,{correct:true}])),checks:Object.fromEntries(l.check.map(q=>[q.id,q.answer])),draft:'A long draft is not a mark.'};
@@ -39,4 +39,13 @@ test('Batch 2 follows the next ten roadmap IDs with keys, targeted feedback and 
  assert.deepEqual(batch02.map(l=>l.id.split('.').pop()),['discovery','crown','banquet','apparitions','resistance','unravelling','ending','macbeth-character','lady-macbeth','kingship']);
  for(const l of batch02){assert(l.tasks[0][4].length>35);assert(l.sources.length);for(const url of l.sources)assert.match(url,/^https:\/\/www.folger.edu\/explore\/shakespeares-works\/macbeth\/read\/[1-5]\/[1-8]\/$/);assert.equal(new Set([...l.practice,...l.check].map(q=>q.prompt)).size,7);assert(l.rubric.every(x=>x.length>20));}
  const ending=batch02.find(l=>l.id.endsWith('.ending'));assert(ending.scope.includes('5.8/5.9'));assert.equal(batch02.find(l=>l.id.endsWith('.kingship')).views[0].content,'The king-becoming graces');
+});
+test('Batch 3 has five Macbeth and five Carol units with separate topics and specification refs',async()=>{
+ const {batch03}=await import('../dist/literature/content-batch03.js');assert.equal(batch03.length,10);assert.equal(batch03.filter(l=>l.topicId==='english-literature.macbeth').length,5);assert.equal(batch03.filter(l=>l.topicId==='english-literature.christmas-carol').length,5);assert.equal(topics.length,2);
+ for(const l of batch03){const carol=l.id.startsWith('lit.carol.');assert.equal(l.refs[0],carol?'3.1.2':'3.1.1');assert.equal(l.author,carol?'Charles Dickens':'William Shakespeare');for(const q of [...l.practice,...l.check])assert(q.concept.startsWith(carol?'lit.carol.':'lit.macbeth.'));}
+ const l=batch03.find(l=>l.independentWriting);assert(l.independentPrompt.includes('elsewhere'));assert(l.independentExtract.includes('double trust'));assert(l.rubric.some(x=>x.startsWith('AO2:')));
+});
+test('All fifteen previously published lesson records remain byte-equivalent after normalised serialisation',async()=>{
+ const {createHash}=await import('node:crypto');const sorted=v=>Array.isArray(v)?v.map(sorted):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,sorted(v[k])])):v;
+ assert.equal(createHash('sha256').update(JSON.stringify(sorted(lessons.slice(0,15)))).digest('hex'),'4956f724dcd4f67fd68884b8e515648062be6dc42f3a1391d2e5ef50936c88c6');
 });

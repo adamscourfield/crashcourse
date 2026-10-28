@@ -1,7 +1,8 @@
+import {batch03} from './content-batch03.js?v=20261028-lit03';
 import {batch02} from './content-batch02.js?v=20261028-lit02';
 export const source="https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification";
-export const topics=[{id:"english-literature.macbeth",title:"Macbeth",unit:"8702"}];
-export const units=[{id:"8702",title:"AQA GCSE English Literature",paper:"Macbeth · Paper 1"}];
+export const topics=[{id:"english-literature.macbeth",title:"Macbeth",unit:"8702"},{id:"english-literature.christmas-carol",title:"A Christmas Carol",unit:"8702"}];
+export const units=[{id:"8702",title:"AQA GCSE English Literature",paper:"Paper 1 · Shakespeare and the 19th-century novel"}];
 export const specIssue="checked 28 October 2026";
 export const lessons=[
   {
@@ -955,3 +956,5 @@ export const lessons=[
 ];
 
 lessons.push(...batch02);
+
+lessons.push(...batch03);

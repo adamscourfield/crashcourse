@@ -1,0 +1,59 @@
+{
+  "checked": "2026-10-28",
+  "sources": {
+    "macbeth": {
+      "url": "https://www.folger.edu/explore/shakespeares-works/macbeth/read/",
+      "html_sha256": "359abd0ac43191899eeb4be44d9a871d2e6457a808e98a711e88ac208d092cb6"
+    },
+    "carol": {
+      "url": "https://www.gutenberg.org/files/46/46-h/46-h.htm",
+      "html_sha256": "6f6618c0cf7906bd8ec96982b30c3f3c70cf4b2d54230ff8fc113d1ed53e1384"
+    }
+  },
+  "quotes_matched": 10,
+  "independent_extract_matched": true,
+  "batch": "Literature03",
+  "new_lessons": 10,
+  "total_built": 25,
+  "built_topics": {
+    "Macbeth": 20,
+    "A Christmas Carol": 5
+  },
+  "working_literature_allocation": 175,
+  "remaining_planned_literature": 150,
+  "english_programme": {
+    "weeks": 70,
+    "sessions_per_week": 5,
+    "total": 350,
+    "user_confirmed": "350 shared between Literature and Language",
+    "working_split": {
+      "literature": 175,
+      "language": 175
+    },
+    "split_status": "assistant adjustable planning assumption",
+    "language_status": "175 reserved slots; detailed specification mapping pending"
+  },
+  "new_practice": 30,
+  "new_checks": 40,
+  "total_practice": 75,
+  "total_checks": 100,
+  "full_suite": {
+    "passed": 804,
+    "duration_ms": 36977.732667,
+    "scope": "before final cross-topic recall metadata correction and two added tests"
+  },
+  "final_focused": {
+    "passed": 38,
+    "scope": "17Literature tests plus progress/question-flow"
+  },
+  "offline_handlers": {
+    "new_lesson_journeys": 10,
+    "additional": "independent-writing isolation/empty prevention/autosave/resume/first submission/immutable original/revision/departures;topic-specific Carol recall;old learner resume"
+  },
+  "old15_records": "unchanged normalised SHA256 4956f724dcd4f67fd68884b8e515648062be6dc42f3a1391d2e5ef50936c88c6",
+  "curriculum": "175 unique Literature IDs;350session rows/70weeks/5perweek;25built/150planned;75coverage rows",
+  "browser": "not_exercised under recorded browser-tool security restriction; no alternate browser route used",
+  "specialist_review": "not_performed",
+  "writing": "saved unmarked; external resources cannot be policed",
+  "hosting": "pending native publication receipt"
+}

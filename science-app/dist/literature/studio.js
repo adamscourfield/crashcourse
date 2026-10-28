@@ -1,4 +1,4 @@
-import {lessons, topics, units, source, specIssue} from './content.js?v=20261028-lit02';
+import {lessons, topics, units, source, specIssue} from './content.js?v=20261028-lit03';
 import {questionFlow, cancelQuestionAdvance} from '../question-flow.js?v=20261023-flow01';
 import {recordConcept, dueConcepts} from '../progress.js?v=20261028-subjects01';
 import {summarise} from '../progress-summary.js?v=20261023-mastery01';
@@ -51,6 +51,9 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
   const contextLesson = () => (mode === 'review' && run ? lessons.find(l => [...l.check, ...l.practice].some(q => q.id === run.questions[run.index]?.id)) || lesson() : lesson());
   const activeTopic = () => topics.find(t => t.id === contextLesson().topicId);
   const unitOf = t => units.find(u => u.id === t.unit);
+  const topicLessons = l => lessons.filter(x=>x.topicId===l.topicId);
+  const authorOf = l => l.author || 'William Shakespeare';
+  const bookURL = l => l.topicId === 'english-literature.christmas-carol' ? 'https://www.gutenberg.org/files/46/46-h/46-h.htm' : 'https://www.folger.edu/explore/shakespeares-works/macbeth/read/';
 
   function getProgress() {
     const rows = lessons.map(l => {
@@ -66,7 +69,7 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
       for (const q of l.check) if (p.checks[q.id] !== undefined) { b.total++; if (p.checks[q.id] === q.answer) b.correct++; }
       return {id: l.id, title: l.title, topicId: l.topicId, stages: literatureGates(l, p), started: !!(p.seen.length || p.observed.length || Object.keys(p.practice).length || Object.keys(p.checks).length), practice: a, check: b, gaps, due};
     });
-    return {...summarise(rows, topics), subject: 'English Literature', scope: `AQA GCSE English Literature · 8702 · ${lessons.length} built Macbeth lessons`, scopeNote: `${lessons.length} built Macbeth lessons only. Completion and scores describe knowledge activities; analytical writing is saved but not marked. The rest of Literature is planned.`, practiceLabel: 'Practice first tries'};
+    return {...summarise(rows, topics), subject: 'English Literature', scope: `AQA GCSE English Literature · 8702 · ${lessons.length} built lessons`, scopeNote: `${lessons.length} built Literature lessons only. Completion and scores describe knowledge activities; analytical writing is saved but not marked. The rest of Literature is planned.`, practiceLabel: 'Practice first tries'};
   }
   function save() {
     s.review = mode === 'review' && run ? {ids: run.questions.map(q => q.id), answers: run.answers, index: run.index} : null;
@@ -75,7 +78,12 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
     onProgress?.({done: x.completed, total: x.total, due: x.due.length, storage: ok, topic: activeTopic().title});
     return ok;
   }
-  function stop() {}
+  function leaveWriting() {
+    const p=state(lesson());if(!p.writingActive)return;
+    if(p.independent && !p.independent.firstResponse)p.independent.departures=(p.independent.departures||0)+1;
+    p.writingActive=false;save();
+  }
+  function stop() { leaveWriting(); }
   function feedback(t, error = false) { const f = $('#hFeedback'); if (f) { f.textContent = t; f.classList.toggle('error', error); } }
 
   function explorer(l, p, record) {
@@ -83,7 +91,7 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
     p.viewIndex = Math.min(Math.max(0, p.viewIndex || 0), l.views.length - 1);
     const v = l.views[p.viewIndex];
     if (record && !p.observed.includes(p.viewIndex)) p.observed.push(p.viewIndex);
-    panel.innerHTML = `<div class="eyebrow">EVIDENCE EXPLORER</div><div class="geo-controls h-tabs" role="tablist">${l.views.map((x, i) => `<button class="scene-button" role="tab" data-hview="${i}" aria-pressed="${i === p.viewIndex}">${esc(viewLabel(x))}${record && p.observed.includes(i) ? ' ✓' : ''}</button>`).join('')}</div><div class="h-view" id="hView">${viewHTML(v)}</div><p class="geo-caption">${v.kind === 'source' ? 'The document is described by type, author, date and content; no wording is quoted or invented.' : 'Shakespeare’s words; original teaching commentary. These readings are possibilities to support or challenge with evidence.'}</p>`;
+    panel.innerHTML = `<div class="eyebrow">EVIDENCE EXPLORER</div><div class="geo-controls h-tabs" role="tablist">${l.views.map((x, i) => `<button class="scene-button" role="tab" data-hview="${i}" aria-pressed="${i === p.viewIndex}">${esc(viewLabel(x))}${record && p.observed.includes(i) ? ' ✓' : ''}</button>`).join('')}</div><div class="h-view" id="hView">${viewHTML(v)}</div><p class="geo-caption">${v.kind === 'source' ? 'The document is described by type, author, date and content; no wording is quoted or invented.' : esc(authorOf(l))+'’s words; original teaching commentary. These readings are possibilities to support or challenge with evidence.'}</p>`;
     if(v.kind === 'language') {
       const show = i => { $('#litReading').textContent = v.words[i][1]; $$('[data-lit-word]').forEach(b => b.setAttribute('aria-pressed', String(Number(b.dataset.litWord) === i))); };
       $$('[data-lit-word]').forEach(b => b.onclick = () => { p.word = Number(b.dataset.litWord); (p.wordSeen ??= []); if(!p.wordSeen.includes(p.word))p.wordSeen.push(p.word); show(p.word); save(); });
@@ -95,8 +103,10 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
   function pWritingOpen(l) { return !!state(l).draft; }
   function render() {
     cancelQuestionAdvance();
+    if(mode==='lesson' && state(lesson()).writingActive) return renderIndependentWriting();
     const t = activeTopic(), u = unitOf(t);
-    root.innerHTML = `<section class="intro"><div><div class="eyebrow">ENGLISH LITERATURE · ${esc(u.paper.toUpperCase())} · ${esc(t.title.toUpperCase())} · ${esc(lesson().scope)}</div><h1>${mode === 'lesson' ? esc(lesson().title) : 'Recall review'}</h1></div><div class="lesson-meta">◷ ${lesson().minutes} min</div></section><div class="lesson-toolbar"><button class="secondary lit-lesson-button" id="hLessons">☷ Lessons · ${lessons.indexOf(lesson()) + 1} / ${lessons.length} in Macbeth</button><button class="text-button" id="hNext">Next lesson →</button></div><nav class="steps" aria-label="Lesson stages">${['Discover', 'Investigate', 'Practise', 'Check'].map((x, i) => `<button data-hstage="${i}"><b>0${i + 1}</b>${x}</button>`).join('')}</nav><section class="workspace"><div class="scene-panel geo-panel h-panel" id="hPanel"></div><article class="activity"><div class="eyebrow" id="hKicker"></div><h2 id="hTitle"></h2><div id="hBody"></div><div id="hFeedback" role="status" aria-live="polite"></div><div class="activity-footer"><span id="hHint"></span><button class="primary" id="hContinue">Continue →</button></div></article></section><section class="lit-writing"><details ${pWritingOpen(lesson()) ? 'open' : ''}><summary>Write & reflect · saved draft</summary><p>${esc(lesson().writing)}</p><label for="litDraft">Your interpretation</label><textarea id="litDraft" rows="6" placeholder="Make a claim, select evidence, explain how it supports your reading."></textarea><p id="litDraftStatus" role="status"></p><button class="secondary" id="litSaveDraft">Save a version</button><div id="litVersions"></div><div class="lit-rubric"><h3>Review your argument</h3><ul>${lesson().rubric.map(r => `<li>${esc(r)}</li>`).join('')}</ul><p>Use these prompts to revise or discuss your draft with a teacher. Writing is saved, not automatically graded; knowledge scores do not establish essay mastery.</p></div></details></section><span class="spec">${esc(lesson().refs.map(r => 'AQA 8702 ' + r).join(' · '))}</span><footer><button class="text-button" id="hSources">Sources & notes</button></footer>`;
+    root.innerHTML = `<section class="intro"><div><div class="eyebrow">ENGLISH LITERATURE · ${esc(u.paper.toUpperCase())} · ${esc(t.title.toUpperCase())} · ${esc(contextLesson().scope)}</div><h1>${mode === 'lesson' ? esc(lesson().title) : 'Recall review'}</h1></div><div class="lesson-meta">◷ ${contextLesson().minutes} min</div></section><div class="lesson-toolbar"><button class="secondary lit-lesson-button" id="hLessons">☷ Lessons · ${topicLessons(contextLesson()).indexOf(contextLesson()) + 1} / ${topicLessons(contextLesson()).length} in ${esc(activeTopic().title)}</button><button class="text-button" id="hNext">Next lesson →</button></div><nav class="steps" aria-label="Lesson stages">${['Discover', 'Investigate', 'Practise', 'Check'].map((x, i) => `<button data-hstage="${i}"><b>0${i + 1}</b>${x}</button>`).join('')}</nav><section class="workspace"><div class="scene-panel geo-panel h-panel" id="hPanel"></div><article class="activity"><div class="eyebrow" id="hKicker"></div><h2 id="hTitle"></h2><div id="hBody"></div><div id="hFeedback" role="status" aria-live="polite"></div><div class="activity-footer"><span id="hHint"></span><button class="primary" id="hContinue">Continue →</button></div></article></section><section class="lit-writing"><div id="litIndependent"></div><details id="litGuidedWriting" ${pWritingOpen(lesson()) ? 'open' : ''}><summary>Write & reflect · saved draft</summary><p>${esc(lesson().writing)}</p><label for="litDraft">Your interpretation</label><textarea id="litDraft" rows="6" placeholder="Make a claim, select evidence, explain how it supports your reading."></textarea><p id="litDraftStatus" role="status"></p><button class="secondary" id="litSaveDraft">Save a version</button><div id="litVersions"></div><div class="lit-rubric"><h3>Review your argument</h3><ul>${lesson().rubric.map(r => `<li>${esc(r)}</li>`).join('')}</ul><p>Use these prompts to revise or discuss your draft with a teacher. Writing is saved, not automatically graded; knowledge scores do not establish essay mastery.</p></div></details></section><span class="spec">${esc(contextLesson().refs.map(r => 'AQA 8702 ' + r).join(' · '))}</span><footer><button class="text-button" id="hSources">Sources & notes</button></footer>`;
+    if(lesson().independentWriting){$('#litGuidedWriting').hidden=true;$('#litIndependent').innerHTML=`<h3>Independent writing</h3><p>A fresh extract-to-whole response. Guidance is hidden during the attempt. Writing is saved, not automatically marked.</p><button class="primary" id="litStartIndependent">${state(lesson()).independent?.firstResponse ? 'Review or revise your response' : 'Start independent writing →'}</button>`;$('#litStartIndependent').onclick=()=>{state(lesson()).writingActive=true;state(lesson()).independent ??= {draft:'',startedAt:Date.now(),departures:0};render();};}
     const wp=state(lesson()), area=$('#litDraft'); area.value=wp.draft || '';$('#litVersions').innerHTML=draftVersionsHTML(wp.drafts || []);
     area.oninput=()=>{wp.draft=area.value;const ok=save();$('#litDraftStatus').textContent=ok?'Draft saved on this device.':'Draft kept for this session; device storage is unavailable.';};
     $('#litSaveDraft').onclick=()=>{if(!area.value.trim()){$('#litDraftStatus').textContent='Write an interpretation before saving a version.';return;} (wp.drafts ??= []).push({text:area.value,at:Date.now()});$('#litVersions').innerHTML=draftVersionsHTML(wp.drafts);const ok=save();$('#litDraftStatus').textContent=ok?`Version ${wp.drafts.length} saved. You can keep revising.`:'Version kept for this session; device storage is unavailable.';};
@@ -104,6 +114,7 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
     $('#hSources').onclick = openSources;
     $('#hNext').onclick = () => { const i = lessons.indexOf(lesson()); i < lessons.length - 1 ? openLesson(lessons[i + 1].id) : openMap(); };
     $$('[data-hstage]').forEach(b => (b.onclick = () => { mode = 'lesson'; state(lesson()).stage = Number(b.dataset.hstage); render(); }));
+    root.querySelector('.lit-writing').hidden=mode==='review';
     if (mode === 'review') return renderReview();
     const l = lesson(), p = state(l), done = literatureGates(l, p);
     p.stage = Math.max(0, Math.min(3, p.stage));
@@ -179,8 +190,8 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
     modal(`<h2>${score}% · ${literatureGates(l, p).every(Boolean) ? 'Knowledge activities complete' : 'Keep building'}</h2><p>Knowledge activity completion needs all four stages and at least 80% on Check. Your written response is saved separately and needs human review.</p>${l.check.map(q => `<details class="result-row"><summary>${p.checks[q.id] === q.answer ? '✓' : '↻'} ${esc(q.prompt)}</summary><p>${esc(q.why)} Correct answer: ${esc(q.options[q.answer])}</p></details>`).join('')}<button class="primary" id="hRetake">Try check again</button>`);
     document.getElementById('hRetake').onclick = () => { (p.history ??= []).push({...p.checks}); p.checks = {}; p.ci = 0; closeModal(); render(); };
   }
-  function openLesson(id, stage) { if (!lessons.some(l => l.id === id)) return; s.lessonId = id; mode = 'lesson'; if (stage !== undefined) state(lesson()).stage = stage; closeModal(); render(); }
-  function openLessons(id = lesson().topicId) {
+  function openLesson(id, stage) { if (!lessons.some(l => l.id === id)) return; leaveWriting(); s.lessonId = id; mode = 'lesson'; if (stage !== undefined) state(lesson()).stage = stage; closeModal(); render(); }
+  function openLessons(id = contextLesson().topicId) {
     const t = topics.find(x => x.id === id) || topics[0], u = unitOf(t);
     modal(`<span class="eyebrow">ENGLISH LITERATURE · ${esc(u.paper.toUpperCase())}</span><h2>${esc(t.title)}</h2><p>${esc(u.title)}</p><div class="lesson-list">${lessons.filter(l => l.topicId === t.id).map((l, i) => `<button class="lesson-row ${l.id === lesson().id ? 'current' : ''}" aria-current="${l.id === lesson().id ? 'true' : 'false'}" data-hlesson="${l.id}"><span>${i + 1}</span><span><b>${esc(l.title)}</b><small>${literatureGates(l, state(l)).every(Boolean) ? 'Knowledge activities complete' : l.minutes + ' min'}</small></span><span>→</span></button>`).join('')}</div>`);
     document.querySelectorAll('[data-hlesson]').forEach(b => (b.onclick = () => openLesson(b.dataset.hlesson)));
@@ -194,10 +205,28 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
     const allowed = new Set(dueConcepts(s)), seen = new Set();
     const list = lessons.filter(l => typeof topicId !== 'string' || l.topicId === topicId).flatMap(l => [...l.check, ...l.practice]).filter(q => { if (!allowed.has(q.concept) || seen.has(q.concept)) return false; seen.add(q.concept); return true; });
     if (!list.length) { modal('<h2>Nothing due yet</h2><p>Your missed or due concepts will return here. Continue learning for now.</p>'); return; }
-    run = {questions: list, answers: {}, index: 0}; mode = 'review'; closeModal(); render();
+    leaveWriting(); run = {questions: list, answers: {}, index: 0}; mode = 'review'; closeModal(); render();
   }
   function openSources() {
-    modal(`<h2>Sources & notes</h2><p>AQA GCSE English Literature 8702; 3.1.1 and 3.3. ${lessons.length} built Macbeth lessons. Current scope: ${esc(contextLesson().scope)}. Source checked 28 October 2026.</p><p><a href="${source}" target="_blank" rel="noopener">Official AQA specification ↗</a></p>${(contextLesson().sources || []).map(url => `<p><a href="${esc(url)}" target="_blank" rel="noopener">Read the referenced scene ↗</a></p>`).join('')}<p><a href="https://www.folger.edu/explore/shakespeares-works/macbeth/read/" target="_blank" rel="noopener">Read Macbeth at the Folger Shakespeare Library ↗</a></p><p>Brief quotations from Shakespeare’s public-domain play; explanations and questions are original. Scene references are used because line numbering varies by edition. Read the whole scenes alongside these lessons: summaries do not replace the whole play.</p><p>Interpretations may differ when supported by the text. No English specialist review has been completed. Knowledge checks are automatically scored; saved analytical writing is not automatically marked.</p>`);
+    const l=contextLesson();
+    modal(`<h2>Sources & notes</h2><p>AQA GCSE English Literature 8702; ${esc(l.refs.join(', '))}. Current text: ${esc(activeTopic().title)}; scope: ${esc(l.scope)}. Sources checked 28 October 2026.</p><p><a href="${source}" target="_blank" rel="noopener">Official AQA specification ↗</a></p><p><a href="${bookURL(l)}" target="_blank" rel="noopener">Read ${esc(activeTopic().title)} ↗</a></p><p>Brief quotations from ${esc(authorOf(l))}’s public-domain text; original teaching commentary. Read the full scenes or staves alongside these lessons. Scene/line numbering can vary by edition.</p><p>Supported interpretations can differ. No English specialist review completed. Knowledge checks score selected responses; writing is saved for human review and does not receive an automatic essay mark. Independent writing records departures but cannot police external resources. Practice prompts are original, not official exam papers.</p>`);
+  }
+  function renderIndependentWriting() {
+    const l=lesson(),p=state(l),w=p.independent??={draft:'',startedAt:Date.now(),departures:0};
+    const submitted=!!w.firstResponse;
+    root.innerHTML=`<section class="intro"><div><div class="eyebrow">MACBETH · INDEPENDENT WRITING</div><h1>${submitted?'Review & revise':'Your first response'}</h1></div></section><section class="lit-writing"><p>${esc(l.independentPrompt)}</p><p class="eyebrow">${esc(l.independentExtractLabel)}</p><blockquote class="lit-writing-extract">${esc(l.independentExtract)}</blockquote>${submitted?`<details><summary>First submitted response</summary><p class="lit-writing-extract">${esc(w.firstResponse.text)}</p></details><h3>Review criteria</h3><ul>${l.rubric.map(r=>`<li>${esc(r)}</li>`).join('')}</ul><p>Discuss this response with a teacher. No essay mark is assigned here.</p>`:'<p>Use the supplied passage and your knowledge of the play. Lesson explanations and review criteria are hidden here. Leaving is recorded; external resources cannot be monitored.</p>'}<label for="litIndependentDraft">${submitted?'Your revision':'Your response'}</label><textarea id="litIndependentDraft" rows="14"></textarea><p id="litIndependentStatus" role="status"></p><button class="primary" id="litSubmitIndependent">${submitted?'Save revision':'Submit first response'}</button><button class="secondary" id="litLeaveIndependent">Save & return to lesson</button><div id="litIndependentVersions"></div></section>`;
+    const area=$('#litIndependentDraft');area.value=submitted?(w.revision??w.firstResponse.text):w.draft;
+    $('#litIndependentVersions').innerHTML=draftVersionsHTML(w.revisions||[]);
+    area.oninput=()=>{if(submitted)w.revision=area.value;else w.draft=area.value;const ok=save();$('#litIndependentStatus').textContent=ok?'Draft saved on this device.':'Draft kept for this session; storage unavailable.';};
+    $('#litSubmitIndependent').onclick=()=>{
+      if(!area.value.trim()){$('#litIndependentStatus').textContent='Write a response before submitting.';return;}
+      if(!w.firstResponse)w.firstResponse={text:area.value,at:Date.now(),departures:w.departures||0};
+      else (w.revisions??=[]).push({text:area.value,at:Date.now()});
+      renderIndependentWriting();
+      $('#litIndependentStatus').textContent=submitted?'Revision saved; your first response is unchanged.':'First response saved. Use the criteria to review it; no mark has been assigned.';
+    };
+    $('#litLeaveIndependent').onclick=()=>{if(!w.firstResponse)w.departures=(w.departures||0)+1;p.writingActive=false;render();};
+    save();
   }
   return {render, stop, openLessons, openMap, openSources, startReview, getProgress, openProgressLesson: openLesson, reviewTopic: startReview, title: () => (mode === 'review' ? 'Literature review' : lesson().title), state: () => s};
 }
