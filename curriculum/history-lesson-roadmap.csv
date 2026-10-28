@@ -40,18 +40,18 @@ order,lesson_id,title,topic_id,role,spec_ref,status
 39,history.elizabeth.roanoke,Raleigh and the Roanoke colonies,history.elizabeth.kt3,depth,B4 3.4,implemented
 40,history.elizabeth.virginia-failure,Why the Virginia colony failed,history.elizabeth.kt3,depth,B4 3.4,implemented
 41,history.coldwar.alliance,The Grand Alliance and early tension,history.coldwar.kt1,overview,P4 1.1,implemented
-42,history.coldwar.conferences,"Tehran, Yalta and Potsdam",history.coldwar.kt1,depth,P4 1.1,planned
-43,history.coldwar.ideologies,Capitalism and communism,history.coldwar.kt1,depth,P4 1.1,planned
-44,history.coldwar.satellites,Soviet expansion in Eastern Europe,history.coldwar.kt1,depth,P4 1.1,planned
+42,history.coldwar.conferences,"Tehran, Yalta and Potsdam",history.coldwar.kt1,depth,P4 1.1,implemented
+43,history.coldwar.ideologies,Capitalism and communism,history.coldwar.kt1,depth,P4 1.1,implemented
+44,history.coldwar.satellites,Soviet expansion in Eastern Europe,history.coldwar.kt1,depth,P4 1.1,implemented
 45,history.coldwar.containment,"The Truman Doctrine, the Marshall Plan and the new alliances",history.coldwar.kt1,overview,P4 1.2,implemented
-46,history.coldwar.telegrams,The Long and Novikov Telegrams,history.coldwar.kt1,depth,P4 1.2,planned
-47,history.coldwar.truman-marshall,The Truman Doctrine and the Marshall Plan,history.coldwar.kt1,depth,P4 1.2,planned
-48,history.coldwar.cominform-comecon,"Cominform, Comecon and NATO",history.coldwar.kt1,depth,P4 1.2,planned
-49,history.coldwar.blockade,The Berlin Blockade and Airlift,history.coldwar.kt1,depth,P4 1.2,planned
+46,history.coldwar.telegrams,The Long and Novikov Telegrams,history.coldwar.kt1,depth,P4 1.2,implemented
+47,history.coldwar.truman-marshall,The Truman Doctrine and the Marshall Plan,history.coldwar.kt1,depth,P4 1.2,implemented
+48,history.coldwar.cominform-comecon,"Cominform, Comecon and NATO",history.coldwar.kt1,depth,P4 1.2,implemented
+49,history.coldwar.blockade,The Berlin Blockade and Airlift,history.coldwar.kt1,depth,P4 1.2,implemented
 50,history.coldwar.hungary,"The arms race, the Warsaw Pact and Hungary, 1949–58",history.coldwar.kt1,overview,P4 1.3,implemented
-51,history.coldwar.arms-race,The arms race and the Warsaw Pact,history.coldwar.kt1,depth,P4 1.3,planned
-52,history.coldwar.hungary-uprising,"The Hungarian Uprising, 1956",history.coldwar.kt1,depth,P4 1.3,planned
-53,history.coldwar.hungary-reaction,International reaction to Hungary,history.coldwar.kt1,depth,P4 1.3,planned
+51,history.coldwar.arms-race,The arms race and the Warsaw Pact,history.coldwar.kt1,depth,P4 1.3,implemented
+52,history.coldwar.hungary-uprising,"The Hungarian Uprising, 1956",history.coldwar.kt1,depth,P4 1.3,implemented
+53,history.coldwar.hungary-reaction,International reaction to Hungary,history.coldwar.kt1,depth,P4 1.3,implemented
 54,history.coldwar.berlin,"Berlin, 1948–49: blockade and airlift",history.coldwar.kt1,overview,P4 2.1,implemented
 55,history.coldwar.berlin-refugees,The refugee problem and Khrushchev's ultimatum,history.coldwar.kt1,depth,P4 2.1,planned
 56,history.coldwar.summits,The summits of 1959–61,history.coldwar.kt1,depth,P4 2.1,planned

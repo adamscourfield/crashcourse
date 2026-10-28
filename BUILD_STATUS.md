@@ -1,3 +1,30 @@
+## History depth batch 04: Cold War key topic 1 (10 lessons, P4 1.1–1.3); on GitHub `main`, not published
+
+**Lessons:**
+- Tehran, Yalta and Potsdam;
+- capitalism and communism;
+- Soviet expansion;
+- the Long and Novikov Telegrams;
+- the Truman Doctrine and the Marshall Plan;
+- Cominform, Comecon and NATO;
+- the Berlin Blockade;
+- the arms race and the Warsaw Pact;
+- the Hungarian Uprising;
+- international reaction to Hungary.
+
+**Totals:** History has 100 lessons; 120 are left on the roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 10 new lessons plus the whole-app checks: 181 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-04.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 05, Cold War key topics 2–3 (P4 2.1–3.3, 17 lessons, in two batches).
+
 ## History depth batch 03: Elizabethan England key topic 3 (8 lessons, B4 3.1–3.4). Elizabethan depth lessons complete; on GitHub `main`, not published
 
 **Lessons:**
