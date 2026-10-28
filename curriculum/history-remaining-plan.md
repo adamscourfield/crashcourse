@@ -40,16 +40,17 @@ A depth lesson only adds value if its overview spreads several bullets or events
 
 - **`coldwar.blockade`: removed.** It shared 63% of its vocabulary with the existing Blockade overview `coldwar.berlin` and repeated it card for card. It was built in batch 04 and never published, so no student progress is affected.
 - **Seven planned Medicine depth lessons: dropped.** Their overviews are already single case studies: Harvey's impact, Nightingale's reforms, Jenner's opposition, Fleming, mass production, and lung cancer's treatment and government action.
+- **Five planned Western Front depth lessons: dropped (roadmap 213 → 208).** `wf-trenches`, `wf-transport` and `wf-chain` would repeat the overviews `wf-context` and `wf-evacuation`, which already give a card each to the trench system, terrain, transport and every stage of the chain. `wf-usefulness` and `wf-follow-up` would repeat both `wf-sources` and the planned exam-skill lesson `skills.he-sources`. The historic environment carries 16 of Paper 1's 52 marks; 5 overviews, 8 depth lessons and 2 skill lessons (15) is proportionate.
 - **Partial overlap kept.** Depth lessons under event-level overviews (the Missile Crisis, Cuba, the Armada) share 50–60% of their vocabulary. They add detail but are partly a second pass. This is recorded rather than hidden; teacher review should judge whether they earn their place.
 - **Two Berlin-crisis lessons moved.** They had been attached to the wrong overview (`coldwar.berlin` is the 1948–49 Blockade), so they now follow `coldwar.wall` in key topic 2.
 
 ## Build order
 
-Batches of about 10, each pushed on completion: Elizabethan England (28), the Cold War (27), Medicine and the Western Front (48), Germany (40), then the 15 exam-skill lessons.
+Batches of about 10, each pushed on completion: Elizabethan England (28), the Cold War (27), Medicine and the Western Front (48, later 43), Germany (40), then the 15 exam-skill lessons.
 
 ## Specification check, 28 October 2026
 
-The requirement rows were checked against the Issue 6 PDF supplied by the user. Corrections are listed in `curriculum/briefs/history-depth-batch-08.md`. The roadmap is now **213** lessons (one Cold War depth lesson added for the leaders' attitudes).
+The requirement rows were checked against the Issue 6 PDF supplied by the user. Corrections are listed in `curriculum/briefs/history-depth-batch-08.md`. The roadmap became **213** lessons (one Cold War depth lesson added for the leaders' attitudes), then **208** after the Western Front revision above.
 
 ## Open limits
 

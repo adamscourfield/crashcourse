@@ -1,3 +1,30 @@
+## History depth batch 11: the Western Front (8 lessons, 11 HE1–HE5); roadmap cut from 213 to 208; on GitHub `main`, not published
+
+**Lessons:**
+- Ypres, the Somme, Arras and Cambrai;
+- illnesses from trench conditions;
+- wounds, head injuries and gas;
+- the RAMC and nurses;
+- the underground hospital at Arras;
+- treating wounds, infection and fractures;
+- X-rays, transfusion and the Cambrai blood bank;
+- national and local sources.
+
+**Scope change:** five planned Western Front depth lessons were dropped because they would have repeated their overviews or the planned source-skills lesson. Reasons are in `curriculum/history-remaining-plan.md`.
+
+**Totals:** History has 152 lessons; 56 are left on the 208-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 8 new lessons plus the whole-app checks: 149 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-11.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** Germany depth (40 lessons), checked for overlap in the same way.
+
 ## History depth batch 10: Medicine key topic 4 (6 lessons, 11 4.1–4.2); on GitHub `main`, not published
 
 **Lessons:**
