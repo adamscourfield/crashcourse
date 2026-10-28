@@ -55,5 +55,14 @@
   "browser": "not_exercised under recorded browser-tool security restriction; no alternate browser route used",
   "specialist_review": "not_performed",
   "writing": "saved unmarked; external resources cannot be policed",
-  "hosting": "pending native publication receipt"
+  "hosting": {
+    "status": "succeeded",
+    "at": "2026-10-28T15:24:36.970357+00:00",
+    "canonical_app_commit": "cdf22b4d565ce98d173ae1aa4f65a51720c48ea2",
+    "source": "0819ab8fcabf7d69b3fb4ebea08de7260878f9f9",
+    "deployment_id": "appgdep_6ae213a7d4d48191a530d36065b2cd65",
+    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_522796ed1be08191b17a2d4e7597f1ca",
+    "runtime_hash_match_files": 691,
+    "audience": "owner-private unchanged"
+  }
 }

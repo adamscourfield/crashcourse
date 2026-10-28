@@ -1,3 +1,16 @@
+## Literature batch 3 publication receipt — 28 October 2026
+
+**Ten lessons published successfully15:24:36UTC:**five original Macbeth-core completion units and firstfive Carol.25Literature lessons built (Macbeth20/Carol5);150Literature sessions planned within the adjustable175allocation.350sharedEnglish sessions confirmed by user;175Language slots reserved/unmapped. The equal subject split remains a planning assumption. Macbeth’s expanded35session allocation is not complete merely because its original20core is built.
+
+- Canonical app commit `cdf22b4d565ce98d173ae1aa4f65a51720c48ea2` pushed and verified equal to origin/main with clean local status before packaging.
+- Site source `0819ab8fcabf7d69b3fb4ebea08de7260878f9f9`;691runtime files exactly hash-match canonical source.
+- Deployment `appgdep_6ae213a7d4d48191a530d36065b2cd65`, native status`succeeded`.
+- Saved version `appgprj_6ad1be5897a88191909a03ad57857103~appgver_522796ed1be08191b17a2d4e7597f1ca`.
+- URL https://gcse-science-atom-lab.anaxied.chatgpt.site ; owner-private audience unchanged (one owner/no groups/no external visitors).
+-804fulltests36.98s before final cross-topic recall metadata fix/two added tests;38finalfocused passed afterward. Old15records unchanged; primary10quotes+extract match; offline writing isolation/first-response/revision/exit/resume and two-topic recall/navigation exercised. Browser visual/mobile/keyboard and specialist review remain outstanding; writing is unmarked.
+
+Other subject content and root repository preserved. Receipt-only root commit/push follows. Next ten:Carol06–14 +Inspector01; detailed source/rubric briefs first. Language specification mapping still required before its175reserved sessions are authored. Programme files:curriculum/english-programme-plan.md and english-70-week-programme.csv.
+
 ## English Literature batch 3 and shared English programme — 28 October 2026
 
 **User correction:**350sessions across70weeks×5 are shared between **Literature and Language**, not350Literature units. Working175/175split is an adjustable assistant planning assumption, not a confirmed fixed split. `curriculum/english-programme-plan.md` and350-row `english-70-week-programme.csv` record exactly175Literature IDs and175reserved Language slots. Language remains planned/unmapped; reserved slots are not available lessons or verified specification coverage. No school session length was supplied. Keep app activity estimates distinct from whole lesson reading/discussion/writing/feedback.
