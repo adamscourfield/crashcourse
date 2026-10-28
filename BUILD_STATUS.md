@@ -1,3 +1,29 @@
+## History: Weimar and Nazi Germany key topics 3–4 (8 lessons, option 31 3.1–4.4). History is complete for the chosen options; on GitHub `main`, not published
+
+**Lessons:**
+- creating the dictatorship;
+- the police state;
+- propaganda and culture;
+- opposition, resistance and conformity;
+- policies towards women;
+- policies towards young people;
+- employment and living standards;
+- persecution of minorities.
+
+**Totals:** History has 62 lessons: Paper 1 (Option 11 with the Western Front), Paper 2 (P4 and B4) and Paper 3 (option 31). All 54 mapped requirement rows are built.
+
+**QA:**
+- 780 automated tests pass.
+- The History flow runs all 62 lessons: 1013 checks pass (about 8 minutes).
+- Brief: `curriculum/briefs/history-germany-batch-02.md`.
+
+**Not done:**
+- Site publication (option 31, 16 lessons; Western Front if not yet published);
+- teacher or historian review;
+- printed sources and interpretations;
+- marking of written answers;
+- re-checking the paraphrased specification wording against the PDF.
+
 ## History: Weimar and Nazi Germany key topics 1–2 (8 lessons, Paper 3 option 31, 1.1–2.4); on GitHub `main`, not published
 
 **Lessons:**

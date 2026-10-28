@@ -13,6 +13,8 @@ import {medicineTopic4, medicineLessons4} from './content-medicine4.js?v=2026102
 import {westernFrontTopic, westernFrontLessons} from './content-westernfront.js?v=20261028-history09';
 import {germanyTopic1, germanyLessons1} from './content-germany1.js?v=20261028-history09';
 import {germanyTopic2, germanyLessons2} from './content-germany2.js?v=20261028-history09';
+import {germanyTopic3, germanyLessons3} from './content-germany3.js?v=20261028-history09';
+import {germanyTopic4, germanyLessons4} from './content-germany4.js?v=20261028-history09';
 export const source = 'https://qualifications.pearson.com/content/dam/pdf/GCSE/History/2016/specification-and-sample-assessments/gcse-9-1-history-specification.pdf';
 export const specIssue = 'Issue 6, June 2024';
 export const units = [
@@ -21,5 +23,5 @@ export const units = [
   {id: '11', title: 'Medicine in Britain, c1250–present, and the Western Front, 1914–18', paper: 'Paper 1 · Thematic study and historic environment'},
   {id: '31', title: 'Weimar and Nazi Germany, 1918–39', paper: 'Paper 3 · Modern depth study'},
 ];
-export const topics = [elizabethTopic1, elizabethTopic2, elizabethTopic3, coldwarTopic1, coldwarTopic2, coldwarTopic3, medicineTopic1, medicineTopic2, medicineTopic3, medicineTopic4, westernFrontTopic, germanyTopic1, germanyTopic2];
-export const lessons = [...elizabethLessons1, ...elizabethLessons2, ...elizabethLessons3, ...coldwarLessons1, ...coldwarLessons2, ...coldwarLessons3, ...medicineLessons1, ...medicineLessons2, ...medicineLessons3, ...medicineLessons4, ...westernFrontLessons, ...germanyLessons1, ...germanyLessons2];
+export const topics = [elizabethTopic1, elizabethTopic2, elizabethTopic3, coldwarTopic1, coldwarTopic2, coldwarTopic3, medicineTopic1, medicineTopic2, medicineTopic3, medicineTopic4, westernFrontTopic, germanyTopic1, germanyTopic2, germanyTopic3, germanyTopic4];
+export const lessons = [...elizabethLessons1, ...elizabethLessons2, ...elizabethLessons3, ...coldwarLessons1, ...coldwarLessons2, ...coldwarLessons3, ...medicineLessons1, ...medicineLessons2, ...medicineLessons3, ...medicineLessons4, ...westernFrontLessons, ...germanyLessons1, ...germanyLessons2, ...germanyLessons3, ...germanyLessons4];
