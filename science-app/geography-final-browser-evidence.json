@@ -903,7 +903,7 @@
     "riverUrbanCompletionsRestoredAfterOptionSwitch": true,
     "legacy151CompletionsRetained": true,
     "finalPathCompleted": "163/163 rivers+glaciers Water",
-    "HistoryRenders": 144,
+    "HistoryRenders": 152,
     "keyboardModelSubmit": true
   },
   "consoleErrors": [],
@@ -916,7 +916,30 @@
     "Specialist review not performed"
   ],
   "hosting": {
-    "status": "not_published"
+    "sourceCommit": "547d8621938969ddf287989afefbe1e48095908e",
+    "deployment": "appgdep_6ae1ed5fd4588191bb3a43f09659be41",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_052f079ebf20819195446ff2d500a70b",
+    "status": "succeeded",
+    "at": "2026-10-28T12:41:19.513821+00:00",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "audience": "owner-private unchanged",
+    "archive": "science-app-geography-final.tar.gz (ignored)",
+    "helperCheckout": "/private/tmp/crashcourse-geography-final-yoVXBZ",
+    "runtimeFiles": 679,
+    "runtimeHashMismatches": 0,
+    "canonicalAppCommit": "6c64831",
+    "canonicalAppPush": "succeeded; receipt commit follows",
+    "liveChecks": {
+      "GeographyTotal": 189,
+      "fieldworkExploreAll": 9,
+      "skills": 10,
+      "studentActivityFields": 6,
+      "riverDefaultPauseLoop": true,
+      "HistoryTotal": 152,
+      "entryCache": "20261028-geofinal",
+      "consoleErrors": []
+    },
+    "proof": "crash-course-geography-final-live.png"
   },
   "visibleDraftRoundTrips": [
     {
@@ -1004,10 +1027,17 @@
       "durationMs": 371.251458
     },
     "integratedMain": "f7671db7cc4c90cf5fe08f52a8507d01cb29bb01",
-    "HistoryLessons": 144,
+    "HistoryLessons": 152,
     "processViews": 4,
     "staticViews": 52,
     "snapshots": 6,
-    "retainedHashedDatasets": 3
+    "retainedHashedDatasets": 3,
+    "finalIntegration": {
+      "passed": 137,
+      "failed": 0,
+      "durationMs": 388.791209,
+      "scope": "History and Geography after origin/main c77556f integration",
+      "HistoryLessons": 152
+    }
   }
 }
