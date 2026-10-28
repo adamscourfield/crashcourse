@@ -290,55 +290,6 @@ lesson(T, 'coldwar.cominform-comecon', 'Cominform, Comecon and NATO', ['P4 1.2']
   Q('cwd6.c8', 'What did NATO\'s formation mean for the USA?', ['A peacetime military alliance', 'Leaving Europe for good', 'Joining the Soviet-led Comecon'], 0, 'It was a first for the USA.', 'nato'),
 ], {exam: 'Write a narrative account analysing the key events in the division of Europe in the years 1947–49. (8 marks)'}),
 
-lesson(T, 'coldwar.blockade', 'The Berlin Blockade and Airlift', ['P4 1.2'], [
-  ['Divided Germany', 'Berlin lay deep inside the Soviet zone of Germany, but was itself divided into four sectors. The Western powers wanted Germany to recover; Stalin wanted it kept weak and to take reparations. In 1947 the British and American zones were merged into "Bizonia", and the French zone joined in 1948.'],
-  ['A new currency', 'In June 1948 the Western powers introduced a new currency, the Deutschmark, in their zones and in West Berlin, to help the economy recover. Stalin saw this as a step towards a separate West German state. On 24 June he cut all road, rail and canal links into West Berlin.'],
-  ['The airlift', 'Rather than fight their way in or abandon the city, the USA and Britain supplied West Berlin by air. For almost a year planes landed every few minutes, bringing food, coal and other supplies; around 275,000 flights carried over two million tonnes. Stalin could not shoot the planes down without starting a war.'],
-  ['Consequences', 'Stalin lifted the blockade in May 1949. It was a propaganda defeat for the USSR and a success for the West. Germany was formally divided: the Federal Republic of Germany (West Germany) was set up in May 1949 and the German Democratic Republic (East Germany) in October. NATO was formed in April 1949, and Berlin became a symbol of the Cold War.'],
-], view.factors('Why the blockade happened and what it led to', [
-  ['Causes', 'Bizonia and Trizonia; the new Deutschmark; disagreement over Germany\'s future'],
-  ['Western response', 'the airlift avoided both war and surrender'],
-  ['Results', 'a propaganda victory for the West; two German states'],
-  ['Wider effect', 'NATO formed; Berlin a Cold War flashpoint'],
-]), [
-  view.timeline('Berlin, 1947–49', [
-    ['Jan 1947', 'Bizonia created'],
-    ['Mar 1948', 'France joins: Trizonia'],
-    ['Jun 1948', 'The Deutschmark introduced; blockade begins on 24 June'],
-    ['Jun 1948–May 1949', 'The airlift'],
-    ['Apr 1949', 'NATO formed'],
-    ['May 1949', 'Blockade lifted; West Germany created'],
-    ['Oct 1949', 'East Germany created'],
-  ]),
-  view.people('People', [
-    ['Joseph Stalin', 'Ordered the blockade'],
-    ['Harry Truman', 'Chose the airlift'],
-    ['Berliners', 'Two million people in the western sectors'],
-    ['Allied air crews', 'Flew the airlift'],
-  ]),
-  view.source('A source type: a photograph of the airlift', 'A photograph of Berlin children standing on rubble watching a cargo plane come in to land at Tempelhof airport.', 'Useful for showing the airlift and its importance to Berliners; it was widely used by the West as propaganda.'),
-], [
-  ['Why did Stalin begin the blockade?', ['He saw the new currency as a step towards a separate West German state', 'He wanted to stop the Western powers from leaving Berlin too quickly', 'The Western powers had attacked the Soviet zone of Germany in 1948'], 0, 'Germany\'s future was at stake.'],
-  ['Why did the West choose an airlift?', ['It supplied the city without fighting a way in or giving up Berlin', 'It was cheaper than sending supplies by road, rail or canal', 'Stalin had agreed in advance that planes could use his airspace'], 0, 'It avoided war and surrender.'],
-  ['Exam skill · Explain two consequences. Which is a consequence of the Berlin Blockade?', ['Germany was formally divided into two states in 1949, making the split permanent.', 'The blockade began on 24 June 1948 when Stalin cut road and rail links.', 'Planes landed at Tempelhof airport in West Berlin every few minutes.'], 0, 'A consequence is a result, explained.'],
-  ['Why was the blockade a propaganda defeat for Stalin?', ['He was seen trying to starve a city and still failed to force the West out', 'He was forced to pay for the whole cost of the airlift after it ended', 'The people of East Berlin voted to join West Germany in 1949'], 0, 'The West looked humane and determined.'],
-], [
-  Q('cwd7.p1', 'When did the blockade begin?', ['June 1948', 'May 1949', 'August 1961'], 0, 'It began on 24 June.', 'blockade'),
-  Q('cwd7.p2', 'What new currency did the West introduce?', ['The Deutschmark', 'The Rentenmark', 'The rouble'], 0, 'It came in June 1948.', 'causes'),
-  Q('cwd7.p3', 'What was Bizonia?', ['The merged British and US zones', 'The Soviet zone of Germany', 'The eastern sector of Berlin'], 0, 'Created in January 1947.', 'causes'),
-  Q('cwd7.p4', 'When was the blockade lifted?', ['May 1949', 'June 1948', 'October 1949'], 0, 'After almost a year.', 'consequences'),
-  Q('cwd7.p5', 'Which German state was created in October 1949?', ['East Germany (GDR)', 'West Germany (FRG)', 'Austria'], 0, 'West Germany came in May.', 'consequences'),
-], [
-  Q('cwd7.c1', 'Roughly how many flights did the airlift make?', ['About 275,000', 'About 2,750', 'About 2.75 million'], 0, 'Planes every few minutes.', 'airlift'),
-  Q('cwd7.c2', 'Where did Berlin lie?', ['Inside the Soviet zone', 'On the French border', 'In the British zone'], 0, 'Deep in the east.', 'causes'),
-  Q('cwd7.c3', 'Why could Stalin not shoot the planes down?', ['It would start a war', 'They were too high', 'They were Soviet planes'], 0, 'The airlift was safe from that.', 'airlift'),
-  Q('cwd7.c4', 'Which zone joined Bizonia in 1948?', ['The French zone', 'The Soviet zone', 'The Polish zone'], 0, 'Making Trizonia.', 'causes'),
-  Q('cwd7.c5', 'What did the airlift carry?', ['Food, coal and supplies', 'Only soldiers and weapons', 'Only letters and newspapers'], 0, 'Over two million tonnes.', 'airlift'),
-  Q('cwd7.c6', 'Which alliance formed during the blockade?', ['NATO', 'The Warsaw Pact', 'Comecon'], 0, 'It was formed in April 1949.', 'consequences'),
-  Q('cwd7.c7', 'What did Stalin want for Germany?', ['To keep it weak', 'To make it rich', 'To give it to France'], 0, 'And to take reparations.', 'causes'),
-  Q('cwd7.c8', 'What did Berlin become?', ['A Cold War symbol', 'A neutral capital', 'A Soviet city'], 0, 'It became a flashpoint.', 'consequences'),
-], {exam: 'Explain two consequences of the Berlin Blockade. (8 marks)'}),
-
 lesson(T, 'coldwar.arms-race', 'The arms race and the Warsaw Pact', ['P4 1.3'], [
   ['The atomic monopoly ends', 'The USA had the only atomic bombs from 1945 until August 1949, when the USSR tested its own, years earlier than the USA expected. Each side now feared the other could strike first, and both raced to build more and more powerful weapons.'],
   ['Hydrogen bombs and missiles', 'The USA tested the first hydrogen bomb, far more powerful than the atomic bomb, in 1952; the USSR followed in 1953. In 1957 the USSR tested the first intercontinental ballistic missile and launched Sputnik, the first satellite, which showed it could reach the USA with nuclear warheads. Americans feared they had fallen behind.'],

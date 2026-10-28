@@ -435,9 +435,9 @@ lesson(T, 'elizabeth.armada-plans', 'Spanish plans for invasion', ['B4 2.4'], [
 ], {exam: 'Describe two features of Spain\'s plans to invade England in 1588. (4 marks)'}),
 
 lesson(T, 'elizabeth.armada-failure', 'Why the Armada failed', ['B4 2.4'], [
-  ['In the Channel', 'The Armada reached the Channel in late July 1588 and sailed in a tight crescent formation that the English fleet, under Lord Howard of Effingham with Drake, could not break. Fighting at long range did little damage to either side as the Armada moved towards Calais.'],
-  ['Fireships at Calais', 'The Armada anchored off Calais on 6 August to wait for Parma, who was not ready. On the night of 7 August the English sent eight fireships, ships set alight and packed with explosives, into the anchored fleet. The Spanish ships cut their anchors and scattered in panic, breaking the formation.'],
-  ['The Battle of Gravelines', 'On 8 August the English attacked the scattered Armada off Gravelines. Their faster, more manoeuvrable ships, many rebuilt to Hawkins\'s designs, and their better long-range guns caused heavy damage. Strong winds then drove the Armada north into the North Sea, away from Parma.'],
+  ['In the Channel', 'The Armada was sighted off Cornwall on 19 July 1588 (English calendar dates are used here; Spain\'s calendar ran ten days ahead) and sailed in a tight crescent formation that the English fleet, under Lord Howard of Effingham with Drake, could not break. Fighting at long range did little damage to either side as the Armada moved towards Calais.'],
+  ['Fireships at Calais', 'The Armada anchored off Calais on 27 July to wait for Parma, who was not ready. On the night of 28 July the English sent eight fireships, ships set alight and packed with explosives, into the anchored fleet. The Spanish ships cut their anchors and scattered in panic, breaking the formation.'],
+  ['The Battle of Gravelines', 'On 29 July the English attacked the scattered Armada off Gravelines. Their faster, more manoeuvrable ships, many rebuilt to Hawkins\'s designs, and their better long-range guns caused heavy damage. Strong winds then drove the Armada north into the North Sea, away from Parma.'],
   ['The voyage home', 'The Armada sailed around Scotland and the west of Ireland to get home. Storms wrecked many ships, and sailors who reached the Irish coast were often killed. Only about half the ships returned to Spain, and thousands of men died. English losses were very small.'],
 ], view.factors('Why the Armada failed', [
   ['English strengths', 'faster ships, better guns and tactics such as the fireships'],
@@ -445,12 +445,12 @@ lesson(T, 'elizabeth.armada-failure', 'Why the Armada failed', ['B4 2.4'], [
   ['Leadership', 'Howard and Drake\'s experience against Medina Sidonia\'s inexperience'],
   ['Weather', 'winds and storms drove the Armada north and wrecked it'],
 ]), [
-  view.timeline('July–September 1588', [
-    ['29 Jul', 'The Armada sighted off Cornwall'],
-    ['Late Jul–early Aug', 'Running fights up the Channel'],
-    ['6 Aug', 'The Armada anchors off Calais'],
-    ['7–8 Aug', 'Fireships attack at night'],
-    ['8 Aug', 'The Battle of Gravelines'],
+  view.timeline('July–September 1588 (English calendar)', [
+    ['19 Jul', 'The Armada sighted off Cornwall'],
+    ['20–27 Jul', 'Running fights up the Channel'],
+    ['27 Jul', 'The Armada anchors off Calais'],
+    ['28 Jul', 'Fireships attack at night'],
+    ['29 Jul', 'The Battle of Gravelines'],
     ['9 Aug', 'Elizabeth speaks to her troops at Tilbury'],
     ['Sept 1588', 'Ships wrecked off Scotland and Ireland'],
   ]),
@@ -468,15 +468,15 @@ lesson(T, 'elizabeth.armada-failure', 'Why the Armada failed', ['B4 2.4'], [
   ['What happened on the voyage home?', ['Storms wrecked many ships off Scotland and Ireland', 'The Armada was escorted home safely by French ships', 'The Spanish captured several English ports on the way'], 0, 'Most losses came after the battle.'],
 ], [
   Q('eld20.p1', 'Who commanded the English fleet?', ['Lord Howard of Effingham', 'Francis Drake', 'The Earl of Leicester'], 0, 'With Drake as vice-admiral.', 'channel'),
-  Q('eld20.p2', 'Where were the fireships sent in?', ['Calais', 'Plymouth', 'Lisbon'], 0, 'This was on 7 August.', 'fireships'),
-  Q('eld20.p3', 'Where was the main battle fought?', ['Gravelines', 'Cadiz harbour', 'Zutphen, inland'], 0, 'On 8 August 1588.', 'gravelines'),
+  Q('eld20.p2', 'Where were the fireships sent in?', ['Calais', 'Plymouth', 'Lisbon'], 0, 'This was on the night of 28 July.', 'fireships'),
+  Q('eld20.p3', 'Where was the main battle fought?', ['Gravelines', 'Cadiz harbour', 'Zutphen, inland'], 0, 'It was fought on 29 July 1588.', 'gravelines'),
   Q('eld20.p4', 'What formation did the Armada use?', ['A crescent', 'A single line', 'A square'], 0, 'It was hard to break.', 'channel'),
   Q('eld20.p5', 'Roughly how many Spanish ships returned?', ['About half', 'Almost all', 'None at all'], 0, 'Many were wrecked.', 'voyage-home'),
 ], [
   Q('eld20.c1', 'How many fireships were sent?', ['Eight', 'Eighty', 'Two'], 0, 'Packed with explosives.', 'fireships'),
   Q('eld20.c2', 'Who rebuilt many English ships?', ['John Hawkins', 'Francis Walsingham', 'William Cecil'], 0, 'He designed faster ships.', 'gravelines'),
   Q('eld20.c3', 'Which way did the wind drive the Armada?', ['North', 'South', 'West'], 0, 'Away from Parma.', 'gravelines'),
-  Q('eld20.c4', 'Where did Elizabeth speak to her troops?', ['Tilbury', 'Dover', 'Windsor'], 0, 'She spoke on 9 August.', 'channel'),
+  Q('eld20.c4', 'Where did Elizabeth speak to her troops?', ['Tilbury', 'Dover', 'Windsor'], 0, 'She spoke on 9 August 1588.', 'channel'),
   Q('eld20.c5', 'Why was the Armada waiting off Calais?', ['For Parma, who was not ready', 'For more food and fresh water', 'For orders from the Pope'], 0, 'The plan failed.', 'fireships'),
   Q('eld20.c6', 'Were English losses heavy?', ['No, very small', 'Yes, very heavy', 'Half the fleet'], 0, 'Spain lost thousands.', 'voyage-home'),
   Q('eld20.c7', 'Which route did the Armada take home?', ['Around Scotland and Ireland', 'Back down the English Channel', 'Overland through France'], 0, 'Storms then struck.', 'voyage-home'),

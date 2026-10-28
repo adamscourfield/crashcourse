@@ -1,3 +1,35 @@
+## History depth batch 05: Cold War key topic 2 (8 lessons, P4 2.1–2.3) and roadmap corrections; on GitHub `main`, not published
+
+**Lessons:**
+- refugees and the ultimatum;
+- the summits of 1959–61;
+- the impact of the Wall;
+- the Bay of Pigs;
+- thirteen days;
+- consequences of the missile crisis;
+- Dubček;
+- the Brezhnev Doctrine.
+
+**Corrections:**
+- Removed the duplicate Blockade depth lesson from batch 04.
+- Dropped 7 planned Medicine depth lessons that would have padded single-case-study overviews; the roadmap is now **212**.
+- Moved the two Berlin-crisis lessons into key topic 2.
+- Made the Armada dates consistent (English calendar).
+- Details: `curriculum/history-remaining-plan.md`.
+
+**Totals:** History has 107 lessons; 105 are left on the roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 8 new lessons plus the whole-app checks: 149 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-05.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 06, Cold War key topic 3 (P4 3.1–3.3, 9 lessons).
+
 ## History depth batch 04: Cold War key topic 1 (10 lessons, P4 1.1–1.3); on GitHub `main`, not published
 
 **Lessons:**

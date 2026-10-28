@@ -10,7 +10,6 @@ Date: 28 October 2026. Status: implemented, technically QA'd and pushed to GitHu
 | The Long and Novikov Telegrams | P4 1.2 | What each said; why they mattered; containment | Explain two consequences… (8) |
 | The Truman Doctrine and the Marshall Plan | P4 1.2 | Greece and Turkey; the doctrine; the aid plan; the Soviet response | Explain the importance… (8) |
 | Cominform, Comecon and NATO | P4 1.2 | The three organisations and the two blocs | Narrative account… (8) |
-| The Berlin Blockade and Airlift | P4 1.2 | Bizonia, the Deutschmark, the airlift, two German states | Explain two consequences… (8) |
 | The arms race and the Warsaw Pact | P4 1.3 | Atomic and hydrogen bombs, ICBMs, Sputnik; West German rearmament and the Pact | Explain the importance… (8) |
 | The Hungarian Uprising | P4 1.3 | Rákosi, the secret speech, October 1956, the invasion | Narrative account… (8) |
 | International reaction to Hungary | P4 1.3 | Why the West did not act; the UN; consequences | Explain two consequences… (8) |
@@ -25,3 +24,7 @@ The exam-skill challenges use the three P4 question types: consequences, narrati
 | Interaction | The History flow walked the 10 new lessons through every stage, plus the whole-app checks: 181 checks pass. |
 | Regression | 781 automated tests pass. |
 | Accuracy | Checked against standard accounts while writing; not reviewed by a historian. Soviet war deaths (about twenty million) and Marshall Aid (about $13 billion) are rounded standard figures. |
+
+## Correction (28 October 2026, batch 05)
+
+The Berlin Blockade depth lesson (`coldwar.blockade`) was removed: it duplicated the existing overview `coldwar.berlin` (Berlin, 1948–49). This batch therefore now has 9 lessons. See `curriculum/history-remaining-plan.md`.
