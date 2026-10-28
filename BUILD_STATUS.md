@@ -1,3 +1,15 @@
+## Literature batch 5 — Inspector02–11, 28 October 2026
+
+Ten lessons implemented: Inspector/Sheila, Gerald, Mrs Birling, Eric, final telephone call, Inspector’s dramatic role, Eva/responsibility, class, gender and generations. Literature45built (Macbeth20/Carol14/Inspector11),130planned within adjustable175allocation;350shared English sessions and175reserved/unmapped Language slots unchanged. Inspector11of14original core built; expanded28allocation remains partial.
+
+Each has three explanation cards, three evidence views with selectable dramatic features, an interpretation challenge,3practice,4independent selected-response checks and an original writing prompt with revision criteria. Original teaching summaries only; no protected Priestley passage reproduced. Authorised copy required for exact evidence. Official AQA modern-text/skills requirements and publisher synopsis checked; BTL education synopsis used for factual sequence cross-check. No specialist review; writing remains saved and unmarked.
+
+QA:813full automated tests passed (38.95s). All10 offline handler journeys cover wrong/retry, first attempts, stage gates, locked checks, drafts/resume. Fixed test cleanup to use the studio’s actual query-qualified timer module. Earlier35 records preserved by unchanged content files/integration append; normalised SHA recorded.175unique roadmap IDs,45built/130planned,350programme slots,135representative coverage rows. Desktop browser now available:11Inspector lessons listed; lesson02 features, three views, wrong/retry challenge and practice, automatic advance to question2, writing version and draft/question resume after reload verified. Lesson03 visible and screenshot saved; user preview retained at localhost4177. This does not establish all10full browser journeys, phone/assistive-technology QA or specialist quality.
+
+Publication: canonical GitHub and existing owner-private Site pending; final receipt follows. Root repository and other subjects preserved. Preview QA created a labelled sample draft/version in lesson02; existing Geography progress retained.
+
+Next10:Inspector12–14 then first7Power and Conflict core units; detailed rights-aware source and assessment briefs first. Remaining Literature130sessions; Language mapping and actual reviewed writing remain separate.
+
 ## Literature batch 4 publication receipt — 28 October 2026
 
 **Published successfully16:04:43UTC:**nine Carol core units and Inspector opening.35builtLiterature (Macbeth20/Carol14/Inspector1),140planned of175working allocation. Shared350English budget/provisional175+175split unchanged;Language remains175reserved/unmapped slots. Carol14original core is built;its expanded28session allocation remains incomplete.

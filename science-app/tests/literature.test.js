@@ -4,10 +4,10 @@ import {readFileSync} from 'node:fs';
 import {lessons,topics} from '../dist/literature/content.js';
 import {restore,literatureGates,choiceIndices,viewHTML,draftVersionsHTML} from '../dist/literature/studio.js';
 import {subjects} from '../dist/progress.js';
-test('Literature has 35 text-scoped lessons and 245 stable question IDs',()=>{
- assert.equal(lessons.length,35);assert.equal(new Set(lessons.map(l=>l.id)).size,35);
+test('Literature has 45 text-scoped lessons and 315 stable question IDs',()=>{
+ assert.equal(lessons.length,45);assert.equal(new Set(lessons.map(l=>l.id)).size,45);
  const ids=new Set();for(const l of lessons){assert(topics.some(t=>t.id===l.topicId));assert.equal(l.cards.length,3);assert.equal(l.practice.length,3);assert.equal(l.check.length,4);assert.equal(l.views[0].kind,'language');assert.equal(l.views[0].words.length,3);assert(l.writing&&l.rubric.length===3);for(const q of [...l.practice,...l.check]){assert(!ids.has(q.id));ids.add(q.id);assert(q.options[q.answer]);assert(q.why);}}
- assert.equal(ids.size,245);assert.equal(subjects.find(s=>s.id==='english-literature').status,'available');
+ assert.equal(ids.size,315);assert.equal(subjects.find(s=>s.id==='english-literature').status,'available');
 });
 test('Knowledge gates require all language details, practice and independent answers; writing is separate',()=>{
  const l=lessons[0],p={seen:[0,1,2],passed:[0],observed:[0,1,2],wordSeen:[0,1],practice:Object.fromEntries(l.practice.map(q=>[q.id,{correct:true}])),checks:Object.fromEntries(l.check.map(q=>[q.id,q.answer])),draft:'A long draft is not a mark.'};
@@ -57,4 +57,7 @@ test('Batch 4 has nine Carol units and one Inspector unit with original-summary 
 });
 test('All twenty-five earlier lesson records are preserved in batch 4',async()=>{
  const {createHash}=await import('node:crypto');const sorted=v=>Array.isArray(v)?v.map(sorted):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,sorted(v[k])])):v;assert.equal(createHash('sha256').update(JSON.stringify(sorted(lessons.slice(0,25)))).digest('hex'),'28fdda9ec1b194fbb1854185afcb4317b2ba4340481595429741f977a4d61b9c');
+});
+test('Batch 5 contains ten original-summary Inspector lessons with stable unique items',async()=>{
+ const {batch05}=await import('../dist/literature/content-batch05.js');assert.equal(batch05.length,10);assert.deepEqual(batch05.map(l=>l.id),Array.from({length:10},(_,i)=>`lit.inspector.lesson-${String(i+2).padStart(2,'0')}`));for(const l of batch05){assert.equal(l.rights,'protected_summary_only');assert.equal(l.refs[0],'3.2.1');assert(l.views[0].originalSummary);assert(!viewHTML(l.views[0]).includes('<blockquote'));assert(l.tasks[0][4]);assert.equal(new Set([...l.practice,...l.check].map(q=>q.prompt)).size,7);for(const q of [...l.practice,...l.check])assert(q.concept.startsWith('lit.inspector.'));}
 });

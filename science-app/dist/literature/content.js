@@ -1,3 +1,4 @@
+import {batch05} from './content-batch05.js?v=20261028-lit05';
 import {batch04} from './content-batch04.js?v=20261028-lit04';
 import {batch03} from './content-batch03.js?v=20261028-lit03';
 import {batch02} from './content-batch02.js?v=20261028-lit02';
@@ -961,3 +962,5 @@ lessons.push(...batch02);
 lessons.push(...batch03);
 
 lessons.push(...batch04);
+
+lessons.push(...batch05);

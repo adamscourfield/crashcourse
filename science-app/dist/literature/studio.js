@@ -1,4 +1,4 @@
-import {lessons, topics, units, source, specIssue} from './content.js?v=20261028-lit04';
+import {lessons, topics, units, source, specIssue} from './content.js?v=20261028-lit05';
 import {questionFlow, cancelQuestionAdvance} from '../question-flow.js?v=20261023-flow01';
 import {recordConcept, dueConcepts} from '../progress.js?v=20261028-subjects01';
 import {summarise} from '../progress-summary.js?v=20261023-mastery01';

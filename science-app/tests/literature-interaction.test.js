@@ -4,7 +4,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {lessons} from '../dist/literature/content.js';
 import {createLiteratureStudio,KEY,literatureGates} from '../dist/literature/studio.js';
-import {cancelQuestionAdvance} from '../dist/question-flow.js';
+import {cancelQuestionAdvance} from '../dist/question-flow.js?v=20261023-flow01';
 function harness(seed){
  const nodes=[],extra=new Map(),storage=new Map(seed?[[KEY,JSON.stringify(seed)]]:[]);
  class Element{
@@ -46,7 +46,7 @@ test('All ten new lessons exercise actual handlers: wrong/retry, stages, checks,
    assert(h.modal().includes('100%'));assert(literatureGates(l,h.studio.state().lessons[l.id]).every(Boolean));
    const area=h.$('#litDraft');area.value='My <supported> reading of '+l.id;area.oninput();h.$('#litSaveDraft').click();
    assert.equal(h.studio.state().lessons[l.id].drafts.length,1);assert(h.$('#litVersions').innerHTML.includes('&lt;supported&gt;'));
-   const saved=JSON.parse(h.storage.get(KEY)),resumed=harness(saved);resumed.studio.render();assert.equal(resumed.$('#litDraft').value,area.value);assert.equal(resumed.studio.getProgress().total,35);assert.equal(resumed.studio.getProgress().completed,1);
+   const saved=JSON.parse(h.storage.get(KEY)),resumed=harness(saved);resumed.studio.render();assert.equal(resumed.$('#litDraft').value,area.value);assert.equal(resumed.studio.getProgress().total,45);assert.equal(resumed.studio.getProgress().completed,1);
   }
  }finally{cancelQuestionAdvance();globalThis.document=oldDoc;globalThis.localStorage=oldStorage;}
 });
@@ -60,7 +60,7 @@ test('Wrong independent first answer stays locked and retake archives it',()=>{
 test('A learner from the five-lesson release resumes the same question and writing after expansion',()=>{
  const oldDoc=globalThis.document,oldStorage=globalThis.localStorage;
  try{const l=lessons[0],q=l.practice[0],p={stage:2,card:2,seen:[0,1,2],observed:[0,1,2],viewIndex:0,wordSeen:[0,1,2],task:0,passed:[0],practice:{[q.id]:{choice:q.answer,first:1,correct:true}},pi:0,checks:{},ci:0,draft:'An existing interpretation',drafts:[{text:'Earlier version',at:1}]};
- const h=harness({version:1,lessonId:l.id,lessons:{[l.id]:p},concepts:{}});h.studio.render();assert.equal(h.studio.state().lessonId,l.id);assert.equal(h.$('#litDraft').value,p.draft);assert.equal(h.studio.state().lessons[l.id].practice[q.id].first,1);assert(h.$('#litVersions').innerHTML.includes('Earlier version'));assert.equal(h.studio.getProgress().total,35);h.$('#hContinue').click();assert.equal(h.studio.state().lessons[l.id].pi,1);
+ const h=harness({version:1,lessonId:l.id,lessons:{[l.id]:p},concepts:{}});h.studio.render();assert.equal(h.studio.state().lessonId,l.id);assert.equal(h.$('#litDraft').value,p.draft);assert.equal(h.studio.state().lessons[l.id].practice[q.id].first,1);assert(h.$('#litVersions').innerHTML.includes('Earlier version'));assert.equal(h.studio.getProgress().total,45);h.$('#hContinue').click();assert.equal(h.studio.state().lessons[l.id].pi,1);
  }finally{cancelQuestionAdvance();globalThis.document=oldDoc;globalThis.localStorage=oldStorage;}
 });
 test('Batch 3 handlers work across texts with wrong/retry, all knowledge stages and topic-scoped counts',()=>{
@@ -97,8 +97,8 @@ test('Recall for Carol stays in Carol with correct scope while Macbeth progress 
 });
 test('Batch 4 runs all ten knowledge journeys and preserves drafts across three topic contexts',()=>{
  const oldDoc=globalThis.document,oldStorage=globalThis.localStorage;
- try{for(const l of lessons.slice(25)){
-  const h=harness();h.studio.openProgressLesson(l.id,0);assert(h.root.innerHTML.includes(l.id.startsWith('lit.carol.')?' / 14 in A Christmas Carol':' / 1 in An Inspector Calls'));if(l.id.startsWith('lit.inspector.'))assert(h.root.innerHTML.includes('PAPER 2'));
+ try{for(const l of lessons.slice(25,35)){
+  const h=harness();h.studio.openProgressLesson(l.id,0);assert(h.root.innerHTML.includes(l.id.startsWith('lit.carol.')?' / 14 in A Christmas Carol':' / 11 in An Inspector Calls'));if(l.id.startsWith('lit.inspector.'))assert(h.root.innerHTML.includes('PAPER 2'));
   for(let i=0;i<3;i++)h.$('#hContinue').click();for(const b of h.all('[data-lit-word]'))b.click();for(let i=1;i<3;i++)h.all('[data-hview]').find(b=>Number(b.dataset.hview)===i).click();
   h.all('[data-htask]').find(b=>Number(b.dataset.htask)!==l.tasks[0][2]).click();assert.equal(h.$('#hFeedback').textContent,l.tasks[0][4]);h.all('[data-htask]').find(b=>Number(b.dataset.htask)===l.tasks[0][2]).click();h.$('#hContinue').click();
   for(const q of l.practice){h.all('[data-hanswer]').find(b=>Number(b.dataset.hanswer)!==q.answer).click();h.all('[data-hanswer]').find(b=>Number(b.dataset.hanswer)===q.answer).click();assert.notEqual(h.studio.state().lessons[l.id].practice[q.id].first,q.answer);h.$('#hContinue').click();}
@@ -115,6 +115,15 @@ test('Carol independent writing has the correct text label, hidden guidance and 
 });
 test('Inspector recall and source notes stay in Paper 2 and do not claim public-domain play text',()=>{
  const oldDoc=globalThis.document,oldStorage=globalThis.localStorage;
- try{const h=harness({version:1,lessonId:'lit.carol.lesson-01',lessons:{},concepts:{'lit.inspector.irony':{needsReview:true,due:0},'lit.carol.narrator':{needsReview:true,due:0}}});h.studio.reviewTopic('english-literature.inspector-calls');assert(h.studio.state().review.ids.every(id=>id.startsWith('lit.inspector.')));assert(h.root.innerHTML.includes('PAPER 2'));assert(h.root.innerHTML.includes(' / 1 in An Inspector Calls'));assert.equal(h.$('.lit-writing').hidden,true);h.studio.openSources();assert(h.modal().includes('J. B. Priestley'));assert(h.modal().includes('3.2.1'));assert(!h.modal().includes('public-domain'));h.studio.openMap();assert(h.modal().includes('Macbeth'));assert(h.modal().includes('A Christmas Carol'));assert(h.modal().includes('An Inspector Calls'));assert(!h.modal().includes('Power and Conflict'));
+ try{const h=harness({version:1,lessonId:'lit.carol.lesson-01',lessons:{},concepts:{'lit.inspector.irony':{needsReview:true,due:0},'lit.carol.narrator':{needsReview:true,due:0}}});h.studio.reviewTopic('english-literature.inspector-calls');assert(h.studio.state().review.ids.every(id=>id.startsWith('lit.inspector.')));assert(h.root.innerHTML.includes('PAPER 2'));assert(h.root.innerHTML.includes(' / 11 in An Inspector Calls'));assert.equal(h.$('.lit-writing').hidden,true);h.studio.openSources();assert(h.modal().includes('J. B. Priestley'));assert(h.modal().includes('3.2.1'));assert(!h.modal().includes('public-domain'));h.studio.openMap();assert(h.modal().includes('Macbeth'));assert(h.modal().includes('A Christmas Carol'));assert(h.modal().includes('An Inspector Calls'));assert(!h.modal().includes('Power and Conflict'));
  }finally{cancelQuestionAdvance();globalThis.document=oldDoc;globalThis.localStorage=oldStorage;}
+});
+test('Batch 5 all ten lessons pass real handlers with wrong/retry, independent locking, drafts and resume',()=>{
+ const oldDoc=globalThis.document,oldStorage=globalThis.localStorage;
+ try{for(const l of lessons.slice(35)){
+  const h=harness();h.studio.openProgressLesson(l.id,0);assert(h.root.innerHTML.includes(' / 11 in An Inspector Calls'));assert(h.root.innerHTML.includes('PAPER 2'));
+  for(let i=0;i<3;i++)h.$('#hContinue').click();for(const b of h.all('[data-lit-word]'))b.click();for(let i=1;i<3;i++)h.all('[data-hview]').find(b=>Number(b.dataset.hview)===i).click();h.all('[data-htask]').find(b=>Number(b.dataset.htask)!==l.tasks[0][2]).click();assert.equal(h.$('#hFeedback').textContent,l.tasks[0][4]);h.all('[data-htask]').find(b=>Number(b.dataset.htask)===l.tasks[0][2]).click();h.$('#hContinue').click();
+  for(const q of l.practice){h.all('[data-hanswer]').find(b=>Number(b.dataset.hanswer)!==q.answer).click();h.all('[data-hanswer]').find(b=>Number(b.dataset.hanswer)===q.answer).click();assert.notEqual(h.studio.state().lessons[l.id].practice[q.id].first,q.answer);h.$('#hContinue').click();}
+  for(const q of l.check){h.all('[data-hanswer]').find(b=>Number(b.dataset.hanswer)===q.answer).click();assert.equal(h.$('#hFeedback').textContent,'Answer recorded.');h.$('#hContinue').click();}assert(literatureGates(l,h.studio.state().lessons[l.id]).every(Boolean));h.$('#litDraft').value='My supported interpretation of '+l.id;h.$('#litDraft').oninput();h.$('#litSaveDraft').click();const r=harness(JSON.parse(h.storage.get(KEY)));r.studio.render();assert.equal(r.$('#litDraft').value,'My supported interpretation of '+l.id);assert.equal(r.studio.getProgress().completed,1);assert.equal(r.studio.getProgress().total,45);
+ }}finally{cancelQuestionAdvance();globalThis.document=oldDoc;globalThis.localStorage=oldStorage;}
 });
