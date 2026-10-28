@@ -17,3 +17,9 @@ coverage/
 
 # Generated deployment packages; source and QA screenshots are tracked
 /science-app*.tar.gz
+
+# Generated server build; lesson assets in dist remain authored source
+/science-app/dist/server/
+/science-app/dist/client/
+/science-app/dist/.openai/
+/science-app/runtime/public/

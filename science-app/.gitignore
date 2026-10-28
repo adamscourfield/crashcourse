@@ -1,0 +1,14 @@
+# Authored learning assets in dist remain tracked; server output is generated.
+/dist/server/
+/dist/client/
+/dist/.openai/
+/runtime/public/
+/runtime/dist/
+node_modules/
+.env
+.env.*
+!.env.example
+.dev.vars*
+.wrangler/
+.sites-runtime/
+*.tar.gz

@@ -1,0 +1,29 @@
+{
+  "checked": "2026-10-28",
+  "provider": "OpenAI user-confirmed",
+  "implementation": "complete_pending_private_key_and_hosted_rollout",
+  "full_suite": {
+    "passed": 830,
+    "duration_ms": 38375.760209
+  },
+  "final_focused": {
+    "passed": 71,
+    "duration_ms": 511.199042,
+    "scope": "after explicit independent AI-concealment assertions"
+  },
+  "api_tests": "Mocked responses:server-owned rubric,storefalse/schema,auth/origin/size/cooldown,refusal/provider/incomplete/invalid errors,evidence substring validation,HTML escaping,selected paragraph snapshot/preserved knowledge,connection/short/error states",
+  "runtime_build": "Supported Sites Vinext Worker build passed;697 authored frontend assets exactly hash-match build/client;no OPENAI_API_KEY string in client bundle",
+  "http_checks": "Production-like Worker localhost4189 root200,status200availablefalse;existing localpreview4177 migrated to loopback Node shim with same source/API",
+  "browser": "Paragraph feedback panel visible;GetAIfeedback disabled and explicit not-connected state;existing drafts remain usable;no genuine model response attempted",
+  "screenshot": "crash-course-ai-feedback-preview.jpg",
+  "credentials": "No Site API key configured;OpenAI Developers not installed as last checked;offered for installation;no keys committed or pasted",
+  "not_done": [
+    "Secure private API key setup",
+    "Genuine opt-in synthetic model request",
+    "Hosted Worker rollout with secret",
+    "Specialist calibration/marking-quality evaluation"
+  ],
+  "hosting": "Prepared Worker manifest/source in GitHub;currently hosted release remains lesson-only static sourceb1422f43",
+  "privacy": "Explicit student action;question/criteria/selected paragraph sent to provider;browser-local snapshot;no app paragraph database/logging;storefalse not a zero-retention claim",
+  "assessment": "Practice criterion feedback only;no grades/mastery changes;independent AI hidden before firstsubmission"
+}

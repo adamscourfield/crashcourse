@@ -31,5 +31,15 @@
   "preview": "crash-course-literature-batch07-preview.jpg",
   "specialist_review": "not_performed",
   "writing": "Human marking outstanding;new API feedback feature is a separate change",
-  "publication": "pending"
+  "publication": {
+    "status": "succeeded",
+    "at": "2026-10-28T17:50:01.935069+00:00",
+    "canonical_app_commit": "101c4a398fb0f7be296447df2f1f3025bc24ba2f",
+    "source": "b1422f43c3c73cec174a7726316b0b67ced508a0",
+    "deployment_id": "appgdep_6ae235bd34748191b27c2e3f314d032e",
+    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_d6e2115156dc8191b2117f6dc580d282",
+    "runtime_hash_match_files": 696,
+    "audience": "owner-private unchanged",
+    "scope": "Lesson-only static release; new AI backend is not yet deployed"
+  }
 }
