@@ -1,3 +1,23 @@
+## History: Early Elizabethan England key topic 2 (4 lessons, B4 2.1–2.4); on GitHub `main`, not published
+
+**Lessons:**
+- revolt, plots and Mary's execution;
+- relations with Spain and the privateers;
+- the outbreak of war, 1585–88;
+- the Armada.
+
+**QA:**
+- History now has 8 lessons.
+- 758 automated tests pass. The History flow runs all eight lessons through every stage: 149 checks pass.
+- The option-length test caught a long-correct-answer tell in the first draft; it was fixed.
+- Brief: `curriculum/briefs/history-elizabeth-batch-02.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** B4 key topic 3, then the Cold War and Medicine. The Paper 3 option is still to be chosen.
+
 ## History: Edexcel 1HI0 studio and Early Elizabethan England key topic 1 (4 lessons, B4 1.1–1.4); on GitHub `main`, not published
 
 History is now an available subject: Pearson Edexcel GCSE History 1HI0, specification Issue 6, June 2024.

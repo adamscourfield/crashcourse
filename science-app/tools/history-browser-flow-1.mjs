@@ -26,6 +26,7 @@ const shot = n => page.screenshot({ path: `${OUT}/${n}.png` });
 const noOverflow = () => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1);
 const cont = () => page.click('#hContinue');
 const answerBtn = async (attr, idx) => page.click(`[${attr}="${idx}"]`);
+const openL = async l => { await page.click('#mapButton'); await page.click(`[data-htopic="${l.topicId}"]`); await page.click(`[data-hlesson="${l.id}"]`); };
 
 await page.goto(URL); await page.evaluate(() => localStorage.clear()); await page.goto(URL, { waitUntil: 'networkidle' });
 await page.selectOption('#subject', 'history'); await page.waitForSelector('#hTitle');
@@ -36,12 +37,13 @@ await page.click('#mapButton');
 const map = await page.locator('dialog').innerText();
 ok(/Early Elizabethan England/.test(map) && !/Cold War|Medicine/.test(map), 'course map lists only built units');
 await page.click('[data-htopic]'); ok((await page.locator('dialog [data-hlesson]').count()) === 4, 'key topic 1 lists four lessons');
+await page.click('#closeModal'); await page.click('#mapButton'); ok((await page.locator('dialog [data-htopic]').count()) === new Set(lessons.map(l => l.topicId)).size, 'every built key topic is on the map'); await page.click('[data-htopic]');
 await page.click(`[data-hlesson="${lessons[0].id}"]`);
 await shot('h01-discover');
 
 for (const [n, l] of lessons.entries()) {
   const tag = l.id.split('.').pop();
-  if (n > 0) { await page.click('#hLessons'); await page.click(`[data-hlesson="${l.id}"]`); }
+  if (n > 0) await openL(l);
   ok((await page.locator('#historyContent .intro h1').innerText()) === l.title, `${tag}: opens`);
   // Discover: every card.
   for (let i = 0; i < l.cards.length; i++) await cont();
@@ -99,7 +101,7 @@ await shot('h05-review');
 
 await page.click('#progressButton'); ok(/History/.test(await page.locator('dialog').innerText()), 'progress dashboard opens for History'); await page.click('#closeModal');
 await page.setViewportSize({ width: 390, height: 844 });
-await page.click('#hLessons'); await page.click(`[data-hlesson="${lessons[1].id}"]`);
+await openL(lessons[1]);
 for (const st of [0, 1, 2, 3]) { await page.click(`[data-hstage="${st}"]`); ok(await noOverflow(), `390px: stage ${st + 1} has no overflow`); }
 await page.click('[data-hstage="1"]'); await shot('h06-mobile');
 await page.setViewportSize({ width: 1280, height: 900 });
