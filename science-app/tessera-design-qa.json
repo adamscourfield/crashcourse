@@ -29,5 +29,14 @@
     "Not every individual model visually audited",
     "No full assistive-technology audit"
   ],
-  "publication": "pending"
+  "publication": {
+    "status": "succeeded",
+    "at": "2026-10-28T17:02:06.904856+00:00",
+    "canonical_app_commit": "9106640183a0e2e098e45c43402be5e10d333801",
+    "source": "579b3892b1ef8c68fbcba9995927025c7375fa22",
+    "deployment": "appgdep_6ae22a7d93308191886f8fe48dd3199b",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_cd13faedbe0c8191bcc8f86f79b32e44",
+    "runtime_hash_match_files": 694,
+    "audience": "owner-private unchanged"
+  }
 }
