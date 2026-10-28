@@ -1,3 +1,24 @@
+## History: Cold War key topic 2 (4 lessons, P4 2.1–2.3); on GitHub `main`, not published
+
+**Lessons:**
+- Berlin 1958–63 and the Wall;
+- Cuba and the Bay of Pigs;
+- the Cuban Missile Crisis;
+- the Prague Spring.
+
+**Totals:** History now has 20 lessons.
+
+**QA:**
+- 763 automated tests pass after merging the latest release.
+- The History flow runs all 20 lessons: 341 checks pass.
+- Brief: `curriculum/briefs/history-coldwar-batch-02.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** P4 key topic 3, then Medicine. The Paper 3 option is still to be chosen.
+
 ## Water01 — five Water-option lessons published
 
 28 October 2026. Added freshwater distribution (6.8a), availability at global/national/local scales (6.8b), surplus and deficit (6.8c), changing supply/demand (6.8d), and sector proportions (6.9a). Geography now has **150 lessons across 11 built topics**, 450 practice questions and 600 checks. Remaining authoring plan: **39 lessons** = 9 Water + 11 UK challenges + 9 fieldwork + 10 skills. This plan is not a qualification-completion or specialist-review claim.
