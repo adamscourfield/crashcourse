@@ -14,19 +14,19 @@ order,lesson_id,title,topic_id,role,spec_ref,status
 13,history.elizabeth.mary-claim,"Mary, Queen of Scots: her claim and arrival",history.elizabeth.kt1,depth,B4 1.4,implemented
 14,history.elizabeth.mary-options,Elizabeth's options for dealing with Mary,history.elizabeth.kt1,depth,B4 1.4,implemented
 15,history.elizabeth.plots,"Revolt, plots and the execution of Mary",history.elizabeth.kt2,overview,B4 2.1,implemented
-16,history.elizabeth.northern-earls,"The Revolt of the Northern Earls, 1569",history.elizabeth.kt2,depth,B4 2.1,planned
-17,history.elizabeth.three-plots,"The Ridolfi, Throckmorton and Babington plots",history.elizabeth.kt2,depth,B4 2.1,planned
-18,history.elizabeth.walsingham,Walsingham and the spy network,history.elizabeth.kt2,depth,B4 2.1,planned
-19,history.elizabeth.mary-execution,"The execution of Mary, Queen of Scots, 1587",history.elizabeth.kt2,depth,B4 2.1,planned
+16,history.elizabeth.northern-earls,"The Revolt of the Northern Earls, 1569",history.elizabeth.kt2,depth,B4 2.1,implemented
+17,history.elizabeth.three-plots,"The Ridolfi, Throckmorton and Babington plots",history.elizabeth.kt2,depth,B4 2.1,implemented
+18,history.elizabeth.walsingham,Walsingham and the spy network,history.elizabeth.kt2,depth,B4 2.1,implemented
+19,history.elizabeth.mary-execution,"The execution of Mary, Queen of Scots, 1587",history.elizabeth.kt2,depth,B4 2.1,implemented
 20,history.elizabeth.spain,Relations with Spain and the privateers,history.elizabeth.kt2,overview,B4 2.2,implemented
-21,history.elizabeth.spain-rivalry,Political and religious rivalry with Spain,history.elizabeth.kt2,depth,B4 2.2,planned
-22,history.elizabeth.privateering,Commercial rivalry and privateering,history.elizabeth.kt2,depth,B4 2.2,planned
+21,history.elizabeth.spain-rivalry,Political and religious rivalry with Spain,history.elizabeth.kt2,depth,B4 2.2,implemented
+22,history.elizabeth.privateering,Commercial rivalry and privateering,history.elizabeth.kt2,depth,B4 2.2,implemented
 23,history.elizabeth.war,"The outbreak of war with Spain, 1585–88",history.elizabeth.kt2,overview,B4 2.3,implemented
-24,history.elizabeth.netherlands,"English involvement in the Netherlands, 1585–88",history.elizabeth.kt2,depth,B4 2.3,planned
-25,history.elizabeth.cadiz,"Drake and the raid on Cadiz, 1587",history.elizabeth.kt2,depth,B4 2.3,planned
+24,history.elizabeth.netherlands,"English involvement in the Netherlands, 1585–88",history.elizabeth.kt2,depth,B4 2.3,implemented
+25,history.elizabeth.cadiz,"Drake and the raid on Cadiz, 1587",history.elizabeth.kt2,depth,B4 2.3,implemented
 26,history.elizabeth.armada,"The Spanish Armada, 1588",history.elizabeth.kt2,overview,B4 2.4,implemented
-27,history.elizabeth.armada-plans,Spanish plans for invasion,history.elizabeth.kt2,depth,B4 2.4,planned
-28,history.elizabeth.armada-failure,Why the Armada failed,history.elizabeth.kt2,depth,B4 2.4,planned
+27,history.elizabeth.armada-plans,Spanish plans for invasion,history.elizabeth.kt2,depth,B4 2.4,implemented
+28,history.elizabeth.armada-failure,Why the Armada failed,history.elizabeth.kt2,depth,B4 2.4,implemented
 29,history.elizabeth.education,Education and leisure,history.elizabeth.kt3,overview,B4 3.1,implemented
 30,history.elizabeth.schools,"Education in the home, schools and universities",history.elizabeth.kt3,depth,B4 3.1,planned
 31,history.elizabeth.leisure,"Sport, pastimes and the theatre",history.elizabeth.kt3,depth,B4 3.1,planned

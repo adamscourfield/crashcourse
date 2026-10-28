@@ -1,3 +1,30 @@
+## History depth batch 02: Elizabethan England key topic 2 (10 lessons, B4 2.1–2.4); on GitHub `main`, not published
+
+**Lessons:**
+- the Revolt of the Northern Earls;
+- the three plots;
+- Walsingham;
+- the execution of Mary;
+- political and religious rivalry with Spain;
+- commercial rivalry and privateering;
+- the Netherlands;
+- Cadiz;
+- Spanish invasion plans;
+- why the Armada failed.
+
+**Totals:** History has 82 lessons; 138 are left on the 220-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 10 new lessons plus the whole-app checks: 181 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-02.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 03, Elizabethan England key topic 3 (B4 3.1–3.4, 8 lessons), then the Cold War.
+
 ## History scope expansion, depth batch 01: Elizabethan England key topic 1 (10 lessons, B4 1.1–1.4); on GitHub `main`, not published
 
 **Decision (user, 28 October 2026):** History must match Geography's scope. Plan: `curriculum/history-remaining-plan.md`. Roadmap: `curriculum/history-lesson-roadmap.csv`, 220 lessons in total:
