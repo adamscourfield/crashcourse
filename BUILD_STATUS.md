@@ -1,3 +1,26 @@
+## History depth batch 10: Medicine key topic 4 (6 lessons, 11 4.1–4.2); on GitHub `main`, not published
+
+**Lessons:**
+- genetic and lifestyle causes;
+- modern diagnosis;
+- hospital care and the NHS;
+- magic bullets and antibiotics;
+- high-tech medical and surgical treatment;
+- mass vaccination and lifestyle campaigns.
+
+**Totals:** History has 144 lessons; 69 are left on the 213-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 6 new lessons plus the whole-app checks: 117 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-10.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** the Western Front (13 lessons).
+
 ## History depth batch 09: Medicine key topic 3 (7 lessons, 11 3.1–3.3); on GitHub `main`, not published
 
 **Lessons:**

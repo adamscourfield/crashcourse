@@ -113,14 +113,14 @@ order,lesson_id,title,topic_id,role,spec_ref,status
 112,history.medicine.broad-street,John Snow and the Broad Street pump,history.medicine.kt3,depth,11 3.3,implemented
 113,history.medicine.public-health-1875,The Public Health Act of 1875,history.medicine.kt3,depth,11 3.2,implemented
 114,history.medicine.modern-ideas,"Modern ideas: genetics, lifestyle and diagnosis",history.medicine.kt4,overview,11 4.1,implemented
-115,history.medicine.genetics,Genetic and lifestyle causes,history.medicine.kt4,depth,11 4.1,planned
-116,history.medicine.diagnosis,Modern diagnosis,history.medicine.kt4,depth,11 4.1,planned
+115,history.medicine.genetics,Genetic and lifestyle causes,history.medicine.kt4,depth,11 4.1,implemented
+116,history.medicine.diagnosis,Modern diagnosis,history.medicine.kt4,depth,11 4.1,implemented
 117,history.medicine.nhs-treatment,"Treatment and care: magic bullets, the NHS and high-tech medicine",history.medicine.kt4,overview,11 4.2,implemented
-118,history.medicine.nhs,Hospital care and the NHS,history.medicine.kt4,depth,11 4.2,planned
-119,history.medicine.magic-bullets,Magic bullets and antibiotics,history.medicine.kt4,depth,11 4.2,planned
-120,history.medicine.high-tech,High-tech medical and surgical treatment,history.medicine.kt4,depth,11 4.2,planned
+118,history.medicine.nhs,Hospital care and the NHS,history.medicine.kt4,depth,11 4.2,implemented
+119,history.medicine.magic-bullets,Magic bullets and antibiotics,history.medicine.kt4,depth,11 4.2,implemented
+120,history.medicine.high-tech,High-tech medical and surgical treatment,history.medicine.kt4,depth,11 4.2,implemented
 121,history.medicine.modern-prevention,"Modern prevention: vaccination, government action and lifestyle campaigns",history.medicine.kt4,overview,11 4.2,implemented
-122,history.medicine.campaigns,Mass vaccination and lifestyle campaigns,history.medicine.kt4,depth,11 4.2,planned
+122,history.medicine.campaigns,Mass vaccination and lifestyle campaigns,history.medicine.kt4,depth,11 4.2,implemented
 123,history.medicine.penicillin,"Case study: Fleming, Florey and Chain and penicillin",history.medicine.kt4,overview,11 4.3;11 4.2,implemented
 124,history.medicine.lung-cancer,Case study: the fight against lung cancer,history.medicine.kt4,overview,11 4.3,implemented
 125,history.medicine.wf-context,"The Western Front: battles, trenches and terrain",history.medicine.wf,overview,11 HE1,implemented
