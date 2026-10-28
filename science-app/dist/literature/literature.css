@@ -2,3 +2,5 @@
 #literatureContent .lit-version{margin:14px 0;padding:12px 16px;background:#f8f6f2;border-radius:10px}#literatureContent .lit-version p{white-space:pre-wrap;overflow-wrap:anywhere}
 
 #literatureContent .lit-writing-extract{white-space:pre-wrap;line-height:1.8;overflow-wrap:anywhere;font-family:Georgia,serif;margin:20px 0}#literatureContent #litIndependent .primary{margin-bottom:12px}
+
+#literatureContent .lit-scene-summary{font-family:Georgia,serif;font-size:24px;line-height:1.55;color:white;margin:24px 0}

@@ -1,0 +1,39 @@
+{
+  "checked": "2026-10-28",
+  "url": "https://www.gutenberg.org/files/46/46-h/46-h.htm",
+  "html_sha256": "6f6618c0cf7906bd8ec96982b30c3f3c70cf4b2d54230ff8fc113d1ed53e1384",
+  "quotes_matched": 9,
+  "independent_extract_matched": true,
+  "inspector": "Original scene summary; no protected play text reproduced; publisher/ERA and school teaching resource cross-check",
+  "batch": "Literature04",
+  "new_lessons": 10,
+  "total_built": 35,
+  "topics": {
+    "Macbeth": 20,
+    "A Christmas Carol": 14,
+    "An Inspector Calls": 1
+  },
+  "working_literature_allocation": 175,
+  "remaining_planned_literature": 140,
+  "shared_english_programme": "350sessions70weeks;provisional175Literature175reserved_unmappedLanguage",
+  "new_practice": 30,
+  "new_checks": 40,
+  "total_practice": 105,
+  "total_checks": 140,
+  "full_suite": {
+    "passed": 811,
+    "duration_ms": 37221.471542,
+    "scope": "before final Inspector historical-context clarification"
+  },
+  "final_focused": {
+    "passed": 43,
+    "scope": "22Literature tests plus progress/question-flow after that content clarification"
+  },
+  "old25_records": "unchanged normalised SHA256 28fdda9ec1b194fbb1854185afcb4317b2ba4340481595429741f977a4d61b9c",
+  "offline_handler_journeys": "all10newlessons;wrong/retry/locked knowledge checks/drafts/resume;Carol independent first submission and revision;three-text recall/paper/author/rights isolation",
+  "browser": "not_exercised under recorded browser-tool security restriction;no alternate route",
+  "specialist_review": "not_performed",
+  "writing": "saved_unmarked",
+  "inspector_source_limit": "Publisher synopsis and ERA catalogue opened; school teaching-guide search extract checked for opening details; publisher public preview perusal metadata accessed but image-only pages not read as text; no protected passage reproduced",
+  "hosting": "pending_native_publication_receipt"
+}
