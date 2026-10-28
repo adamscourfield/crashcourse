@@ -180,18 +180,18 @@ order,lesson_id,title,topic_id,role,spec_ref,status
 179,history.germany.church-opposition,Opposition from the Churches,history.germany.kt3,depth,31 3.4,implemented
 180,history.germany.youth-opposition,Opposition from young people,history.germany.kt3,depth,31 3.4,implemented
 181,history.germany.women,Nazi policies towards women,history.germany.kt4,overview,31 4.1,implemented
-182,history.germany.family-policy,Nazi views of women and family policy,history.germany.kt4,depth,31 4.1,planned
-183,history.germany.women-work,Women's employment and appearance,history.germany.kt4,depth,31 4.1,planned
+182,history.germany.family-policy,Nazi views of women and family policy,history.germany.kt4,depth,31 4.1,implemented
+183,history.germany.women-work,Women's employment and appearance,history.germany.kt4,depth,31 4.1,implemented
 184,history.germany.young,Nazi policies towards young people,history.germany.kt4,overview,31 4.2,implemented
-185,history.germany.hitler-youth,The Hitler Youth and the League of German Maidens,history.germany.kt4,depth,31 4.2,planned
-186,history.germany.education,Nazi education,history.germany.kt4,depth,31 4.2,planned
+185,history.germany.hitler-youth,The Hitler Youth and the League of German Maidens,history.germany.kt4,depth,31 4.2,implemented
+186,history.germany.education,Nazi education,history.germany.kt4,depth,31 4.2,implemented
 187,history.germany.employment,Employment and living standards,history.germany.kt4,overview,31 4.3,implemented
-188,history.germany.unemployment,Reducing unemployment,history.germany.kt4,depth,31 4.3,planned
-189,history.germany.kdf,The Labour Front and Strength through Joy,history.germany.kt4,depth,31 4.3,planned
+188,history.germany.unemployment,Reducing unemployment,history.germany.kt4,depth,31 4.3,implemented
+189,history.germany.kdf,The Labour Front and Strength through Joy,history.germany.kt4,depth,31 4.3,implemented
 190,history.germany.persecution,The persecution of minorities,history.germany.kt4,overview,31 4.4,implemented
-191,history.germany.minorities,Racial beliefs and the treatment of minorities,history.germany.kt4,depth,31 4.4,planned
-192,history.germany.jews-1933-35,"The persecution of Jews, 1933–35",history.germany.kt4,depth,31 4.4,planned
-193,history.germany.kristallnacht,Kristallnacht and after,history.germany.kt4,depth,31 4.4,planned
+191,history.germany.minorities,Racial beliefs and the treatment of minorities,history.germany.kt4,depth,31 4.4,implemented
+192,history.germany.jews-1933-35,"The persecution of Jews, 1933–35",history.germany.kt4,depth,31 4.4,implemented
+193,history.germany.kristallnacht,Kristallnacht and after,history.germany.kt4,depth,31 4.4,implemented
 194,history.skills.p1-describe,Exam skills · Paper 1: explain one similarity or difference (4),history.medicine.kt1,exam_skill,11 skills,planned
 195,history.skills.p1-explain,Exam skills · Paper 1: explain why (12),history.medicine.kt1,exam_skill,11 skills,planned
 196,history.skills.p1-how-far,Exam skills · Paper 1: how far do you agree (16),history.medicine.kt1,exam_skill,11 skills,planned

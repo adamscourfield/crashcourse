@@ -1,3 +1,29 @@
+## History depth batch 15: Life in Nazi Germany, key topic 4 (9 lessons, 31 4.1–4.4); on GitHub `main`, not published
+
+**Lessons:**
+- family policy;
+- women's work and appearance;
+- the Hitler Youth and League of German Maidens;
+- education;
+- reducing unemployment;
+- the Labour Front and Strength through Joy;
+- racial beliefs and minorities;
+- persecution of Jews 1933–35;
+- Kristallnacht and after.
+
+**Totals:** History has 192 lessons; 16 are left on the 208-lesson roadmap (15 exam-skill lessons and `coldwar.leaders-attitudes`). All four Germany topics are marked partly published.
+
+**QA:**
+- 789 automated tests pass.
+- The History flow walked the 9 new lessons plus the whole-app checks: 165 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-15.md`.
+
+**Not done:**
+- Site publication of batches 12–15 (40 lessons);
+- teacher review.
+
+**Next:** `coldwar.leaders-attitudes` and the 15 exam-skill lessons. The skill lessons need requirement rows for their skill refs.
+
 ## History depth batch 14: Nazi control and dictatorship, key topic 3 (11 lessons, 31 3.1–3.4); on GitHub `main`, not published
 
 **Lessons:**
