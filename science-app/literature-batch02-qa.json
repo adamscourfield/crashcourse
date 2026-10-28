@@ -39,5 +39,14 @@
   "browser": "not_exercised; recorded browser-tool security restriction from batch01 remains; no alternate browser-control route used",
   "specialist_review": "not_performed",
   "writing": "saved_unmarked",
-  "hosting": "pending_native_publication_receipt"
+  "hosting": {
+    "status": "succeeded",
+    "at": "2026-10-28T14:52:46.463704+00:00",
+    "canonical_app_commit": "b03fba65cfdb32506bfee6f42d2ea618fb07e3c3",
+    "source": "f2e72ef9857264d4154a3edcb3262cc3cb8ad12e",
+    "deployment_id": "appgdep_6ae20c30648c819198c8dc48d738a886",
+    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_1479e78a4b888191a7b902c6cd7f5b1d",
+    "runtime_hash_match_files": 690,
+    "audience": "owner-private unchanged"
+  }
 }

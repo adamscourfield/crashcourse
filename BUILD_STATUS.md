@@ -1,3 +1,15 @@
+## English Literature batch 2 publication receipt — 28 October 2026
+
+**Ten new lessons published successfully at14:52:46UTC. Literature15built/83planned; Macbeth15/20.** Canonical app commit `b03fba65cfdb32506bfee6f42d2ea618fb07e3c3` was pushed and verified equal to origin/main with clean local state before packaging. Owner-private audience unchanged: one owner, no groups or external visitors. Other subjects preserved.
+
+- Site source: `f2e72ef9857264d4154a3edcb3262cc3cb8ad12e`;690runtime files exactly hash-matched canonical source.
+- Deployment: `appgdep_6ae20c30648c819198c8dc48d738a886`; native status`succeeded`.
+- Saved version: `appgprj_6ad1be5897a88191909a03ad57857103~appgver_1479e78a4b888191a7b902c6cd7f5b1d`.
+- Live URL: https://gcse-science-atom-lab.anaxied.chatgpt.site
+- QA:799fulltests38.38s;32final focused tests after the old-release resume test. Offline handlers exercise all10newlessons, wrong/retry/locked answers/failed-check retake/draft versions/resume. Original5records unchanged. All10quotations matched primary text. Browser visual/mobile/keyboard QA remains outstanding under the recorded security restriction; no specialist review or automatic writing-marking claim.
+
+Receipt-only root commit/push follows. Next batch:5remaining Macbeth lessons and first5A Christmas Carol; user requests10per batch.
+
 ## English Literature batch 2 — ten Macbeth lessons, 28 October 2026
 
 User requests ten lessons per batch. Added discovery/suspicion2.3–2.4; insecure crown3.1–3.2; banquet3.3–3.6 including Hecate; apparitions4.1; resistance4.2–4.3; unravelling5.1–5.4; ending5.5–end; whole-play Macbeth; whole-play Lady Macbeth; kingship. Folger5.8/some-editions5.9 distinction explicit. All ten quotations matched primary text after normalising typography/line numbers; original explanations and supported alternative readings. Precise sources and batch brief in curriculum/briefs/literature-macbeth-02.md.
