@@ -45,7 +45,7 @@ Briefcurriculum/briefs/geography-a-water03-uk01.md;coveragecurriculum/geography-
 **Totals:** History now has 41 lessons: B4, P4 and the Option 11 thematic study.
 
 **QA:**
-- 774 automated tests pass.
+- 768 automated tests pass.
 - The History flow runs all 41 lessons: 677 checks pass.
 - Brief: `curriculum/briefs/history-medicine-batch-04.md`.
 
@@ -67,7 +67,7 @@ Briefcurriculum/briefs/geography-a-water03-uk01.md;coveragecurriculum/geography-
 **Totals:** History now has 36 lessons.
 
 **QA:**
-- 774 automated tests pass.
+- 768 automated tests pass.
 - The History flow runs all 36 lessons: 597 checks pass.
 - Brief: `curriculum/briefs/history-medicine-batch-03.md`.
 
@@ -91,7 +91,7 @@ Briefcurriculum/briefs/geography-a-water03-uk01.md;coveragecurriculum/geography-
 **Totals:** History now has 31 lessons: all of B4 and P4, and Medicine key topics 1–2.
 
 **QA:**
-- 774 automated tests pass.
+- 768 automated tests pass.
 - The History flow runs all 31 lessons: 517 checks pass.
 - Briefs: `curriculum/briefs/history-medicine-batch-01.md`, `-02.md`.
 
