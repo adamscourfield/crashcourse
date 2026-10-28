@@ -1,3 +1,29 @@
+## History depth batch 06: Cold War key topic 3 (9 lessons, P4 3.1–3.3). Cold War depth lessons complete; on GitHub `main`, not published
+
+**Lessons:**
+- SALT 1 and Helsinki;
+- SALT 2 and the end of détente;
+- Afghanistan and the Carter Doctrine;
+- the Olympic boycotts;
+- Reagan and SDI;
+- Gorbachev and the INF Treaty;
+- the revolutions of 1989;
+- the fall of the Wall and reunification;
+- the end of the Warsaw Pact and the USSR.
+
+**Totals:** History has 116 lessons; 96 are left on the 212-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 9 new lessons plus the whole-app checks: 165 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-06.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** Medicine depth lessons (Option 11 key topics 1–4 and the Western Front), then Germany, then the exam-skill lessons.
+
 ## History depth batch 05: Cold War key topic 2 (8 lessons, P4 2.1–2.3) and roadmap corrections; on GitHub `main`, not published
 
 **Lessons:**

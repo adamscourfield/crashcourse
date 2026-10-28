@@ -65,18 +65,18 @@ order,lesson_id,title,topic_id,role,spec_ref,status
 64,history.coldwar.dubcek,Dubček and opposition in Czechoslovakia,history.coldwar.kt2,depth,P4 2.3,implemented
 65,history.coldwar.brezhnev-doctrine,The Brezhnev Doctrine and its consequences,history.coldwar.kt2,depth,P4 2.3,implemented
 66,history.coldwar.detente,Détente in the 1970s,history.coldwar.kt3,overview,P4 3.1,implemented
-67,history.coldwar.salt-helsinki,SALT 1 and the Helsinki Agreements,history.coldwar.kt3,depth,P4 3.1,planned
-68,history.coldwar.salt2,SALT 2 and the end of détente,history.coldwar.kt3,depth,P4 3.1,planned
+67,history.coldwar.salt-helsinki,SALT 1 and the Helsinki Agreements,history.coldwar.kt3,depth,P4 3.1,implemented
+68,history.coldwar.salt2,SALT 2 and the end of détente,history.coldwar.kt3,depth,P4 3.1,implemented
 69,history.coldwar.afghanistan,Afghanistan and the 'Second Cold War',history.coldwar.kt3,overview,P4 3.2,implemented
-70,history.coldwar.carter-doctrine,The invasion of Afghanistan and the Carter Doctrine,history.coldwar.kt3,depth,P4 3.2,planned
-71,history.coldwar.olympics,The Olympic boycotts,history.coldwar.kt3,depth,P4 3.2,planned
-72,history.coldwar.reagan-sdi,Reagan and the Strategic Defense Initiative,history.coldwar.kt3,depth,P4 3.2,planned
+70,history.coldwar.carter-doctrine,The invasion of Afghanistan and the Carter Doctrine,history.coldwar.kt3,depth,P4 3.2,implemented
+71,history.coldwar.olympics,The Olympic boycotts,history.coldwar.kt3,depth,P4 3.2,implemented
+72,history.coldwar.reagan-sdi,Reagan and the Strategic Defense Initiative,history.coldwar.kt3,depth,P4 3.2,implemented
 73,history.coldwar.gorbachev,"Reagan, Gorbachev and the thaw",history.coldwar.kt3,overview,P4 3.2,implemented
-74,history.coldwar.inf,Gorbachev's new thinking and the INF Treaty,history.coldwar.kt3,depth,P4 3.2,planned
+74,history.coldwar.inf,Gorbachev's new thinking and the INF Treaty,history.coldwar.kt3,depth,P4 3.2,implemented
 75,history.coldwar.collapse,"The collapse of Soviet control, 1985–91",history.coldwar.kt3,overview,P4 3.3,implemented
-76,history.coldwar.revolutions-1989,The revolutions of 1989,history.coldwar.kt3,depth,P4 3.3,planned
-77,history.coldwar.wall-falls,The fall of the Berlin Wall and reunification,history.coldwar.kt3,depth,P4 3.3,planned
-78,history.coldwar.ussr-ends,The end of the Warsaw Pact and the USSR,history.coldwar.kt3,depth,P4 3.3,planned
+76,history.coldwar.revolutions-1989,The revolutions of 1989,history.coldwar.kt3,depth,P4 3.3,implemented
+77,history.coldwar.wall-falls,The fall of the Berlin Wall and reunification,history.coldwar.kt3,depth,P4 3.3,implemented
+78,history.coldwar.ussr-ends,The end of the Warsaw Pact and the USSR,history.coldwar.kt3,depth,P4 3.3,implemented
 79,history.medicine.medieval-ideas,Medieval ideas about the causes of disease,history.medicine.kt1,overview,11 1.1,implemented
 80,history.medicine.religion-cause,Supernatural and religious explanations,history.medicine.kt1,depth,11 1.1,planned
 81,history.medicine.humours,The Four Humours and miasma,history.medicine.kt1,depth,11 1.1,planned
