@@ -1,3 +1,38 @@
+## History: Edexcel 1HI0 studio and Early Elizabethan England key topic 1 (4 lessons, B4 1.1–1.4); on GitHub `main`, not published
+
+History is now an available subject: Pearson Edexcel GCSE History 1HI0, specification Issue 6, June 2024.
+
+**Units chosen by the user:**
+- Option 11: Medicine in Britain, with the Western Front;
+- B4: Early Elizabethan England;
+- P4: Superpower relations and the Cold War.
+
+All their content bullets are mapped (paraphrased) in `curriculum/history-requirements.csv`. **The Paper 3 option has not been chosen.**
+
+**Built:**
+- A new studio, `science-app/dist/history/`: Discover cards; an Investigate evidence explorer (factors, timeline, people, source focus; all views must be opened) with challenges that include exam skills; Practise; Check (80%); recall review; progress dashboard.
+- B4 key topic 1: England in 1558; the 1559 settlement; Puritan and Catholic challenges; Mary, Queen of Scots.
+- Each lesson has an exam practice question for planning on paper (not marked).
+
+**Source policy:** documents are described by type, author, date and content; no quotation is invented.
+
+**QA:**
+- 758 automated tests pass (`tests/history-subject.test.js`: 5 tests). These cover content integrity, option-length balance, gates, restore and requirement mapping.
+- `tools/history-browser-flow-1.mjs`: 84 checks pass, across all four lessons, wrong paths, resume, recall review and 390px. Maths flow 1 passes.
+- An existing Biology test file named `history.test.js` was briefly overwritten during development and restored unchanged.
+- Brief: `curriculum/briefs/history-elizabeth-batch-01.md`.
+
+**Cache:** `progress.js` changed, so publishing needs the global version bump.
+
+**Not done:**
+- Site publication;
+- teacher or specialist review;
+- re-checking the paraphrased specification wording against the PDF;
+- written answers (not marked);
+- real images and quoted sources.
+
+**Next:** B4 key topics 2–3, then the Cold War and Medicine. The Paper 3 choice is needed from the user.
+
 ## Energy03 — five lessons published
 
 28 October 2026. Completed the five-lesson batch begun27October:Energy6.6a stakeholder attitudes;6.7a sustainable management reasons;6.7b management views;6.7c Germany developed andIndia emerging cases. Geography145lessons across10topics;435practice/580checks;Energy14. Total579=361Science+73Maths+145Geography. Energy eligible131coasts+rivers/134coasts+glaciers/135rivers+glaciers;Water117/120/121unchanged. ResourceOption,stableIDs and storage unchanged;planned rows converted in place. Remaining44planned=14Water+11UKchallenges+9fieldwork+10skills. IntroductoryEnergy6.3–6.7teaching introduced;extended/GIS/footprint/specialistevidence remains open.

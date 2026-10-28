@@ -1,0 +1,21 @@
+/* History studio: evidence explorer views inside the dark scene panel. */
+.h-panel{gap:14px}
+.h-tabs{display:flex;flex-wrap:wrap;gap:8px}
+.h-tabs .scene-button[aria-pressed="true"]{background:#f5e5dc;color:#182e44}
+.h-view{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:18px 20px;max-height:430px;overflow-y:auto}
+.h-view-title{margin:0 0 12px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:22px;color:#fff}
+.h-timeline{list-style:none;margin:0;padding:0 0 0 14px;border-left:2px solid #ed8b78}
+.h-timeline li{position:relative;display:grid;grid-template-columns:72px 1fr;gap:10px;padding:7px 0 7px 10px;color:#e8eef2;line-height:1.45}
+.h-timeline li::before{content:'';position:absolute;left:-21px;top:13px;width:10px;height:10px;border-radius:50%;background:#ed8b78;border:2px solid #142622}
+.h-date{font-weight:700;color:#f5e5dc}
+.h-cards,.h-factors{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.h-card,.h-factor{display:flex;flex-direction:column;gap:6px;background:rgba(255,255,255,.07);border-radius:10px;padding:12px 14px;color:#dfe8ec;line-height:1.45}
+.h-card b,.h-factor b{color:#fff}
+.h-factor{border-left:3px solid #a8d5b5}
+.h-source{background:#f8f3ea;color:#2b2a26;border-radius:10px;padding:14px 16px;line-height:1.5}
+.h-source p{margin:4px 0 12px}
+.h-source-k{font-size:11px;letter-spacing:.08em;color:#8a6d4f;font-weight:700}
+.h-exam p{line-height:1.5}
+.h-note{color:#798580;font-size:13px}
+.h-map-unit{font-size:14px;margin:18px 0 8px;color:#315f4b}
+@media(max-width:800px){.h-view{max-height:none}.h-timeline li{grid-template-columns:60px 1fr}}
