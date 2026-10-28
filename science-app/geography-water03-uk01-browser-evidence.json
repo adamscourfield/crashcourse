@@ -17,9 +17,9 @@
     "full": {
       "passed": 774,
       "failed": 0,
-      "duration_ms": 38102.054917,
-      "log": "/private/tmp/ten03-final-combined.log",
-      "note": "Latest41Historyintegrationrunpending"
+      "duration_ms": 38627.616875,
+      "log": "/private/tmp/ten03-release-combined.log",
+      "note": "Final41Historyintegrationpassed"
     },
     "focused": {
       "passed": 110,
@@ -61,7 +61,7 @@
     "upstream": "3ce71dd",
     "preserved": "Medicinebatches1\u20134;41Historylessons",
     "review": "ExistingHistoryreviewstatusretained;nonewcontentreview",
-    "browser": "LocalHistory36renders;UK6CompletedandWater14Completedretained;consoleerrorsnone"
+    "browser": "LocalHistory41renders;UK6Completedretained;no consoleerrors"
   },
   "limitations": [
     "Specialistnotreviewed",
@@ -71,7 +71,16 @@
     "Country/stateindicatorsnotcomparableuniversalsustainabilityscores"
   ],
   "publication": {
-    "status": "pending",
-    "audience": "owner_private_unchanged"
+    "status": "succeeded",
+    "audience": "owner_private_unchanged",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "source_commit": "713db94fa8b393943f4b863c69143499589e54e2",
+    "deployment_id": "appgdep_6ae1b4f864748191a0383a5d05eb1f51",
+    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_64f0305c32348191972730cb8a958750",
+    "updated_at": "2026-10-28T08:40:37.807751+00:00",
+    "runtime_hash_matches": 640,
+    "archive": "science-app-water03-uk01.tar.gz",
+    "live": "Authenticatedten03entrycache;Water14topiclist;sharedUK6topiclist;History41renders;consoleerrorsnone",
+    "proof": "crash-course-geography-ten03-live.png"
   }
 }
