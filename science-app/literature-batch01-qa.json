@@ -18,5 +18,18 @@
   "browser": "blocked_by_browser_security_policy",
   "visual_mobile_keyboard_wrong_answer_UI_resume": "not_exercised",
   "specialist_review": "not_performed",
-  "hosting": "pending_receipt_in_BUILD_STATUS"
+  "hosting": {
+    "status": "succeeded",
+    "source": "14d8193ed9d9703ec43abc8e8a4cb8da2e346df2",
+    "canonical_app_commit": "c16062cd5092d05b07bb8953cd8882af118e2229",
+    "runtime_files_matching": 689,
+    "deployment_id": "appgdep_6ae206768e508191a030386c204098a2",
+    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_d562bb3161e88191a8e91f83b40a755a",
+    "at": "2026-10-28T14:28:22.402661+00:00",
+    "audience": "owner-private unchanged"
+  },
+  "integration_tests": {
+    "passed": 30,
+    "scope": "Literature History progress after main9e34aea"
+  }
 }

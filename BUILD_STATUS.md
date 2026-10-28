@@ -1,3 +1,16 @@
+## English Literature batch 1 publication receipt — 28 October 2026
+
+**Published successfully at 14:28:22 UTC.** First five Macbeth lessons are available from English Literature;93 planned Literature lessons remain unavailable. Existing owner-private Site audience retained: one owner, no groups/external visitors.
+
+- Canonical app commit: `c16062cd5092d05b07bb8953cd8882af118e2229`, verified equal to origin/main after push. This includes latest History mark-scheme changes from `9e34aea` without overwriting them.
+- App-only Site source: `14d8193ed9d9703ec43abc8e8a4cb8da2e346df2`; all689runtime files hash-match canonical source. Separate helper checkout retained; root repository preserved.
+- Deployment: `appgdep_6ae206768e508191a030386c204098a2`; version `appgprj_6ad1be5897a88191909a03ad57857103~appgver_d562bb3161e88191a8e91f83b40a755a`; native status `succeeded`.
+- URL: https://gcse-science-atom-lab.anaxied.chatgpt.site
+- Technical QA:794full tests before readable draft snapshots;23focused after that addition;30Literature/History/progress checks after integrating the latest History changes. Final syntax/CSV/diff checks passed. No browser visual/mobile/keyboard or UI journey claimed: browser security policy blocked preview acquisition. No specialist review performed.
+- The publication also includes all208History lessons and latest corrected question wording from main9e34aea; their publication fields now reflect the actual deployment. This does not add a History specialist-review claim. Geography189 and all other subject content preserved.
+
+Receipt-only root commit/push follows. Next: visual QA when browser access is available, then the next five Macbeth lessons. Analytical drafts remain unmarked and distinct from knowledge completion.
+
 ## English Literature batch 1 — 28 October 2026
 
 Five untiered AQA 8702 Macbeth lessons implemented (1.1–2.2): A world turned upside down; Prophecy is not a command; Public loyalty, private ambition; The decision to kill; A mind that cannot rest. New Literature studio, selectable language readings, character knowledge and scene sequence views, 5 investigation challenges, 15 practice and 20 independent knowledge questions; saved analytical drafts with readable version snapshots; concept recall and shared progress/navigation. Existing subject IDs/storage remain unchanged. Knowledge completion and writing attainment are explicitly separate.
