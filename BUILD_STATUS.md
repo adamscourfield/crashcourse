@@ -13,6 +13,7 @@
 - 789 automated tests pass.
 - The History flow walked the 7 new lessons plus the whole-app checks: 133 checks pass.
 - Brief: `curriculum/briefs/history-depth-batch-17.md`.
+- **Completion check:** a full History browser walk of all 208 lessons through every stage, plus the whole-app checks: 3,349 checks pass, none fail.
 
 **Open:**
 - Site publication of the 56 lessons;
