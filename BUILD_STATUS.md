@@ -1,3 +1,9 @@
+## Literature batch 5 publication receipt — 28 October 2026
+
+Ten new Inspector lessons published successfully16:26:42UTC.45Literature lessons built,130planned in adjustable175allocation;350sharedEnglish budget unchanged. Canonical app commit `2ebf952577ad5ed21c6d1a727b5e81e2ab41d730` pushed and verified equal to origin/main with clean status before packaging. Site source `38011d5056c040722fb20c851d7b62508ed4defe`;693runtime files hash-match. Deployment `appgdep_6ae22231a39c8191a9830f42d9c3ebff`; version `appgprj_6ad1be5897a88191909a03ad57857103~appgver_cbcff737416c8191ae63cc2beb080e06`; native status succeeded. URL https://gcse-science-atom-lab.anaxied.chatgpt.site ; owner-private audience unchanged.
+
+813fulltests passed; all10offline handler journeys; actual desktop sample wrong/retry, auto advance, draft version and reload verified. Preview remains visible at localhost4177 with Inspector lesson list open; screenshots at crash-course-literature-batch05-preview.jpg and crash-course-literature-batch05-list.jpg. Phone/all10fullbrowser/assistive-technology and specialist review remain outstanding; writing unmarked. Existing Geography progress preserved; labelled test draft in Inspector02 retained. Receipt-only commit/push follows. Next10Inspector12–14 plus first7anthology core units; rights-aware briefs first.
+
 ## Literature batch 5 — Inspector02–11, 28 October 2026
 
 Ten lessons implemented: Inspector/Sheila, Gerald, Mrs Birling, Eric, final telephone call, Inspector’s dramatic role, Eva/responsibility, class, gender and generations. Literature45built (Macbeth20/Carol14/Inspector11),130planned within adjustable175allocation;350shared English sessions and175reserved/unmapped Language slots unchanged. Inspector11of14original core built; expanded28allocation remains partial.
