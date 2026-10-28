@@ -28,17 +28,17 @@ order,lesson_id,title,topic_id,role,spec_ref,status
 27,history.elizabeth.armada-plans,Spanish plans for invasion,history.elizabeth.kt2,depth,B4 2.4,implemented
 28,history.elizabeth.armada-failure,Why the Armada failed,history.elizabeth.kt2,depth,B4 2.4,implemented
 29,history.elizabeth.education,Education and leisure,history.elizabeth.kt3,overview,B4 3.1,implemented
-30,history.elizabeth.schools,"Education in the home, schools and universities",history.elizabeth.kt3,depth,B4 3.1,planned
-31,history.elizabeth.leisure,"Sport, pastimes and the theatre",history.elizabeth.kt3,depth,B4 3.1,planned
+30,history.elizabeth.schools,"Education in the home, schools and universities",history.elizabeth.kt3,depth,B4 3.1,implemented
+31,history.elizabeth.leisure,"Sport, pastimes and the theatre",history.elizabeth.kt3,depth,B4 3.1,implemented
 32,history.elizabeth.poor,The 'problem' of the poor,history.elizabeth.kt3,overview,B4 3.2,implemented
-33,history.elizabeth.poverty-causes,Why poverty increased,history.elizabeth.kt3,depth,B4 3.2,planned
-34,history.elizabeth.poor-laws,Changing attitudes and the Poor Laws,history.elizabeth.kt3,depth,B4 3.2,planned
+33,history.elizabeth.poverty-causes,Why poverty increased,history.elizabeth.kt3,depth,B4 3.2,implemented
+34,history.elizabeth.poor-laws,Changing attitudes and the Poor Laws,history.elizabeth.kt3,depth,B4 3.2,implemented
 35,history.elizabeth.exploration,Exploration and Drake's circumnavigation,history.elizabeth.kt3,overview,B4 3.3,implemented
-36,history.elizabeth.exploration-factors,Factors prompting exploration,history.elizabeth.kt3,depth,B4 3.3,planned
-37,history.elizabeth.drake,"Drake's circumnavigation, 1577–80",history.elizabeth.kt3,depth,B4 3.3,planned
+36,history.elizabeth.exploration-factors,Factors prompting exploration,history.elizabeth.kt3,depth,B4 3.3,implemented
+37,history.elizabeth.drake,"Drake's circumnavigation, 1577–80",history.elizabeth.kt3,depth,B4 3.3,implemented
 38,history.elizabeth.virginia,The attempted colonisation of Virginia,history.elizabeth.kt3,overview,B4 3.4,implemented
-39,history.elizabeth.roanoke,Raleigh and the Roanoke colonies,history.elizabeth.kt3,depth,B4 3.4,planned
-40,history.elizabeth.virginia-failure,Why the Virginia colony failed,history.elizabeth.kt3,depth,B4 3.4,planned
+39,history.elizabeth.roanoke,Raleigh and the Roanoke colonies,history.elizabeth.kt3,depth,B4 3.4,implemented
+40,history.elizabeth.virginia-failure,Why the Virginia colony failed,history.elizabeth.kt3,depth,B4 3.4,implemented
 41,history.coldwar.alliance,The Grand Alliance and early tension,history.coldwar.kt1,overview,P4 1.1,implemented
 42,history.coldwar.conferences,"Tehran, Yalta and Potsdam",history.coldwar.kt1,depth,P4 1.1,planned
 43,history.coldwar.ideologies,Capitalism and communism,history.coldwar.kt1,depth,P4 1.1,planned

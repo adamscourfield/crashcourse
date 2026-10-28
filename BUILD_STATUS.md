@@ -1,3 +1,28 @@
+## History depth batch 03: Elizabethan England key topic 3 (8 lessons, B4 3.1–3.4). Elizabethan depth lessons complete; on GitHub `main`, not published
+
+**Lessons:**
+- education;
+- sport, pastimes and the theatre;
+- why poverty increased;
+- the Poor Laws;
+- factors prompting exploration;
+- Drake's circumnavigation;
+- Raleigh and Roanoke;
+- why the Virginia colony failed.
+
+**Totals:** History has 90 lessons; B4 has 40. 130 are left on the roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 8 new lessons plus the whole-app checks: 149 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-03.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 04, Cold War key topic 1 (P4 1.1–1.3, 10 lessons).
+
 ## History depth batch 02: Elizabethan England key topic 2 (10 lessons, B4 2.1–2.4); on GitHub `main`, not published
 
 **Lessons:**
