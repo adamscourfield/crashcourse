@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Option B4: Early Elizabethan England, 1558–88.
 // Depth lessons for key topic 3 (specification 3.1–3.4). Each follows its subsection's overview lesson.
 // All text and questions are original; documents are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history09';
+import {Q, lesson, view} from './build.js?v=20261028-history-geofinal2';
 
 const T = 'history.elizabeth.kt3';
 

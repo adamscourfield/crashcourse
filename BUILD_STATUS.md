@@ -1,3 +1,296 @@
+## Final Geography authoring batch — fourteen lessons tested; publication pending
+
+28 October 2026. The remaining four fieldwork investigations and ten dedicated skills lessons are implemented. Geography has **189 lessons across14topics**,567practice and756independent selected-response checks. **Zero planned new lesson units remain** in the authoring register (24previously remaining rows now all implemented). This is lesson-inventory completion, not a claim of specialist approval or full independent assessment coverage.
+
+Fieldwork9 includes5shared enquiry lessons and4specific river/coast/central-innerurban/rural lessons. Each student sees one physical and one human investigation, independently of their landscape options. All24pathways supported; Water/Energy totals159coasts+rivers,162coasts+glaciers,163rivers+glaciers. All189are visible in explore-all mode. Stable lesson/question/concept IDs and version1saved progress preserved. New model drafts and first submissions are additive; existing151testcompletions retained.
+
+Every new lesson has3Discovercards,4requiredviews/challenges,3feedback-led practice and4fresh independent checks, plus a required student-input model activity. Actual entered bars, candidate trend line, arithmetic, code/year regional join, map annotations and unmarked writing draft complement selected response. Editing invalidates the checked model gate until rechecked. Four process loops (river flow, coastal transport, rural crossing and carbon-account sequence) default inline autoplay/Loop;52views remain static evidence/construction. Compact two-column numeric forms fit phone layouts. All five graph preview modes tested, with explicit warnings about the different data contexts needed for lines/histograms and complete parts for pies.
+
+Evidence: six primary raw snapshots and three retained genuine geospatial/Census records hashed in final-selected.json. Genuine HighForce and historical Mumbai images preserve credits/dates. NaturalEarth/INPE four-state polygons queried by code/year; regional annual clearance is not exact clearing pixels. Census is dated2021context, not live demographics. OS-style grid and contours are original teaching diagrams, not an authentic OSsheet/navigation aid. Footprint factors are explicitly invented; kgCO2e and normalised area/gha remain separate. RGS/BGS/OS/ONS/DESNZ/GFN and Issue5requirements inform the lessons. Physicalfieldwork minimum methods and secondary-source types mapped in brief/coverage; completing the app cannot authenticate the required two occasions outside school grounds.
+
+QA:789combined technical checks passed39.27s;124focused. FourteenUIjourneys100%; river75%independent failure→100%retake. Prematurecontinue,wrongchallenge,wrongpractice/reload/retry,independentfirstanswerlock/reload/automaticadvance and modelwrong/correct/edit/reload tested. All56views at390×844 fit without SVGtext/pageoverflow; both genuine images and14model forms exercised. Final compact form bounds checked for river/graphs/writing/footprints. The lastview-switch audit caught a display bug: frame redraw omitted saved drafts and could show empty boxes despite preserved answers. Fixed by forwarding the draft, then verified all14visible input-value round trips, including hidden fieldwork choices. Option switch coast/rural hides river/urban without changing rivers+glaciers landscape selection;switchback/reload restores their completed records. Finaltestpath163/163. Keyboard model submit checked; consoleerrorsnone. Reducedmotion notbrowseremulated;fullassistivedevice/specialistreview/extendedwriting/independenthanddrawing/externalGIS/schoolparticipation remainopen. Writing draft is explicitly unmarked; nonempty text is not quality grading.
+
+Concurrent History work frommainf7671db preserved:144History lessons rendered. App767=361Science+73Maths+189Geography+144History. Cache refreshed coherently; no Historycontent-review status upgraded. Finalsource includes that tested snapshot; later independent History work must be preserved if it arrives.
+
+Brief:curriculum/briefs/geography-a-final.md. Coverage:curriculum/geography-a-final-coverage.csv. QA:science-app/geography-final-browser-evidence.json. Preview:crash-course-geography-final-preview.png. Canonical GitHub push and owner-private Site publication follow, with receipts recorded separately after success. Next work: specialist/content review and the explicitly recorded independent-evidence/constructed/physical-fieldwork quality work, rather than another unbuilt Geography roadmap lesson.
+
+## History depth batch 10: Medicine key topic 4 (6 lessons, 11 4.1–4.2); on GitHub `main`, not published
+
+**Lessons:**
+- genetic and lifestyle causes;
+- modern diagnosis;
+- hospital care and the NHS;
+- magic bullets and antibiotics;
+- high-tech medical and surgical treatment;
+- mass vaccination and lifestyle campaigns.
+
+**Totals:** History has 144 lessons; 69 are left on the 213-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 6 new lessons plus the whole-app checks: 117 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-10.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** the Western Front (13 lessons).
+
+## History depth batch 09: Medicine key topic 3 (7 lessons, 11 3.1–3.3); on GitHub `main`, not published
+
+**Lessons:**
+- spontaneous generation and miasma;
+- Pasteur;
+- Koch;
+- anaesthetics;
+- antiseptics and asepsis;
+- Snow and Broad Street;
+- the 1875 Public Health Act.
+
+**Totals:** History has 138 lessons; 75 are left on the 213-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 7 new lessons plus the whole-app checks: 133 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-09.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** Medicine key topic 4 (6 lessons) and the Western Front (13 lessons).
+
+## History depth batch 08: Medicine key topic 2 (7 lessons, 11 2.1–2.3), and History checked against the Issue 6 specification; on GitHub `main`, not published
+
+**Lessons:**
+- continuity and change in ideas;
+- Sydenham;
+- printing and the Royal Society;
+- Renaissance treatment;
+- community and hospital care;
+- Vesalius and training;
+- plague in 1348 and 1665 compared.
+
+**Specification check:** the user supplied the Pearson PDF, and all 54 requirement rows were checked against it.
+- Six Cold War depth lessons had wrong subsection refs; corrected.
+- Option 31's Churches content moved to 3.3.
+- "Roma and Sinti" now named.
+- The planned Western Front lesson now covers "the RAMC and nurses".
+- A planned Cold War lesson was added for the leaders' attitudes (P4 1.1).
+- Details: `curriculum/briefs/history-depth-batch-08.md`.
+
+**Totals:** History has 131 lessons; 82 are left on the 213-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked 9 lessons plus the whole-app checks: 165 checks pass.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 09, Medicine key topics 3–4 (13 lessons, in two batches).
+
+## History depth batch 07: Medicine key topic 1 (8 lessons, 11 1.1–1.3); on GitHub `main`, not published
+
+**Lessons:**
+- religious explanations;
+- the humours and miasma;
+- Galen and the Church;
+- medieval prevention and treatment;
+- thirteenth-century hospitals;
+- physicians, apothecaries and barber surgeons;
+- the Black Death: beliefs and treatments;
+- the Black Death: stopping its spread.
+
+**Totals:** History has 124 lessons; 88 are left on the 212-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 8 new lessons plus the whole-app checks: 149 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-07.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 08, Medicine key topic 2 (7 lessons).
+
+## History depth batch 06: Cold War key topic 3 (9 lessons, P4 3.1–3.3). Cold War depth lessons complete; on GitHub `main`, not published
+
+**Lessons:**
+- SALT 1 and Helsinki;
+- SALT 2 and the end of détente;
+- Afghanistan and the Carter Doctrine;
+- the Olympic boycotts;
+- Reagan and SDI;
+- Gorbachev and the INF Treaty;
+- the revolutions of 1989;
+- the fall of the Wall and reunification;
+- the end of the Warsaw Pact and the USSR.
+
+**Totals:** History has 116 lessons; 96 are left on the 212-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 9 new lessons plus the whole-app checks: 165 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-06.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** Medicine depth lessons (Option 11 key topics 1–4 and the Western Front), then Germany, then the exam-skill lessons.
+
+## History depth batch 05: Cold War key topic 2 (8 lessons, P4 2.1–2.3) and roadmap corrections; on GitHub `main`, not published
+
+**Lessons:**
+- refugees and the ultimatum;
+- the summits of 1959–61;
+- the impact of the Wall;
+- the Bay of Pigs;
+- thirteen days;
+- consequences of the missile crisis;
+- Dubček;
+- the Brezhnev Doctrine.
+
+**Corrections:**
+- Removed the duplicate Blockade depth lesson from batch 04.
+- Dropped 7 planned Medicine depth lessons that would have padded single-case-study overviews; the roadmap is now **212**.
+- Moved the two Berlin-crisis lessons into key topic 2.
+- Made the Armada dates consistent (English calendar).
+- Details: `curriculum/history-remaining-plan.md`.
+
+**Totals:** History has 107 lessons; 105 are left on the roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 8 new lessons plus the whole-app checks: 149 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-05.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 06, Cold War key topic 3 (P4 3.1–3.3, 9 lessons).
+
+## History depth batch 04: Cold War key topic 1 (10 lessons, P4 1.1–1.3); on GitHub `main`, not published
+
+**Lessons:**
+- Tehran, Yalta and Potsdam;
+- capitalism and communism;
+- Soviet expansion;
+- the Long and Novikov Telegrams;
+- the Truman Doctrine and the Marshall Plan;
+- Cominform, Comecon and NATO;
+- the Berlin Blockade;
+- the arms race and the Warsaw Pact;
+- the Hungarian Uprising;
+- international reaction to Hungary.
+
+**Totals:** History has 100 lessons; 120 are left on the roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 10 new lessons plus the whole-app checks: 181 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-04.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 05, Cold War key topics 2–3 (P4 2.1–3.3, 17 lessons, in two batches).
+
+## History depth batch 03: Elizabethan England key topic 3 (8 lessons, B4 3.1–3.4). Elizabethan depth lessons complete; on GitHub `main`, not published
+
+**Lessons:**
+- education;
+- sport, pastimes and the theatre;
+- why poverty increased;
+- the Poor Laws;
+- factors prompting exploration;
+- Drake's circumnavigation;
+- Raleigh and Roanoke;
+- why the Virginia colony failed.
+
+**Totals:** History has 90 lessons; B4 has 40. 130 are left on the roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 8 new lessons plus the whole-app checks: 149 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-03.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 04, Cold War key topic 1 (P4 1.1–1.3, 10 lessons).
+
+## History depth batch 02: Elizabethan England key topic 2 (10 lessons, B4 2.1–2.4); on GitHub `main`, not published
+
+**Lessons:**
+- the Revolt of the Northern Earls;
+- the three plots;
+- Walsingham;
+- the execution of Mary;
+- political and religious rivalry with Spain;
+- commercial rivalry and privateering;
+- the Netherlands;
+- Cadiz;
+- Spanish invasion plans;
+- why the Armada failed.
+
+**Totals:** History has 82 lessons; 138 are left on the 220-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 10 new lessons plus the whole-app checks: 181 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-02.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 03, Elizabethan England key topic 3 (B4 3.1–3.4, 8 lessons), then the Cold War.
+
+## History scope expansion, depth batch 01: Elizabethan England key topic 1 (10 lessons, B4 1.1–1.4); on GitHub `main`, not published
+
+**Decision (user, 28 October 2026):** History must match Geography's scope. Plan: `curriculum/history-remaining-plan.md`. Roadmap: `curriculum/history-lesson-roadmap.csv`, 220 lessons in total:
+- 62 overview lessons (the existing lessons, kept with their IDs);
+- 143 depth lessons;
+- 15 exam-skill lessons.
+
+**Lessons (10 depth lessons, each placed after its overview):**
+- England in 1558: society and government;
+- the Virgin Queen;
+- early challenges: finance, France and Scotland;
+- religious divisions in 1558;
+- the Acts of Supremacy and Uniformity and the Injunctions;
+- the Church of England in society;
+- the Puritan challenge;
+- the Catholic challenge;
+- Mary's claim and arrival;
+- Elizabeth's options for dealing with Mary.
+
+**Totals:** History has 72 lessons; 148 are left on the roadmap.
+
+**Infrastructure:**
+- `history/order.js` orders the course map from the roadmap.
+- A roadmap/order test.
+- `HISTORY_FLOW_IDS` lets the browser flow walk a chosen batch.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 10 new lessons through every stage, plus the whole-app checks: 181 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-01.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 02, Elizabethan England key topic 2 (B4 2.1–2.4, 10 lessons).
+
 ## History depth batch 11: the Western Front (8 lessons, 11 HE1–HE5); roadmap cut from 213 to 208; on GitHub `main`, not published
 
 **Lessons:**

@@ -1,0 +1,1013 @@
+{
+  "date": "2026-10-28",
+  "journeys": [
+    {
+      "id": "geography.a.fieldwork.6",
+      "score": 100,
+      "initialCheck": 75,
+      "wrongTask": true,
+      "practiceWrongReloadRetry": true,
+      "checkLockedReload": true,
+      "typedModelWrongCorrectEditedReload": true,
+      "modelGateBlocked": true,
+      "keyboardSubmit": true
+    },
+    {
+      "id": "geography.a.fieldwork.8",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. Divide the category count by the total and multiply by100. Compare matching dated areas.",
+      "checkedModelReloaded": true
+    },
+    {
+      "id": "geography.a.fieldwork.7",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. Simplify rise:run; sample by a consistent rule rather than by appearance.",
+      "checkedModelReloaded": true
+    },
+    {
+      "id": "geography.a.fieldwork.9",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. Divide each count by its own duration; equal rates can have unequal raw totals.",
+      "checkedModelReloaded": true
+    },
+    {
+      "id": "geography.a.skills.1",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. Use an explicit symbol key and an annotation tied to the mapped spatial pattern.",
+      "checkedModelReloaded": true
+    },
+    {
+      "id": "geography.a.skills.2",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. Read eastings then northings, with tenths. At1:25000,1cm represents250m.",
+      "checkedModelReloaded": true
+    },
+    {
+      "id": "geography.a.skills.3",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. Rotate the compass from the stated camera direction. A single photo supports visible features, not a measured rate.",
+      "checkedModelReloaded": true
+    },
+    {
+      "id": "geography.a.skills.4",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. Match the state code, selected year and km\u00b2indicator. Regional colouring is not a map of exact clearings.",
+      "checkedModelReloaded": true
+    },
+    {
+      "id": "geography.a.skills.5",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. Copy each count to its own category. Start at zero, fit all bars and label people; axis maximum12\u201324is accepted.",
+      "checkedModelReloaded": true
+    },
+    {
+      "id": "geography.a.skills.6",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. Square the1000m/km conversion. Probability percent =100divided by the return period.",
+      "checkedModelReloaded": true
+    },
+    {
+      "id": "geography.a.skills.7",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. Median of lower four gives Q1; median of upper four gives Q3. IQR=Q3\u2212Q1.",
+      "checkedModelReloaded": true
+    },
+    {
+      "id": "geography.a.skills.8",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. The points rise2for each1in x. Extend that line to x0to find the intercept; predictions follow y=mx+c.",
+      "checkedModelReloaded": true
+    },
+    {
+      "id": "geography.a.skills.9",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. Explain a causal chain with evidence, then self-review: does it answer the question, link cause to effect and acknowledge limits? Text quality is not automatically marked.",
+      "checkedModelReloaded": true
+    },
+    {
+      "id": "geography.a.skills.footprints",
+      "score": 100,
+      "emptyLabFeedback": "Keep building. Carbon: add compatible activity\u00d7factor products. Area: demand/yield, then normalise; compare gha/gha separately.",
+      "checkedModelReloaded": true
+    }
+  ],
+  "phoneViews": [
+    {
+      "id": "geography.a.fieldwork.6",
+      "view": "flow",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.6",
+      "view": "section",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.6",
+      "view": "sources",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.6",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.8",
+      "view": "landuse",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.8",
+      "view": "quality",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.8",
+      "view": "sources",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.8",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.7",
+      "view": "profile",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.7",
+      "view": "sediment",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.7",
+      "view": "sources",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.7",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.9",
+      "view": "flow",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.9",
+      "view": "views",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.9",
+      "view": "sources",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.fieldwork.9",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.1",
+      "view": "patterns",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.1",
+      "view": "settlement",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.1",
+      "view": "sketch",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.1",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.2",
+      "view": "contours",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.2",
+      "view": "grid",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.2",
+      "view": "profile",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.2",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.3",
+      "view": "ground",
+      "content": 296,
+      "image": true,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.3",
+      "view": "satellite",
+      "content": 296,
+      "image": true,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.3",
+      "view": "direction",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.3",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.4",
+      "view": "join",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.4",
+      "view": "map",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.4",
+      "view": "census",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.4",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.5",
+      "view": "types",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.5",
+      "view": "special",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.5",
+      "view": "construct",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.5",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.6",
+      "view": "units",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.6",
+      "view": "probability",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.6",
+      "view": "log",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.6",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.7",
+      "view": "ordered",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.7",
+      "view": "cumulative",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.7",
+      "view": "percent",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.7",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.8",
+      "view": "scatter",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.8",
+      "view": "prediction",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.8",
+      "view": "bias",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.8",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.9",
+      "view": "commands",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.9",
+      "view": "chain",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.9",
+      "view": "judgement",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.9",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.footprints",
+      "view": "carbon",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.footprints",
+      "view": "ecological",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.footprints",
+      "view": "compare",
+      "content": 296,
+      "image": false,
+      "inputs": [],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    },
+    {
+      "id": "geography.a.skills.footprints",
+      "view": "lab",
+      "content": 296,
+      "image": false,
+      "inputs": [
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        },
+        {
+          "width": 262
+        }
+      ],
+      "overflow": [],
+      "pageWidth": 390,
+      "width": 390
+    }
+  ],
+  "chartModes": [
+    {
+      "mode": "pie",
+      "overflow": [],
+      "finite": true
+    },
+    {
+      "mode": "line",
+      "overflow": [],
+      "finite": true
+    },
+    {
+      "mode": "pictogram",
+      "overflow": [],
+      "finite": true
+    },
+    {
+      "mode": "histogram",
+      "overflow": [],
+      "finite": true
+    },
+    {
+      "mode": "bar",
+      "overflow": [],
+      "finite": true
+    }
+  ],
+  "finalCompactFormLayouts": [
+    {
+      "id": "geography.a.fieldwork.6",
+      "fields": [
+        {
+          "fits": true,
+          "width": 125
+        },
+        {
+          "fits": true,
+          "width": 125
+        }
+      ],
+      "page": 390,
+      "width": 296
+    },
+    {
+      "id": "geography.a.skills.5",
+      "fields": [
+        {
+          "fits": true,
+          "width": 262
+        },
+        {
+          "fits": true,
+          "width": 125
+        },
+        {
+          "fits": true,
+          "width": 125
+        },
+        {
+          "fits": true,
+          "width": 125
+        },
+        {
+          "fits": true,
+          "width": 125
+        },
+        {
+          "fits": true,
+          "width": 262
+        }
+      ],
+      "page": 390,
+      "width": 296
+    },
+    {
+      "id": "geography.a.skills.9",
+      "fields": [
+        {
+          "fits": true,
+          "width": 262
+        },
+        {
+          "fits": true,
+          "width": 262
+        },
+        {
+          "fits": true,
+          "width": 262
+        }
+      ],
+      "page": 390,
+      "width": 296
+    },
+    {
+      "id": "geography.a.skills.footprints",
+      "fields": [
+        {
+          "fits": true,
+          "width": 125
+        },
+        {
+          "fits": true,
+          "width": 125
+        },
+        {
+          "fits": true,
+          "width": 125
+        }
+      ],
+      "page": 390,
+      "width": 296
+    }
+  ],
+  "checks": {
+    "all14Journeys100": true,
+    "all56PhoneViewsNoOverflow": true,
+    "modelGateWrongCorrectEditedReload": true,
+    "independentWrong75Retake100": true,
+    "wrongPracticeReloadRetry": true,
+    "firstAnswerLockedReloadAutomaticAdvance": true,
+    "fieldworkEligibilityIndependentOfLandscapes": true,
+    "riverUrbanHiddenOnCoastRural": true,
+    "riverUrbanCompletionsRestoredAfterOptionSwitch": true,
+    "legacy151CompletionsRetained": true,
+    "finalPathCompleted": "163/163 rivers+glaciers Water",
+    "HistoryRenders": 144,
+    "keyboardModelSubmit": true
+  },
+  "consoleErrors": [],
+  "limits": [
+    "Reduced motion not browser-emulated",
+    "No full assistive-device review",
+    "Actual school fieldwork participation not established",
+    "Extended writing draft unmarked",
+    "Full independent hand-drawn construction and external GIS workflow remain separate",
+    "Specialist review not performed"
+  ],
+  "hosting": {
+    "status": "not_published"
+  },
+  "visibleDraftRoundTrips": [
+    {
+      "id": "geography.a.fieldwork.6",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    },
+    {
+      "id": "geography.a.fieldwork.8",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    },
+    {
+      "id": "geography.a.skills.1",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    },
+    {
+      "id": "geography.a.skills.2",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    },
+    {
+      "id": "geography.a.skills.3",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    },
+    {
+      "id": "geography.a.skills.4",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    },
+    {
+      "id": "geography.a.skills.5",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    },
+    {
+      "id": "geography.a.skills.6",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    },
+    {
+      "id": "geography.a.skills.7",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    },
+    {
+      "id": "geography.a.skills.8",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    },
+    {
+      "id": "geography.a.skills.9",
+      "visibleValuesRetained": true,
+      "feedback": "Selections recorded; draft saved unmarked. Self-review before continuing."
+    },
+    {
+      "id": "geography.a.skills.footprints",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    },
+    {
+      "id": "geography.a.fieldwork.7",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    },
+    {
+      "id": "geography.a.fieldwork.9",
+      "visibleValuesRetained": true,
+      "feedback": "Model checked. Your working meets this challenge."
+    }
+  ],
+  "resumeFix": "Playback-frame rendering now receives saved student model drafts; all14viewroundtrips verified against actual input values.",
+  "technical": {
+    "full": {
+      "passed": 789,
+      "failed": 0,
+      "durationMs": 39273.472708,
+      "log": "/private/tmp/geofinal-final-release.log"
+    },
+    "focused": {
+      "passed": 124,
+      "failed": 0,
+      "durationMs": 371.251458
+    },
+    "integratedMain": "f7671db7cc4c90cf5fe08f52a8507d01cb29bb01",
+    "HistoryLessons": 144,
+    "processViews": 4,
+    "staticViews": 52,
+    "snapshots": 6,
+    "retainedHashedDatasets": 3
+  }
+}

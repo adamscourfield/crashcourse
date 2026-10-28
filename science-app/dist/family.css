@@ -197,3 +197,13 @@ dialog:has(.mastery-dashboard){width:min(1120px,94vw);max-width:1120px}.mastery-
 /* Water source tables remain readable within narrow question cards. */
 #geographyContent .geo-water-data{table-layout:fixed}
 #geographyContent .geo-water-data th,#geographyContent .geo-water-data td{padding:8px 6px;overflow-wrap:anywhere}
+
+/* Geography: saved, keyboard-accessible student model activities. */
+.geo-final-lab{padding:16px;border:1px solid #7893a0;border-radius:12px;margin:16px 0;color:#f5f1e8;overflow-wrap:anywhere}
+.geo-final-field{display:grid;gap:6px;margin:14px 0;font-size:13px;line-height:1.5}
+.geo-final-field input,.geo-final-field select,.geo-final-field textarea{width:100%;min-width:0;box-sizing:border-box;border-radius:8px;border:1px solid #a7b9bf;background:#fffdfa;color:#193247;padding:10px;font:inherit}
+.geo-final-field textarea{resize:vertical}.geo-final-lab button{margin-top:6px}.geo-final-lab [role=status]{font-size:13px;line-height:1.6}
+.geo-final-lab{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.geo-final-lab>p,.geo-final-lab>button,.geo-final-field:has(select),.geo-final-field:has(textarea){grid-column:1/-1}
+.geo-final-lab>p{margin:0}.geo-final-field{margin:0;align-content:end}
+#gFinalPreview svg{display:block;width:100%;max-height:260px}

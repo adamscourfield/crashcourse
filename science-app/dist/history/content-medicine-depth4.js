@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Option 11: Medicine in Britain, c1250–present.
 // Depth lessons for key topic 4, c1900–present (specification 4.1–4.2). Each follows its overview lesson.
 // All text and questions are original; documents are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history09';
+import {Q, lesson, view} from './build.js?v=20261028-history-geofinal2';
 
 const T = 'history.medicine.kt4';
 

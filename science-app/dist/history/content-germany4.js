@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Paper 3 Option 31: Weimar and Nazi Germany, 1918–39.
 // Key topic 4: Life in Nazi Germany, 1933–39 (specification 4.1–4.4).
 // All teaching text and questions are original; sources and interpretations are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history09';
+import {Q, lesson, view} from './build.js?v=20261028-history-geofinal2';
 
 export const germanyTopic4 = {id: 'history.germany.kt4', unit: '31', title: 'Life in Nazi Germany, 1933–39', paper: 'Paper 3 · Modern depth study'};
 const T = germanyTopic4.id;

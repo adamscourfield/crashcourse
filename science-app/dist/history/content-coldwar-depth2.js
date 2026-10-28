@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Option P4: Superpower relations and the Cold War, 1941–91.
 // Depth lessons for key topic 2 (specification 2.1–2.3). Each follows its subsection's overview lesson.
 // All text and questions are original; documents are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history09';
+import {Q, lesson, view} from './build.js?v=20261028-history-geofinal2';
 
 const T = 'history.coldwar.kt2';
 

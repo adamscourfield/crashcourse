@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Paper 3 Option 31: Weimar and Nazi Germany, 1918–39.
 // Key topic 1: The Weimar Republic, 1918–29 (specification 1.1–1.4).
 // All teaching text and questions are original; sources and interpretations are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history09';
+import {Q, lesson, view} from './build.js?v=20261028-history-geofinal2';
 
 export const germanyTopic1 = {id: 'history.germany.kt1', unit: '31', title: 'The Weimar Republic, 1918–29', paper: 'Paper 3 · Modern depth study'};
 const T = germanyTopic1.id;

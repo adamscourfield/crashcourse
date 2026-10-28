@@ -9,17 +9,17 @@ geography.a.fieldwork.2,fieldwork,Sampling risk and reliable methods,7A;7B;enqui
 geography.a.fieldwork.3,fieldwork,Processing maps GIS graphs and diagrams,7A;7B;enquiry3,shared,statement_briefed,implemented
 geography.a.fieldwork.4,fieldwork,Analysing data and reaching conclusions,7A;7B;enquiry4;enquiry5,shared,statement_briefed,implemented
 geography.a.fieldwork.5,fieldwork,Evaluating methods uncertainty and conclusions,7A;7B;enquiry6,shared,statement_briefed,implemented
-geography.a.fieldwork.6,fieldwork,River channel investigation,7A;7B;enquiry6,school_pathway,statement_scoped_brief_pending,not_started
-geography.a.fieldwork.7,fieldwork,Coastal landscape investigation,7A;7B;enquiry6,school_pathway,statement_scoped_brief_pending,not_started
-geography.a.fieldwork.8,fieldwork,Central and inner urban change investigation,7A;7B;enquiry6,school_pathway,statement_scoped_brief_pending,not_started
-geography.a.fieldwork.9,fieldwork,Rural settlement investigation,7A;7B;enquiry6,school_pathway,statement_scoped_brief_pending,not_started
-geography.a.skills.1,skills,Map distributions sketch maps and settlement context,pp31–32;Appendix3,shared,statement_scoped_brief_pending,not_started
-geography.a.skills.2,skills,OS contour gradient cross-sections coordinates scale and distance,pp31–32;Appendix3,shared,statement_scoped_brief_pending,not_started
-geography.a.skills.3,skills,Photo interpretation linked to maps,pp31–32;Appendix3,shared,statement_scoped_brief_pending,not_started
-geography.a.skills.4,skills,GIS and census research,pp31–32;Appendix3,shared,statement_scoped_brief_pending,not_started
-geography.a.skills.5,skills,Graph selection construction and interpretation,pp31–32;Appendix3,shared,statement_scoped_brief_pending,not_started
-geography.a.skills.6,skills,Ratios units area frequency and logarithmic scales,pp31–32;Appendix3,shared,statement_scoped_brief_pending,not_started
-geography.a.skills.7,skills,Averages spread quartiles percentages and percentiles,pp31–32;Appendix3,shared,statement_scoped_brief_pending,not_started
-geography.a.skills.8,skills,Bivariate data best-fit interpolation extrapolation and bias,pp31–32;Appendix3,shared,statement_scoped_brief_pending,not_started
-geography.a.skills.9,skills,Geographical reasoning and command words,pp31–32;Appendix3,shared,statement_scoped_brief_pending,not_started
-geography.a.skills.footprints,skills,Calculating carbon and ecological footprints,Energy integrated skill3;Appendix3,shared,statement_scoped_brief_pending,not_started
+geography.a.fieldwork.6,fieldwork,River channel investigation,7A;enquiry1;enquiry2;enquiry3;enquiry4;enquiry5;enquiry6,physical:rivers,statement_briefed,implemented
+geography.a.fieldwork.7,fieldwork,Coastal landscape investigation,7A;enquiry1;enquiry2;enquiry3;enquiry4;enquiry5;enquiry6,physical:coasts,statement_briefed,implemented
+geography.a.fieldwork.8,fieldwork,Central and inner urban change investigation,7B;enquiry1;enquiry2;enquiry3;enquiry4;enquiry5;enquiry6,human:urban,statement_briefed,implemented
+geography.a.fieldwork.9,fieldwork,Rural settlement investigation,7B;enquiry1;enquiry2;enquiry3;enquiry4;enquiry5;enquiry6,human:rural,statement_briefed,implemented
+geography.a.skills.1,skills,Map distributions sketch maps and settlement context,skills.atlas;skills.sketch;skills.settlements,shared:all,statement_briefed,implemented
+geography.a.skills.2,skills,OS contour gradient cross-sections coordinates scale and distance,skills.relief;skills.coordinates;skills.sections,shared:all,statement_briefed,implemented
+geography.a.skills.3,skills,Photo interpretation linked to maps,skills.photos;skills.linked-resources,shared:all,statement_briefed,implemented
+geography.a.skills.4,skills,GIS and census research,skills.gis;skills.census;skills.population-maps,shared:all,statement_briefed,implemented
+geography.a.skills.5,skills,Graph selection construction and interpretation,skills.graphs-construct;skills.graphs-interpret;skills.population-maps,shared:all,statement_briefed,implemented
+geography.a.skills.6,skills,Ratios units area frequency and logarithmic scales,skills.units;skills.ratio-frequency,shared:all,statement_briefed,implemented
+geography.a.skills.7,skills,Averages spread quartiles percentages and percentiles,skills.statistics;skills.percentage-percentiles,shared:all,statement_briefed,implemented
+geography.a.skills.8,skills,Bivariate data best-fit interpolation extrapolation and bias,skills.bivariate;skills.statistical-bias,shared:all,statement_briefed,implemented
+geography.a.skills.9,skills,Geographical reasoning and command words,Appendix3;skills.analysis-writing;skills.argument,shared:all,statement_briefed,implemented
+geography.a.skills.footprints,skills,Calculating carbon and ecological footprints,Energy integrated skill3;skills.units;skills.ratio-frequency,shared:all,statement_briefed,implemented

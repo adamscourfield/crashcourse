@@ -2,7 +2,7 @@
 // England, 1558–88. Key topic 1: Queen, government and religion, 1558–69 (specification 1.1–1.4).
 // All teaching text and questions are original. Documents are described by type, author, date and
 // content; no quotation is invented or attributed to a real person.
-import {Q, lesson, view} from './build.js?v=20261028-history09';
+import {Q, lesson, view} from './build.js?v=20261028-history-geofinal2';
 
 export const elizabethTopic1 = {id: 'history.elizabeth.kt1', unit: 'B4', title: 'Queen, government and religion, 1558–69', paper: 'Paper 2 · British depth study'};
 const T = elizabethTopic1.id;

@@ -2,7 +2,7 @@
 // Depth lessons for key topic 1 (specification 1.1–1.4). Each follows its subsection's overview lesson
 // and answers one narrower question in more detail. All text and questions are original; documents are
 // described by type, author, date and content, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history09';
+import {Q, lesson, view} from './build.js?v=20261028-history-geofinal2';
 
 const T = 'history.elizabeth.kt1';
 

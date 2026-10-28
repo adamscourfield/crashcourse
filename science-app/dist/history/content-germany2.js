@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Paper 3 Option 31: Weimar and Nazi Germany, 1918–39.
 // Key topic 2: Hitler's rise to power, 1919–33 (specification 2.1–2.4).
 // All teaching text and questions are original; sources and interpretations are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history09';
+import {Q, lesson, view} from './build.js?v=20261028-history-geofinal2';
 
 export const germanyTopic2 = {id: 'history.germany.kt2', unit: '31', title: 'Hitler\'s rise to power, 1919–33', paper: 'Paper 3 · Modern depth study'};
 const T = germanyTopic2.id;

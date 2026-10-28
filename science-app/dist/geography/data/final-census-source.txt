@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    
+		<link href="./_app/immutable/assets/2.115e33c7.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/AreaSearch.5944d612.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/buildHyperlinkHelper.60df7657.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/OnsAnalyticsBanner.ac8a0769.css" rel="stylesheet"><title>Census Maps - Census 2021 data interactive, ONS</title><!-- HEAD_svelte-15sebod_START --><link rel="canonical" href="https://www.ons.gov.uk/census/maps/dotdensity"><meta property="og:title" content="Census Maps - Census 2021 data interactive, ONS"><meta property="og:type" content="website"><meta property="og:url" content="https://www.ons.gov.uk/census/maps/dotdensity"><meta property="og:image" content="https://www.ons.gov.uk/census/maps/img/og-image.png"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="940"><meta property="og:image:height" content="492"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:image" content="https://www.ons.gov.uk/census/maps/img/og-image.png"><meta property="og:description" content="Census maps is an interactive tool to explore Census 2021 data across England and Wales for different topics down to a neighbourhood level."><meta name="description" content="Census maps is an interactive tool to explore Census 2021 data across England and Wales for different topics down to a neighbourhood level."><!-- HEAD_svelte-15sebod_END -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
+  </head>
+  <body class="min-h-[570px]">
+    <div>
+
+
+
+
+
+<div class="h-screen flex justify-center items-center"><div class="" role="alert" aria-live="assertive"><p class="sr-only">Loading...</p>
+    <div class="animate-delayedfadein"><svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-ons-census " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg></div></div></div>
+
+
+			
+			<script>
+				{
+					__sveltekit_zidots = {
+						assets: "/census/maps",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.aaa6c474.js"),
+						import("./_app/immutable/entry/app.c845ae35.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a519c78cdb2426c6',t:'MTc5MzE4ODgxOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

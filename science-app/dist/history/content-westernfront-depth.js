@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Option 11 historic environment:
 // the British sector of the Western Front, 1914–18 (specification HE1–HE5). Depth lessons follow their overviews.
 // All text and questions are original; documents are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history09';
+import {Q, lesson, view} from './build.js?v=20261028-history-geofinal2';
 
 const T = 'history.medicine.wf';
 

@@ -1,7 +1,7 @@
 // Pearson Edexcel GCSE (9–1) History 1HI0, Option 11: Medicine in Britain, c1250–present.
 // Key topic 3: c1700–c1900, medicine in eighteenth- and nineteenth-century Britain (specification 3.1–3.3).
 // All teaching text and questions are original; documents are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history09';
+import {Q, lesson, view} from './build.js?v=20261028-history-geofinal2';
 
 export const medicineTopic3 = {id: 'history.medicine.kt3', unit: '11', title: 'c1700–c1900: Medicine in 18th- and 19th-century Britain', paper: 'Paper 1 · Thematic study'};
 const T = medicineTopic3.id;
