@@ -1,10 +1,11 @@
+import {batch06} from './content-batch06.js?v=20261028-lit06';
 import {batch05} from './content-batch05.js?v=20261028-lit05';
 import {batch04} from './content-batch04.js?v=20261028-lit04';
 import {batch03} from './content-batch03.js?v=20261028-lit03';
 import {batch02} from './content-batch02.js?v=20261028-lit02';
 export const source="https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification";
-export const topics=[{id:"english-literature.macbeth",title:"Macbeth",unit:"8702"},{id:"english-literature.christmas-carol",title:"A Christmas Carol",unit:"8702"},{id:"english-literature.inspector-calls",title:"An Inspector Calls",unit:"8702-modern"}];
-export const units=[{id:"8702",title:"AQA GCSE English Literature",paper:"Paper 1 · Shakespeare and the 19th-century novel"},{id:"8702-modern",title:"AQA GCSE English Literature",paper:"Paper 2 · Modern text"}];
+export const topics=[{id:"english-literature.macbeth",title:"Macbeth",unit:"8702"},{id:"english-literature.christmas-carol",title:"A Christmas Carol",unit:"8702"},{id:"english-literature.inspector-calls",title:"An Inspector Calls",unit:"8702-modern"},{id:"english-literature.power-conflict",title:"Power and Conflict",unit:"8702-poetry"}];
+export const units=[{id:"8702",title:"AQA GCSE English Literature",paper:"Paper 1 · Shakespeare and the 19th-century novel"},{id:"8702-modern",title:"AQA GCSE English Literature",paper:"Paper 2 · Modern text"},{id:"8702-poetry",title:"AQA GCSE English Literature",paper:"Paper 2 · Anthology poetry"}];
 export const specIssue="checked 28 October 2026";
 export const lessons=[
   {
@@ -964,3 +965,5 @@ lessons.push(...batch03);
 lessons.push(...batch04);
 
 lessons.push(...batch05);
+
+lessons.push(...batch06);

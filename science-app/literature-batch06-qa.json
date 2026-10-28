@@ -1,0 +1,51 @@
+{
+  "checked": "2026-10-28",
+  "batch": "Literature06",
+  "new_lessons": 10,
+  "total_built": 55,
+  "remaining_planned_literature": 120,
+  "working_literature_allocation": 175,
+  "shared_english_programme": "350sessions70weeks;provisional175Literature175reserved_unmappedLanguage",
+  "topics": {
+    "Macbeth": 20,
+    "A Christmas Carol": 14,
+    "An Inspector Calls": 14,
+    "Power and Conflict": 7
+  },
+  "poems_introduced": 4,
+  "anthology_poems_required": 15,
+  "poetry_scope": "Ozymandias/London/Prelude meaning and methods pairs;Duchess meaning only",
+  "new_practice": 30,
+  "new_checks": 40,
+  "total_practice": 165,
+  "total_checks": 220,
+  "question_ids": 385,
+  "primary_sources": [
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/modern-texts-and-poetry",
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/skills",
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/scheme-of-assessment",
+    "https://filestore.aqa.org.uk/resources/english/AQA-8702-TG-POEMS.PDF",
+    "https://rpo.library.utoronto.ca/content/my-last-duchess"
+  ],
+  "quotes": "Seven public-domain poem fragments manually compared to AQA anthology PDF pages22\u201325; Browning cross-check RPO. No protected play extract reproduced. No automated full-poem text extraction claimed.",
+  "old45_normalised_sha256": "4c2964bae4d0db39581fb07183db087b9a2a8fd95d13a7faa4efeb9186e25e04",
+  "full_suite": {
+    "passed": 818,
+    "duration_ms": 38983.663792,
+    "scope": "before final caption attribution, source-description and AO4 wording refinements"
+  },
+  "final_focused": {
+    "passed": 59,
+    "duration_ms": 365.318,
+    "scope": "Literature/progress/question-flow after refinements"
+  },
+  "offline_handlers": "All10 wrong/retry/stage gates/locked checks/draft/resume;whole-play firstsubmission/revision/concealment;poetry topic recall, author, source and paper isolation",
+  "browser": "Desktop course map4topics and anthology7lessons; Ozymandias all details/3views,wrong/retry challenge and practice,automatic Q2,draft version/reload;Inspector14 noextract/guidancehidden,draftreload;London phone390x844 no horizontal overflow;viewport reset;no sampled console errors",
+  "browser_limit": "Not all10 full real-browser journeys;no comprehensive assistive-technology audit",
+  "preview": "localhost4177 London;crash-course-literature-batch06-preview.jpg",
+  "writing": "saved_unmarked;wholeplay independent firstresponse/revision separate;labelled preview drafts retained",
+  "specialist_review": "not_performed",
+  "hosting": {
+    "status": "pending"
+  }
+}

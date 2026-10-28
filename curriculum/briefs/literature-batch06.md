@@ -1,0 +1,28 @@
+# Literature batch6 — Inspector core completion and first seven anthology units
+
+Identity: AQA8702 untiered; Inspector12–14:3.2.1/3.3; PowerConflict poem01-1/01-2/02-1/02-2/03-1/03-2/04-1:3.2.2/3.3. Curriculum IDs retain roadmap IDs; runtime lit.inspector.lesson-12–14 and lit.power-conflict.poem-* respectively. Checked28October2026. Prior45stable records/progress preserved. Literature55built/120planned after batch, adjustable175allocation;350shared English budget unchanged;175Language slots reserved/unmapped.
+
+Primary sources: current AQA modern texts/poetry and skills specification, https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/modern-texts-and-poetry ; authorised anthology sample https://filestore.aqa.org.uk/resources/english/AQA-8702-TG-POEMS.PDF pp21–25printed (PDF22–26). Roster all15, public-domain Shelley/Blake/Wordsworth/Browning quotations verified against underlying text, no modern editorial commentary copied. Browning cross-check https://rpo.library.utoronto.ca/content/my-last-duchess . Protected Priestley uses original teaching summaries only and links publisher/authorised copy. AQA anthology permissions are not a grant for protected poems; later modern poets require separate lawful approach.
+
+| Unit | Observable learning and misconception to diagnose |
+|---|---|
+| Inspector12 stagecraft | Relate entrance, selective disclosure, time and finalcall to audience effect; distinguish dramatic irony from any surprise; uncertainty does not erase responsibility. |
+| Inspector13 argument | Turn a question into qualified thesis, sequence whole-play evidence and test counterreading; planning is not a list of events or fixed answer. |
+| Inspector14 independent | Write whole-play response, preserve firstsubmission then revise using AO1/AO2/AO3 criteria; no extract-to-whole framing or protected extract; no automatic essay grade. |
+| Ozymandias01-1 | Distinguish narrator/traveller/inscription; trace fragment, boast and desolation; ruler is not poet and sculpture is not intact. |
+| Ozymandias01-2 | Explain disrupted sonnet convention, enjambment, irony and art’s survival; compare with London using precise difference, not merely bothpower. |
+| London02-1 | Trace witness’s route and institutional suffering, distinguish speaker from everyLondoner; metaphorical chains not only literal imprisonment. |
+| London02-2 | Relate repeated language and fourquatrain/ABABpattern to constraint; test comparison with ruined power vs ongoing oppression; rhythm not proof of universal experience. |
+| Prelude03-1 | Trace confidence, perceived threat, retreat and troubled memory; adult retrospective speaker, mountain seems animate but does not literally chase. |
+| Prelude03-2 | Analyse blankverse/enjambment, qualification and repetition; compare nature overpowering individual with erosion of public monument; not rhyming couplets or moralcertainty. |
+| Duchess04-1 | Identify Duke speaking to marriage envoy, implied control and unreliable selfpresentation; death’s exact mechanism not established; Duke is not Browning. |
+
+Prerequisites: Inspector01–11 and wholeplay reading for wholetext argument; eachpoem meaning beforemethods; Ozymandias beforeLondon comparison; whole assigned poem read alongside brief supplied fragments. Context linked to evidence rather than biographical intention asserted as fact.
+
+Discover: three cards perunit, sequenced explanation with worked interpretative decision and limitation. Priorprompt connects responsibility/authority/voice; students read authorised fulltext. Investigate: three selectable word/dramatic details, three voices/interpretations and four-step argument or poem movement. Require all views/details and interpretation challenge. Each challenge3options with explicit key, explanation and targeted wrongfeedback. Static selectable close-reading is appropriate; no decorative3D/movie. Semanticbuttons keyboardaccessible, no timed movement required; inherited reduced-motion rules.
+
+Practice3fresh questions and Check4fresh questions perunit; keys, reasoning and stable conceptIDs embedded in content-batch06.js. First practiceattempt retained through retry, independent selectedresponses locked, rationales withheld untilresult,80%gate requires4/4. Automatic Next/manualpause retained. Representative evidence in coverageCSV: sequence/voice check1, methods practice2, argument writing. These selectedresponses do not establish essaymastery or wholepoemcomparison attainment.
+
+Writing10original prompts; criteria3each. Inspector14 wholeplay independent prompt: howfar Priestley presents responsibility as difficulttoaccept; no suppliedextract and no fabricated quotation. Firstresponse snapshot immutable, revisions separate, guidance/criteria hidden untilsubmitted; saveddeparturelogging does not police outside resources. Otherunits guided savedanalytical/comparison drafts and versions. Comparison prompts name studiedpoems but supported alternatives are possible. Context not scored automatically. Writing needs teacher review.
+
+Verification: automate all10 handlerjourneys wrong/retry/gates/checklocking/draft/resume; independently test wholetext writing conceal/firstresponse/revision and poetry source/ref/topic/author/recall isolation; old45hash;55lessons385questions;175roadmap350programme totals; desktop poetry detail/view/challenge/practice and wrongpath, browser draftresume/independentwholetext, phone sample ifavailable. No specialistreviewclaim. Update registers/status/coverage; commit/push canonical origin/main then existing owner-private Site; separatepublicationreceipt. Next10:remainingDuchessmethods and poem05–08pairs plus firstRemains unit, with source/rightsbriefs first.

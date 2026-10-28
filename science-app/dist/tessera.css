@@ -77,3 +77,5 @@ dialog h2{font-weight:300;font-size:32px}dialog h3{font-weight:400}dialog p,dial
 .mexample{background:#f4f5f6;border-radius:4px}.mrung,.mm-op,.mm-io,.mwork,.mtok-op,.mslots span{border-radius:4px}.mfig,.mgraph-in>svg{background:linear-gradient(160deg,#34373d,#222428);border-radius:4px}
 .mastery-stat{border-radius:4px}
 @media(max-width:800px){.subject-select{width:164px}.sidebar .brand{flex-basis:calc(100% - 184px)}}
+/* Reading links follow the attribution; keep the attribution dark on light paper. */
+#literatureContent .h-panel>.geo-caption,#historyContent .h-panel>.geo-caption{color:var(--subtle)!important}
