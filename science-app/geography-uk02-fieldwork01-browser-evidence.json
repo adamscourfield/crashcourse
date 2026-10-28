@@ -424,7 +424,29 @@
     "Selected-response only; independent GIS/graph construction/extended writing remains open"
   ],
   "hosting": {
-    "status": "not_published"
+    "sourceCommit": "36f18b1b98257330416031649d1d89e25297caa5",
+    "deployment": "appgdep_6ae1bf6749fc81918eff1a1e4da0b2b7",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_134950023e98819195045b4882a63523",
+    "status": "succeeded",
+    "at": "2026-10-28T09:25:10.860593+00:00",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "audience": "owner-private unchanged",
+    "archive": "science-app-uk02-fieldwork01.tar.gz (ignored)",
+    "helperCheckout": "/private/tmp/crashcourse-uk02-fieldwork01-JDst3Q",
+    "runtimeFiles": 652,
+    "runtimeHashMismatches": 0,
+    "liveChecks": {
+      "GeographyTotal": 175,
+      "UKTopicLessons": 11,
+      "fieldworkTopicLessons": 5,
+      "floodAutoplayLoop": true,
+      "HistoryTotal": 46,
+      "entryCache": "20261028-ten04",
+      "consoleErrors": []
+    },
+    "proof": "crash-course-geography-ten04-live.png",
+    "canonicalAppCommit": "9cd4423",
+    "canonicalAppPush": "succeeded; receipt commit follows"
   },
   "technical": {
     "full": {
