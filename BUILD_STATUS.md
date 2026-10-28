@@ -1,3 +1,31 @@
+## History depth batch 14: Nazi control and dictatorship, key topic 3 (11 lessons, 31 3.1–3.4); on GitHub `main`, not published
+
+**Lessons:**
+- the Reichstag Fire and the Enabling Act;
+- the Night of the Long Knives;
+- the SS, SD and Gestapo;
+- camps and courts;
+- media and rallies;
+- the 1936 Olympics;
+- culture and the arts;
+- the Churches;
+- support and conformity;
+- Church opposition;
+- youth opposition.
+
+**Totals:** History has 183 lessons; 25 are left on the 208-lesson roadmap. `history.germany.kt3` is marked partly published.
+
+**QA:**
+- 789 automated tests pass.
+- The History flow walked the 11 new lessons plus the whole-app checks: 197 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-14.md`. It records three factual errors in my draft that were corrected before commit.
+
+**Not done:**
+- Site publication of batches 12–14;
+- teacher review.
+
+**Next:** Germany key topic 4 (9 lessons), then the 15 exam-skill lessons and `coldwar.leaders-attitudes`.
+
 ## History depth batch 13: Hitler's rise to power, key topic 2 (9 lessons, 31 2.1–2.4); on GitHub `main`, not published
 
 **Lessons:**

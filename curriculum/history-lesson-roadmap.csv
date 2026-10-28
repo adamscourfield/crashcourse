@@ -165,20 +165,20 @@ order,lesson_id,title,topic_id,role,spec_ref,status
 164,history.germany.elections-1932,The elections of 1932,history.germany.kt2,depth,31 2.4,implemented
 165,history.germany.backstairs,The backstairs intrigue,history.germany.kt2,depth,31 2.4,implemented
 166,history.germany.dictatorship,"Creating the dictatorship, 1933–34",history.germany.kt3,overview,31 3.1,implemented
-167,history.germany.enabling-act,The Reichstag Fire and the Enabling Act,history.germany.kt3,depth,31 3.1,planned
-168,history.germany.long-knives,The Night of the Long Knives and the Führer,history.germany.kt3,depth,31 3.1,planned
+167,history.germany.enabling-act,The Reichstag Fire and the Enabling Act,history.germany.kt3,depth,31 3.1,implemented
+168,history.germany.long-knives,The Night of the Long Knives and the Führer,history.germany.kt3,depth,31 3.1,implemented
 169,history.germany.police-state,The police state,history.germany.kt3,overview,31 3.2;31 3.3,implemented
-170,history.germany.gestapo,"The SS, the SD and the Gestapo",history.germany.kt3,depth,31 3.2,planned
-171,history.germany.camps-courts,Concentration camps and the courts,history.germany.kt3,depth,31 3.2,planned
+170,history.germany.gestapo,"The SS, the SD and the Gestapo",history.germany.kt3,depth,31 3.2,implemented
+171,history.germany.camps-courts,Concentration camps and the courts,history.germany.kt3,depth,31 3.2,implemented
 172,history.germany.propaganda,Propaganda and culture,history.germany.kt3,overview,31 3.3,implemented
-173,history.germany.media-rallies,"Goebbels, the media and rallies",history.germany.kt3,depth,31 3.3,planned
-174,history.germany.olympics,The 1936 Olympics,history.germany.kt3,depth,31 3.3,planned
-175,history.germany.nazi-culture,Nazi control of culture and the arts,history.germany.kt3,depth,31 3.3,planned
-176,history.germany.churches,The Nazis and the Churches,history.germany.kt3,depth,31 3.3,planned
+173,history.germany.media-rallies,"Goebbels, the media and rallies",history.germany.kt3,depth,31 3.3,implemented
+174,history.germany.olympics,The 1936 Olympics,history.germany.kt3,depth,31 3.3,implemented
+175,history.germany.nazi-culture,Nazi control of culture and the arts,history.germany.kt3,depth,31 3.3,implemented
+176,history.germany.churches,The Nazis and the Churches,history.germany.kt3,depth,31 3.3,implemented
 177,history.germany.opposition,"Opposition, resistance and conformity",history.germany.kt3,overview,31 3.4,implemented
-178,history.germany.conformity,Support and conformity,history.germany.kt3,depth,31 3.4,planned
-179,history.germany.church-opposition,Opposition from the Churches,history.germany.kt3,depth,31 3.4,planned
-180,history.germany.youth-opposition,Opposition from young people,history.germany.kt3,depth,31 3.4,planned
+178,history.germany.conformity,Support and conformity,history.germany.kt3,depth,31 3.4,implemented
+179,history.germany.church-opposition,Opposition from the Churches,history.germany.kt3,depth,31 3.4,implemented
+180,history.germany.youth-opposition,Opposition from young people,history.germany.kt3,depth,31 3.4,implemented
 181,history.germany.women,Nazi policies towards women,history.germany.kt4,overview,31 4.1,implemented
 182,history.germany.family-policy,Nazi views of women and family policy,history.germany.kt4,depth,31 4.1,planned
 183,history.germany.women-work,Women's employment and appearance,history.germany.kt4,depth,31 4.1,planned
