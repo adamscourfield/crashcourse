@@ -47,8 +47,16 @@
   ],
   "curriculum_validation": "175unique roadmap IDs75implemented100planned;225representative coverage rows;350shared programme slots",
   "publication": {
-    "status": "pending",
-    "mode": "static lessons; prepared API runtime retained but activation deferred; owner-private audience preserved"
+    "status": "succeeded",
+    "at": "2026-10-28T18:18:50.172601+00:00",
+    "canonical_app_commit": "bd4dd3ee005bf9c2ab7d2251dede104efeac294a",
+    "source": "9b81ab6abf0d2c98274931bed04b72d44bc460b8",
+    "deployment_id": "appgdep_6ae23c7cac2881918d34d74b4cf44f85",
+    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_ed743f5abce48191bbf0a9f220871b4a",
+    "runtime_hash_match_files": 711,
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "audience": "owner-private unchanged",
+    "mode": "static lessons plus unconfigured classroom demo; AI activation deferred; no secret configuration"
   },
   "merged_full_suite": {
     "tests": 844,
