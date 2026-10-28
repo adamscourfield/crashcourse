@@ -152,18 +152,18 @@ order,lesson_id,title,topic_id,role,spec_ref,status
 151,history.germany.weimar-women,Women in Weimar Germany,history.germany.kt1,depth,31 1.4,implemented
 152,history.germany.weimar-culture,Weimar culture,history.germany.kt1,depth,31 1.4,implemented
 153,history.germany.early-nazis,"The early Nazi Party, 1920–22",history.germany.kt2,overview,31 2.1,implemented
-154,history.germany.hitler-early,Hitler's early career,history.germany.kt2,depth,31 2.1,planned
-155,history.germany.twenty-five-points,The Twenty-Five Points and the SA,history.germany.kt2,depth,31 2.1,planned
+154,history.germany.hitler-early,Hitler's early career,history.germany.kt2,depth,31 2.1,implemented
+155,history.germany.twenty-five-points,The Twenty-Five Points and the SA,history.germany.kt2,depth,31 2.1,implemented
 156,history.germany.putsch,"The Munich Putsch and the lean years, 1923–29",history.germany.kt2,overview,31 2.2,implemented
-157,history.germany.putsch-events,The Munich Putsch: causes and events,history.germany.kt2,depth,31 2.2,planned
-158,history.germany.lean-years,The lean years and reorganisation,history.germany.kt2,depth,31 2.2,planned
+157,history.germany.putsch-events,The Munich Putsch: causes and events,history.germany.kt2,depth,31 2.2,implemented
+158,history.germany.lean-years,The lean years and reorganisation,history.germany.kt2,depth,31 2.2,implemented
 159,history.germany.nazi-support,"The growth in Nazi support, 1929–32",history.germany.kt2,overview,31 2.3,implemented
-160,history.germany.depression,The Depression and the failure of Weimar governments,history.germany.kt2,depth,31 2.3,planned
-161,history.germany.nazi-appeal,Nazi propaganda and Hitler's appeal,history.germany.kt2,depth,31 2.3,planned
-162,history.germany.fear-communism,Fear of communism,history.germany.kt2,depth,31 2.3,planned
+160,history.germany.depression,The Depression and the failure of Weimar governments,history.germany.kt2,depth,31 2.3,implemented
+161,history.germany.nazi-appeal,Nazi propaganda and Hitler's appeal,history.germany.kt2,depth,31 2.3,implemented
+162,history.germany.fear-communism,Fear of communism,history.germany.kt2,depth,31 2.3,implemented
 163,history.germany.chancellor,"How Hitler became Chancellor, 1932–33",history.germany.kt2,overview,31 2.4,implemented
-164,history.germany.elections-1932,The elections of 1932,history.germany.kt2,depth,31 2.4,planned
-165,history.germany.backstairs,The backstairs intrigue,history.germany.kt2,depth,31 2.4,planned
+164,history.germany.elections-1932,The elections of 1932,history.germany.kt2,depth,31 2.4,implemented
+165,history.germany.backstairs,The backstairs intrigue,history.germany.kt2,depth,31 2.4,implemented
 166,history.germany.dictatorship,"Creating the dictatorship, 1933–34",history.germany.kt3,overview,31 3.1,implemented
 167,history.germany.enabling-act,The Reichstag Fire and the Enabling Act,history.germany.kt3,depth,31 3.1,planned
 168,history.germany.long-knives,The Night of the Long Knives and the Führer,history.germany.kt3,depth,31 3.1,planned

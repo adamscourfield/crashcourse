@@ -1,3 +1,29 @@
+## History depth batch 13: Hitler's rise to power, key topic 2 (9 lessons, 31 2.1–2.4); on GitHub `main`, not published
+
+**Lessons:**
+- Hitler's early career;
+- the Twenty-Five Points and the SA;
+- the Munich Putsch;
+- the lean years;
+- the Depression and Weimar's failure;
+- propaganda and Hitler's appeal;
+- fear of communism;
+- the 1932 elections;
+- the backstairs intrigue.
+
+**Totals:** History has 172 lessons; 36 are left on the 208-lesson roadmap. `history.germany.kt2` is marked partly published, because only its overviews are on the Site.
+
+**QA:**
+- 789 automated tests pass.
+- The History flow walked the 9 new lessons plus the whole-app checks: 165 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-13.md`. Two lessons are close to the overlap line, and the brief records them for teacher review.
+
+**Not done:**
+- Site publication of batches 12–13;
+- teacher review.
+
+**Next:** Germany key topic 3 (11 lessons).
+
 ## History depth batch 12: Weimar Germany key topic 1 (11 lessons, 31 1.1–1.4); on GitHub `main`, not published
 
 **Publication state:** the Geography final publication included the 152 History lessons on `main` at c77556f, up to and including depth batch 11 (per its record above and `publication` in the lesson register). This batch's 11 lessons are on GitHub only. `history.germany.kt1` is marked partly published.
