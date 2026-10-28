@@ -4,11 +4,11 @@ Confirmed by the user: Macbeth, A Christmas Carol, An Inspector Calls and Power 
 
 ## Authoring sequence
 
-The initial **98-lesson authoring estimate** is recorded with stable IDs in `english-literature-lesson-roadmap.csv`. It is not an AQA lesson-count requirement. Five lessons are implemented; 93 are planned, not available in the interface.
+The initial **98-lesson authoring estimate** is recorded with stable IDs in `english-literature-lesson-roadmap.csv`. It is not an AQA lesson-count requirement. Fifteen lessons are implemented; 83 are planned, not available in the interface.
 
 | Topic | Planned total | Implemented |
 |---|---:|---:|
-| Macbeth | 20 | 5 |
+| Macbeth | 20 | 15 |
 | A Christmas Carol | 14 | 0 |
 | An Inspector Calls | 14 | 0 |
 | Power and Conflict, including six comparison lessons | 36 | 0 |
@@ -23,7 +23,7 @@ The anthology roster is Ozymandias; London; Extract from The Prelude; My Last Du
 
 Current official assessment: closed book; Paper 1 is 1h45, 64 marks, 40%; Shakespeare and novel each require extract-to-whole-text writing. Paper 2 is 2h15, 96 marks, 60%; modern text essay, named anthology poem compared with another studied poem, unseen analysis and unseen comparison. Verify current section-specific mark schemes before authoring timed writing rubrics. Source: https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/specification-at-a-glance
 
-`english-literature-requirements.csv` paraphrases assessable statements with planned destinations. `english-literature-coverage.csv` records representative evidence in the first five lessons. These are initial author mappings, not a specialist sign-off or proof of full skill attainment. The next reconciliation must map individual criteria to actual written evidence and broaden assessment beyond selected responses.
+`english-literature-requirements.csv` paraphrases assessable statements with planned destinations. `english-literature-coverage.csv` records representative evidence in the first fifteen lessons. These are initial author mappings, not a specialist sign-off or proof of full skill attainment. The next reconciliation must map individual criteria to actual written evidence and broaden assessment beyond selected responses.
 
 Knowledge checks score first answers separately from practice retries; incorrect concepts return through recall. The first batch saves analytical drafts and immutable saved versions, but does not automatically grade writing. A word count, selected interpretation or completed explorer is not evidence of essay mastery. Keep knowledge completion and reviewed writing performance distinct in progress reporting.
 
@@ -37,6 +37,6 @@ Every batch needs a LESSON_TEMPLATE brief, official references, verified wording
 
 First five: 1.1–1.2; 1.3; 1.4–1.5; 1.6–1.7; 2.1–2.2. Full scenes remain required reading; summaries and short quotations do not replace the whole play. Students can read the linked Folger text alongside lessons.
 
-Next batch: discovery/suspicion (2.3–2.4), insecure crown (3.1–3.2), murder/banquet (3.3–3.6), apparitions (4.1), tyranny/resistance (4.2–4.3). First resolve visual/browser QA for the initial studio; specialist review remains outstanding.
+Batch2 adds ten: discovery (2.3–2.4), crown (3.1–3.2), banquet (3.3–3.6), apparitions (4.1), resistance (4.2–4.3), unravelling (5.1–5.4), ending (5.5–end), Macbeth character, Lady Macbeth character and kingship. Chronological scene teaching now reaches the ending; five planned Macbeth thematic/method/writing units remain. Next ten: those five plus the first five A Christmas Carol lessons. User requests ten per batch. Visual/browser QA and specialist review remain outstanding. Folger combines the final battle/restoration into5.8 while other editions divide5.8–5.9.
 
 Source checked 28 October 2026: AQA 3.1.1/3.1.2 https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/shakespeare-and-the-19th-century-novel ; 3.2.1–3.2.3 https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/modern-texts-and-poetry ; skills 3.3 https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/skills . Untiered confirmation: specification introduction https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification .

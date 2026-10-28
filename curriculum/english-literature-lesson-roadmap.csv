@@ -4,16 +4,16 @@ english-literature.macbeth.prophecy,lit.macbeth.prophecy,english-literature.macb
 english-literature.macbeth.hidden-desires,lit.macbeth.hidden-desires,english-literature.macbeth,"Public loyalty, private ambition","Act 1, scenes 4–5",3.1.1;3.3,implemented
 english-literature.macbeth.decision,lit.macbeth.decision,english-literature.macbeth,The decision to kill,"Act 1, scenes 6–7",3.1.1;3.3,implemented
 english-literature.macbeth.murder,lit.macbeth.murder,english-literature.macbeth,A mind that cannot rest,"Act 2, scenes 1–2",3.1.1;3.3,implemented
-english-literature.macbeth.discovery,,english-literature.macbeth,Discovery and suspicion,2.3–2.4,3.1.1;3.3,planned
-english-literature.macbeth.crown,,english-literature.macbeth,An insecure crown,3.1–3.2,3.1.1;3.3,planned
-english-literature.macbeth.banquet,,english-literature.macbeth,Murder and the banquet,3.3–3.6,3.1.1;3.3,planned
-english-literature.macbeth.apparitions,,english-literature.macbeth,The apparitions and equivocation,4.1,3.1.1;3.3,planned
-english-literature.macbeth.resistance,,english-literature.macbeth,Tyranny and resistance,4.2–4.3,3.1.1;3.3,planned
-english-literature.macbeth.unravelling,,english-literature.macbeth,Power begins to unravel,5.1–5.4,3.1.1;3.3,planned
-english-literature.macbeth.ending,,english-literature.macbeth,The fall of Macbeth,5.5–5.9,3.1.1;3.3,planned
-english-literature.macbeth.macbeth-character,,english-literature.macbeth,Macbeth across the whole play,Whole play,3.1.1;3.3,planned
-english-literature.macbeth.lady-macbeth,,english-literature.macbeth,Lady Macbeth across the whole play,Whole play,3.1.1;3.3,planned
-english-literature.macbeth.kingship,,english-literature.macbeth,Kingship and tyranny,Whole play,3.1.1;3.3,planned
+english-literature.macbeth.discovery,lit.macbeth.discovery,english-literature.macbeth,Discovery and suspicion,2.3–2.4,3.1.1;3.3,implemented
+english-literature.macbeth.crown,lit.macbeth.crown,english-literature.macbeth,An insecure crown,3.1–3.2,3.1.1;3.3,implemented
+english-literature.macbeth.banquet,lit.macbeth.banquet,english-literature.macbeth,Murder and the banquet,3.3–3.6,3.1.1;3.3,implemented
+english-literature.macbeth.apparitions,lit.macbeth.apparitions,english-literature.macbeth,The apparitions and equivocation,4.1,3.1.1;3.3,implemented
+english-literature.macbeth.resistance,lit.macbeth.resistance,english-literature.macbeth,Tyranny and resistance,4.2–4.3,3.1.1;3.3,implemented
+english-literature.macbeth.unravelling,lit.macbeth.unravelling,english-literature.macbeth,Power begins to unravel,5.1–5.4,3.1.1;3.3,implemented
+english-literature.macbeth.ending,lit.macbeth.ending,english-literature.macbeth,The fall of Macbeth,5.5–5.9,3.1.1;3.3,implemented
+english-literature.macbeth.macbeth-character,lit.macbeth.macbeth-character,english-literature.macbeth,Macbeth across the whole play,Whole play,3.1.1;3.3,implemented
+english-literature.macbeth.lady-macbeth,lit.macbeth.lady-macbeth,english-literature.macbeth,Lady Macbeth across the whole play,Whole play,3.1.1;3.3,implemented
+english-literature.macbeth.kingship,lit.macbeth.kingship,english-literature.macbeth,Kingship and tyranny,Whole play,3.1.1;3.3,implemented
 english-literature.macbeth.supernatural,,english-literature.macbeth,Fate and the supernatural,Whole play,3.1.1;3.3,planned
 english-literature.macbeth.guilt,,english-literature.macbeth,Guilt and moral disorder,Whole play,3.1.1;3.3,planned
 english-literature.macbeth.dramatic-method,,english-literature.macbeth,Tragedy and dramatic methods,Whole play,3.1.1;3.3,planned

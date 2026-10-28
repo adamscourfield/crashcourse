@@ -1,3 +1,15 @@
+## English Literature batch 2 — ten Macbeth lessons, 28 October 2026
+
+User requests ten lessons per batch. Added discovery/suspicion2.3–2.4; insecure crown3.1–3.2; banquet3.3–3.6 including Hecate; apparitions4.1; resistance4.2–4.3; unravelling5.1–5.4; ending5.5–end; whole-play Macbeth; whole-play Lady Macbeth; kingship. Folger5.8/some-editions5.9 distinction explicit. All ten quotations matched primary text after normalising typography/line numbers; original explanations and supported alternative readings. Precise sources and batch brief in curriculum/briefs/literature-macbeth-02.md.
+
+**Totals:**15built Literature lessons,83planned of98. Macbeth15/20; five thematic/method/writing units remain. Added30practice/40independent knowledge items,10interpretive challenges and10saved analytical prompts. Literature totals45practice/60checks. Three language details + character perspectives + scene/evidence sequence in every new lesson. Task-specific wrong feedback, dynamic progress scope/source notes, scene links; automatic progression and stable version1storage retained. Original five lesson records hash-tested unchanged. Knowledge completion does not mark writing.
+
+**QA actually passed:**799full automated tests38.38s, then32focused Literature/progress/question-flow checks after adding the final old-progress handler test. Eleven Literature tests include offline handler journeys through all ten new lessons: wrong/retry, first attempts, all gates, independent locking and failed-check retake, writing snapshots/escaping and resume. A learner from the original five-lesson release resumes unchanged. Registry IDs and98/15/83 totals validated;45coverage rows for15lessons; syntax/diff checks passed. Offline DOM doubles do not render a browser or establish visual/mobile/keyboard/assistive-technology quality. Browser UI not exercised: recorded browser-tool security restriction from batch1 remains; no alternate control route used. Specialist review not performed; saved writing remains unmarked.
+
+**Publication:**canonical GitHub commit/push and native owner-private Site deployment pending; receipt to follow. Existing History208/Geography189 content preserved. App-only helper checkout stays separate from root repository.
+
+**Next ten:**finish five Macbeth units (supernatural; guilt; dramatic methods; extract-to-whole argument; independent essay/revision), then first five A Christmas Carol. Complete per-batch briefs and rights/text verification first. Whole-play summaries do not replace reading the full text; independent extended writing and specialist review remain open.
+
 ## English Literature batch 1 publication receipt — 28 October 2026
 
 **Published successfully at 14:28:22 UTC.** First five Macbeth lessons are available from English Literature;93 planned Literature lessons remain unavailable. Existing owner-private Site audience retained: one owner, no groups/external visitors.

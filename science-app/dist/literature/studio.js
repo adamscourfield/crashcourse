@@ -1,4 +1,4 @@
-import {lessons, topics, units, source, specIssue} from './content.js?v=20261028-lit01';
+import {lessons, topics, units, source, specIssue} from './content.js?v=20261028-lit02';
 import {questionFlow, cancelQuestionAdvance} from '../question-flow.js?v=20261023-flow01';
 import {recordConcept, dueConcepts} from '../progress.js?v=20261028-subjects01';
 import {summarise} from '../progress-summary.js?v=20261023-mastery01';
@@ -66,7 +66,7 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
       for (const q of l.check) if (p.checks[q.id] !== undefined) { b.total++; if (p.checks[q.id] === q.answer) b.correct++; }
       return {id: l.id, title: l.title, topicId: l.topicId, stages: literatureGates(l, p), started: !!(p.seen.length || p.observed.length || Object.keys(p.practice).length || Object.keys(p.checks).length), practice: a, check: b, gaps, due};
     });
-    return {...summarise(rows, topics), subject: 'English Literature', scope: 'AQA GCSE English Literature · 8702 · first five Macbeth lessons', scopeNote: 'Five built Macbeth lessons only. Completion and scores describe knowledge activities; analytical writing is saved but not marked. The rest of Literature is planned.', practiceLabel: 'Practice first tries'};
+    return {...summarise(rows, topics), subject: 'English Literature', scope: `AQA GCSE English Literature · 8702 · ${lessons.length} built Macbeth lessons`, scopeNote: `${lessons.length} built Macbeth lessons only. Completion and scores describe knowledge activities; analytical writing is saved but not marked. The rest of Literature is planned.`, practiceLabel: 'Practice first tries'};
   }
   function save() {
     s.review = mode === 'review' && run ? {ids: run.questions.map(q => q.id), answers: run.answers, index: run.index} : null;
@@ -123,7 +123,7 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
       $('#hBody').innerHTML = `<p id="hObserved">Views explored: ${p.observed.length} / ${l.views.length}</p><p>${esc(tk[0].replace(/^Exam skill · /, ''))}</p><div class="choices">${choiceIndices(tk[0], tk[1].length).map(j => `<button class="choice ${passed && j === tk[2] ? 'selected' : ''}" data-htask="${j}" ${passed ? 'disabled' : ''}>${esc(tk[1][j])}</button>`).join('')}</div>`;
       $$('[data-htask]').forEach(b => (b.onclick = () => {
         if (p.passed.includes(i)) return;
-        if (Number(b.dataset.htask) !== tk[2]) return feedback('Not yet. Check what the scene actually establishes. A possible interpretation still needs evidence; avoid turning an influence or a character’s opinion into a fact.', true);
+        if (Number(b.dataset.htask) !== tk[2]) return feedback(tk[4] || 'Not yet. Check what the scene actually establishes. A possible interpretation still needs evidence; avoid turning an influence or a character’s opinion into a fact.', true);
         p.passed.push(i); $$('[data-htask]').forEach(x => (x.disabled = true)); save(); feedback('Correct. ' + tk[3]);
       }));
       if (passed) feedback('Correct. ' + tk[3]);
@@ -197,7 +197,7 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
     run = {questions: list, answers: {}, index: 0}; mode = 'review'; closeModal(); render();
   }
   function openSources() {
-    modal(`<h2>Sources & notes</h2><p>AQA GCSE English Literature 8702; 3.1.1 and 3.3. First five Macbeth lessons cover 1.1–2.2. Source checked 28 October 2026.</p><p><a href="${source}" target="_blank" rel="noopener">Official AQA specification ↗</a></p><p><a href="https://www.folger.edu/explore/shakespeares-works/macbeth/read/" target="_blank" rel="noopener">Read Macbeth at the Folger Shakespeare Library ↗</a></p><p>Brief quotations from Shakespeare’s public-domain play; explanations and questions are original. Scene references are used because line numbering varies by edition. Read the whole scenes alongside these lessons: summaries do not replace the whole play.</p><p>Interpretations may differ when supported by the text. No English specialist review has been completed. Knowledge checks are automatically scored; saved analytical writing is not automatically marked.</p>`);
+    modal(`<h2>Sources & notes</h2><p>AQA GCSE English Literature 8702; 3.1.1 and 3.3. ${lessons.length} built Macbeth lessons. Current scope: ${esc(contextLesson().scope)}. Source checked 28 October 2026.</p><p><a href="${source}" target="_blank" rel="noopener">Official AQA specification ↗</a></p>${(contextLesson().sources || []).map(url => `<p><a href="${esc(url)}" target="_blank" rel="noopener">Read the referenced scene ↗</a></p>`).join('')}<p><a href="https://www.folger.edu/explore/shakespeares-works/macbeth/read/" target="_blank" rel="noopener">Read Macbeth at the Folger Shakespeare Library ↗</a></p><p>Brief quotations from Shakespeare’s public-domain play; explanations and questions are original. Scene references are used because line numbering varies by edition. Read the whole scenes alongside these lessons: summaries do not replace the whole play.</p><p>Interpretations may differ when supported by the text. No English specialist review has been completed. Knowledge checks are automatically scored; saved analytical writing is not automatically marked.</p>`);
   }
   return {render, stop, openLessons, openMap, openSources, startReview, getProgress, openProgressLesson: openLesson, reviewTopic: startReview, title: () => (mode === 'review' ? 'Literature review' : lesson().title), state: () => s};
 }

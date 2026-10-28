@@ -1,3 +1,4 @@
+import {batch02} from './content-batch02.js?v=20261028-lit02';
 export const source="https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification";
 export const topics=[{id:"english-literature.macbeth",title:"Macbeth",unit:"8702"}];
 export const units=[{id:"8702",title:"AQA GCSE English Literature",paper:"Macbeth · Paper 1"}];
@@ -952,3 +953,5 @@ export const lessons=[
     ]
   }
 ];
+
+lessons.push(...batch02);

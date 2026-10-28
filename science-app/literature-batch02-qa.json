@@ -1,0 +1,43 @@
+{
+  "url": "https://www.folger.edu/explore/shakespeares-works/macbeth/read/",
+  "html_sha256": "359abd0ac43191899eeb4be44d9a871d2e6457a808e98a711e88ac208d092cb6",
+  "checked": "2026-10-28",
+  "quotes_matched": 10,
+  "batch": "Macbeth02",
+  "new_lessons": 10,
+  "total_literature_lessons": 15,
+  "planned_remaining": 83,
+  "new_practice": 30,
+  "new_checks": 40,
+  "total_practice": 45,
+  "total_checks": 60,
+  "full_suite": {
+    "passed": 799,
+    "duration_ms": 38381.702625,
+    "scope": "before the final old-progress handler test was added"
+  },
+  "final_focused": {
+    "passed": 32,
+    "scope": "Literature11 + progress + question-flow"
+  },
+  "offline_handler_journeys": {
+    "lessons": 10,
+    "paths": [
+      "discover_and_language_details",
+      "all_evidence_views",
+      "wrong_challenge_retry",
+      "wrong_practice_retry_first_attempt_preservation",
+      "independent_locks_and_results",
+      "draft_and_snapshot_escaping",
+      "resume"
+    ],
+    "additional": [
+      "failed_check_retake_history",
+      "old_five_lesson_release_resume"
+    ]
+  },
+  "browser": "not_exercised; recorded browser-tool security restriction from batch01 remains; no alternate browser-control route used",
+  "specialist_review": "not_performed",
+  "writing": "saved_unmarked",
+  "hosting": "pending_native_publication_receipt"
+}
