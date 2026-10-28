@@ -3,6 +3,11 @@ import {lessons, topics, units, source, specIssue} from './content.js?v=20261028
 import {questionFlow, cancelQuestionAdvance} from '../question-flow.js?v=20261023-flow01';
 import {recordConcept, dueConcepts} from '../progress.js?v=20261028-subjects01';
 import {summarise} from '../progress-summary.js?v=20261023-mastery01';
+import {track, plain} from '../classroom/track.js?v=20261028-classroom01';
+// Classroom: every answer and written version is offered to the teacher-sharing hook (ignored unless a student is signed in).
+const sendAttempt = (lessonId, q, stage, v) => track({subject: 'english-literature', lessonId, questionId: q.id, stage, prompt: plain(q.prompt), answer: plain(q.options[v]), correctAnswer: plain(q.options[q.answer]), correct: v === q.answer});
+const sendWriting = (lessonId, part, prompt, text) => track({subject: 'english-literature', lessonId, questionId: `${lessonId}#${part}`, stage: 'writing', prompt: plain(prompt), answer: String(text || ''), correctAnswer: '', correct: null});
+const lessonOfQuestion = id => lessons.find(l => [...l.practice, ...l.check].some(q => q.id === id))?.id;
 
 export const KEY = 'crash-course-literature-v1';
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
@@ -110,7 +115,7 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
     if(lesson().independentWriting){$('#litGuidedWriting').hidden=true;$('#litIndependent').innerHTML=`<h3>Independent writing</h3><p>${lesson().independentTaskType==='whole-text'?'A whole-play response with no supplied extract.':'A fresh extract-to-whole response.'} Guidance is hidden during the attempt. Writing is saved, not automatically marked.</p><button class="primary" id="litStartIndependent">${state(lesson()).independent?.firstResponse ? 'Review or revise your response' : 'Start independent writing →'}</button>`;$('#litStartIndependent').onclick=()=>{state(lesson()).writingActive=true;state(lesson()).independent ??= {draft:'',startedAt:Date.now(),departures:0};render();};}
     const wp=state(lesson()), area=$('#litDraft'); area.value=wp.draft || '';$('#litVersions').innerHTML=draftVersionsHTML(wp.drafts || []);
     area.oninput=()=>{wp.draft=area.value;const ok=save();$('#litDraftStatus').textContent=ok?'Draft saved on this device.':'Draft kept for this session; device storage is unavailable.';};
-    $('#litSaveDraft').onclick=()=>{if(!area.value.trim()){$('#litDraftStatus').textContent='Write an interpretation before saving a version.';return;} (wp.drafts ??= []).push({text:area.value,at:Date.now()});$('#litVersions').innerHTML=draftVersionsHTML(wp.drafts);const ok=save();$('#litDraftStatus').textContent=ok?`Version ${wp.drafts.length} saved. You can keep revising.`:'Version kept for this session; device storage is unavailable.';};
+    $('#litSaveDraft').onclick=()=>{if(!area.value.trim()){$('#litDraftStatus').textContent='Write an interpretation before saving a version.';return;} (wp.drafts ??= []).push({text:area.value,at:Date.now()});sendWriting(lesson().id,`guided-v${wp.drafts.length}`,lesson().writing,area.value);$('#litVersions').innerHTML=draftVersionsHTML(wp.drafts);const ok=save();$('#litDraftStatus').textContent=ok?`Version ${wp.drafts.length} saved. You can keep revising.`:'Version kept for this session; device storage is unavailable.';};
     if(mode==='lesson'&&!lesson().independentWriting)mountAIFeedback({root:$('#litAiFeedback'),lessonId:lesson().id,area,state:wp,save});
     $('#hLessons').onclick = () => openLessons();
     $('#hSources').onclick = openSources;
@@ -136,6 +141,7 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
       $('#hBody').innerHTML = `<p id="hObserved">Views explored: ${p.observed.length} / ${l.views.length}</p><p>${esc(tk[0].replace(/^Exam skill · /, ''))}</p><div class="choices">${choiceIndices(tk[0], tk[1].length).map(j => `<button class="choice ${passed && j === tk[2] ? 'selected' : ''}" data-htask="${j}" ${passed ? 'disabled' : ''}>${esc(tk[1][j])}</button>`).join('')}</div>`;
       $$('[data-htask]').forEach(b => (b.onclick = () => {
         if (p.passed.includes(i)) return;
+        track({subject: 'english-literature', lessonId: l.id, questionId: `${l.id}#task${i + 1}`, stage: 'challenge', prompt: plain(tk[0]), answer: plain(tk[1][Number(b.dataset.htask)]), correctAnswer: plain(tk[1][tk[2]]), correct: Number(b.dataset.htask) === tk[2]});
         if (Number(b.dataset.htask) !== tk[2]) return feedback(tk[4] || 'Not yet. Check what the scene actually establishes. A possible interpretation still needs evidence; avoid turning an influence or a character’s opinion into a fact.', true);
         p.passed.push(i); $$('[data-htask]').forEach(x => (x.disabled = true)); save(); feedback('Correct. ' + tk[3]);
       }));
@@ -153,7 +159,7 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
     } else if (p.stage === 2) {
       p.pi = Math.min(p.pi, l.practice.length - 1);
       const q = l.practice[p.pi], a = p.practice[q.id];
-      question(q, a?.choice, v => { if (a?.correct) return; const old = p.practice[q.id]; p.practice[q.id] = {choice: v, first: old?.first ?? v, correct: v === q.answer}; recordConcept(s, q.concept, v === q.answer); save(); render(); }, !!a?.correct, p);
+      question(q, a?.choice, v => { if (a?.correct) return; sendAttempt(l.id, q, 'practice', v); const old = p.practice[q.id]; p.practice[q.id] = {choice: v, first: old?.first ?? v, correct: v === q.answer}; recordConcept(s, q.concept, v === q.answer); save(); render(); }, !!a?.correct, p);
       if (a) feedback((a.correct ? 'Correct. ' : 'Try again. ') + q.why, !a.correct);
       $('#hHint').textContent = `Practice ${p.pi + 1} / ${l.practice.length}`;
       $('#hContinue').onclick = () => { if (!p.practice[q.id]?.correct) return; if (p.pi < l.practice.length - 1) p.pi++; else p.stage = 3; render(); };
@@ -161,7 +167,7 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
     } else {
       p.ci = Math.min(p.ci, l.check.length - 1);
       const q = l.check[p.ci], a = p.checks[q.id];
-      question(q, a, v => { if (a !== undefined) return; p.checks[q.id] = v; recordConcept(s, q.concept, v === q.answer); save(); render(); }, a !== undefined, p);
+      question(q, a, v => { if (a !== undefined) return; sendAttempt(l.id, q, 'check', v); p.checks[q.id] = v; recordConcept(s, q.concept, v === q.answer); save(); render(); }, a !== undefined, p);
       if (a !== undefined) feedback('Answer recorded.');
       $('#hHint').textContent = `Independent check ${p.ci + 1} / ${l.check.length}`;
       $('#hContinue').textContent = p.ci === l.check.length - 1 ? 'See results →' : 'Next question →';
@@ -173,7 +179,7 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
   function renderReview() {
     root.querySelector('.steps').hidden = true;
     const q = run.questions[run.index], a = run.answers[q.id];
-    question(q, a, v => { if (run.answers[q.id] !== undefined) return; run.answers[q.id] = v; recordConcept(s, q.concept, v === q.answer, Date.now(), true); save(); render(); }, a !== undefined, {history: []});
+    question(q, a, v => { if (run.answers[q.id] !== undefined) return; sendAttempt(lessonOfQuestion(q.id), q, 'review', v); run.answers[q.id] = v; recordConcept(s, q.concept, v === q.answer, Date.now(), true); save(); render(); }, a !== undefined, {history: []});
     if (a !== undefined) feedback((a === q.answer ? 'Correct. ' : 'Revisit this. ') + q.why, a !== q.answer);
     $('#hHint').textContent = `Recall ${run.index + 1} / ${run.questions.length}`;
     $('#hContinue').onclick = () => { if (run.answers[q.id] === undefined) return; if (++run.index >= run.questions.length) { mode = 'lesson'; run = null; render(); modal('<h2>Review recorded</h2><p>Correct recall schedules the next visit. Missed concepts stay on your review list.</p>'); } else render(); };
@@ -225,6 +231,7 @@ export function createLiteratureStudio({root, modal, closeModal, onProgress}) {
       if(!area.value.trim()){$('#litIndependentStatus').textContent='Write a response before submitting.';return;}
       if(!w.firstResponse)w.firstResponse={text:area.value,at:Date.now(),departures:w.departures||0};
       else (w.revisions??=[]).push({text:area.value,at:Date.now()});
+      sendWriting(l.id,w.revisions?.length?`independent-r${w.revisions.length}`:'independent-first',l.independentPrompt,area.value);
       renderIndependentWriting();
       $('#litIndependentStatus').textContent=submitted?'Revision saved; your first response is unchanged.':'First response saved. Use the criteria to review it; no mark has been assigned.';
     };

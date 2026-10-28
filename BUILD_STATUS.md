@@ -1,3 +1,50 @@
+## Teacher classroom: set lessons, see progress and answers — 28 October 2026
+
+User request: teachers set specific lessons for students and see progress and answers for each student and for a whole class. Decisions taken: Supabase backend, class code plus username logins, test data only until DPIA and school sign-off, every attempt recorded.
+
+**Implemented**
+- Teacher dashboard at `/teacher/`:
+  - sign in or create account;
+  - classes with join codes;
+  - students created as printable logins, with password reset and delete;
+  - set work: subject, topic or lesson picker across all 896 built lessons, due date and note;
+  - progress grid of students × lessons;
+  - every attempt per student per lesson;
+  - whole-class question analysis: first-attempt %, common wrong answers, every answer;
+  - student summary and CSV export.
+- Students: a "Join your class" box in the lessons app, a set-work list with status and Open, and a sync status line.
+- Answers are hooked in all five subjects, including Literature writing versions and Geography model activities.
+- Offline per-student queue with idempotent upload.
+- Shared-computer guard: a different student must clear the browser's saved lessons or sign out.
+- Supabase migration with RLS, column grants and a role trigger, plus the manage-students edge function.
+- Demo-mode adapter, used whenever `config.js` is empty (the current state).
+- Docs: `CLASSROOM.md`, covering setup, security model, data-protection checklist and limitations.
+
+**QA (technical only)**
+- 840/840 npm tests (after rebasing onto the AI-feedback and poetry batch7 work), including 10 classroom unit tests and the migration plus 39 RLS checks on real Postgres 16 with a test auth stub.
+- Chromium demo walk 37/37 (`science-app/classroom-browser-evidence.json`). It covers:
+  - wrong teacher and student passwords;
+  - a signed-out answer not shared;
+  - wrong-then-right practice and check answers;
+  - reload and resume;
+  - all five subjects' answers reaching the teacher;
+  - grid, answers, whole-class and student views, and CSV;
+  - password reset;
+  - a separate-only lesson refused with its reason;
+  - the shared-computer prompt, including closing it and clearing;
+  - 390px layouts.
+- Fixed during QA:
+  - a page error from sync after sign-out;
+  - a join-code regex that accepted O;
+  - a progress upsert grant;
+  - pre-sign-in answer buffering;
+  - shared queue loss.
+
+Not tested: Supabase end to end, the edge function (no Deno here), and whether Supabase accepts the synthetic `.invalid` email domain. No accessibility audit and no specialist or safeguarding review.
+
+**Publication:** the canonical GitHub push follows. The Site is not republished by this session. The owner-private Site audience means students could not reach it anyway. No Supabase project exists, and no credentials or real student data are stored anywhere. Curriculum registers are unchanged because there are no lesson changes.
+
+**Next action:** the school DPIA and privacy notice. Then create an EU Supabase project, follow CLASSROOM.md §Going live, smoke-test with invented students, and decide a hosting audience that students can reach.
 ## AI paragraph feedback — implementation ready, activation pending, 28 October 2026
 
 User requested an AI API for marking paragraphs and confirmed OpenAI. Added inline Literature guided-writing feedback (selection or draft), exact paragraph snapshots/last3savedreviews, strengths/3lessoncriterionjudgments/nextedit/reflection. No official mark/grade/mastery changes; no modelparagraph rewrite. Independent writing exposes AI only after firstsubmission, preserving unassisted firstresponse/revisions. Criteria/question/context are selected server-side from stablelesson IDs. Explicit disclosure before student action; no APIkeys in browser/source/hostingmanifest.

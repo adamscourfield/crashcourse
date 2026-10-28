@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fafafa">
+<title>Crash Course · Teacher dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="teacher.css?v=20261028-classroom01">
+</head>
+<body>
+<header class="t-top">
+  <a class="t-brand" href="../" aria-label="Crash Course lessons">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M2 2h8v8H2zM12 2h8v8h-8zM22 2h8v8h-8zM2 12h8v8H2zM2 22h8v8H2zM12 22h8v8h-8z" fill="currentColor"/><path d="M22.5 22.5h7v7h-7z" stroke="currentColor"/><path d="M12 12h8v8h-8z" fill="currentColor" opacity=".25"/></svg>
+    <span><b>Crash Course</b><small>Teacher dashboard</small></span>
+  </a>
+  <span class="t-mode" id="mode" hidden></span>
+  <span class="t-user" id="user"></span>
+</header>
+<main id="app" class="t-main" aria-live="polite"><p class="t-muted">Loading…</p></main>
+<dialog id="dlg" class="t-dialog"><button class="t-close" id="dlgClose" aria-label="Close">×</button><div id="dlgBody"></div></dialog>
+<script type="module" src="teacher.js?v=20261028-classroom01"></script>
+</body>
+</html>
