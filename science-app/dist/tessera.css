@@ -1,0 +1,79 @@
+/* Tessera family · light learning workspace.
+   Presentation only: preserve all lesson state, model colours, motion and controls. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+:root{color-scheme:light;--sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--serif:var(--sans);--navy:#202124;--ink:#202124;--paper:#fafafa;--cream:#fafafa;--white:#fff;--muted:#64676c;--subtle:#5c6066;--line:#e1e2e5;--coral:#33363b;--warm:#50545b;--outer:#eff0f2;--green:#202124;--tessera-panel:#202226}
+body{background:var(--paper);color:var(--ink);font-weight:400;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font-family:var(--sans)}
+h1,h2,h3,h4,.intro h1,.activity h2,dialog h2,dialog h3,.subject-card b,.lesson-meta p,.scene-title h2,.h-view-title,.recall-visual h3{font-family:var(--sans);font-weight:300;letter-spacing:-.035em}
+.sidebar{background:#fff;border-color:var(--line)}
+.brand{gap:13px;min-height:44px}.brand-mark{width:32px;height:32px;color:var(--ink)}
+.brand-wordmark{font-family:var(--sans);font-size:16px;line-height:1.15;letter-spacing:.13em;font-weight:500;gap:4px;text-transform:uppercase}
+.brand-wordmark>span:last-child{font:500 10px/1.3 var(--sans);letter-spacing:.3em;padding-left:0;color:var(--subtle)}
+.brand-wordmark>span:last-child:after{content:none}
+.subject-label,.side-course label{font-weight:500}.sidebar .subject-label{margin-top:32px}
+.subject-select,.side-course select,.lab-select,.lab-input,.coefficient-row input{border-radius:4px;background-color:#fff;color:var(--ink);border-color:var(--line)}
+.sidebar select,.lab-select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' fill='none' stroke='%235c6066' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E")}
+.nav{border-radius:4px;font-size:12px;font-weight:400;gap:12px}.nav.active{background:#202124;color:white;font-weight:500}.nav.active .nav-icon{color:#fff}.nav-icon{stroke-width:1.35}.nav-count{font-weight:400}
+.side-course h3{font-family:var(--sans);font-weight:500;font-size:13px;letter-spacing:0}.side-course{border-color:var(--line)}
+.progress-track{background:#e8e9eb;border-radius:0;height:3px}.progress-track i{background:#33363b;border-radius:0}
+header{border-color:var(--line);font-weight:400}.eyebrow,.intro .eyebrow,.activity .eyebrow{font-weight:500;letter-spacing:.16em;color:var(--subtle);font-size:9px}
+.intro{padding:30px 0}.intro h1,h1,#plannedSubject h1{font-size:clamp(30px,3.4vw,48px);font-weight:300;line-height:1.16;letter-spacing:-.04em;max-width:900px}
+.intro h1 em,h1 em{font-family:var(--sans);font-weight:300;font-style:normal;color:#74777d}.intro-number{font-weight:400}
+.lesson-meta p{font-size:21px}.lesson-meta{border-color:var(--line)}
+.lesson-toolbar{padding-bottom:22px;gap:12px}.text-button{font-weight:400}.lesson-toolbar .text-button{font-weight:500}
+.steps{background:transparent;border-radius:0;padding:0;gap:0;border-bottom:1px solid var(--line);margin-bottom:26px}
+.steps button{border-radius:0;border-bottom:2px solid transparent;min-height:56px;font-weight:400;padding:14px 16px;background:transparent;color:var(--subtle)}
+.steps .selected{background:transparent;box-shadow:none;color:var(--ink);border-bottom-color:var(--ink)}.steps .selected b{color:var(--ink)}.steps .done b{color:#42684a}
+.workspace{border-color:var(--line);border-radius:6px;background:#fff;box-shadow:0 3px 18px #20212403}
+.scene-panel{background:radial-gradient(ellipse at 45% 36%,#34373d,#222428 68%,#1b1d20)}
+.activity{background:#fff;padding:34px 30px 26px}.activity h2{font-weight:300;font-size:28px;line-height:1.3;letter-spacing:-.035em}.activity p{color:#555a61;line-height:1.85}.activity strong{color:var(--ink);font-weight:600}
+.primary{border-radius:4px;background:#202124;color:#fff;border:1px solid #202124;font-weight:500;font-size:12px;letter-spacing:.025em;padding:14px 20px}.primary:hover{background:#41444a;color:#fff;border-color:#41444a}
+.secondary,.choice,.particle-select button,.build-controls button{border-radius:4px;background:#fff;color:var(--ink);border-color:var(--line);font-weight:400}
+.secondary:hover,.choice:hover,.particle-select button:hover,.build-controls button:hover{background:#f3f4f5;border-color:#aeb1b6}
+.choice.selected,.particle-select .chosen{background:#eff0f2;color:var(--ink);border-color:#41444a}
+.particle-select button b,.counter{font-family:var(--sans);font-weight:300}.callout{border-radius:4px;background:#f3f4f5;border-color:#8c9097;color:#555a61}.callout b{color:var(--ink)}
+.reading-dots button{border-color:var(--line);color:var(--ink)}.reading-dots .current{color:#fff;background:#33363b;border-color:#33363b}
+.scene-title h2{font-size:26px;color:#fff}.scene-button,.model-view-controls button{border-radius:4px;background:#ffffff06;border-color:#ffffff30;color:#e6e7ea}
+.scene-button:hover,.model-view-controls button:hover{background:#ffffff18}.scene-title #sceneFormula{border-radius:3px}.live-pill i{background:#e1e2e5}
+#processMovie .movie-controls .secondary{border-radius:4px}.scene-panel #movieArt{border-radius:4px;background:#ffffff04}
+.scene-panel #movieScrub,.scene-panel input[type=range]{accent-color:#d2d4d9}.model-view-controls button:focus-visible,.scene-bottom button:focus-visible{outline-color:white}
+.spec{border-radius:3px}.review-card{background:#f0f1f3;border-radius:4px}.subject-card{border-radius:4px;background:white}.subject-card b{font-size:24px}.subject-card.selected{background:#f2f3f4;border-color:#64676c}
+dialog{background:#fafafa;color:var(--ink);border-radius:6px;border-color:var(--line);box-shadow:0 30px 100px #0002}dialog::backdrop{background:#16181c66;backdrop-filter:blur(5px)}
+dialog h2{font-weight:300;font-size:32px}dialog h3{font-weight:400}dialog p,dialog li{color:var(--subtle)}#closeModal{border-radius:4px;color:var(--ink)}
+.lesson-row{border-color:var(--line);border-radius:4px;background:#fff}.lesson-row:hover{background:#f0f1f3}#modal .lesson-row.current{background:#e9ebee;border-color:#9a9da3}.lesson-row b{font-weight:500}
+#modal .h-map-unit{color:var(--subtle)}
+/* Reading studios use a light paper surface; scientific diagrams retain contrast. */
+#literatureContent .h-panel,#historyContent .h-panel{background:#f1f2f4;color:var(--ink);border-right:1px solid var(--line)}
+#literatureContent .h-panel .eyebrow,#historyContent .h-panel .eyebrow{color:var(--subtle)}
+.h-panel .h-tabs .scene-button{background:transparent;border-color:#ccd0d6;color:#555a61;font-size:11px}
+.h-panel .h-tabs .scene-button[aria-pressed=true]{background:#fff;border-color:#41444a;color:var(--ink)}
+.h-panel .h-view{background:#ffffffa8;border-color:#dddfe3;border-radius:4px;color:var(--ink)}
+.h-panel .h-view-title{color:var(--ink);font-family:var(--sans);font-size:22px;font-weight:300;line-height:1.4}
+.h-panel .h-timeline{border-color:#8b8f96}.h-panel .h-timeline li{color:#555a61}.h-panel .h-timeline li:before{background:#555a61;border-color:#f1f2f4}.h-panel .h-date{color:var(--ink);font-weight:500}
+.h-panel .h-card,.h-panel .h-factor{background:#fff;color:#555a61;border-radius:4px;border-color:#b9bdc4}.h-panel .h-card b,.h-panel .h-factor b{color:var(--ink);font-weight:500}
+.h-panel .h-source{border-radius:4px;background:white;color:var(--ink)}.h-panel .h-source-k{color:var(--subtle)}
+#literatureContent .lit-quotation,#literatureContent .lit-scene-summary{font-family:var(--sans);font-size:24px;line-height:1.6;font-weight:300;color:var(--ink)}
+#literatureContent .lit-reading{color:#555a61;font-size:15px}
+#literatureContent .lit-details .scene-button{background:white;color:#555a61;border-color:#ccd0d6;font-size:11px;border-radius:4px}
+#literatureContent .lit-details button[aria-pressed=true]{background:#33363b;color:white;border-color:#33363b}
+#literatureContent .lit-writing{border-color:var(--line);border-radius:4px}#literatureContent .lit-writing textarea{color:var(--ink);border-radius:4px;border-color:#c8cbd0}#literatureContent .lit-writing summary{font-weight:500}
+#literatureContent .lit-version{border-radius:4px;background:#f1f2f4}
+#literatureContent .h-panel>p:last-child,#historyContent .h-panel>p:last-child{color:var(--subtle)!important}
+/* Keep semantic correctness, indicator, particle, graph and map colours intact. */
+:where(button,a,input,select,textarea,summary):focus-visible{outline:2px solid #555a61;outline-offset:4px}
+@media(hover:hover){.nav:not(.active):hover{background:#f0f1f3;color:var(--ink)}.primary:hover,.secondary:hover{box-shadow:0 5px 14px #0000000c}}
+@media(max-width:800px){.sidebar{background:#fff}.sidebar .nav{border-radius:4px;font-size:10px}.brand-mark{width:28px;height:28px}.brand-wordmark{font-size:14px}.brand-wordmark>span:last-child{font-size:9px;letter-spacing:.26em}.intro h1{font-size:32px}.steps button{padding:12px 4px;font-size:11px}.activity{padding:26px 22px}.activity h2{font-size:26px}.workspace{border-radius:4px}#literatureContent .h-panel,#historyContent .h-panel{border-right:0;border-bottom:1px solid var(--line)}dialog{border-radius:5px}}
+/* Presentation accents on dark canvases need their own high-contrast token. */
+.scene-panel{--coral:#d0d3d8;--warm:#d0d3d8}
+#literatureContent .h-panel,#historyContent .h-panel{--coral:#33363b;--warm:#50545b}
+#scienceContent .workspace:not(.question-mode)>.scene-panel,#scienceContent .workspace:not(.question-mode)>.activity{border-radius:6px}
+#scienceEvidence .science-explanation-photo,.science-explanation-photo img{border-radius:4px}
+#lessonsButton,#mLessons,#gLessons{border-radius:4px;font-weight:500;box-shadow:none;background:#202124}
+#lessonsButton:hover,#mLessons:hover,#gLessons:hover{background:#41444a}
+.geo-controls [aria-pressed=true]{background:#ffffff18;border-color:#d0d3d8}.mm-op{background:#ffffff0c}.mtok-op:hover{background:#edf0f3}.mbadge.soft{background:#eff0f2;color:#555a61}
+.mastery-action:hover{color:#202124}.mastery-lesson-list{border-radius:4px}.mastery-dashboard progress{border-radius:0}
+#geographyContent #gPanel .geo-caption a{color:#e0e2e7}#geographyContent #gBody .geo-scene{background:#25282d;border-radius:4px}
+#modal .lesson-row[aria-current=page]{background:#e9ebee;border-color:#64676c}
+.mexample{background:#f4f5f6;border-radius:4px}.mrung,.mm-op,.mm-io,.mwork,.mtok-op,.mslots span{border-radius:4px}.mfig,.mgraph-in>svg{background:linear-gradient(160deg,#34373d,#222428);border-radius:4px}
+.mastery-stat{border-radius:4px}
+@media(max-width:800px){.subject-select{width:164px}.sidebar .brand{flex-basis:calc(100% - 184px)}}

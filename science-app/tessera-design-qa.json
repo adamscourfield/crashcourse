@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-28",
+  "reference": "User Tessera.zip root index.html",
+  "scope": "presentation-only, all subjects",
+  "full_tests": {
+    "passed": 813,
+    "duration_ms": 37898.286584
+  },
+  "html_ids_and_scripts": "unchanged",
+  "javascript_and_storage": "unchanged",
+  "browser_desktop": [
+    "Literature evidence",
+    "Science cell3D/2D toggle",
+    "Maths step reveal",
+    "History factors",
+    "Geography saved graph controls",
+    "Science mastery dashboard",
+    "Literature practice wrong/retry and automatic next"
+  ],
+  "browser_mobile": {
+    "width": 390,
+    "height": 844,
+    "document_width": 390,
+    "lesson_and_modal": "inspected",
+    "viewport_reset": true
+  },
+  "progress": "Science15/361 and Geography163/163 retained; existing Literature draft/version preserved",
+  "limitations": [
+    "Not every individual model visually audited",
+    "No full assistive-technology audit"
+  ],
+  "publication": "pending"
+}
