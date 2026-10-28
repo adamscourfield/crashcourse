@@ -1,3 +1,34 @@
+## History depth batch 08: Medicine key topic 2 (7 lessons, 11 2.1–2.3), and History checked against the Issue 6 specification; on GitHub `main`, not published
+
+**Lessons:**
+- continuity and change in ideas;
+- Sydenham;
+- printing and the Royal Society;
+- Renaissance treatment;
+- community and hospital care;
+- Vesalius and training;
+- plague in 1348 and 1665 compared.
+
+**Specification check:** the user supplied the Pearson PDF, and all 54 requirement rows were checked against it.
+- Six Cold War depth lessons had wrong subsection refs; corrected.
+- Option 31's Churches content moved to 3.3.
+- "Roma and Sinti" now named.
+- The planned Western Front lesson now covers "the RAMC and nurses".
+- A planned Cold War lesson was added for the leaders' attitudes (P4 1.1).
+- Details: `curriculum/briefs/history-depth-batch-08.md`.
+
+**Totals:** History has 131 lessons; 82 are left on the 213-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked 9 lessons plus the whole-app checks: 165 checks pass.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 09, Medicine key topics 3–4 (13 lessons, in two batches).
+
 ## History depth batch 07: Medicine key topic 1 (8 lessons, 11 1.1–1.3); on GitHub `main`, not published
 
 **Lessons:**

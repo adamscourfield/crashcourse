@@ -101,7 +101,7 @@ lesson(T, 'coldwar.summits', 'The summits of 1959–61', ['P4 2.1'], [
   Q('cwd12.c8', 'Where did foreign ministers meet in 1959?', ['Geneva', 'Moscow', 'London'], 0, 'They reached no agreement.', 'camp-david'),
 ], {exam: 'Write a narrative account analysing the key events of the summits of 1959–61. (8 marks)'}),
 
-lesson(T, 'coldwar.wall-impact', 'The impact of the Berlin Wall', ['P4 2.1'], [
+lesson(T, 'coldwar.wall-impact', 'The impact of the Berlin Wall', ['P4 2.2', 'P4 2.3'], [
   ['Overnight, 13 August 1961', 'In the early hours of 13 August 1961 East German soldiers and police strung barbed wire across Berlin, closing the border between East and West. Over the following days and months it was replaced by a concrete wall with watchtowers, guards and a "death strip". Families and friends were suddenly divided.'],
   ['Stand-off at Checkpoint Charlie', 'In October 1961 a dispute over the right of American officials to enter East Berlin led to US and Soviet tanks facing each other at Checkpoint Charlie, a crossing point, for about sixteen hours. Both sides withdrew without firing.'],
   ['Escapes and deaths', 'People continued to try to escape over, under or through the Wall. Guards had orders to shoot, and many were killed; in 1962 eighteen-year-old Peter Fechter was shot and left to bleed to death in view of the West. Such deaths were powerful Western propaganda.'],
@@ -148,7 +148,7 @@ lesson(T, 'coldwar.wall-impact', 'The impact of the Berlin Wall', ['P4 2.1'], [
   Q('cwd13.c8', 'What replaced the barbed wire?', ['A concrete wall', 'A canal', 'A fence of wood'], 0, 'With watchtowers.', 'building'),
 ], {exam: 'Explain the importance of the building of the Berlin Wall for relations between the superpowers. (8 marks)'}),
 
-lesson(T, 'coldwar.bay-of-pigs', 'The Bay of Pigs, 1961', ['P4 2.2'], [
+lesson(T, 'coldwar.bay-of-pigs', 'The Bay of Pigs, 1961', ['P4 2.1'], [
   ['The Cuban Revolution', 'In January 1959 Fidel Castro overthrew Fulgencio Batista, a dictator friendly to the USA. American businesses owned much of Cuba\'s land and industry. Castro took over US-owned businesses and land, and the USA responded by cutting its purchases of Cuban sugar and then banning most trade.'],
   ['Castro turns to the USSR', 'In 1960 the USSR agreed to buy Cuban sugar and supply oil, machinery and weapons. For the USA, a communist ally of the USSR only about 150 kilometres from Florida was alarming.'],
   ['The invasion, April 1961', 'The CIA had trained around 1,400 Cuban exiles to invade and overthrow Castro, a plan Kennedy inherited. On 17 April 1961 they landed at the Bay of Pigs. Kennedy refused to send US air support, the expected uprising against Castro did not happen, and the invaders were defeated within three days.'],
@@ -245,7 +245,7 @@ lesson(T, 'coldwar.thirteen-days', 'Thirteen days: October 1962', ['P4 2.2'], [
   Q('cwd15.c8', 'What could missiles in Cuba reach?', ['Most American cities', 'Only the state of Florida', 'Only Moscow and Leningrad'], 0, 'They could strike within minutes.', 'discovery'),
 ], {exam: 'Write a narrative account analysing the key events of the Cuban Missile Crisis in October 1962. (8 marks)'}),
 
-lesson(T, 'coldwar.missile-consequences', 'The consequences of the Cuban Missile Crisis', ['P4 2.2'], [
+lesson(T, 'coldwar.missile-consequences', 'The consequences of the Cuban Missile Crisis', ['P4 2.3'], [
   ['A shock to both sides', 'Both leaders realised how close they had come to a nuclear war that would have destroyed both countries. Neither wanted to risk such a confrontation again, and they took steps to reduce the danger.'],
   ['The hotline and the Test Ban Treaty', 'In 1963 a direct telephone and teleprinter link, the "hotline", was set up between Washington and Moscow so the leaders could talk quickly in a crisis. In August 1963 the USA, the USSR and Britain signed the Limited Test Ban Treaty, banning nuclear tests in the atmosphere, in space and underwater.'],
   ['Later agreements', 'The Outer Space Treaty (1967) banned nuclear weapons in space, and the Nuclear Non-Proliferation Treaty (1968) aimed to stop the spread of nuclear weapons to other countries. These were early steps towards later détente.'],
@@ -293,7 +293,7 @@ lesson(T, 'coldwar.missile-consequences', 'The consequences of the Cuban Missile
   Q('cwd16.c8', 'What were these agreements early steps towards?', ['Détente', 'War', 'Isolation'], 0, 'They helped ease tension.', 'arms-control'),
 ], {exam: 'Explain two consequences of the Cuban Missile Crisis. (8 marks)'}),
 
-lesson(T, 'coldwar.dubcek', 'Dubček and opposition in Czechoslovakia', ['P4 2.3'], [
+lesson(T, 'coldwar.dubcek', 'Dubček and opposition in Czechoslovakia', ['P4 2.1'], [
   ['Discontent in the 1960s', 'Czechoslovakia\'s economy stagnated in the 1960s and living standards fell behind the West. The communist leader Antonín Novotný was unpopular, and students, writers and economists called for change.'],
   ['Socialism with a human face', 'In January 1968 Alexander Dubček became leader of the Czechoslovak Communist Party. He wanted to keep communism but make it more popular and humane, a goal he called "socialism with a human face".'],
   ['The Prague Spring', 'Dubček\'s reforms relaxed censorship, allowed more freedom of speech and travel abroad, gave more power to trade unions and regional governments, and allowed some private business. People began to criticise the government openly, and some called for other political parties.'],
@@ -340,7 +340,7 @@ lesson(T, 'coldwar.dubcek', 'Dubček and opposition in Czechoslovakia', ['P4 2.3
   Q('cwd17.c8', 'Which Yugoslav leader visited Prague?', ['Tito', 'Stalin', 'Nagy'], 0, 'He visited in August 1968.', 'moscow'),
 ], {exam: 'Explain the importance of Dubček\'s reforms for Soviet control of Eastern Europe. (8 marks)'}),
 
-lesson(T, 'coldwar.brezhnev-doctrine', 'The Brezhnev Doctrine and its consequences', ['P4 2.3'], [
+lesson(T, 'coldwar.brezhnev-doctrine', 'The Brezhnev Doctrine and its consequences', ['P4 2.2', 'P4 2.3'], [
   ['The invasion, August 1968', 'On the night of 20–21 August 1968 around half a million troops from the USSR and other Warsaw Pact countries invaded Czechoslovakia. Dubček told the army not to resist, so there was little fighting, but people protested in the streets, argued with soldiers and painted slogans. Dubček was taken to Moscow and later replaced by Gustáv Husák in 1969.'],
   ['The Brezhnev Doctrine', 'Brezhnev justified the invasion by declaring that if socialism was threatened in any communist country, the others had the right and duty to intervene. This became known as the Brezhnev Doctrine. It meant that satellite states could not reform beyond limits set by Moscow.'],
   ['International reaction', 'The USA condemned the invasion but did nothing; it was deeply involved in the Vietnam War and would not risk war in the Soviet sphere. A UN resolution condemning the invasion was blocked by a Soviet veto. Yugoslavia, Romania and many Western communist parties criticised the USSR.'],

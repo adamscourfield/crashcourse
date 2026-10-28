@@ -150,8 +150,8 @@ lesson(T, 'germany.employment', 'Employment and living standards', ['31 4.3'], [
 ], {exam: 'Explain why unemployment fell in Germany in the years 1933–39. (12 marks)'}),
 
 lesson(T, 'germany.persecution', 'The persecution of minorities', ['31 4.4'], [
-  ['Nazi racial beliefs', 'The Nazis believed in a hierarchy of races, with "Aryans" at the top as a "master race". They claimed others, especially Jews, Slavs and Roma, were inferior, and wanted a "racially pure" national community. These beliefs had no scientific basis.'],
-  ['Other minorities', 'A 1933 law allowed the compulsory sterilisation of people with certain disabilities and illnesses; hundreds of thousands were sterilised, and from 1939 disabled people were murdered in the secret "T4" programme. Roma were registered, banned from marrying Germans and sent to camps. Homosexual men were arrested under a harsher 1935 law and many were sent to concentration camps. Slavs were seen as inferior people whose land in the east should be taken.'],
+  ['Nazi racial beliefs', 'The Nazis believed in a hierarchy of races, with "Aryans" at the top as a "master race". They claimed others, especially Jews, Slavs, and Roma and Sinti, were inferior, and wanted a "racially pure" national community. These beliefs had no scientific basis.'],
+  ['Other minorities', 'A 1933 law allowed the compulsory sterilisation of people with certain disabilities and illnesses; hundreds of thousands were sterilised, and from 1939 disabled people were murdered in the secret "T4" programme. Roma and Sinti, peoples often called "Gypsies" at the time, were registered, banned from marrying Germans and sent to camps. Homosexual men were arrested under a harsher 1935 law and many were sent to concentration camps. Slavs were seen as inferior people whose land in the east should be taken.'],
   ['Persecution of Jews, 1933–35', 'On 1 April 1933 the Nazis organised a boycott of Jewish shops and businesses, with SA men standing outside. Jews were dismissed from the civil service and teaching. The Nuremberg Laws of 1935 took away Jews\' German citizenship and banned marriage and relationships between Jews and non-Jewish Germans.'],
   ['Kristallnacht, 1938', 'After a young Jewish man shot a German diplomat in Paris in November 1938, the Nazis organised attacks across Germany on the night of 9–10 November. Synagogues were burned, thousands of Jewish shops were smashed and around 30,000 Jewish men were sent to concentration camps; about 91 Jews were killed. The Jewish community was then fined one billion marks. Afterwards Jews were excluded from schools and businesses, and many tried to emigrate.'],
 ], view.factors('How persecution increased', [
@@ -170,7 +170,7 @@ lesson(T, 'germany.persecution', 'The persecution of minorities', ['31 4.4'], [
   ]),
   view.people('Groups persecuted', [
     ['Jews', 'Boycotted, stripped of citizenship and attacked'],
-    ['Roma', 'Registered and sent to camps'],
+    ['Roma and Sinti', 'Registered and sent to camps'],
     ['Disabled people', 'Sterilised and later murdered'],
     ['Homosexual men', 'Arrested and sent to concentration camps'],
   ]),
@@ -184,13 +184,13 @@ lesson(T, 'germany.persecution', 'The persecution of minorities', ['31 4.4'], [
   Q('ger16.p1', 'When was the boycott of Jewish shops?', ['1 April 1933', '9 November 1938', 'September 1935'], 0, 'Kristallnacht was 1938.', 'jews'),
   Q('ger16.p2', 'When were the Nuremberg Laws passed?', ['1935', '1933', '1938'], 0, 'They were passed in September.', 'jews'),
   Q('ger16.p3', 'When was Kristallnacht?', ['9–10 November 1938', '30 June – 1 July 1934', '1 April 1933 (one day)'], 0, 'The "Night of Broken Glass".', 'kristallnacht'),
-  Q('ger16.p4', 'What did the Nazis call themselves as a "race"?', ['Aryans', 'Slavs', 'Nordic Roma'], 0, 'A false racial idea.', 'beliefs'),
+  Q('ger16.p4', 'What did the Nazis call themselves as a "race"?', ['Aryans', 'Slavs', 'Celts'], 0, 'A false racial idea.', 'beliefs'),
   Q('ger16.p5', 'What did the 1933 law allow for some disabled people?', ['Compulsory sterilisation', 'Free healthcare for life', 'Extra pensions from the state'], 0, 'Hundreds of thousands were affected.', 'minorities'),
 ], [
   Q('ger16.c1', 'Roughly how many Jewish men were sent to camps after Kristallnacht?', ['30,000', '300', '3 million'], 0, 'Many were released if they agreed to emigrate.', 'kristallnacht'),
   Q('ger16.c2', 'How much was the Jewish community fined after Kristallnacht?', ['One billion marks', 'One thousand marks', 'Nothing'], 0, 'Victims were made to pay.', 'kristallnacht'),
   Q('ger16.c3', 'What was the T4 programme?', ['The murder of disabled people', 'A scheme for the Hitler Youth', 'A plan for building autobahns'], 0, 'It began in 1939.', 'minorities'),
-  Q('ger16.c4', 'How did the Nazis treat Roma?', ['Registered them and sent them to camps', 'Gave them full German citizenship', 'Ignored them and left them in peace'], 0, 'Seen as racially inferior.', 'minorities'),
+  Q('ger16.c4', 'How did the Nazis treat Roma and Sinti?', ['Registered them and sent them to camps', 'Gave them full German citizenship', 'Ignored them and left them in peace'], 0, 'Seen as racially inferior.', 'minorities'),
   Q('ger16.c5', 'What did the Nazis want from Slav lands?', ['Living space for Germans', 'Trade agreements only', 'Nothing; they had no interest'], 0, 'Lebensraum in the east.', 'minorities'),
   Q('ger16.c6', 'What was burned on Kristallnacht?', ['Synagogues', 'The Reichstag', 'Churches'], 0, 'This happened across Germany.', 'kristallnacht'),
   Q('ger16.c7', 'Who stood outside Jewish shops in 1933?', ['SA men', 'Hitler Youth girls', 'Foreign tourists'], 0, 'To intimidate customers.', 'jews'),

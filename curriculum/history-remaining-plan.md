@@ -47,6 +47,10 @@ A depth lesson only adds value if its overview spreads several bullets or events
 
 Batches of about 10, each pushed on completion: Elizabethan England (28), the Cold War (27), Medicine and the Western Front (48), Germany (40), then the 15 exam-skill lessons.
 
-## Open limits (unchanged)
+## Specification check, 28 October 2026
 
-Specification bullets are paraphrased (the PDF cannot be fetched from the workspace); no printed sources or interpretations; written answers not marked; no specialist review.
+The requirement rows were checked against the Issue 6 PDF supplied by the user. Corrections are listed in `curriculum/briefs/history-depth-batch-08.md`. The roadmap is now **213** lessons (one Cold War depth lesson added for the leaders' attitudes).
+
+## Open limits
+
+No printed sources or interpretations; written answers not marked; no specialist review.

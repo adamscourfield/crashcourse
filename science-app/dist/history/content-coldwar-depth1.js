@@ -150,7 +150,7 @@ lesson(T, 'coldwar.satellites', 'Soviet expansion in Eastern Europe', ['P4 1.1']
   Q('cwd3.c8', 'Why did Stalin also expand?', ['To spread communism', 'To spread capitalism', 'To restore monarchies'], 0, 'As well as security.', 'buffer'),
 ], {exam: 'Write a narrative account analysing the key events of Soviet expansion in Eastern Europe in the years 1945–49. (8 marks)'}),
 
-lesson(T, 'coldwar.telegrams', 'The Long and Novikov Telegrams', ['P4 1.2'], [
+lesson(T, 'coldwar.telegrams', 'The Long and Novikov Telegrams', ['P4 1.1'], [
   ['The Long Telegram, 1946', 'In February 1946 George Kennan, an American diplomat in Moscow, sent a long telegram to Washington. He argued that Stalin saw capitalism as a threat, wanted to expand Soviet power, and would only back down when faced with strength. He advised that the USA should resist Soviet expansion.'],
   ['The Novikov Telegram, 1946', 'In September 1946 Nikolai Novikov, the Soviet ambassador in Washington, sent his own report to Moscow. He argued that the USA was seeking world domination, building military bases around the world and using its economic power to control other countries, and that it was preparing for war against the USSR.'],
   ['Why they mattered', 'Each telegram told its government that the other side was aggressive and expansionist. Each confirmed the fears that leaders already had, and they encouraged both sides to see the other\'s actions as threats rather than as defensive moves.'],

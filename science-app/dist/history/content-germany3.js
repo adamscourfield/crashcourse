@@ -56,10 +56,10 @@ lesson(T, 'germany.dictatorship', 'Creating the dictatorship, 1933–34', ['31 3
   Q('ger9.c8', 'Which posts did Hitler combine as Führer?', ['Chancellor and President', 'President and army chief', 'Chancellor and party treasurer'], 0, 'He did this in August 1934.', 'fuhrer'),
 ], {exam: 'Explain why Hitler was able to create a dictatorship in the years 1933–34. (12 marks)'}),
 
-lesson(T, 'germany.police-state', 'The police state', ['31 3.2'], [
+lesson(T, 'germany.police-state', 'The police state', ['31 3.2', '31 3.3'], [
   ['The SS and SD', 'The SS, led by Heinrich Himmler, began as Hitler\'s bodyguard and became the most powerful organisation in Nazi Germany, running the police and the camps. Its members were chosen for loyalty and "racial purity". The SD, its intelligence service led by Reinhard Heydrich, gathered information on opponents.'],
   ['The Gestapo', 'The Gestapo, the secret state police set up in 1933, could arrest and hold people without trial. It relied heavily on informers: neighbours, colleagues and Nazi "block wardens" reported suspicious behaviour. Historians have argued that fear of the Gestapo was greater than its actual numbers, because many Germans informed on each other.'],
-  ['Concentration camps and the courts', 'The first concentration camp opened at Dachau in March 1933, holding communists, socialists, trade unionists and later Jews, Roma, homosexuals and others. Judges had to join a Nazi lawyers\' association and were expected to rule in the Nazis\' interests. A People\'s Court, set up in 1934, tried cases of treason, often with no proper defence.'],
+  ['Concentration camps and the courts', 'The first concentration camp opened at Dachau in March 1933, holding communists, socialists, trade unionists and later Jews, Roma and Sinti, homosexuals and others. Judges had to join a Nazi lawyers\' association and were expected to rule in the Nazis\' interests. A People\'s Court, set up in 1934, tried cases of treason, often with no proper defence.'],
   ['The Churches', 'In 1933 Hitler signed a Concordat with the Pope: the Catholic Church would stay out of politics in return for keeping its schools and freedom of worship. The Nazis broke the agreement within a few years. Protestants were pushed to join a Nazi-controlled Reich Church led by Reich Bishop Ludwig Müller; those who refused, led by Pastor Martin Niemöller, formed the Confessing Church.'],
 ], view.factors('Methods of control', [
   ['Terror', 'the SS, Gestapo and concentration camps'],
