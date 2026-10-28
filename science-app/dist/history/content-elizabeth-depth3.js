@@ -34,7 +34,7 @@ lesson(T, 'elizabeth.schools', 'Education in the home, schools and universities'
 ], [
   ['Why did grammar schools focus on Latin?', ['Latin was the language of learning, law, the Church and diplomacy', 'English had been banned from schools by the Act of Uniformity in 1559', 'Latin was the only language that could be printed in Elizabethan books'], 0, 'It opened careers.'],
   ['Why did the Protestant Church encourage education?', ['It wanted people who could read the Bible in English for themselves', 'It wanted all children to learn to say the Catholic Mass in Latin', 'It wanted to train every boy in England to become a Puritan preacher'], 0, 'Reading the Bible mattered to Protestants.'],
-  ['Exam skill · Describe two features. Which is a valid feature of grammar schools, with supporting detail?', ['Boys of about seven to fourteen studied mainly Latin through translation and grammar.', 'Grammar schools were very important places that taught a lot of useful things.', 'Elizabeth I spoke Latin, Greek, French and Italian when she became queen.'], 0, 'A feature with a specific detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of grammar schools, with supporting detail?', ['Boys of about seven to fourteen studied mainly Latin through translation and grammar.', 'Grammar schools were very important places that taught a lot of useful things.', 'Elizabeth I spoke Latin, Greek, French and Italian when she became queen.'], 0, 'A feature with a specific detail.'],
   ['Why did young gentlemen attend the Inns of Court?', ['To study law, which helped them run estates and serve as JPs', 'To train as soldiers for the army in the Netherlands', 'To learn to sail before joining Drake and the privateers'], 0, 'Law was a useful skill for landowners.'],
 ], [
   Q('eld21.p1', 'What did petty schools teach?', ['Reading, writing and the catechism', 'Latin, Greek and rhetoric for boys', 'Law and estate management for gentlemen'], 0, 'For young children.', 'petty'),
@@ -51,7 +51,7 @@ lesson(T, 'elizabeth.schools', 'Education in the home, schools and universities'
   Q('eld21.c6', 'Who received little formal schooling?', ['Most poor children', 'The sons of nobles', 'Boys training as clergy'], 0, 'They learned a trade.', 'growth'),
   Q('eld21.c7', 'Which languages did Elizabeth learn?', ['Latin, Greek, French, Italian', 'Only English and Welsh', 'Spanish and German only'], 0, 'She was well educated.', 'home'),
   Q('eld21.c8', 'Whom did the universities train?', ['Future clergy and gentlemen', 'Soldiers and sailors for the navy', 'Farm labourers and their sons'], 0, 'And merchants\' sons.', 'universities'),
-], {exam: 'Describe two features of education in Elizabethan England. (4 marks)'}),
+], {exam: 'Describe one feature of education in Elizabethan England. (2 marks)'}),
 
 lesson(T, 'elizabeth.leisure', 'Sport, pastimes and the theatre', ['B4 3.1'], [
   ['Sports and pastimes', 'The nobility hunted deer, practised hawking and fencing, and played real tennis. Ordinary people played football, which was violent and had few rules, and enjoyed wrestling, archery, cards and dice. Blood sports such as bear-baiting, bull-baiting and cock-fighting drew large crowds of all classes.'],
@@ -191,7 +191,7 @@ lesson(T, 'elizabeth.poor-laws', 'Changing attitudes and the Poor Laws', ['B4 3.
   Q('eld24.c6', 'Who enforced the poor laws?', ['Justices of the Peace', 'The Pope and bishops', 'Privateers at sea'], 0, 'JPs enforced them locally.', 'rate'),
   Q('eld24.c7', 'Did towns act before Parliament?', ['Yes, some did', 'No, never at all', 'Only London did so'], 0, 'Norwich, Ipswich, York.', 'towns'),
   Q('eld24.c8', 'What could happen to repeat vagrants?', ['Execution', 'A reward', 'Nothing'], 0, 'Under the 1572 Act.', 'vagabonds'),
-], {exam: 'Describe two features of the government\'s response to poverty in the years 1572–76. (4 marks)'}),
+], {exam: 'Describe one feature of the government\'s response to poverty in the years 1572–76. (2 marks)'}),
 
 lesson(T, 'elizabeth.exploration-factors', 'Factors prompting exploration', ['B4 3.3'], [
   ['New technology', 'Better navigation instruments, such as improved compasses and the astrolabe, helped sailors work out their position. Mercator\'s map of 1569 made it easier to plot a course, and printed books spread navigation skills. Larger, sturdier ships could carry more supplies on long voyages.'],
@@ -318,7 +318,7 @@ lesson(T, 'elizabeth.roanoke', 'Raleigh and the Roanoke colonies', ['B4 3.4'], [
 ], [
   ['Why did Raleigh want a colony in Virginia?', ['For wealth, a base against Spanish ships and land for English settlers', 'To find a new place to send all the vagabonds and beggars from London', 'To build a new university for Native Americans in North America'], 0, 'Several aims combined.'],
   ['Why did the first colonists leave in 1586?', ['They were short of food and frightened after relations broke down', 'Raleigh ordered them home to fight against the Spanish Armada', 'They had found gold and wanted to bring it back to England'], 0, 'Hunger and conflict.'],
-  ['Exam skill · Describe two features. Which is a valid feature of the 1587 colony, with supporting detail?', ['It included women and children, and Virginia Dare was born there.', 'It was a very brave attempt to start a new life in a new land.', 'Walter Raleigh had been granted the right to found a colony in 1584.'], 0, 'A feature about 1587 with a detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of the 1587 colony, with supporting detail?', ['It included women and children, and Virginia Dare was born there.', 'It was a very brave attempt to start a new life in a new land.', 'Walter Raleigh had been granted the right to found a colony in 1584.'], 0, 'A feature about 1587 with a detail.'],
   ['Why could White not return quickly?', ['The Armada crisis kept English ships at home', 'Raleigh refused to pay for any more voyages', 'Spain had captured Roanoke Island in 1587'], 0, 'War with Spain interrupted supply.'],
 ], [
   Q('eld27.p1', 'Who organised the Roanoke colonies?', ['Sir Walter Raleigh', 'Sir Francis Drake', 'Sir Humphrey Gilbert'], 0, 'He never went himself.', 'raleigh'),
@@ -335,7 +335,7 @@ lesson(T, 'elizabeth.roanoke', 'Raleigh and the Roanoke colonies', ['B4 3.4'], [
   Q('eld27.c6', 'Which scientist joined the 1585 colony?', ['Thomas Harriot', 'John Dee', 'Isaac Newton'], 0, 'He studied the land.', 'first-colony'),
   Q('eld27.c7', 'Where was Roanoke Island?', ['Off North Carolina', 'In the Caribbean', 'Off Newfoundland'], 0, 'It lay off the coast.', 'raleigh'),
   Q('eld27.c8', 'Why did White return to England in 1587?', ['For supplies', 'To fight Spain', 'To see the queen'], 0, 'He could not return quickly.', 'second-colony'),
-], {exam: 'Describe two features of the attempts to found a colony in Virginia in the years 1585–87. (4 marks)'}),
+], {exam: 'Describe one feature of the attempts to found a colony in Virginia in the years 1585–87. (2 marks)'}),
 
 lesson(T, 'elizabeth.virginia-failure', 'Why the Virginia colony failed', ['B4 3.4'], [
   ['Poor planning and supplies', 'The 1585 expedition arrived too late in the year to plant crops, and much of its food was spoiled when its main ship ran aground. The colonists depended on supplies from England and on food from the Native Americans.'],

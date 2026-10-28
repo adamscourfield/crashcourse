@@ -83,7 +83,7 @@ lesson(T, 'elizabeth.three-plots', 'The Ridolfi, Throckmorton and Babington plot
 ], [
   ['How was the Babington plot uncovered?', ['The messenger carrying Mary\'s letters was a double agent for Walsingham', 'Mary handed the letters to her guards and reported the plot herself', 'Babington confessed to the Privy Council before the plot had started'], 0, 'Walsingham read every letter.'],
   ['What did all three plots aim to do?', ['Replace Elizabeth with Mary, with foreign help and a Catholic rising', 'Make Robert Dudley king by forcing Elizabeth to marry him in secret', 'Return England to Spain and make Philip II its king without Mary'], 0, 'Mary was the focus.'],
-  ['Exam skill · Describe two features. Which is a valid feature of the Throckmorton plot, with supporting detail?', ['The plan was for a French force led by the Duke of Guise to invade and free Mary.', 'The Throckmorton plot was a very dangerous plan against Elizabeth and England.', 'Elizabeth was excommunicated by the Pope in 1570 after the northern revolt.'], 0, 'A feature with specific detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of the Throckmorton plot, with supporting detail?', ['The plan was for a French force led by the Duke of Guise to invade and free Mary.', 'The Throckmorton plot was a very dangerous plan against Elizabeth and England.', 'Elizabeth was excommunicated by the Pope in 1570 after the northern revolt.'], 0, 'A feature with specific detail.'],
   ['Why did the plots fail?', ['The government\'s intelligence uncovered them before they could happen', 'The foreign powers involved always refused to send any money at all', 'English Catholics rose too early and were defeated in every battle'], 0, 'Surveillance was effective.'],
 ], [
   Q('eld12.p1', 'Who was executed after the Ridolfi plot?', ['The Duke of Norfolk', 'Francis Throckmorton', 'Anthony Babington'], 0, 'He was executed in 1572.', 'ridolfi'),
@@ -100,7 +100,7 @@ lesson(T, 'elizabeth.three-plots', 'The Ridolfi, Throckmorton and Babington plot
   Q('eld12.c6', 'Did any plot come close to success?', ['No', 'Yes, all three', 'Only Ridolfi'], 0, 'All were uncovered.', 'common'),
   Q('eld12.c7', 'How were the plots usually uncovered?', ['Intelligence and intercepted letters', 'Confessions made by priests to bishops', 'Warnings sent by Philip II himself'], 0, 'Surveillance worked.', 'common'),
   Q('eld12.c8', 'Who backed the Throckmorton plan besides France?', ['Spain and the Pope', 'Scotland and Ireland', 'The Dutch rebels'], 0, 'A Catholic coalition.', 'throckmorton'),
-], {exam: 'Describe two features of the Babington plot. (4 marks)'}),
+], {exam: 'Describe one feature of the Babington plot. (2 marks)'}),
 
 lesson(T, 'elizabeth.walsingham', 'Walsingham and the spy network', ['B4 2.1'], [
   ['Sir Francis Walsingham', 'Walsingham, a committed Protestant, became Principal Secretary in 1573. He believed Catholics and Mary, Queen of Scots were a constant danger, and he built an intelligence network to protect Elizabeth.'],
@@ -244,7 +244,7 @@ lesson(T, 'elizabeth.spain-rivalry', 'Political and religious rivalry with Spain
   Q('eld15.c6', 'How did Elizabeth justify taking the money?', ['It was a loan she could take over', 'It had been stolen from England', 'It was a gift from Philip II'], 0, 'From Italian bankers.', 'treasure'),
   Q('eld15.c7', 'Which territory did Philip rule near England?', ['The Netherlands', 'Scotland and the Borders', 'Brittany in France'], 0, 'Across the Channel.', 'power'),
   Q('eld15.c8', 'When did Philip propose to Elizabeth?', ['1559', '1568', '1587'], 0, 'She refused his proposal.', 'power'),
-], {exam: 'Describe two features of the rivalry between England and Spain in the years 1566–73. (4 marks)'}),
+], {exam: 'Describe one feature of the rivalry between England and Spain in the years 1566–73. (2 marks)'}),
 
 lesson(T, 'elizabeth.privateering', 'Commercial rivalry and privateering', ['B4 2.2'], [
   ['The New World', 'Spain claimed most of the Americas and controlled trade with its colonies, which supplied enormous amounts of silver. English merchants wanted a share of this trade and of the wealth, but Spain allowed only licensed Spanish ships to trade there.'],
@@ -274,7 +274,7 @@ lesson(T, 'elizabeth.privateering', 'Commercial rivalry and privateering', ['B4 
 ], [
   ['Why did English merchants want to trade in the New World?', ['It was a source of great wealth, especially silver', 'Spain had invited English ships to trade there freely', 'It was the only place where English wool could be sold'], 0, 'Wealth drew them in.'],
   ['Why did Elizabeth support privateers?', ['They brought her profits and weakened Spain without open war', 'They were part of the Royal Navy under the Lord Admiral\'s command', 'Spain had agreed that English ships could attack its colonies'], 0, 'Deniable pressure on Spain.'],
-  ['Exam skill · Describe two features. Which is a valid feature of privateering, with supporting detail?', ['Privateers were private ship owners encouraged by the queen to attack Spanish ships for a share of the profit.', 'Privateering was very exciting and made a lot of people in England very rich.', 'Philip II ruled a very large empire that included the Netherlands and much of Italy.'], 0, 'A feature with a specific detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of privateering, with supporting detail?', ['Privateers were private ship owners encouraged by the queen to attack Spanish ships for a share of the profit.', 'Privateering was very exciting and made a lot of people in England very rich.', 'Philip II ruled a very large empire that included the Netherlands and much of Italy.'], 0, 'A feature with a specific detail.'],
   ['Why did knighting Drake anger Spain?', ['It looked like royal approval of piracy against Spain', 'Drake had been born in Spain and was a Spanish subject', 'It broke a treaty that banned England from naming knights'], 0, 'The honour sent a message.'],
 ], [
   Q('eld16.p1', 'Where was Hawkins attacked in 1568?', ['San Juan de Ulúa', 'Cadiz, in southern Spain', 'Gravelines, near Calais'], 0, 'It is in Mexico.', 'hawkins'),
@@ -369,7 +369,7 @@ lesson(T, 'elizabeth.cadiz', 'Drake and the raid on Cadiz, 1587', ['B4 2.3'], [
 ], [
   ['Why were the barrel staves important?', ['Without seasoned wood the Armada used leaking barrels that spoiled food and water', 'They were used to build the hulls of the largest Spanish warships in Lisbon', 'They were the only fuel the Spanish fleet could use for cooking at sea'], 0, 'A small detail with big effects.'],
   ['What was the main effect of the raid?', ['It delayed the Armada by about a year', 'It ended Spain\'s plans to invade England for good', 'It led Philip to make peace with England in 1587'], 0, 'Time to prepare.'],
-  ['Exam skill · Describe two features. Which is a valid feature of the raid on Cadiz, with supporting detail?', ['Drake destroyed or captured around thirty ships in Cadiz harbour in April 1587.', 'The raid on Cadiz was a very brave and successful attack by the English.', 'The Armada finally sailed from Lisbon in May 1588 to invade England.'], 0, 'A feature with specific detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of the raid on Cadiz, with supporting detail?', ['Drake destroyed or captured around thirty ships in Cadiz harbour in April 1587.', 'The raid on Cadiz was a very brave and successful attack by the English.', 'The Armada finally sailed from Lisbon in May 1588 to invade England.'], 0, 'A feature with specific detail.'],
   ['Why was the raid called "singeing the King of Spain\'s beard"?', ['It was a bold but limited blow that embarrassed Philip without defeating him', 'Drake set fire to Philip\'s palace in Madrid and burned all of his clothes', 'It ended with Philip himself being captured and brought back to England'], 0, 'An insult, not a knockout.'],
 ], [
   Q('eld18.p1', 'When was the raid on Cadiz?', ['April 1587', 'July 1588', 'August 1585'], 0, 'Before the Armada.', 'raid'),
@@ -386,7 +386,7 @@ lesson(T, 'elizabeth.cadiz', 'Drake and the raid on Cadiz, 1587', ['B4 2.3'], [
   Q('eld18.c6', 'What type of strike was the raid?', ['Pre-emptive', 'Defensive', 'Accidental'], 0, 'Before the attack came.', 'raid'),
   Q('eld18.c7', 'How did the raid affect English morale?', ['It rose', 'It collapsed', 'No effect'], 0, 'It was a bold success.', 'effects'),
   Q('eld18.c8', 'Who ordered the raid?', ['Elizabeth I', 'Parliament', 'Leicester'], 0, 'Drake acted for the queen.', 'raid'),
-], {exam: 'Describe two features of Drake\'s raid on Cadiz in 1587. (4 marks)'}),
+], {exam: 'Describe one feature of Drake\'s raid on Cadiz in 1587. (2 marks)'}),
 
 lesson(T, 'elizabeth.armada-plans', 'Spanish plans for invasion', ['B4 2.4'], [
   ['Why Philip invaded', 'By 1588 Philip had many reasons: English support for the Dutch rebels, privateering, the execution of Mary, Queen of Scots and his wish to restore Catholicism in England. The Pope backed the plan and promised money once Spanish troops landed.'],
@@ -432,7 +432,7 @@ lesson(T, 'elizabeth.armada-plans', 'Spanish plans for invasion', ['B4 2.4'], [
   Q('eld19.c6', 'What did the Pope promise?', ['Money once troops landed', 'Ships from the papal fleet', 'Nothing at all to Philip'], 0, 'Conditional support.', 'reasons'),
   Q('eld19.c7', 'How did Parma\'s troops plan to cross?', ['In barges', 'By bridge', 'Through tunnels'], 0, 'Escorted by the fleet.', 'plan'),
   Q('eld19.c8', 'What slowed communication?', ['Messages took days', 'No common language', 'A ban on letters'], 0, 'Coordination failed.', 'weaknesses'),
-], {exam: 'Describe two features of Spain\'s plans to invade England in 1588. (4 marks)'}),
+], {exam: 'Describe one feature of Spain\'s plans to invade England in 1588. (2 marks)'}),
 
 lesson(T, 'elizabeth.armada-failure', 'Why the Armada failed', ['B4 2.4'], [
   ['In the Channel', 'The Armada was sighted off Cornwall on 19 July 1588 (English calendar dates are used here; Spain\'s calendar ran ten days ahead) and sailed in a tight crescent formation that the English fleet, under Lord Howard of Effingham with Drake, could not break. Fighting at long range did little damage to either side as the Armada moved towards Calais.'],

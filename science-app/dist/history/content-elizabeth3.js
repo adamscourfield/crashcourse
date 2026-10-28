@@ -52,7 +52,7 @@ lesson(T, 'elizabeth.education', 'Education and leisure', ['B4 3.1'], [
   Q('edu.c6', 'Who complained that playhouses spread disease and disorder?', ['Puritans and city authorities', 'The queen and the Privy Council', 'The acting companies themselves'], 0, 'The Court enjoyed plays; city leaders did not.', 'theatre'),
   Q('edu.c7', 'Which change helped some poorer boys go to school?', ['New grammar schools with places for poorer pupils', 'A law making school free for every child', 'New universities opening in every county'], 0, 'Some foundations offered free places.', 'schools'),
   Q('edu.c8', 'Which playhouse opened in 1587 on the south bank?', ['The Rose', 'The Globe', 'The Curtain'], 0, 'The Globe was built in 1599, after this period.', 'theatre'),
-], {exam: 'Describe two features of education in Elizabethan England. (4 marks)'}),
+], {exam: 'Describe one feature of education in Elizabethan England. (2 marks)'}),
 
 lesson(T, 'elizabeth.poor', 'The \'problem\' of the poor', ['B4 3.2'], [
   ['Why poverty grew', 'The population grew quickly, so there were more workers than jobs. Prices rose faster than wages. Bad harvests pushed up the price of bread. Some landowners enclosed fields for sheep farming, which needed fewer workers, and the cloth trade suffered slumps. The monasteries, which had helped the poor, had been closed under Henry VIII.'],

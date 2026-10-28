@@ -1,3 +1,21 @@
+## History exam-skill lessons checked against the June 2025 mark schemes; on GitHub `main`, not published
+
+**What was done:** the 15 skill lessons and all History practice questions were checked against Pearson's June 2025 mark schemes for Option 11, P4, B4 and Option 31. Details are in `curriculum/briefs/history-markscheme-check.md`.
+
+**Corrections:**
+- **Describe questions:** from 2025, Paper 1 Q1 and B4 Q1 are two 2-mark parts, each asking for one feature. They are no longer a single 4-mark "two features" question. 27 practice questions, 21 challenge labels and the two describe skill lessons were updated.
+- **Caps:** the three-aspects caps are now stated: 8 marks on 12-mark questions, 11 marks on 16-mark questions, and no Level 3 on the narrative.
+- **Mark schemes:** level bands, the judgement mark and the rules on contextual knowledge and provenance were added.
+- **Overstatements:** three overstated claims were softened.
+
+**QA:**
+- 789 automated tests pass.
+- The History flow walked the 41 changed lessons: 677 checks pass.
+
+**Publication:** 26 of the changed lessons are already on the Site with the old wording; the lesson register marks them `site_shows_pre_markscheme_check_wording`. Not republished.
+
+**Still open:** specialist review; Site publication.
+
 ## History batch 17: last 7 exam-skill lessons (B4 and Paper 3). History roadmap complete: 208 lessons; on GitHub `main`, 56 not yet published
 
 **Lessons:**

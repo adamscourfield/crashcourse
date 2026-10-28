@@ -35,7 +35,7 @@ lesson(T, 'medicine.wf-battles', 'Ypres, the Somme, Arras and Cambrai', ['11 HE1
 ], [
   ['Why were the Somme\'s medical services overwhelmed on 1 July 1916?', ['They had planned for far fewer casualties than the 57,000 who fell', 'No doctors had been sent to France before the battle began', 'The Germans had destroyed every hospital the day before the attack'], 0, 'Planning was based on fewer casualties.'],
   ['Why did mud at Passchendaele matter for medicine?', ['It slowed stretcher bearers, and wounded men could drown in it', 'It kept wounds clean because the clay contained no bacteria at all', 'It meant that ambulances could drive right up to the front line'], 0, 'Terrain shaped treatment.'],
-  ['Exam skill · Describe two features. Which is a valid feature of the Battle of Arras, with supporting detail?', ['Tunnels linked old quarries so that about 24,000 troops could shelter underground.', 'The Battle of Arras was a very important battle in the First World War.', 'Arras was a battle where many soldiers were wounded and needed treatment.'], 0, 'A feature needs specific supporting detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of the Battle of Arras, with supporting detail?', ['Tunnels linked old quarries so that about 24,000 troops could shelter underground.', 'The Battle of Arras was a very important battle in the First World War.', 'Arras was a battle where many soldiers were wounded and needed treatment.'], 0, 'A feature needs specific supporting detail.'],
   ['Why was Cambrai significant for treatment?', ['Stored blood was ready for transfusion before the attack began', 'It was the first battle at which any doctors were present', 'Gas was used there for the first time in the whole war'], 0, 'Preparation in advance.'],
 ], [
   Q('wfd1.p1', 'Where was chlorine gas first used?', ['Ypres', 'Cambrai', 'Arras'], 0, 'On 22 April 1915, at the Second Battle of Ypres.', 'ypres'),
@@ -52,7 +52,7 @@ lesson(T, 'medicine.wf-battles', 'Ypres, the Somme, Arras and Cambrai', ['11 HE1
   Q('wfd1.c6', 'About how many British casualties were there on the Somme by November?', ['420,000', '57,000', '4,000,000'], 0, 'Over four and a half months.', 'somme'),
   Q('wfd1.c7', 'What was ready before the attack at Cambrai?', ['Stored blood', 'Penicillin', 'X-ray scanners'], 0, 'For treating blood loss and shock.', 'cambrai'),
   Q('wfd1.c8', 'What did the Somme experience lead to?', ['Better planning of medical services', 'No change at all to medical services', 'An end to all evacuation of casualties'], 0, 'Lessons were learned.', 'somme'),
-], {exam: 'Describe two features of the Battle of the Somme (1916) that affected the treatment of the wounded. (4 marks)'}),
+], {exam: 'Describe one feature of the Battle of the Somme (1916) that affected the treatment of the wounded. (2 marks)'}),
 
 lesson(T, 'medicine.wf-illness', 'Illnesses from trench conditions', ['11 HE2'], [
   ['Trench foot', 'In the first winter of the war, about 20,000 British soldiers suffered from trench foot, caused by standing for long periods in cold water and mud. Feet went numb, swelled and turned red or blue; in bad cases gangrene set in and toes or feet had to be amputated.'],
@@ -82,7 +82,7 @@ lesson(T, 'medicine.wf-illness', 'Illnesses from trench conditions', ['11 HE2'],
 ], [
   ['Why did trench foot cases fall after 1915?', ['Foot inspections, whale oil, dry socks and better drainage', 'A vaccine against trench foot was given to every soldier', 'Soldiers were only sent to the trenches in the summer'], 0, 'Prevention worked.'],
   ['Why was trench fever hard to prevent at first?', ['Its cause, lice, was not proved until 1918', 'No soldiers wanted to have baths behind the lines', 'It was caused by gas, and gas masks were not available'], 0, 'Knowledge of cause came late.'],
-  ['Exam skill · Describe two features. Which is a valid feature of trench foot, with supporting detail?', ['It was caused by standing in cold water and mud, and in bad cases toes had to be amputated.', 'It was a very serious problem that many soldiers had to deal with during the war.', 'Trench foot was one of the illnesses that soldiers suffered in the trenches.'], 0, 'A feature needs specific supporting detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of trench foot, with supporting detail?', ['It was caused by standing in cold water and mud, and in bad cases toes had to be amputated.', 'It was a very serious problem that many soldiers had to deal with during the war.', 'Trench foot was one of the illnesses that soldiers suffered in the trenches.'], 0, 'A feature needs specific supporting detail.'],
   ['How were shell-shocked men treated at first?', ['Some were thought cowards, while others were given rest', 'Every case was treated in a hospital in Britain straight away', 'They were all given blood transfusions at the front line'], 0, 'Attitudes varied.'],
 ], [
   Q('wfd2.p1', 'What caused trench foot?', ['Standing in cold water and mud', 'Lice living in their clothing', 'Breathing in mustard gas'], 0, 'Feet were wet for days.', 'trench-foot'),
@@ -99,7 +99,7 @@ lesson(T, 'medicine.wf-illness', 'Illnesses from trench conditions', ['11 HE2'],
   Q('wfd2.c6', 'What were symptoms of shell shock?', ['Shaking and nightmares', 'Swollen, numb feet', 'Blistered, burnt skin'], 0, 'A response to bombardment.', 'shell-shock'),
   Q('wfd2.c7', 'What did some officers first think of shell-shocked men?', ['That they were cowards', 'That they were heroes', 'That they had gas poisoning'], 0, 'Attitudes slowly changed.', 'shell-shock'),
   Q('wfd2.c8', 'What could happen in bad cases of trench foot?', ['Amputation', 'Blindness', 'Deafness'], 0, 'Gangrene set in.', 'trench-foot'),
-], {exam: 'Describe two features of the problems of illness caused by conditions in the trenches. (4 marks)'}),
+], {exam: 'Describe one feature of the problems of illness caused by conditions in the trenches. (2 marks)'}),
 
 lesson(T, 'medicine.wf-wounds-gas', 'Wounds, head injuries and gas attacks', ['11 HE2'], [
   ['Explosives and shrapnel', 'Shells from artillery caused more wounds than any other weapon. A shrapnel shell burst in the air and scattered metal balls; high-explosive shells broke into jagged fragments. These tore through flesh, smashed bones and carried mud and scraps of uniform deep into the body, so infection was very likely.'],
@@ -130,7 +130,7 @@ lesson(T, 'medicine.wf-wounds-gas', 'Wounds, head injuries and gas attacks', ['1
 ], [
   ['Why were shell wounds so likely to become infected?', ['Fragments carried mud and cloth deep into the body', 'Shells were deliberately filled with germs by the enemy', 'Doctors did not try to clean any wounds during the war'], 0, 'Dirt went in with the metal.'],
   ['Why did serious head wounds fall after 1916?', ['Every soldier at the front had a steel Brodie helmet', 'Germany agreed to stop firing shells at the trenches', 'Soldiers were trained to keep their heads below the parapet'], 0, 'Protective equipment.'],
-  ['Exam skill · Describe two features. Which is a valid feature of gas attacks, with supporting detail?', ['Protection improved from soaked cloth pads to the small box respirator from 1916.', 'Gas was a frightening weapon that soldiers on both sides were afraid of.', 'Many different types of gas were used in the First World War.'], 0, 'A feature needs specific supporting detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of gas attacks, with supporting detail?', ['Protection improved from soaked cloth pads to the small box respirator from 1916.', 'Gas was a frightening weapon that soldiers on both sides were afraid of.', 'Many different types of gas were used in the First World War.'], 0, 'A feature needs specific supporting detail.'],
   ['What did mustard gas do that chlorine did not?', ['It burned the skin and eyes as well as the lungs', 'It only affected soldiers who had no gas mask at all', 'It killed every soldier who breathed in any of it'], 0, 'A blistering agent.'],
 ], [
   Q('wfd3.p1', 'Which weapon caused the most wounds?', ['Artillery shells', 'Machine-gun bullets', 'Bayonet charges'], 0, 'Shrapnel and fragments.', 'shrapnel'),
@@ -147,7 +147,7 @@ lesson(T, 'medicine.wf-wounds-gas', 'Wounds, head injuries and gas attacks', ['1
   Q('wfd3.c6', 'Where was Gillies\' hospital?', ['Sidcup', 'Arras', 'Edinburgh'], 0, 'Queen\'s Hospital, Sidcup, in Britain.', 'head'),
   Q('wfd3.c7', 'What did fast bullets often do?', ['Pass through the body', 'Bounce off the bone', 'Carry gas into it'], 0, 'Breaking bones on the way.', 'bullets'),
   Q('wfd3.c8', 'What were early gas pads soaked in?', ['Water or urine', 'Whale oil', 'Petrol or paraffin'], 0, 'Before proper masks.', 'gas'),
-], {exam: 'Describe two features of the wounds caused by explosives on the Western Front. (4 marks)'}),
+], {exam: 'Describe one feature of the wounds caused by explosives on the Western Front. (2 marks)'}),
 
 lesson(T, 'medicine.wf-ramc-nurses', 'The RAMC and nurses', ['11 HE3'], [
   ['The RAMC', 'The Royal Army Medical Corps grew from about 9,000 men in 1914 to more than 110,000 by the end of the war. Its doctors, orderlies and stretcher bearers ran aid posts, dressing stations, Casualty Clearing Stations and hospitals. Each battalion had its own medical officer and stretcher bearers.'],
@@ -178,7 +178,7 @@ lesson(T, 'medicine.wf-ramc-nurses', 'The RAMC and nurses', ['11 HE3'], [
 ], [
   ['Why did the RAMC grow so much?', ['The huge number of casualties needed far more medical staff', 'The army decided to close every hospital in Britain', 'Doctors were no longer allowed to work in civilian hospitals'], 0, 'Scale drove expansion.'],
   ['Why was stretcher bearing so slow?', ['Teams could often only move at night, through mud and shell holes', 'Each stretcher bearer was only allowed to carry one man a day', 'Ambulances drove alongside them and blocked the way forward'], 0, 'Conditions shaped the work.'],
-  ['Exam skill · Describe two features. Which is a valid feature of the work of nurses, with supporting detail?', ['VAD nurses, mostly young volunteer women, did much of the cleaning and dressing of wounds.', 'Nurses worked very hard throughout the war and helped a great many soldiers to recover.', 'There were several different groups of nurses who worked on the Western Front.'], 0, 'A feature needs specific supporting detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of the work of nurses, with supporting detail?', ['VAD nurses, mostly young volunteer women, did much of the cleaning and dressing of wounds.', 'Nurses worked very hard throughout the war and helped a great many soldiers to recover.', 'There were several different groups of nurses who worked on the Western Front.'], 0, 'A feature needs specific supporting detail.'],
   ['What was distinctive about the FANY?', ['Women drove ambulances and ran first-aid posts near the front', 'It was made up only of fully trained army surgeons', 'It ran the hospitals in Britain and never sent anyone abroad'], 0, 'Close to the front.'],
 ], [
   Q('wfd4.p1', 'What does RAMC stand for?', ['Royal Army Medical Corps', 'Royal Ambulance Medical Company', 'Regimental Army Medical Corps'], 0, 'It ran the chain of evacuation.', 'ramc'),
@@ -195,7 +195,7 @@ lesson(T, 'medicine.wf-ramc-nurses', 'The RAMC and nurses', ['11 HE3'], [
   Q('wfd4.c6', 'From when did the FANY drive for the British?', ['1916', '1907', '1919'], 0, 'At first for Belgium and France.', 'fany'),
   Q('wfd4.c7', 'What did women\'s war work help change?', ['Attitudes to women', 'The trench system', 'Gas masks'], 0, 'What women could do.', 'fany'),
   Q('wfd4.c8', 'What did VADs mostly do?', ['Cleaning, feeding and dressing wounds', 'Carrying out major surgery', 'Driving ambulances to the front'], 0, 'Much of the daily care.', 'nurses'),
-], {exam: 'Describe two features of the work of nurses on the Western Front. (4 marks)'}),
+], {exam: 'Describe one feature of the work of nurses on the Western Front. (2 marks)'}),
 
 lesson(T, 'medicine.wf-arras-hospital', 'The underground hospital at Arras', ['11 HE3'], [
   ['The tunnels', 'Arras sits on chalk that had been quarried for centuries. From late 1916, New Zealand tunnellers and British miners joined the old quarries into a network of tunnels, some named after New Zealand towns such as Wellington, with electric light, running water and a light railway. Exits led close to the German lines.'],
@@ -224,7 +224,7 @@ lesson(T, 'medicine.wf-arras-hospital', 'The underground hospital at Arras', ['1
 ], [
   ['Why could a hospital be built under Arras but not at Ypres?', ['Arras had chalk that could be tunnelled; Ypres had waterlogged clay', 'The Germans had agreed not to attack the town of Arras', 'Ypres already had enough hospitals for every wounded soldier'], 0, 'Terrain made the difference.'],
   ['Why was being near the front an advantage?', ['Wounded men could be treated sooner after injury', 'Doctors did not need to clean any of their instruments', 'Wounded men no longer needed to be evacuated at all'], 0, 'Speed of treatment.'],
-  ['Exam skill · Describe two features. Which is a valid feature of the hospital at Arras, with supporting detail?', ['It had around 700 beds and operating theatres, protected from shelling underground.', 'The hospital at Arras was a very interesting and unusual place to be treated.', 'A great many people worked in the hospital at Arras during the war.'], 0, 'A feature needs specific supporting detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of the hospital at Arras, with supporting detail?', ['It had around 700 beds and operating theatres, protected from shelling underground.', 'The hospital at Arras was a very interesting and unusual place to be treated.', 'A great many people worked in the hospital at Arras during the war.'], 0, 'A feature needs specific supporting detail.'],
   ['What problem did working underground cause?', ['Damp and poor light made keeping wounds clean difficult', 'There was too much sunlight in the tunnels to sleep', 'The tunnels were too far from the front to be useful'], 0, 'Conditions limited care.'],
 ], [
   Q('wfd5.p1', 'What rock lies under Arras?', ['Chalk', 'Clay', 'Granite'], 0, 'Quarried for centuries.', 'tunnels'),
@@ -241,7 +241,7 @@ lesson(T, 'medicine.wf-arras-hospital', 'The underground hospital at Arras', ['1
   Q('wfd5.c6', 'What does the hospital show about the British?', ['They adapted to the terrain', 'They ignored the terrain', 'They had no plans'], 0, 'Chalk made tunnels possible.', 'meaning'),
   Q('wfd5.c7', 'What did being near the front save?', ['Time in the chain', 'Money on helmets', 'Food'], 0, 'Treatment came sooner.', 'meaning'),
   Q('wfd5.c8', 'When did tunnelling to link quarries begin?', ['Late 1916', 'Late 1914', 'Early 1918'], 0, 'Before the 1917 battle.', 'tunnels'),
-], {exam: 'Describe two features of the underground hospital at Arras. (4 marks)'}),
+], {exam: 'Describe one feature of the underground hospital at Arras. (2 marks)'}),
 
 lesson(T, 'medicine.wf-infection', 'Treating wounds, infection and fractures', ['11 HE4'], [
   ['Why infection was deadly', 'Wounds full of soil from manured fields carried the bacteria that cause tetanus and gas gangrene. Gas gangrene made the flesh swell and smell, produced gas bubbles under the skin and could kill within days. Aseptic surgery, which worked in clean hospitals, could not be achieved in a muddy field.'],
@@ -271,7 +271,7 @@ lesson(T, 'medicine.wf-infection', 'Treating wounds, infection and fractures', [
 ], [
   ['Why could aseptic surgery not be achieved near the front?', ['Mud, soil and a lack of clean conditions made it impossible', 'Surgeons near the front did not believe in germ theory', 'The army had banned aseptic surgery during wartime'], 0, 'Conditions defeated asepsis.'],
   ['Why did leaving wounds open help?', ['Surgeons could clean them and stop infection being sealed in', 'It allowed the soldier to return to the front line at once', 'It meant the wound would never need any further treatment'], 0, 'Infection was not trapped.'],
-  ['Exam skill · Describe two features. Which is a valid feature of the Thomas splint, with supporting detail?', ['It held a broken leg straight on the journey, which reduced bleeding and shock.', 'The Thomas splint was one of the most important developments in the whole war.', 'The Thomas splint was used to help many of the soldiers who had been wounded.'], 0, 'A feature needs specific supporting detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of the Thomas splint, with supporting detail?', ['It held a broken leg straight on the journey, which reduced bleeding and shock.', 'The Thomas splint was one of the most important developments in the whole war.', 'The Thomas splint was used to help many of the soldiers who had been wounded.'], 0, 'A feature needs specific supporting detail.'],
   ['What did anti-tetanus injections achieve?', ['Tetanus cases among the wounded fell sharply', 'They cured gas gangrene within a few hours', 'They replaced the need for any surgery at all'], 0, 'Prevention of one infection.'],
 ], [
   Q('wfd6.p1', 'What caused gas gangrene?', ['Bacteria from the soil', 'Poison gas attacks', 'Lice in clothing'], 0, 'Despite its name, not poison gas.', 'infection'),
@@ -288,7 +288,7 @@ lesson(T, 'medicine.wf-infection', 'Treating wounds, infection and fractures', [
   Q('wfd6.c6', 'Why were wounds left open?', ['To stop infection being sealed in', 'To save on thread and needles', 'To let the soldier go back sooner'], 0, 'So they could be cleaned.', 'methods'),
   Q('wfd6.c7', 'What was still missing to fight infection?', ['Antibiotics', 'Trained surgeons', 'Clean bandages'], 0, 'Penicillin came later.', 'infection'),
   Q('wfd6.c8', 'What did the soil carry?', ['Tetanus and gangrene bacteria', 'Natural penicillin moulds', 'Typhoid and smallpox vaccine'], 0, 'Manured farmland.', 'infection'),
-], {exam: 'Describe two features of the treatment of infected wounds on the Western Front. (4 marks)'}),
+], {exam: 'Describe one feature of the treatment of infected wounds on the Western Front. (2 marks)'}),
 
 lesson(T, 'medicine.wf-xray-blood', 'X-rays, blood transfusion and the Cambrai blood bank', ['11 HE4'], [
   ['Mobile X-ray units', 'X-ray machines were installed in base hospitals and some Casualty Clearing Stations, and mobile units in vans could travel between them. They showed surgeons exactly where bullets and shrapnel were lodged. But the glass tubes were fragile and overheated, each image could take minutes, and operators were exposed to harmful radiation.'],
@@ -318,7 +318,7 @@ lesson(T, 'medicine.wf-xray-blood', 'X-rays, blood transfusion and the Cambrai b
 ], [
   ['Why was direct transfusion impractical on a large scale?', ['Blood clotted quickly, so a donor had to lie beside the patient', 'Doctors did not know that blood groups existed at that time', 'Soldiers were not allowed to give blood to each other'], 0, 'Clotting was the barrier.'],
   ['Why was type O blood chosen at Cambrai?', ['Most people can safely receive it', 'It was the only type that could be frozen solid', 'It was the rarest type, so it had to be saved'], 0, 'A universal donor type.'],
-  ['Exam skill · Describe two features. Which is a valid feature of mobile X-ray units, with supporting detail?', ['They showed where shrapnel was lodged, but the tubes were fragile and overheated.', 'Mobile X-ray units were a very important development on the Western Front.', 'X-rays were a kind of new technology that was used by doctors during the war.'], 0, 'A feature needs specific supporting detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of mobile X-ray units, with supporting detail?', ['They showed where shrapnel was lodged, but the tubes were fragile and overheated.', 'Mobile X-ray units were a very important development on the Western Front.', 'X-rays were a kind of new technology that was used by doctors during the war.'], 0, 'A feature needs specific supporting detail.'],
   ['What did adding glucose to stored blood achieve?', ['Blood could be kept for about four weeks', 'Blood no longer needed to be matched at all', 'Blood could be made in a laboratory instead'], 0, 'Storage became possible.'],
 ], [
   Q('wfd7.p1', 'Who identified blood groups?', ['Karl Landsteiner', 'Oswald Robertson', 'Wilhelm Röntgen'], 0, 'Landsteiner identified them in 1901.', 'blood'),
@@ -335,7 +335,7 @@ lesson(T, 'medicine.wf-xray-blood', 'X-rays, blood transfusion and the Cambrai b
   Q('wfd7.c6', 'When was the Battle of Cambrai?', ['November 1917', 'July 1916', 'April 1915'], 0, 'With stored blood ready.', 'blood-bank'),
   Q('wfd7.c7', 'How did early transfusions work?', ['Donor beside the patient', 'From stored glass bottles', 'From animal donors'], 0, 'Blood clotted quickly.', 'blood'),
   Q('wfd7.c8', 'What did transfused blood treat?', ['Shock from blood loss', 'Swelling from trench foot', 'Nightmares from shell shock'], 0, 'Replacing lost blood.', 'blood-bank'),
-], {exam: 'Describe two features of blood transfusion on the Western Front. (4 marks)'}),
+], {exam: 'Describe one feature of blood transfusion on the Western Front. (2 marks)'}),
 
 lesson(T, 'medicine.wf-national-local', 'National and local sources', ['11 HE5'], [
   ['National sources', 'National sources cover the whole army or the country: army medical statistics, official histories of the medical services written after the war, debates in Parliament, government reports, national newspapers, and articles in journals such as the British Medical Journal. They show the overall scale and pattern of injury and treatment.'],

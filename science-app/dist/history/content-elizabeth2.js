@@ -105,7 +105,7 @@ lesson(T, 'elizabeth.spain', 'Relations with Spain and the privateers', ['B4 2.2
   Q('spain.c6', 'When did Drake sail round the world?', ['1577–80', '1558–61', '1588–91'], 0, 'He returned in 1580 with great treasure.', 'privateers'),
   Q('spain.c7', 'Which trade did Hawkins try to break into?', ['The trade in enslaved Africans to the Americas', 'The spice trade with India and the East Indies', 'The wool and cloth trade with Flanders and France'], 0, 'His voyages carried enslaved Africans to Spanish colonies.', 'trade'),
   Q('spain.c8', 'Why was English help for the Dutch rebels risky?', ['It could provoke open war with Spain', 'It cost England its wool trade with France', 'It angered the Pope more than Spain'], 0, 'Philip saw it as interference in his own lands.', 'rivalry'),
-], {exam: 'Describe two features of relations between England and Spain in the years 1569–84. (4 marks)'}),
+], {exam: 'Describe one feature of relations between England and Spain in the years 1569–84. (2 marks)'}),
 
 lesson(T, 'elizabeth.war', 'The outbreak of war with Spain, 1585–88', ['B4 2.3'], [
   ['Why relations broke down', 'In 1584 the Dutch rebel leader, William of Orange, was assassinated, and Spain allied with the French Catholic League. The Dutch revolt looked close to defeat, which would leave a powerful Spanish army facing England across a short stretch of sea. Elizabeth decided she had to act.'],

@@ -53,7 +53,7 @@ lesson(T, 'elizabeth.accession', 'England in 1558 and the new queen', ['B4 1.1']
   Q('acc.c6', 'Which group sat between the gentry and labourers in the countryside?', ['Yeomen', 'Vagrants', 'Merchants'], 0, 'Yeomen farmed their own land, below the gentry.', 'society'),
   Q('acc.c7', 'Why was being a woman seen as a weakness for a ruler in 1558?', ['Most people expected a woman to be guided by a husband, not to rule alone', 'The law said a woman could not inherit the throne without Parliament\'s vote', 'Parliament had refused to meet while a woman was on the throne'], 0, 'Contemporary attitudes, not the law, made her gender a problem.', 'queen'),
   Q('acc.c8', 'Which treaty in 1559 ended England\'s war with France?', ['Cateau-Cambrésis', 'Edinburgh', 'Nonsuch', 'Blois'], 0, 'France kept Calais under the Treaty of Cateau-Cambrésis.', 'france'),
-], {exam: 'Describe two features of the problems Elizabeth faced when she became queen in 1558. (4 marks)'}),
+], {exam: 'Describe one feature of the problems Elizabeth faced when she became queen in 1558. (2 marks)'}),
 
 lesson(T, 'elizabeth.settlement', 'The religious settlement of 1559', ['B4 1.2'], [
   ['Why a settlement was needed', 'England had changed official religion three times in twenty-five years. Elizabeth was Protestant, but many of her subjects, especially in the north, and most of Mary I\'s bishops were Catholic. She needed a Church most people would accept, without provoking Catholic powers abroad.'],

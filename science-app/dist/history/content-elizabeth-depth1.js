@@ -34,7 +34,7 @@ lesson(T, 'elizabeth.england-1558', 'England in 1558: society and government', [
 ], [
   ['Why was patronage important to Elizabeth\'s power?', ['Gifts of offices and land bound nobles to the queen and kept them loyal', 'Patronage allowed Parliament to choose the members of the Privy Council', 'It was the main way the Crown raised taxes from the counties each year'], 0, 'Rewards secured loyalty.'],
   ['What limited Parliament\'s power?', ['It met only when called and needed permission to discuss foreign policy or marriage', 'It could be called only by the Pope and the Archbishop of Canterbury together', 'It had no role at all in agreeing to taxation or in passing new laws'], 0, 'The queen controlled when it met and what it discussed.'],
-  ['Exam skill · Describe two features. Which is a valid feature of local government, with supporting detail?', ['Justices of the Peace were unpaid gentry who kept order and enforced laws in their county.', 'Local government in Elizabethan England was very important and very well organised.', 'The Privy Council met in London almost every day to advise Elizabeth on policy.'], 0, 'A feature names something specific and supports it.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of local government, with supporting detail?', ['Justices of the Peace were unpaid gentry who kept order and enforced laws in their county.', 'Local government in Elizabethan England was very important and very well organised.', 'The Privy Council met in London almost every day to advise Elizabeth on policy.'], 0, 'A feature names something specific and supports it.'],
   ['Why did London grow so quickly?', ['People moved in from the countryside looking for work and opportunity', 'The queen forced every noble family to live in London all year round', 'A law of 1558 banned anyone from living in towns other than London'], 0, 'Migration drove its growth.'],
 ], [
   Q('eld1.p1', 'What was the royal prerogative?', ['The queen\'s personal powers, such as deciding on war and peace', 'The right of Parliament to choose the next monarch', 'The tax paid by every household to the Crown each year'], 0, 'Powers the monarch held in person.', 'prerogative'),
@@ -51,7 +51,7 @@ lesson(T, 'elizabeth.england-1558', 'England in 1558: society and government', [
   Q('eld1.c6', 'What could Parliament not discuss without permission?', ['Foreign policy and the queen\'s marriage', 'New taxes on wool and cloth exports', 'Laws about poverty, vagrancy and begging'], 0, 'Matters of prerogative.', 'parliament'),
   Q('eld1.c7', 'What did the Privy Council do?', ['Advised the queen and ran government', 'Tried criminals in every county', 'Elected the Archbishop each year'], 0, 'About twenty leading men.', 'privy-council'),
   Q('eld1.c8', 'Which was the largest city?', ['London', 'Norwich', 'Bristol'], 0, 'By a very wide margin.', 'society'),
-], {exam: 'Describe two features of Elizabethan government in 1558. (4 marks)'}),
+], {exam: 'Describe one feature of Elizabethan government in 1558. (2 marks)'}),
 
 lesson(T, 'elizabeth.virgin-queen', 'The Virgin Queen: legitimacy, gender and marriage', ['B4 1.1'], [
   ['Was she legitimate?', 'Elizabeth was the daughter of Henry VIII and Anne Boleyn. Catholics did not accept Henry\'s divorce from his first wife, so to them the marriage to Anne was invalid and Elizabeth illegitimate. In 1536 Parliament had itself declared her illegitimate, though a later Act restored her place in the succession. Many Catholics believed Mary, Queen of Scots had the better claim.'],
@@ -130,7 +130,7 @@ lesson(T, 'elizabeth.early-challenges', 'Early challenges: finance, France and S
 ], [
   ['Why did debasement cause problems?', ['Coins contained less silver, so prices rose and confidence in money fell', 'Coins became so valuable that nobody was willing to spend them', 'It meant that only gold coins could legally be used in England'], 0, 'The recoinage fixed this.'],
   ['Why was Mary, Queen of Scots becoming Queen of France a danger?', ['It joined Scotland and France, England\'s enemies on two sides', 'It meant Mary would immediately invade England from Calais', 'It made France and England allies against Spain and Scotland'], 0, 'The Auld Alliance threatened encirclement.'],
-  ['Exam skill · Describe two features. Which is a valid feature of the French threat, with supporting detail?', ['France held Calais, which England had lost in January 1558.', 'France was a very dangerous country that Elizabeth was very worried about.', 'Elizabeth was crowned in Westminster Abbey in January 1559.'], 0, 'A feature with a supporting detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of the French threat, with supporting detail?', ['France held Calais, which England had lost in January 1558.', 'France was a very dangerous country that Elizabeth was very worried about.', 'Elizabeth was crowned in Westminster Abbey in January 1559.'], 0, 'A feature with a supporting detail.'],
   ['What did the Treaty of Edinburgh achieve?', ['French troops left Scotland', 'England regained Calais', 'Mary married Robert Dudley'], 0, 'It removed the immediate threat.'],
 ], [
   Q('eld3.p1', 'Roughly how much debt did Elizabeth inherit?', ['About £300,000', 'About £3,000', 'About £30 million'], 0, 'Mostly from war.', 'finance'),
@@ -147,7 +147,7 @@ lesson(T, 'elizabeth.early-challenges', 'Early challenges: finance, France and S
   Q('eld3.c6', 'How did Elizabeth help Scottish Protestants?', ['Money, a fleet and an army', 'By marrying their leader', 'By asking the Pope'], 0, 'She did this in 1559–60.', 'scotland'),
   Q('eld3.c7', 'Which was a way Elizabeth saved money?', ['Avoiding costly wars', 'Building new palaces', 'Doubling the army'], 0, 'She was careful with money.', 'finance'),
   Q('eld3.c8', 'Who became King of France in 1559?', ['Francis II', 'Philip II', 'Henry VIII'], 0, 'He was Mary\'s husband.', 'france'),
-], {exam: 'Describe two features of the threat from France in the years 1558–60. (4 marks)'}),
+], {exam: 'Describe one feature of the threat from France in the years 1558–60. (2 marks)'}),
 
 lesson(T, 'elizabeth.religion-1558', 'Religious divisions in 1558', ['B4 1.2'], [
   ['Three changes in a generation', 'Henry VIII broke with Rome in the 1530s and made himself head of the Church, though he kept much Catholic worship. Under Edward VI (1547–53) the Church became firmly Protestant, with English prayer books. Mary I (1553–58) restored Catholicism and the Pope\'s authority, and nearly three hundred Protestants were burned for heresy.'],
@@ -224,7 +224,7 @@ lesson(T, 'elizabeth.settlement-acts', 'The Acts of Supremacy and Uniformity and
 ], [
   ['Why was "Supreme Governor" chosen instead of "Supreme Head"?', ['It was more acceptable to Catholics and to those who doubted a woman could head the Church', 'The Pope insisted on the title as a condition for accepting the new settlement', 'Parliament had banned the title "Supreme Head" in an Act passed in 1558'], 0, 'A careful compromise.'],
   ['What did the Act of Uniformity require?', ['Use of the new prayer book and church attendance, with fines for absence', 'That all clergy must be married and that every church be painted white', 'That every subject swear loyalty to the Pope as well as to Elizabeth'], 0, 'It set the form of worship.'],
-  ['Exam skill · Describe two features. Which is a valid feature of the religious settlement, with supporting detail?', ['The Act of Uniformity fined people twelve pence for not attending church.', 'The religious settlement was a very clever compromise that pleased lots of people.', 'Mary I had restored the Catholic Church before she died in 1558.'], 0, 'A feature with a specific detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of the religious settlement, with supporting detail?', ['The Act of Uniformity fined people twelve pence for not attending church.', 'The religious settlement was a very clever compromise that pleased lots of people.', 'Mary I had restored the Catholic Church before she died in 1558.'], 0, 'A feature with a specific detail.'],
   ['How did the bishops respond?', ['Almost all refused the Oath and were replaced by Protestants', 'They all welcomed the settlement and preached in favour of it', 'They left England and set up a new Church in Scotland instead'], 0, 'The upper clergy resisted.'],
 ], [
   Q('eld5.p1', 'What title did the Act of Supremacy give Elizabeth?', ['Supreme Governor', 'Supreme Head', 'Defender of Rome'], 0, 'Not the title Supreme Head.', 'supremacy'),
@@ -241,7 +241,7 @@ lesson(T, 'elizabeth.settlement-acts', 'The Acts of Supremacy and Uniformity and
   Q('eld5.c6', 'Could clergy marry under the Injunctions?', ['Yes, with approval', 'No, never at all', 'Only if they were bishops'], 0, 'A Protestant feature.', 'injunctions'),
   Q('eld5.c7', 'What did most parish clergy do?', ['Took the Oath and stayed', 'Fled abroad to Rome', 'Rebelled against her in 1559'], 0, 'Conformity was common.', 'enforcement'),
   Q('eld5.c8', 'What body enforced the settlement?', ['The Ecclesiastical High Commission', 'The Court of Star Chamber alone', 'The Council of Trent in Italy'], 0, 'Set up by the Act of Supremacy.', 'supremacy'),
-], {exam: 'Describe two features of the Act of Uniformity of 1559. (4 marks)'}),
+], {exam: 'Describe one feature of the Act of Uniformity of 1559. (2 marks)'}),
 
 lesson(T, 'elizabeth.church-society', 'The Church of England in society', ['B4 1.2'], [
   ['The parish at the centre', 'The parish church was the heart of community life. Everyone was baptised, married and buried there, and attendance was the law. Holy days and festivals marked the year, and the churchwardens, chosen from local people, managed the building, kept accounts and reported those who failed to attend.'],
@@ -333,7 +333,7 @@ lesson(T, 'elizabeth.puritans', 'The Puritan challenge', ['B4 1.3'], [
   Q('eld7.c6', 'Where did Puritans have influence?', ['Parliament and the Church', 'The court of Philip II of Spain', 'The Pope\'s council in Rome'], 0, 'They were well placed.', 'puritan-strength'),
   Q('eld7.c7', 'Why did Puritan pressure irritate Elizabeth?', ['It challenged her authority over the Church', 'It was secretly paid for by the French', 'It was led by Catholics in the north'], 0, 'Supreme Governor.', 'puritan-extent'),
   Q('eld7.c8', 'What happened in Convocation in 1563?', ['Attempts to remove vestments narrowly failed', 'Vestments were abolished in every church', 'Catholicism was restored in some dioceses'], 0, 'Puritans came close.', 'vestments'),
-], {exam: 'Describe two features of the Puritan challenge to the religious settlement. (4 marks)'}),
+], {exam: 'Describe one feature of the Puritan challenge to the religious settlement. (2 marks)'}),
 
 lesson(T, 'elizabeth.catholic-challenge', 'The Catholic challenge: nobles, the Papacy and foreign powers', ['B4 1.3'], [
   ['Catholics at home', 'Many people remained Catholic in belief, especially in the north and west. Some attended Protestant services to avoid fines while privately keeping their faith; they were known as church papists. Others refused to attend and became recusants. Some Catholic nobles, such as the Earls of Northumberland and Westmorland in the north, were powerful local leaders with their own followers.'],
@@ -412,7 +412,7 @@ lesson(T, 'elizabeth.mary-claim', 'Mary, Queen of Scots: her claim and arrival',
 ], [
   ['Why did many Catholics see Mary as the rightful queen?', ['They thought Elizabeth illegitimate, and Mary was next in line through Margaret Tudor', 'Mary had been crowned Queen of England by the Pope in 1561 in Rome', 'Henry VIII had left the crown to Mary in his will in place of Elizabeth'], 0, 'Her claim rested on descent and religion.'],
   ['Why did the Scottish nobles turn against Mary?', ['She married Bothwell, suspected of murdering her husband Darnley', 'She tried to make Scotland Protestant against their wishes', 'She handed Scotland over to Elizabeth in a treaty of 1567'], 0, 'Scandal destroyed her support.'],
-  ['Exam skill · Describe two features. Which is a valid feature of Mary\'s claim, with supporting detail?', ['Mary was the granddaughter of Margaret Tudor, Henry VIII\'s elder sister.', 'Mary had a very strong claim that made her very dangerous to Elizabeth.', 'Mary fled to England in 1568 after she lost a battle in Scotland.'], 0, 'A feature about the claim, with a detail.'],
+  ['Exam skill · Describe one feature. Which is a valid feature of Mary\'s claim, with supporting detail?', ['Mary was the granddaughter of Margaret Tudor, Henry VIII\'s elder sister.', 'Mary had a very strong claim that made her very dangerous to Elizabeth.', 'Mary fled to England in 1568 after she lost a battle in Scotland.'], 0, 'A feature about the claim, with a detail.'],
   ['Why was Mary\'s arrival in England so significant?', ['The strongest Catholic claimant was now inside England', 'It meant that Scotland had become Catholic once again', 'It ended the war between England and France at once'], 0, 'She could become a focus for plots.'],
 ], [
   Q('eld9.p1', 'Who was Mary\'s grandmother?', ['Margaret Tudor', 'Anne Boleyn', 'Catherine Parr'], 0, 'Henry VIII\'s elder sister.', 'claim'),
@@ -429,7 +429,7 @@ lesson(T, 'elizabeth.mary-claim', 'Mary, Queen of Scots: her claim and arrival',
   Q('eld9.c6', 'What did Mary ask Elizabeth for in 1568?', ['Help to regain her throne', 'The English crown for herself', 'A divorce from the Earl of Bothwell'], 0, 'She asked after fleeing.', 'flight'),
   Q('eld9.c7', 'When did Mary become Queen of Scotland?', ['1542', '1558', '1561'], 0, 'She became queen as a baby.', 'scotland'),
   Q('eld9.c8', 'Were Scottish nobles mostly Catholic in the 1560s?', ['No, increasingly Protestant', 'Yes, they were all Catholic', 'They had no religion at all'], 0, 'Mary ruled a divided land.', 'scotland'),
-], {exam: 'Describe two features of Mary, Queen of Scots\' claim to the English throne. (4 marks)'}),
+], {exam: 'Describe one feature of Mary, Queen of Scots\' claim to the English throne. (2 marks)'}),
 
 lesson(T, 'elizabeth.mary-options', 'Elizabeth\'s options for dealing with Mary', ['B4 1.4'], [
   ['Option 1: restore her', 'Elizabeth could help Mary regain the Scottish throne. But that would anger the Protestant Scottish lords, who were England\'s allies, and put a Catholic queen with French links back on England\'s border.'],

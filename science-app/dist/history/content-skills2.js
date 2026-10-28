@@ -21,10 +21,10 @@ const timingP3 = view.timeline('Planning time in Paper 3 (1 hour 30 minutes, 52 
 ]);
 
 export const skillsLessons2 = [
-lesson(ELIZ, 'skills.b4-describe-explain', 'Exam skills · Elizabethan England: describe (4) and explain why (12)', ['B4 skills'], [
-  ['What the questions ask', 'The British depth study begins with questions asking you to describe features of something, such as the Elizabethan theatre, worth 4 marks in total. The next question asks you to explain why something happened, such as why Mary, Queen of Scots, was a threat, and focuses on causation. It is worth 12 marks and comes with two stimulus points.'],
-  ['Describing features', 'Each feature earns one mark for identifying it and one for a specific supporting detail that develops it. Two distinct features, each with a fact such as a date, a name or how it worked, are enough. Do not explain causes in this answer.'],
-  ['Explaining why', 'The 12-mark question is marked in levels. Higher levels explain several reasons, show clearly how each caused the outcome, use accurate detail and follow a logical structure. As the specification requires, you must use points of your own beyond the stimulus points.'],
+lesson(ELIZ, 'skills.b4-describe-explain', 'Exam skills · Elizabethan England: describe one feature (2 + 2) and explain why (12)', ['B4 skills'], [
+  ['What the questions ask', 'The British depth study begins with two short questions, 1(a) and 1(b), each asking you to describe one feature of something, such as the Elizabethan theatre; each is worth 2 marks. (Papers up to 2024 asked for two features of one topic for 4 marks.) Question 2 asks you to explain why something happened and focuses on causation. It is worth 12 marks and comes with two stimulus points.'],
+  ['Describing features', 'In each part, one mark is for identifying a valid feature and one for supporting information that develops it, such as a date, a name or how it worked. One or two sentences per part are enough. Do not explain causes in these answers.'],
+  ['Explaining why', 'The 12-mark question is marked in four levels (1–3, 4–6, 7–9, 10–12). Higher levels analyse how each reason caused the outcome, with accurate detail and a logical structure. Answers covering fewer than three aspects of content are capped at 8 marks, so add at least one point of your own beyond the two stimulus points.'],
   ['Common mistakes', 'Describing features at great length; repeating one feature in different words; in the 12-mark answer, telling the story of events without explaining their effect, or relying only on the stimulus points.'],
 ], view.factors('Two answer patterns', [
   ['Describe', 'feature + detail; feature + detail'],
@@ -34,7 +34,7 @@ lesson(ELIZ, 'skills.b4-describe-explain', 'Exam skills · Elizabethan England: 
 ]), [
   timingP2,
   view.people('What examiners reward', [
-    ['Describe', 'two distinct features, each supported'],
+    ['Describe', 'one feature per part, each supported'],
     ['Explain', 'analysis of how causes worked'],
     ['Own knowledge', 'at least one reason beyond the stimulus'],
     ['Knowledge', 'accurate, relevant detail'],
@@ -58,13 +58,13 @@ lesson(ELIZ, 'skills.b4-describe-explain', 'Exam skills · Elizabethan England: 
   Q('sk9.c4', 'Roughly how long suits the 12-mark answer?', ['About 18 minutes', 'About 5 minutes', 'About 45 minutes'], 0, 'About a minute and a half per mark.', 'timing'),
   Q('sk9.c5', 'Which phrase links a cause to its effect?', ['"As a result"', '"Once upon a time"', '"In the year"'], 0, 'It shows how causes worked.', 'structure'),
   Q('sk9.c6', 'Is SPaG assessed in Paper 2?', ['No', 'Yes, in every question', 'Yes, in the describe question'], 0, 'SPaG marks are in Papers 1 and 3.', 'marks'),
-  Q('sk9.c7', 'What should each feature be?', ['Distinct from the other', 'The same as the other', 'A cause of the event'], 0, 'Two different features.', 'technique'),
+  Q('sk9.c7', 'What should each of 1(a) and 1(b) describe?', ['One feature of its own topic', 'Two features of one topic', 'A cause of the event'], 0, 'Each part has its own topic.', 'technique'),
   Q('sk9.c8', 'How many reasons should a 12-mark plan include?', ['About three', 'Only one', 'At least eight'], 0, 'Including one of your own.', 'structure'),
 ], {exam: 'Explain why there were plots against Elizabeth in the years 1569–87. You may use Mary, Queen of Scots, and the papal bull of 1570 in your answer. You must also use information of your own. (12 marks)'}),
 
 lesson(ELIZ, 'skills.b4-how-far', 'Exam skills · Elizabethan England: how far do you agree (16)', ['B4 skills'], [
   ['What the question asks', 'The last British depth study question gives a statement, such as a claim that religion was the main reason for war with Spain, and asks how far you agree. You answer one of two. The specification says it may focus on similarity, difference, change, continuity, causation, consequence or significance.'],
-  ['How it is marked', 'It is worth 16 marks, in levels; there are no SPaG marks in Paper 2. Higher levels need a sustained argument that weighs the statement against other factors, uses accurate and relevant knowledge, and reaches a clear, justified judgement. You must use points of your own beyond the two stimulus points.'],
+  ['How it is marked', 'It is worth 16 marks in four levels (1–4, 5–8, 9–12, 13–16); there are no SPaG marks in Paper 2. Within each level, one mark depends on the quality of your judgement and its criteria. Answers covering fewer than three aspects of content are capped at 11 marks, so add points of your own beyond the two stimulus points.'],
   ['A method', 'Plan quickly: one or two paragraphs supporting the statement, one or two challenging it, then a conclusion. In each paragraph explain how far that factor mattered. In the conclusion, decide how far you agree and give a reason, such as which factor made the others matter.'],
   ['Common mistakes', 'Writing only about the factor in the statement; describing events without judging; avoiding a clear conclusion; and choosing the question you know less about because it looks shorter.'],
 ], view.factors('Judgement in four moves', [
@@ -146,7 +146,7 @@ lesson(GER, 'skills.p3-inference', 'Exam skills · Paper 3: inference (4)', ['31
 
 lesson(GER, 'skills.p3-explain', 'Exam skills · Paper 3: explain why (12)', ['31 skills'], [
   ['What the question asks', 'The second Section A question offers a choice of two explain-why questions, for example on why the Nazis won support in 1929–32. You answer one. The specification says these questions focus on causation. Each is worth 12 marks and comes with two stimulus points.'],
-  ['How it is marked', 'Answers are marked in levels. Higher levels explain several reasons, show how each caused the outcome, use accurate and relevant detail and are logically organised. You must add points of your own beyond the stimulus points.'],
+  ['How it is marked', 'It is marked in four levels (1–3, 4–6, 7–9, 10–12). Higher levels analyse how each reason caused the outcome, with accurate, relevant detail, logically organised. Answers covering fewer than three aspects of content are capped at 8 marks, so add points of your own beyond the two stimulus points.'],
   ['A method', 'Choose the question you know best. Plan three reasons, including at least one of your own. Give each reason a paragraph: state it, support it with specific knowledge, then explain how it led to the outcome. Where you can, show how reasons connected, for example how the Depression made propaganda more effective.'],
   ['Common mistakes', 'Choosing the wrong question in a hurry; narrating events without explaining them; using only the stimulus points; and running out of time for Section B, which is worth far more marks.'],
 ], view.factors('Building a 12-mark answer', [
@@ -187,7 +187,7 @@ lesson(GER, 'skills.p3-explain', 'Exam skills · Paper 3: explain why (12)', ['3
 
 lesson(GER, 'skills.p3-sources', 'Exam skills · Paper 3: source utility (8)', ['31 skills'], [
   ['What the question asks', 'Section B begins with two contemporary sources, at least one of them written, and asks how useful they are for a specified enquiry, such as the attitudes of young people to the Hitler Youth. The specification says you must use your knowledge of the historical context.'],
-  ['How it is marked', 'It is worth 8 marks, in three levels. Higher levels judge how useful each source is for the specific enquiry, using its content, its provenance (nature, origin and purpose) and contextual knowledge to support the judgement. Describing the sources stays in the lower levels.'],
+  ['How it is marked', 'It is worth 8 marks, in three levels (1–2, 3–5, 6–8). The top level weighs how each source\'s provenance (nature, origin and purpose) affects the usefulness of its content for the specific enquiry. Contextual knowledge earns credit only when it is used to evaluate the sources, and general comments about provenance earn nothing unless tied to the content.'],
   ['A method', 'Write one paragraph per source. For each, say what it shows that is useful for the enquiry, then use provenance (who made it, when and why) to explain how that affects its usefulness, and test it with your own knowledge. End each paragraph with a judgement on how useful the source is.'],
   ['Common mistakes', 'Saying a source is biased and therefore useless; ignoring the enquiry; judging only one source; and writing about reliability in general instead of usefulness for the enquiry.'],
 ], view.factors('Usefulness for an enquiry', [
@@ -228,8 +228,8 @@ lesson(GER, 'skills.p3-sources', 'Exam skills · Paper 3: source utility (8)', [
 
 lesson(GER, 'skills.p3-interpretations', 'Exam skills · Paper 3: how and why interpretations differ (4 + 4)', ['31 skills'], [
   ['What an interpretation is', 'An interpretation is a later account of the past, usually by a historian, such as a view of how far Germans supported the Nazis. Paper 3 gives two interpretations. The specification says question 3(b) asks how they differ and 3(c) asks why they might differ.'],
-  ['How they differ (4)', 'Question 3(b) is worth 4 marks. The top level identifies a key difference in the main views of the two interpretations, supported by detail from both. A list of small differences in wording, or summaries of each without comparing them, stays lower.'],
-  ['Why they differ (4)', 'Question 3(c) is worth 4 marks. Good answers give a reason for the difference: the historians may have used different evidence (you can refer to the two sources in the paper), focused on different groups, places or times, or given different weight to the same evidence. Saying one historian is simply biased or wrong is weak.'],
+  ['How they differ (4)', 'Question 3(b) is worth 4 marks, in two levels (1–2 and 3–4). The top level identifies a key difference in the main views of the two interpretations, supported by detail from both. Surface differences, or a difference asserted without support, stay in the lower level.'],
+  ['Why they differ (4)', 'Question 3(c) is worth 4 marks, in two levels (1–2 and 3–4). Good answers explain one reason for the difference: the historians may have given weight to different sources (you can show that each of the two sources in the paper supports a different interpretation), taken a different perspective, or put a different emphasis on the topic. Saying one historian is simply biased or wrong is weak.'],
   ['Common mistakes', 'Saying which interpretation is right (that is for 3(d)); comparing the sources instead of the interpretations; listing minor differences; and explaining why historians differ in general without linking to these two.'],
 ], view.factors('Two short answers', [
   ['3(b) How', 'state the main difference in view'],
@@ -269,7 +269,7 @@ lesson(GER, 'skills.p3-interpretations', 'Exam skills · Paper 3: how and why in
 
 lesson(GER, 'skills.p3-judgement', 'Exam skills · Paper 3: how far do you agree with the interpretation (16 + 4)', ['31 skills'], [
   ['What the question asks', 'The final question asks how far you agree with one of the two interpretations. The specification says you must evaluate it using the other interpretation and your own knowledge of the historical context.'],
-  ['How it is marked', 'It is worth 16 marks plus up to 4 for spelling, punctuation, grammar and specialist terms. Higher levels evaluate the named interpretation by testing its claims against your knowledge and the other interpretation, and reach a clear, justified judgement on how far you agree.'],
+  ['How it is marked', 'It is worth 16 marks in four levels (1–4, 5–8, 9–12, 13–16), plus up to 4 for spelling, punctuation, grammar and specialist terms. Higher levels evaluate the named interpretation by testing its claims against your knowledge and the other interpretation, and reach a substantiated judgement. Contextual knowledge earns credit only when it is used to evaluate the interpretations; summarising them without evaluating is held to the lowest marks.'],
   ['A method', 'State how far you agree at the start. Write two or three paragraphs: test the interpretation\'s main claim with knowledge that supports it, then with knowledge and the other interpretation that challenge it. Finish with a judgement that explains why you find it more or less convincing.'],
   ['Common mistakes', 'Summarising both interpretations without evaluating; writing about the sources instead of the interpretations; agreeing or disagreeing without evidence; and leaving too little time for this, the largest question on the paper.'],
 ], view.factors('Evaluating an interpretation', [

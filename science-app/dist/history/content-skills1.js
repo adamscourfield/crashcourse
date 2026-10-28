@@ -24,7 +24,7 @@ const timingP2 = view.timeline('Planning time in Paper 2 (1 hour 50 minutes, 64 
 export const skillsLessons1 = [
 lesson(MED, 'skills.p1-describe', 'Exam skills · Paper 1: explain one similarity or difference (4)', ['11 skills'], [
   ['What the question asks', 'The first thematic-study question asks you to explain one way in which something, such as ideas about the cause of disease, was similar or different in two periods. The specification says these questions normally span at least a century, so the two periods are usually far apart.'],
-  ['How it is marked', 'The question is worth 4 marks. A simple, general point earns the lower level; the top level needs a clear similarity or difference supported by specific knowledge of both periods. Only one way is credited, so a second point gains nothing.'],
+  ['How it is marked', 'The question is worth 4 marks, in two levels: 1–2 for a simple or general point, 3–4 for a similarity or difference that is explained and supported by specific knowledge. An answer that describes without explaining cannot rise above the lower level. The question asks for one way, so a second way adds nothing.'],
   ['A method', 'Start by naming the similarity or difference in one sentence, mentioning both periods. Give a specific example from the first period, then one from the second. Finish with a short explanation of why they were alike or different, such as the role of the Church or of science.'],
   ['Common mistakes', 'Writing about only one period; listing several ways instead of developing one; using vague phrases such as "medicine got better"; and telling a long story without stating the similarity or difference.'],
 ], view.factors('A four-step plan', [
@@ -43,12 +43,12 @@ lesson(MED, 'skills.p1-describe', 'Exam skills · Paper 1: explain one similarit
   view.source('A question type to practise', 'A question asks you to explain one way in which hospital care in c1250–c1500 was different from care in c1700–c1900.', 'Choose one difference, such as who ran hospitals or what they did, and support it with an example from each period.'),
 ], [
   ['Which opening sentence best answers a similarity question?', ['In both periods supernatural ideas about disease remained common.', 'In the medieval period people believed in the Four Humours.', 'Medicine has changed a great deal over hundreds of years.'], 0, 'A similarity names both periods.'],
-  ['Why does a second way gain no marks?', ['Only one way is credited by the mark scheme', 'The examiner stops reading after three lines', 'Second points are always counted as wrong'], 0, 'Develop one way.'],
+  ['Why is a second way a poor use of time?', ['The question asks for one way, so it adds nothing', 'The examiner stops reading after three lines', 'Second points are always counted as wrong'], 0, 'Develop one way instead.'],
   ['Exam skill · Explain one difference. Which answer would reach the top level?', ['Medieval doctors blamed the humours, but by the 1860s germ theory identified microbes, as microscopes improved.', 'Medicine was very different in the two periods, and a great many things changed over time.', 'In the Middle Ages doctors used urine charts and bled their patients to try to treat them.'], 0, 'Difference, two periods and an explanation.'],
   ['What is the best use of about five minutes?', ['One developed comparison with specific support', 'A full page about the earlier of the two periods', 'A list of four quick differences with no support'], 0, 'Matching time to marks.'],
 ], [
   Q('sk1.p1', 'How many marks is the similarity or difference question worth?', ['4', '8', '12'], 0, 'It is the first Section B question.', 'marks'),
-  Q('sk1.p2', 'How many ways should you explain?', ['One', 'Two', 'Four'], 0, 'Only one is credited.', 'technique'),
+  Q('sk1.p2', 'How many ways should you explain?', ['One', 'Two', 'Four'], 0, 'The question asks for one way.', 'technique'),
   Q('sk1.p3', 'What do these questions normally span?', ['At least a century', 'A single year only', 'One decade at most'], 0, 'As the specification says.', 'technique'),
   Q('sk1.p4', 'What must your answer refer to?', ['Both periods', 'Only the later period', 'Only the earlier period'], 0, 'It is a comparison.', 'technique'),
   Q('sk1.p5', 'Which phrase is too vague?', ['"Medicine got better"', '"Germ theory, from 1861"', '"Galen\'s Four Humours"'], 0, 'Name specific features.', 'mistakes'),
@@ -65,7 +65,7 @@ lesson(MED, 'skills.p1-describe', 'Exam skills · Paper 1: explain one similarit
 
 lesson(MED, 'skills.p1-explain', 'Exam skills · Paper 1: explain why (12)', ['11 skills'], [
   ['What the question asks', 'The second thematic-study question asks you to explain why something happened or changed, such as why there was rapid change in surgery in a period. It focuses on the process of change and is worth 12 marks. Two stimulus points are printed with the question.'],
-  ['How it is marked', 'Answers are marked in levels. Simple, general statements stay in the lowest levels; higher levels need several well-explained reasons, each linked clearly to the question, with accurate and relevant detail and a logical structure. The specification says you must add points of your own: answers that use only the stimulus points are penalised.'],
+  ['How it is marked', 'It is marked in four levels (1–3, 4–6, 7–9, 10–12). Higher levels need consistent analysis of how causes worked, wide-ranging accurate detail and a logical structure. An answer that does not cover at least three aspects of content is capped at 8 marks, so the two stimulus points alone cannot reach Level 4: add at least one point of your own. Description without analysis cannot rise above Level 1.'],
   ['A method', 'Plan three reasons: the two stimulus points and at least one of your own. Give each its own paragraph. Open with the reason, give specific evidence, then explain how it caused the change, using phrases such as "this meant that" or "as a result". Do not spend time on a separate introduction.'],
   ['Common mistakes', 'Describing events without explaining how they caused change; using only the stimulus points; writing about the wrong period; and giving a list of reasons with no development.'],
 ], view.factors('Paragraph pattern: point, evidence, explain', [
@@ -106,7 +106,7 @@ lesson(MED, 'skills.p1-explain', 'Exam skills · Paper 1: explain why (12)', ['1
 
 lesson(MED, 'skills.p1-how-far', 'Exam skills · Paper 1: how far do you agree (16)', ['11 skills'], [
   ['What the question asks', 'The last thematic-study question gives a statement, such as a claim that an individual was the main reason for progress, and asks how far you agree. You answer one of two questions. It may focus on change and continuity, turning points, causes or consequences, and normally spans at least a whole period or two centuries.'],
-  ['How it is marked', 'It is worth 16 marks, plus up to 4 for spelling, punctuation, grammar and specialist terms. Higher levels need a sustained argument that weighs the statement against other factors, uses accurate and relevant knowledge, and reaches a clear, justified judgement. As with the 12-mark question, you must add points of your own beyond the stimulus.'],
+  ['How it is marked', 'It is worth 16 marks in four levels (1–4, 5–8, 9–12, 13–16), plus up to 4 for spelling, punctuation, grammar and specialist terms. Within each level, one mark depends on the quality of your judgement and the criteria behind it. Answers covering fewer than three aspects of content are capped at 11 marks, so add points of your own beyond the two stimulus points.'],
   ['A method', 'Plan briefly: one or two paragraphs that support the statement, one or two that challenge it, then a conclusion. State your view early. In each paragraph, explain how far the factor mattered. In the conclusion, weigh the factors against each other and explain your judgement with a criterion, such as which factor made the others possible.'],
   ['Common mistakes', 'Writing only about the factor in the statement; describing without judging; sitting on the fence in the conclusion; and leaving no time to check spelling and specialist terms.'],
 ], view.factors('A plan for a 16-mark judgement', [
@@ -145,50 +145,50 @@ lesson(MED, 'skills.p1-how-far', 'Exam skills · Paper 1: how far do you agree (
   Q('sk3.c8', 'How should each paragraph end?', ['With how far the factor mattered', 'With a completely new topic', 'With a question for the reader'], 0, 'Judge as you go.', 'structure'),
 ], {exam: '"Individuals were the main reason for progress in medicine in the period c1700–c1900." How far do you agree? Explain your answer. (16 marks)'}),
 
-lesson(WF, 'skills.he-describe', 'Exam skills · Western Front: describe two features (4)', ['11 HE skills'], [
-  ['What the question asks', 'The first historic-environment questions ask you to describe features of something on the Western Front, such as the trench system or the work of stretcher bearers. They test knowledge and are worth 4 marks in total.'],
-  ['How it is marked', 'Each feature earns a mark for identifying it and another for supporting detail that adds to it. A feature that is only named, or a detail that repeats the feature, does not earn the second mark.'],
-  ['A method', 'Write two short paragraphs, one per feature. Begin with a clear feature, then add one specific supporting fact, such as a date, a number or how it worked. Two or three sentences each is enough.'],
-  ['Common mistakes', 'Giving two features without detail; repeating the same feature in different words; explaining why things happened when the question asks for description; and writing far more than 4 marks need.'],
-], view.factors('Feature + detail, twice', [
-  ['Feature 1', 'a clear feature, stated simply'],
-  ['Detail 1', 'a specific fact that adds to it'],
-  ['Feature 2', 'a different feature'],
-  ['Detail 2', 'a specific fact that adds to it'],
+lesson(WF, 'skills.he-describe', 'Exam skills · Western Front: describe one feature (2 + 2)', ['11 HE skills'], [
+  ['What the questions ask', 'Section A opens with two short questions, 1(a) and 1(b). Each asks you to describe one feature of something on the Western Front, such as the use of blood transfusions or the fighting that caused injuries. Each is worth 2 marks, so 4 in total. Papers up to 2024 used a single question asking for two features of one topic; the 2025 paper split it into two parts on different topics.'],
+  ['How it is marked', 'In each part, 1 mark is for identifying a valid feature and 1 mark is for supporting information that adds to it. A feature that is only named, or a detail that simply repeats it, earns 1 mark, not 2.'],
+  ['A method', 'Write one or two sentences for each part. Begin with a clear feature, then add one specific supporting fact, such as a date, a number or how it worked. Read each part carefully, because the two parts are usually about different topics.'],
+  ['Common mistakes', 'Naming a feature without any supporting detail; writing about the topic of 1(a) in your answer to 1(b); explaining why things happened when the question asks for description; and writing far more than 2 marks need.'],
+], view.factors('Feature + detail, in each part', [
+  ['1(a) feature', 'a clear feature, stated simply'],
+  ['1(a) detail', 'a specific fact that adds to it'],
+  ['1(b) feature', 'a feature of the second topic'],
+  ['1(b) detail', 'a specific fact that adds to it'],
 ]), [
   timingP1,
   view.people('What examiners reward', [
-    ['Identification', 'a valid feature'],
-    ['Support', 'a specific detail that develops it'],
-    ['Difference', 'two distinct features'],
+    ['Identification', 'a valid feature (1 mark)'],
+    ['Support', 'information that develops it (1 mark)'],
+    ['Relevance', 'the feature matches the topic of that part'],
     ['Brevity', 'no long explanation needed'],
   ]),
-  view.source('A question type to practise', 'A question asks you to describe two features of the Casualty Clearing Stations.', 'For example: they were the first places with surgeons; they were often near railways so men could be moved by ambulance train.'),
+  view.source('A question type to practise', 'Part (a) asks you to describe one feature of the Casualty Clearing Stations; part (b) asks you to describe one feature of the use of X-rays.', 'For example, (a): they were the first places with surgeons, often near railways; (b): mobile X-ray units found shrapnel, but the tubes overheated.'),
 ], [
-  ['Which answer earns both marks for one feature?', ['Casualty Clearing Stations had surgeons, who carried out urgent operations there.', 'Casualty Clearing Stations were very important places on the Western Front.', 'There were Casualty Clearing Stations that soldiers went to during the war.'], 0, 'Feature plus detail.'],
-  ['Why might a second feature earn nothing?', ['It repeats the first feature in different words', 'It is written in a separate, second paragraph', 'It includes a date or a number'], 0, 'Features must differ.'],
-  ['Exam skill · Describe two features. Which pair is best?', ['Trench foot came from cold water; whale oil helped. Lice spread trench fever, proved in 1918.', 'Trench conditions were very bad. Many soldiers became ill while in the trenches.', 'Soldiers suffered from many illnesses, and some of them had to go to a hospital.'], 0, 'Two features, each supported.'],
-  ['How long should this answer take?', ['About five or six minutes', 'About twenty minutes or more', 'About one minute'], 0, 'It is worth only four marks.'],
+  ['Which answer earns both marks?', ['Casualty Clearing Stations had surgeons, who carried out urgent operations there.', 'Casualty Clearing Stations were very important places on the Western Front.', 'There were Casualty Clearing Stations that soldiers went to during the war.'], 0, 'A feature plus supporting detail.'],
+  ['Why might an answer to 1(b) earn nothing?', ['It describes the topic of 1(a) instead', 'It is written as a single sentence', 'It includes a date or a number'], 0, 'Each part has its own topic.'],
+  ['Exam skill · Describe one feature. Which answer is best for "describe one feature of trench fever"?', ['Trench fever was spread by lice, which was only proved in 1918.', 'Trench fever was a very serious problem for soldiers in the war.', 'Many soldiers became ill in the trenches during the war years.'], 0, 'One feature with specific support.'],
+  ['How long should each part take?', ['About two or three minutes', 'About fifteen minutes each', 'Under ten seconds'], 0, 'Each part is worth only 2 marks.'],
 ], [
-  Q('sk4.p1', 'How many marks are the describe questions worth?', ['4', '8', '12'], 0, 'In Paper 1 Section A.', 'marks'),
-  Q('sk4.p2', 'What earns the second mark for each feature?', ['A supporting detail', 'A second new feature', 'A personal opinion'], 0, 'It develops the feature.', 'marks'),
-  Q('sk4.p3', 'How many features should you describe?', ['Two', 'One', 'Five'], 0, 'Each with detail.', 'technique'),
+  Q('sk4.p1', 'How many marks is each describe part worth?', ['2', '4', '8'], 0, 'Parts 1(a) and 1(b), 4 in total.', 'marks'),
+  Q('sk4.p2', 'What earns the second mark?', ['Supporting information', 'A second new feature', 'A personal opinion'], 0, 'It develops the feature.', 'marks'),
+  Q('sk4.p3', 'How many features does each part ask for?', ['One', 'Two', 'Five'], 0, 'One feature, with support.', 'technique'),
   Q('sk4.p4', 'Which skill do these questions test?', ['Knowledge', 'Source analysis', 'Interpretations'], 0, 'They target AO1, knowledge.', 'technique'),
   Q('sk4.p5', 'Which section of Paper 1 is the Western Front?', ['Section A', 'Section B', 'Booklet B'], 0, 'The historic environment.', 'marks'),
 ], [
-  Q('sk4.c1', 'What is a common mistake?', ['Repeating the same feature', 'Adding a supporting detail', 'Writing two short paragraphs'], 0, 'Features must differ.', 'mistakes'),
-  Q('sk4.c2', 'Do you need to explain causes here?', ['No', 'Yes, always', 'Only for 4 marks'], 0, 'Describe, not explain.', 'mistakes'),
-  Q('sk4.c3', 'How long should each feature be?', ['Two or three sentences', 'A full side of paper', 'Just one single word'], 0, 'Enough for feature and detail.', 'structure'),
-  Q('sk4.c4', 'What is a good supporting detail?', ['A specific date or fact', 'A general comment on it', 'A question to the reader'], 0, 'Precise support.', 'technique'),
+  Q('sk4.c1', 'What is a common mistake?', ['A feature with no support', 'Adding a supporting detail', 'Writing one or two sentences'], 0, 'Support earns the second mark.', 'mistakes'),
+  Q('sk4.c2', 'Do you need to explain causes here?', ['No', 'Yes, always', 'Only in part (b)'], 0, 'Describe, not explain.', 'mistakes'),
+  Q('sk4.c3', 'How long should each answer be?', ['One or two sentences', 'A full side of paper', 'Just one single word'], 0, 'Enough for feature and detail.', 'structure'),
+  Q('sk4.c4', 'What is good supporting information?', ['A specific date or fact', 'A general comment on it', 'A question to the reader'], 0, 'Precise support.', 'technique'),
   Q('sk4.c5', 'How many marks are in Section A in total?', ['16', '36', '52'], 0, 'Of Paper 1\'s 52.', 'marks'),
-  Q('sk4.c6', 'What does a named feature alone earn?', ['One mark', 'Two marks', 'Four marks'], 0, 'Detail earns the second.', 'marks'),
+  Q('sk4.c6', 'What does a named feature alone earn?', ['One mark', 'Two marks', 'No marks'], 0, 'Support earns the second.', 'marks'),
   Q('sk4.c7', 'Which is a valid feature of the RAMC?', ['It provided stretcher bearers', 'It was a type of poison gas', 'It was a battle fought in 1916'], 0, 'With a detail added.', 'technique'),
-  Q('sk4.c8', 'What should you avoid?', ['Writing far more than needed', 'Adding a supporting detail', 'Writing two short paragraphs'], 0, 'It wastes time for later questions.', 'timing'),
-], {exam: 'Describe two features of the chain of evacuation on the Western Front. (4 marks)'}),
+  Q('sk4.c8', 'Which papers asked for two features in one question?', ['Papers up to 2024', 'Only the 2025 paper', 'None at all'], 0, 'The 2025 paper split it into 1(a) and 1(b).', 'marks'),
+], {exam: 'Describe one feature of the chain of evacuation on the Western Front. (2 marks)'}),
 
 lesson(WF, 'skills.he-sources', 'Exam skills · Western Front: source utility (8) and follow-up (4)', ['11 HE skills'], [
   ['What the questions ask', 'The two-part source question uses two contemporary sources, at least one of them written. Part (a) asks how useful both sources are for a named enquiry. Part (b) asks how you could follow up one of the sources to find out more.'],
-  ['Marking part (a)', 'Part (a) is worth 8 marks, in three levels. Higher levels judge each source\'s usefulness for the specific enquiry, using its content, its provenance (nature, origin and purpose) and your own knowledge of the context. Simply describing what the sources show stays in the lower levels.'],
+  ['Marking part (a)', 'Part (a) is worth 8 marks, in three levels (1–2, 3–5, 6–8). Higher levels judge each source\'s usefulness for the specific enquiry, explaining how its provenance (nature, origin and purpose) affects the value of its content. Contextual knowledge earns credit only when you use it to evaluate the sources, and general comments about provenance earn nothing unless they are tied to the content.'],
   ['Marking part (b)', 'Part (b) is worth 4 marks, one for each step: a detail in the source you would follow up; a question you would ask; the type of source you would use; and how that source would help answer the question. Each step must link to the one before.'],
   ['Common mistakes', 'Saying a source is biased without explaining how that affects its use; ignoring the enquiry; judging only one source; and in part (b), naming a vague source such as "the internet" or "books".'],
 ], view.factors('Judging usefulness', [
@@ -229,7 +229,7 @@ lesson(WF, 'skills.he-sources', 'Exam skills · Western Front: source utility (8
 
 lesson(CW, 'skills.p4-consequences', 'Exam skills · Cold War: explain two consequences (8)', ['P4 skills'], [
   ['What the question asks', 'The first period-study question asks you to explain two consequences of an event, such as the Soviet invasion of Hungary or the building of the Berlin Wall. The specification says these questions focus on consequence.'],
-  ['How it is marked', 'Each consequence is worth 4 marks, in two levels. The higher level needs a consequence that is explained, not just stated, with specific supporting knowledge showing how the event led to it.'],
+  ['How it is marked', 'Each consequence is worth 4 marks, in two levels (1–2 and 3–4). The higher level needs a consequence that is explained, not just stated, with specific supporting knowledge showing how the event led to it. An answer that only describes, without explaining a consequence, cannot rise above the lower level.'],
   ['A method', 'Write two paragraphs, each starting with the consequence. Use linking phrases such as "this led to" or "as a result", and support each with specific detail. Choose two consequences that are clearly different, for example one for the superpowers and one for the people affected.'],
   ['Common mistakes', 'Describing the event instead of its results; giving causes instead of consequences; giving two consequences that are really the same; and writing a long story before reaching the point.'],
 ], view.factors('A consequence paragraph', [
@@ -270,9 +270,9 @@ lesson(CW, 'skills.p4-consequences', 'Exam skills · Cold War: explain two conse
 
 lesson(CW, 'skills.p4-narrative', 'Exam skills · Cold War: narrative account (8)', ['P4 skills'], [
   ['What the question asks', 'The second period-study question asks you to write a narrative account analysing a sequence of events, such as the key events of the Berlin Crisis of 1958–61. The specification says the account must not only describe what happened but analyse it, finding connections to explain why events unfolded as they did.'],
-  ['How it is marked', 'It is worth 8 marks, in three levels. Higher levels need an account in the right order that links events together, showing how one led to the next, with accurate detail. Two stimulus points are given, and you must add information of your own.'],
+  ['How it is marked', 'It is worth 8 marks, in three levels (1–2, 3–5, 6–8). The top level needs a clear sequence of events leading to an outcome, with the links between them analysed and accurate detail. Two stimulus points are given; answers that do not cover at least three aspects of content cannot reach the top level, so add information of your own.'],
   ['A method', 'Plan three or four key events in chronological order, including the two prompts and at least one of your own. Write a paragraph for each. Use linking phrases such as "this led to", "in response" and "as a result" to show how each event caused the next. Finish with the outcome.'],
-  ['Common mistakes', 'Writing a list of events with no links; going out of order; stopping too early or going beyond the dates in the question; and judging which event was most important, which this question does not ask for.'],
+  ['Common mistakes', 'Writing a list of events with no links; losing the sequence; stopping too early or going beyond the dates in the question; and spending time judging which event mattered most, which this question does not reward.'],
 ], view.factors('A linked narrative', [
   ['Start', 'the first event and its context'],
   ['Link', 'how it led to the next event'],
@@ -311,7 +311,7 @@ lesson(CW, 'skills.p4-narrative', 'Exam skills · Cold War: narrative account (8
 
 lesson(CW, 'skills.p4-importance', 'Exam skills · Cold War: explain the importance (8)', ['P4 skills'], [
   ['What the question asks', 'The third period-study question lists three events, people or developments and asks you to explain the importance of two of them for something, such as for relations between the superpowers. The specification says it focuses on the difference they made: their consequence and significance.'],
-  ['How it is marked', 'Each part you choose is worth 8 marks, in three levels, so 16 in total. Higher levels explain how the event changed the situation named in the question, with accurate detail, rather than describing the event itself.'],
+  ['How it is marked', 'Each part you choose is worth 8 marks, in three levels (1–2, 3–5, 6–8), so 16 in total. Higher levels explain how the event changed the situation named in the question, with accurate detail, rather than describing the event itself.'],
   ['A method', 'Choose the two you know best. For each, write two paragraphs: what difference it made in the short term, and what difference it made in the longer term, both tied to the focus of the question. Use phrases such as "this was important because" and "this changed relations by".'],
   ['Common mistakes', 'Describing the event without explaining its importance; ignoring the focus named in the question; answering all three parts; and spending too long on the first part.'],
 ], view.factors('Showing importance', [
