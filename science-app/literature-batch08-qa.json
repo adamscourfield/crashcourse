@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-28",
+  "batch": "Literature08",
+  "new_lessons": 10,
+  "total_built": 75,
+  "remaining_planned_literature": 100,
+  "working_literature_allocation": 175,
+  "shared_english_programme": "350sessions70weeks;provisional175Literature175reserved_unmappedLanguage",
+  "poetry_units": 27,
+  "poems_introduced": 14,
+  "paired_poems": 13,
+  "anthology_required": 15,
+  "new_practice": 30,
+  "new_checks": 40,
+  "total_practice": 225,
+  "total_checks": 300,
+  "question_ids": 525,
+  "full_suite": {
+    "passed": 833,
+    "duration_ms": 39086.278,
+    "scope": "lesson data and journeys before final optional primary-context source links"
+  },
+  "final_focused": {
+    "passed": 44,
+    "duration_ms": 492.071125,
+    "scope": "Literature content/interaction and existing mocked AI tests after source-link addition"
+  },
+  "old65_normalised_sha256": "d9817d5b47f330968d8854c1b0402eb14b9068dee3bbac8c5a0d3e4a1ffe13b1",
+  "sources": [
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/modern-texts-and-poetry",
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/skills",
+    "https://filestore.aqa.org.uk/resources/english/AQA-8702-TG-POEMS.PDF",
+    "https://www.simonarmitage.com/works/the-not-dead/",
+    "https://www.imtiazdharker.com/gcse",
+    "https://poetryarchive.org/poem/checking-out-me-history/"
+  ],
+  "rights": "All ten protected-poem units original commentary/method lenses; no poem passage or audio copied; assigned-poem reading links and primary author context accessible in Sources",
+  "offline": "All10 wrong/retry/gates/locked independent answers/first tries/draftversion/resume; current topic count, paper and source context; old65unchanged",
+  "browser": "27unit menu;Tissuemeaning all3lenses and3views,wrong/retry challenge/practice,automaticQ2,draftandversionreload;primaryDharkernote and protected-poem labels;phone390x844 fits scrollWidth390/clientWidth390;viewportreset;no sampled consoleerrors",
+  "preview": "crash-course-literature-batch08-preview.jpg",
+  "specialist_review": "not_performed",
+  "writing": "Unmarked; selected responses do not establish essay mastery; user explicitly deferred AI key setup; no real provider request",
+  "limitations": [
+    "Not all10fullbrowserjourneys",
+    "No comprehensive assistive-technology audit",
+    "Human writing and specialist content review outstanding"
+  ],
+  "curriculum_validation": "175unique roadmap IDs75implemented100planned;225representative coverage rows;350shared programme slots",
+  "publication": {
+    "status": "pending",
+    "mode": "static lessons; prepared API runtime retained but activation deferred; owner-private audience preserved"
+  }
+}

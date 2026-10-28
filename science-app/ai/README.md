@@ -14,7 +14,7 @@ OpenAI Responses API, configurable model (default gpt-4.1-mini), `store:false`, 
 
 ## Private configuration required
 
-Install/enable OpenAI Developers and use its `openai-platform-api-key` workflow with its required approval. Sites identity-and-secrets instructions require this route. Never paste keys into chat or browser fields, commit keys, or add them to hosting.json. Then configure `OPENAI_API_KEY` as a Site secret; `OPENAI_MODEL` is optional. No key existed when this integration was prepared. Before activation, exercise a real opt-in synthetic paragraph request and record actual provider/model/error behaviour. Do not send real student data as a smoke test.
+Install/enable OpenAI Developers and use its `openai-platform-api-key` workflow with its required approval. Sites identity-and-secrets instructions require this route. Never paste keys into chat or browser fields, commit keys, or add them to hosting.json. Then configure `OPENAI_API_KEY` as a Site secret; `OPENAI_MODEL` is optional. No key existed when this integration was prepared. OpenAI Developers was subsequently installed; the user explicitly deferred key setup. Do not reopen provisioning until requested. Before activation, exercise a real opt-in synthetic paragraph request and record actual provider/model/error behaviour. Do not send real student data as a smoke test.
 
 Official references checked28October2026:
 - https://developers.openai.com/api/docs/guides/structured-outputs?api-mode=responses
@@ -23,7 +23,7 @@ Official references checked28October2026:
 
 ## Build and rollout
 
-The canonical source keeps authored lesson assets in `dist/`. `runtime/` is the supported Sites Vinext starter prepared separately for migration. Existing HTML and assets are copied into its public output, with the API intercepted server-side. Root `build` copies generated Worker output into ignored dist/server and dist/client; authored lessons remain tracked. Root hosting.json now describes the prepared Worker source; the currently hosted lesson-only source still declares static hosting. This is an intentional pending migration, not an already-live API.
+The canonical source keeps authored lesson assets in `dist/`. `runtime/` is the supported Sites Vinext starter prepared separately for migration. Existing HTML and assets are copied into its public output, with the API intercepted server-side. Root `build` copies generated Worker output into ignored dist/server and dist/client; authored lessons remain tracked. The user deferred key setup. Root hosting.json remains static, matching the published lesson release. The prepared runtime/ Worker source is retained for a later migration; remove the static field only when secure key setup and rollout resume.
 
 1. Install runtime dependencies using the Sites dependency helper in runtime/, or `npm ci` there on a normal developer machine.
 2. `npm --prefix science-app test`; `npm --prefix science-app run build`.

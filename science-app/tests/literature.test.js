@@ -4,10 +4,10 @@ import {readFileSync} from 'node:fs';
 import {lessons,topics} from '../dist/literature/content.js';
 import {restore,literatureGates,choiceIndices,viewHTML,draftVersionsHTML} from '../dist/literature/studio.js';
 import {subjects} from '../dist/progress.js';
-test('Literature has 65 text-scoped lessons and 455 stable question IDs',()=>{
- assert.equal(lessons.length,65);assert.equal(new Set(lessons.map(l=>l.id)).size,65);
+test('Literature has 75 text-scoped lessons and 525 stable question IDs',()=>{
+ assert.equal(lessons.length,75);assert.equal(new Set(lessons.map(l=>l.id)).size,75);
  const ids=new Set();for(const l of lessons){assert(topics.some(t=>t.id===l.topicId));assert.equal(l.cards.length,3);assert.equal(l.practice.length,3);assert.equal(l.check.length,4);assert.equal(l.views[0].kind,'language');assert.equal(l.views[0].words.length,3);assert(l.writing&&l.rubric.length===3);for(const q of [...l.practice,...l.check]){assert(!ids.has(q.id));ids.add(q.id);assert(q.options[q.answer]);assert(q.why);}}
- assert.equal(ids.size,455);assert.equal(subjects.find(s=>s.id==='english-literature').status,'available');
+ assert.equal(ids.size,525);assert.equal(subjects.find(s=>s.id==='english-literature').status,'available');
 });
 test('Knowledge gates require all language details, practice and independent answers; writing is separate',()=>{
  const l=lessons[0],p={seen:[0,1,2],passed:[0],observed:[0,1,2],wordSeen:[0,1],practice:Object.fromEntries(l.practice.map(q=>[q.id,{correct:true}])),checks:Object.fromEntries(l.check.map(q=>[q.id,q.answer])),draft:'A long draft is not a mark.'};
@@ -70,9 +70,20 @@ test('All forty-five earlier lesson records remain unchanged',async()=>{
  const {createHash}=await import('node:crypto');const sorted=v=>Array.isArray(v)?v.map(sorted):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,sorted(v[k])])):v;assert.equal(createHash('sha256').update(JSON.stringify(sorted(lessons.slice(0,45)))).digest('hex'),'4c2964bae4d0db39581fb07183db087b9a2a8fd95d13a7faa4efeb9186e25e04');
 });
 test('Batch 7 follows the next ten anthology IDs with clear protected-poem handling',async()=>{
- const {batch07}=await import('../dist/literature/content-batch07.js');assert.deepEqual(batch07.map(l=>l.id.split('.').pop()),['poem-04-2','poem-05-1','poem-05-2','poem-06-1','poem-06-2','poem-07-1','poem-07-2','poem-08-1','poem-08-2','poem-09-1']);assert.equal(lessons.filter(l=>l.topicId==='english-literature.power-conflict').length,17);assert.equal(batch07.filter(l=>l.rights==='protected_summary_only').length,5);
+ const {batch07}=await import('../dist/literature/content-batch07.js');assert.deepEqual(batch07.map(l=>l.id.split('.').pop()),['poem-04-2','poem-05-1','poem-05-2','poem-06-1','poem-06-2','poem-07-1','poem-07-2','poem-08-1','poem-08-2','poem-09-1']);assert.equal(lessons.filter(l=>l.topicId==='english-literature.power-conflict').length,27);assert.equal(batch07.filter(l=>l.rights==='protected_summary_only').length,5);
  for(const l of batch07){assert.equal(l.refs[0],'3.2.2');assert.equal(l.textType,'poem');assert(l.readingURL.includes('#page='));assert(l.tasks[0][4]);assert.equal(new Set([...l.practice,...l.check].map(q=>q.prompt)).size,7);for(const q of [...l.practice,...l.check])assert(q.concept.startsWith('lit.power-conflict.'));if(l.rights==='protected_summary_only'){assert(l.views[0].originalSummary);assert.equal(l.views[0].label,'Poem lenses');const html=viewHTML(l.views[0]);assert(html.includes('NOT A POEM QUOTATION'));assert(!html.includes('NOT A PLAY'));assert(!html.includes('<blockquote'));assert(html.includes('poetic feature'));}}
 });
 test('All fifty-five earlier lesson records remain unchanged in batch 7',async()=>{
  const {createHash}=await import('node:crypto');const sorted=v=>Array.isArray(v)?v.map(sorted):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,sorted(v[k])])):v;assert.equal(createHash('sha256').update(JSON.stringify(sorted(lessons.slice(0,55)))).digest('hex'),'7884ea865d1085265ae32431be1cb1a209eef3da3783f11120dd72c93eca621e');
+});
+
+test('Batch 8 adds the next ten protected-poem units with stable scoped questions and qualified methods',async()=>{
+ const {batch08}=await import('../dist/literature/content-batch08.js');
+ assert.deepEqual(batch08.map(l=>l.id.split('.').pop()),['poem-09-2','poem-10-1','poem-10-2','poem-11-1','poem-11-2','poem-12-1','poem-12-2','poem-13-1','poem-13-2','poem-14-1']);
+ const poetry=lessons.filter(l=>l.topicId==='english-literature.power-conflict');assert.equal(poetry.length,27);assert.equal(new Set(poetry.map(l=>l.scope)).size,14);
+ for(const l of batch08){assert.equal(l.rights,'protected_summary_only');assert.equal(l.textType,'poem');assert.deepEqual(l.refs,['3.2.2','3.3']);assert.equal(l.cards.length,3);assert(l.cards.every(c=>c[1].length>190));assert.equal(l.views.length,3);assert.equal(l.views[0].words.length,3);assert.equal(l.views[2].events.length,4);assert(l.views[0].originalSummary);const html=viewHTML(l.views[0]);assert(html.includes('NOT A POEM QUOTATION'));assert(!html.includes('<blockquote'));assert(!html.includes('NOT A PLAY'));assert.equal(l.tasks[0][1].length,3);assert(l.tasks[0][4].length>40);assert(l.readingURL.includes('#page='));assert.equal(new Set([...l.practice,...l.check].map(q=>q.prompt)).size,7);assert.equal(new Set([...l.practice,...l.check].map(q=>q.answer)).size,3);for(const q of [...l.practice,...l.check]){assert(q.concept.startsWith('lit.power-conflict.'));assert.equal(new Set(q.options).size,3);assert(q.why.length>35);}assert(l.rubric.every(c=>c.length>45));}
+ const by=s=>batch08.find(l=>l.id.endsWith(s));assert(by('poem-10-1').cards.some(c=>c[1].includes('not explicitly confirmed')));assert(by('poem-12-1').sources.includes('https://www.imtiazdharker.com/gcse'));assert(by('poem-14-1').cards.some(c=>c[1].includes('Caribbean Creole')));assert(by('poem-13-2').cards.some(c=>c[1].includes('eight, eight and nine')));
+});
+test('All sixty-five earlier lesson records remain unchanged in batch 8',async()=>{
+ const {createHash}=await import('node:crypto');const sorted=v=>Array.isArray(v)?v.map(sorted):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,sorted(v[k])])):v;assert.equal(createHash('sha256').update(JSON.stringify(sorted(lessons.slice(0,65)))).digest('hex'),'d9817d5b47f330968d8854c1b0402eb14b9068dee3bbac8c5a0d3e4a1ffe13b1');
 });
