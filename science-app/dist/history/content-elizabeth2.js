@@ -2,7 +2,7 @@
 // Key topic 2: Challenges to Elizabeth at home and abroad, 1569–88 (specification 2.1–2.4).
 // Dates are those used in English accounts of the time (Old Style). All teaching text and questions
 // are original; documents are described, never quoted.
-import {Q, lesson, view} from './build.js?v=20261028-history04';
+import {Q, lesson, view} from './build.js?v=20261028-history05';
 
 export const elizabethTopic2 = {id: 'history.elizabeth.kt2', unit: 'B4', title: 'Challenges at home and abroad, 1569–88', paper: 'Paper 2 · British depth study'};
 const T = elizabethTopic2.id;

@@ -1,3 +1,15 @@
+## Water02 — five Water-option lessons implemented
+
+28 October 2026. Added6.9b use differences;6.10a UK supply;6.10b emerging/developing supply;6.11a stakeholders;6.11b desalination. Geography155 across11topics,465practice620checks;Water10. Eligible Water127coasts+rivers/130coasts+glaciers/131rivers+glaciers;Energy131/134/135unchanged. Five planned IDs converted in place;version1storage and question/concept IDs retained. Remaining34planned=4Water11UKchallenges9fieldwork10skills. Current app613=361Science+73Maths+155Geography+24History after origin/main00844d2 integration.
+
+20newviews:11processloops9stills. Irrigation/cooling reuse;seasonalstores/mainsleaks/combinedsewers;dryinputs/downstreampollution/safeservice;upstreamallocation;pressure-drivenRO andthermal evaporation/condensation. Brine/product volume and retained salt explicit;particles notliteralpores/molecularsizes,productnotperfectpurityclaim. ProcessDiscoverautoplay/Loop;staticdata/maps. Sources/longlimits disclosed to reduce clutter;coredate/unit/caveat remains visible. No photo needed for these mechanisms/evidence comparisons.
+
+Evidence:2022six-country FAO/WDI ER.H2O.FWST.ZS joinedtoNaturalEarth;Egypt141.2%,India66.5%,Ethiopia32.3%,USA28.2%,UK14.4%,Brazil1.5%displayed. Withdrawals/renewableavailability afterenvironmentalneeds,notaccess;annualnationalnotlocal/seasonal. RealruralglobalJMP2015 50%→2024 60%,WHOrelease26Aug2025;2.1bnlacking safelymanaged includes106million surfaceusers,notadditive;notdeveloping-onlyfigures. WHOdirect403,primarywebverified. EAframework2025updated27Aug2026:England2055DoNothing4940Ml/day;4370after2025–30actionsassumed,notcurrentUKobservationoradditivescenarios. MetOffice1991–2020broadNW/SEpattern;UKoutlineannotationsqualitativenotmeasuredrainfall/demandpolygons. Defracombinedsewerguidance andDOE/USGSdesalinationmechanismschecked. RawstressJSON+4primarysnapshotsretained/hashed. Distinctmain/sewer,withdrawal/consumption,safequantity/quality/access,RO/thermal andsubset/total explanations.
+
+QA:768combinedtechnicalchecks passed40.73s;104focused. Five100%UIjourneys;UK75%failure→100%retake. Premature/wrongchallenge;4viewreload;wrongpractice/reload/retry;independentlock/reload/auto-advance verified.20phoneviews390page/~296content,noSVGtextoverflow.3neutralindependentcharts England/rural/stress andexpandedtablesfit300questionbody. ROdefaultPause+Loopchecked,Spacepause/Enterresume. Reducedmotion sharedpausedstart retained,notbrowseremulated. Water→EnergyhidesWater;switchback/reloadall10Completedretained. Threepathwaypairstotalsautomated;consoleerrorsnone. NewHistoryColdWar2/3preserved;teacher/specialistreviewnotperformed. Extended/GIS/UKzonemaps/assistivedevice/fieldwork remainopen.
+
+Briefcurriculum/briefs/geography-a-water-02.md;coveragecurriculum/geography-a-water02-coverage.csv;QA science-app/geography-water02-browser-evidence.json. Publicationpending;canonicalmainpushafterpublication. Nextfive6.12a/b;two6.12ccases;8.1aUKpopulation. Exactbriefs/primaryevidence first.
+
 ## History: Cold War key topic 3 (4 lessons, P4 3.1–3.3). P4 complete; on GitHub `main`, not published
 
 **Lessons:**
