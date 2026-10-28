@@ -1,0 +1,118 @@
+{
+  "checked": "2026-10-28",
+  "year": 2022,
+  "sources": [
+    {
+      "file": "water01-ER.H2O.FWAG.ZS-response.json",
+      "sha256": "48d6f2ce270d11c5668f2bbf957e93f369428a6dc4852b086e79a4bbe0553e20",
+      "url": "https://api.worldbank.org/v2/country/USA;IND;ETH;BRA;EGY/indicator/ER.H2O.FWAG.ZS?date=2022&format=json&per_page=100",
+      "lastUpdated": "2026-10-08"
+    },
+    {
+      "file": "water01-ER.H2O.FWIN.ZS-response.json",
+      "sha256": "ace6638dc550876e486cda87143f32851376f7512cd561c981a961ecb3c3a379",
+      "url": "https://api.worldbank.org/v2/country/USA;IND;ETH;BRA;EGY/indicator/ER.H2O.FWIN.ZS?date=2022&format=json&per_page=100",
+      "lastUpdated": "2026-10-08"
+    },
+    {
+      "file": "water01-ER.H2O.FWDM.ZS-response.json",
+      "sha256": "b2f6cf3b0efc3ab8dec3456b65d8077a70f7386258378b66709ed80fb3ecafdd",
+      "url": "https://api.worldbank.org/v2/country/USA;IND;ETH;BRA;EGY/indicator/ER.H2O.FWDM.ZS?date=2022&format=json&per_page=100",
+      "lastUpdated": "2026-10-08"
+    },
+    {
+      "file": "water01-ER.H2O.INTR.PC-response.json",
+      "sha256": "479dba6adc7ff3f6a7fca0fa9443c8cc7306ebaaa7c3588d5b3ede93a7725664",
+      "url": "https://api.worldbank.org/v2/country/USA;IND;ETH;BRA;EGY/indicator/ER.H2O.INTR.PC?date=2022&format=json&per_page=100",
+      "lastUpdated": "2026-10-08"
+    },
+    {
+      "file": "water01-unesco-source.txt",
+      "sha256": "a0cd6d769fa0920dca642d21eb6fc661228e6d1a5326fa78929c5c27e08e630d",
+      "url": "https://www.unesco.org/reports/wwdr/en/2024/s"
+    },
+    {
+      "file": "water01-un-source.txt",
+      "sha256": "f033a31285369b07d33d9f24e37f5aab25c7744a5d01cd2db46d8740e74ec4ee",
+      "url": "https://unstats.un.org/sdgs/report/2025/Goal-06/"
+    }
+  ],
+  "resources": [
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "value": 26917.8664854327
+    },
+    {
+      "code": "USA",
+      "name": "USA",
+      "value": 8437.21911365822
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "value": 1014.43556399726
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "value": 973.008683296975
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "value": 8.8795554894522
+    }
+  ],
+  "sectors": [
+    {
+      "code": "USA",
+      "name": "USA",
+      "agriculture": 39.65878143,
+      "industry": 47.19890162,
+      "domestic": 13.14231696
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "agriculture": 90.40735874,
+      "industry": 2.23390276,
+      "domestic": 7.358738502
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "agriculture": 91.83644448,
+      "industry": 0.484447436,
+      "domestic": 7.679108086
+    }
+  ],
+  "stores": [
+    [
+      "Glaciers and ice caps",
+      68.7
+    ],
+    [
+      "Fresh groundwater",
+      30.1
+    ],
+    [
+      "Surface and other freshwater",
+      1.2
+    ]
+  ],
+  "globalSectors": [
+    [
+      "Agriculture",
+      72
+    ],
+    [
+      "Industry",
+      15
+    ],
+    [
+      "Services",
+      13
+    ]
+  ]
+}

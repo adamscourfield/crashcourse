@@ -1,9 +1,4 @@
 lesson_id,group,title,spec_refs,option,planning,build
-geography.a.water.distribution,water,Global freshwater distribution,6.8a,water,statement_scoped_brief_pending,not_started
-geography.a.water.availability-scales,water,Water availability at different scales,6.8b,water,statement_scoped_brief_pending,not_started
-geography.a.water.surplus-deficit,water,Why water surpluses and deficits occur,6.8c,water,statement_scoped_brief_pending,not_started
-geography.a.water.supply-demand-change,water,Changing water supply and demand,6.8d,water,statement_scoped_brief_pending,not_started
-geography.a.water.sector-use,water,Water use by economic sector,6.9a,water,statement_scoped_brief_pending,not_started
 geography.a.water.use-differences,water,Why countries use water differently,6.9b,water,statement_scoped_brief_pending,not_started
 geography.a.water.uk-supply,water,UK water supply problems,6.10a,water,statement_scoped_brief_pending,not_started
 geography.a.water.developing-supply,water,Water supply problems in emerging/developing countries,6.10b,water,statement_scoped_brief_pending,not_started

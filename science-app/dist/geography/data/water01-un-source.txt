@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5FLHK9R');</script>
+      <!-- End Google Tag Manager -->
+      <!-- Google Tag Manager UN org-->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-LQCS');</script>
+      <!-- End Google Tag Manager -->
+
+
+        <title> &mdash; SDG Indicators</title>
+
+        <meta charset="utf-8">
+        <!--X-UA-Compatible is set to IE=edge, but it still doesn't stop Compatibility Mode
+            http://stackoverflow.com/questions/6156639/x-ua-compatible-is-set-to-ie-edge-but-it-still-doesnt-stop-compatibility-mode -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      	<meta name="description" content=" - Sustainable Development Goal Indicators">
+      	<meta name="author" content="United Nations Statistics Division">
+
+      	<!-- CSS -->
+      	<link href="/sdgs/assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+       <link href="/sdgs/assets/css/owl-carousel/style.css" rel="stylesheet" type="text/css">
+       <link href="/sdgs/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+       <link href="/sdgs/assets/css/owl-carousel/app.css" rel="stylesheet" type="text/css">
+       <link href="/sdgs/assets/css/owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+       <link href="/sdgs/assets/css/main.css" rel="stylesheet" type="text/css">
+       <link href="/sdgs/assets/css/skins/globalaction.css" rel="stylesheet" type="text/css">
+       <link href="/sdgs/assets/css/custom.css" rel="stylesheet" type="text/css">
+       <link href="/sdgs/assets/css/skins/sdg_report.css" rel="stylesheet" type="text/css">
+
+  <!-- your skin -->
+
+
+
+
+      	<!-- IE 9 Fallback-->
+      	<!--[if IE 9]>
+      		<link href="~/assets/css/ie.css" rel="stylesheet">
+      	<![endif]-->
+
+      	<!-- GOOGLE FONTS -->
+      	<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700' rel='stylesheet' type='text/css'>
+      	<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400italic,700,400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+      	<!-- FAVICONS -->
+
+      	<link rel="shortcut icon" href="/sdgs/assets/ico/favicon.ico">
+
+<style>
+              @media (min-width: 992px) and (max-width: 1400px) {
+                .container {
+                  max-width: 98% !important;
+                  width: 98% !important;
+                }
+                .col-lg-10 {
+                  width: 85% !important;
+                  flex: 0 0 85% !important;
+                  max-width: 85% !important;
+                }
+                .col-lg-2 {
+                  width: 15% !important;
+                  flex: 0 0 15% !important;
+                  max-width: 15% !important;
+                }
+              }
+            </style>
+
+
+    </head>
+    <body class="layout">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FLHK9R"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (UN org noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-LQCS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+      <!-- WRAPPER -->
+      <div class="wrapper">
+
+
+        <!--=== Page Header === -->
+
+            <!-- NAVBAR -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <!-- TOPBAR -->
+      <div class="topbar">
+        <ul class="list-inline top-nav">
+          <li>
+              <a href="http://www.un.org/">United Nations</a>
+          </li>
+          <li>
+              <i class="fa fa-angle-double-right"></i>
+          </li>
+          <li>
+              <a href="https://www.un.org/development/desa/en">Department of Economic and Social Affairs</a>
+          </li>
+          <li>
+              <i class="fa fa-angle-double-right"></i>
+          </li>
+          <li>
+              <a href="http://unstats.un.org/unsd/">Statistics Division</a>
+          </li>
+        </ul>
+      </div>
+      <!-- END TOPBAR -->
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+          <span class="sr-only">Toggle Navigation</span>
+          <i class="fa fa-bars"></i>
+        </button>
+        <!--a href="~/" class="navbar-brand navbar-logo navbar-logo-bigger">
+          <img style="max-width:150px" src="~/assets/img/logo/unsd/UNSustainableDevelopmentGoals_Brand-02.png" alt="Sustainable Development Goals">
+        </a-->
+      </div>
+
+      <!-- MAIN NAVIGATION -->
+      <div id="main-nav" class="navbar-collapse collapse  navbar-mega-menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="">
+            <a href="/sdgs/">HOME</a>
+          </li>
+          <li class="">
+              <a href="/sdgs/news/">NEWS</a>
+          </li>
+          <li class="">
+              <a href="/sdgs/hlg/" data-toggle="tooltip" data-placement="bottom" title="High-level Group for Partnership, Coordination and Capacity-Building for statistics for the 2030 Agenda for Sustainable Development">HLG-PCCB</a>
+          </li>
+          <li class="">
+              <a href="/sdgs/iaeg-sdgs/" data-toggle="tooltip" data-placement="bottom" title="Inter-agency and Expert Group on SDG Indicators">IAEG-SDGs</a>
+          </li>
+          <li class="">
+              <a href="/sdgs/meetings/">EVENTS</a>
+          </li>
+          <li class="dropdown ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SDG INDICATORS<i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="/sdgs/indicators/indicators-list/">Official list of SDG indicators</a>
+              </li>
+            <li>
+                <a href="/sdgs/indicators/database/">Global Database</a>
+              </li>
+              <li>
+                <a href="https://data.un.org/undatacommons/goals" target="_blank" rel="noopener noreferrer">UN Data Commons for the SDGs</a>
+              </li>
+              <li>
+                <a href="https://unstats.un.org/SDGAPI/swagger/">SDG API</a>
+              </li>
+              <li>
+                <a href="/sdgs/metadata/">Metadata Repository</a>
+              </li>
+              <li>
+                <a href="/sdgs/iaeg-sdgs/tier-classification/">Tier Classification</a>
+              </li>
+              <li>
+                  <a href="/sdgs/dataContacts/">Data collection & Focal points</a>
+                </li>
+              <li>
+                <a href="https://unstats.un.org/sdgs/iaeg-sdgs/sdmx-working-group/">SDMX-SDGs</a>
+              </li>
+
+			   <li>
+                <a href="https://unstats.un.org/sdgs/dataportal/countryprofiles/ " target=_blank>Country Profiles</a>
+              </li>
+              <li>
+                <a href="https://unstats.un.org/wiki/display/SDGeHandbook/Home">E-Handbook on SDG Indicators</a>
+              </li>
+
+
+              <li>
+                <a href="/sdgs/indicators/regional-groups/">Regional Groupings</a>
+              </li>
+            </ul>
+          </li>
+
+         <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">REPORTS  <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu" role="menu">
+
+              <!--2026 report-->
+               <li class="dropdown">
+                 <a href="#">2026 <i class="fa fa-angle-right"></i></a>
+                 <ul class="dropdown-menu" role="menu">
+                 <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">SG's Progress Report <i class="fa fa-angle-down"></i>
+
+                       <ul class="dropdown-submenu" role="menu" style="padding-left:20px;font-size:82%">
+                         <a href="/sdgs/files/report/2026/secretary-general-sdg-report-2026--AR.pdf" target="_blank">[Arabic]</a>
+                        <a href="/sdgs/files/report/2026/secretary-general-sdg-report-2026--ZN.pdf" target="_blank">[Chinese]</a>
+                      <a href="/sdgs/files/report/2026/secretary-general-sdg-report-2026--EN.pdf" target="_blank">[English]</a>
+                       <li><a href="/sdgs/files/report/2026/secretary-general-sdg-report-2026--FR.pdf" target="_blank">[French]</a>
+                        <a href="/sdgs/files/report/2026/secretary-general-sdg-report-2026--RU.pdf" target="_blank">[Russian]</a>
+                        <a href="/sdgs/files/report/2026/secretary-general-sdg-report-2026--ES.pdf" target="_blank">[Spanish]</a></li>
+                 </ul>
+               </li>
+
+                      <li><a href="/sdgs/report/2026/">SDG Report 2026</a></li>
+ 
+                      <li> <a href="/sdgs/gender-snapshot/2026/"> Gender Snapshot 2026 </a></li>
+                      <li><a href="/sdgs/files/report/2026/E_2026_73_Statistical_Annex_I_and_II.pdf" target="_blank">Statistical Annex</a></li>
+                 </ul>
+               </li>
+               <!--End 2026 report-->
+              <!--2025 report-->
+               <li class="dropdown">
+                 <a href="#">2025 <i class="fa fa-angle-right"></i></a>
+                 <ul class="dropdown-menu" role="menu">
+                 <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">SG's Progress Report <i class="fa fa-angle-down"></i>
+
+                       <ul class="dropdown-submenu" role="menu" style="padding-left:20px;font-size:82%">
+                        <a href="/sdgs/files/report/2025/secretary-general-sdg-report-2025--AR.pdf" target="_blank">[Arabic]</a>
+                       <a href="/sdgs/files/report/2025/secretary-general-sdg-report-2025--ZN.pdf" target="_blank">[Chinese]</a>
+                      <a href="/sdgs/files/report/2025/secretary-general-sdg-report-2025--EN.pdf" target="_blank">[English]</a>
+
+                      <li><a href="/sdgs/files/report/2025/secretary-general-sdg-report-2025--FR.pdf" target="_blank">[French]</a>
+                       <a href="/sdgs/files/report/2025/secretary-general-sdg-report-2025--RU.pdf" target="_blank">[Russian]</a>
+                       <a href="/sdgs/files/report/2025/secretary-general-sdg-report-2025--ES.pdf" target="_blank">[Spanish]</a></li>
+                 </ul>
+               </li>
+               <li><a href="/sdgs/report/2025/">SDG Report 2025</a></li>
+               <li> <a href="/sdgs/gender-snapshot/2025/"> Gender Snapshot 2025 </a></li>
+               <li><a href="/sdgs/files/report/2025/E_2025_62_Statistical_Annex_I_and_II.pdf" target="_blank">Statistical Annex</a></li>
+          </ul>
+        </li>
+               <!--End 2025 report-->
+               <!--End 2025 report-->
+          <!--2024 report-->
+              <li class="dropdown">
+                <a href="#">2024 <i class="fa fa-angle-right"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">SG's Progress Report <i class="fa fa-angle-down"></i>
+                      <ul class="dropdown-submenu" role="menu" style="padding-left:20px;font-size:82%">
+                      <li><a href="/sdgs/files/report/2024/secretary-general-sdg-report-2024--AR.pdf" target="_blank">[Arabic]</a>
+                      <a href="/sdgs/files/report/2024/secretary-general-sdg-report-2024--ZN.pdf" target="_blank">[Chinese]</a>
+                     <a href="/sdgs/files/report/2024/secretary-general-sdg-report-2024--EN.pdf" target="_blank">[English]</a>
+                   </li>
+                     <li><a href="/sdgs/files/report/2024/secretary-general-sdg-report-2024--FR.pdf" target="_blank">[French]</a>
+                      <a href="/sdgs/files/report/2024/secretary-general-sdg-report-2024--RU.pdf" target="_blank">[Russian]</a>
+                      <a href="/sdgs/files/report/2024/secretary-general-sdg-report-2024--ES.pdf" target="_blank">[Spanish]</a></li>
+                </ul>
+              </li>
+                 <li><a href="/sdgs/report/2024/">SDG Report 2024</a> </li>
+                 <li> <a href="/sdgs/gender-snapshot/2024/"> Gender Snapshot 2024 </a></li>
+                <li><a href="/sdgs/files/report/2024/E_2024_54_Statistical_Annex_I_and_II.pdf" target="_blank">Statistical Annex</a>
+              </ul>
+              </li>
+              <!--End 2024 report-->
+
+              <!--2023 report-->
+              <li class="dropdown">
+                <a href="#">2023 <i class="fa fa-angle-right"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">SG's Progress Report <i class="fa fa-angle-down"></i>
+<!--
+                    <br><span class="label label-success label-main-nav"> NEW </span></a>
+                    <ul class="dropdown-menu" role="menu">
+                  -->
+                      <ul class="dropdown-submenu" role="menu" style="padding-left:20px;font-size:82%">
+
+                      <li><a href="/sdgs/files/report/2023/secretary-general-sdg-report-2023--AR.pdf" target="_blank">[Arabic]</a>
+                      <a href="/sdgs/files/report/2023/secretary-general-sdg-report-2023--ZN.pdf" target="_blank">[Chinese]</a>
+                     <a href="/sdgs/files/report/2023/secretary-general-sdg-report-2023--EN.pdf" target="_blank">[English]</a>
+                   </li>
+                     <li><a href="/sdgs/files/report/2023/secretary-general-sdg-report-2023--FR.pdf" target="_blank">[French]</a>
+                      <a href="/sdgs/files/report/2023/secretary-general-sdg-report-2023--RU.pdf" target="_blank">[Russian]</a>
+                      <a href="/sdgs/files/report/2023/secretary-general-sdg-report-2023--ES.pdf" target="_blank">[Spanish]</a></li>
+                </ul>
+              </li>
+              <li><a href="/sdgs/report/2023/">SDG Report 2023</a>
+
+              </li>
+
+              <li><a href="/sdgs/report/2023/progress-chart/">Progress Chart 2023</a>
+
+              </li>
+
+<li> <a href="/sdgs/gender-snapshot/2023/"> Gender Snapshot 2023 </a></li>
+              <li><a href="/sdgs/files/report/2023/E_2023_64_Statistical_Annex_I_and_II.pdf" target="_blank">Statistical Annex</a>
+            </li>
+
+              </ul>
+              </li>
+              <!--End 2023 report-->
+              <!--2022 report-->
+              <li class="dropdown">
+                <a href="#">2022 <i class="fa fa-angle-right"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">SG's Progress Report <i class="fa fa-angle-down"></i>
+<!--
+                    <br><span class="label label-success label-main-nav"> NEW </span></a>
+                    <ul class="dropdown-menu" role="menu">
+                  -->
+                      <ul class="dropdown-submenu" role="menu" style="padding-left:20px;font-size:82%">
+
+                      <li><a href="/sdgs/files/report/2022/secretary-general-sdg-report-2022--AR.pdf" target="_blank">[Arabic]</a>
+                      <a href="/sdgs/files/report/2022/secretary-general-sdg-report-2022--ZN.pdf" target="_blank">[Chinese]</a>
+                     <a href="/sdgs/files/report/2022/secretary-general-sdg-report-2022--EN.pdf" target="_blank">[English]</a>
+                   </li>
+                     <li><a href="/sdgs/files/report/2022/secretary-general-sdg-report-2022--FR.pdf" target="_blank">[French]</a>
+                      <a href="/sdgs/files/report/2022/secretary-general-sdg-report-2022--RU.pdf" target="_blank">[Russian]</a>
+                      <a href="/sdgs/files/report/2022/secretary-general-sdg-report-2022--ES.pdf" target="_blank">[Spanish]</a></li>
+                </ul>
+              </li>
+              <li><a href="/sdgs/report/2022/">SDG Report 2022</a>
+              </li>
+
+            <li><a href="/sdgs/report/2022/progress-chart/">Progress Chart 2022</a>
+
+              </li>
+<li> <a href="/sdgs/gender-snapshot/2022/"> Gender Snapshot 2022 </a></li>
+
+              <li><a href="/sdgs/files/report/2022/E_2022_55_Statistical_Annex_I_and_II.pdf" target="_blank">Statistical Annex</a>
+            </li>
+
+              </ul>
+              </li>
+              <!--End 2022 report-->
+              <!--2021 report-->
+                <li class="dropdown">
+                  <a href="#"><i class="fa fa-angle-right"></i>2021  </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">SG's Progress Report <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-submenu" role="menu" style="padding-left:20px;font-size:82%">
+                  <li><a href="/sdgs/files/report/2021/secretary-general-sdg-report-2021--AR.pdf" target="_blank">[Arabic]</a>
+                  <a href="/sdgs/files/report/2021/secretary-general-sdg-report-2021--ZN.pdf" target="_blank">[Chinese]</a>
+                 <a href="/sdgs/files/report/2021/secretary-general-sdg-report-2021--EN.pdf" target="_blank">[English]</a></li>
+                 <li><a href="/sdgs/files/report/2021/secretary-general-sdg-report-2021--FR.pdf" target="_blank">[French]</a>
+                  <a href="/sdgs/files/report/2021/secretary-general-sdg-report-2021--RU.pdf" target="_blank">[Russian]</a>
+                  <a href="/sdgs/files/report/2021/secretary-general-sdg-report-2021--ES.pdf" target="_blank">[Spanish]</a></li>
+                </ul>
+                </li>
+
+                <li><a href="/sdgs/report/2021/">SDG Report 2021</a>
+                </li>
+                <li><a href="/sdgs/report/2021/progress-chart/">Progress Chart 2021</a>
+
+                </li>
+
+                <!--ul class="dropdown-submenu" role="menu" style="padding-left:20px;font-size:82%">
+
+                <li>
+                  <a href="~/report/2021/progress-chart-2021_Arabic.pdf" target="_blank"> [Arabic]</a>
+                <a href="~/report/2021/progress-chart-2021_Chinese.pdf" target="_blank">[Chinese]</a>
+               <a href="~/report/2021/progress-chart-2021.pdf" target="_blank">[English]</a></li>
+
+               <li><a href="~/report/2021/progress-chart-2021_French.pdf" target="_blank"> [French]</a>
+                <a href="~/report/2021/progress-chart-2021_Russian.pdf" target="_blank">[Russian]</a>
+                <a href="~/report/2021/progress-chart-2021_Spanish.pdf" target="_blank">[Spanish]</a></li>
+              </ul-->
+
+              <li><a href="/sdgs/report/2021/Progress_Chart_2021_Technical_note.pdf">Progress Chart 2021 <br>Technical Note</a>
+                <li> <a href="/sdgs/gender-snapshot/2021/"> Gender Snapshot 2021 </a></li>
+                <!--
+                <li><a href="https://unstats.un.org/sdgs/report/2019/storymap/">SDG Story Map 2019</a>
+                </li>
+-->
+                <li><a href="/sdgs/files/report/2021/secretary-general-sdg-report-2021--Statistical-Annex.pdf" target="_blank">Statistical Annex </a></li>
+<!--
+                <li><a href="~/report/2019/Contributors/" target="_blank">Contributors</a></li>
+-->
+              </ul>
+
+              <!-- End 2021 report-->
+            <!--2020 report-->
+             <li class="dropdown">
+                <a href="#"><i class="fa fa-angle-right"></i>2020  </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">SG's Progress Report <i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-submenu" role="menu" style="padding-left:20px;font-size:82%">
+                      <li>
+                      <a href="/sdgs/files/report/2020/secretary-general-sdg-report-2020--AR.pdf" target="_blank">[Arabic]</a>
+                      <a href="/sdgs/files/report/2020/secretary-general-sdg-report-2020--ZN.pdf" target="_blank">[Chinese]</a>
+                      <a href="/sdgs/files/report/2020/secretary-general-sdg-report-2020--EN.pdf" target="_blank">[English]</a>
+                    <li>
+                      <a href="/sdgs/files/report/2020/secretary-general-sdg-report-2020--FR.pdf" target="_blank">[French]</a>
+                      <a href="/sdgs/files/report/2020/secretary-general-sdg-report-2020--RU.pdf" target="_blank">[Russian]</a>
+                      <a href="/sdgs/files/report/2020/secretary-general-sdg-report-2020--ES.pdf" target="_blank">[Spanish]</a>
+                    </li>
+              </ul>
+              </li>
+              <li><a href="/sdgs/report/2020/">SDG Report 2020</a>
+              </li>
+              <li class="dropdown">
+                  <a  class="dropdown-toggle" data-toggle="dropdown">Progress Chart 2020 <i class="fa fa-angle-down"></i> </a>
+                <ul class="dropdown-submenu" role="menu" style="padding-left:20px;font-size:82%">
+
+                <li><a href="/sdgs/report/2020/progress-chart-2020_Arabic.pdf" target="_blank"> [Arabic]</a>
+                <a href="/sdgs/report/2020/progress-chart-2020_Chinese.pdf" target="_blank">[Chinese]</a>
+               <a href="/sdgs/report/2020/progress-chart-2020.pdf" target="_blank">[English]</a></li>
+
+               <li><a href="/sdgs/report/2020/progress-chart-2020_French.pdf" target="_blank"> [French]</a>
+                <a href="/sdgs/report/2020/progress-chart-2020_Russian.pdf" target="_blank">[Russian]</a>
+                <a href="/sdgs/report/2020/progress-chart-2020_Spanish.pdf" target="_blank">[Spanish]</a></li>
+              </ul>
+              </li>
+              <li><a href="/sdgs/report/2020/Progress_Chart_2020_Technical_note.pdf">Progress Chart 2020 <br>Technical Note</a>
+              </li>
+              <li><a href="/sdgs/report/2020/GenderSnapshot_2020.pdf">Gender Snapshot 2020</a>
+              </li>
+              <li><a href="https://unstats.un.org/sdgs/report/2020/storymap/">SDG Story Map 2020</a>
+              </li>
+
+              <li><a href="/sdgs/files/report/2020/secretary-general-sdg-report-2020--Statistical-Annex.pdf" target="_blank">Statistical Annex </a></li>
+
+            </ul>
+
+            <!-- End 2020 report-->
+
+            <!--2019 report-->
+              <li class="dropdown">
+                <a href="#"><i class="fa fa-angle-right"></i>2019  </a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">SG's Progress Report <i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-submenu" role="menu">
+                <li><a href="/sdgs/files/report/2019/secretary-general-sdg-report-2019--AR.pdf" target="_blank">Arabic</a></li>
+                <li><a href="/sdgs/files/report/2019/secretary-general-sdg-report-2019--ZN.pdf" target="_blank">Chinese</a></li>
+               <li><a href="/sdgs/files/report/2019/secretary-general-sdg-report-2019--EN.pdf" target="_blank">English</a></li>
+               <li><a href="/sdgs/files/report/2019/secretary-general-sdg-report-2019--FR.pdf" target="_blank">French</a></li>
+                <li><a href="/sdgs/files/report/2019/secretary-general-sdg-report-2019--RU.pdf" target="_blank">Russian</a></li>
+                <li><a href="/sdgs/files/report/2019/secretary-general-sdg-report-2019--ES.pdf" target="_blank">Spanish</a></li>
+              </ul>
+              </li>
+
+              <li><a href="/sdgs/report/2019/">SDG Report 2019
+              <!--span class="label label-success label-main-nav"> NEW </span--></a>
+              </li>
+              <li><a href="/sdgs/report/2019/progress-chart.pdf">Progress Chart 2019
+              </a>
+              </li>
+              <li><a href="/sdgs/report/2019/gender-snapshot.pdf">Gender Snapshot
+              </a>
+              </li>
+              <li><a href="https://unstats.un.org/sdgs/report/2019/storymap/">SDG Story Map 2019
+              <!--span class="label label-success label-main-nav"> NEW </span--></a>
+              </li>
+              <li><a href="/sdgs/files/report/2019/secretary-general-sdg-report-2019--Statistical-Annex.pdf" target="_blank">Statistical Annex </a></li>
+              <li><a href="/sdgs/report/2019/Contributors/" target="_blank">Contributors</a></li>
+            </ul>
+
+            <!-- End 2019 report-->
+            <!-- 2018 report-->
+              <li class="dropdown">
+                <a href="#">2018  <i class="fa fa-angle-right"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown">
+                  <a href="#">SG's Progress Report <i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-submenu" role="menu">
+                <li><a href="/sdgs/files/report/2018/secretary-general-sdg-report-2018--AR.pdf" target="_blank">Arabic</a></li>
+                <li><a href="/sdgs/files/report/2018/secretary-general-sdg-report-2018--ZN.pdf" target="_blank">Chinese</a></li>
+               <li><a href="/sdgs/files/report/2018/secretary-general-sdg-report-2018--EN.pdf" target="_blank">English</a></li>
+               <li><a href="/sdgs/files/report/2018/secretary-general-sdg-report-2018--FR.pdf" target="_blank">French</a></li>
+                <li><a href="/sdgs/files/report/2018/secretary-general-sdg-report-2018--RU.pdf" target="_blank">Russian</a></li>
+                <li><a href="/sdgs/files/report/2018/secretary-general-sdg-report-2018--ES.pdf" target="_blank">Spanish</a></li>
+              </ul>
+              </li>
+              <li><a href="/sdgs/report/2018/">SDG Report 2018</a>
+              </li>
+              <li><a href="https://unstats.un.org/sdgs/report/2018/storymap/index.html">SDG Story Map 2018</a>
+              </li>
+              <li><a href="/sdgs/files/report/2018/secretary-general-sdg-report-2018--Statistical-Annex.pdf" target="_blank">Statistical Annex </a></li>
+            </ul>
+            <!-- End 2018 -->
+
+              <li class="dropdown ">
+                <a href="#">2017  <i class="fa fa-angle-right"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown">
+                    <a href="#">SG's Progress Report <i class="fa fa-angle-right"></i></a>
+                    <ul class="dropdown-menu" role="menu">
+                  <li><a href="/sdgs/files/report/2017/secretary-general-sdg-report-2017--AR.pdf" target="_blank">Arabic</a></li>
+                  <li><a href="/sdgs/files/report/2017/secretary-general-sdg-report-2017--ZN.pdf" target="_blank">Chinese</a></li>
+                 <li><a href="/sdgs/files/report/2017/secretary-general-sdg-report-2017--EN.pdf" target="_blank">English</a></li>
+                 <li><a href="/sdgs/files/report/2017/secretary-general-sdg-report-2017--FR.pdf" target="_blank">French</a></li>
+                  <li><a href="/sdgs/files/report/2017/secretary-general-sdg-report-2017--RU.pdf" target="_blank">Russian</a></li>
+                  <li><a href="/sdgs/files/report/2017/secretary-general-sdg-report-2017--ES.pdf" target="_blank">Spanish</a></li>
+                </ul>
+              </li>
+              <li><a href="/sdgs/report/2017/">SDG Report 2017
+              </a>
+              </li>
+              <li><a href="https://unstats.un.org/sdgs/report/2017/storymap/index.html">SDG Story Map</a>
+              </li>
+              <li><a href="/sdgs/files/report/2017/secretary-general-sdg-report-2017--Statistical-Annex.pdf" target="_blank">Statistical Annex</a></li>
+              <li><a href="/sdgs/report/2017/Contributors/" target="_blank">Contributors</a></li>
+              </ul>
+
+              <li class="dropdown">
+              <a href="#">2016  <i class="fa fa-angle-right"></i></a>
+                 <ul class="dropdown-menu" role="menu">
+              <li class="dropdown">
+                <a href="#">SG's Progress Report <i class="fa fa-angle-right"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/sdgs/files/report/2016/secretary-general-sdg-report-2016--AR.pdf" target="_blank">Arabic</a></li>
+                  <li><a href="/sdgs/files/report/2016/secretary-general-sdg-report-2016--ZN.pdf" target="_blank">Chinese</a></li>
+                  <li><a href="/sdgs/files/report/2016/secretary-general-sdg-report-2016--EN.pdf" target="_blank">English</a></li>
+                  <li><a href="/sdgs/files/report/2016/secretary-general-sdg-report-2016--FR.pdf" target="_blank">French</a></li>
+                  <li><a href="/sdgs/files/report/2016/secretary-general-sdg-report-2016--RU.pdf" target="_blank">Russian</a></li>
+                  <li><a href="/sdgs/files/report/2016/secretary-general-sdg-report-2016--ES.pdf" target="_blank">Spanish</a></li>
+                </ul>
+              </li>
+              <li><a href="/sdgs/report/2016/">SDG Report 2016
+                <!--<span class="label label-success label-main-nav"> NEW </span>--></a>
+              </li>
+              <li><a href="/sdgs/files/report/2016/secretary-general-sdg-report-2016--Statistical-Annex.pdf" target="_blank">Statistical Annex</a></li>
+              <li><a href="/sdgs/report/2016/Contributors/" target="_blank">Contributors</a></li>
+            </ul>
+          </li>
+        </ul>
+        </li>
+
+        <li class="dropdown">
+        <a href="#">RESOURCES  <i class="fa fa-angle-down"></i></a>
+           <ul class="dropdown-menu" role="menu">
+             <li>
+               <a href="https://unstats.un.org/wiki/display/sdgGoodPractices">SDG Good Practices/Resources</a>
+             </li>
+             <li>
+               <a href="/sdgs/data-storytelling/">Data Storytelling</a>
+             </li>
+             <li>
+               <a href="/sdgs/data4vnrs/">Data for Evidence-based VNRs</a>
+             </li>
+             <li>
+               <a href="https://unstats.un.org/wiki/display/SAE4SDG/">Small Area Estimation Toolkit</a>
+             </li>
+         <li>
+           <a href="https://unstats.un.org/capacity-development/UNSD-FCDO/sdgs-data-visualization-toolkit/" target="_blank">SDG Data Visualization Toolkit</a>
+         </li>
+            <li class="dropdown ">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#5cb85c;"><i class="fa fa-fw fa-wrench"></i>UNCT TOOLKIT<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/sdgs/unct-toolkit/">SDG Monitoring and <br>Reporting Toolkit <br>for UN Country Teams</a>
+                </li>
+                <li>
+                  <a href="/sdgs/unct-toolkit/global-policies-and-guidelines/">Global Policies and <br>Guidelines</a>
+                </li>
+                <li>
+                  <a href="/sdgs/unct-toolkit/data-resources/">Data Resources</a>
+                </li>
+                <li>
+                  <a href="/sdgs/unct-toolkit/SDG-localization-and-implementation/">SDG Localization &amp; <br>Implementation</a>
+                </li>
+                <li>
+                  <a href="/sdgs/unct-toolkit/capacity-building-and-coordination/">Capacity Building and <br>Coordination </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+
+  <!--Insert DOCUMENTS tab here when ready-->
+  <!--Removed contact and pushed to footer -->
+            <!--<li class="">
+            <a href="~/contact">CONTACT</a>
+          </li>-->
+        </ul>
+      </div>
+      <!-- END MAIN NAVIGATION -->
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+
+
+        <!--=== End Page Header === -->
+
+        <!--=== Page Body === -->
+        <div id="body">
+
+            <!-- HERO SECTION -->
+            
+            <!-- END HERO SECTION -->
+
+
+            <!-- PAGE CONTENT SECTION -->
+            <section class="content-wrapper main-content clear-fix">
+
+              <div class="page-content">
+              	<div class="container">
+              		<div class="row">
+
+                    <!-- Push Menu CONTENT -->
+                    <div class="col-lg-2">
+                    <body class="pushmenu-push">
+                      <nav class="pushmenu pushmenu-left" style="padding-top:150px;">
+                        <a href="/sdgs/report/2025/"><img src="/sdgs/assets/img/sliders/SDG_Wheel.png" width="80%"></a>
+                        <a href="/sdgs/report/2025/funding-data-and-statistics/"><img src="/sdgs/assets/img/sliders/3-4-policy.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-01/"><img src="/sdgs/assets/img/sliders/goal1_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-02/"><img src="/sdgs/assets/img/sliders/goal2_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-03/"><img src="/sdgs/assets/img/sliders/goal3_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-04/"><img src="/sdgs/assets/img/sliders/goal4_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-05/"><img src="/sdgs/assets/img/sliders/goal5_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-06/"><img src="/sdgs/assets/img/sliders/goal6_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-07/"><img src="/sdgs/assets/img/sliders/goal7_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-08/"><img src="/sdgs/assets/img/sliders/goal8_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-09/"><img src="/sdgs/assets/img/sliders/goal9_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-10/"><img src="/sdgs/assets/img/sliders/goal10_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-11/"><img src="/sdgs/assets/img/sliders/goal11_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-12/"><img src="/sdgs/assets/img/sliders/goal12_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-13/"><img src="/sdgs/assets/img/sliders/goal13_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-14/"><img src="/sdgs/assets/img/sliders/goal14_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-15/"><img src="/sdgs/assets/img/sliders/goal15_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-16/"><img src="/sdgs/assets/img/sliders/goal16_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/goal-17/"><img src="/sdgs/assets/img/sliders/goal17_menu_icon.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/sdg-progress-by-target/"><img src="/sdgs/assets/img/sliders/Progress_Chart.jpg" width="80%"></a>
+                        <a href="/sdgs/report/2025/note-to-reader/"><img src="/sdgs/assets/img/sliders/nttr_menu_icon.jpg" width="80%"></a>
+                      </nav>
+
+                      <div class="container">
+                              <div class="pushmenu-push-toright fixedElement" align="right">
+                              <section class="buttonset">
+                                  <div id="nav_list">
+
+
+                                  </div>
+                              </section>
+
+                        </div><!-- End Main -->
+                      </div><!-- End Container -->
+                      </body>
+                    </div>
+                    <!-- end side Menu -->
+
+                  <!-- MAIN CONTENT -->
+              			<div class="col-lg-10" style="min-height: 2500px">
+
+                    
+<div class="wrapper">
+
+<div class="center-nav">
+  <!--=== Content Part ===-->
+  <div class="container content">
+
+    <!-- Recent Works -->
+    <div class="owl-carousel-v1 owl-work-v1">
+      <div class="headline"><h2 class="pull-left">SDG Goals</h2>
+        <div class="owl-navigation">
+          <div class="customNavigation">
+            <a class="owl-btn prev-v2"><i class="fa fa-angle-left"></i></a>
+            <a class="owl-btn next-v2"><i class="fa fa-angle-right"></i></a>
+          </div>
+        </div><!--/navigation-->
+      </div>
+
+      <div class="owl-recent-works-v1">
+        
+        <!--div class="item">
+          <a href="~/report/2025/introduction/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="~/assets/img/sliders/overview_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div-->
+        <div class="item">
+          <a href="/sdgs/report/2025/funding-data-and-statistics/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/data-story.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-01/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal1_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-02/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal2_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-03/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal3_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-04/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal4_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-05/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal5_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-06/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal6_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-07/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal7_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-08/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal8_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-09/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal9_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-10/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal10_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-11/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal11_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-12/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal12_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-13/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal13_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-14/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal14_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-15/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal15_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-16/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal16_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2025/Goal-17/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/goal17_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+        <div class="item">
+          <a href="/sdgs/report/2024/sdg-progress-by-target/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/Progress_Chart.jpg" alt="">
+            </em>
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="/sdgs/report/2024/note-to-reader/">
+            <em class="overflow-hidden">
+              <img class="img-responsive" src="/sdgs/assets/img/sliders/nttr_menu_icon.jpg" alt="">
+            </em>
+          </a>
+        </div>
+
+        </div>
+    </div>
+    <!-- End Recent Works -->
+    <hr size="10" />
+  </div> <!-- end center nav-->
+</div><!--/container-->
+  <!--=== End Content Part ===-->
+</div> <!-- wrapper-->
+
+
+                    <hgroup class="title">
+	<h1></h1>
+	<h3 class=goal6></h3>
+</hgroup>
+
+
+
+                    
+
+<style>
+  .header img {
+  float: left;
+
+}
+.header h3 {
+  position: relative;
+  padding-top: 8px;
+  left: 10px;
+  color: #00ADD8;
+  font-size: 28px;
+}
+
+sup {
+  color: #777676;
+}
+
+li {
+  list-style: none;
+}
+li.li-intro::before {
+  content:".";
+  color: #00ADD8;
+  font-size: 3em;
+  font-weight:800;
+  text-align: center;
+  line-height: 0%;
+}
+
+.stripe-1 {
+  color: white;
+  background: repeating-linear-gradient(
+    45deg,
+    #c1eaf4,
+    #c1eaf4 5px,
+    #9cdcec 5px,
+    #9cdcec 10px
+  );
+}
+</style>
+
+
+<div class="row">
+<div class="col-md-6">
+  <div class="header">
+
+
+<img src="/sdgs/report/2020/img/goal6_icon.png" class="img-responsive" style="padding-right:10px" width="175px">
+
+<h3>Clean water and sanitation</h3>
+</div>
+
+<div class="row col-md-12 text-distribution">
+  <br>
+
+<li class="li-intro"> While steady progress expanded access to drinking water, sanitation and hygiene services between 2015 and 2024, billions remain underserved. In 2024, 2.2 billion people lacked safely managed drinking water, 3.4 billion went without safely managed sanitation and 1.7 billion lacked basic hygiene services at home. In schools, 646 million children remain without basic hygiene services, requiring a fourfold increase in progress to meet 2030 targets. </li>
+
+<li class="li-intro"> Water systems are under strain from pollution, water stress and weak governance. Only 56 per cent of domestic wastewater is safely treated, water stress remains critical in several regions, freshwater ecosystems are declining and transboundary cooperation is limited. At the current rate, the world will not achieve sustainable water management until at least 2049. </li>
+
+<li class="li-intro"> Achieving Goal 6 requires mobilizing comprehensive financing mechanisms, leveraging innovative technologies, strengthening institutional capacity, fostering multi-stakeholder partnerships and integrating water management across all sectors and governance levels. </li>
+</div>
+</div>
+
+    <div class="col-md-6">
+    <img src="/sdgs/report/2025/img/Goal_06.jpg" class="img-responsive" style="padding-right:8px">
+        <div class="photo-text stripe-1"><span style="color: rgb(42, 38, 38); font-weight: 780;">
+          <br>
+          <p>A 1-year-old child is held by his mother as he washes his hands at a water station in Chiriquí, Panama</p>
+
+            &nbsp;&copy; UNICEF</span>
+        </div>
+        <br>
+
+    </div>
+</div>
+
+
+<hr class=goal6>
+<!-- start row chart 2-->
+<div class="row">
+    
+    <div class="col-md-6 text-distribution">
+
+     <h4>
+      Global water and sanitation access improves, but billions remain underserved
+    </h4> 
+
+    <p> Between 2015 and 2024, global access to essential water, sanitation and hygiene (WASH) services steadily improved. The share of the population using safely managed drinking water rose from 68 to 74 per cent, safely managed sanitation coverage increased from 48 to 58 per cent and basic hygiene services coverage grew from 66 to 80 per cent. Despite these gains, major challenges persist. In 2024, 2.2 billion people still lacked safely managed drinking water, 3.4 billion were without safely managed sanitation and 1.7 billion lacked basic hygiene services at home. </p>
+
+    <p> WASH access in schools remains insufficient for ensuring safe and inclusive learning environments. In 2023, although 77 per cent of schools provided basic drinking water services and 78 per cent offered basic sanitation, 447 million and 427 million children, respectively, were still left without access to these essential facilities. Achieving universal coverage by 2030 will require doubling the current rate of progress. Alarmingly, only 67 per cent of schools offered basic hygiene services, leaving 646 million children unserved, necessitating a fourfold increase in progress.</p>
+    </div>
+
+    <div class="col-md-6 text-distribution">
+
+     <h4>
+      Irregular monitoring leads to critical knowledge gaps about factors affecting water quality
+    </h4> 
+
+    <p> In 2024, 56 per cent of global domestic wastewater generated (332 billion m<sup>3</sup>) was safely treated, largely unchanged from 2020. This finding is based on data from 130 Member States and 12 territories, covering 84 per cent of the global population. However, data on industrial wastewater remain scarce, with only 22 countries reporting. Comprehensive global reporting on total wastewater is not expected until 2027.</p>
+
+    <p>Water-quality monitoring improved, with 120 countries reporting in 2023, up from 89 in 2020. Despite this progress, substantial monitoring disparities persist. Of the 2 million water-quality measurements collected globally, only 60,000 originated from the world's poorest regions. It creates critical knowledge gaps about the impacts of pollution, climate change and biodiversity loss on freshwater systems, putting the health and livelihood of up to 4.8 billion people at risk by 2030. In situ data collected by national authorities are essential, but innovations such as citizen science and satellite-based Earth Observation also exist. Sierra Leone and Zambia have already used citizen-generated data to report, and other countries are also adopting this approach to help bridge data gaps. </p>
+    </div>
+
+    </div>
+
+<!--end row-->
+<hr class=goal6>
+
+<!-- start row chart 2-->
+    <h4>
+      Uneven water stress threatens global development
+    </h4>
+    <div class="row">
+    <div class="col-md-6 text-distribution">
+
+    <p>Global water stress remained steady at 18 per cent in 2022 ‒ unchanged since 2015, but regional disparities are stark.       Many countries in Northern Africa and Western Asia, and Central and Southern Asia face critical water stress levels exceeding 75 per cent. Northern Africa and Western Asia have also experienced a concerning 12 per cent increase in water stress since 2015. About 10 per cent of the global population now live under high or critical water stress. </p>
+
+    <p>Economic sectors play a key role in shaping water stress levels. In 2022, agriculture accounted for 72 per cent of global freshwater withdrawals, followed by industry (15 per cent) and services (13 per cent). While essential for food security and economic growth, agriculture is both a driver and a casualty of water stress, making it one of the most vulnerable sectors. Addressing water stress demands smarter water management, improved agricultural water-use efficiency, strategic investments and policy reforms. In addition, subnational and temporal data are needed to uncover hidden vulnerabilities and guide targeted action.</p>
+
+    </div>
+    
+    <div class="col-md-6">
+      <div class="well-infographic">
+        <h5> Level of water stress, 2022 (percentage)</h5>
+        <img class="img-responsive" alt="" src="/sdgs/report/2025/img/goal6-g1.svg">
+        
+      </div>
+    </div>
+</div>
+<!-- end row-->
+<hr class=goal6>
+<!-- start row chart 2-->
+    <h4>
+      Water-use efficiency improves globally, but regional gaps persist
+    </h4>
+    <div class="row">
+    <div class="col-md-6 text-distribution">
+
+    <p> Between 2015 and 2022, global water-use efficiency rose by 23 per cent, from $17.5/m³ to $21.5/m³, reflecting gains in economic output without proportional increases in water use. However, 57 per cent of countries still operate below the global benchmark of $20/m³. Regional disparities are significant. Oceania and Europe and Northern America outperformed the global average, while Central and Southern Asia recorded the lowest efficiency levels. </p>
+
+    <p> The overall improvement was largely driven by economic growth, as total water withdrawal remained nearly unchanged. Sectoral trends show that municipal water use increased by 10 per cent, industrial use declined by 5 per cent and agricultural withdrawals remained stable. Efficiency varied widely by sector in 2022: $38.5/m³ for industry, $114.4/m³ for services and just $0.7/m³ for agriculture. Despite the low baseline, agriculture showed the greatest relative gain, improving by 39.5 per cent over the period. Boosting efficiency, particularly in agriculture, is critical for water-stressed regions. This will require not only technological innovation, but also stronger governance, policy frameworks and institutional capacity-building.</p>
+
+    </div>
+
+    
+    <div class="col-md-6">
+      <div class="well-infographic">
+        <h5> Water-use efficiency, 2015 and 2022 (dollars/m³)</h5>
+        <img class="img-responsive" alt="" src="/sdgs/report/2025/img/goal6-g2.svg">
+        
+      </div>
+    </div>
+</div>
+<!-- end row-->
+
+<hr class=goal6>
+<!-- start row-->
+<div class="row">
+  <div class="col-md-6 text-distribution">
+    <h4>
+      Proven benefits of transboundary water cooperation need wider implementation
+    </h4>
+      <p>Transboundary water cooperation supports sustainable development, climate resilience and conflict prevention. Long-standing partnerships ‒ such as the 50-year collaboration on the Senegal River and the Brazil-Paraguay cooperation through the Itaipu Commission ‒ have improved water access, irrigation, energy security and drought resilience. Despite these benefits, cooperation remains limited. Of the 153 Member States sharing transboundary waters, only 43 have operational arrangements covering over 90 per cent of their shared basins. More than 20 countries lack any such arrangements, with Asia and Latin America particularly lagging. Progress has been slow, with just eight countries increasing the coverage of operational arrangements in their territory between 2020 and 2023. </p>
+
+      <p>Only 50 per cent of transboundary river and lake basins have joint flood warning systems, and even fewer have joint disaster risk reduction (20 per cent) or climate change adaptation strategies (14 per cent). To accelerate progress by 2030, countries must strengthen political will, increase climate and development finance, invest in capacity-building, and make greater use of the global United Nations water conventions.</p>
+  </div>
+  <div class="col-md-6 text-distribution">
+      <h4>
+        Freshwater ecosystems are under pressure despite improved monitoring
+      </h4>
+        <p>Freshwater ecosystem degradation threatens biodiversity, food security and livelihoods. Since 1970, 83 per cent of freshwater species populations have declined, and 25 per cent of freshwater fish species are at risk of extinction. In 2015, 61 per cent of countries reported one or more degraded water-related ecosystem types. Encouragingly, this figure dropped to 31 per cent in the 2017–2021 period. However, the inclusion of new water-quality data indicated less progress, pushing the proportion back to 50 per cent. Regional disparities are significant: over 60 per cent of countries in Central Asia, South-Eastern Asia, and sub-Saharan Africa report degradation, compared to 21 per cent in Oceania. Loss of permanent surface water in 364 river basins driven by unsustainable practices and climate change has impacted over 93 million people.</p>
+
+        <p>Despite the growing use of Earth Observation data, only one third of countries have national wetland inventories, limiting the quality and use of national data. Reversing degradation requires urgent investment in digital monitoring, capacity-building and evidence-based policies to protect and restore freshwater ecosystems.</p>
+  </div>
+</div>
+<!-- end row-->
+<hr class=goal6>
+<!-- start row-->
+<h4>
+  Slow progress for integrated water resources management, with insufficient financing a major barrier
+</h4>
+<div class="row">
+  <div class="col-md-6">
+  <p> Global progress on integrated water resources management (IWRM)  remains slow, with implementation rising from 49 per cent  in 2017 to 57 per cent in 2023. While 47 countries (26 per cent) have reached or are close to the “very high” implementation target, 73 countries (40 per cent) are being left behind. Insufficient financing remains a major barrier, where 60 per cent of countries lack effective revenue-raising mechanisms, and about 70 per cent report inadequate funding for water management at subnational levels. Strengthening the link between IWRM and climate adaptation offers untapped potential, but coordination, capacity and financing gaps persist. </p>
+
+  <p> Despite strong political commitments, cross-sector coordination remains a challenge, with only half of countries reporting formal arrangements. Progress on gender mainstreaming in water management is also slow, with global scores rising slightly from 54 per cent in 2020 to 58 per cent in 2023. However, 15 per cent of countries still lacked any gender mechanisms, and 31 per cent reported limited implementation.</p>
+  </div>
+  <div class="col-md-6">
+      <div class="well-infographic">
+        <h5>Global progress on IWRM implementation, 2017-2023 with projection to 2049 (percentage)</h5>
+        <img class="img-responsive" alt="" src="/sdgs/report/2025/img/goal6-g3.svg">
+        
+      </div>
+  </div>
+</div>
+<!-- end row-->
+
+<hr class=goal6>
+<a class="ov-urltext" href="/sdgs/report/2025/Goal-05/">
+  <button class="btn btn-outline btn-primary pull-left ov-goal5">
+    <i class="fa fa-chevron-left ovc-5"></i>&nbsp; Goal 5&nbsp;
+  </button>
+</a>
+
+<div align="center">
+  <a class="ov-urltext" href="/sdgs/report/2025/">
+  <button class="btn btn-outline btn-primary ov-goal3">
+    <i class=""></i> Home
+  </button>
+</a>
+
+<a class="ov-urltext" href="/sdgs/report/2025/Goal-07/">
+  <button class="btn btn-outline btn-primary pull-right ov-goal7">
+    &nbsp;Goal 7 &nbsp; <i class="fa fa-chevron-right ovc-7"></i>
+  </button>
+</a>
+
+                      <style>
+                        div.well-infographic h5:first-child {
+                            font-weight: 800;
+                        }
+                      </style>
+
+                    </div>
+                  <!-- END MAIN CONTENT -->
+
+                  <!-- SIDEBAR -->
+                  <!--  <div class="col-md-3">
+                     
+                    </div>
+                  -->
+                  <!-- END SIDEBAR -->
+
+                  </div>
+              	</div>
+              </div>
+              <!-- END PAGE CONTENT -->
+            </section>
+        </div>
+        <!--=== End Page Body === -->
+
+        <!--=== Page Footer ===-->
+
+            
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+          <!-- COLUMN 1 -->
+					<h3 class="footer-heading">ABOUT</h3>
+					<p>This is the official website of the United Nations providing information on the development and implementation of an indicator framework for the follow up and review of the 2030 Agenda for Sustainable Development. It is maintained by the <a href="http://unstats.un.org/" target="_blank">United Nations Statistics Division (UNSD)</a>, a division of the <a href="http://www.un.org/desa/" target="_blank">Department of Economic and Social Affairs (DESA)</a>. </p>
+					<!-- END COLUMN 1 -->
+				</div>
+
+			<div class="col-md-4 ">
+				<!-- COLUMN 3 -->
+				<div class="social-connect">
+          <h3 class="footer-heading">CONTACT US</h3>
+					<address>
+						<ul class="list-unstyled col-xs-offset-3">
+							<li>United Nations Statistics Division</li>
+							<li>Development Data and Outreach Branch</li>
+							<li>New York, NY 10017</li>
+							<!--li>Fax: +1 (212) 963 9851</li-->
+							<li>Email: <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#115;&#116;&#097;&#116;&#105;&#115;&#116;&#105;&#099;&#115;&#064;&#117;&#110;&#046;&#111;&#114;&#103;">&#115;&#116;&#097;&#116;&#105;&#115;&#116;&#105;&#099;&#115;&#064;&#117;&#110;&#046;&#111;&#114;&#103;</a></li>
+						</ul>
+					</address>
+  			</div>
+				<div class="social-connect">
+					<h3 class="footer-heading">FOLLOW US:</h3>
+					<ul class="list-inline social-icons">
+						<li>
+							<a href="https://twitter.com/UNStats" class="twitter-bg" target="_blank"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="http://www.youtube.com/user/UNStats" class="you-tube-bg" target="_blank"><i class="fa fa-youtube-play"></i></a>
+						</li>
+					</ul>
+				</div>
+
+
+				<!-- END COLUMN 3 -->
+			</div>
+		</div>
+	</div>
+	<!-- COPYRIGHT -->
+	<div class="text-center copyright">
+        <a href="http://www.un.org/en/aboutun/copyright/" target="_blank">&copy; 2026 United Nations</a>
+        &nbsp;&#8226;&nbsp;
+        <a href="http://www.un.org/en/aboutun/terms/" target="_blank">Terms of Use</a>
+        &nbsp;&#8226;&nbsp;
+        <a href="http://www.un.org/en/aboutun/privacy/" target="_blank">Privacy Notice</a>
+        &nbsp;&#8226;&nbsp;
+        <a href="http://www.un.org/en/aboutun/fraudalert/" target="_blank">Fraud Alert</a>
+      </li>
+    </ul>
+  </div>
+	<!-- END COPYRIGHT -->
+</footer>
+<!-- END FOOTER -->
+
+
+        <!--=== End Footer ===-->
+
+  <!-- JAVASCRIPTS -->
+    <script src="/sdgs/assets/js/jquery-2.1.1.min.js"></script>
+    <script src="/sdgs/assets/js/bootstrap.min.js"></script>
+    <!--script src="~/assets/js/plugins/fitvids/jquery.fitvids.js"></script-->
+    <!--script src="~/assets/js/plugins/autohidingnavbar/jquery.bootstrap-autohidingnavbar.min.js"></script-->
+    <script src="/sdgs/assets/js/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+    <script src="/sdgs/assets/js/app.js"></script>
+    <script src="/sdgs/assets/js/plugins/style-switcher.js"></script>
+    <script src="/sdgs/assets/js/plugins/owl-recent-works.js"></script>
+    <script src="/sdgs/assets/js/back-to-top.js" type="text/javascript"></script>
+    <script src="/sdgs/assets/js/plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="/sdgs/assets/js/repute-scripts.js"></script>
+
+    <!--script for graph -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/sdgs/report/2023/graph-js/goal6-graph.js"></script>
+
+    <script>
+    		jQuery(document).ready(function() {
+    			App.init();
+    			StyleSwitcher.initStyleSwitcher();
+    			OwlRecentWorks.initOwlRecentWorksV1();
+    		});
+    	</script>
+
+
+
+    
+
+  <!--Google Analytics Code for UNSD main page-->
+
+  
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Q2SKLV7QC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3Q2SKLV7QC');  // â†  UNSD SDGs Tracking ID
+        gtag('config', 'G-ZM6T0558N7');   // â† UNDESA Tracking ID
+    </script>
+
+    </body>
+</html>

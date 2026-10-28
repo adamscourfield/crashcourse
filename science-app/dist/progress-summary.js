@@ -1,4 +1,4 @@
-import {eligible, isCorrect, updateCompletion} from './progress.js?v=20261023-physicscomplete01';
+import {eligible, isCorrect, updateCompletion} from './progress.js?v=20261028-subjects01';
 import {lessonDone, topLevel} from './maths/mastery.js?v=20261023-maths-r9';
 import {mark} from './maths/answers.js?v=20261023-maths-r9';
 const rate = ({correct,total}) => total ? Math.round(correct / total * 100) : null;

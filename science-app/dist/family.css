@@ -193,3 +193,7 @@ dialog:has(.mastery-dashboard){width:min(1120px,94vw);max-width:1120px}.mastery-
 @media(max-width:600px){#scienceEvidence .science-explanation-photo{grid-template-columns:1fr;gap:12px;padding:18px}#scienceEvidence .science-explanation-photo img{height:180px}#scienceEvidence .science-photo-observation{margin-top:0}}
 
 .question-mode #scienceEvidence{display:none}
+
+/* Water source tables remain readable within narrow question cards. */
+#geographyContent .geo-water-data{table-layout:fixed}
+#geographyContent .geo-water-data th,#geographyContent .geo-water-data td{padding:8px 6px;overflow-wrap:anywhere}
