@@ -3,6 +3,7 @@
 import {elizabethTopic1, elizabethLessons1} from './content-elizabeth1.js?v=20261023-history01';
 import {elizabethTopic2, elizabethLessons2} from './content-elizabeth2.js?v=20261023-history01';
 import {elizabethTopic3, elizabethLessons3} from './content-elizabeth3.js?v=20261023-history01';
+import {coldwarTopic1, coldwarLessons1} from './content-coldwar1.js?v=20261023-history01';
 export const source = 'https://qualifications.pearson.com/content/dam/pdf/GCSE/History/2016/specification-and-sample-assessments/gcse-9-1-history-specification.pdf';
 export const specIssue = 'Issue 6, June 2024';
 export const units = [
@@ -10,5 +11,5 @@ export const units = [
   {id: 'P4', title: 'Superpower relations and the Cold War, 1941–91', paper: 'Paper 2 · Period study'},
   {id: '11', title: 'Medicine in Britain, c1250–present, and the Western Front, 1914–18', paper: 'Paper 1 · Thematic study and historic environment'},
 ];
-export const topics = [elizabethTopic1, elizabethTopic2, elizabethTopic3];
-export const lessons = [...elizabethLessons1, ...elizabethLessons2, ...elizabethLessons3];
+export const topics = [elizabethTopic1, elizabethTopic2, elizabethTopic3, coldwarTopic1];
+export const lessons = [...elizabethLessons1, ...elizabethLessons2, ...elizabethLessons3, ...coldwarLessons1];

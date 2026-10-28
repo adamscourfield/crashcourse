@@ -1,3 +1,24 @@
+## History: Cold War key topic 1 (4 lessons, P4 1.1–1.3); on GitHub `main`, not published
+
+**Lessons:**
+- the Grand Alliance and early tension;
+- the Truman Doctrine, Marshall Plan and alliances;
+- Berlin 1948–49;
+- the arms race, the Warsaw Pact and Hungary.
+
+**Totals:** History now has 16 lessons: all of B4 plus P4 key topic 1.
+
+**QA:**
+- 758 automated tests pass.
+- The History flow runs all 16 lessons: 277 checks pass.
+- Brief: `curriculum/briefs/history-coldwar-batch-01.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** P4 key topics 2–3, then Medicine. The Paper 3 option is still to be chosen.
+
 ## History: Early Elizabethan England key topic 3 (4 lessons, B4 3.1–3.4). B4 complete; on GitHub `main`, not published
 
 **Lessons:**

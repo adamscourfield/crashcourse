@@ -11,7 +11,7 @@ const URL = 'http://localhost:4173/';
 const KEY = 'crash-course-history-v1';
 const log = [];
 const ok = (cond, msg) => { log.push((cond ? 'PASS ' : 'FAIL ') + msg); if (!cond) console.error('FAIL', msg); };
-const { lessons } = await import('../dist/history/content.js');
+const { lessons, units, topics } = await import('../dist/history/content.js');
 
 const browser = await chromium.launch({ executablePath: await sparticuz.executablePath(), args: sparticuz.args, headless: true });
 const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
@@ -35,7 +35,7 @@ ok((await page.locator('#studioLabel').innerText()) === 'History studio', 'studi
 ok((await page.locator('#progressBadge').innerText()) === `0 / ${lessons.length}`, `progress badge 0 / ${lessons.length}`);
 await page.click('#mapButton');
 const map = await page.locator('dialog').innerText();
-ok(/Early Elizabethan England/.test(map) && !/Cold War|Medicine/.test(map), 'course map lists only built units');
+ok(units.every(u => topics.some(t => t.unit === u.id) === map.includes(u.title)), 'course map lists exactly the built units');
 await page.click('[data-htopic]'); ok((await page.locator('dialog [data-hlesson]').count()) === 4, 'key topic 1 lists four lessons');
 await page.click('#closeModal'); await page.click('#mapButton'); ok((await page.locator('dialog [data-htopic]').count()) === new Set(lessons.map(l => l.topicId)).size, 'every built key topic is on the map'); await page.click('[data-htopic]');
 await page.click(`[data-hlesson="${lessons[0].id}"]`);
