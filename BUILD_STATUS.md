@@ -1,3 +1,25 @@
+## History: Medicine key topic 3 (5 lessons, Option 11 3.1–3.3); on GitHub `main`, not published
+
+**Lessons:**
+- germ theory;
+- Nightingale and hospital care;
+- anaesthetics and antiseptics;
+- Jenner and vaccination;
+- cholera, Snow and public health.
+
+**Totals:** History now has 36 lessons.
+
+**QA:**
+- 768 automated tests pass.
+- The History flow runs all 36 lessons: 597 checks pass.
+- Brief: `curriculum/briefs/history-medicine-batch-03.md`.
+
+**Not done:**
+- Site publication (Medicine key topics 1–3);
+- teacher review.
+
+**Next:** Medicine key topic 4 (c1900–present) and the Western Front. The Paper 3 option is still to be chosen.
+
 ## History: Medicine key topics 1–2 (7 lessons, Option 11 1.1–2.3); on GitHub `main`, not published
 
 **Lessons:**
