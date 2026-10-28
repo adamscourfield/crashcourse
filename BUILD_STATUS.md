@@ -1,3 +1,26 @@
+## History batch 17: last 7 exam-skill lessons (B4 and Paper 3). History roadmap complete: 208 lessons; on GitHub `main`, 56 not yet published
+
+**Lessons:**
+- skill lessons for Elizabethan England: describe and explain why; how far do you agree;
+- skill lessons for Paper 3: inference; explain why; source utility; how and why interpretations differ; how far do you agree with the interpretation.
+
+**Totals:** History has **208 lessons**, which is every row on `curriculum/history-lesson-roadmap.csv`: 62 overview, 131 depth and 15 exam-skill lessons.
+- 152 lessons are on the Site, published with the Geography final publication.
+- 56 lessons (batches 12–17) are on GitHub only.
+- Topics that mix the two are marked partly published.
+
+**QA:**
+- 789 automated tests pass.
+- The History flow walked the 7 new lessons plus the whole-app checks: 133 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-17.md`.
+
+**Open:**
+- Site publication of the 56 lessons;
+- teacher and specialist review, which has not happened for any History lesson;
+- confirming the skill lessons' mark bands against the current Pearson mark schemes;
+- marking of written answers, which is not done;
+- sources and interpretations, which are described rather than printed.
+
 ## History batch 16: Cold War leaders' attitudes and 8 exam-skill lessons (Paper 1, Western Front, Cold War); on GitHub `main`, not published
 
 **Lessons:**

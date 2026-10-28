@@ -200,10 +200,10 @@ order,lesson_id,title,topic_id,role,spec_ref,status
 199,history.skills.p4-consequences,Exam skills · Cold War: explain two consequences (8),history.coldwar.kt1,exam_skill,P4 skills,implemented
 200,history.skills.p4-narrative,Exam skills · Cold War: narrative account (8),history.coldwar.kt1,exam_skill,P4 skills,implemented
 201,history.skills.p4-importance,Exam skills · Cold War: explain the importance (8),history.coldwar.kt1,exam_skill,P4 skills,implemented
-202,history.skills.b4-describe-explain,Exam skills · Elizabethan England: describe (4) and explain why (12),history.elizabeth.kt1,exam_skill,B4 skills,planned
-203,history.skills.b4-how-far,Exam skills · Elizabethan England: how far do you agree (16),history.elizabeth.kt1,exam_skill,B4 skills,planned
-204,history.skills.p3-inference,Exam skills · Paper 3: inference (4),history.germany.kt1,exam_skill,31 skills,planned
-205,history.skills.p3-explain,Exam skills · Paper 3: explain why (12),history.germany.kt1,exam_skill,31 skills,planned
-206,history.skills.p3-sources,Exam skills · Paper 3: source utility (8),history.germany.kt1,exam_skill,31 skills,planned
-207,history.skills.p3-interpretations,Exam skills · Paper 3: how and why interpretations differ (4 + 4),history.germany.kt1,exam_skill,31 skills,planned
-208,history.skills.p3-judgement,Exam skills · Paper 3: how far do you agree with the interpretation (16 + 4),history.germany.kt1,exam_skill,31 skills,planned
+202,history.skills.b4-describe-explain,Exam skills · Elizabethan England: describe (4) and explain why (12),history.elizabeth.kt1,exam_skill,B4 skills,implemented
+203,history.skills.b4-how-far,Exam skills · Elizabethan England: how far do you agree (16),history.elizabeth.kt1,exam_skill,B4 skills,implemented
+204,history.skills.p3-inference,Exam skills · Paper 3: inference (4),history.germany.kt1,exam_skill,31 skills,implemented
+205,history.skills.p3-explain,Exam skills · Paper 3: explain why (12),history.germany.kt1,exam_skill,31 skills,implemented
+206,history.skills.p3-sources,Exam skills · Paper 3: source utility (8),history.germany.kt1,exam_skill,31 skills,implemented
+207,history.skills.p3-interpretations,Exam skills · Paper 3: how and why interpretations differ (4 + 4),history.germany.kt1,exam_skill,31 skills,implemented
+208,history.skills.p3-judgement,Exam skills · Paper 3: how far do you agree with the interpretation (16 + 4),history.germany.kt1,exam_skill,31 skills,implemented

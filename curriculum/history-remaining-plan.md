@@ -2,6 +2,10 @@
 
 28 October 2026. **Decision (user):** History must match the scope of Geography and the other built subjects.
 
+## Status, 28 October 2026: roadmap complete
+
+All **208** roadmap lessons are implemented: 62 overview, 131 depth and 15 exam-skill lessons. By unit: Medicine with the Western Front 63, Germany 61, Elizabethan England 42, Cold War 42. The target table below is the original plan; the revisions sections record why it fell from 220 to 208. Publication: 152 lessons reached the Site with the Geography final publication; the 56 built since (batches 12–17) are on GitHub only. No lesson has had specialist review.
+
 ## The gap
 
 - Geography has 234 lessons covering every option; one student's pathway is about 200. It works at one lesson per lettered specification statement, plus dedicated skills lessons.
