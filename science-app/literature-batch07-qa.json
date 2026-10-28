@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-28",
+  "batch": "Literature07",
+  "new_lessons": 10,
+  "total_built": 65,
+  "remaining_planned_literature": 110,
+  "working_literature_allocation": 175,
+  "shared_english_programme": "350sessions70weeks;provisional175Literature175reserved_unmappedLanguage",
+  "poetry_units": 17,
+  "poems_introduced": 9,
+  "paired_poems": 8,
+  "anthology_required": 15,
+  "new_practice": 30,
+  "new_checks": 40,
+  "total_practice": 195,
+  "total_checks": 260,
+  "question_ids": 455,
+  "full_suite": {
+    "passed": 822,
+    "duration_ms": 40693.592583,
+    "scope": "lesson batch before subsequent AI feature"
+  },
+  "old55_normalised_sha256": "7884ea865d1085265ae32431be1cb1a209eef3da3783f11120dd72c93eca621e",
+  "sources": [
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/modern-texts-and-poetry",
+    "https://filestore.aqa.org.uk/resources/english/AQA-8702-TG-POEMS.PDF"
+  ],
+  "rights": "Five public-domain fragments checked against assigned anthology;five protected-poem units original summaries/method lenses only, no passage copied;correct poem labels/source links",
+  "offline": "All10 wrong/retry/gates/locked checks/draft/resume;protected poetry source,author,topic/paper and recall isolation",
+  "browser": "17unit list;Stormmeaning allfeatures/views,wrong/retry challenge/practice,automaticQ2,draftversionreload;correct protected-poem source notes;Stormmethods phone390x844 width390,viewportreset;no sampled consoleerrors",
+  "preview": "crash-course-literature-batch07-preview.jpg",
+  "specialist_review": "not_performed",
+  "writing": "Human marking outstanding;new API feedback feature is a separate change",
+  "publication": "pending"
+}

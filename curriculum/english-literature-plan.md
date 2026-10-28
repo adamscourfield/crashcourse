@@ -4,14 +4,14 @@ Confirmed by the user: Macbeth, A Christmas Carol, An Inspector Calls and Power 
 
 ## Authoring sequence
 
-The original98IDs are retained within a revised **175-session Literature working allocation**. The user confirmed350sessions shared by Literature and Language (70weeks×5). An adjustable175/175split is the current planning assumption; see english-programme-plan.md and english-70-week-programme.csv. It is not an AQA lesson-count requirement.55lessons are implemented;120planned sessions remain unavailable.
+The original98IDs are retained within a revised **175-session Literature working allocation**. The user confirmed350sessions shared by Literature and Language (70weeks×5). An adjustable175/175split is the current planning assumption; see english-programme-plan.md and english-70-week-programme.csv. It is not an AQA lesson-count requirement.65lessons are implemented;110planned sessions remain unavailable.
 
 | Topic | Working allocation | Implemented |
 |---|---:|---:|
 | Macbeth |35|20|
 | A Christmas Carol |28|14|
 | An Inspector Calls |28|14|
-| Power and Conflict |49|7|
+| Power and Conflict |49|17|
 | Unseen poetry |15|0|
 | Reading and analytical writing |20|0|
 
@@ -24,7 +24,7 @@ The anthology roster is Ozymandias; London; Extract from The Prelude; My Last Du
 
 Current official assessment: closed book; Paper 1 is 1h45, 64 marks, 40%; Shakespeare and novel each require extract-to-whole-text writing. Paper 2 is 2h15, 96 marks, 60%; modern text essay, named anthology poem compared with another studied poem, unseen analysis and unseen comparison. Verify current section-specific mark schemes before authoring timed writing rubrics. Source: https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/specification-at-a-glance
 
-`english-literature-requirements.csv` paraphrases assessable statements with planned destinations. `english-literature-coverage.csv` records representative evidence in the first fifty-five lessons. These are initial author mappings, not a specialist sign-off or proof of full skill attainment. The next reconciliation must map individual criteria to actual written evidence and broaden assessment beyond selected responses.
+`english-literature-requirements.csv` paraphrases assessable statements with planned destinations. `english-literature-coverage.csv` records representative evidence in the first sixty-five lessons. These are initial author mappings, not a specialist sign-off or proof of full skill attainment. The next reconciliation must map individual criteria to actual written evidence and broaden assessment beyond selected responses.
 
 Knowledge checks score first answers separately from practice retries; incorrect concepts return through recall. The first batch saves analytical drafts and immutable saved versions, but does not automatically grade writing. A word count, selected interpretation or completed explorer is not evidence of essay mastery. Keep knowledge completion and reviewed writing performance distinct in progress reporting.
 

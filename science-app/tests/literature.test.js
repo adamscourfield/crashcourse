@@ -4,10 +4,10 @@ import {readFileSync} from 'node:fs';
 import {lessons,topics} from '../dist/literature/content.js';
 import {restore,literatureGates,choiceIndices,viewHTML,draftVersionsHTML} from '../dist/literature/studio.js';
 import {subjects} from '../dist/progress.js';
-test('Literature has 55 text-scoped lessons and 385 stable question IDs',()=>{
- assert.equal(lessons.length,55);assert.equal(new Set(lessons.map(l=>l.id)).size,55);
+test('Literature has 65 text-scoped lessons and 455 stable question IDs',()=>{
+ assert.equal(lessons.length,65);assert.equal(new Set(lessons.map(l=>l.id)).size,65);
  const ids=new Set();for(const l of lessons){assert(topics.some(t=>t.id===l.topicId));assert.equal(l.cards.length,3);assert.equal(l.practice.length,3);assert.equal(l.check.length,4);assert.equal(l.views[0].kind,'language');assert.equal(l.views[0].words.length,3);assert(l.writing&&l.rubric.length===3);for(const q of [...l.practice,...l.check]){assert(!ids.has(q.id));ids.add(q.id);assert(q.options[q.answer]);assert(q.why);}}
- assert.equal(ids.size,385);assert.equal(subjects.find(s=>s.id==='english-literature').status,'available');
+ assert.equal(ids.size,455);assert.equal(subjects.find(s=>s.id==='english-literature').status,'available');
 });
 test('Knowledge gates require all language details, practice and independent answers; writing is separate',()=>{
  const l=lessons[0],p={seen:[0,1,2],passed:[0],observed:[0,1,2],wordSeen:[0,1],practice:Object.fromEntries(l.practice.map(q=>[q.id,{correct:true}])),checks:Object.fromEntries(l.check.map(q=>[q.id,q.answer])),draft:'A long draft is not a mark.'};
@@ -68,4 +68,11 @@ test('Batch 6 adds seven public-domain anthology units and completes original In
 });
 test('All forty-five earlier lesson records remain unchanged',async()=>{
  const {createHash}=await import('node:crypto');const sorted=v=>Array.isArray(v)?v.map(sorted):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,sorted(v[k])])):v;assert.equal(createHash('sha256').update(JSON.stringify(sorted(lessons.slice(0,45)))).digest('hex'),'4c2964bae4d0db39581fb07183db087b9a2a8fd95d13a7faa4efeb9186e25e04');
+});
+test('Batch 7 follows the next ten anthology IDs with clear protected-poem handling',async()=>{
+ const {batch07}=await import('../dist/literature/content-batch07.js');assert.deepEqual(batch07.map(l=>l.id.split('.').pop()),['poem-04-2','poem-05-1','poem-05-2','poem-06-1','poem-06-2','poem-07-1','poem-07-2','poem-08-1','poem-08-2','poem-09-1']);assert.equal(lessons.filter(l=>l.topicId==='english-literature.power-conflict').length,17);assert.equal(batch07.filter(l=>l.rights==='protected_summary_only').length,5);
+ for(const l of batch07){assert.equal(l.refs[0],'3.2.2');assert.equal(l.textType,'poem');assert(l.readingURL.includes('#page='));assert(l.tasks[0][4]);assert.equal(new Set([...l.practice,...l.check].map(q=>q.prompt)).size,7);for(const q of [...l.practice,...l.check])assert(q.concept.startsWith('lit.power-conflict.'));if(l.rights==='protected_summary_only'){assert(l.views[0].originalSummary);assert.equal(l.views[0].label,'Poem lenses');const html=viewHTML(l.views[0]);assert(html.includes('NOT A POEM QUOTATION'));assert(!html.includes('NOT A PLAY'));assert(!html.includes('<blockquote'));assert(html.includes('poetic feature'));}}
+});
+test('All fifty-five earlier lesson records remain unchanged in batch 7',async()=>{
+ const {createHash}=await import('node:crypto');const sorted=v=>Array.isArray(v)?v.map(sorted):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,sorted(v[k])])):v;assert.equal(createHash('sha256').update(JSON.stringify(sorted(lessons.slice(0,55)))).digest('hex'),'7884ea865d1085265ae32431be1cb1a209eef3da3783f11120dd72c93eca621e');
 });
