@@ -1,3 +1,28 @@
+## History depth batch 07: Medicine key topic 1 (8 lessons, 11 1.1–1.3); on GitHub `main`, not published
+
+**Lessons:**
+- religious explanations;
+- the humours and miasma;
+- Galen and the Church;
+- medieval prevention and treatment;
+- thirteenth-century hospitals;
+- physicians, apothecaries and barber surgeons;
+- the Black Death: beliefs and treatments;
+- the Black Death: stopping its spread.
+
+**Totals:** History has 124 lessons; 88 are left on the 212-lesson roadmap.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 8 new lessons plus the whole-app checks: 149 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-07.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 08, Medicine key topic 2 (7 lessons).
+
 ## History depth batch 06: Cold War key topic 3 (9 lessons, P4 3.1–3.3). Cold War depth lessons complete; on GitHub `main`, not published
 
 **Lessons:**

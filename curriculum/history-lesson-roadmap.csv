@@ -78,16 +78,16 @@ order,lesson_id,title,topic_id,role,spec_ref,status
 77,history.coldwar.wall-falls,The fall of the Berlin Wall and reunification,history.coldwar.kt3,depth,P4 3.3,implemented
 78,history.coldwar.ussr-ends,The end of the Warsaw Pact and the USSR,history.coldwar.kt3,depth,P4 3.3,implemented
 79,history.medicine.medieval-ideas,Medieval ideas about the causes of disease,history.medicine.kt1,overview,11 1.1,implemented
-80,history.medicine.religion-cause,Supernatural and religious explanations,history.medicine.kt1,depth,11 1.1,planned
-81,history.medicine.humours,The Four Humours and miasma,history.medicine.kt1,depth,11 1.1,planned
-82,history.medicine.galen-church,"Hippocrates, Galen and the Church",history.medicine.kt1,depth,11 1.1,planned
+80,history.medicine.religion-cause,Supernatural and religious explanations,history.medicine.kt1,depth,11 1.1,implemented
+81,history.medicine.humours,The Four Humours and miasma,history.medicine.kt1,depth,11 1.1,implemented
+82,history.medicine.galen-church,"Hippocrates, Galen and the Church",history.medicine.kt1,depth,11 1.1,implemented
 83,history.medicine.medieval-treatment,"Medieval prevention, treatment and care",history.medicine.kt1,overview,11 1.2,implemented
-84,history.medicine.medieval-prevention,Medieval prevention and treatment,history.medicine.kt1,depth,11 1.2,planned
-85,history.medicine.medieval-hospitals,Hospitals in the 13th century,history.medicine.kt1,depth,11 1.2,planned
-86,history.medicine.medieval-practitioners,"Physicians, apothecaries and barber surgeons",history.medicine.kt1,depth,11 1.2,planned
+84,history.medicine.medieval-prevention,Medieval prevention and treatment,history.medicine.kt1,depth,11 1.2,implemented
+85,history.medicine.medieval-hospitals,Hospitals in the 13th century,history.medicine.kt1,depth,11 1.2,implemented
+86,history.medicine.medieval-practitioners,"Physicians, apothecaries and barber surgeons",history.medicine.kt1,depth,11 1.2,implemented
 87,history.medicine.black-death,"Case study: the Black Death, 1348–49",history.medicine.kt1,overview,11 1.3,implemented
-88,history.medicine.bd-treatment,The Black Death: beliefs and treatments,history.medicine.kt1,depth,11 1.3,planned
-89,history.medicine.bd-prevention,The Black Death: attempts to stop its spread,history.medicine.kt1,depth,11 1.3,planned
+88,history.medicine.bd-treatment,The Black Death: beliefs and treatments,history.medicine.kt1,depth,11 1.3,implemented
+89,history.medicine.bd-prevention,The Black Death: attempts to stop its spread,history.medicine.kt1,depth,11 1.3,implemented
 90,history.medicine.renaissance-ideas,"Renaissance ideas: Sydenham, printing and the Royal Society",history.medicine.kt2,overview,11 2.1,implemented
 91,history.medicine.renaissance-continuity,Continuity and change in ideas about cause,history.medicine.kt2,depth,11 2.1,planned
 92,history.medicine.sydenham,Thomas Sydenham's scientific approach,history.medicine.kt2,depth,11 2.1,planned
