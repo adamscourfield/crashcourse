@@ -1,3 +1,40 @@
+## History scope expansion, depth batch 01: Elizabethan England key topic 1 (10 lessons, B4 1.1–1.4); on GitHub `main`, not published
+
+**Decision (user, 28 October 2026):** History must match Geography's scope. Plan: `curriculum/history-remaining-plan.md`. Roadmap: `curriculum/history-lesson-roadmap.csv`, 220 lessons in total:
+- 62 overview lessons (the existing lessons, kept with their IDs);
+- 143 depth lessons;
+- 15 exam-skill lessons.
+
+**Lessons (10 depth lessons, each placed after its overview):**
+- England in 1558: society and government;
+- the Virgin Queen;
+- early challenges: finance, France and Scotland;
+- religious divisions in 1558;
+- the Acts of Supremacy and Uniformity and the Injunctions;
+- the Church of England in society;
+- the Puritan challenge;
+- the Catholic challenge;
+- Mary's claim and arrival;
+- Elizabeth's options for dealing with Mary.
+
+**Totals:** History has 72 lessons; 148 are left on the roadmap.
+
+**Infrastructure:**
+- `history/order.js` orders the course map from the roadmap.
+- A roadmap/order test.
+- `HISTORY_FLOW_IDS` lets the browser flow walk a chosen batch.
+
+**QA:**
+- 781 automated tests pass.
+- The History flow walked the 10 new lessons through every stage, plus the whole-app checks: 181 checks pass.
+- Brief: `curriculum/briefs/history-depth-batch-01.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** depth batch 02, Elizabethan England key topic 2 (B4 2.1–2.4, 10 lessons).
+
 ## History: Weimar and Nazi Germany key topics 3–4 (8 lessons, option 31 3.1–4.4). History is complete for the chosen options; on GitHub `main`, not published
 
 **Lessons:**

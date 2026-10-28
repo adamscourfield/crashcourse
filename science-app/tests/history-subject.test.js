@@ -77,3 +77,16 @@ test('stale history studio callbacks do not throw when the root is detached', ()
   assert.equal(studio.getProgress().total, lessons.length);
   assert.ok(studio.title().length > 3);
 });
+
+test('lesson roadmap: every built lesson is on it, implemented rows exist, and the app follows its order', async () => {
+  const lines = fs.readFileSync(new URL('../../curriculum/history-lesson-roadmap.csv', import.meta.url), 'utf8').replace(/\r/g, '').trim().split('\n');
+  const head = lines[0].split(','); const col = n => head.indexOf(n);
+  const rows = lines.slice(1).map(line => { const cells = []; let cur = '', q = false; for (const ch of line) { if (ch === '"') q = !q; else if (ch === ',' && !q) { cells.push(cur); cur = ''; } else cur += ch; } cells.push(cur); return cells; });
+  const ids = rows.map(r => r[col('lesson_id')]);
+  assert.equal(new Set(ids).size, ids.length, 'roadmap ids unique');
+  const { order } = await import('../dist/history/order.js');
+  assert.deepEqual(order, ids, 'order.js matches the roadmap');
+  for (const l of lessons) { const r = rows.find(x => x[col('lesson_id')] === l.id); assert.ok(r, `${l.id} on roadmap`); assert.equal(r[col('status')], 'implemented', l.id); assert.equal(r[col('topic_id')], l.topicId, l.id); }
+  for (const r of rows.filter(x => x[col('status')] === 'implemented')) assert.ok(lessons.some(l => l.id === r[col('lesson_id')]), r[col('lesson_id')]);
+  const pos = lessons.map(l => ids.indexOf(l.id)); assert.deepEqual(pos, [...pos].sort((a, b) => a - b), 'lessons appear in roadmap order');
+});

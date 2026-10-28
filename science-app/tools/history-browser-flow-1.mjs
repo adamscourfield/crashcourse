@@ -2,6 +2,8 @@
 // Elizabethan key topic 1 lessons through every stage, gate refusals, wrong answers, resume after
 // reload, recall review, progress, 390px, and that Maths and Science still open.
 // Run: node history-browser-flow-1.mjs <dir>
+// HISTORY_FLOW_IDS=id,id,... walks only those lessons through every stage (e.g. a new batch);
+// whole-app checks (map, progress, review, mobile, other subjects) always run.
 import { chromium } from 'playwright';
 import sparticuz from '@sparticuz/chromium';
 import fs from 'node:fs';
@@ -12,6 +14,9 @@ const KEY = 'crash-course-history-v1';
 const log = [];
 const ok = (cond, msg) => { log.push((cond ? 'PASS ' : 'FAIL ') + msg); if (!cond) console.error('FAIL', msg); };
 const { lessons, units, topics } = await import('../dist/history/content.js');
+const only = (process.env.HISTORY_FLOW_IDS || '').split(',').filter(Boolean);
+const walked = only.length ? lessons.filter(l => only.includes(l.id)) : lessons;
+if (only.length && walked.length !== only.length) throw new Error('unknown lesson id in HISTORY_FLOW_IDS');
 
 const browser = await chromium.launch({ executablePath: await sparticuz.executablePath(), args: sparticuz.args, headless: true });
 const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, reducedMotion: 'reduce' });
@@ -36,12 +41,12 @@ ok((await page.locator('#progressBadge').innerText()) === `0 / ${lessons.length}
 await page.click('#mapButton');
 const map = await page.locator('dialog').innerText();
 ok(units.every(u => topics.some(t => t.unit === u.id) === map.includes(u.title)), 'course map lists exactly the built units');
-await page.click('[data-htopic]'); ok((await page.locator('dialog [data-hlesson]').count()) === 4, 'key topic 1 lists four lessons');
+await page.click('[data-htopic]'); const firstTopic = lessons.filter(l => l.topicId === lessons[0].topicId).length; ok((await page.locator('dialog [data-hlesson]').count()) === firstTopic, `key topic 1 lists its ${firstTopic} lessons`);
 await page.click('#closeModal'); await page.click('#mapButton'); ok((await page.locator('dialog [data-htopic]').count()) === new Set(lessons.map(l => l.topicId)).size, 'every built key topic is on the map'); await page.click('[data-htopic]');
-await page.click(`[data-hlesson="${lessons[0].id}"]`);
+await page.click('#closeModal'); await openL(walked[0]);
 await shot('h01-discover');
 
-for (const [n, l] of lessons.entries()) {
+for (const [n, l] of walked.entries()) {
   const tag = l.id.split('.').pop();
   if (n > 0) await openL(l);
   ok((await page.locator('#historyContent .intro h1').innerText()) === l.title, `${tag}: opens`);
@@ -89,7 +94,7 @@ for (const [n, l] of lessons.entries()) {
   if (n === 0) await shot('h04-results');
   await page.click('#closeModal');
 }
-ok((await page.locator('#progressBadge').innerText()) === `${lessons.length} / ${lessons.length}`, 'progress badge shows every lesson complete');
+ok((await page.locator('#progressBadge').innerText()) === `${walked.length} / ${lessons.length}`, 'progress badge counts every walked lesson as complete');
 
 // Recall review: the two missed check concepts in lesson 4 are due.
 await page.click('#reviewButton');
@@ -107,7 +112,7 @@ await page.click('[data-hstage="1"]'); await shot('h06-mobile');
 await page.setViewportSize({ width: 1280, height: 900 });
 await page.selectOption('#subject', 'maths'); await page.waitForSelector('#mH1'); ok(await page.locator('#historyContent').isHidden(), 'switching to Maths hides History');
 await page.selectOption('#subject', 'science'); await page.waitForTimeout(300); ok(await page.locator('#scienceContent').isVisible(), 'Science still opens');
-await page.selectOption('#subject', 'history'); await page.waitForSelector('#hTitle'); ok((await page.locator('#progressBadge').innerText()) === `${lessons.length} / ${lessons.length}`, 'History progress kept after switching subjects');
+await page.selectOption('#subject', 'history'); await page.waitForSelector('#hTitle'); ok((await page.locator('#progressBadge').innerText()) === `${walked.length} / ${lessons.length}`, 'History progress kept after switching subjects');
 ok(errors.length === 0, 'no console errors' + (errors.length ? ': ' + errors.slice(0, 3).join(' | ') : ''));
 fs.writeFileSync(`${OUT}/history-browser-log-1.txt`, log.join('\n'));
 console.log(log.filter(l => l.startsWith('FAIL')).join('\n') || 'ALL PASS', `\n${log.length} checks`);

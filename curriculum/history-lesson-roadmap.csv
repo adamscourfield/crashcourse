@@ -1,0 +1,221 @@
+order,lesson_id,title,topic_id,role,spec_ref,status
+1,history.elizabeth.accession,England in 1558 and the new queen,history.elizabeth.kt1,overview,B4 1.1,implemented
+2,history.elizabeth.england-1558,England in 1558: society and government,history.elizabeth.kt1,depth,B4 1.1,implemented
+3,history.elizabeth.virgin-queen,"The Virgin Queen: legitimacy, gender and marriage",history.elizabeth.kt1,depth,B4 1.1,implemented
+4,history.elizabeth.early-challenges,"Early challenges: finance, France and Scotland",history.elizabeth.kt1,depth,B4 1.1,implemented
+5,history.elizabeth.settlement,The religious settlement of 1559,history.elizabeth.kt1,overview,B4 1.2,implemented
+6,history.elizabeth.religion-1558,Religious divisions in 1558,history.elizabeth.kt1,depth,B4 1.2,implemented
+7,history.elizabeth.settlement-acts,The Acts of Supremacy and Uniformity and the Injunctions,history.elizabeth.kt1,depth,B4 1.2,implemented
+8,history.elizabeth.church-society,The Church of England in society,history.elizabeth.kt1,depth,B4 1.2,implemented
+9,history.elizabeth.challenges,Puritan and Catholic challenges,history.elizabeth.kt1,overview,B4 1.3,implemented
+10,history.elizabeth.puritans,The Puritan challenge,history.elizabeth.kt1,depth,B4 1.3,implemented
+11,history.elizabeth.catholic-challenge,"The Catholic challenge: nobles, the Papacy and foreign powers",history.elizabeth.kt1,depth,B4 1.3,implemented
+12,history.elizabeth.mary,"The problem of Mary, Queen of Scots",history.elizabeth.kt1,overview,B4 1.4,implemented
+13,history.elizabeth.mary-claim,"Mary, Queen of Scots: her claim and arrival",history.elizabeth.kt1,depth,B4 1.4,implemented
+14,history.elizabeth.mary-options,Elizabeth's options for dealing with Mary,history.elizabeth.kt1,depth,B4 1.4,implemented
+15,history.elizabeth.plots,"Revolt, plots and the execution of Mary",history.elizabeth.kt2,overview,B4 2.1,implemented
+16,history.elizabeth.northern-earls,"The Revolt of the Northern Earls, 1569",history.elizabeth.kt2,depth,B4 2.1,planned
+17,history.elizabeth.three-plots,"The Ridolfi, Throckmorton and Babington plots",history.elizabeth.kt2,depth,B4 2.1,planned
+18,history.elizabeth.walsingham,Walsingham and the spy network,history.elizabeth.kt2,depth,B4 2.1,planned
+19,history.elizabeth.mary-execution,"The execution of Mary, Queen of Scots, 1587",history.elizabeth.kt2,depth,B4 2.1,planned
+20,history.elizabeth.spain,Relations with Spain and the privateers,history.elizabeth.kt2,overview,B4 2.2,implemented
+21,history.elizabeth.spain-rivalry,Political and religious rivalry with Spain,history.elizabeth.kt2,depth,B4 2.2,planned
+22,history.elizabeth.privateering,Commercial rivalry and privateering,history.elizabeth.kt2,depth,B4 2.2,planned
+23,history.elizabeth.war,"The outbreak of war with Spain, 1585–88",history.elizabeth.kt2,overview,B4 2.3,implemented
+24,history.elizabeth.netherlands,"English involvement in the Netherlands, 1585–88",history.elizabeth.kt2,depth,B4 2.3,planned
+25,history.elizabeth.cadiz,"Drake and the raid on Cadiz, 1587",history.elizabeth.kt2,depth,B4 2.3,planned
+26,history.elizabeth.armada,"The Spanish Armada, 1588",history.elizabeth.kt2,overview,B4 2.4,implemented
+27,history.elizabeth.armada-plans,Spanish plans for invasion,history.elizabeth.kt2,depth,B4 2.4,planned
+28,history.elizabeth.armada-failure,Why the Armada failed,history.elizabeth.kt2,depth,B4 2.4,planned
+29,history.elizabeth.education,Education and leisure,history.elizabeth.kt3,overview,B4 3.1,implemented
+30,history.elizabeth.schools,"Education in the home, schools and universities",history.elizabeth.kt3,depth,B4 3.1,planned
+31,history.elizabeth.leisure,"Sport, pastimes and the theatre",history.elizabeth.kt3,depth,B4 3.1,planned
+32,history.elizabeth.poor,The 'problem' of the poor,history.elizabeth.kt3,overview,B4 3.2,implemented
+33,history.elizabeth.poverty-causes,Why poverty increased,history.elizabeth.kt3,depth,B4 3.2,planned
+34,history.elizabeth.poor-laws,Changing attitudes and the Poor Laws,history.elizabeth.kt3,depth,B4 3.2,planned
+35,history.elizabeth.exploration,Exploration and Drake's circumnavigation,history.elizabeth.kt3,overview,B4 3.3,implemented
+36,history.elizabeth.exploration-factors,Factors prompting exploration,history.elizabeth.kt3,depth,B4 3.3,planned
+37,history.elizabeth.drake,"Drake's circumnavigation, 1577–80",history.elizabeth.kt3,depth,B4 3.3,planned
+38,history.elizabeth.virginia,The attempted colonisation of Virginia,history.elizabeth.kt3,overview,B4 3.4,implemented
+39,history.elizabeth.roanoke,Raleigh and the Roanoke colonies,history.elizabeth.kt3,depth,B4 3.4,planned
+40,history.elizabeth.virginia-failure,Why the Virginia colony failed,history.elizabeth.kt3,depth,B4 3.4,planned
+41,history.coldwar.alliance,The Grand Alliance and early tension,history.coldwar.kt1,overview,P4 1.1,implemented
+42,history.coldwar.conferences,"Tehran, Yalta and Potsdam",history.coldwar.kt1,depth,P4 1.1,planned
+43,history.coldwar.ideologies,Capitalism and communism,history.coldwar.kt1,depth,P4 1.1,planned
+44,history.coldwar.satellites,Soviet expansion in Eastern Europe,history.coldwar.kt1,depth,P4 1.1,planned
+45,history.coldwar.containment,"The Truman Doctrine, the Marshall Plan and the new alliances",history.coldwar.kt1,overview,P4 1.2,implemented
+46,history.coldwar.telegrams,The Long and Novikov Telegrams,history.coldwar.kt1,depth,P4 1.2,planned
+47,history.coldwar.truman-marshall,The Truman Doctrine and the Marshall Plan,history.coldwar.kt1,depth,P4 1.2,planned
+48,history.coldwar.cominform-comecon,"Cominform, Comecon and NATO",history.coldwar.kt1,depth,P4 1.2,planned
+49,history.coldwar.blockade,The Berlin Blockade and Airlift,history.coldwar.kt1,depth,P4 1.2,planned
+50,history.coldwar.hungary,"The arms race, the Warsaw Pact and Hungary, 1949–58",history.coldwar.kt1,overview,P4 1.3,implemented
+51,history.coldwar.arms-race,The arms race and the Warsaw Pact,history.coldwar.kt1,depth,P4 1.3,planned
+52,history.coldwar.hungary-uprising,"The Hungarian Uprising, 1956",history.coldwar.kt1,depth,P4 1.3,planned
+53,history.coldwar.hungary-reaction,International reaction to Hungary,history.coldwar.kt1,depth,P4 1.3,planned
+54,history.coldwar.berlin,"Berlin, 1948–49: blockade and airlift",history.coldwar.kt1,overview,P4 2.1,implemented
+55,history.coldwar.berlin-refugees,The refugee problem and Khrushchev's ultimatum,history.coldwar.kt1,depth,P4 2.1,planned
+56,history.coldwar.summits,The summits of 1959–61,history.coldwar.kt1,depth,P4 2.1,planned
+57,history.coldwar.wall,"Berlin, 1958–63: the ultimatum and the Wall",history.coldwar.kt2,overview,P4 2.1,implemented
+58,history.coldwar.wall-impact,The impact of the Berlin Wall,history.coldwar.kt2,depth,P4 2.1,planned
+59,history.coldwar.cuba,Cuba: revolution and the Bay of Pigs,history.coldwar.kt2,overview,P4 2.2,implemented
+60,history.coldwar.bay-of-pigs,"The Bay of Pigs, 1961",history.coldwar.kt2,depth,P4 2.2,planned
+61,history.coldwar.missiles,"The Cuban Missile Crisis, 1962",history.coldwar.kt2,overview,P4 2.2,implemented
+62,history.coldwar.thirteen-days,Thirteen days: October 1962,history.coldwar.kt2,depth,P4 2.2,planned
+63,history.coldwar.missile-consequences,The consequences of the Cuban Missile Crisis,history.coldwar.kt2,depth,P4 2.2,planned
+64,history.coldwar.prague,"Czechoslovakia, 1968: the Prague Spring",history.coldwar.kt2,overview,P4 2.3,implemented
+65,history.coldwar.dubcek,Dubček and opposition in Czechoslovakia,history.coldwar.kt2,depth,P4 2.3,planned
+66,history.coldwar.brezhnev-doctrine,The Brezhnev Doctrine and its consequences,history.coldwar.kt2,depth,P4 2.3,planned
+67,history.coldwar.detente,Détente in the 1970s,history.coldwar.kt3,overview,P4 3.1,implemented
+68,history.coldwar.salt-helsinki,SALT 1 and the Helsinki Agreements,history.coldwar.kt3,depth,P4 3.1,planned
+69,history.coldwar.salt2,SALT 2 and the end of détente,history.coldwar.kt3,depth,P4 3.1,planned
+70,history.coldwar.afghanistan,Afghanistan and the 'Second Cold War',history.coldwar.kt3,overview,P4 3.2,implemented
+71,history.coldwar.carter-doctrine,The invasion of Afghanistan and the Carter Doctrine,history.coldwar.kt3,depth,P4 3.2,planned
+72,history.coldwar.olympics,The Olympic boycotts,history.coldwar.kt3,depth,P4 3.2,planned
+73,history.coldwar.reagan-sdi,Reagan and the Strategic Defense Initiative,history.coldwar.kt3,depth,P4 3.2,planned
+74,history.coldwar.gorbachev,"Reagan, Gorbachev and the thaw",history.coldwar.kt3,overview,P4 3.2,implemented
+75,history.coldwar.inf,Gorbachev's new thinking and the INF Treaty,history.coldwar.kt3,depth,P4 3.2,planned
+76,history.coldwar.collapse,"The collapse of Soviet control, 1985–91",history.coldwar.kt3,overview,P4 3.3,implemented
+77,history.coldwar.revolutions-1989,The revolutions of 1989,history.coldwar.kt3,depth,P4 3.3,planned
+78,history.coldwar.wall-falls,The fall of the Berlin Wall and reunification,history.coldwar.kt3,depth,P4 3.3,planned
+79,history.coldwar.ussr-ends,The end of the Warsaw Pact and the USSR,history.coldwar.kt3,depth,P4 3.3,planned
+80,history.medicine.medieval-ideas,Medieval ideas about the causes of disease,history.medicine.kt1,overview,11 1.1,implemented
+81,history.medicine.religion-cause,Supernatural and religious explanations,history.medicine.kt1,depth,11 1.1,planned
+82,history.medicine.humours,The Four Humours and miasma,history.medicine.kt1,depth,11 1.1,planned
+83,history.medicine.galen-church,"Hippocrates, Galen and the Church",history.medicine.kt1,depth,11 1.1,planned
+84,history.medicine.medieval-treatment,"Medieval prevention, treatment and care",history.medicine.kt1,overview,11 1.2,implemented
+85,history.medicine.medieval-prevention,Medieval prevention and treatment,history.medicine.kt1,depth,11 1.2,planned
+86,history.medicine.medieval-hospitals,Hospitals in the 13th century,history.medicine.kt1,depth,11 1.2,planned
+87,history.medicine.medieval-practitioners,"Physicians, apothecaries and barber surgeons",history.medicine.kt1,depth,11 1.2,planned
+88,history.medicine.black-death,"Case study: the Black Death, 1348–49",history.medicine.kt1,overview,11 1.3,implemented
+89,history.medicine.bd-treatment,The Black Death: beliefs and treatments,history.medicine.kt1,depth,11 1.3,planned
+90,history.medicine.bd-prevention,The Black Death: attempts to stop its spread,history.medicine.kt1,depth,11 1.3,planned
+91,history.medicine.renaissance-ideas,"Renaissance ideas: Sydenham, printing and the Royal Society",history.medicine.kt2,overview,11 2.1,implemented
+92,history.medicine.renaissance-continuity,Continuity and change in ideas about cause,history.medicine.kt2,depth,11 2.1,planned
+93,history.medicine.sydenham,Thomas Sydenham's scientific approach,history.medicine.kt2,depth,11 2.1,planned
+94,history.medicine.royal-society,Printing and the Royal Society,history.medicine.kt2,depth,11 2.1,planned
+95,history.medicine.renaissance-care,"Treatment, care and training, c1500–c1700",history.medicine.kt2,overview,11 2.2,implemented
+96,history.medicine.renaissance-treatment,Renaissance prevention and treatment,history.medicine.kt2,depth,11 2.2,planned
+97,history.medicine.renaissance-hospitals,"Care in the community and in hospitals, c1500–c1700",history.medicine.kt2,depth,11 2.2,planned
+98,history.medicine.vesalius,Vesalius and changes in training,history.medicine.kt2,depth,11 2.2,planned
+99,history.medicine.harvey,Case study: William Harvey and the circulation of the blood,history.medicine.kt2,overview,11 2.3,implemented
+100,history.medicine.harvey-impact,Reactions to Harvey and his impact,history.medicine.kt2,depth,11 2.3,planned
+101,history.medicine.great-plague,"Case study: the Great Plague in London, 1665",history.medicine.kt2,overview,11 2.3,implemented
+102,history.medicine.plague-compare,Plague in 1348 and 1665 compared,history.medicine.kt2,depth,11 2.3,planned
+103,history.medicine.germ-theory,From spontaneous generation to germ theory,history.medicine.kt3,overview,11 3.1,implemented
+104,history.medicine.spontaneous,Spontaneous generation and miasma,history.medicine.kt3,depth,11 3.1,planned
+105,history.medicine.pasteur,Pasteur's germ theory,history.medicine.kt3,depth,11 3.1,planned
+106,history.medicine.koch,Koch and the identification of microbes,history.medicine.kt3,depth,11 3.1,planned
+107,history.medicine.nightingale,Florence Nightingale and hospital care,history.medicine.kt3,overview,11 3.2,implemented
+108,history.medicine.hospital-reform,Nightingale's impact on hospitals and nursing,history.medicine.kt3,depth,11 3.2,planned
+109,history.medicine.surgery,Surgery: anaesthetics and antiseptics,history.medicine.kt3,overview,11 3.2,implemented
+110,history.medicine.anaesthetics,Anaesthetics,history.medicine.kt3,depth,11 3.2,planned
+111,history.medicine.antiseptics,Antiseptics and aseptic surgery,history.medicine.kt3,depth,11 3.2,planned
+112,history.medicine.jenner,Case study: Edward Jenner and smallpox vaccination,history.medicine.kt3,overview,11 3.3,implemented
+113,history.medicine.vaccine-opposition,Opposition to vaccination and government action,history.medicine.kt3,depth,11 3.3,planned
+114,history.medicine.cholera,"Case study: cholera, John Snow and public health",history.medicine.kt3,overview,11 3.3,implemented
+115,history.medicine.broad-street,John Snow and the Broad Street pump,history.medicine.kt3,depth,11 3.3,planned
+116,history.medicine.public-health-1875,The Public Health Act of 1875,history.medicine.kt3,depth,11 3.3,planned
+117,history.medicine.modern-ideas,"Modern ideas: genetics, lifestyle and diagnosis",history.medicine.kt4,overview,11 4.1,implemented
+118,history.medicine.genetics,Genetic and lifestyle causes,history.medicine.kt4,depth,11 4.1,planned
+119,history.medicine.diagnosis,Modern diagnosis,history.medicine.kt4,depth,11 4.1,planned
+120,history.medicine.nhs-treatment,"Treatment and care: magic bullets, the NHS and high-tech medicine",history.medicine.kt4,overview,11 4.2,implemented
+121,history.medicine.nhs,Hospital care and the NHS,history.medicine.kt4,depth,11 4.2,planned
+122,history.medicine.magic-bullets,Magic bullets and antibiotics,history.medicine.kt4,depth,11 4.2,planned
+123,history.medicine.high-tech,High-tech medical and surgical treatment,history.medicine.kt4,depth,11 4.2,planned
+124,history.medicine.modern-prevention,"Modern prevention: vaccination, government action and lifestyle campaigns",history.medicine.kt4,overview,11 4.2,implemented
+125,history.medicine.campaigns,Mass vaccination and lifestyle campaigns,history.medicine.kt4,depth,11 4.2,planned
+126,history.medicine.penicillin,"Case study: Fleming, Florey and Chain and penicillin",history.medicine.kt4,overview,11 4.3,implemented
+127,history.medicine.fleming,Fleming's discovery of penicillin,history.medicine.kt4,depth,11 4.3,planned
+128,history.medicine.mass-production,"Florey, Chain and mass production",history.medicine.kt4,depth,11 4.3,planned
+129,history.medicine.lung-cancer,Case study: the fight against lung cancer,history.medicine.kt4,overview,11 4.3,implemented
+130,history.medicine.lc-treatment,Lung cancer: diagnosis and treatment,history.medicine.kt4,depth,11 4.3,planned
+131,history.medicine.lc-government,Lung cancer: government action,history.medicine.kt4,depth,11 4.3,planned
+132,history.medicine.wf-context,"The Western Front: battles, trenches and terrain",history.medicine.wf,overview,11 HE1,implemented
+133,history.medicine.wf-battles,"Ypres, the Somme, Arras and Cambrai",history.medicine.wf,depth,11 HE1,planned
+134,history.medicine.wf-trenches,The trench system,history.medicine.wf,depth,11 HE1,planned
+135,history.medicine.wf-transport,"Terrain, transport and communications",history.medicine.wf,depth,11 HE1,planned
+136,history.medicine.wf-injuries,Illness and injury on the Western Front,history.medicine.wf,overview,11 HE2,implemented
+137,history.medicine.wf-illness,Illnesses from trench conditions,history.medicine.wf,depth,11 HE2,planned
+138,history.medicine.wf-wounds-gas,"Wounds, head injuries and gas attacks",history.medicine.wf,depth,11 HE2,planned
+139,history.medicine.wf-evacuation,"The RAMC, the FANY and the chain of evacuation",history.medicine.wf,overview,11 HE3,implemented
+140,history.medicine.wf-ramc-fany,The RAMC and the FANY,history.medicine.wf,depth,11 HE3,planned
+141,history.medicine.wf-chain,The chain of evacuation,history.medicine.wf,depth,11 HE3,planned
+142,history.medicine.wf-arras-hospital,The underground hospital at Arras,history.medicine.wf,depth,11 HE3,planned
+143,history.medicine.wf-surgery,Surgery and medicine on the Western Front,history.medicine.wf,overview,11 HE4,implemented
+144,history.medicine.wf-infection,"Treating wounds, infection and fractures",history.medicine.wf,depth,11 HE4,planned
+145,history.medicine.wf-xray-blood,"X-rays, blood transfusion and the Cambrai blood bank",history.medicine.wf,depth,11 HE4,planned
+146,history.medicine.wf-sources,Using sources: the Western Front enquiry,history.medicine.wf,overview,11 HE5,implemented
+147,history.medicine.wf-national-local,National and local sources,history.medicine.wf,depth,11 HE5,planned
+148,history.medicine.wf-usefulness,Judging the usefulness of sources,history.medicine.wf,depth,11 HE5,planned
+149,history.medicine.wf-follow-up,Following up a source,history.medicine.wf,depth,11 HE5,planned
+150,history.germany.origins,"The origins of the Weimar Republic, 1918–19",history.germany.kt1,overview,31 1.1,implemented
+151,history.germany.war-legacy,The legacy of the First World War,history.germany.kt1,depth,31 1.1,planned
+152,history.germany.revolution-1918,"Abdication, armistice and revolution",history.germany.kt1,depth,31 1.1,planned
+153,history.germany.constitution,The Weimar Constitution,history.germany.kt1,depth,31 1.1,planned
+154,history.germany.early-challenges,"Early challenges: Versailles, uprisings and 1923",history.germany.kt1,overview,31 1.2,implemented
+155,history.germany.versailles,The Treaty of Versailles,history.germany.kt1,depth,31 1.2,planned
+156,history.germany.left-right,"Spartacists, Freikorps and the Kapp Putsch",history.germany.kt1,depth,31 1.2,planned
+157,history.germany.hyperinflation,1923: the Ruhr and hyperinflation,history.germany.kt1,depth,31 1.2,planned
+158,history.germany.recovery,"Recovery under Stresemann, 1924–29",history.germany.kt1,overview,31 1.3,implemented
+159,history.germany.dawes-young,Stresemann and economic recovery,history.germany.kt1,depth,31 1.3,planned
+160,history.germany.locarno,"Locarno, the League and Kellogg-Briand",history.germany.kt1,depth,31 1.3,planned
+161,history.germany.weimar-society,"Changes in society, 1924–29",history.germany.kt1,overview,31 1.4,implemented
+162,history.germany.living-1920s,The standard of living in the 1920s,history.germany.kt1,depth,31 1.4,planned
+163,history.germany.weimar-women,Women in Weimar Germany,history.germany.kt1,depth,31 1.4,planned
+164,history.germany.weimar-culture,Weimar culture,history.germany.kt1,depth,31 1.4,planned
+165,history.germany.early-nazis,"The early Nazi Party, 1920–22",history.germany.kt2,overview,31 2.1,implemented
+166,history.germany.hitler-early,Hitler's early career,history.germany.kt2,depth,31 2.1,planned
+167,history.germany.twenty-five-points,The Twenty-Five Points and the SA,history.germany.kt2,depth,31 2.1,planned
+168,history.germany.putsch,"The Munich Putsch and the lean years, 1923–29",history.germany.kt2,overview,31 2.2,implemented
+169,history.germany.putsch-events,The Munich Putsch: causes and events,history.germany.kt2,depth,31 2.2,planned
+170,history.germany.lean-years,The lean years and reorganisation,history.germany.kt2,depth,31 2.2,planned
+171,history.germany.nazi-support,"The growth in Nazi support, 1929–32",history.germany.kt2,overview,31 2.3,implemented
+172,history.germany.depression,The Depression and the failure of Weimar governments,history.germany.kt2,depth,31 2.3,planned
+173,history.germany.nazi-appeal,Nazi propaganda and Hitler's appeal,history.germany.kt2,depth,31 2.3,planned
+174,history.germany.fear-communism,Fear of communism,history.germany.kt2,depth,31 2.3,planned
+175,history.germany.chancellor,"How Hitler became Chancellor, 1932–33",history.germany.kt2,overview,31 2.4,implemented
+176,history.germany.elections-1932,The elections of 1932,history.germany.kt2,depth,31 2.4,planned
+177,history.germany.backstairs,The backstairs intrigue,history.germany.kt2,depth,31 2.4,planned
+178,history.germany.dictatorship,"Creating the dictatorship, 1933–34",history.germany.kt3,overview,31 3.1,implemented
+179,history.germany.enabling-act,The Reichstag Fire and the Enabling Act,history.germany.kt3,depth,31 3.1,planned
+180,history.germany.long-knives,The Night of the Long Knives and the Führer,history.germany.kt3,depth,31 3.1,planned
+181,history.germany.police-state,The police state,history.germany.kt3,overview,31 3.2,implemented
+182,history.germany.gestapo,"The SS, the SD and the Gestapo",history.germany.kt3,depth,31 3.2,planned
+183,history.germany.camps-courts,Concentration camps and the courts,history.germany.kt3,depth,31 3.2,planned
+184,history.germany.churches,The Nazis and the Churches,history.germany.kt3,depth,31 3.2,planned
+185,history.germany.propaganda,Propaganda and culture,history.germany.kt3,overview,31 3.3,implemented
+186,history.germany.media-rallies,"Goebbels, the media and rallies",history.germany.kt3,depth,31 3.3,planned
+187,history.germany.olympics,The 1936 Olympics,history.germany.kt3,depth,31 3.3,planned
+188,history.germany.nazi-culture,Nazi control of culture and the arts,history.germany.kt3,depth,31 3.3,planned
+189,history.germany.opposition,"Opposition, resistance and conformity",history.germany.kt3,overview,31 3.4,implemented
+190,history.germany.conformity,Support and conformity,history.germany.kt3,depth,31 3.4,planned
+191,history.germany.church-opposition,Opposition from the Churches,history.germany.kt3,depth,31 3.4,planned
+192,history.germany.youth-opposition,Opposition from young people,history.germany.kt3,depth,31 3.4,planned
+193,history.germany.women,Nazi policies towards women,history.germany.kt4,overview,31 4.1,implemented
+194,history.germany.family-policy,Nazi views of women and family policy,history.germany.kt4,depth,31 4.1,planned
+195,history.germany.women-work,Women's employment and appearance,history.germany.kt4,depth,31 4.1,planned
+196,history.germany.young,Nazi policies towards young people,history.germany.kt4,overview,31 4.2,implemented
+197,history.germany.hitler-youth,The Hitler Youth and the League of German Maidens,history.germany.kt4,depth,31 4.2,planned
+198,history.germany.education,Nazi education,history.germany.kt4,depth,31 4.2,planned
+199,history.germany.employment,Employment and living standards,history.germany.kt4,overview,31 4.3,implemented
+200,history.germany.unemployment,Reducing unemployment,history.germany.kt4,depth,31 4.3,planned
+201,history.germany.kdf,The Labour Front and Strength through Joy,history.germany.kt4,depth,31 4.3,planned
+202,history.germany.persecution,The persecution of minorities,history.germany.kt4,overview,31 4.4,implemented
+203,history.germany.minorities,Racial beliefs and the treatment of minorities,history.germany.kt4,depth,31 4.4,planned
+204,history.germany.jews-1933-35,"The persecution of Jews, 1933–35",history.germany.kt4,depth,31 4.4,planned
+205,history.germany.kristallnacht,Kristallnacht and after,history.germany.kt4,depth,31 4.4,planned
+206,history.skills.p1-describe,Exam skills · Paper 1: explain one similarity or difference (4),history.medicine.kt1,exam_skill,11 skills,planned
+207,history.skills.p1-explain,Exam skills · Paper 1: explain why (12),history.medicine.kt1,exam_skill,11 skills,planned
+208,history.skills.p1-how-far,Exam skills · Paper 1: how far do you agree (16),history.medicine.kt1,exam_skill,11 skills,planned
+209,history.skills.he-describe,Exam skills · Western Front: describe two features (4),history.medicine.wf,exam_skill,11 HE skills,planned
+210,history.skills.he-sources,Exam skills · Western Front: source utility (8) and follow-up (4),history.medicine.wf,exam_skill,11 HE skills,planned
+211,history.skills.p4-consequences,Exam skills · Cold War: explain two consequences (8),history.coldwar.kt1,exam_skill,P4 skills,planned
+212,history.skills.p4-narrative,Exam skills · Cold War: narrative account (8),history.coldwar.kt1,exam_skill,P4 skills,planned
+213,history.skills.p4-importance,Exam skills · Cold War: explain the importance (8),history.coldwar.kt1,exam_skill,P4 skills,planned
+214,history.skills.b4-describe-explain,Exam skills · Elizabethan England: describe (4) and explain why (12),history.elizabeth.kt1,exam_skill,B4 skills,planned
+215,history.skills.b4-how-far,"Exam skills · Elizabethan England: how far (16), including an interpretation",history.elizabeth.kt1,exam_skill,B4 skills,planned
+216,history.skills.p3-inference,Exam skills · Paper 3: inference (4),history.germany.kt1,exam_skill,31 skills,planned
+217,history.skills.p3-explain,Exam skills · Paper 3: explain why (12),history.germany.kt1,exam_skill,31 skills,planned
+218,history.skills.p3-sources,Exam skills · Paper 3: source utility (8),history.germany.kt1,exam_skill,31 skills,planned
+219,history.skills.p3-interpretations,Exam skills · Paper 3: how and why interpretations differ (4 + 4),history.germany.kt1,exam_skill,31 skills,planned
+220,history.skills.p3-judgement,Exam skills · Paper 3: how far do you agree with the interpretation (16 + 4),history.germany.kt1,exam_skill,31 skills,planned
