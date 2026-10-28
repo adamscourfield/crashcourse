@@ -1,3 +1,24 @@
+## History: Early Elizabethan England key topic 3 (4 lessons, B4 3.1–3.4). B4 complete; on GitHub `main`, not published
+
+**Lessons:**
+- education and leisure;
+- the poor;
+- exploration and Drake's circumnavigation;
+- the attempted colonisation of Virginia.
+
+**Totals:** History now has 12 lessons, covering every B4 statement.
+
+**QA:**
+- 758 automated tests pass.
+- The History flow runs all 12 lessons through every stage: 213 checks pass.
+- Brief: `curriculum/briefs/history-elizabeth-batch-03.md`.
+
+**Not done:**
+- Site publication;
+- teacher review.
+
+**Next:** P4 Cold War, then Option 11 Medicine with the Western Front. The Paper 3 option is still to be chosen.
+
 ## History: Early Elizabethan England key topic 2 (4 lessons, B4 2.1–2.4); on GitHub `main`, not published
 
 **Lessons:**
