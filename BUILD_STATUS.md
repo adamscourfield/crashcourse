@@ -1,3 +1,9 @@
+## Literature batch13 publication receipt — 29 October 2026
+
+The final20 Literature sessions published successfully at11:28:48UTC. All175 current Literature roadmap sessions built;0 unbuilt. Canonical app `470fe8008fc357da406c5d84b7897f7651989377` pushed to `origin/main`; exact remote SHA and clean local status verified before packaging. Separate app-only Sites source `c64c4a148969de04b7093048b1fd61f7d6e84562`;718 tracked frontend files hash-matched. Deployment `appgdep_6ae32de362488191ad65185bb82599c6`; version `appgprj_6ad1be5897a88191909a03ad57857103~appgver_99fd65622d208191bccff947e0a09b3b`; native status succeeded. URL https://gcse-science-atom-lab.anaxied.chatgpt.site ; owner-private audience unchanged. Static lessons/classroom unconfigured demo; AI key setup deferred/no actual provider call.
+
+874 full tests passed/1 database RLS check skipped;67 focused passed. Browser samples cover automatic practice navigation, saved writing, fresh pair assessment, revision handover, Paper2 conference and phone/keyboard reading. Specialist and actual written-response review remain outstanding. Next: audit written evidence and unfamiliar-text range, pilot timing/accessibility, then plan the175 reserved Language sessions separately. Receipt-only GitHub commit follows; deployed app unchanged.
+
 ## Literature batch13 — final twenty, 29 October 2026
 
 Completed8 Unseen and12 reading/writing workshops:175 Literature teaching sessions built,0 unbuilt current roadmap slots. Topic totals35 Macbeth/28 Carol/28 Inspector/49 Power and Conflict/15 Unseen/20 Skills.350 shared English budget unchanged;175 Language slots remain reserved/unmapped. Added60 practice/80 checks;525 practice/700 checks/1225 stable question IDs;525 representative coverage records;1006 teacher catalogue lessons. Earlier155 lesson records unchanged.

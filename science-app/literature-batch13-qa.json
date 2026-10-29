@@ -63,9 +63,17 @@
   "timing": "105/135 minute rehearsals advisory/not enforced; pilot calibration needed",
   "ai": "API key setup deferred by user; no real provider call",
   "publication": {
-    "github": "pending",
-    "hosting": "pending",
-    "audience": "Existing owner-private confirmed; unchanged"
+    "github": "Canonical app committed/pushed; exact remote SHA and clean status verified before packaging",
+    "canonical_app_commit": "470fe8008fc357da406c5d84b7897f7651989377",
+    "hosting": "succeeded",
+    "source_commit": "c64c4a148969de04b7093048b1fd61f7d6e84562",
+    "tracked_frontend_files_hash_matched": 718,
+    "deployment_id": "appgdep_6ae32de362488191ad65185bb82599c6",
+    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_99fd65622d208191bccff947e0a09b3b",
+    "updated_at": "2026-10-29T11:28:48.805679+00:00",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "audience": "Existing owner-private, unchanged",
+    "runtime": "Static lessons; classroom unconfigured demo; AI key setup deferred. Receipt-only GitHub commit follows; app unchanged."
   },
   "next_action": "Specialist statement-to-writing audit, historical unfamiliar poetry range review, timing/pilot/accessibility calibration; plan Language separately",
   "preview": "crash-course-literature-batch13-preview.jpg"
