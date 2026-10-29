@@ -1,0 +1,811 @@
+{
+  "date": "2026-10-29",
+  "scope": "20 built English Language lessons; one Oak AQA fiction unit; 17 lesson summaries; 12 existing requirement groups",
+  "sourceFile": "science-app/dist/language/content.js",
+  "sourceSha256": "d239a36d8ef5c752b7a4683e246d142a6bffc0775cd694e2a11bd5aa9c4f83b5",
+  "lessonInventory": [
+    {
+      "id": "lang.reading.lesson-01",
+      "title": "Reading what is actually there",
+      "refs": [
+        "3.1.1",
+        "AO1"
+      ],
+      "words": 53,
+      "practiceIds": [
+        "lang.reading.lesson-01.practice.1",
+        "lang.reading.lesson-01.practice.2",
+        "lang.reading.lesson-01.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-01.check.1",
+        "lang.reading.lesson-01.check.2",
+        "lang.reading.lesson-01.check.3",
+        "lang.reading.lesson-01.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Select two explicit details about Mina\u2019s situation; explain what each does and does not establish.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-02",
+      "title": "Inference with a firm footing",
+      "refs": [
+        "3.1.1",
+        "AO1"
+      ],
+      "words": 50,
+      "practiceIds": [
+        "lang.reading.lesson-02.practice.1",
+        "lang.reading.lesson-02.practice.2",
+        "lang.reading.lesson-02.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-02.check.1",
+        "lang.reading.lesson-02.check.2",
+        "lang.reading.lesson-02.check.3",
+        "lang.reading.lesson-02.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Infer Jules\u2019s state of mind using two actions. Qualify a possible alternative and avoid inventing a cause.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-03",
+      "title": "Vocabulary belongs to its context",
+      "refs": [
+        "3.1.1",
+        "AO1"
+      ],
+      "words": 48,
+      "practiceIds": [
+        "lang.reading.lesson-03.practice.1",
+        "lang.reading.lesson-03.practice.2",
+        "lang.reading.lesson-03.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-03.check.1",
+        "lang.reading.lesson-03.check.2",
+        "lang.reading.lesson-03.check.3",
+        "lang.reading.lesson-03.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Explain thin in context, then connect the surrounding sequence to Sal\u2019s response.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-04",
+      "title": "Choosing the reference that proves the point",
+      "refs": [
+        "3.1.1",
+        "AO1"
+      ],
+      "words": 48,
+      "practiceIds": [
+        "lang.reading.lesson-04.practice.1",
+        "lang.reading.lesson-04.practice.2",
+        "lang.reading.lesson-04.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-04.check.1",
+        "lang.reading.lesson-04.check.2",
+        "lang.reading.lesson-04.check.3",
+        "lang.reading.lesson-04.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Support the claim that the group is waiting cautiously. Choose a precise reference and explain its relevance.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-05",
+      "title": "Paraphrase without changing the evidence",
+      "refs": [
+        "3.1.1",
+        "AO1"
+      ],
+      "words": 47,
+      "practiceIds": [
+        "lang.reading.lesson-05.practice.1",
+        "lang.reading.lesson-05.practice.2",
+        "lang.reading.lesson-05.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-05.check.1",
+        "lang.reading.lesson-05.check.2",
+        "lang.reading.lesson-05.check.3",
+        "lang.reading.lesson-05.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Paraphrase the final movement accurately; then add analysis of how its small scale shapes our view of Amir.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-06",
+      "title": "A narrator is a viewpoint, not the author",
+      "refs": [
+        "3.1.1",
+        "AO1"
+      ],
+      "words": 54,
+      "practiceIds": [
+        "lang.reading.lesson-06.practice.1",
+        "lang.reading.lesson-06.practice.2",
+        "lang.reading.lesson-06.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-06.check.1",
+        "lang.reading.lesson-06.check.2",
+        "lang.reading.lesson-06.check.3",
+        "lang.reading.lesson-06.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Explain how first-person perspective shapes the scene, including one limit on what the reader can know.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-07",
+      "title": "Sensory details create a particular atmosphere",
+      "refs": [
+        "3.1.1",
+        "AO2"
+      ],
+      "words": 49,
+      "practiceIds": [
+        "lang.reading.lesson-07.practice.1",
+        "lang.reading.lesson-07.practice.2",
+        "lang.reading.lesson-07.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-07.check.1",
+        "lang.reading.lesson-07.check.2",
+        "lang.reading.lesson-07.check.3",
+        "lang.reading.lesson-07.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Trace the sensory contrast and explain how the interruption changes the atmosphere without exaggerating the danger.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-08",
+      "title": "A comparison is not a literal report",
+      "refs": [
+        "3.1.1",
+        "AO2"
+      ],
+      "words": 48,
+      "practiceIds": [
+        "lang.reading.lesson-08.practice.1",
+        "lang.reading.lesson-08.practice.2",
+        "lang.reading.lesson-08.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-08.check.1",
+        "lang.reading.lesson-08.check.2",
+        "lang.reading.lesson-08.check.3",
+        "lang.reading.lesson-08.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Analyse the wet-cloth comparison and explain how a nearby detail limits a claim of complete helplessness.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-09",
+      "title": "Verbs shape movement and agency",
+      "refs": [
+        "3.1.1",
+        "AO2"
+      ],
+      "words": 52,
+      "practiceIds": [
+        "lang.reading.lesson-09.practice.1",
+        "lang.reading.lesson-09.practice.2",
+        "lang.reading.lesson-09.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-09.check.1",
+        "lang.reading.lesson-09.check.2",
+        "lang.reading.lesson-09.check.3",
+        "lang.reading.lesson-09.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Explain the effect of clawed, then show how Dan\u2019s actions complicate a reading of human powerlessness.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-10",
+      "title": "Sentence movement needs a local explanation",
+      "refs": [
+        "3.1.1",
+        "AO2"
+      ],
+      "words": 49,
+      "practiceIds": [
+        "lang.reading.lesson-10.practice.1",
+        "lang.reading.lesson-10.practice.2",
+        "lang.reading.lesson-10.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-10.check.1",
+        "lang.reading.lesson-10.check.2",
+        "lang.reading.lesson-10.check.3",
+        "lang.reading.lesson-10.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Analyse the contrast between the opening command and the later listening. Refer to sentence movement and context.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-11",
+      "title": "An opening directs the first questions",
+      "refs": [
+        "3.1.1",
+        "AO2"
+      ],
+      "words": 47,
+      "practiceIds": [
+        "lang.reading.lesson-11.practice.1",
+        "lang.reading.lesson-11.practice.2",
+        "lang.reading.lesson-11.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-11.check.1",
+        "lang.reading.lesson-11.check.2",
+        "lang.reading.lesson-11.check.3",
+        "lang.reading.lesson-11.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Explain how the opening and final sound guide a reader\u2019s questions about the apparently empty theatre.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-12",
+      "title": "Following a shift of focus",
+      "refs": [
+        "3.1.1",
+        "AO2"
+      ],
+      "words": 52,
+      "practiceIds": [
+        "lang.reading.lesson-12.practice.1",
+        "lang.reading.lesson-12.practice.2",
+        "lang.reading.lesson-12.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-12.check.1",
+        "lang.reading.lesson-12.check.2",
+        "lang.reading.lesson-12.check.3",
+        "lang.reading.lesson-12.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Trace the narrowing focus through three points and explain why the final exchange becomes significant.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-13",
+      "title": "Withholding and revealing information",
+      "refs": [
+        "3.1.1",
+        "AO2"
+      ],
+      "words": 56,
+      "practiceIds": [
+        "lang.reading.lesson-13.practice.1",
+        "lang.reading.lesson-13.practice.2",
+        "lang.reading.lesson-13.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-13.check.1",
+        "lang.reading.lesson-13.check.2",
+        "lang.reading.lesson-13.check.3",
+        "lang.reading.lesson-13.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Explain how the delayed revelation changes a possible first impression; distinguish curiosity from confirmed danger.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-14",
+      "title": "An ending can reframe the opening",
+      "refs": [
+        "3.1.1",
+        "AO2"
+      ],
+      "words": 52,
+      "practiceIds": [
+        "lang.reading.lesson-14.practice.1",
+        "lang.reading.lesson-14.practice.2",
+        "lang.reading.lesson-14.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-14.check.1",
+        "lang.reading.lesson-14.check.2",
+        "lang.reading.lesson-14.check.3",
+        "lang.reading.lesson-14.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Connect the ending to the opening and qualify the scale of the change.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-15",
+      "title": "Language detail or whole-text structure?",
+      "refs": [
+        "3.1.1",
+        "AO2"
+      ],
+      "words": 48,
+      "practiceIds": [
+        "lang.reading.lesson-15.practice.1",
+        "lang.reading.lesson-15.practice.2",
+        "lang.reading.lesson-15.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-15.check.1",
+        "lang.reading.lesson-15.check.2",
+        "lang.reading.lesson-15.check.3",
+        "lang.reading.lesson-15.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Distinguish one language observation from a structural pattern and explain the changed response.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-16",
+      "title": "A judgment needs a test",
+      "refs": [
+        "3.1.1",
+        "AO4"
+      ],
+      "words": 48,
+      "practiceIds": [
+        "lang.reading.lesson-16.practice.1",
+        "lang.reading.lesson-16.practice.2",
+        "lang.reading.lesson-16.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-16.check.1",
+        "lang.reading.lesson-16.check.2",
+        "lang.reading.lesson-16.check.3",
+        "lang.reading.lesson-16.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Evaluate the view that the library is presented as completely welcoming. Weigh support and a qualification.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-17",
+      "title": "Counter-evidence strengthens a qualified view",
+      "refs": [
+        "3.1.1",
+        "AO4"
+      ],
+      "words": 53,
+      "practiceIds": [
+        "lang.reading.lesson-17.practice.1",
+        "lang.reading.lesson-17.practice.2",
+        "lang.reading.lesson-17.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-17.check.1",
+        "lang.reading.lesson-17.check.2",
+        "lang.reading.lesson-17.check.3",
+        "lang.reading.lesson-17.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Evaluate a claim that Owen is entirely reckless, using evidence that both invites and limits that view.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-18",
+      "title": "Testing two possible readings",
+      "refs": [
+        "3.1.1",
+        "AO4"
+      ],
+      "words": 47,
+      "practiceIds": [
+        "lang.reading.lesson-18.practice.1",
+        "lang.reading.lesson-18.practice.2",
+        "lang.reading.lesson-18.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-18.check.1",
+        "lang.reading.lesson-18.check.2",
+        "lang.reading.lesson-18.check.3",
+        "lang.reading.lesson-18.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Compare two plausible readings of Rosa\u2019s behaviour, then explain which is better supported and what remains uncertain.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-19",
+      "title": "Building a paragraph that does analytical work",
+      "refs": [
+        "3.1.1",
+        "AO4"
+      ],
+      "words": 51,
+      "practiceIds": [
+        "lang.reading.lesson-19.practice.1",
+        "lang.reading.lesson-19.practice.2",
+        "lang.reading.lesson-19.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-19.check.1",
+        "lang.reading.lesson-19.check.2",
+        "lang.reading.lesson-19.check.3",
+        "lang.reading.lesson-19.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Write a paragraph connecting careful handling and the final action to a qualified reading of the photograph\u2019s significance.",
+      "independent": false
+    },
+    {
+      "id": "lang.reading.lesson-20",
+      "title": "Independent reading: apply and review",
+      "refs": [
+        "3.1.1",
+        "AO4"
+      ],
+      "words": 51,
+      "practiceIds": [
+        "lang.reading.lesson-20.practice.1",
+        "lang.reading.lesson-20.practice.2",
+        "lang.reading.lesson-20.practice.3"
+      ],
+      "checkIds": [
+        "lang.reading.lesson-20.check.1",
+        "lang.reading.lesson-20.check.2",
+        "lang.reading.lesson-20.check.3",
+        "lang.reading.lesson-20.check.4"
+      ],
+      "answerPositions": {
+        "practice": [
+          2,
+          0,
+          1
+        ],
+        "check": [
+          2,
+          0,
+          1,
+          2
+        ]
+      },
+      "reusedInterpretation": true,
+      "writing": "Practise distinguishing observation, inference and method here; then attempt the different passage in independent writing.",
+      "independent": true
+    }
+  ],
+  "oakSummaries": [
+    {
+      "lessonSlug": "fiction-reading-skills",
+      "sha256": "b1d0b0404098c7be6edce2c31969ae6902c38f798e019f4307b13ae1dd12acf1"
+    },
+    {
+      "lessonSlug": "after-dark-selecting-evidence-to-support-language-analysis",
+      "sha256": "7067f5a6016730989354a14cfc868902836503f7cedbe658279c1b5364207e99"
+    },
+    {
+      "lessonSlug": "murakamis-use-of-extended-metaphor",
+      "sha256": "c7338a8b1f335004ede039356b2f40ccee204a17eb541d96c060a6ca730bb02c"
+    },
+    {
+      "lessonSlug": "exploring-structure-in-after-dark",
+      "sha256": "1c528d15e8ae7c28cb31d20cccce283f4c171f5588188ce09bce8b7589dd6879"
+    },
+    {
+      "lessonSlug": "after-dark-writing-an-engaging-opening-for-a-description",
+      "sha256": "b2d534b6322376b53e5b3091ac0f4cecad9c696f2f25cd1554444ac9d9545528"
+    },
+    {
+      "lessonSlug": "confident-structural-analysis-of-an-unseen-text",
+      "sha256": "aecb4e1def88df2f80c4976233777b91188a2d976d9b01298f3148e2e701a5de"
+    },
+    {
+      "lessonSlug": "creating-a-structurally-interesting-narrative-opening",
+      "sha256": "19e57acd7202800de379e670b928743d2063b0c633a6fc49a04546f4dc2567a5"
+    },
+    {
+      "lessonSlug": "crafting-interesting-sentences",
+      "sha256": "03c4eaaeacafc66ccd2ae0d8253ed83b1cac8f6aa8b08c39d1469136de7c30e3"
+    },
+    {
+      "lessonSlug": "creating-interesting-sound-imagery",
+      "sha256": "7893725fbbb80ae5b8c1b9b10b7fe341b4dc4c13cc8efd14233d1d08c0a50541"
+    },
+    {
+      "lessonSlug": "suite-francaise-forming-opinions-on-fiction",
+      "sha256": "eae45055be1ab0a56c059186870d89e8f3ed8f9e5561122d1f56f93925624fe6"
+    },
+    {
+      "lessonSlug": "evaluating-ideas-about-a-writers-craft",
+      "sha256": "ae88c9358067933c065da2af0039f249382fae1030500889a248b67589241185"
+    },
+    {
+      "lessonSlug": "analysing-the-cellist-of-sarajevo",
+      "sha256": "4f51333eb562c7a4723b8c148b66c94adfc028118a39829c5a3683232e9e16dd"
+    },
+    {
+      "lessonSlug": "exploring-the-use-of-time-in-a-narrative",
+      "sha256": "3ea2fcc5b4cf2431144532dc8b05f8ea6eab86697bb09ce92e36111aa3eb970f"
+    },
+    {
+      "lessonSlug": "expressing-a-personal-and-critical-response-to-a-text",
+      "sha256": "1ffbf1f9a87572dc593fc31cc17fa55484e4532841f68d6f9f2abb509c04062a"
+    },
+    {
+      "lessonSlug": "exploring-and-using-symbols-in-creative-writing",
+      "sha256": "dcb50ed6dc12800eb1415959218c40f8706ad7c3f08534719c48ed9329980a48"
+    },
+    {
+      "lessonSlug": "structuring-paragraphs-effectively-in-creative-writing",
+      "sha256": "ed7c01b8911683e48abea8e9ccb56128348d179fcb8f59f3a8d262b39ee5a8ba"
+    },
+    {
+      "lessonSlug": "creating-a-written-narrative-response",
+      "sha256": "e0cffdd73d84d1c91ae2773169bbbc870f8a0135de7954c538d439b4e90bb9c8"
+    }
+  ],
+  "unavailableOakSummary": [
+    "writing-a-description-of-a-character"
+  ],
+  "passageWords": {
+    "min": 47,
+    "max": 56
+  },
+  "checksReusingPracticeInterpretation": 20,
+  "allPracticeAnswerPositionPatternsEqual": true,
+  "allCheckAnswerPositionPatternsEqual": true,
+  "specialistReview": false,
+  "appChanged": false,
+  "hostingRequired": false
+}
