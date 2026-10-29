@@ -15,7 +15,7 @@ Teachers create classes, give students logins, set specific lessons and see each
 | Backend adapter | `classroom/backend.js` | Uses Supabase when `config.js` has a URL; otherwise uses a demo backend in localStorage |
 | Database | `supabase/migrations/20261028170000_classroom.sql` | Tables, row-level security, column grants and the profile trigger |
 | Student accounts | `supabase/functions/manage-students/` | An edge function that holds the service key: creates students, resets passwords, deletes students |
-| Lesson catalogue | `classroom/catalog.json` (`tools/build-classroom-catalog.mjs`) | 926 lessons across 5 subjects for the lesson picker. A test fails if this file is stale |
+| Lesson catalogue | `classroom/catalog.json` (`tools/build-classroom-catalog.mjs`) | 946 lessons across 5 subjects for the lesson picker. A test fails if this file is stale |
 
 ### Security model
 

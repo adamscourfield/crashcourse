@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-29",
+  "batch": "Literature10",
+  "new_lessons": 20,
+  "total_built": 115,
+  "remaining_planned_literature": 60,
+  "working_literature_allocation": 175,
+  "shared_english_programme": "350sessions70weeks;provisional175Literature175reserved_unmappedLanguage",
+  "topic_units": {
+    "Macbeth": 35,
+    "A Christmas Carol": 16,
+    "An Inspector Calls": 14,
+    "Power and Conflict": 36,
+    "Unseen poetry": 6,
+    "Reading and analytical writing": 8
+  },
+  "new_practice": 60,
+  "new_checks": 80,
+  "total_practice": 345,
+  "total_checks": 460,
+  "question_ids": 805,
+  "representative_coverage_rows": 345,
+  "teacher_catalogue": 946,
+  "full_suite": {
+    "tests": 856,
+    "passed": 855,
+    "skipped": 1,
+    "failed": 0,
+    "duration_ms": 39435.457458,
+    "skip": "Postgres RLS requires CC_TEST_PG; no database configured",
+    "scope": "All lesson and redraft behaviour, before final long-reading keyboard region/font refinement"
+  },
+  "final_focused": {
+    "tests": 68,
+    "passed": 67,
+    "skipped": 1,
+    "failed": 0,
+    "duration_ms": 1097.770292,
+    "scope": "Literature content and actual handler tests;classroom catalogue;mocked AI regressions after reading refinement;final diff inspection removed unreachable duplicate handler"
+  },
+  "old95_normalised_sha256": "6ebb53c013c5fd36baa12858929d3349bea77a9222b2a3fa6959fcb6632b1dc7",
+  "official_sources": [
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/shakespeare-and-the-19th-century-novel",
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/skills"
+  ],
+  "primary_sources": "Precise Folger Macbeth scenes and Gutenberg46completeCarol;per-lesson source links and brief",
+  "rights": "Short underlying public-domain Shakespeare/Dickens passages only;original teaching analysis. No protected modern poem/play passage, editorial annotation, photograph or audio reproduced. Attribution labels identified as teaching labels.",
+  "interactions": "All20 actual offline journeys:threecards,threeviews,threedetails,wrongchallenge/retry,practice firstwrong retained,check locks,gates,draftversions/resume. Two fresh independent flows hideguidance/criteria/AIuntilfirstsubmit and retain immutablefirst/separaterevisions. Redraft missing/copy/occupied/clear/retry/resume/sourceimmutable paths.",
+  "browser": {
+    "preview": "http://localhost:4177/",
+    "desktop": "Actual six-topic map and Macbeth35list;M01allcards/details/views,wrongchallenge/retry,wrongpractice/retry,automaticQ2,draftversionreload;M14fresh5.3passage/hiddenguidance/draftreload/firstsubmit;M15copy/editeddraftprotected/saveversionreload;Carol15of16/sourcechecked29October;newlongpassage labelledkeyboardregion/PageDownscrollverified",
+    "phone": "390x844Carol;documentwidth390;nolonghorizontaloverflow;newpassage17px/prewrap;keyboardregion controls. Desktop18px;boundedscroll. Viewport reset after QA.",
+    "console_errors_sampled": 0,
+    "old_progress": "Previous Literature/unseen draft retained;no storage reset or inventedknowledgecompletion. Labelledpreviewdrafts only.",
+    "limits": "Sampled desktop/phone journeys,not all20fullbrowserorfullassistivetechnologyaudit. Existing reducedmotion styles retained;no newmotion introduced."
+  },
+  "writing": "Saved not marked;no actualessay/specialistreview;timingadvisory25/45minnotenforced;externalresourcesnotpoliced;userdeferredAPIsetup,no realAPIcall",
+  "publication": {
+    "status": "pending",
+    "canonical_app_commit": null,
+    "site_source_commit": null,
+    "deployment": null,
+    "audience": "Existingowner-privateunchanged;staticlessons/unconfiguredclassroomdemo"
+  },
+  "next": "20:remaining12Carolworkshops_and_first8Inspectorworkshops;detailedbriefsfirst"
+}

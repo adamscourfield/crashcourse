@@ -4,16 +4,16 @@ Confirmed by the user: Macbeth, A Christmas Carol, An Inspector Calls and Power 
 
 ## Authoring sequence
 
-The original98IDs are retained within a revised **175-session Literature working allocation**. The user confirmed350sessions shared by Literature and Language (70weeks×5). An adjustable175/175split is the current planning assumption; see english-programme-plan.md and english-70-week-programme.csv. It is not an AQA lesson-count requirement.95lessons are implemented;80planned sessions remain unavailable.
+The original98IDs are retained within a revised **175-session Literature working allocation**. The user confirmed350sessions shared by Literature and Language (70weeks×5). An adjustable175/175split is the current planning assumption; see english-programme-plan.md and english-70-week-programme.csv. It is not an AQA lesson-count requirement.115lessons are implemented;60planned sessions remain unavailable.
 
 | Topic | Working allocation | Implemented |
 |---|---:|---:|
-| Macbeth |35|20|
-| A Christmas Carol |28|14|
+| Macbeth |35|35|
+| A Christmas Carol |28|16|
 | An Inspector Calls |28|14|
 | Power and Conflict |49|36|
 | Unseen poetry |15|6|
-| Reading and analytical writing |20|5|
+| Reading and analytical writing |20|8|
 
 77additional sessions provide sustained reading, close analysis, full writing, comparison, context, retrieval, assessment, feedback and redrafting. Each requires a detailed brief before implementation. The separate175Language slots are reserved and unmapped, not built lessons. School session length has not been provided; app activity estimates must be calibrated with reading, discussion, drafting and feedback.
 Macbeth chronological teaching spans every scene, followed by thematic, character and writing work. Carol covers all five staves; Inspector all three acts. Each of the 15 anthology poems has meaning/voice and methods/comparison lessons. No small subset substitutes for the whole cluster. Reading/writing skills are also practised inside each text lesson; standalone skills units should be interleaved, not postponed until the end.
@@ -47,3 +47,5 @@ Independent Macbeth writing now has a separate workspace that hides lesson guida
 Inspector starts in Paper2with clearly labelled original scene summaries and dramatic-feature lenses. Protected play text is not reproduced or called public domain. Students consult an authorised copy. Carol now has a separate independent-writing task using a verified public-domain supplied extract; no automatic essay mark.
 
 Batch9:20units complete the original30poem/6comparison anthologycore, introduce6unseenunits with9complete public-domain poems and5dedicatedskillsunits. Expandedworkshops and reviewedwriting remain planned. Unseen means unfamiliarreadingpractice, not a guarantee a student has never encountered a text. Three independentworkspaces preserve firstresponses; freshsingle/pair texts differ from guidedmodels; suggestedtiming not enforced. Next20remaining3originalskills,15Macbethworkshops,first2Carolworkshops. AIkeysetup remains explicitly deferred.
+
+Batch10:20units add the remaining3originalskills, all15Macbethworkshops and first2Carolworkshops.115built/60planned;Macbeth35allocatedteachingunits built,not specialist/writing sign-off. Fresh5.3insecurity assessment and memory-basedskillspractice preserve firstresponses;redraft copies firstassessment only to an empty draft. Original analysis and public-domain evidence;timingadvisory,AIinactive. Next20:remaining12Carolworkshops,first8Inspectorworkshops. See batch10brief/QA/publicationreceipt.
