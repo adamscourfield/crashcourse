@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-29",
+  "apiVersion": "v1",
+  "authenticatedReadOnlyRequests": 11,
+  "status": "discovery_not_full_curriculum_validation",
+  "cachedResponses": [
+    {
+      "endpoint": "/lessons/fiction-reading-skills/summary",
+      "sha256": "b1d0b0404098c7be6edce2c31969ae6902c38f798e019f4307b13ae1dd12acf1",
+      "records": null
+    },
+    {
+      "endpoint": "/programmes/english-secondary-year-10-aqa/units",
+      "sha256": "6accc94d9cb5b74791baf4feb76a82551603761d8bf37e3f4a80ea4d17343c2c",
+      "records": 17
+    },
+    {
+      "endpoint": "/programmes/english-secondary-year-11-aqa/units",
+      "sha256": "c795715132e5697d210894eadab97dde6e6062eaf6a2e2626a42c2102f1f9135",
+      "records": 31
+    },
+    {
+      "endpoint": "/subjects",
+      "sha256": "9d87a80dfd49c3a3f53da6e6a81c3d54300944be3e6e935d38abe13528fa2a23",
+      "records": 17
+    },
+    {
+      "endpoint": "/subjects/english/programmes",
+      "sha256": "e872ad141cdc2d24b744e0a912f8913625a65ea89dbf1bab3b35d9ea3161a1d5",
+      "records": 15
+    },
+    {
+      "endpoint": "/subjects/geography/programmes",
+      "sha256": "cf7b8519387552abe9e68c3c5e1eb84c0e0c325590dad985c53b8c0ef162f567",
+      "records": 13
+    },
+    {
+      "endpoint": "/subjects/history/programmes",
+      "sha256": "7090ee6325597cdbafeb9718854265e473b95e5330d6e3fca3d4ae7c4477f9e8",
+      "records": 13
+    },
+    {
+      "endpoint": "/subjects/maths/programmes",
+      "sha256": "b56cd4b377080c14f3dfd12de5fc8d58ecc822b75686384d2c87db04cb2b76a8",
+      "records": 13
+    },
+    {
+      "endpoint": "/subjects/science",
+      "sha256": "14c147312834bd9625f92cbdbec731d53985cc68b15f26f672a58e653772bb2e",
+      "records": null
+    },
+    {
+      "endpoint": "/subjects/science/programmes",
+      "sha256": "66f7f50397f2524a8dfc5cb804c429d65efb4f72a5ad0dd7bb6e510b6235c945",
+      "records": 9
+    },
+    {
+      "endpoint": "/units/fiction-read-around-the-world/summary",
+      "sha256": "77187bbf582060774836143a2efd5f234b0e546d824fc94f679b02d42bc9acc6",
+      "records": null
+    }
+  ],
+  "bulkSchemaRequiredFields": [
+    "sequenceSlug",
+    "subjectTitle",
+    "sequence",
+    "lessons"
+  ],
+  "bulkDownloaded": false,
+  "frontendChanged": false
+}

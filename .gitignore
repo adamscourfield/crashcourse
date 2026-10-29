@@ -23,3 +23,6 @@ coverage/
 /science-app/dist/client/
 /science-app/dist/.openai/
 /science-app/runtime/public/
+
+# Local external curriculum credentials and downloads
+/.private/
