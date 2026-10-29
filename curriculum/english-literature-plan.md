@@ -4,15 +4,15 @@ Confirmed by the user: Macbeth, A Christmas Carol, An Inspector Calls and Power 
 
 ## Authoring sequence
 
-The original98IDs are retained within a revised **175-session Literature working allocation**. The user confirmed350sessions shared by Literature and Language (70weeks×5). An adjustable175/175split is the current planning assumption; see english-programme-plan.md and english-70-week-programme.csv. It is not an AQA lesson-count requirement.135lessons are implemented;40planned sessions remain unavailable.
+The original98IDs are retained within a revised **175-session Literature working allocation**. The user confirmed350sessions shared by Literature and Language (70weeks×5). An adjustable175/175split is the current planning assumption; see english-programme-plan.md and english-70-week-programme.csv. It is not an AQA lesson-count requirement.155lessons are implemented;20planned sessions remain unavailable.
 
 | Topic | Working allocation | Implemented |
 |---|---:|---:|
 | Macbeth |35|35|
 | A Christmas Carol |28|28|
-| An Inspector Calls |28|22|
-| Power and Conflict |49|36|
-| Unseen poetry |15|6|
+| An Inspector Calls |28|28|
+| Power and Conflict |49|49|
+| Unseen poetry |15|7|
 | Reading and analytical writing |20|8|
 
 77additional sessions provide sustained reading, close analysis, full writing, comparison, context, retrieval, assessment, feedback and redrafting. Each requires a detailed brief before implementation. The separate175Language slots are reserved and unmapped, not built lessons. School session length has not been provided; app activity estimates must be calibrated with reading, discussion, drafting and feedback.
@@ -51,3 +51,5 @@ Batch9:20units complete the original30poem/6comparison anthologycore, introduce6
 Batch10:20units add the remaining3originalskills, all15Macbethworkshops and first2Carolworkshops.115built/60planned;Macbeth35allocatedteachingunits built,not specialist/writing sign-off. Fresh5.3insecurity assessment and memory-basedskillspractice preserve firstresponses;redraft copies firstassessment only to an empty draft. Original analysis and public-domain evidence;timingadvisory,AIinactive. Next20:remaining12Carolworkshops,first8Inspectorworkshops. See batch10brief/QA/publicationreceipt.
 
 Batch11:12remainingCarolworkshops and first8Inspectorworkshops.135built/40planned;Carol28andMacbeth35allocatedteachingbuilt, specialist/writingreviewpending. FreshStave3assessment/emptydraftredraft;Inspectororiginalcommentarylabelled,authorisedplayrequired. Newlanguageviewskeyboardboundedreading,18/17px;old115recordsunchanged. Next20:Inspectorremaining6,Poetry13extendedworkshops,Unseenfirstextendedworkshop;briefsfirst.
+
+Batch12:6remainingInspectorworkshops,13anthologyworkshops,firstextendedUnseenvoiceworkshop.155built/20planned. Inspector28/Poetry49allocatedteachingbuilt,not specialist/writingreview. Newwholeplayassessment,closedbookmemorypractice,freshfullLondoncomparison;firstresponses/revisionsseparate,2redrafthandovers. A BirthdaycompletePD16lines1890text+glosses. Next20remaining8Unseenand12skillsworkshops;briefsfirst.

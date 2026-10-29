@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-29",
+  "batch": "Literature12",
+  "new_lessons": 20,
+  "total_built": 155,
+  "remaining_planned_literature": 20,
+  "working_literature_allocation": 175,
+  "shared_english_programme": "350sessions70weeks;provisional175Literature175reserved_unmappedLanguage",
+  "topic_units": {
+    "Macbeth": 35,
+    "A Christmas Carol": 28,
+    "An Inspector Calls": 28,
+    "Power and Conflict": 49,
+    "Unseen poetry": 7,
+    "Reading and analytical writing": 8
+  },
+  "new_practice": 60,
+  "new_checks": 80,
+  "total_practice": 465,
+  "total_checks": 620,
+  "question_ids": 1085,
+  "representative_coverage_rows": 465,
+  "teacher_catalogue": 986,
+  "full_suite": {
+    "tests": 870,
+    "passed": 869,
+    "skipped": 1,
+    "failed": 0,
+    "duration_ms": 37921.201417,
+    "skip": "Postgres RLS requires CC_TEST_PG;database not configured",
+    "scope": "All new lesson/runtime behaviour;before final duplicate assessment label refinement"
+  },
+  "final_focused": {
+    "tests": 81,
+    "passed": 80,
+    "skipped": 1,
+    "failed": 0,
+    "duration_ms": 2000.9475,
+    "scope": "Literaturecontent/actualhandlers,classroomcatalogue,mockedAI after all app refinements"
+  },
+  "old135_normalised_sha256": "409f7acde257ece05f9fd0609516acb8972222b9cf999d92e7375c15e4088c46",
+  "official_sources": [
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/modern-texts-and-poetry",
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/skills",
+    "https://filestore.aqa.org.uk/resources/english/AQA-8702-TG-POEMS.PDF"
+  ],
+  "rights": "Assignedplay/poemviewsoriginalcommentaryexplicitlylabelled,not passages. FullPDLondon onlyinfreshcomparisonassessment followsAQAspelling/lineation. CompletePDA Birthday16lines/two8linestanzas,1890wordingfromRPO. No copiedmodernpoem/scriptpassage/editorialanalysis/audio/photo. Authorisedassignedtextsrequired.",
+  "texts": {
+    "london": "Complete16lines/fourstanzas;AQAanthologypage22;typographicapostrophesnormalised",
+    "birthday": "Complete16lines/twostanzasplusattributionheader;1890Poemsviahttps://rpo.library.utoronto.ca/content/birthday;originalvocabularyglosses;unfamiliarreadingnotsetpoem"
+  },
+  "interactions": "All20actualofflinehandlerjourneyswrongchallenge/retry,3cards/3details/3views,gates,practicefirstwrongretained,lockedchecks,draftversions/resume. ThreeindependentformatsI13wholeplay/P11memory/P12comparisonhideguidance/criteria/AIuntilfirstsubmit;immutablefirstresponse/separaterevisions. Bothredraftmissing/copy/occupied/sourceimmutable/resume paths. Unseenkeyboardgloss/source/recallisolationverified.",
+  "browser": {
+    "preview": "http://localhost:4177/",
+    "desktop": "P01cards/details/views,wrongchallenge/retry,wrongpractice/retry/automaticQ2,draftversionreload;P12completeLondon/choiceofsecondpoem/hiddencriteria/draftreload/firstsubmit;P13copy/edit/occupiedprotection/saveversionreload;U01full16linepoem/gloss/sourceedition29October",
+    "phone": "390x844U01;documentwidth390;font17px/prewrap;keyboardEndscrollTop816;completepoem17nonemptylinesincludingattributionheader;viewportreset",
+    "console_errors_sampled": 0,
+    "old_progress": "Old135recordsunchanged;no localstorage reset or inventedcompletion;labelledpreviewdraftsonly.",
+    "limits": "Sampledjourneys,not all20fullbrowserorfullassistivetechnologyaudit. No newmotion;existingreducedmotionretained."
+  },
+  "writing": "Unmarked;specialist/actualwrittenresponse reviewpending.25/45minadvisorynotforced;externalresourcesnotpoliced;AIkeysetupdeferred/noactualproviderrequest.",
+  "publication": {
+    "status": "pending",
+    "canonical_app_commit": null,
+    "site_source_commit": null,
+    "deployment": null,
+    "audience": "Existingownerprivateunchanged;staticlessons/unconfiguredclassroomdemo"
+  },
+  "next": "Final20:remaining8Unseenworkshops_and12skillsworkshops;detailedbriefsfirst"
+}
