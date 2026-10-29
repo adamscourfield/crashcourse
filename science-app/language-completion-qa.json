@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-29",
+  "scope": "Remaining155 English Language workshop sessions;175total;9topics;0unbuilt roadmap slots",
+  "counts": {
+    "newLessons": 155,
+    "allLanguage": 175,
+    "newPractice": 155,
+    "newChecks": 155,
+    "allActiveQuestions": 450,
+    "draftGatedWorkshops": 138,
+    "newIndependentWorkspaces": 17,
+    "sourceExtracts": 5,
+    "teacherCatalogueTotal": 1181
+  },
+  "fullSuite": {
+    "tests": 893,
+    "passed": 892,
+    "skipped": 1,
+    "failed": 0,
+    "durationMs": 37832.577083,
+    "skip": "Unconfigured Postgres RLS; no production database assertion"
+  },
+  "finalFocused": {
+    "tests": 58,
+    "passed": 58,
+    "failed": 0,
+    "durationMs": 3594.474916,
+    "scope": "Language/completion/shared studio/classroom after source-note-only followup"
+  },
+  "handlerVerification": "All155 new journeys:wrong/correct challenge and practice;non-empty saved draft gate where applicable;new-case check reasoning hidden;all17 independent first responses immutable and revisions separate;resume and isolated Language storage. Existing20 journeys and legacy migration also pass.",
+  "foundationAssessmentWritingHash": "575a22f04dbae20f8c320471527456913ec6a8b8b478ed2d22ce8fd074cca716",
+  "dataVerification": [
+    "175 unique stable roadmap/runtime/title alignments",
+    "155 new register rows;9topics;350 English timetable slots unchanged",
+    "450 unique active question IDs and valid keys",
+    "138draft gates and17independent workspaces",
+    "Revision links resolve to earlier assessments",
+    "155coverage and155Oak comparator rows",
+    "Five excerpts match original source after whitespace normalisation",
+    "Credential excluded from eligible source"
+  ],
+  "browser": {
+    "verified": [
+      "All9topics visible;175lesson total",
+      "Fiction original worked example separate from Mansfield1922 extract",
+      "Correct practice routes to required writing;Save a version immediately enters Check",
+      "Paired nonfiction SourceA Seacole/SourceB Muir1911 visible",
+      "Phone390x844:17px extract,390px scroll width/no horizontal overflow",
+      "Focused longer reading region keyboard scrolling to2687px",
+      "Spoken final workspace says REHEARSAL LOG and app cannot award endorsement",
+      "Desktop restored;course-map screenshot saved"
+    ],
+    "screenshot": "crash-course-language-complete-preview.png",
+    "limits": [
+      "Not all155lessons manually exercised in browser",
+      "No real student, duration, assistive-technology or specialist review",
+      "No actual written mark or live spoken assessment;device logs cannot prove performance",
+      "Five selected authentic extracts are not exhaustive unseen/genre range"
+    ]
+  },
+  "sourceHashes": {
+    "science-app/dist/language/content.js": "645d983046298100a61c78562b5deabddfe45b550b837951a5f9b25d86801107",
+    "science-app/dist/language/completion.js": "9a246fb80c0a1a5a2e5c04a7a6d0670aaeb86f2b09e2df9d597478e69ad4987e",
+    "science-app/dist/language/completion-data.js": "10c14c035472fc893d60cac8ab964e7fd41952e90f48e53ce20ea7a247bb21af",
+    "science-app/dist/language/source-bank.js": "de3f190abbc585d3d27b930e8b075c04036c5f40729fe1fdcd69b66c83f1569d",
+    "science-app/dist/literature/studio.js": "07f16ebfd97aebd53f97358d37e598c0d0fd88b484484cbfaf06627208e15f0c"
+  },
+  "github": "pending",
+  "hosting": "pending",
+  "aiProviderCalled": false,
+  "specialistReview": false
+}
