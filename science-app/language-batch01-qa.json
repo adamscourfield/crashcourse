@@ -49,9 +49,17 @@
   "ai": "Key setup deferred; course AI hook disabled; no provider call",
   "classroom": "Demo catalogue/allowlist updated; migration20261029140000 not applied to unconfigured production database; no RLS/grant change",
   "publication": {
-    "github": "pending",
-    "hosting": "pending",
-    "audience": "Existing owner-private unchanged"
+    "github": "Canonical app pushed; exact remote SHA and clean status verified before packaging",
+    "canonical_app_commit": "d6ed289dbb7304c30bfe7134dacdbca1dc5003a6",
+    "hosting": "succeeded",
+    "source_commit": "20b9a6f6964357c73b0709782619c08aed618de6",
+    "tracked_frontend_files_hash_matched": 719,
+    "deployment_id": "appgdep_6ae3561e34f48191a812270cb0decaad",
+    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_e1632004d7908191af48c5b3795a6557",
+    "updated_at": "2026-10-29T14:20:28.943306+00:00",
+    "audience": "Existing owner-private unchanged",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "receipt": "Receipt-only GitHub commit follows; app unchanged."
   },
   "next": "Fiction-language20; authentic lawful established-writer texts and sustained analysis; briefs first",
   "preview": "crash-course-language-batch01-preview.jpg"
