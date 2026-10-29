@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-29",
+  "batch": "Literature13",
+  "new_lessons": 20,
+  "total_built": 175,
+  "remaining_planned_literature": 0,
+  "working_literature_allocation": 175,
+  "shared_english_programme": "350 shared sessions; provisional175 Literature built /175 Language reserved-unmapped, not built",
+  "topic_units": {
+    "Macbeth": 35,
+    "A Christmas Carol": 28,
+    "An Inspector Calls": 28,
+    "Power and Conflict": 49,
+    "Unseen poetry": 15,
+    "Reading and analytical writing": 20
+  },
+  "new_practice": 60,
+  "new_checks": 80,
+  "total_practice": 525,
+  "total_checks": 700,
+  "question_ids": 1225,
+  "representative_coverage_rows": 525,
+  "teacher_catalogue": 1006,
+  "full_suite": {
+    "tests": 875,
+    "passed": 874,
+    "skipped": 1,
+    "failed": 0,
+    "duration_ms": 38830.997834,
+    "skip": "Postgres RLS requires CC_TEST_PG; database not configured"
+  },
+  "final_focused": {
+    "tests": 67,
+    "passed": 67,
+    "failed": 0,
+    "duration_ms": 2710.715334
+  },
+  "old155_normalised_sha256": "b62b50795122cc6ae52679780fbf39d7c2be3167985e071ecc28fc2e4d7ec8dc",
+  "offline_QA": [
+    "All20 actual handler journeys: discovery gates, all views/details, wrong challenge/retry, practice first-answer preservation, check locks, draft versions/resume",
+    "Four independent formats: fresh single poem/pair and Paper1/Paper2 rehearsals; guidance/conference hidden first attempt; first response immutable; separate revisions/resume",
+    "Unseen pair revision: missing source, copy first response only, occupied protection, source unchanged, saved version resume",
+    "Ten complete poems line/stanza counts, attributed sources, fresh assessment text separation; original editing exercise not labelled play quotation",
+    "175 progress denominator and explicit Language planned / writing review pending"
+  ],
+  "browser_QA": {
+    "browser": "Actual IAB localhost4177",
+    "samples": [
+      "U02 all3 explanation/cards/details/views, wrong challenge/retry, wrong practice/retry and automatic next toQ2",
+      "U02 labelled preview draft saved version and reload",
+      "U08 fresh complete Blake/Wordsworth pair; guidance hidden; labelled preview first draft reload/submit",
+      "U09 first response handover, occupied-draft protection, edit/save version/reload",
+      "Skills12 four original tasks, modern question choice and complete anthology/unfamiliar poems; hidden criteria/conference first attempt; conference after submission; separate revision",
+      "U03 phone390x844 complete poem,17px pre-wrap, document width390; keyboard End scrollTop680.5 of1227 with547client height; restored1440x1000",
+      "No sampled browser console errors; existing progress/drafts preserved, no reset"
+    ],
+    "limitations": "Sampled browser journeys, not all20 full browser paths or complete assistive-technology audit"
+  },
+  "source_checks": "Official AQA8702 skills/scheme/at-a-glance; Folger Macbeth2.1; Gutenberg CarolStave2; original PD poem source URLs and edition notes in reading-texts13.js, checked29October2026",
+  "rights": "Original explanations/questions; complete underlying PD poems and short PD Shakespeare/Dickens passages. No protected Priestley/modern anthology passage reproduced. Authorised assigned texts still required.",
+  "specialist_review": "not_reviewed",
+  "written_response_review": "not_reviewed; writing saved not marked, click success is not essay mastery",
+  "timing": "105/135 minute rehearsals advisory/not enforced; pilot calibration needed",
+  "ai": "API key setup deferred by user; no real provider call",
+  "publication": {
+    "github": "pending",
+    "hosting": "pending",
+    "audience": "Existing owner-private confirmed; unchanged"
+  },
+  "next_action": "Specialist statement-to-writing audit, historical unfamiliar poetry range review, timing/pilot/accessibility calibration; plan Language separately",
+  "preview": "crash-course-literature-batch13-preview.jpg"
+}

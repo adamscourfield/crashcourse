@@ -4,10 +4,10 @@ import {readFileSync} from 'node:fs';
 import {lessons,topics} from '../dist/literature/content.js';
 import {restore,literatureGates,choiceIndices,viewHTML,draftVersionsHTML} from '../dist/literature/studio.js';
 import {subjects} from '../dist/progress.js';
-test('Literature has 155 text-scoped lessons and 1085 stable question IDs',()=>{
- assert.equal(lessons.length,155);assert.equal(new Set(lessons.map(l=>l.id)).size,155);
+test('Literature has 175 text-scoped lessons and 1225 stable question IDs',()=>{
+ assert.equal(lessons.length,175);assert.equal(new Set(lessons.map(l=>l.id)).size,175);
  const ids=new Set();for(const l of lessons){assert(topics.some(t=>t.id===l.topicId));assert.equal(l.cards.length,3);assert.equal(l.practice.length,3);assert.equal(l.check.length,4);assert.equal(l.views[0].kind,'language');assert.equal(l.views[0].words.length,3);assert(l.writing&&l.rubric.length===3);for(const q of [...l.practice,...l.check]){assert(!ids.has(q.id));ids.add(q.id);assert(q.options[q.answer]);assert(q.why);}}
- assert.equal(ids.size,1085);assert.equal(subjects.find(s=>s.id==='english-literature').status,'available');
+ assert.equal(ids.size,1225);assert.equal(subjects.find(s=>s.id==='english-literature').status,'available');
 });
 test('Knowledge gates require all language details, practice and independent answers; writing is separate',()=>{
  const l=lessons[0],p={seen:[0,1,2],passed:[0],observed:[0,1,2],wordSeen:[0,1],practice:Object.fromEntries(l.practice.map(q=>[q.id,{correct:true}])),checks:Object.fromEntries(l.check.map(q=>[q.id,q.answer])),draft:'A long draft is not a mark.'};
@@ -95,7 +95,7 @@ test('Batch 9 follows twenty stable roadmap units across anthology, unseen and w
  assert.deepEqual(batch09.slice(9,15).map(l=>l.id),Array.from({length:6},(_,i)=>`lit.unseen.lesson-${String(i+1).padStart(2,'0')}`));
  assert.deepEqual(batch09.slice(15).map(l=>l.id),Array.from({length:5},(_,i)=>`lit.skills.lesson-${String(i+1).padStart(2,'0')}`));
  for(const l of batch09){assert(l.sourceNote);assert.equal(l.cards.length,3);assert(l.cards.every(c=>c[1].length>170));assert.equal(l.views[0].words.length,3);assert.equal(l.views[2].events.length,4);assert(l.tasks[0][4].length>45);assert(l.rubric.every(x=>x.length>45));assert.equal(new Set([...l.practice,...l.check].map(q=>q.prompt)).size,7);for(const q of [...l.practice,...l.check])assert(q.concept.startsWith(l.id.split('.').slice(0,2).join('.')+'.'));}
- assert.equal(lessons.filter(l=>l.topicId==='english-literature.power-conflict').length,49);assert.equal(lessons.filter(l=>l.topicId==='english-literature.unseen').length,7);assert.equal(lessons.filter(l=>l.topicId==='english-literature.reading-writing').length,8);
+ assert.equal(lessons.filter(l=>l.topicId==='english-literature.power-conflict').length,49);assert.equal(lessons.filter(l=>l.topicId==='english-literature.unseen').length,15);assert.equal(lessons.filter(l=>l.topicId==='english-literature.reading-writing').length,20);
 });
 test('Unfamiliar poetry includes complete attributed public-domain texts, correct editions and fresh independent stimuli',async()=>{
  const {readings,wholeReading}=await import('../dist/literature/reading-texts09.js');const lengths={adlestrop:16,uphill:16,thrush:32,rains:13,barter:18,remember:14,glass:12,hope:12,sympathy:21};for(const[k,n]of Object.entries(lengths)){assert.equal(readings[k].text.split('\n').filter(x=>x.trim()).length,n,k);assert(readings[k].url.startsWith('https://'));assert(readings[k].author);assert(readings[k].note.includes('public-domain'));}
@@ -111,7 +111,7 @@ test('Batch 10 adds twenty mapped workshops with distinct evidence and feedback'
  const {batch10}=await import('../dist/literature/content-batch10.js');assert.equal(batch10.length,20);
  assert.deepEqual(batch10.slice(0,3).map(l=>l.id),[6,7,8].map(i=>`lit.skills.lesson-0${i}`));assert.deepEqual(batch10.slice(3,18).map(l=>l.id),Array.from({length:15},(_,i)=>`lit.macbeth.workshop-${String(i+1).padStart(2,'0')}`));assert.deepEqual(batch10.slice(18).map(l=>l.id),['lit.carol.workshop-01','lit.carol.workshop-02']);
  for(const l of batch10){assert.equal(l.checked,'29 October 2026');assert(l.sourceNote);assert(l.sources.every(u=>u.startsWith('https://')));assert(l.cards.every(c=>c[1].length>170));assert.equal(l.views[2].events.length,4);assert(l.tasks[0][4].length>45);assert(l.rubric.every(x=>x.length>45));assert.equal(new Set([...l.practice,...l.check].map(q=>q.prompt)).size,7);assert(l.refs.includes('3.3'));for(const q of [...l.practice,...l.check]){assert(q.id.startsWith(l.id+'.'));assert(q.concept.startsWith(l.id+'.'));assert.equal(new Set(q.options).size,3);assert(q.why.length>35);}}
- for(const [topic,n] of [['macbeth',35],['christmas-carol',28],['reading-writing',8]])assert.equal(lessons.filter(l=>l.topicId===`english-literature.${topic}`).length,n);
+ for(const [topic,n] of [['macbeth',35],['christmas-carol',28],['reading-writing',20]])assert.equal(lessons.filter(l=>l.topicId===`english-literature.${topic}`).length,n);
 });
 test('Batch 10 independent stimuli and assessment-to-redraft relationship are explicit',()=>{
  const skills=lessons.find(l=>l.id==='lit.skills.lesson-08'),exam=lessons.find(l=>l.id==='lit.macbeth.workshop-14'),redraft=lessons.find(l=>l.id==='lit.macbeth.workshop-15');
@@ -138,7 +138,7 @@ test('All 115 earlier lesson records remain unchanged in batch 11',async()=>{
 test('Batch 12 adds six modern text, thirteen anthology and one unfamiliar voice workshop',async()=>{
  const {batch12}=await import('../dist/literature/content-batch12.js');assert.equal(batch12.length,20);assert.deepEqual(batch12.slice(0,6).map(l=>l.id),Array.from({length:6},(_,i)=>`lit.inspector.workshop-${String(i+9).padStart(2,'0')}`));assert.deepEqual(batch12.slice(6,19).map(l=>l.id),Array.from({length:13},(_,i)=>`lit.power-conflict.workshop-${String(i+1).padStart(2,'0')}`));assert.equal(batch12[19].id,'lit.unseen.workshop-01');
  for(const l of batch12){assert(l.cards.every(c=>c[1].length>170));assert.equal(l.views[0].words.length,3);assert.equal(l.views[2].events.length,4);assert(l.tasks[0][4].length>45);assert(l.rubric.every(x=>x.length>45));assert.equal(new Set([...l.practice,...l.check].map(q=>q.prompt)).size,7);assert.equal(l.checked,'29 October 2026');for(const q of [...l.practice,...l.check]){assert(q.id.startsWith(l.id+'.'));assert(q.concept.startsWith(l.id+'.'));assert.equal(new Set(q.options).size,3);assert(q.why.length>35);}if(l.topicId!=='english-literature.unseen'){assert.equal(l.rights,'protected_summary_only');assert(l.views[0].originalSummary);assert(!viewHTML(l.views[0]).includes('<blockquote'));assert(viewHTML(l.views[0]).includes(l.topicId.endsWith('inspector-calls')?'NOT A PLAY QUOTATION':'NOT A POEM QUOTATION'));}}
- assert.equal(lessons.filter(l=>l.topicId==='english-literature.inspector-calls').length,28);assert.equal(lessons.filter(l=>l.topicId==='english-literature.power-conflict').length,49);assert.equal(lessons.filter(l=>l.topicId==='english-literature.unseen').length,7);
+ assert.equal(lessons.filter(l=>l.topicId==='english-literature.inspector-calls').length,28);assert.equal(lessons.filter(l=>l.topicId==='english-literature.power-conflict').length,49);assert.equal(lessons.filter(l=>l.topicId==='english-literature.unseen').length,15);
 });
 test('Batch 12 supplies complete attributed public-domain texts and correctly distinct assessment formats',async()=>{
  const {birthday,london}=await import('../dist/literature/content-batch12.js');const lines=t=>t.split('\n').filter(x=>x.trim()).slice(1);assert.equal(lines(birthday).length,16);assert.equal(lines(london).length,16);assert.equal(birthday.split('\n\n').length,3);assert.equal(london.split('\n\n').length,5);assert(london.includes('The mind-forged manacles I hear:'));assert(london.includes('I wander through each chartered street,'));
@@ -147,4 +147,17 @@ test('Batch 12 supplies complete attributed public-domain texts and correctly di
 });
 test('All 135 earlier lesson records remain unchanged in batch 12',async()=>{
  const {createHash}=await import('node:crypto');const sorted=v=>Array.isArray(v)?v.map(sorted):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,sorted(v[k])])):v;assert.equal(createHash('sha256').update(JSON.stringify(sorted(lessons.slice(0,135)))).digest('hex'),'409f7acde257ece05f9fd0609516acb8972222b9cf999d92e7375c15e4088c46');
+});
+
+test('Final twenty preserve the roadmap, substantial feedback and all 155 earlier records',async()=>{
+ const {batch13}=await import('../dist/literature/content-batch13.js');assert.equal(batch13.length,20);
+ assert.deepEqual(batch13.slice(0,8).map(l=>l.id),Array.from({length:8},(_,i)=>`lit.unseen.workshop-${String(i+2).padStart(2,'0')}`));
+ assert.deepEqual(batch13.slice(8).map(l=>l.id),Array.from({length:12},(_,i)=>`lit.skills.workshop-${String(i+1).padStart(2,'0')}`));
+ for(const l of batch13){assert(l.refs.includes('3.3'));assert.equal(l.cards.length,3);assert.equal(l.views.length,3);assert.equal(l.views[2].events.length,4);assert(l.rubric.every(x=>x.length>45));for(const q of [...l.practice,...l.check]){assert(q.id.startsWith(l.id+'.'));assert(q.concept.startsWith(l.id+'.'));assert(q.why.length>35);}}
+ const {createHash}=await import('node:crypto');const sort=v=>Array.isArray(v)?v.map(sort):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,sort(v[k])])):v;assert.equal(createHash('sha256').update(JSON.stringify(sort(lessons.slice(0,155)))).digest('hex'),'b62b50795122cc6ae52679780fbf39d7c2be3167985e071ecc28fc2e4d7ec8dc');
+});
+test('Final unseen stimuli retain complete poems and fresh assessment texts',async()=>{
+ const {readings13:r}=await import('../dist/literature/reading-texts13.js');const counts={eagle:[6,2],tropics:[12,3],swing:[12,3],spell:[12,3],fears:[14,1],poison:[16,4],dwelt:[12,3],fig:[4,1],daffodils:[24,4],leisure:[14,7]};for(const[k,[lines,stanzas]]of Object.entries(counts)){assert.equal(r[k].text.split('\n').filter(x=>x.trim()).length,lines,k);assert.equal(r[k].text.split('\n\n').length,stanzas,k);assert(r[k].note.includes('public-domain'));assert(r[k].url.startsWith('https://'));}
+ const single=lessons.find(l=>l.id==='lit.unseen.workshop-07'),pair=lessons.find(l=>l.id==='lit.unseen.workshop-08');assert(single.independentExtract.includes(r.fears.text));assert(!single.views[0].content.includes(r.fears.text));for(const k of ['poison','dwelt']){assert(pair.independentExtract.includes(r[k].text));assert(!pair.views[0].content.includes(r[k].text));}assert.equal(lessons.find(l=>l.id==='lit.unseen.workshop-09').revisionFrom,pair.id);
+ const p1=lessons.find(l=>l.id==='lit.skills.workshop-11'),p2=lessons.find(l=>l.id==='lit.skills.workshop-12');assert(p1.independentExtract.includes('heat-oppressèd'));assert(p1.independentExtract.includes('Fezziwig'));assert(p2.independentExtract.includes(r.leisure.text));assert(p2.independentExtract.includes(r.daffodils.text));assert(!p2.views[0].content.includes(r.leisure.text));for(const l of [p1,p2]){assert.equal(l.feedbackConference.length,3);assert(l.independentIntro.includes('not enforced'));}assert.equal(lessons.find(l=>l.id==='lit.skills.workshop-10').rights,'original_teaching');
 });

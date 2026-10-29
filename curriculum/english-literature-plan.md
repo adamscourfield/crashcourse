@@ -1,10 +1,16 @@
+## Final Literature allocation implemented — 29 October 2026
+
+Batch13 completes the remaining8 Unseen workshops and12 reading/writing workshops.175 built /0 unbuilt roadmap slots. New complete public-domain poems support fresh single/pair assessments; two original paper rehearsals follow AQA section formats with advisory105/135-minute budgets. No official paper or automatic essay mark is claimed. Feedback conferences appear after first submission; self-review is distinct from a teacher actually reading work. Sources and detailed brief: curriculum/briefs/literature-batch13.md. GitHub/hosting receipt follows in BUILD_STATUS.md.
+
+Next: specialist statement-to-written-evidence audit, historical unfamiliar-text range review, pilot timing/calibration and accessibility review. English Language has175 reserved/unmapped sessions, not built lessons. Do not create extra Literature slots merely because the teaching allocation is complete.
+
 # English Literature — AQA 8702
 
 Confirmed by the user: Macbeth, A Christmas Carol, An Inspector Calls and Power and Conflict. English Language is a separate subject and remains planned. This course is untiered. Foundation/Higher controls must not apply.
 
 ## Authoring sequence
 
-The original98IDs are retained within a revised **175-session Literature working allocation**. The user confirmed350sessions shared by Literature and Language (70weeks×5). An adjustable175/175split is the current planning assumption; see english-programme-plan.md and english-70-week-programme.csv. It is not an AQA lesson-count requirement.155lessons are implemented;20planned sessions remain unavailable.
+The original98IDs are retained within a revised **175-session Literature working allocation**. The user confirmed350sessions shared by Literature and Language (70weeks×5). An adjustable175/175split is the current planning assumption; see english-programme-plan.md and english-70-week-programme.csv. It is not an AQA lesson-count requirement.All175 allocated Literature sessions are implemented;0 roadmap slots remain unbuilt. Specialist and actual written-response review remain outstanding.
 
 | Topic | Working allocation | Implemented |
 |---|---:|---:|
@@ -12,8 +18,8 @@ The original98IDs are retained within a revised **175-session Literature working
 | A Christmas Carol |28|28|
 | An Inspector Calls |28|28|
 | Power and Conflict |49|49|
-| Unseen poetry |15|7|
-| Reading and analytical writing |20|8|
+| Unseen poetry |15|15|
+| Reading and analytical writing |20|20|
 
 77additional sessions provide sustained reading, close analysis, full writing, comparison, context, retrieval, assessment, feedback and redrafting. Each requires a detailed brief before implementation. The separate175Language slots are reserved and unmapped, not built lessons. School session length has not been provided; app activity estimates must be calibrated with reading, discussion, drafting and feedback.
 Macbeth chronological teaching spans every scene, followed by thematic, character and writing work. Carol covers all five staves; Inspector all three acts. Each of the 15 anthology poems has meaning/voice and methods/comparison lessons. No small subset substitutes for the whole cluster. Reading/writing skills are also practised inside each text lesson; standalone skills units should be interleaved, not postponed until the end.
@@ -24,7 +30,7 @@ The anthology roster is Ozymandias; London; Extract from The Prelude; My Last Du
 
 Current official assessment: closed book; Paper 1 is 1h45, 64 marks, 40%; Shakespeare and novel each require extract-to-whole-text writing. Paper 2 is 2h15, 96 marks, 60%; modern text essay, named anthology poem compared with another studied poem, unseen analysis and unseen comparison. Verify current section-specific mark schemes before authoring timed writing rubrics. Source: https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/specification-at-a-glance
 
-`english-literature-requirements.csv` paraphrases assessable statements with planned destinations. `english-literature-coverage.csv` records representative evidence in the first ninety-five lessons. These are initial author mappings, not a specialist sign-off or proof of full skill attainment. The next reconciliation must map individual criteria to actual written evidence and broaden assessment beyond selected responses.
+`english-literature-requirements.csv` paraphrases assessable statements with planned destinations. `english-literature-coverage.csv` records 525 representative evidence rows across175 lessons. These are initial author mappings, not a specialist sign-off or proof of full skill attainment. The next reconciliation must map individual criteria to actual written evidence and broaden assessment beyond selected responses.
 
 Knowledge checks score first answers separately from practice retries; incorrect concepts return through recall. The first batch saves analytical drafts and immutable saved versions, but does not automatically grade writing. A word count, selected interpretation or completed explorer is not evidence of essay mastery. Keep knowledge completion and reviewed writing performance distinct in progress reporting.
 

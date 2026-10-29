@@ -1,3 +1,7 @@
+## Literature teaching allocation built — 29 October 2026
+
+All175 Literature sessions are now implemented, including the final8 Unseen and12 skills workshops. Language175 slots remain reserved/unmapped and unavailable. This timetable records allocation, not attendance, specialist sign-off or reviewed writing attainment. Next: specialist/written-evidence audit, pilot timing and accessibility calibration, then Language specification planning. See BUILD_STATUS.md for batch13 QA and separate GitHub/hosting receipt.
+
 # English programme — 70 weeks, five sessions per week
 
 User constraint confirmed28October2026: **350 teaching sessions shared by Literature and Language**, not350Literature lessons. Working allocation is175Literature/175Language. This equal split is an assistant planning assumption, adjustable to the school’s needs; it is not a user-confirmed fixed split or an exam-board requirement.
@@ -20,4 +24,4 @@ The original98IDs remain unchanged.77new planned sessions add sustained reading,
 
 The school lesson length was not supplied. Current runtime minute estimates describe app activities and need calibration with whole-text reading, drafting, discussion and feedback.350is a planning budget, not evidence that every learner can finish in the same time. Pilot session duration and adapt support/challenge; do not silently equate device completion, attendance, specialist review or writing attainment.
 
-Batch3 still implements the five remaining units of the original Macbeth core plus first five Carol units. Macbeth core20/20does not mean the expanded35session allocation is built. The provisional table can be resequenced/interleaved for a school without changing lesson IDs or saved progress. Before claiming a complete350session English course, map and implement Language, finish Literature, verify required written evidence and conduct specialist review.
+Batch3 still implements the five remaining units of the original Macbeth core plus first five Carol units. Macbeth core20/20does not mean the expanded35session allocation is built. The provisional table can be resequenced/interleaved for a school without changing lesson IDs or saved progress. Before claiming a complete350session English course, map and implement Language, verify required written evidence and conduct specialist review.
