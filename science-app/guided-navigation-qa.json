@@ -50,9 +50,17 @@
   "progress": "Stable lesson/question IDs, first answer semantics and mastery thresholds unchanged; separate auto preference key",
   "future_authoring": "Use shared guidedFlow/questionFlow; no extra navigation gates; actual answers/model work remain deliberate",
   "publication": {
-    "github": "pending",
-    "hosting": "pending",
-    "audience": "Owner-private confirmed, unchanged"
+    "github": "Canonical app pushed; exact remote SHA and clean local status verified before packaging",
+    "canonical_app_commit": "8fcd7936f7c9f3a5be606e00eaa2b33e6b137853",
+    "hosting": "succeeded",
+    "source_commit": "4824dfc9b036aa1d23358f4e442c06ee19a1459e",
+    "tracked_frontend_files_hash_matched": 718,
+    "deployment_id": "appgdep_6ae3322370488191815f5be1e6985ffe",
+    "version_id": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_c54c52ec671c8191a4d9d65efceccbe3",
+    "updated_at": "2026-10-29T11:48:30.579181+00:00",
+    "audience": "Owner-private unchanged",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "receipt": "Receipt-only GitHub commit follows; app unchanged."
   },
   "preview": "crash-course-guided-navigation-preview.jpg",
   "results": "Primary route to missing stage, Literature writing or next lesson; retake secondary; writing entry cancels remaining check clock."
