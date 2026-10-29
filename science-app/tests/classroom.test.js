@@ -42,11 +42,11 @@ test('lesson catalogue is up to date and covers every built lesson once', async 
   const saved = JSON.parse(readFileSync(join(root, 'dist/classroom/catalog.json'), 'utf8'));
   assert.deepEqual(saved, fresh, 'run node tools/build-classroom-catalog.mjs');
   const counts = Object.fromEntries(fresh.subjects.map(s => [s.id, s.topics.flatMap(t => t.lessons).length]));
-  assert.deepEqual(Object.keys(counts).sort(), ['english-literature', 'geography', 'history', 'maths', 'science']);
+  assert.deepEqual(Object.keys(counts).sort(), ['english-language','english-literature', 'geography', 'history', 'maths', 'science']);
   for (const s of fresh.subjects) {
     const ids = s.topics.flatMap(t => t.lessons.map(l => l.id));
     assert.equal(new Set(ids).size, ids.length, `${s.id} lesson ids unique`);
-    assert.ok(ids.length > 40, `${s.id} has lessons`);
+    assert.ok(ids.length >= (s.id==='english-language'?20:40), `${s.id} has lessons`);
   }
 });
 

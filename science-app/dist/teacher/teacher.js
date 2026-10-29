@@ -1,7 +1,7 @@
 // Crash Course teacher dashboard: classes, student logins, set work, and each student's and the
 // whole class's progress and answers. Data access goes through classroom/backend.js (Supabase with
 // row-level security, or demo mode with made-up data in this browser).
-import {createBackend, DEMO_TEACHER} from '../classroom/backend.js?v=20261028-classroom01';
+import {createBackend, DEMO_TEACHER} from '../classroom/backend.js?v=20261029-language01';
 
 const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
@@ -27,7 +27,7 @@ function alertBox(msg) { S.notice = msg; const n = $('#notice'); if (n) { n.text
 
 async function loadCatalog() {
   if (S.catalog) return S.catalog;
-  S.catalog = await (await fetch('../classroom/catalog.json?v=20261028-classroom01')).json();
+  S.catalog = await (await fetch('../classroom/catalog.json?v=20261029-language01')).json();
   for (const s of S.catalog.subjects) for (const t of s.topics) for (const l of t.lessons) S.titles.set(`${s.id}|${l.id}`, l.title);
   return S.catalog;
 }

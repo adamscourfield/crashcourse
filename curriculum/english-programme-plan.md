@@ -1,27 +1,9 @@
-## Literature teaching allocation built — 29 October 2026
+# English programme —70 weeks, five sessions per week
 
-All175 Literature sessions are now implemented, including the final8 Unseen and12 skills workshops. Language175 slots remain reserved/unmapped and unavailable. This timetable records allocation, not attendance, specialist sign-off or reviewed writing attainment. Next: specialist/written-evidence audit, pilot timing and accessibility calibration, then Language specification planning. See BUILD_STATUS.md for batch13 QA and separate GitHub/hosting receipt.
+The user confirmed350 sessions shared by Literature and Language. A provisional175/175 split is our working allocation, adjustable to school needs; it is not a fixed exam-board lesson requirement. AQA8702 Literature has175 teaching sessions built. AQA8700 Language is the working paired board:20 reading foundations built/155 mapped planned sessions remain unavailable.
 
-# English programme — 70 weeks, five sessions per week
+english-70-week-programme.csv preserves all175 Literature IDs and timetable positions. All175 Language slots now have stable curriculum IDs, titles and mapped skills; status allocated means timetable allocation, not implementation or attendance. Consult the two lesson roadmaps for built status. Odd weeks allocate Literature3/Language2; even weeks reverse this.70×5=350 exactly; authoring order may differ and skills workshops should be interleaved.
 
-User constraint confirmed28October2026: **350 teaching sessions shared by Literature and Language**, not350Literature lessons. Working allocation is175Literature/175Language. This equal split is an assistant planning assumption, adjustable to the school’s needs; it is not a user-confirmed fixed split or an exam-board requirement.
+Literature: Macbeth35,Carol28,Inspector28,Power and Conflict49,Unseen15,reading/writing20. Language: reading20,fiction-language20,fiction-structure15,evaluation15,creative-writing35,non-fiction reading25,viewpoint writing25,accuracy10,Spoken Language10. See english-language-plan.md for assessable mappings and current scope.
 
-`english-70-week-programme.csv` allocates exactly70weeks ×5sessions. Odd weeks give Literature3/Language2; even weeks reverse this. Every Literature slot links to one stable planned lesson ID. Language has175explicitly reserved slots without lesson IDs; its exam board/specification and detailed assessment mapping still need establishing. Reserved Language slots are not available content and do not prove syllabus coverage. The programme is a provisional delivery sequence; authoring order can differ and completed content does not record school attendance.
-
-## Literature allocation
-
-| Area | Sessions |
-|---|---:|
-| Macbeth |35|
-| A Christmas Carol |28|
-| An Inspector Calls |28|
-| Power and Conflict |49|
-| Unseen poetry |15|
-| Shared reading and analytical writing |20|
-| Total |175|
-
-The original98IDs remain unchanged.77new planned sessions add sustained reading, close analysis, full writing, comparison, contextual interpretation, retrieval, timed transfer, feedback and redrafting. These have distinct purposes rather than duplicating a summary as filler. Detailed source stimuli, feedback rubrics and appropriate interactions must be written before each workshop is built. Five-minute quizzes must not be represented as full teaching sessions merely to reach a count.
-
-The school lesson length was not supplied. Current runtime minute estimates describe app activities and need calibration with whole-text reading, drafting, discussion and feedback.350is a planning budget, not evidence that every learner can finish in the same time. Pilot session duration and adapt support/challenge; do not silently equate device completion, attendance, specialist review or writing attainment.
-
-Batch3 still implements the five remaining units of the original Macbeth core plus first five Carol units. Macbeth core20/20does not mean the expanded35session allocation is built. The provisional table can be resequenced/interleaved for a school without changing lesson IDs or saved progress. Before claiming a complete350session English course, map and implement Language, verify required written evidence and conduct specialist review.
+School session length has not been supplied. App estimates must be calibrated with whole-text reading, discussion, drafting and actual feedback. Neither device completion nor an allocation proves mastery or attendance. Literature175built does not imply specialist or actual written-response sign-off. Language currently uses original micro-passages; authentic established-writer period/genre range and extended assessment remain to build. Spoken Language requires an actual teacher-assessed presentation/response and cannot be awarded by a quiz. AI setup deferred; writing remains unmarked. Next: Language fiction-language batch02 with detailed lawful-source briefs; specialist/pilot/accessibility review remains separate.

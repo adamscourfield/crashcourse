@@ -45,6 +45,7 @@ export async function buildCatalog() {
   });
 
   for (const [id, name, course, file] of [
+    ['english-language','English Language','AQA GCSE English Language · 8700','language/content.js'],
     ['english-literature', 'English Literature', 'AQA GCSE English Literature · 8702', 'literature/content.js'],
     ['history', 'History', 'Pearson Edexcel GCSE History · 1HI0', 'history/content.js'],
     ['geography', 'Geography', 'Pearson Edexcel GCSE Geography A', 'geography/content.js'],

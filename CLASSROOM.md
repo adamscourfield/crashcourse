@@ -15,7 +15,7 @@ Teachers create classes, give students logins, set specific lessons and see each
 | Backend adapter | `classroom/backend.js` | Uses Supabase when `config.js` has a URL; otherwise uses a demo backend in localStorage |
 | Database | `supabase/migrations/20261028170000_classroom.sql` | Tables, row-level security, column grants and the profile trigger |
 | Student accounts | `supabase/functions/manage-students/` | An edge function that holds the service key: creates students, resets passwords, deletes students |
-| Lesson catalogue | `classroom/catalog.json` (`tools/build-classroom-catalog.mjs`) | 1006 lessons across 5 subjects for the lesson picker. A test fails if this file is stale |
+| Lesson catalogue | `classroom/catalog.json` (`tools/build-classroom-catalog.mjs`) | 1026 lessons across 5 subjects for the lesson picker. A test fails if this file is stale |
 
 ### Security model
 
@@ -94,3 +94,5 @@ Demo mode is a single-browser simulation. A teacher and students on different de
 - `npm test` in `science-app/` covers the classroom unit tests.
 - With `CC_TEST_PG="-h <socket dir> -p <port> -U postgres"` it also runs the migration and RLS checks against Postgres.
 - `node tools/classroom-browser-flow.mjs` (with `OUT=<dir>`, and the app served on :4173) walks the full demo journey in Chromium and writes `classroom-browser-evidence.json`.
+
+Language batch01:20 lessons added to teacher picker; demo allowlist and subject label updated. Migration20261029140000 adds8700 subject to database checks without changing RLS/grants. Not applied to a production database; classroom remains unconfigured demo.

@@ -5,10 +5,10 @@
 //     ownership rules so the whole teacher/student journey can be tried and tested offline.
 // Teacher and student sessions use different storage keys, so a teacher and a student can be
 // signed in on the same device (the teacher dashboard and the student app are separate pages).
-import {classroomConfig} from './config.js?v=20261028-classroom01';
-import {normaliseCode, normaliseUsername, studentEmail, usernameFor, newPassword, cleanDisplayName} from './identity.js?v=20261028-classroom01';
+import {classroomConfig} from './config.js?v=20261029-language01';
+import {normaliseCode, normaliseUsername, studentEmail, usernameFor, newPassword, cleanDisplayName} from './identity.js?v=20261029-language01';
 
-export const SUBJECTS = ['science', 'maths', 'english-literature', 'history', 'geography'];
+export const SUBJECTS = ['science', 'maths', 'english-language', 'english-literature', 'history', 'geography'];
 
 const uid = () => (globalThis.crypto?.randomUUID ? crypto.randomUUID() : 'id-' + Math.random().toString(36).slice(2) + Date.now().toString(36));
 const iso = d => (d ? new Date(d).toISOString() : null);

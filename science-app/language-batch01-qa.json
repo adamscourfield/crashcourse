@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-29",
+  "batch": "Language01",
+  "board": "AQA8700 working assumption alongside Literature",
+  "new_lessons": 20,
+  "built": 20,
+  "planned_remaining": 155,
+  "allocation": 175,
+  "shared_English": 350,
+  "new_practice": 60,
+  "new_checks": 80,
+  "unique_question_ids": 140,
+  "representative_coverage": 60,
+  "teacher_catalogue": 1026,
+  "full_suite": {
+    "tests": 885,
+    "passed": 884,
+    "skipped": 1,
+    "failed": 0,
+    "duration_ms": 42536.154541,
+    "skip": "Postgres RLS requires CC_TEST_PG; unconfigured"
+  },
+  "focused": {
+    "tests": 83,
+    "passed": 83,
+    "failed": 0,
+    "duration_ms": 2846.349291
+  },
+  "offline": "All20 real handler journeys, wrong/retry, gates, first tries, check locks, draft versions/resume, independent first response/revision, Language/Literature isolation; existing175 Literature data unchanged",
+  "browser": [
+    "New subject and map/lesson count; Literature retains1/175 while Language0/20",
+    "Wrong challenge retained and correct retried; wrong practice/correct retry auto-Q2",
+    "Guided draft version and reload",
+    "Fresh harbour independent passage, criteria hidden, draft reload, first submit and separate revision",
+    "Original source notes and official AQA links",
+    "Phone390 width390/17px/light panel; keyboard scroll171.5; viewport reset",
+    "No sampled console errors; existing data never reset"
+  ],
+  "browser_limitation": "Not all20 full browser or complete assistive-tech audit; initial stale tab recovered via fresh local preview tab",
+  "coverage_limit": "Original micro-fiction foundations only, not authentic established-writer or entire period/genre range; full-length exam endurance and actual written review outstanding",
+  "sources_checked": [
+    "AQA8700 scope3.1.1\u20133.1.3",
+    "Scheme4.2\u20134.5 and AO1\u2013AO9",
+    "2026 English Language update",
+    "2027 source/layout announcement"
+  ],
+  "specialist_review": "not_reviewed",
+  "written_review": "not_reviewed; no automatic mark",
+  "ai": "Key setup deferred; course AI hook disabled; no provider call",
+  "classroom": "Demo catalogue/allowlist updated; migration20261029140000 not applied to unconfigured production database; no RLS/grant change",
+  "publication": {
+    "github": "pending",
+    "hosting": "pending",
+    "audience": "Existing owner-private unchanged"
+  },
+  "next": "Fiction-language20; authentic lawful established-writer texts and sustained analysis; briefs first",
+  "preview": "crash-course-language-batch01-preview.jpg"
+}

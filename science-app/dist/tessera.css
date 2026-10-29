@@ -43,8 +43,8 @@ dialog h2{font-weight:300;font-size:32px}dialog h3{font-weight:400}dialog p,dial
 .lesson-row{border-color:var(--line);border-radius:4px;background:#fff}.lesson-row:hover{background:#f0f1f3}#modal .lesson-row.current{background:#e9ebee;border-color:#9a9da3}.lesson-row b{font-weight:500}
 #modal .h-map-unit{color:var(--subtle)}
 /* Reading studios use a light paper surface; scientific diagrams retain contrast. */
-#literatureContent .h-panel,#historyContent .h-panel{background:#f1f2f4;color:var(--ink);border-right:1px solid var(--line)}
-#literatureContent .h-panel .eyebrow,#historyContent .h-panel .eyebrow{color:var(--subtle)}
+:is(#literatureContent,#languageContent) .h-panel,#historyContent .h-panel{background:#f1f2f4;color:var(--ink);border-right:1px solid var(--line)}
+:is(#literatureContent,#languageContent) .h-panel .eyebrow,#historyContent .h-panel .eyebrow{color:var(--subtle)}
 .h-panel .h-tabs .scene-button{background:transparent;border-color:#ccd0d6;color:#555a61;font-size:11px}
 .h-panel .h-tabs .scene-button[aria-pressed=true]{background:#fff;border-color:#41444a;color:var(--ink)}
 .h-panel .h-view{background:#ffffffa8;border-color:#dddfe3;border-radius:4px;color:var(--ink)}
@@ -52,20 +52,20 @@ dialog h2{font-weight:300;font-size:32px}dialog h3{font-weight:400}dialog p,dial
 .h-panel .h-timeline{border-color:#8b8f96}.h-panel .h-timeline li{color:#555a61}.h-panel .h-timeline li:before{background:#555a61;border-color:#f1f2f4}.h-panel .h-date{color:var(--ink);font-weight:500}
 .h-panel .h-card,.h-panel .h-factor{background:#fff;color:#555a61;border-radius:4px;border-color:#b9bdc4}.h-panel .h-card b,.h-panel .h-factor b{color:var(--ink);font-weight:500}
 .h-panel .h-source{border-radius:4px;background:white;color:var(--ink)}.h-panel .h-source-k{color:var(--subtle)}
-#literatureContent .lit-quotation,#literatureContent .lit-scene-summary{font-family:var(--sans);font-size:24px;line-height:1.6;font-weight:300;color:var(--ink)}
-#literatureContent .lit-reading{color:#555a61;font-size:15px}
-#literatureContent .lit-details .scene-button{background:white;color:#555a61;border-color:#ccd0d6;font-size:11px;border-radius:4px}
-#literatureContent .lit-details button[aria-pressed=true]{background:#33363b;color:white;border-color:#33363b}
-#literatureContent .lit-writing{border-color:var(--line);border-radius:4px}#literatureContent .lit-writing textarea{color:var(--ink);border-radius:4px;border-color:#c8cbd0}#literatureContent .lit-writing summary{font-weight:500}
-#literatureContent .lit-version{border-radius:4px;background:#f1f2f4}
-#literatureContent .h-panel>p:last-child,#historyContent .h-panel>p:last-child{color:var(--subtle)!important}
+:is(#literatureContent,#languageContent) .lit-quotation,:is(#literatureContent,#languageContent) .lit-scene-summary{font-family:var(--sans);font-size:24px;line-height:1.6;font-weight:300;color:var(--ink)}
+:is(#literatureContent,#languageContent) .lit-reading{color:#555a61;font-size:15px}
+:is(#literatureContent,#languageContent) .lit-details .scene-button{background:white;color:#555a61;border-color:#ccd0d6;font-size:11px;border-radius:4px}
+:is(#literatureContent,#languageContent) .lit-details button[aria-pressed=true]{background:#33363b;color:white;border-color:#33363b}
+:is(#literatureContent,#languageContent) .lit-writing{border-color:var(--line);border-radius:4px}:is(#literatureContent,#languageContent) .lit-writing textarea{color:var(--ink);border-radius:4px;border-color:#c8cbd0}:is(#literatureContent,#languageContent) .lit-writing summary{font-weight:500}
+:is(#literatureContent,#languageContent) .lit-version{border-radius:4px;background:#f1f2f4}
+:is(#literatureContent,#languageContent) .h-panel>p:last-child,#historyContent .h-panel>p:last-child{color:var(--subtle)!important}
 /* Keep semantic correctness, indicator, particle, graph and map colours intact. */
 :where(button,a,input,select,textarea,summary):focus-visible{outline:2px solid #555a61;outline-offset:4px}
 @media(hover:hover){.nav:not(.active):hover{background:#f0f1f3;color:var(--ink)}.primary:hover,.secondary:hover{box-shadow:0 5px 14px #0000000c}}
-@media(max-width:800px){.sidebar{background:#fff}.sidebar .nav{border-radius:4px;font-size:10px}.brand-mark{width:28px;height:28px}.brand-wordmark{font-size:14px}.brand-wordmark>span:last-child{font-size:9px;letter-spacing:.26em}.intro h1{font-size:32px}.steps button{padding:12px 4px;font-size:11px}.activity{padding:26px 22px}.activity h2{font-size:26px}.workspace{border-radius:4px}#literatureContent .h-panel,#historyContent .h-panel{border-right:0;border-bottom:1px solid var(--line)}dialog{border-radius:5px}}
+@media(max-width:800px){.sidebar{background:#fff}.sidebar .nav{border-radius:4px;font-size:10px}.brand-mark{width:28px;height:28px}.brand-wordmark{font-size:14px}.brand-wordmark>span:last-child{font-size:9px;letter-spacing:.26em}.intro h1{font-size:32px}.steps button{padding:12px 4px;font-size:11px}.activity{padding:26px 22px}.activity h2{font-size:26px}.workspace{border-radius:4px}:is(#literatureContent,#languageContent) .h-panel,#historyContent .h-panel{border-right:0;border-bottom:1px solid var(--line)}dialog{border-radius:5px}}
 /* Presentation accents on dark canvases need their own high-contrast token. */
 .scene-panel{--coral:#d0d3d8;--warm:#d0d3d8}
-#literatureContent .h-panel,#historyContent .h-panel{--coral:#33363b;--warm:#50545b}
+:is(#literatureContent,#languageContent) .h-panel,#historyContent .h-panel{--coral:#33363b;--warm:#50545b}
 #scienceContent .workspace:not(.question-mode)>.scene-panel,#scienceContent .workspace:not(.question-mode)>.activity{border-radius:6px}
 #scienceEvidence .science-explanation-photo,.science-explanation-photo img{border-radius:4px}
 #lessonsButton,#mLessons,#gLessons{border-radius:4px;font-weight:500;box-shadow:none;background:#202124}
@@ -78,7 +78,7 @@ dialog h2{font-weight:300;font-size:32px}dialog h3{font-weight:400}dialog p,dial
 .mastery-stat{border-radius:4px}
 @media(max-width:800px){.subject-select{width:164px}.sidebar .brand{flex-basis:calc(100% - 184px)}}
 /* Reading links follow the attribution; keep the attribution dark on light paper. */
-#literatureContent .h-panel>.geo-caption,#historyContent .h-panel>.geo-caption{color:var(--subtle)!important}
+:is(#literatureContent,#languageContent) .h-panel>.geo-caption,#historyContent .h-panel>.geo-caption{color:var(--subtle)!important}
 
 /* One visible route; secondary navigation remains available for revisiting. */
 .activity-footer{flex-wrap:wrap;gap:10px;align-items:center}

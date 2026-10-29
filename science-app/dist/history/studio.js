@@ -6,7 +6,7 @@ import {lessons, topics, units, source, specIssue} from './content.js?v=20261028
 import {showFlowTarget,guidedFlow, questionFlow, cancelQuestionAdvance} from '../question-flow.js?v=20261029-guided01';
 import {recordConcept, dueConcepts} from '../progress.js?v=20261028-subjects01';
 import {summarise} from '../progress-summary.js?v=20261023-mastery01';
-import {track, plain} from '../classroom/track.js?v=20261028-classroom01';
+import {track, plain} from '../classroom/track.js?v=20261029-language01';
 // Classroom: every answer is offered to the teacher-sharing hook (ignored unless a student is signed in).
 const sendAttempt = (lessonId, q, stage, v) => track({subject: 'history', lessonId, questionId: q.id, stage, prompt: plain(q.prompt), answer: plain(q.options[v]), correctAnswer: plain(q.options[q.answer]), correct: v === q.answer});
 const lessonOfQuestion = id => lessons.find(l => [...l.practice, ...l.check].some(q => q.id === id))?.id;

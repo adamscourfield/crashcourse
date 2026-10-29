@@ -50,9 +50,9 @@ function evalPrompt(prompt) {
   return Function(`return (${e});`)();
 }
 
-test('maths is offered as an available subject; Geography, History and Literature are available while Language stays planned', () => {
+test('maths is offered as an available subject; Geography, History and Literature are available while Language reading foundations are available', () => {
   assert.equal(subjects.find(s => s.id === 'maths').status, 'available');
-  assert.ok(subjects.filter(s => !['science', 'maths', 'geography', 'history', 'english-literature'].includes(s.id)).every(s => s.status === 'planned'));
+  assert.ok(subjects.filter(s => !['science', 'maths', 'geography', 'history', 'english-literature', 'english-language'].includes(s.id)).every(s => s.status === 'planned'));
 });
 
 test('every skill level generates deterministic, JSON-safe items whose own answer marks correct', () => {

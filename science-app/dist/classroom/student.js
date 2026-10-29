@@ -1,11 +1,11 @@
 // Student side of the classroom: sign in with class code + username, see set work, open a set
 // lesson, and send every answer and lesson-progress change to the teacher (queued offline first).
-import {createBackend} from './backend.js?v=20261028-classroom01';
-import {createSync, progressRows} from './sync.js?v=20261028-classroom01';
-import {connectTracker} from './track.js?v=20261028-classroom01';
+import {createBackend} from './backend.js?v=20261029-language01';
+import {createSync, progressRows} from './sync.js?v=20261029-language01';
+import {connectTracker} from './track.js?v=20261029-language01';
 
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
-const SUBJECT_NAMES = {science: 'Science', maths: 'Maths', 'english-literature': 'English Literature', history: 'History', geography: 'Geography'};
+const SUBJECT_NAMES = {science: 'Science', maths: 'Maths', 'english-language':'English Language', 'english-literature': 'English Literature', history: 'History', geography: 'Geography'};
 // Lesson progress lives in the browser, not the account. On a shared computer, the next student must
 // not upload the previous student's progress as their own, so the browser remembers whose progress it
 // holds and a different student must clear it (their shared copy stays with the teacher) or sign out.
@@ -21,7 +21,7 @@ const fmtDue = d => new Date(d).toLocaleDateString('en-GB', {weekday: 'short', d
  */
 export async function attachClassroom(app, {backend: given, sidebar = document.querySelector('.sidebar')} = {}) {
   const css = document.createElement('link');
-  css.rel = 'stylesheet'; css.href = 'classroom/classroom.css?v=20261028-classroom01';
+  css.rel = 'stylesheet'; css.href = 'classroom/classroom.css?v=20261029-language01';
   document.head.append(css);
 
   const box = document.createElement('div');
@@ -36,7 +36,7 @@ export async function attachClassroom(app, {backend: given, sidebar = document.q
 
   async function lessonTitles() {
     if (catalog) return catalog;
-    try { const c = await (await fetch('classroom/catalog.json?v=20261028-classroom01')).json(); catalog = new Map(c.subjects.flatMap(s => s.topics.flatMap(t => t.lessons.map(l => [`${s.id}|${l.id}`, l.title])))); }
+    try { const c = await (await fetch('classroom/catalog.json?v=20261029-language01')).json(); catalog = new Map(c.subjects.flatMap(s => s.topics.flatMap(t => t.lessons.map(l => [`${s.id}|${l.id}`, l.title])))); }
     catch { catalog = new Map(); }
     return catalog;
   }
