@@ -1,0 +1,16 @@
+requirement_id,official_ref,evidence_ids,finding,status
+lit.whole-macbeth,3.1.1,lit.macbeth.opening;lit.macbeth.ending;lit.macbeth.independent-essay,Whole-play route exists; actual full-play reading and reviewed extract-to-whole writing not verified.,teaching_present_independent_evidence_or_review_pending
+lit.whole-carol,3.1.2,lit.carol.lesson-01;lit.carol.lesson-14,Five-stave route exists; full-novella reading and reviewed whole-text evidence pending.,teaching_present_independent_evidence_or_review_pending
+lit.whole-inspector,3.2.1,lit.inspector.lesson-01;lit.inspector.lesson-14,Three-act route exists; summaries require authorised whole-play reading.,teaching_present_independent_evidence_or_review_pending
+lit.all-poems,3.2.2,lit.power-conflict.poem-01-1 through poem-15-2,All15 titles have two introductory lessons; nine protected poems need authorised full texts.,teaching_present_independent_evidence_or_review_pending
+lit.unseen-range,3.2.3,lit.unseen.lesson-01;lit.unseen.workshop-08,Complete public-domain poems and fresh tasks exist; unfamiliar range/familiarity and written attainment need review.,teaching_present_independent_evidence_or_review_pending
+lit.literal-inference,3.3,lit.skills.lesson-01,Explicit/inferred distinction taught; selected responses alone do not show independent reading.,teaching_present_independent_evidence_or_review_pending
+lit.plot-character,3.3,lit.macbeth.opening;lit.carol.lesson-01,Plot and motive taught; require causal argument across the whole text.,teaching_present_independent_evidence_or_review_pending
+lit.themes-evidence,3.3,lit.macbeth.kingship;lit.macbeth.guilt,Theme teaching present; assess evidence selection in actual response.,teaching_present_independent_evidence_or_review_pending
+lit.interpretations,3.3,lit.macbeth.kingship;lit.unseen.workshop-08,Alternative readings taught; human review of developed interpretation pending.,teaching_present_independent_evidence_or_review_pending
+lit.context,3.3,lit.inspector.lesson-01;lit.carol.workshop-10,Context connected with texts; verify facts and avoid deterministic audience claims.,teaching_present_independent_evidence_or_review_pending
+lit.methods,3.3,lit.inspector.lesson-12;lit.power-conflict.poem-01-2,Methods taught; exact wording access and constructed explanation required.,teaching_present_independent_evidence_or_review_pending
+lit.comparison,3.3,lit.power-conflict.comparison-01;lit.unseen.workshop-08,Comparison prompts present; question-led selection and reviewed comparison pending.,teaching_present_independent_evidence_or_review_pending
+lit.argument,3.3,lit.skills.workshop-12,Extended rehearsal exists; submission storage is not marked argument quality.,teaching_present_independent_evidence_or_review_pending
+lit.references,3.3,lit.skills.lesson-02;lit.inspector.lesson-14,References practised; authorised text access and accurate actual quotation need review.,teaching_present_independent_evidence_or_review_pending
+lit.accuracy,3.3,lit.skills.workshop-10,Editing lesson exists; no marked script demonstrates spelling/grammar/punctuation attainment.,teaching_present_independent_evidence_or_review_pending

@@ -1,12 +1,16 @@
+## Oak audit01 — 29 October 2026
+
+175-lesson structural inventory,13 manual content/assessment samples and15 Oak unit/lesson samples completed. Teaching destinations exist; independent evidence and specialist review remain.65 lessons put every selected-response answer in position0; text access/provenance and unfamiliar range require attention. See english-literature-oak-audit.md and briefs/english-assessment-repair.md. No runtime changes or additional teaching slots. Source summaries are not a replacement for full assigned reading.
+
 ## Final Literature allocation implemented — 29 October 2026
 
 Batch13 completes the remaining8 Unseen workshops and12 reading/writing workshops.175 built /0 unbuilt roadmap slots. New complete public-domain poems support fresh single/pair assessments; two original paper rehearsals follow AQA section formats with advisory105/135-minute budgets. No official paper or automatic essay mark is claimed. Feedback conferences appear after first submission; self-review is distinct from a teacher actually reading work. Sources and detailed brief: curriculum/briefs/literature-batch13.md. GitHub/hosting receipt follows in BUILD_STATUS.md.
 
-Next: specialist statement-to-written-evidence audit, historical unfamiliar-text range review, pilot timing/calibration and accessibility review. English Language has175 reserved/unmapped sessions, not built lessons. Do not create extra Literature slots merely because the teaching allocation is complete.
+Next: specialist statement-to-written-evidence audit, historical unfamiliar-text range review, pilot timing/calibration and accessibility review. English Language has20 built/155 planned sessions within its175-session working allocation. Do not create extra Literature slots merely because the teaching allocation is complete.
 
 # English Literature — AQA 8702
 
-Confirmed by the user: Macbeth, A Christmas Carol, An Inspector Calls and Power and Conflict. English Language is a separate subject and remains planned. This course is untiered. Foundation/Higher controls must not apply.
+Confirmed by the user: Macbeth, A Christmas Carol, An Inspector Calls and Power and Conflict. English Language is a separate subject with20 built reading-foundation lessons and155 planned sessions. This course is untiered. Foundation/Higher controls must not apply.
 
 ## Authoring sequence
 

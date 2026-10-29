@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-29",
+  "inventoryLessons": 175,
+  "questions": 1225,
+  "answerPositions": {
+    "0": 695,
+    "1": 230,
+    "2": 300
+  },
+  "allZeroLessons": 65,
+  "independentWritingLessons": 16,
+  "unspecifiedRightsRecords": 25,
+  "topicCounts": {
+    "english-literature.macbeth": 35,
+    "english-literature.christmas-carol": 28,
+    "english-literature.inspector-calls": 28,
+    "english-literature.power-conflict": 49,
+    "english-literature.unseen": 15,
+    "english-literature.reading-writing": 20
+  },
+  "sourceHashes": {
+    "science-app/dist/literature/content-batch02.js": "4e16f8b9a21cbab2634b04b411faebfeed3950287671c974a3e4b0e7cb8ed02b",
+    "science-app/dist/literature/content-batch03.js": "183057438aa03885c02bad57f0e1768d043be38d66ba47182d0a33ef0401e8f1",
+    "science-app/dist/literature/content-batch04.js": "10d3c459f8c4b73be6ad60eb3927047e4a94bb41393d4e0661069b00055de114",
+    "science-app/dist/literature/content-batch05.js": "871b571584880143806a532cd69df4d83146da69051ede4e00abb273c509249c",
+    "science-app/dist/literature/content-batch06.js": "b74dfdd281eae9036df7c8f59b3dc11b2b1f53e48c9833492a51916a2b89cc1d",
+    "science-app/dist/literature/content-batch07.js": "c2e9b21f9df2d14468b3dabbe6bda5fe499f65857b05a802f7129d7aaa0b50e1",
+    "science-app/dist/literature/content-batch08.js": "2fe6eb195b8e1fac30e70e466dd896766eaab7d55b66e2f3ce5371a5efae3737",
+    "science-app/dist/literature/content-batch09.js": "befe0923589b6ef5ad5917727f72cc1bfb164fa2c1ffe5a3f3d330be488978e9",
+    "science-app/dist/literature/content-batch10.js": "e07f49fafb0406980652ff8fd4511394a3d12e99543c4b020031384816ea98c4",
+    "science-app/dist/literature/content-batch11.js": "bf175574d3c4749c805215aed31547ee22d66cb1b8dde1bb8b3488981bce6f61",
+    "science-app/dist/literature/content-batch12.js": "1ef2a30a5398305310e7f53a75fa1c714a8211c578f2b88a2e276fa4d8624184",
+    "science-app/dist/literature/content-batch13.js": "a4ff1b78f96533e32e22fb48ff64dcb10e72e2bd93dd33e83a4448c8e558d04e",
+    "science-app/dist/literature/content.js": "945a391851f58cd93a0e8c060ef4c601aa9411618ab3326a9ed63f012cb162fb"
+  },
+  "contentSamplesExamined": [
+    "lit.macbeth.opening",
+    "lit.macbeth.kingship",
+    "lit.macbeth.independent-essay",
+    "lit.carol.lesson-01",
+    "lit.carol.lesson-14",
+    "lit.inspector.lesson-01",
+    "lit.inspector.lesson-14",
+    "lit.power-conflict.poem-01-1",
+    "lit.power-conflict.poem-07-1",
+    "lit.unseen.lesson-01",
+    "lit.unseen.workshop-08",
+    "lit.skills.lesson-01",
+    "lit.skills.workshop-12"
+  ],
+  "oakSamples": [
+    {
+      "unitSlug": "macbeth-a-tragic-hero-5011",
+      "unitHash": "e16682fee2b16888f74e3d71791911cc2a8f868c77543eb061bb23a94569c980",
+      "lessonSlug": "macbeth-as-a-tragedy",
+      "lessonHash": "85c31ce1a42af773597490f5c7b3f969163dcbce5a1590e88144d9bb7e8be381"
+    },
+    {
+      "unitSlug": "macbeth-and-masculinity-the-struggle-for-power-5027",
+      "unitHash": "07a02ecbc4324728e75c3b4553a9ab2e64118fc608febb40d7520054a57b83a0",
+      "lessonSlug": "duncan-as-a-father-figure",
+      "lessonHash": "697de727e3ff97890421a5165791402b8a91957c90c714c9ab99cdcdc21e5f21"
+    },
+    {
+      "unitSlug": "macbeth-lady-macbeth-as-a-machiavellian-villain-4877",
+      "unitHash": "341446d14672dbfe3d96c92ae433de0863996c41f029f12bfd874eb6a1a4fd1b",
+      "lessonSlug": "an-exploration-of-act-1-scenes-1-4",
+      "lessonHash": "865691d29609751c7fcceb7774e32db33983daac82208ae954f163dfc35c9942"
+    },
+    {
+      "unitSlug": "macbeth-the-role-of-guilt-5069",
+      "unitHash": "b39c665e546663a3f86a8364b098c369a9073465cb2ede23b2a3c54069f54286",
+      "lessonSlug": "conceptualising-guilt-in-macbeth",
+      "lessonHash": "db061b636849de028ad68d8aa6f77213652ea778a3be3517dfd5b35a4f258e8a"
+    },
+    {
+      "unitSlug": "modern-text-first-deep-dive-5033",
+      "unitHash": "7cf37244255803903287f10643ab062678575d3bcef712ade8b6f809a6a637ac",
+      "lessonSlug": "contextualising-gender-expectations-in-an-inspector-calls",
+      "lessonHash": "e16e2071d1787bef0a2f842746d50a75f86c8ae43f91f0f6f985843a3b0c06e9"
+    },
+    {
+      "unitSlug": "modern-text-first-study-4896",
+      "unitHash": "62b72c21e237e9c155771bcdad5f27f92f884eb1c9241a845f74877f27910af6",
+      "lessonSlug": "an-inspector-calls-understanding-context-and-priestleys-influences",
+      "lessonHash": "c6db659ef90a9a5851a42baf407cc20dbd80aa930d13581b972597186656a2d1"
+    },
+    {
+      "unitSlug": "modern-text-second-deep-dive-5034",
+      "unitHash": "aa2897b2d8b10c4b6a61637dd9291dec6edd832fb9989adce18198b33d72ce7a",
+      "lessonSlug": "exploring-the-inspector-as-an-archetype-in-an-inspector-calls",
+      "lessonHash": "2c04f3df988ebda0538236172191a49e7b2c47278bc107eecbeb4c72e8d5b746"
+    },
+    {
+      "unitSlug": "modern-text-third-deep-dive-4768",
+      "unitHash": "372ae2bfd8546500dad90dd7398e32a80da6eb76fc105ce0df7b041cbde2c0f0",
+      "lessonSlug": "considering-an-inspector-calls-as-a-political-text",
+      "lessonHash": "989bc7d0b088613b212a64c355699e350cb08381876eca0d18f79cfddb98b57c"
+    },
+    {
+      "unitSlug": "nineteenth-century-text-first-deep-dive-190",
+      "unitHash": "fb4fc12a3a0ca2ac3bca61ee2055bc57724d29718595c2b74af72157febc3787",
+      "lessonSlug": "a-victorian-ghost-story",
+      "lessonHash": "9c3a7b4b9aba4c114f452c0b9670dda6b42216cef8ff77e9affcd854070f635a"
+    },
+    {
+      "unitSlug": "nineteenth-century-text-first-study-200",
+      "unitHash": "f739f9b3d1bcadd895379ef33101e52c2a983727bae912ad9f74c042d5ef1d7b",
+      "lessonSlug": "stave-1-scrooge-the-miser",
+      "lessonHash": "a8f797897fb9112db8ef41c17bd575f96a1acf13046b8d0b971ae4402739b4d9"
+    },
+    {
+      "unitSlug": "nineteenth-century-text-second-deep-dive-196",
+      "unitHash": "51aaac08477126d41f249445cc832163850f546dfc2feaa01b88c24deff74315",
+      "lessonSlug": "dickens-as-a-christian-writer",
+      "lessonHash": "796818968b4222d16ba8f2f98b66267d6d128443673e3f3ae2ae85ca71f5d62f"
+    },
+    {
+      "unitSlug": "nineteenth-century-text-third-deep-dive-4774",
+      "unitHash": "2fe2e385ddc91b9aba9794ac4c08906a86bdfdb63f9bd8e4ebe2ccab413b5d95",
+      "lessonSlug": "a-christmas-carol-dickens-depictions-of-victorian-london",
+      "lessonHash": "9cdd65e7d0bf30a3871d2b3b8af570592ea917d45c4650ee473fea05a0c64dbf"
+    },
+    {
+      "unitSlug": "poetry-anthology-continued-study-172",
+      "unitHash": "a31b5e2d6c0d39552cd7abe38d8688ca16090bd4b7ad65be34704cbdb3f03852",
+      "lessonSlug": "key-themes-from-power-and-conflict",
+      "lessonHash": "db365d8800a066f94bd31ecde1456bdd41c596a8f73a84363d39ee1852bf83bf"
+    },
+    {
+      "unitSlug": "poetry-anthology-first-study-155",
+      "unitHash": "b8a7b4b56a44203d0ac4a0f89b60e0c2ed3eb3f584820e2f613a13bc5332d8c7",
+      "lessonSlug": "types-of-power-and-conflict",
+      "lessonHash": "25df4101ce243368416e558c25ef07688cab25d88766932d041a91a6adc89737"
+    },
+    {
+      "unitSlug": "unseen-poetry",
+      "unitHash": "3d1ee6e77782eb42f5d46cabd3c618f334d4ec8f82934a1a31501c8f16878421",
+      "lessonSlug": "exploring-titles-in-unseen-poetry",
+      "lessonHash": "0c1bd3071acfe4dd1a1dc39f1632fced02541022a77d2507fa93273bf3c94deb"
+    }
+  ],
+  "exactExtractReuse": [
+    {
+      "independent": "lit.macbeth.independent-essay",
+      "otherTeachingView": "lit.skills.lesson-02",
+      "interpretation": "May be revision if encountered earlier; not evidence of a fresh unseen extract"
+    }
+  ],
+  "specialistReview": false,
+  "runtimeChanged": false
+}
