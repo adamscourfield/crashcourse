@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-29",
+  "batch": "Literature11",
+  "new_lessons": 20,
+  "total_built": 135,
+  "remaining_planned_literature": 40,
+  "working_literature_allocation": 175,
+  "shared_english_programme": "350sessions70weeks;provisional175Literature175reserved_unmappedLanguage",
+  "topic_units": {
+    "Macbeth": 35,
+    "A Christmas Carol": 28,
+    "An Inspector Calls": 22,
+    "Power and Conflict": 36,
+    "Unseen poetry": 6,
+    "Reading and analytical writing": 8
+  },
+  "new_practice": 60,
+  "new_checks": 80,
+  "total_practice": 405,
+  "total_checks": 540,
+  "question_ids": 945,
+  "representative_coverage_rows": 405,
+  "teacher_catalogue": 966,
+  "full_suite": {
+    "tests": 862,
+    "passed": 861,
+    "skipped": 1,
+    "failed": 0,
+    "duration_ms": 38470.97,
+    "skip": "Postgres RLS requires CC_TEST_PG; database not configured",
+    "scope": "After lesson and assessment/redraft implementation;before final reading-region refinement and timing-copy spacing"
+  },
+  "final_focused": {
+    "tests": 74,
+    "passed": 73,
+    "skipped": 1,
+    "failed": 0,
+    "duration_ms": 1505.354042,
+    "scope": "Literature content/actualhandlers,classroomcatalogue,mockedAI after all app refinements"
+  },
+  "old115_normalised_sha256": "27343089c69d8abe7b94461b880dc97b3524e372a3c55954c38d24aaa45974ec",
+  "official_sources": [
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/shakespeare-and-the-19th-century-novel",
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/modern-texts-and-poetry",
+    "https://www.aqa.org.uk/subjects/english/gcse/english-8702/specification/subject-content/skills"
+  ],
+  "rights": "Dickens short underlyingpublicdomainpassages only;Inspector originalcommentary explicitly not script/quotedstagedirections;authorisedfullplayrequired. No copied protectedpassage/editorialanalysis/audio/photo.",
+  "sources": "Gutenberg46completeCarol;Concordrights-holder;NationalArchives/Parliament1834poorlawcontext;perlessonlinks/brief",
+  "interactions": "All20actualofflinehandlerjourneys:cards/details/views,wrongchallenge/retry,practicefirstwrongretained,lockedchecks,gates,draftversions/resume. Freshnovelassessment hidesguidance/criteria/AIuntilfirstsubmit;immutablefirstresponse/separaterevisions;redraftmissing/emptycopy/occupied/sourceimmutable/resume. Newlanguageviews labelledkeyboardreadingregions;Inspectorcommentarylabelnotquotation.",
+  "browser": {
+    "preview": "http://localhost:4177/",
+    "desktop": "CarolC03allcards/details/views/wrongchallenge/retry/wrongpractice/retry/automaticQ2/draftversionreload;C13freshStave3passage/hiddencriteria/draftreload/firstsubmit;C14copy/edit/protectedoccupieddraft/saveversionreload;I01commentarylens/sourcenotes29October/authorisedcopy;newtopiccounts28Carol22Inspector",
+    "phone": "390x844Inspector;documentwidth390;font17px;labelledcommentaryregionkeyboardPageDownscrollTop95.5;viewportreset;desktop18px;boundedpanel",
+    "console_errors_sampled": 0,
+    "old_progress": "Old115recordsunchanged;no localstorage reset or inventedcompletion;previouslabelledpreviewdraftsretained. Newlabelledpreviewdraftsonly.",
+    "limits": "Sampledjourneys,not all20fullbrowserorfullassistivetechnologyaudit. No newmotion;existingreducedmotionstylesretained."
+  },
+  "writing": "Unmarked;specialist/actualwrittenresponse reviewpending.45minadvisorynotforced;resourcesnotpoliced;AIkeysetupdeferred/noactualproviderrequest.",
+  "publication": {
+    "status": "pending",
+    "canonical_app_commit": null,
+    "site_source_commit": null,
+    "deployment": null,
+    "audience": "Existingownerprivateunchanged;staticlessons/unconfiguredclassroomdemo"
+  },
+  "next": "20:remaining6Inspectorworkshops,13Poetryworkshops,firstUnseenworkshop;briefsfirst"
+}

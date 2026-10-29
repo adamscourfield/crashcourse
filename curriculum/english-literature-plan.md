@@ -4,13 +4,13 @@ Confirmed by the user: Macbeth, A Christmas Carol, An Inspector Calls and Power 
 
 ## Authoring sequence
 
-The original98IDs are retained within a revised **175-session Literature working allocation**. The user confirmed350sessions shared by Literature and Language (70weeks×5). An adjustable175/175split is the current planning assumption; see english-programme-plan.md and english-70-week-programme.csv. It is not an AQA lesson-count requirement.115lessons are implemented;60planned sessions remain unavailable.
+The original98IDs are retained within a revised **175-session Literature working allocation**. The user confirmed350sessions shared by Literature and Language (70weeks×5). An adjustable175/175split is the current planning assumption; see english-programme-plan.md and english-70-week-programme.csv. It is not an AQA lesson-count requirement.135lessons are implemented;40planned sessions remain unavailable.
 
 | Topic | Working allocation | Implemented |
 |---|---:|---:|
 | Macbeth |35|35|
-| A Christmas Carol |28|16|
-| An Inspector Calls |28|14|
+| A Christmas Carol |28|28|
+| An Inspector Calls |28|22|
 | Power and Conflict |49|36|
 | Unseen poetry |15|6|
 | Reading and analytical writing |20|8|
@@ -49,3 +49,5 @@ Inspector starts in Paper2with clearly labelled original scene summaries and dra
 Batch9:20units complete the original30poem/6comparison anthologycore, introduce6unseenunits with9complete public-domain poems and5dedicatedskillsunits. Expandedworkshops and reviewedwriting remain planned. Unseen means unfamiliarreadingpractice, not a guarantee a student has never encountered a text. Three independentworkspaces preserve firstresponses; freshsingle/pair texts differ from guidedmodels; suggestedtiming not enforced. Next20remaining3originalskills,15Macbethworkshops,first2Carolworkshops. AIkeysetup remains explicitly deferred.
 
 Batch10:20units add the remaining3originalskills, all15Macbethworkshops and first2Carolworkshops.115built/60planned;Macbeth35allocatedteachingunits built,not specialist/writing sign-off. Fresh5.3insecurity assessment and memory-basedskillspractice preserve firstresponses;redraft copies firstassessment only to an empty draft. Original analysis and public-domain evidence;timingadvisory,AIinactive. Next20:remaining12Carolworkshops,first8Inspectorworkshops. See batch10brief/QA/publicationreceipt.
+
+Batch11:12remainingCarolworkshops and first8Inspectorworkshops.135built/40planned;Carol28andMacbeth35allocatedteachingbuilt, specialist/writingreviewpending. FreshStave3assessment/emptydraftredraft;Inspectororiginalcommentarylabelled,authorisedplayrequired. Newlanguageviewskeyboardboundedreading,18/17px;old115recordsunchanged. Next20:Inspectorremaining6,Poetry13extendedworkshops,Unseenfirstextendedworkshop;briefsfirst.
