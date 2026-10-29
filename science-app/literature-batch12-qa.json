@@ -60,11 +60,18 @@
   },
   "writing": "Unmarked;specialist/actualwrittenresponse reviewpending.25/45minadvisorynotforced;externalresourcesnotpoliced;AIkeysetupdeferred/noactualproviderrequest.",
   "publication": {
-    "status": "pending",
-    "canonical_app_commit": null,
-    "site_source_commit": null,
-    "deployment": null,
-    "audience": "Existingownerprivateunchanged;staticlessons/unconfiguredclassroomdemo"
+    "status": "succeeded",
+    "canonical_app_commit": "e479c1323eaa51bff36d65a27e2062fd513ebff7",
+    "github_remote_verified": true,
+    "clean_status_before_packaging": true,
+    "site_source_commit": "fb763b4997365fec65083f99508861764d9f646b",
+    "matching_frontend_files": 716,
+    "archive": "/private/tmp/crashcourse-literature-batch12.tar.gz",
+    "deployment": "appgdep_6ae320b140d08191b27b83d293fb963b",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_2372bdfd545481919187dd006e17b2d1",
+    "updated_at": "2026-10-29T10:32:34.615226+00:00",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "audience": "Existingownerprivateunchanged;staticlessons/unconfiguredclassroomdemo;noAPIkeyactivation"
   },
   "next": "Final20:remaining8Unseenworkshops_and12skillsworkshops;detailedbriefsfirst"
 }
