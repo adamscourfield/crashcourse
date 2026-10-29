@@ -24,7 +24,7 @@
     "tests": 58,
     "passed": 58,
     "failed": 0,
-    "durationMs": 3594.474916,
+    "durationMs": 3940.438125,
     "scope": "Language/completion/shared studio/classroom after source-note-only followup"
   },
   "handlerVerification": "All155 new journeys:wrong/correct challenge and practice;non-empty saved draft gate where applicable;new-case check reasoning hidden;all17 independent first responses immutable and revisions separate;resume and isolated Language storage. Existing20 journeys and legacy migration also pass.",
@@ -65,8 +65,21 @@
     "science-app/dist/language/source-bank.js": "de3f190abbc585d3d27b930e8b075c04036c5f40729fe1fdcd69b66c83f1569d",
     "science-app/dist/literature/studio.js": "07f16ebfd97aebd53f97358d37e598c0d0fd88b484484cbfaf06627208e15f0c"
   },
-  "github": "pending",
-  "hosting": "pending",
+  "github": {
+    "appCommit": "85bff3118f130250a76d1efbe3b8957c7bdfa6b1",
+    "remote": "origin/main",
+    "verified": true
+  },
+  "hosting": {
+    "status": "succeeded",
+    "sourceCommit": "aee1375141ea2628f205de9878b8ab4e33988363",
+    "frontendFilesMatched": 725,
+    "deployment": "appgdep_6ae397e31ca0819195bf6d5d69c17add",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_01d8d321efb08191ac90736418cdf30f",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "audience": "existing_owner_private",
+    "archivePrivateFileCheck": "passed"
+  },
   "aiProviderCalled": false,
   "specialistReview": false
 }
