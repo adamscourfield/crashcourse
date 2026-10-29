@@ -1,5 +1,5 @@
-import {course as languageCourse} from './language/content.js?v=20261029-language01';
-import {createLiteratureStudio} from './literature/studio.js?v=20261029-language01';
+import {course as languageCourse} from './language/content.js?v=20261029-reading-v2';
+import {createLiteratureStudio} from './literature/studio.js?v=20261029-reading-v2';
 import {explanationPhoto} from './science-references.js?v=20261024-lessonlayout03';
 import {createGeographyStudio} from './geography/studio.js?v=20261029-guided01';import {createHistoryStudio} from './history/studio.js?v=20261029-guided01';
 import {scienceSummary} from './progress-summary.js?v=20261023-mastery01';

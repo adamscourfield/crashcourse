@@ -1,3 +1,7 @@
+## Implementation follow-up —29October2026
+
+The user's subsequent priority selected one complete topic: all20 Language reading foundations now have a revised versioned practice/fresh-check form, preserving legacy evidence. See ../english-language-reading-pilot.md. The five Language prototypes were expanded to the whole topic after handler/migration checks. Literature prototypes remain deferred until evaluation of this topic. Existing display shuffling was already implemented; do not build a new shuffle/migration based only on stored answer-index counts. Diagnostic support and authentic-range/human evidence remain outstanding.
+
 # English assessment repair brief
 
 29 October 2026. Ready for implementation; not implemented. Follows LESSON_TEMPLATE.md for revisions rather than adding teaching sessions. Inputs: english-language-oak-audit.md and english-literature-oak-audit.md. No automatic essay marks, new AI credentials or Oak text imports.

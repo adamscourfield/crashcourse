@@ -1,3 +1,7 @@
+## Correction and implementation follow-up — 29 October 2026
+
+The runtime already uses choiceIndices to shuffle displayed choices deterministically while storing canonical option indices. Stored-position patterns do NOT demonstrate a visible first-option cue; that earlier risk inference is retracted. Original count measurements remain valid as source data only. Weak alternatives/repeated interpretations remain substantive findings. The20-lesson Language pilot now provides new versioned practice/check items and separate historical evidence; see english-language-reading-pilot.md. No Literature content was changed in this pilot.
+
 # Literature audit01: coverage and evidence
 
 29 October 2026. Inventory of175 built AQA8702 lessons and1225 selected-response items; manual examination of13 named content/assessment samples,15 Oak unit summaries and one lesson summary from each. This is a first author audit, not individual substantive review of every lesson, specialist approval or observed student performance. Source hashes/sample IDs/counts are in english-literature-oak-audit-evidence.json. No app change or deployment.

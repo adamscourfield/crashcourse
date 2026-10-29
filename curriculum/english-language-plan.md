@@ -1,3 +1,7 @@
+## Reading foundations pilot —29October2026
+
+20 existing lessons refined using the AQA/Oak/local evidence crosswalk;20 different original check passages,60 revised practice and80 new check IDs.140 legacy items retained for historical evidence. Maps: english-language-reading-pilot-map.csv and english-language-reading-pilot-coverage.csv. Not authentic full GCSE reading range or reviewed writing. See english-language-reading-pilot.md. Counts stay20built/155planned. Existing displayed choice shuffling confirmed; audit inference from stored option positions corrected.
+
 # English Language — AQA8700
 
 Working board choice AQA, inferred from the paired Literature course; user can change it before wider expansion.175 sessions within350 shared English sessions, a provisional175/175 split, not an exam-board lesson requirement.20 built /155 planned. Existing175 Literature IDs and timetable positions unchanged.

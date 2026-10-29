@@ -807,5 +807,11 @@
   "allCheckAnswerPositionPatternsEqual": true,
   "specialistReview": false,
   "appChanged": false,
-  "hostingRequired": false
+  "hostingRequired": false,
+  "followupCorrection": {
+    "date": "2026-10-29",
+    "displayAlreadyShuffled": true,
+    "canonicalPositionDoesNotProveVisibleAnswerCue": true,
+    "source": "science-app/dist/literature/studio.js:choiceIndices"
+  }
 }

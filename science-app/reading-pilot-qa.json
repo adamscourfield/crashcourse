@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-29",
+  "topic": "english-language.reading",
+  "lessonCount": 20,
+  "activePractice": 60,
+  "activeCheck": 80,
+  "legacyItemsRetained": 140,
+  "differentCheckPassages": 20,
+  "fullSuite": {
+    "tests": 888,
+    "passed": 887,
+    "failed": 0,
+    "skipped": 1,
+    "durationMs": 37793.758458,
+    "skip": "Unconfigured Postgres RLS; no production database assertion",
+    "scope": "Final runtime before source-link-only OGL metadata addition; final focused suite follows"
+  },
+  "focusedSuite": {
+    "tests": 43,
+    "passed": 43,
+    "failed": 0,
+    "scope": "Final Language and shared studio handlers, all20 journeys and migration fixtures"
+  },
+  "dataChecks": [
+    "20 unique lesson rows and acyclic prerequisite references",
+    "140 active item IDs disjoint from140 legacy IDs",
+    "20 different original check passages; not the teaching passage",
+    "Answer options unique, answer keys valid, AO1/AO2/AO4 task refs",
+    "Current coverage item IDs aligned",
+    "No credential in eligible source"
+  ],
+  "browser": {
+    "sampleLesson": "lang.reading.lesson-02",
+    "verified": [
+      "Fresh source and question visible together",
+      "Independent wrong first answer locked with reasoning hidden",
+      "Automatic progression to next question",
+      "Reload restores question2 without answering it",
+      "Original practice source remains visible",
+      "Wrong practice remains editable; correction advances",
+      "Phone390x844:390 scroll width;17px passage font",
+      "Desktop viewport restored; screenshot saved"
+    ],
+    "screenshot": "crash-course-reading-pilot-preview.png",
+    "limits": [
+      "Not every question manually run in browser",
+      "Complete legacy-completion preservation covered by fixtures; existing browser work retained",
+      "No assistive-technology or student timing pilot",
+      "Temporary duplicate declaration during development resolved; no subsequent error observed in sampled page"
+    ]
+  },
+  "sourceHashes": {
+    "science-app/dist/language/content.js": "9a8923289cd8b26a0e92f73f7b467da3bcf3b8122db52a236a3accd5c0903970",
+    "science-app/dist/language/reading-transfer.js": "98f94784122ec4a6ce48fbbcb295349a7d4bb5fefd55e97eb325e750ab475e00",
+    "science-app/dist/literature/studio.js": "e360a29d2f30532a99446af02bf786cc745b75e0d8a1afba2bb97bdbb0edcea1",
+    "science-app/dist/literature/literature.css": "6daf28c0d913e9b8c9210656fc20d26bff2afc98d5e82c9fb058578bed7229fa"
+  },
+  "specialistReview": false,
+  "writingMarked": false,
+  "authenticFullRangeSatisfied": false,
+  "entryDiagnosticImplemented": false,
+  "github": "pending",
+  "hosting": "pending"
+}

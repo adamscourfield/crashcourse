@@ -1,3 +1,7 @@
+## Correction and implementation follow-up — 29 October 2026
+
+The runtime already uses choiceIndices to shuffle displayed choices deterministically while storing canonical option indices. Stored-position patterns do NOT demonstrate a visible first-option cue; that earlier risk inference is retracted. Original count measurements remain valid as source data only. Weak alternatives/repeated interpretations remain substantive findings. The20-lesson Language pilot now provides new versioned practice/check items and separate historical evidence; see english-language-reading-pilot.md. No Literature content was changed in this pilot.
+
 # English Language audit 01
 
 29 October 2026. Author curriculum/assessment audit of all20 built Language lessons against current AQA8700 scope and assessment objectives, with Oak AQA year10 fiction-unit learning points, prerequisites and misconceptions as a secondary comparator. Not specialist approval, observed pupil performance or a completed multi-subject audit.20 built/155 planned of175 remain unchanged.

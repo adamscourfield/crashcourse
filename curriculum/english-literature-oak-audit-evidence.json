@@ -148,5 +148,11 @@
     }
   ],
   "specialistReview": false,
-  "runtimeChanged": false
+  "runtimeChanged": false,
+  "followupCorrection": {
+    "date": "2026-10-29",
+    "displayAlreadyShuffled": true,
+    "canonicalPositionDoesNotProveVisibleAnswerCue": true,
+    "source": "science-app/dist/literature/studio.js:choiceIndices"
+  }
 }
