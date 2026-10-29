@@ -1,5 +1,5 @@
 import {mathsSummary} from '../progress-summary.js?v=20261023-mastery01';
-import {cancelQuestionAdvance,questionFlow} from '../question-flow.js?v=20261023-flow01';
+import {guidedFlow,cancelQuestionAdvance,questionFlow} from '../question-flow.js?v=20261029-guided01';
 // Maths studio: lesson flow, generated practice with mastery ladders, independent checks,
 // spaced interleaved review and topic assessment. Owns its own saved state (MATHS_KEY) so it
 // can never alter science progress.
@@ -117,7 +117,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       b.querySelector('b').textContent = done ? '✓' : `0${i + 1}`;
     });
     $('#mKicker').textContent = STAGES[p.stage].toUpperCase();
-    $('#mContinue').hidden = false; $('#mContinue').textContent = 'Continue →';
+    $('#mContinue').hidden = false; $('#mContinue').textContent = 'Continue →'; $('#mContinue').onclick = onContinue;
     $('.mworkspace').classList.toggle('question-mode', p.stage >= 2);
     feedback('');
     [renderDiscover, renderInvestigate, renderPractice, renderCheck][p.stage](l, p);
@@ -133,24 +133,28 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     $('#mPanel').innerHTML = `<div class="mpanel-k">WORKED EXAMPLE ${p.card + 1} OF ${l.learn.length}</div><div class="mviz-wrap">${visual(c.visual) || visual2(c.visual) || visual3(c.visual) || visual4(c.visual) || visual5(c.visual) || visual6(c.visual) || visual7(c.visual) || visual9(c.visual) || visualGeo(c.visual)}</div>`;
     $('#mTitle').textContent = c.title;
     const pre = p.card === 0 && l.prerequisites?.length ? `<div class="prerequisites"><span>Prior learning:</span>${l.prerequisites.map(id => `<button class="text-button" data-mpre="${id}">${esc(orderedLessons.find(x => x.id === id)?.title || id)}</button>`).join('')}</div>` : '';
-    $('#mBody').innerHTML = `${pre}<p>${mathHTML(c.text)}</p><div class="mexample"><div class="mexample-q"><span class="eyebrow">EXAMPLE</span><p>${mathHTML(c.example.prompt)}</p></div><ol class="msteps">${c.example.steps.map((st, i) => `<li ${i < shown ? '' : 'hidden'}>${mathHTML(st)}</li>`).join('')}</ol>${shown < c.example.steps.length ? `<button class="secondary" id="mReveal">${shown ? 'Next step' : 'Try it, then show the first step'}</button>` : ''}</div><div class="reading-dots">${l.learn.map((_, i) => `<button data-mcard="${i}" aria-label="Explanation ${i + 1}" class="${i === p.card ? 'current' : ''}">${i + 1}</button>`).join('')}</div>`;
+    $('#mBody').innerHTML = `${pre}<p>${mathHTML(c.text)}</p><div class="mexample"><div class="mexample-q"><span class="eyebrow">EXAMPLE</span><p>${mathHTML(c.example.prompt)}</p></div><ol class="msteps">${c.example.steps.map((st, i) => `<li ${i < shown ? '' : 'hidden'}>${mathHTML(st)}</li>`).join('')}</ol>${shown < c.example.steps.length ? `<button class="secondary" id="mReveal" hidden>${shown ? 'Next step' : 'Try it, then show the first step'}</button>` : ''}</div><div class="reading-dots">${l.learn.map((_, i) => `<button data-mcard="${i}" aria-label="Explanation ${i + 1}" class="${i === p.card ? 'current' : ''}">${i + 1}</button>`).join('')}</div>`;
     $('#mReveal')?.addEventListener('click', () => { p.reveal[p.card] = shown + 1; render(); $('#mReveal')?.focus(); });
     $$('[data-mcard]').forEach(b => (b.onclick = () => { p.card = Number(b.dataset.mcard); render(); }));
     $$('[data-mpre]').forEach(b => (b.onclick = () => setLesson(b.dataset.mpre)));
     $('#mHint').textContent = `Explanation ${p.card + 1} of ${l.learn.length}`;
+    guidedFlow($('#mContinue'), {text:shown<c.example.steps.length?c.text+' '+c.example.prompt+' '+c.example.steps.slice(0,shown).join(' '):c.example.steps.join(' '),label:shown<c.example.steps.length?'Next worked step':p.card<l.learn.length-1?'Next explanation':'Start investigation',next:()=>{if(shown<c.example.steps.length){p.reveal[p.card]=shown+1;render();}else onContinue();},guard:()=>!root.hidden&&view==='lesson'&&lesson().id===l.id&&p.stage===0});
+    $('#mContinue').onclick=()=>{if(shown<c.example.steps.length){p.reveal[p.card]=shown+1;render();}else onContinue();};
   }
 
   /* ───────── investigate ───────── */
   function renderInvestigate(l, p) {
     const generation = modelGeneration, panel = $('#mPanel'), body = $('#mBody');
     $('#mTitle').textContent = '';
-    $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : '';
+    $('#mHint').textContent = p.widgetDone ? 'Complete ✓' : 'Complete the activity; practice follows automatically.';
     (MODELS17[l.model] || MODELS16[l.model] || MODELS15[l.model] || MODELS14[l.model] || MODELS13[l.model] || MODELS12[l.model] || MODELS11[l.model] || MODELS10[l.model] || MODELS9[l.model] || MODELS8[l.model] || MODELS7[l.model] || MODELS6[l.model] || MODELS5[l.model] || MODELS4[l.model] || MODELS3[l.model] || MODELS2[l.model] || (ctx => mountModel(l.model, ctx)))({
       panel, body, w: p.widget, tier: s.tier,
       isActive: () => generation === modelGeneration && panel.isConnected && body.isConnected && $('#mPanel') === panel && !!$('#mTitle'),
       save, feedback, setTitle: t => ($('#mTitle').textContent = t),
       done: () => { if (!p.widgetDone) { p.widgetDone = true; save(); render(); } $('#mHint').textContent = 'Complete ✓'; },
     });
+    $('#mContinue').hidden=!p.widgetDone;
+    if(p.widgetDone)guidedFlow($('#mContinue'),{label:'Start practice',delay:3000,next:onContinue,guard:()=>!root.hidden&&view==='lesson'&&lesson().id===l.id&&p.stage===1});
   }
 
   /* ───────── answer controls ───────── */
@@ -366,6 +370,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
       $('#mBody').innerHTML = `<p>Ten new questions across this lesson's skills. There are no worked examples or hints, and your first answer to each question counts. You need ${RULES.checkPass}% to complete the lesson.</p>${!d.practise ? '<p class="callout">You have not finished practising yet. You can still try the check, but the lesson completes only when practice is secure too.</p>' : ''}${p.history.length ? `<p>Previous runs: ${p.history.map(h => h.score + '%').join(', ')}. A new run uses different questions.</p>` : ''}`;
       $('#mContinue').textContent = p.history.length ? 'Start a new check →' : 'Start the check →';
       $('#mHint').textContent = '';
+      if(!p.history.length)guidedFlow($('#mContinue'),{text:$('#mBody').textContent,label:'Start independent check',next:onContinue,guard:()=>!root.hidden&&view==='lesson'&&lesson().id===l.id&&p.stage===3&&!p.check});
       return;
     }
     const c = p.check, item = c.items[c.index], a = c.answers[item.id];

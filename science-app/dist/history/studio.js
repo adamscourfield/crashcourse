@@ -3,7 +3,7 @@
 // including exam-skill challenges), Practise (retry until correct, with explanations) and Check
 // (first answers count; 80% completes the lesson). Missed concepts return in recall review.
 import {lessons, topics, units, source, specIssue} from './content.js?v=20261028-history-geofinal2';
-import {questionFlow, cancelQuestionAdvance} from '../question-flow.js?v=20261023-flow01';
+import {showFlowTarget,guidedFlow, questionFlow, cancelQuestionAdvance} from '../question-flow.js?v=20261029-guided01';
 import {recordConcept, dueConcepts} from '../progress.js?v=20261028-subjects01';
 import {summarise} from '../progress-summary.js?v=20261023-mastery01';
 import {track, plain} from '../classroom/track.js?v=20261028-classroom01';
@@ -88,8 +88,25 @@ export function createHistoryStudio({root, modal, closeModal, onProgress}) {
     p.viewIndex = Math.min(Math.max(0, p.viewIndex || 0), l.views.length - 1);
     const v = l.views[p.viewIndex];
     if (record && !p.observed.includes(p.viewIndex)) p.observed.push(p.viewIndex);
+    if(record && $('#hObserved'))$('#hObserved').textContent=`Views explored: ${p.observed.length} / ${l.views.length}`;
     panel.innerHTML = `<div class="eyebrow">EVIDENCE EXPLORER</div><div class="geo-controls h-tabs" role="tablist">${l.views.map((x, i) => `<button class="scene-button" role="tab" data-hview="${i}" aria-pressed="${i === p.viewIndex}">${esc(viewLabel(x))}${record && p.observed.includes(i) ? ' ✓' : ''}</button>`).join('')}</div><div class="h-view" id="hView">${viewHTML(v)}</div><p class="geo-caption">${v.kind === 'source' ? 'The document is described by type, author, date and content; no wording is quoted or invented.' : 'Original teaching summary. Check dates and names against your textbook.'}</p>`;
-    $$('[data-hview]').forEach(b => (b.onclick = () => { p.viewIndex = Number(b.dataset.hview); explorer(l, p, record); if (record) { const o = $('#hObserved'); if (o) o.textContent = `Views explored: ${p.observed.length} / ${l.views.length}`; save(); } }));
+    $$('[data-hview]').forEach(b => (b.onclick = () => { p.viewIndex = Number(b.dataset.hview); explorer(l, p, record); if (record) { const o = $('#hObserved'); if (o) o.textContent = `Views explored: ${p.observed.length} / ${l.views.length}`; save(); guideEvidence(l,p); } }));
+  }
+
+  function guideEvidence(l,p) {
+    if(p.stage!==1 || mode!=='lesson') return;
+    const button=$('#hContinue'), i=Math.min(p.task,l.tasks.length-1);
+    const missingWord=-1;
+    const missingView=l.views.findIndex((_,k)=>!p.observed.includes(k));
+    let label,next;
+    if(missingWord>=0){label='Next evidence detail';next=()=>{p.viewIndex=0;p.word=missingWord;(p.wordSeen??=[]).push(missingWord);explorer(l,p,true);save();guideEvidence(l,p);};}
+    else if(missingView>=0){label='Next evidence view';next=()=>{p.viewIndex=missingView;explorer(l,p,true);save();guideEvidence(l,p);};}
+    else if(p.passed.includes(i)){label=i<l.tasks.length-1?'Next challenge':'Start practice';next=()=>{if(i<l.tasks.length-1)p.task++;else p.stage=2;render();};}
+    else {cancelQuestionAdvance();button.hidden=true;$('#hHint').textContent=`Challenge ${i+1} of ${l.tasks.length} · choose your answer above`;showFlowTarget($('#hTitle'));return;}
+    button.onclick=next;
+    $('#hHint').textContent=`Guided evidence · challenge ${i+1} of ${l.tasks.length}`;
+    const text=$('#hView')?.textContent || l.tasks[i][3];
+    guidedFlow(button,{text,label,delay:missingWord<0&&missingView<0?3000:undefined,next,guard:()=>!root.hidden&&mode==='lesson'&&lesson().id===l.id&&p.stage===1});
   }
 
   function render() {
@@ -114,6 +131,8 @@ export function createHistoryStudio({root, modal, closeModal, onProgress}) {
       $$('[data-hcard]').forEach(b => (b.onclick = () => { p.card = Number(b.dataset.hcard); render(); }));
       $('#hContinue').onclick = () => { if (!p.seen.includes(p.card)) p.seen.push(p.card); const unread = l.cards.findIndex((_, i) => !p.seen.includes(i)); if (unread < 0) p.stage = 1; else p.card = unread; render(); };
       explorer(l, p, false);
+      $('#hHint').textContent = `Explanation ${p.card+1} of ${l.cards.length}`;
+      guidedFlow($('#hContinue'), {text:c[1], label:p.seen.length>=l.cards.length-1?'Start investigation':'Next explanation',next:()=>$('#hContinue').click(),guard:()=>!root.hidden&&mode==='lesson'&&lesson().id===l.id&&p.stage===0});
     } else if (p.stage === 1) {
       const i = Math.min(p.task, l.tasks.length - 1), tk = l.tasks[i], passed = p.passed.includes(i);
       $('#hTitle').textContent = /^Exam skill/.test(tk[0]) ? 'Exam skill' : 'Weigh the evidence';
@@ -122,7 +141,7 @@ export function createHistoryStudio({root, modal, closeModal, onProgress}) {
         if (p.passed.includes(i)) return;
         track({subject: 'history', lessonId: l.id, questionId: `${l.id}#task${i + 1}`, stage: 'challenge', prompt: plain(tk[0]), answer: plain(tk[1][Number(b.dataset.htask)]), correctAnswer: plain(tk[1][tk[2]]), correct: Number(b.dataset.htask) === tk[2]});
         if (Number(b.dataset.htask) !== tk[2]) return feedback('Not quite. Use the evidence explorer and think about why the other choice is stronger.', true);
-        p.passed.push(i); $$('[data-htask]').forEach(x => (x.disabled = true)); save(); feedback('Correct. ' + tk[3]);
+        p.passed.push(i); $$('[data-htask]').forEach(x => (x.disabled = true)); save(); feedback('Correct. ' + tk[3]); guideEvidence(l,p);
       }));
       if (passed) feedback('Correct. ' + tk[3]);
       $('#hHint').textContent = `Challenge ${i + 1} / ${l.tasks.length}`;
@@ -134,6 +153,7 @@ export function createHistoryStudio({root, modal, closeModal, onProgress}) {
         render();
       };
       explorer(l, p, true);
+      guideEvidence(l,p);
     } else if (p.stage === 2) {
       p.pi = Math.min(p.pi, l.practice.length - 1);
       const q = l.practice[p.pi], a = p.practice[q.id];
@@ -172,9 +192,11 @@ export function createHistoryStudio({root, modal, closeModal, onProgress}) {
     $$('[data-hanswer]').forEach(b => (b.onclick = () => answer(Number(b.dataset.hanswer))));
   }
   function results(l, p) {
+    const gates=historyGates(l,p), missing=gates.findIndex(x=>!x);
     const score = Math.round((l.check.filter(q => p.checks[q.id] === q.answer).length / l.check.length) * 100);
-    modal(`<h2>${score}% · ${historyGates(l, p).every(Boolean) ? 'Lesson complete' : 'Keep building'}</h2><p>Completion needs all four stages and at least 80% on Check.</p>${l.check.map(q => `<details class="result-row"><summary>${p.checks[q.id] === q.answer ? '✓' : '↻'} ${esc(q.prompt)}</summary><p>${esc(q.why)} Correct answer: ${esc(q.options[q.answer])}</p></details>`).join('')}<button class="primary" id="hRetake">Try check again</button>`);
+    modal(`<h2>${score}% · ${historyGates(l, p).every(Boolean) ? 'Lesson complete' : 'Keep building'}</h2><p>Completion needs all four stages and at least 80% on Check.</p>${l.check.map(q => `<details class="result-row"><summary>${p.checks[q.id] === q.answer ? '✓' : '↻'} ${esc(q.prompt)}</summary><p>${esc(q.why)} Correct answer: ${esc(q.options[q.answer])}</p></details>`).join('')}<button class="primary" id="hRoute">${missing>=0 ? (missing===3?'Retry the check →':'Continue '+['Discover','Investigate','Practise'][missing]+' →') : 'Next lesson →'}</button><button class="secondary" id="hRetake">Try check again</button>`);
     document.getElementById('hRetake').onclick = () => { (p.history ??= []).push({...p.checks}); p.checks = {}; p.ci = 0; closeModal(); render(); };
+    document.getElementById('hRoute').onclick=()=>{if(missing===3)return document.getElementById('hRetake').click();if(missing>=0){p.stage=missing;closeModal();render();return;}closeModal();$('#hNext').click();};
   }
   function openLesson(id, stage) { if (!lessons.some(l => l.id === id)) return; s.lessonId = id; mode = 'lesson'; if (stage !== undefined) state(lesson()).stage = stage; closeModal(); render(); }
   function openLessons(id = lesson().topicId) {

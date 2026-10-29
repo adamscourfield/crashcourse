@@ -4,7 +4,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {lessons} from '../dist/literature/content.js';
 import {createLiteratureStudio,KEY,literatureGates} from '../dist/literature/studio.js';
-import {cancelQuestionAdvance} from '../dist/question-flow.js?v=20261023-flow01';
+import {cancelQuestionAdvance} from '../dist/question-flow.js?v=20261029-guided01';
 function harness(seed){
  const nodes=[],extra=new Map(),storage=new Map(seed?[[KEY,JSON.stringify(seed)]]:[]);
  class Element{
@@ -290,4 +290,24 @@ test('Final unseen redraft protects occupied work and completion note distinguis
  const oldDoc=globalThis.document,oldStorage=globalThis.localStorage,source='lit.unseen.workshop-08',id='lit.unseen.workshop-09';
  try{const h=harness();h.studio.openProgressLesson(id,0);h.$('#litBringForward').click();assert(h.$('#litBringStatus').textContent.includes('No first assessment response'));h.studio.openProgressLesson(source,0);h.$('#litStartIndependent').click();h.$('#litIndependentDraft').value='Preview original pair analysis';h.$('#litIndependentDraft').oninput();h.$('#litSubmitIndependent').click();h.$('#litLeaveIndependent').click();h.studio.openProgressLesson(id,0);const original=JSON.stringify(h.studio.state().lessons[source]);h.$('#litBringForward').click();assert.equal(h.$('#litDraft').value,'Preview original pair analysis');h.$('#litDraft').value='Preview revised argument';h.$('#litDraft').oninput();h.$('#litBringForward').click();assert.equal(h.$('#litDraft').value,'Preview revised argument');assert(h.$('#litBringStatus').textContent.includes('already contains writing'));h.$('#litSaveDraft').click();const r=harness(JSON.parse(h.storage.get(KEY)));r.studio.render();assert.equal(r.$('#litDraft').value,'Preview revised argument');assert.equal(JSON.stringify(r.studio.state().lessons[source]),original);const progress=r.studio.getProgress();assert.equal(progress.total,175);assert(progress.scopeNote.includes('All 175'));assert(progress.scopeNote.includes('English Language is planned separately'));assert(progress.scopeNote.includes('review remain outstanding'));h.studio.openProgressLesson('lit.skills.workshop-10',0);assert(h.$('#hPanel').innerHTML.includes('NOT A SOURCE QUOTATION'));assert(!h.$('#hPanel').innerHTML.includes('NOT A PLAY QUOTATION'));}
  finally{cancelQuestionAdvance();globalThis.document=oldDoc;globalThis.localStorage=oldStorage;}
+});
+
+test('Guided route automatically reads explanations, presents every evidence detail/view, then waits for a real answer',t=>{
+ const oldDoc=globalThis.document,oldStorage=globalThis.localStorage;
+ t.mock.timers.enable({apis:['setTimeout']});
+ try{const l=lessons.find(x=>x.id==='lit.unseen.workshop-02'),h=harness();h.studio.openProgressLesson(l.id,0);
+  t.mock.timers.tick(120001);assert.equal(h.studio.state().lessons[l.id].card,1);assert.equal(h.studio.state().lessons[l.id].stage,0);
+  t.mock.timers.tick(120001);t.mock.timers.tick(120001);assert.equal(h.studio.state().lessons[l.id].stage,1);
+  for(let i=0;i<5;i++)t.mock.timers.tick(120001);
+  const p=h.studio.state().lessons[l.id];assert.deepEqual(p.wordSeen,[0,1,2]);assert.equal(p.observed.length,3);assert.equal(p.stage,1);assert.equal(h.$('#hContinue').hidden,true);assert.deepEqual(p.passed,[]);
+  h.all('[data-htask]').find(b=>Number(b.dataset.htask)!==l.tasks[0][2]).click();t.mock.timers.tick(120001);assert.equal(p.stage,1);assert.deepEqual(p.passed,[]);
+  h.all('[data-htask]').find(b=>Number(b.dataset.htask)===l.tasks[0][2]).click();t.mock.timers.tick(3001);assert.equal(p.stage,2);assert.equal(Object.keys(p.practice).length,0);
+ }finally{cancelQuestionAdvance();t.mock.timers.reset();globalThis.document=oldDoc;globalThis.localStorage=oldStorage;}
+});
+
+test('Results offer the missing stage or the writing task instead of a compulsory retake',()=>{
+ const oldDoc=globalThis.document,oldStorage=globalThis.localStorage;
+ try{for(const id of ['lit.unseen.workshop-02','lit.unseen.workshop-08']){const l=lessons.find(x=>x.id===id);const p={stage:3,ci:3,seen:l.cards.map((_,i)=>i),observed:l.views.map((_,i)=>i),wordSeen:l.views[0].words.map((_,i)=>i),passed:l.tasks.map((_,i)=>i),practice:Object.fromEntries(l.practice.map(q=>[q.id,{choice:q.answer,first:q.answer,correct:true}])),checks:Object.fromEntries(l.check.map(q=>[q.id,q.answer]))};const h=harness({version:1,lessonId:id,lessons:{[id]:p},concepts:{}});h.studio.render();h.$('#hContinue').click();assert(h.modal().includes('Write your response →'));h.extra.get('hRoute').click();if(l.independentWriting){assert(h.$('#litIndependentDraft'));assert(!h.root.innerHTML.includes(l.rubric[0]));}else assert(h.$('#litGuidedWriting').open);assert.equal(h.studio.state().lessons[id].checks[l.check[0].id],l.check[0].answer);}
+ const l=lessons.find(x=>x.id==='lit.unseen.workshop-02'),h=harness({version:1,lessonId:l.id,lessons:{[l.id]:{stage:3,ci:3,card:0,seen:[],observed:[],passed:[],practice:{},checks:Object.fromEntries(l.check.map(q=>[q.id,q.answer]))}},concepts:{}});h.studio.render();h.$('#hContinue').click();assert(h.modal().includes('Continue Discover →'));h.extra.get('hRoute').click();assert.equal(h.studio.state().lessons[l.id].stage,0);
+ }finally{cancelQuestionAdvance();globalThis.document=oldDoc;globalThis.localStorage=oldStorage;}
 });

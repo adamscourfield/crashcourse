@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-29",
+  "change": "Guided lesson navigation",
+  "subjects": [
+    "Science",
+    "Maths",
+    "English Literature",
+    "History",
+    "Geography"
+  ],
+  "lesson_counts_unchanged": {
+    "Science": 361,
+    "Maths": 73,
+    "English Literature": 175,
+    "History": 208,
+    "Geography": 189
+  },
+  "full_suite": {
+    "tests": 881,
+    "passed": 880,
+    "skipped": 1,
+    "failed": 0,
+    "duration_ms": 38690.186417,
+    "skip": "Postgres RLS requires unconfigured CC_TEST_PG"
+  },
+  "focused": {
+    "tests": 77,
+    "passed": 77,
+    "failed": 0,
+    "duration_ms": 2811.797125
+  },
+  "browser": [
+    "Literature actual automatic explanation1\u21923 without clicks, pause/reload/resume preference",
+    "Literature sequential evidence primary action, wrong challenge stays, correct challenge auto-enters practice",
+    "Maths worked-step primary action, unfinished model waits, typed47.50 Enter schedules and reaches fresh next question",
+    "Science incomplete titration requires actual activity, no premature stage movement",
+    "Geography saved completed model schedules practice",
+    "History visible automatic reading route",
+    "Phone390x844 width390/no horizontal overflow; desktop1440x1000 restored",
+    "No sampled console errors; storage never reset",
+    "Four answer clicks only traversed the Literature check and opened results; primary Write your response opened/focused guided draft. Dedicated results-route tests cover missing Discover and independent writing entry."
+  ],
+  "not_claimed": [
+    "Every model full browser walkthrough",
+    "Full assistive technology audit",
+    "Specialist or actual student writing review",
+    "Validated individual reading pace"
+  ],
+  "reading_pace": "170 words/minute, minimum12s/maximum120s; pause and immediate Next available",
+  "progress": "Stable lesson/question IDs, first answer semantics and mastery thresholds unchanged; separate auto preference key",
+  "future_authoring": "Use shared guidedFlow/questionFlow; no extra navigation gates; actual answers/model work remain deliberate",
+  "publication": {
+    "github": "pending",
+    "hosting": "pending",
+    "audience": "Owner-private confirmed, unchanged"
+  },
+  "preview": "crash-course-guided-navigation-preview.jpg",
+  "results": "Primary route to missing stage, Literature writing or next lesson; retake secondary; writing entry cancels remaining check clock."
+}
