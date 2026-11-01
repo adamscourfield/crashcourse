@@ -29,7 +29,21 @@
     "science-app/dist/maths/maths.css": "fd1b876d85eb4bf51be5f1388806987328ce0a78c58578cdee6967bb1e9b8506",
     "science-app/dist/maths/studio.js": "16eb2c17a8286ecddafb9c5f11e457c34ccd52b40818928f597c9a34ff35496e"
   },
-  "github": "pending",
-  "hosting": "pending",
+  "github": {
+    "appCommit": "43f1801753ffa53ee8117aff2bf4b7dc5d562363",
+    "remote": "origin/main",
+    "matchingRemoteAndCleanSourceVerified": true
+  },
+  "hosting": {
+    "status": "succeeded",
+    "updatedAt": "2026-11-01T20:18:18.541718+00:00",
+    "sourceCommit": "eff2838ac0ef87734b7dff7ebc8c26d952c311ac",
+    "frontendFilesMatched": 725,
+    "deployment": "appgdep_6ae79e7d2d28819196ae168706f3a26c",
+    "version": "appgprj_6ad1be5897a88191909a03ad57857103~appgver_32490ef71148819190ca50e609fe0a41",
+    "url": "https://gcse-science-atom-lab.anaxied.chatgpt.site",
+    "audience": "existing_owner_private",
+    "archivePrivateFileCheck": "passed"
+  },
   "limitations": "Sampled browser checks; not every answer type or subject. No new curriculum coverage or specialist review."
 }

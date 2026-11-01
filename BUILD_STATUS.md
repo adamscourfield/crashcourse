@@ -1,6 +1,10 @@
+## Assessment layout publication receipt — 1 November 2026
+
+Published successfully 1 November 2026 at 20:18:18 UTC to the existing owner-private Site. Canonical app commit43f1801753ffa53ee8117aff2bf4b7dc5d562363 matched origin/main and clean source before packaging. Separate app-only source eff2838ac0ef87734b7dff7ebc8c26d952c311ac;725 frontend files matched;archive private-file check passed. Deployment appgdep_6ae79e7d2d28819196ae168706f3a26c;version appgprj_6ad1be5897a88191909a03ad57857103~appgver_32490ef71148819190ca50e609fe0a41. Final124 relevant tests passed. No audience, curriculum, marking, IDs or progress-schema changes. Receipt-only GitHub update follows.
+
 ## Maths assessment formatting — 1 November 2026
 
-Compacted Maths question cards and standard-form/power answer rows; coherent typography, 44px exponent sign target, primary submit button, separated readable question progress; stale calculator badge hidden in assessment/review. Existing questions, marking, IDs and progress unchanged. See curriculum/assessment-layout.md and science-app/assessment-layout-qa.json. Final124 Maths/question-flow checks passed (0failed); publication receipt to follow. Browser sampled actual assessment empty/submit/automatic advance/resume plus standard-form check toggle/draft/wrong-answer/choice;390px and320px no overflow;desktop restored. No new lessons or curriculum/specialist claims. GitHub and owner-private Site update pending.
+Compacted Maths question cards and standard-form/power answer rows; coherent typography, 44px exponent sign target, primary submit button, separated readable question progress; stale calculator badge hidden in assessment/review. Existing questions, marking, IDs and progress unchanged. See curriculum/assessment-layout.md and science-app/assessment-layout-qa.json. Final124 Maths/question-flow checks passed (0failed); publication receipt to follow. Browser sampled actual assessment empty/submit/automatic advance/resume plus standard-form check toggle/draft/wrong-answer/choice;390px and320px no overflow;desktop restored. No new lessons or curriculum/specialist claims. GitHub and owner-private Site update succeeded; see publication receipt above.
 
 ## English Language completion publication receipt — 29 October 2026
 
