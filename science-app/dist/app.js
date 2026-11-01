@@ -20,7 +20,7 @@ import {rateFigure,catalystFigure} from './kinetic-figures.js?v=20261023-physics
 import {profileFigure} from './energy-graphs.js?v=20261023-physicscomplete01';
 import {topics,topicById,topicLessons,contextKey,contextRun,courseFor,specRefs} from './registry.js?v=20261023-physicscomplete01';
 import {lessons,conceptNames,sourceURLs} from './content.js?v=20261023-physicscomplete01';
-import {createMathsStudio} from './maths/studio.js?v=20261029-guided01';import {STORAGE_KEY,subjects,restore,session,eligible,grade,recordConcept,updateCompletion,dueConcepts,isCorrect} from './progress.js?v=20261029-language01';
+import {createMathsStudio} from './maths/studio.js?v=20261101-assessment';import {STORAGE_KEY,subjects,restore,session,eligible,grade,recordConcept,updateCompletion,dueConcepts,isCorrect} from './progress.js?v=20261029-language01';
 import {showScene,mountWidget} from './widgets.js?v=20261023-physicscomplete01';
 import {renderDiagram} from './visual.js?v=20261023-physicscomplete01';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];

@@ -1,0 +1,9 @@
+# Maths assessment layout — 1 November 2026
+
+The reported standard-form answer screen spread the question across a very wide card and placed the exponent controls awkwardly against the fieldset legend. The Maths question card is now capped at 880px, has responsive question typography and natural content height, a divided progress footer, clearer primary submission and an explicit inner expression row. Coefficient, multiplication and exponent stay together; exponent sign controls keep 44px targets. The controls are shared with practice and independent lesson checks. The stale lesson-level calculator badge is hidden during assessment/review; the actual question badge remains. Topic progress reads “Question n of total”.
+
+Question data, answer parsing, marking, shuffled queues, first-answer rules, student progress keys and automatic movement are unchanged. No new curriculum or specialist-review claim.
+
+Validation: Maths and shared question-flow checks (124 passed in initial run; final run recorded in QA). Browser: topic assessment empty-answer feedback, scalar submission/lock and automatic Q1→Q2; reload at Q2; standard-form independent check, negative-exponent toggle and draft reload, incorrect first-answer lock and progression, choice progression. Desktop visual check; 390px and 320px viewports have no root overflow; 320px expression row235.53px within250px answer body. Temporary viewport override reset. Screenshot: assessment-layout-preview.jpg. Browser checks sample the shared controls, not every answer kind or subject.
+
+GitHub and existing owner-private Site publication pending. See science-app/assessment-layout-qa.json for receipt. No new lessons; all curriculum, specialist and assessment coverage statuses retained.

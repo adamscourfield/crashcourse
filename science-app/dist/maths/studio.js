@@ -103,6 +103,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     $('#mNumber').textContent = `LESSON ${String(idx + 1).padStart(2, '0')} / ${String(list.length).padStart(2, '0')}`;
     $('#mH1').textContent = l.title;
     $('#mMeta').innerHTML = `<div>◷ ${l.minutes} min · ${l.higherOnly ? 'Higher only' : 'Foundation and Higher'}</div>`;
+    $('#mCalc').hidden = false;
     $('#mCalc').textContent = l.calculator ? 'Calculator' : 'Non-calculator';
     $('#mLessons').textContent = `Lessons · ${idx + 1} of ${list.length} ▾`;
     $('#mStatus').textContent = p.complete ? `Complete · best check ${p.best}%` : '';
@@ -180,12 +181,12 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     if (a.kind === 'standard') {
       const p = parseStandard(v) || {};
       const neg = (p.n ?? 0) < 0;
-      return `<fieldset class="mans mstd" ${locked ? 'disabled' : ''}><legend class="field-label">Your answer in standard form</legend><input class="lab-input" data-sa inputmode="decimal" autocomplete="off" aria-label="Number from 1 up to 10" value="${esc(p.a ? dec(p.a) : '')}"><span class="mtimes">× 10</span><span class="mexp"><button type="button" class="msign ${neg ? 'on' : ''}" data-mexpsign aria-pressed="${neg}" aria-label="Negative power">−</button><input class="lab-input" data-sn inputmode="numeric" autocomplete="off" aria-label="Power of 10" value="${esc(p.n !== undefined ? Math.abs(p.n) : '')}"></span></fieldset>${submit}`;
+      return `<fieldset class="mans mstd" ${locked ? 'disabled' : ''}><legend class="field-label">Your answer in standard form</legend><div class="manswer-expression"><input class="lab-input" data-sa inputmode="decimal" autocomplete="off" aria-label="Number from 1 up to 10" value="${esc(p.a ? dec(p.a) : '')}"><span class="mtimes">× 10</span><span class="mexp"><button type="button" class="msign ${neg ? 'on' : ''}" data-mexpsign aria-pressed="${neg}" aria-label="Negative power" title="Toggle a negative exponent">−</button><input class="lab-input" data-sn inputmode="numeric" autocomplete="off" aria-label="Power of 10" value="${esc(p.n !== undefined ? Math.abs(p.n) : '')}"></span></div></fieldset>${submit}`;
     }
     if (a.kind === 'power') {
       const p = parsePower(v) || {};
       const neg = (p.exp ?? 0) < 0;
-      return `<fieldset class="mans mpow" ${locked ? 'disabled' : ''}><legend class="field-label">Your answer as a single power</legend><input class="lab-input" data-pb inputmode="numeric" autocomplete="off" aria-label="Base" value="${esc(p.base ?? '')}"><span class="mexp"><button type="button" class="msign ${neg ? 'on' : ''}" data-mexpsign aria-pressed="${neg}" aria-label="Negative power">−</button><input class="lab-input" data-pe inputmode="numeric" autocomplete="off" aria-label="Power" value="${esc(p.exp !== undefined ? Math.abs(p.exp) : '')}"></span></fieldset>${submit}`;
+      return `<fieldset class="mans mpow" ${locked ? 'disabled' : ''}><legend class="field-label">Your answer as a single power</legend><div class="manswer-expression"><input class="lab-input" data-pb inputmode="numeric" autocomplete="off" aria-label="Base" value="${esc(p.base ?? '')}"><span class="mexp"><button type="button" class="msign ${neg ? 'on' : ''}" data-mexpsign aria-pressed="${neg}" aria-label="Negative power" title="Toggle a negative exponent">−</button><input class="lab-input" data-pe inputmode="numeric" autocomplete="off" aria-label="Power" value="${esc(p.exp !== undefined ? Math.abs(p.exp) : '')}"></span></div></fieldset>${submit}`;
     }
     if (a.kind === 'interval') {
       const p = parseInterval(v) || {};
@@ -538,6 +539,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     $('.steps').hidden = true; $('#mNextLesson').hidden = true;
     $('.mworkspace').classList.add('question-mode');
     $('#mNumber').textContent = assessing ? 'TOPIC CHECK' : 'SPACED REVIEW';
+    $('#mCalc').hidden = true;
     $('#mH1').textContent = assessing ? 'Topic assessment' : 'Review';
     $('#mMeta').innerHTML = '';
     $('#mStatus').textContent = '';
@@ -566,7 +568,7 @@ export function createMathsStudio({ root, modal, closeModal, onProgress }) {
     $('#mContinue').hidden = false;
     $('#mContinue').textContent = run.index === run.queue.length - 1 ? 'See results →' : 'Next question →';
     questionFlow($('#mContinue'), {answered: a !== undefined, automatic: assessing || (a !== undefined && mark(item.answer, a).status === 'correct'), delay: assessing ? 650 : 2400, next: nextRun, guard: () => !root.hidden && view !== 'lesson'});
-    $('#mHint').textContent = `${run.index + 1} / ${run.queue.length}`;
+    $('#mHint').textContent = `Question ${run.index + 1} of ${run.queue.length}`;
     save();
   }
   function nextRun() {

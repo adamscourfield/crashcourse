@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-01",
+  "scope": "Maths assessment/practice/check layout; no marking or progress changes",
+  "initialChecks": {
+    "passed": 124,
+    "failed": 0
+  },
+  "finalChecks": {
+    "tests": 124,
+    "passed": 124,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 35343.78575,
+    "command": "node --test tests/maths*.test.js tests/question-flow.test.js"
+  },
+  "browser": [
+    "Assessment empty answer stays put",
+    "Numeric answer submission locks and auto-advances Q1 to Q2",
+    "Assessment reload resumes Q2",
+    "Standard form exponent sign toggle and saved draft survive reload",
+    "Incorrect independent first answer locks without solution reveal and advances",
+    "Independent choice auto-advances",
+    "390px no root overflow",
+    "320px:235.53px expression within250px body, root320px",
+    "Viewport reset to desktop"
+  ],
+  "screenshot": "assessment-layout-preview.jpg",
+  "sourceHashes": {
+    "science-app/dist/maths/maths.css": "fd1b876d85eb4bf51be5f1388806987328ce0a78c58578cdee6967bb1e9b8506",
+    "science-app/dist/maths/studio.js": "16eb2c17a8286ecddafb9c5f11e457c34ccd52b40818928f597c9a34ff35496e"
+  },
+  "github": "pending",
+  "hosting": "pending",
+  "limitations": "Sampled browser checks; not every answer type or subject. No new curriculum coverage or specialist review."
+}
